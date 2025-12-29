@@ -248,6 +248,43 @@ Dans ce cours, l'utilisation de l'intelligence artificielle (Claude, ChatGPT, Co
 
 
 
+# Assistance par intelligence artificielle
+
+<p>
+ Pour bénéficier d’une assistance par intelligence artificielle directement dans l’éditeur, il est possible d’ajouter GitHub Copilot, un outil d’autocomplétion alimenté par l’intelligence artificielle. Voici comment procéder.
+</p>
+<ol>
+ <li>
+  Créez-vous un compte sur
+  <a href="https://github.com">
+   le site GitHub
+  </a>
+  .
+  <a href="https://github.com/lemire">
+   Vous pouvez en profiter vous consulter la page du professeur
+  </a>
+  .
+ </li>
+ <li>
+  Installez Visual Studio Code depuis le site officiel (code.visualstudio.com) si ce n’est pas déjà fait.
+ </li>
+ <li>
+  Ouvrez l’éditeur, puis accédez à la vue des extensions en cliquant sur l’icône carrée divisée en quatre dans la barre latérale gauche.
+ </li>
+ <li>
+  Dans la barre de recherche des extensions, tapez GitHub Copilot et sélectionnez l’extension officielle publiée par GitHub.
+ </li>
+ <li>
+  Cliquez sur Installer ou Install. Une fois l’installation terminée, une invite vous demandera de vous connecter avec votre compte GitHub. Suivez les instructions pour autoriser l’extension.
+ </li>
+ <li>
+  Copilot est désormais actif. Il proposera des suggestions de code en temps réel pendant que vous tapez. Acceptez-les avec la touche Tab.
+ </li>
+</ol>
+<p>
+ Notez que GitHub Copilot nécessite un abonnement payant après une période d’essai gratuite.
+</p>
+
 ## Quelque chose vous déplaît ? Vous avez remarqué une erreur ?
 
 En tout temps, vous pouvez laisser un mot anonyme au sujet du cours sur [le formulaire prévu à cet effet](https://docs.google.com/forms/d/1emnei-XQua_DaLPXxMby-SCI9UMbQgSiilKOCRNhUZQ/viewform). Ce formulaire nous permet de réagir rapidement quand un problème survient dans le cadre du cours. Bien entendu, vous pouvez aussi aviser la personne qui vous encadre de tout problème que vous rencontrez.
