@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>XQuery on Programmation orientée-données</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xquery/</link><description>Recent content in XQuery on Programmation orientée-données</description><generator>Hugo</generator><language>fr</language><atom:link href="https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xquery/index.xml" rel="self" type="application/rss+xml"/><item><title>XQuery</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xquery/xquery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xquery/xquery/</guid><description>&lt;h1 id="xquery"&gt;
+ XQuery
+ &lt;a class="anchor" href="#xquery"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;XSLT peut servir pour extraire des informations d&amp;rsquo;un document XML. On peut trouver tous les noms des étudiants répondant à certains critères. Dans un sens, XSLT peut être utilisé comme langage dans le contexte des bases de données. Cependant, pour cette fin spécifique, un nouveau langage appelé XQuery a été proposé. La syntaxe du XQuery est un mélange de XPath et de &lt;a href="http://fr.wikipedia.org/wiki/SQL"&gt;SQL&lt;/a&gt; et ressemble davantage à ce que les spécialistes des bases de données connaissent bien.&lt;/p&gt;</description></item><item><title>Laboratoire XQuery avec Python (optionnel)</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xquery/laboratoire_xquery_avec_python_optionnel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xquery/laboratoire_xquery_avec_python_optionnel/</guid><description>&lt;h1&gt;
+ Laboratoire XQuery avec Python (optionnel)
+&lt;/h1&gt;
+Rendez vous sur le site
+&lt;a href="https://github.com/lemire/xquerypy"&gt;
+ xquerypy
+&lt;/a&gt;
+qui comprend une petite application Python capable de traiter du XQuery et du XML. Suivez les consignes.</description></item></channel></rss>

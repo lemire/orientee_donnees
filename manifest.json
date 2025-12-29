@@ -1,0 +1,15 @@
+{
+  "name": "Programmation orientée-données",
+  "short_name": "Programmation orientée-données",
+  "start_url": "/orientee_donnees/",
+  "scope": "/orientee_donnees/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/orientee_donnees/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}

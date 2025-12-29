@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>XSLT on Programmation orientée-données</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/</link><description>Recent content in XSLT on Programmation orientée-données</description><generator>Hugo</generator><language>fr</language><atom:link href="https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction au XSLT</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/introduction_au_xslt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/introduction_au_xslt/</guid><description>&lt;h1 id="introduction-au-xslt"&gt;
+ Introduction au XSLT
+ &lt;a class="anchor" href="#introduction-au-xslt"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="quest-ce-que-le-xslt"&gt;
+ Qu&amp;rsquo;est-ce que le XSLT
+ &lt;a class="anchor" href="#quest-ce-que-le-xslt"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;La première version du langage XSLT (&lt;em&gt;Extensible Stylesheet Language Transformation&lt;/em&gt;) a été publiée en 1997 et elle est devenue une recommandation W3C en 1999. Elle fait partie du XSL (&lt;em&gt;Extensible Stylesheet Language&lt;/em&gt;) qui comprend une seconde composante, les XSL-FO (&lt;em&gt;Extensible Stylesheet Language Formatting Objects&lt;/em&gt;). La technologie XSL tire son origine du besoin d&amp;rsquo;un langage simple, mais suffisamment puissant pour pouvoir contrôler finement l&amp;rsquo;affichage du XML. On utilise beaucoup le XSLT sur le web et au sein des systèmes d&amp;rsquo;information, alors que le XSL-FO est davantage utile pour les applications de mise en page spécialisées. Dans ce cours, nous nous soucierons seulement du XSLT, dont l&amp;rsquo;utilité dépasse de loin les problèmes de présentation.&lt;/p&gt;</description></item><item><title>XSLT en ligne</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_en_ligne/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_en_ligne/</guid><description>&lt;h1 style="font-size: 2rem; font-weight: bold; color: #1f2937; text-align: center; margin-bottom: 1.5rem;"&gt;
+ XSLT en ligne
+&lt;/h1&gt;
+&lt;p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.5;"&gt;
+ Testez vos transformations XSLT directement dans votre navigateur ! Cet outil vous permet de traiter n'importe quel fichier XML avec une feuille de style XSLT sans utiliser l'instruction
+ &lt;code style="background-color: #f3f4f6; padding: 2px 4px; border-radius: 4px; font-family: monospace;"&gt;
+ xml-stylesheet
+ &lt;/code&gt;
+ . C'est une alternative pratique pour programmer et expérimenter avec XSLT sans charger de fichiers externes.
+&lt;/p&gt;</description></item><item><title>XSLT avec Java</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_en_ligne_java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_en_ligne_java/</guid><description>&lt;h1 id="demonstration-java"&gt;
+ Demonstration Java
+ &lt;a class="anchor" href="#demonstration-java"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Vous pouvez transformer le fichier XML en ligne en utilisant java, en appuyant sur le bouton &lt;em&gt;exécuter&lt;/em&gt;.
+Attention au fait que la librairie standard de Java ne supporte que XSLT 1.0.
+Vous pouvez modifier les fichiers XSLT et XML.&lt;/p&gt;
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+&lt;div id="java-multirunner-1767046077488320304"&gt;
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
+ &lt;style&gt;
+ #java-multirunner-1767046077488320304 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1767046077488320304 .export-form { margin-bottom:0; }
+ #java-multirunner-1767046077488320304 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1767046077488320304 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1767046077488320304 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1767046077488320304 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
+ .cm-java-error-line { background: #fff0f0 !important; }
+ &lt;/style&gt;
+ &lt;form class="export-form java-multirunner-1767046077488320304-form" style="margin-bottom:0;"&gt;
+ &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
+ &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
+ 
+ &lt;div class='export-file-block'&gt;&lt;div class='export-file-name'&gt;XmlVersConsole.java&lt;/div&gt;&lt;textarea&gt;import javax.xml.transform.*;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.File;
+import java.io.StringWriter;
+
+public class XmlVersConsole {
+ public static void main(String[] args) {
+ String xml = &amp;#34;livres.xml&amp;#34;;
+ String xslt = &amp;#34;livres-vers-html.xsl&amp;#34;;
+ try {
+ String resultat = transformer(xml, xslt);
+ System.out.println(resultat);
+
+ } catch (TransformerException e) {
+ System.out.println(&amp;#34;Erreur lors de la transformation : &amp;#34; &amp;#43; e.getMessageAndLocation());
+ }
+ }
+
+ public static String transformer(String fichierXml, String fichierXslt) throws TransformerException {
+ TransformerFactory fabrique = TransformerFactory.newInstance();
+ Transformer transformateur = fabrique.newTransformer(new StreamSource(new File(fichierXslt)));
+ // Transformation vers une chaîne en mémoire
+ StringWriter writer = new StringWriter();
+ transformateur.transform(
+ new StreamSource(new File(fichierXml)),
+ new StreamResult(writer)
+ );
+
+ return writer.toString();
+ }
+}&lt;/textarea&gt;&lt;/div&gt;
+ 
+ &lt;div class='export-file-block'&gt;&lt;div class='export-file-name'&gt;livres-vers-html.xsl&lt;/div&gt;&lt;textarea&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&amp;lt;xsl:stylesheet version=&amp;#34;1.0&amp;#34;
+ xmlns:xsl=&amp;#34;http://www.w3.org/1999/XSL/Transform&amp;#34;&amp;gt;
+
+ &amp;lt;xsl:output method=&amp;#34;html&amp;#34; encoding=&amp;#34;UTF-8&amp;#34; indent=&amp;#34;yes&amp;#34;/&amp;gt;
+
+ &amp;lt;xsl:template match=&amp;#34;/&amp;#34;&amp;gt;
+ &amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+ &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;/&amp;gt;
+ &amp;lt;title&amp;gt;Ma bibliothèque&amp;lt;/title&amp;gt;
+ &amp;lt;style&amp;gt;
+ body { font-family: Arial, sans-serif; margin: 40px; }
+ h1 { color: #2c3e50; }
+ table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+ th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+ th { background-color: #3498db; color: white; }
+ tr:nth-child(even) { background-color: #f9f9f9; }
+ tr:hover { background-color: #f2f2f2; }
+ &amp;lt;/style&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body&amp;gt;
+ &amp;lt;h1&amp;gt;Ma petite bibliothèque&amp;lt;/h1&amp;gt;
+ &amp;lt;p&amp;gt;Nombre de livres : &amp;lt;xsl:value-of select=&amp;#34;count(//livre)&amp;#34;/&amp;gt;&amp;lt;/p&amp;gt;
+
+ &amp;lt;table&amp;gt;
+ &amp;lt;thead&amp;gt;
+ &amp;lt;tr&amp;gt;
+ &amp;lt;th&amp;gt;Titre&amp;lt;/th&amp;gt;
+ &amp;lt;th&amp;gt;Auteur&amp;lt;/th&amp;gt;
+ &amp;lt;th&amp;gt;Année&amp;lt;/th&amp;gt;
+ &amp;lt;th&amp;gt;Prix&amp;lt;/th&amp;gt;
+ &amp;lt;/tr&amp;gt;
+ &amp;lt;/thead&amp;gt;
+ &amp;lt;tbody&amp;gt;
+ &amp;lt;xsl:for-each select=&amp;#34;bibliotheque/livre&amp;#34;&amp;gt;
+ &amp;lt;xsl:sort select=&amp;#34;annee&amp;#34;/&amp;gt;
+ &amp;lt;tr&amp;gt;
+ &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;xsl:value-of select=&amp;#34;titre&amp;#34;/&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+ &amp;lt;td&amp;gt;&amp;lt;xsl:value-of select=&amp;#34;auteur&amp;#34;/&amp;gt;&amp;lt;/td&amp;gt;
+ &amp;lt;td&amp;gt;&amp;lt;xsl:value-of select=&amp;#34;annee&amp;#34;/&amp;gt;&amp;lt;/td&amp;gt;
+ &amp;lt;td&amp;gt;&amp;lt;xsl:value-of select=&amp;#34;prix&amp;#34;/&amp;gt; &amp;lt;xsl:value-of select=&amp;#34;prix/@devise&amp;#34;/&amp;gt;&amp;lt;/td&amp;gt;
+ &amp;lt;/tr&amp;gt;
+ &amp;lt;/xsl:for-each&amp;gt;
+ &amp;lt;/tbody&amp;gt;
+ &amp;lt;/table&amp;gt;
+ &amp;lt;/body&amp;gt;
+ &amp;lt;/html&amp;gt;
+ &amp;lt;/xsl:template&amp;gt;
+&amp;lt;/xsl:stylesheet&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
+ 
+ &lt;div class='export-file-block'&gt;&lt;div class='export-file-name'&gt;livres.xml&lt;/div&gt;&lt;textarea&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&amp;lt;bibliotheque&amp;gt;
+ &amp;lt;livre isbn=&amp;#34;978-2070416080&amp;#34;&amp;gt;
+ &amp;lt;titre&amp;gt;L&amp;#39;Étranger&amp;lt;/titre&amp;gt;
+ &amp;lt;auteur&amp;gt;Albert Camus&amp;lt;/auteur&amp;gt;
+ &amp;lt;annee&amp;gt;1942&amp;lt;/annee&amp;gt;
+ &amp;lt;prix devise=&amp;#34;EUR&amp;#34;&amp;gt;7.50&amp;lt;/prix&amp;gt;
+ &amp;lt;/livre&amp;gt;
+ &amp;lt;livre isbn=&amp;#34;978-2253004226&amp;#34;&amp;gt;
+ &amp;lt;titre&amp;gt;Le Petit Prince&amp;lt;/titre&amp;gt;
+ &amp;lt;auteur&amp;gt;Antoine de Saint-Exupéry&amp;lt;/auteur&amp;gt;
+ &amp;lt;annee&amp;gt;1943&amp;lt;/annee&amp;gt;
+ &amp;lt;prix devise=&amp;#34;EUR&amp;#34;&amp;gt;6.90&amp;lt;/prix&amp;gt;
+ &amp;lt;/livre&amp;gt;
+ &amp;lt;livre isbn=&amp;#34;978-0140449136&amp;#34;&amp;gt;
+ &amp;lt;titre&amp;gt;1984&amp;lt;/titre&amp;gt;
+ &amp;lt;auteur&amp;gt;George Orwell&amp;lt;/auteur&amp;gt;
+ &amp;lt;annee&amp;gt;1949&amp;lt;/annee&amp;gt;
+ &amp;lt;prix devise=&amp;#34;EUR&amp;#34;&amp;gt;9.20&amp;lt;/prix&amp;gt;
+ &amp;lt;/livre&amp;gt;
+&amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1767046077488320304-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;div class="export-result"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;(function(){
+ var root = document.getElementById('java-multirunner-1767046077488320304');
+ if (!root) return;
+ var form = root.querySelector('form');
+ var resultDiv = root.querySelector('.export-result');
+ var endpoint = form.querySelector('.export-endpoint-var').value;
+ 
+ root.querySelectorAll('.export-file-block').forEach(function(block){
+ var name = block.querySelector('.export-file-name').textContent;
+ var ta = block.querySelector('textarea');
+ var mode = name.endsWith('.java') ? 'text/x-java' : 'text/plain';
+ var cm = CodeMirror.fromTextArea(ta, {
+ mode: mode,
+ theme: "eclipse",
+ lineNumbers: true,
+ indentUnit: 4,
+ tabSize: 4,
+ readOnly: false
+ });
+ block._cm = cm;
+ });
+ form.addEventListener('submit', function(e){
+ e.preventDefault();
+ var java_files = [];
+ var txt_files = [];
+ root.querySelectorAll('.export-file-block').forEach(function(block){
+ var name = block.querySelector('.export-file-name').textContent;
+ var code = block._cm.getValue();
+ if(name.endsWith('.java')) {
+ java_files.push({name:name, content:code});
+ } else {
+ txt_files.push({name:name, content:code});
+ }
+ });
+ resultDiv.textContent = 'Exécution en cours';
+ var dots = 0;
+ var execAnim = setInterval(function() {
+ dots = (dots + 1) % 4;
+ resultDiv.textContent = 'Exécution en cours' + '.'.repeat(dots);
+ }, 500);
+ 
+ var controller = new AbortController();
+ var timeoutId = setTimeout(function() { controller.abort(); }, 30000); 
+ fetch(endpoint, {
+ method: 'POST',
+ headers: {'Content-Type': 'application/json'},
+ body: JSON.stringify({ java_files: java_files, txt_files: txt_files }),
+ signal: controller.signal
+ })
+ .then(r =&gt; {
+ clearInterval(execAnim);
+ clearTimeout(timeoutId);
+ if (!r.ok &amp;&amp; r.status !== 400) {
+ throw new Error('Erreur HTTP ' + r.status + ' : ' + r.statusText);
+ }
+ return r.json();
+ })
+ .then(async function(data){
+ 
+ if (typeof data !== 'object') {
+ try { data = JSON.parse(data); } catch(e) { resultDiv.textContent = data; return; }
+ }
+ if (data.status === 'ran_successfully') {
+ 
+ function escapeHtml(str) {
+ return str.replace(/[&amp;&lt;&gt;"']/g, function(c) {
+ return {'&amp;':'&amp;amp;','&lt;':'&amp;lt;','&gt;':'&amp;gt;','"':'&amp;quot;','\'':'&amp;#39;'}[c];
+ });
+ }
+ resultDiv.innerHTML = '&lt;pre style="color:#222;background:#e0ffe0;padding:12px;border-radius:6px;"&gt;' +
+ escapeHtml(data.output || '') + '&lt;/pre&gt;';
+ 
+ root.querySelectorAll('.export-file-block').forEach(block =&gt; {
+ if (block._cm) {
+ block._cm.operation(() =&gt; {
+ block._cm.getAllMarks().forEach(m =&gt; m.clear());
+ });
+ }
+ });
+ } else if (data.status === 'compiling' || data.status == "running") {
+ resultDiv.innerHTML = '&lt;pre style="color:#c00;background:#ffe0e0;padding:12px;border-radius:6px;"&gt;' +
+ (data.error || '').replace(/\n/g, '&lt;br&gt;') + '&lt;/pre&gt;';
+ 
+ const errorText = data.error || '';
+ const errorRegex = /([\w./\\-]+\.java):(\d+): error: ([^\n]+)([\s\S]*?)(?=\n[\w./\\-]+\.java:|$)/g;
+ let match;
+ root.querySelectorAll('.export-file-block').forEach(block =&gt; {
+ if (block._cm) {
+ block._cm.operation(() =&gt; {
+ block._cm.getAllMarks().forEach(m =&gt; m.clear());
+ });
+ }
+ });
+ while ((match = errorRegex.exec(errorText)) !== null) {
+ const [_, file, lineStr, msg, details] = match;
+ const line = parseInt(lineStr, 10) - 1;
+ root.querySelectorAll('.export-file-block').forEach(block =&gt; {
+ const name = block.querySelector('.export-file-name').textContent;
+ if (name === file || name.endsWith('/'+file) || name.endsWith('\\'+file)) {
+ if (block._cm) {
+ block._cm.operation(() =&gt; {
+ block._cm.markText({line, ch:0}, {line:line+1, ch:0}, {
+ className: 'cm-java-error',
+ title: (msg + (details ? details.replace(/\s+/g, ' ') : '')).trim()
+ });
+ 
+ const lineHandle = block._cm.getLineHandle(line);
+ if (lineHandle) {
+ block._cm.addLineClass(lineHandle, 'wrap', 'cm-java-error-line');
+ }
+ });
+ }
+ }
+ });
+ }
+ } else {
+ resultDiv.textContent = JSON.stringify(data, null, 2);
+ }
+ })
+ .catch(function(error){
+ clearInterval(execAnim);
+ clearTimeout(timeoutId);
+ if (error.name === 'AbortError') {
+ resultDiv.textContent = 'Erreur : délai d’attente dépassé (30 secondes).';
+ } else {
+ resultDiv.textContent = 'Erreur lors de la requête : ' + error;
+ }
+ });
+ });
+})();&lt;/script&gt;</description></item><item><title>Un peu plus de XSLT : fonctionnement de base, template et value-of</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/un_peu_plus_de_xslt_fonctionnement_de_base_template_et_value-of/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/un_peu_plus_de_xslt_fonctionnement_de_base_template_et_value-of/</guid><description>&lt;h1 id="un-peu-plus-de-xslt--fonctionnement-de-base-template-et-value-of"&gt;
+ Un peu plus de XSLT : fonctionnement de base, template et value-of
+ &lt;a class="anchor" href="#un-peu-plus-de-xslt--fonctionnement-de-base-template-et-value-of"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="-éléments-xsltemplate-"&gt;
+ « Éléments xsl:template »
+ &lt;a class="anchor" href="#-%c3%a9l%c3%a9ments-xsltemplate-"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans cette section, nous explorons les éléments xsl:template, qui sont essentiels pour définir des règles de transformation personnalisées dans les feuilles de style XSLT.&lt;/p&gt;
+&lt;p&gt;Modifions maintenant le fichier « xslt.xml » de façon à rendre l&amp;rsquo;expérience plus intéressante. Tout d&amp;rsquo;abord, traitons tous les éléments « facture » du document XML. Pour obtenir le résultat, il faut placer un élément « &amp;lt;xsl:template match=&amp;ldquo;facture&amp;rdquo;&amp;gt; » dans l&amp;rsquo;élément-racine du document XSLT comme ceci :&lt;/p&gt;</description></item><item><title>Les valeurs d’attribut</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_valeurs_dattribut/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_valeurs_dattribut/</guid><description>&lt;h1 id="les-valeurs-dattribut"&gt;
+ Les valeurs d’attribut
+ &lt;a class="anchor" href="#les-valeurs-dattribut"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="spécifier-les-valeurs-dattributs"&gt;
+ Spécifier les valeurs d&amp;rsquo;attributs
+ &lt;a class="anchor" href="#sp%c3%a9cifier-les-valeurs-dattributs"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Nous savons maintenant comment aller chercher la valeur d&amp;rsquo;un attribut en utilisant une expression XPath contenant le symbole « @ ». Cependant, qu&amp;rsquo;en est-il de la spécification des valeurs d&amp;rsquo;attributs? Supposons le document suivant :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;facture&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;montant&amp;gt;&lt;/span&gt;10.10&lt;span style="color:#0550ae"&gt;&amp;lt;/montant&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;/facture&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nous voulons le simplifier pour n&amp;rsquo;avoir que :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;facture&lt;/span&gt; &lt;span style="color:#1f2328"&gt;montant=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;10.10&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nous pouvons obtenir ce résultat en utilisant les accolades, pour indiquer une valeur XPath comme valeur d&amp;rsquo;attribut, de la façon suivante :&lt;/p&gt;</description></item><item><title>XSLT modulaire</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_modulaire/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_modulaire/</guid><description>&lt;h1 id="xslt-modulaire"&gt;
+ XSLT modulaire
+ &lt;a class="anchor" href="#xslt-modulaire"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="modularité-avec-les-éléments--xslapply-templates-"&gt;
+ Modularité avec les éléments « xsl:apply-templates »
+ &lt;a class="anchor" href="#modularit%c3%a9-avec-les-%c3%a9l%c3%a9ments--xslapply-templates-"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Cette section explique comment utiliser l&amp;rsquo;élément xsl:apply-templates pour rendre les feuilles de style XSLT plus modulaires et réutilisables, en évitant la répétition de code.&lt;/p&gt;
+&lt;p&gt;Notre fichier « xslt.xml » se complexifie et devient plus difficile à comprendre. Tout est dans un seul modèle, le modèle &lt;em&gt;facture&lt;/em&gt;. Pour simuler un problème probable, imaginons que notre XML est plus complexe et prend la forme :&lt;/p&gt;</description></item><item><title>Les noms d’éléments</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_noms_delements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_noms_delements/</guid><description>&lt;h1 id="les-noms-déléments"&gt;
+ Les noms d’éléments
+ &lt;a class="anchor" href="#les-noms-d%c3%a9l%c3%a9ments"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="capturer-le-nom-dun-élément"&gt;
+ Capturer le nom d&amp;rsquo;un élément
+ &lt;a class="anchor" href="#capturer-le-nom-dun-%c3%a9l%c3%a9ment"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans cette section, nous apprenons à capturer et afficher les noms des éléments XML en utilisant les fonctions XPath name, local-name et namespace-uri.&lt;/p&gt;
+&lt;p&gt;Supposons que nous voulions afficher uniquement les noms des éléments (sans
+leur contenu). Nous pouvons
+obtenir ce résultat avec la fonction XPath « name » qui donne le
+nom de l&amp;rsquo;élément.
+La fonction name inclut le préfixe de l&amp;rsquo;espace de noms. Si on souhaite le
+nom de l&amp;rsquo;élément sans
+le préfixe, on peut utiliser la fonction « local-name ». La
+fonction
+« namespace-uri » donne l&amp;rsquo;URI de l&amp;rsquo;espace de noms de l&amp;rsquo;élément.&lt;/p&gt;</description></item><item><title>Attribut mode</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/attribut_mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/attribut_mode/</guid><description>&lt;h1 id="attribut-mode"&gt;
+ Attribut mode
+ &lt;a class="anchor" href="#attribut-mode"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="utilisation-de-lattribut--mode-"&gt;
+ Utilisation de l&amp;rsquo;attribut « mode »
+ &lt;a class="anchor" href="#utilisation-de-lattribut--mode-"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans cette section, nous explorons l&amp;rsquo;utilisation de l&amp;rsquo;attribut mode en XSLT, qui permet de définir plusieurs modèles pour le même élément et de les appliquer sélectivement pour créer des vues différentes du document XML.&lt;/p&gt;
+&lt;p&gt;Il arrive que nous voulions définir plus d&amp;rsquo;un modèle pour un élément donné.
+Nous pouvons ajouter des modèles en utilisant l&amp;rsquo;attribut « mode »
+qui s&amp;rsquo;applique aux
+éléments « xsl:apply-templates » et « xsl:template ». La
+règle est très simple :
+si votre élément « xsl:apply-templates » a une valeur d&amp;rsquo;attribut
+pour « mode », alors
+seuls les éléments « xsl:template » ayant la même valeur
+d&amp;rsquo;attribut pour « mode » s&amp;rsquo;appliquent.
+On utilise souvent l&amp;rsquo;attribut « mode » pour faire des tables des
+matières.&lt;/p&gt;</description></item><item><title>La fonction generate-id</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/la_fonction_generate-id/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/la_fonction_generate-id/</guid><description>&lt;h1 id="la-fonction-generate-id"&gt;
+ La fonction generate-id
+ &lt;a class="anchor" href="#la-fonction-generate-id"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="fonction--generate-id-"&gt;
+ Fonction « generate-id »
+ &lt;a class="anchor" href="#fonction--generate-id-"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans cette section, nous découvrons la fonction generate-id en XSLT, qui permet de générer des identifiants uniques pour les éléments XML, utiles pour créer des références ou des ancres dans les documents transformés.&lt;/p&gt;
+&lt;p&gt;La fonction XSLT « generate-id » génère un « nom » unique
+pour chaque élément d&amp;rsquo;un document XML.
+Ce nom sera toujours le même pour un même élément, même si nous le
+rencontrons à plusieurs reprises.
+Si nous reprenons la liste des cours de l&amp;rsquo;exemple précédent sur
+l&amp;rsquo;utilisation de l&amp;rsquo;attribut « mode »,
+nous pourrions générer un identifiant unique pour chaque cours et l&amp;rsquo;afficher
+comme dans l&amp;rsquo;exemple de document XSLT qui suit :&lt;/p&gt;</description></item><item><title>Les tests</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_tests/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_tests/</guid><description>&lt;h1 id="les-tests"&gt;
+ Les tests
+ &lt;a class="anchor" href="#les-tests"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="utilisation-des-tests"&gt;
+ Utilisation des tests
+ &lt;a class="anchor" href="#utilisation-des-tests"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans cette section, nous apprenons à utiliser les tests conditionnels en XSLT avec les éléments xsl:if et xsl:choose, permettant de contrôler le flux de transformation basé sur des conditions XPath.&lt;/p&gt;
+&lt;p&gt;Nous pouvons tester des conditions à l&amp;rsquo;aide d&amp;rsquo;expressions XPath contenant
+les symboles « &amp;lt; », « = », « != »,
+« or », « and », « &amp;gt; »,
+« &amp;gt;= », « &amp;lt;= ».
+Nous utilisons les tests en XSLT avec les éléments « xsl:choose »
+et « xsl:if ».
+Par exemple, faire quelque chose de particulier, si le nom de l&amp;rsquo;élément
+courant est « montant ».&lt;/p&gt;</description></item><item><title>Les boucles</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_boucles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_boucles/</guid><description>&lt;h1 id="les-boucles"&gt;
+ Les boucles
+ &lt;a class="anchor" href="#les-boucles"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="utiliser-xslt-comme-base-de-données-et-éléments--for-each-"&gt;
+ Utiliser XSLT comme base de données et éléments « for-each »
+ &lt;a class="anchor" href="#utiliser-xslt-comme-base-de-donn%c3%a9es-et-%c3%a9l%c3%a9ments--for-each-"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans cette section, nous explorons l&amp;rsquo;utilisation de XSLT pour traiter des séquences d&amp;rsquo;éléments avec l&amp;rsquo;élément xsl:for-each, permettant de boucler sur des nœuds sélectionnés par XPath et d&amp;rsquo;effectuer des opérations répétitives.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;exemple de la liste des clients avec leur numéro de téléphone nous permet
+de faire plus. Tout d&amp;rsquo;abord, l&amp;rsquo;expression « //client » donne une
+séquence de tous les éléments « client »
+dans le nœud courant.
+Avec l&amp;rsquo;expression XPath « //client[nom=&amp;lsquo;Sylvain&amp;rsquo;] », nous pouvons
+obtenir la séquence de tous les
+éléments « client » ayant pour nom « Sylvain ». Dans ce
+cas précis, il y a plus d&amp;rsquo;un élément
+dans la réponse. Pour visiter l&amp;rsquo;ensemble des éléments dans la séquence,
+il suffit d&amp;rsquo;utiliser l&amp;rsquo;élément « xsl:for-each » comme ceci :&lt;/p&gt;</description></item><item><title>Clés et aggrégation</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/cles_et_aggregation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/cles_et_aggregation/</guid><description>&lt;h1 id="clés-et-aggrégation"&gt;
+ Clés et aggrégation
+ &lt;a class="anchor" href="#cl%c3%a9s-et-aggr%c3%a9gation"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="obtenir-laggrégation-avec-la-fonction--generate-id-"&gt;
+ Obtenir l&amp;rsquo;aggrégation avec la fonction « generate-id »
+ &lt;a class="anchor" href="#obtenir-laggr%c3%a9gation-avec-la-fonction--generate-id-"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Supposons qu&amp;rsquo;on veuille calculer le total des
+éléments « quantite », mais en faisant l&amp;rsquo;aggrégation
+pour chaque valeur de l&amp;rsquo;attribut « type » dans l&amp;rsquo;exemple suivant.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#57606a"&gt;&amp;lt;?xml-stylesheet href=&amp;#34;produits.xsl&amp;#34; type=&amp;#34;text/xsl&amp;#34; ?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;produits&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;france&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;quantite&lt;/span&gt; &lt;span style="color:#1f2328"&gt;type=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;bain&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;53&lt;span style="color:#0550ae"&gt;&amp;lt;/quantite&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;quantite&lt;/span&gt; &lt;span style="color:#1f2328"&gt;type=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chambre&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;12&lt;span style="color:#0550ae"&gt;&amp;lt;/quantite&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/france&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;canada&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;quantite&lt;/span&gt; &lt;span style="color:#1f2328"&gt;type=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;bain&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;14&lt;span style="color:#0550ae"&gt;&amp;lt;/quantite&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;quantite&lt;/span&gt; &lt;span style="color:#1f2328"&gt;type=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chambre&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;12&lt;span style="color:#0550ae"&gt;&amp;lt;/quantite&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/canada&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/produits&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On pourrait tenter de résoudre ce problème avec une expression
+XPath de la forme « sum(//quantite[@type=current()/@type]) ».
+Malheureusement, on risque
+alors de calculer plusieurs fois la même somme. Par exemple, tentez
+d&amp;rsquo;appliquer
+la transformation suivante :&lt;/p&gt;</description></item><item><title>Générer des noeuds dynamiquement</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/generer_des_noeuds_dynamiquement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/generer_des_noeuds_dynamiquement/</guid><description>&lt;h1 id="générer-des-noeuds-dynamiquement"&gt;
+ Générer des noeuds dynamiquement
+ &lt;a class="anchor" href="#g%c3%a9n%c3%a9rer-des-noeuds-dynamiquement"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="générer-un-commentaire"&gt;
+ Générer un commentaire
+ &lt;a class="anchor" href="#g%c3%a9n%c3%a9rer-un-commentaire"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Cette section explique comment générer des commentaires dans la sortie XML à l&amp;rsquo;aide de XSLT.&lt;/p&gt;
+&lt;p&gt;Il arrive qu&amp;rsquo;on veuille produire un commentaire dans la sortie XML. Rien
+de plus simple ! Il suffit d&amp;rsquo;utiliser l&amp;rsquo;instruction xsl:comment comme
+dans cet
+exemple :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:stylesheet&lt;/span&gt; &lt;span style="color:#1f2328"&gt;version=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;1.0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;xmlns:xsl=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;http://www.w3.org/1999/XSL/Transform&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:comment&amp;gt;&lt;/span&gt;Ceci est un commentaire.&lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:comment&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:stylesheet&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le résultat devrait ressembler à ceci :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#57606a"&gt;&amp;lt;!--Ceci est un commentaire.--&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="créer-des-éléments-dynamiquement-avec--xslelement-"&gt;
+ Créer des éléments dynamiquement avec « xsl:element »
+ &lt;a class="anchor" href="#cr%c3%a9er-des-%c3%a9l%c3%a9ments-dynamiquement-avec--xslelement-"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Cette section montre comment créer des éléments XML dynamiquement en utilisant xsl:element et xsl:attribute.&lt;/p&gt;</description></item><item><title>Variables et paramètres</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/variables_et_parametres/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/variables_et_parametres/</guid><description>&lt;h1&gt;
+ Variables et paramètres
+&lt;/h1&gt;
+&lt;h2&gt;
+ Les variables
+&lt;/h2&gt;
+&lt;p&gt;
+ Il est possible, en XSLT, de définir des variables, mais elles sont
+ « immutables » (« dont la valeur ne peut être
+ modifiée »).
+ On peut se demander, à juste titre, si les mots variables et immutables vont
+ bien
+ ensemble, mais c'est ainsi que les inventeurs du XSLT se sont exprimés.
+ Pour définir une variable nommée « test », on utilise
+ l'élément
+ « &amp;lt;xsl:variable name="test" select="xxx" /&amp;gt; ». La variable
+ contiendra alors le résultat de l'expression XPath contenue dans l'attribut
+ « select ». On fait référence à la variable dans d'autres
+ expressions XPath en utilisant le symbole « $ ». Ainsi, si la variable se
+ nomme test, l'expression $test aura comme valeur la valeur de la variable.
+ L'exemple suivant peut être utilisé pour remplacer tous les éléments
+ « produit » par le noeud de texte « bozo ».
+&lt;/p&gt;</description></item><item><title>Mise en forme</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/mise_en_forme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/mise_en_forme/</guid><description>&lt;h1 id="mise-en-forme"&gt;
+ Mise en forme
+ &lt;a class="anchor" href="#mise-en-forme"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="format-et-mise-en-forme"&gt;
+ Format et mise en forme
+ &lt;a class="anchor" href="#format-et-mise-en-forme"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Cette section explique comment contrôler le format de sortie des transformations XSLT.&lt;/p&gt;
+&lt;p&gt;Par défaut, le document créé par une transformation XSLT est en XML, sauf si
+le nœud-racine est nommé HTML et qu&amp;rsquo;il est précédé uniquement d&amp;rsquo;espaces et
+de retours de charriot, auquel cas le document créé est un document HTML.
+L&amp;rsquo;instruction xsl:output permet de spécifier explicitement le format du
+document
+nouvellement créé comme étant en XML, en HTML ou même au format texte (sans
+balise). On peut aussi spécifier l&amp;rsquo;encodage des caractères ainsi que
+l&amp;rsquo;indentation
+des éléments. Voici des exemples :&lt;/p&gt;</description></item><item><title>Espaces de noms</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/espaces_de_noms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/espaces_de_noms/</guid><description>&lt;h1 id="espaces-de-noms"&gt;
+ Espaces de noms
+ &lt;a class="anchor" href="#espaces-de-noms"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="espaces-de-noms-1"&gt;
+ Espaces de noms
+ &lt;a class="anchor" href="#espaces-de-noms-1"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Cette section explique comment travailler avec les espaces de noms XML en XSLT.&lt;/p&gt;
+&lt;p&gt;Les espaces de noms sont supportés et ne posent pas de problème. Il suffit
+de définir les préfixes, comme on le fait habituellement. Par exemple,
+considérons le code XML suivant :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt; version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34; ?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#57606a"&gt;&amp;lt;?xml-stylesheet href=&amp;#34;class2.xsl&amp;#34; type=&amp;#34;text/xsl&amp;#34; ?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;université&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;étudiant&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;n:nom&lt;/span&gt; &lt;span style="color:#1f2328"&gt;xmlns:n=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;http://www.mondomaine.com/&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;Réjean
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Tremblay&lt;span style="color:#0550ae"&gt;&amp;lt;/n:nom&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/étudiant&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/université&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pour afficher le nom de l&amp;rsquo;étudiant, il suffira d&amp;rsquo;utiliser
+le document XSLT suivant :&lt;/p&gt;</description></item><item><title>Les axes</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_axes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_axes/</guid><description>&lt;h1 class=""&gt;
+ Les axes
+&lt;/h1&gt;
+&lt;h2 class="recall"&gt;
+ Les axes
+&lt;/h2&gt;
+&lt;p&gt;
+ Par défaut, l'expression XPath « nom » désigne les éléments
+ « nom » qui sont des enfants du nœud courant. On peut aussi
+ écrire « child::nom ». De la même manière, « nom[2] » ou
+ « child::nom[2] » désigne le second enfant du nœud courant.
+ Il est possible
+ de changer ce comportement en choisissant un axe différent.
+&lt;/p&gt;
+&lt;ul&gt;
+ &lt;li&gt;
+ « child » : il s'agit de l'axe par défaut,
+ « child::nom[3] » désigne le troisième élément
+ « nom » enfant du nœud courant.
+ &lt;/li&gt;
+ &lt;li&gt;
+ « parent » : l'axe « parent » est pratiquement
+ inutile, « parent::nom » désigne l'élément parent si celui-ci
+ se nomme « nom ». En général, il est plus simple d'utiliser la
+ syntaxe « .. » qui est équivalente à
+ « parent::node() ».
+ &lt;/li&gt;
+ &lt;li&gt;
+ « attribute » : la syntaxe « attribute:: »
+ n'est pas utilisée, on préfère la notation « @nom » qui
+ signifie la même chose que « attribute::nom ».
+ &lt;/li&gt;
+ &lt;li&gt;
+ « ancestor » : la syntaxe « ancestor::nom »
+ désigne les éléments de nom « nom » dans lesquels le nœud
+ courant est contenu. On peut tester si le nœud courant est contenu dans
+ un paragraphe avec la syntaxe &amp;lt;xsl:if
+ test="ancestor::paragraphe"&amp;gt;...&amp;lt;/xsl:if&amp;gt;.
+ &lt;/li&gt;
+ &lt;li&gt;
+ « ancestor-or-self » : idem que l'axe ancestor exception
+ faite que l'on inclut le nœud courant, on pourrait donc tester si nœud
+ courant est contenu dans un paragraphe ou s'il est lui-même un
+ paragraphe avec la syntaxe &amp;lt;xsl:if
+ test="ancestor-or-self::paragraphe"&amp;gt;...&amp;lt;/xsl:if&amp;gt;.
+ &lt;/li&gt;
+ &lt;li&gt;
+ « preceding-sibling » : cet axe consulte en séquence les
+ frères du nœud courant, c'est-à-dire les nœud ayant le même parent, qui
+ apparaissent avant le nœud courant. Par exemple,
+ « preceding-sibling::nom[2] » cherche le second élément-frère
+ apparaissant avant le nœud courant.
+ &lt;/li&gt;
+ &lt;li&gt;
+ « following-sibling » : voir l'axe
+ « preceding-sibling », mais à l'envers (
+ &lt;b&gt;
+ après
+ &lt;/b&gt;
+ le nœud
+ courant).
+ &lt;/li&gt;
+ &lt;li&gt;
+ « preceding » : cet axe est similaire à
+ « preceding-sibling », mais on traverse tous les nœuds qui se
+ sont terminés avant nœud courant. Par exemple,
+ « preceding::nom[2] » cherche le second élément apparaissant
+ avant le nœud courant, même s'il n'a pas le même parent.
+ &lt;/li&gt;
+ &lt;li&gt;
+ « following » : voir l'axe « preceding », mais
+ à l'envers.
+ &lt;/li&gt;
+ &lt;li&gt;
+ « descendant  » : voir l'axe « ancestor », mais
+ à l'envers.
+ &lt;/li&gt;
+ &lt;li&gt;
+ « descendant-or-self » : voir l'axe
+ « ancestor-or-self », mais à l'envers.
+ &lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Étude d’un exemple (DocBook)</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/etude_dun_exemple_docbook/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/etude_dun_exemple_docbook/</guid><description>&lt;h1 id="étude-dun-exemple-docbook"&gt;
+ Étude d’un exemple (DocBook)
+ &lt;a class="anchor" href="#%c3%a9tude-dun-exemple-docbook"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="létude-dun-exemple-docbookxslt"&gt;
+ L&amp;rsquo;étude d&amp;rsquo;un exemple: docbook.xslt
+ &lt;a class="anchor" href="#l%c3%a9tude-dun-exemple-docbookxslt"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;On peut utiliser &lt;a href="http://www.google.com"&gt;un document XSLT pour transformer des documents DocBook simple en HTML&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Nous allons passer en revue brièvement les éléments « xsl:template » qu&amp;rsquo;il contient.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;xsl:stylesheet&lt;/span&gt; &lt;span style="color:#1f2328"&gt;version=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;1.0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;xmlns:xsl=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;http://www.w3.org/1999/XSL/Transform&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:output&lt;/span&gt; &lt;span style="color:#1f2328"&gt;method=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;html&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;indent=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;yes&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;encoding=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;ISO-8859-1&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;book&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;head&amp;gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;bookinfo&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;body&amp;gt;&amp;lt;h1&amp;gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;bookinfo/title&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;p&lt;/span&gt; &lt;span style="color:#1f2328"&gt;style=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;text-indent:1em;&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;bookinfo/author/firstname&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:text&amp;gt;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:text&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;bookinfo/author/surname&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#6639ba"&gt;&amp;amp;#169;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;bookinfo/copyright/year&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/p&amp;gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Table des matières&lt;span style="color:#0550ae"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;ul&amp;gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chapter&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;mode=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;tdm&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chapter&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;bookinfo&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;title&amp;gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;title&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; par &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;author/firstname&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;xsl:text&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:text&amp;gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;author/surname&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chapter&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;mode=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;tdm&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span style="color:#1f2328"&gt;href=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;#{generate-id(.)}&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:number&lt;/span&gt; &lt;span style="color:#1f2328"&gt;format=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;digit&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;lang=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;fr&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;count=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chapter&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;title&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;ul&amp;gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;section&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;mode=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;tdm&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;section&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;mode=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;tdm&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span style="color:#1f2328"&gt;href=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;#{generate-id(.)}&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:number&lt;/span&gt; &lt;span style="color:#1f2328"&gt;format=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;digit&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;lang=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;fr&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;count=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chapter&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:number&lt;/span&gt; &lt;span style="color:#1f2328"&gt;format=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;digit&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;lang=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;fr&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;count=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;section&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:text&amp;gt;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:text&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;title&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chapter&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;h2&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span style="color:#1f2328"&gt;name=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;{generate-id(.)}&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;Chapitre
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:number&lt;/span&gt; &lt;span style="color:#1f2328"&gt;format=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;digit&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;lang=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;fr&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;count=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chapter&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;.&lt;span style="color:#0550ae"&gt;&amp;lt;xsl:text&amp;gt;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:text&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;title&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;div&lt;/span&gt; &lt;span style="color:#1f2328"&gt;style=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;margin-left:1em&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;section&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;section&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;h3&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span style="color:#1f2328"&gt;name=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;{generate-id(.)}&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:number&lt;/span&gt; &lt;span style="color:#1f2328"&gt;format=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;digit&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;lang=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;fr&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;count=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;chapter&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:number&lt;/span&gt; &lt;span style="color:#1f2328"&gt;format=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;digit&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;lang=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;fr&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;count=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;section&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:text&amp;gt;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:text&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span style="color:#1f2328"&gt;select=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;title&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;div&lt;/span&gt; &lt;span style="color:#1f2328"&gt;style=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;margin-left:1em&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:apply-templates/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;itemizedlist&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;ul&lt;/span&gt; &lt;span style="color:#1f2328"&gt;style=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;margin-left:1em&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;orderedlist&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;ol&lt;/span&gt; &lt;span style="color:#1f2328"&gt;style=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;margin-left:1em&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;listitem&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;li&lt;/span&gt; &lt;span style="color:#1f2328"&gt;style=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;text-indent:0.5em&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;programlisting&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;pre&lt;/span&gt; &lt;span style="color:#1f2328"&gt;style=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;color:blue;background-color:rgb(200,200,200);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0a3069"&gt; margin-left:1em&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&amp;lt;code&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;para&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:choose&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:when&lt;/span&gt; &lt;span style="color:#1f2328"&gt;test=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;name(..) =
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0a3069"&gt; &amp;#39;listitem&amp;#39;&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/xsl:when&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:otherwise&amp;gt;&amp;lt;p&amp;gt;&amp;lt;xsl:apply-templates&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:otherwise&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:choose&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;title&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:stylesheet&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le premier élément « xsl:template » sert à capturer l&amp;rsquo;élément « book ». Comme il s&amp;rsquo;agit de l&amp;rsquo;élément-racine, on en profite pour produire les éléments « html », « head » et « body ». Le contenu de l&amp;rsquo;élément « head » sera rempli par l&amp;rsquo;élément « xsl:template » traitant l&amp;rsquo;élément DocBook « bookinfo ». On affiche immédiatement le prénom et le nom de l&amp;rsquo;auteur à l&amp;rsquo;aide des expressions XPath « bookinfo/author/firstname » et « bookinfo/author/surname ». Notez l&amp;rsquo;utilisation de l&amp;rsquo;élément &lt;a href="xsl:text"&gt;xsl:text&lt;/a&gt; &amp;lt;/xsl:text&amp;gt; pour produire un espace entre le nom et le prénom. En effet, sans cet élément, il n&amp;rsquo;y aurait pas d&amp;rsquo;espace puisque les espaces et retours de charriot sont ignorés dans les fichiers XSLT. Le reste du document est produit avec les deux éléments « xsl:template » traitant les éléments « chapter » : on utilise le l&amp;rsquo;attribut mode « tdm » pour produire la table des matières, et le reste du document est produit avec le traitement des éléments « chapter » par défaut (sans attribut mode).&lt;/p&gt;</description></item><item><title>Laboratoire XSLT</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/laboratoire_xslt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/laboratoire_xslt/</guid><description>&lt;h1 class=""&gt;
+ Laboratoire XSLT
+&lt;/h1&gt;
+&lt;p&gt;
+ Vous pouvez maintenant expérimenter avec un document XSLT un peu plus
+ sophistiqué. Vous trouverez sur cette page un document DocBook et sa
+ transformation. Nous vous invitons à modifier la transformation et le
+ document XML d'origine afin de vous assurez que vous maîtrisez bien le XSLT.
+&lt;/p&gt;
+&lt;p&gt;
+ Instructions : il suffit de saisir un fichier XML source et une
+ transformation
+ XSLT valide et d'appuyer sur le bouton.
+&lt;/p&gt;
+&lt;p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.5;"&gt;
+ &lt;strong&gt;
+ Instructions :
+ &lt;/strong&gt;
+ &lt;span&gt;
+ Saisissez un fichier XML source et une transformation XSLT valide, puis cliquez sur « Transformer ». Vous pouvez réinitialiser les champs avec le bouton « Réinitialiser ».
+ &lt;/span&gt;
+ &lt;br/&gt;
+&lt;/p&gt;</description></item><item><title>Laboratoire XSLT avec Python (optionnel)</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/laboratoire_xslt_avec_python_optionnel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/laboratoire_xslt_avec_python_optionnel/</guid><description>&lt;h1&gt;
+ Laboratoire XSLT avec Python (optionnel)
+&lt;/h1&gt;
+Rendez vous sur le site
+&lt;a href="https://github.com/lemire/xsltpy"&gt;
+ xsltpy
+&lt;/a&gt;
+qui comprend une petite application Python capable de traiter du XSLT et du XML. Suivez les consignes.</description></item><item><title>XSLT 2.0 et 3.0</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_20_et_30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_20_et_30/</guid><description>&lt;h1 class=""&gt;
+ XSLT 2.0 et 3.0
+&lt;/h1&gt;
+&lt;p&gt;
+ Nous nous sommes concentrés sur la version 1.0 du XSLT car elle est la plus répandue et la mieux supportée.
+&lt;/p&gt;
+&lt;p&gt;
+ Une nouvelle version du XSLT est disponible, nommée XSLT 2.0. Elle ajoute
+notamment la possibilité de générer plusieurs documents plutôt qu'un seul
+avec l'instruction xslt:result-document. On peut aussi traiter
+non seulement des fichiers XML, mais aussi d'autres types de fichiers
+dont les fichiers CSV (comma-separated values) générés par les
+chiffriers électroniques et bases de données. L'instruction « xsl:analyze-string » 
+permet de prendre appui sur les nouvelles possibilités du traitement des chaînes
+de caractères de XPath 2.0. L'instruction « xsl:function » permet quant à
+elle de définir de nouvelles fonctions qui pourront être utilisées au sein des
+expressions XPath. L'instruction « xsl:for-each-group » permet 
+ de visiter les nœuds par groupes : on peut ainsi visiter
+tous les éléments etudiant en les regroupant selon la valeur de leur attribut nom.
+&lt;/p&gt;</description></item><item><title>Autoévaluation</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/autoevaluation_xslt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/autoevaluation_xslt/</guid><description>&lt;h1 class=""&gt;
+ Autoévaluation
+&lt;/h1&gt;
+&lt;h2&gt;
+ Questionnaire d'autoévaluation
+&lt;/h2&gt;
+&lt;p&gt;
+ Le bouton « Vérifier ma réponse » donne accès à un script qui, en
+ plus de vous permettre
+ de vérifier vos réponses, fournit une courte explication.
+ Si tous les commentaires sont en
+ &lt;span style="color:blue"&gt;
+ bleu
+ &lt;/span&gt;
+ , c'est
+ que vous avez la bonne réponse;
+ sinon, lisez les commentaires en
+ &lt;span style="color:red"&gt;
+ rouge
+ &lt;/span&gt;
+ pour
+ comprendre votre erreur.
+ Puis, essayez de nouveau en cliquant sur le bouton
+ « Recommencer ».
+&lt;/p&gt;</description></item></channel></rss>

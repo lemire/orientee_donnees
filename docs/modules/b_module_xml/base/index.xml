@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Les fondements on Programmation orientée-données</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/</link><description>Recent content in Les fondements on Programmation orientée-données</description><generator>Hugo</generator><language>fr</language><atom:link href="https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction à XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/introduction_a_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/introduction_a_xml/</guid><description>&lt;h1&gt;
+ Introduction à XML
+&lt;/h1&gt;
+&lt;p&gt;
+ Le XML est un « métalangage » permettant d'échanger de l'information, principalement sur le web. Il a été conçu par Tim Bray, Jon Bosak et de nombreux autres collaborateurs, entre 1996 et 1999. On dit que c'est un « métalangage » parce qu'il est une façon pratique de créer de nouveaux
+ &lt;i&gt;
+ langages
+ &lt;/i&gt;
+ pour échanger des informations, mais qu'il ne constitue pas un langage en soi. On dit que le XML est « extensible » (peut être étendu) et que c'est un métalangage : les deux affirmations vont dans le même sens et notent la capacité du XML à s'adapter à des besoins différents.
+&lt;/p&gt;</description></item><item><title>Principes du XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/principes_du_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/principes_du_xml/</guid><description>&lt;h1 id="principes-du-xml"&gt;
+ Principes du XML
+ &lt;a class="anchor" href="#principes-du-xml"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="quelques-principes-et-notions-importantes-du-xml"&gt;
+ Quelques principes et notions importantes du XML
+ &lt;a class="anchor" href="#quelques-principes-et-notions-importantes-du-xml"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Rappelons qu&amp;rsquo;une &lt;strong&gt;balise&lt;/strong&gt; est un segment de texte commençant par &amp;lt; et se terminant par &amp;gt;. Par exemple, &lt;lavie&gt; est une balise qui marque le début de l&amp;rsquo;élément &lt;em&gt;lavie&lt;/em&gt;. Une balise commençant par &amp;lt;/, comme &lt;/lavie&gt;, est une balise de fin; dans cet exemple, elle termine l&amp;rsquo;élément &lt;em&gt;lavie&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Le &lt;strong&gt;nom XML&lt;/strong&gt; de la balise est le texte suivant le symbole &amp;lt; (ou &amp;lt;/ pour une balise de fin) et pouvant contenir n&amp;rsquo;importe quelle lettre ou chiffre (a, b,&amp;hellip; 0, 1, 2,&amp;hellip;) ou les quatre symboles de ponctuation, soit la marque de soulignement ( _ ), le trait d&amp;rsquo;union ( - ), les deux-points (:) ou le point (.); un nom XML ne peut contenir d&amp;rsquo;autres caractères spéciaux, ni un espace&amp;quot;. En outre, il ne peut pas commencer par un chiffre, un trait d&amp;rsquo;union ou un point. Par exemple, le nom XML de la balise &lt;lavie&gt; est « lavie », alors que la balise &amp;lt;7lavie&amp;gt; ne serait pas autorisée. On réserve les noms débutant par xml, Xml, xMl, xmL, XMl, xML,Xml et XML pour les spécifications XML. Ainsi, la balise &lt;xmldanslavie&gt; est à éviter.&lt;/p&gt;</description></item><item><title>Créer un fichier XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/creer_un_fichier_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/creer_un_fichier_xml/</guid><description>&lt;h1&gt;
+ Créer un fichier XML
+&lt;/h1&gt;
+&lt;p&gt;
+ Tous les systèmes d’exploitation fournissent un éditeur de texte. Windows a son Bloc-notes, macOS son TextEdit, et Linux propose de nombreux choix (vim, nano, gedit, etc.).
+&lt;/p&gt;
+&lt;p&gt;
+ Je vous recommande fortement d’utiliser
+ &lt;strong&gt;
+ &lt;a href="https://code.visualstudio.com"&gt;
+ Visual Studio Code
+ &lt;/a&gt;
+ &lt;/strong&gt;
+ : il est gratuit, multiplateforme (Windows, macOS, Linux), très léger, et il offre une excellente coloration syntaxique pour le XML, le HTML, etc.
+&lt;/p&gt;
+&lt;h2&gt;
+ Votre premier fichier XML
+&lt;/h2&gt;
+&lt;p&gt;
+ Comme premier exercice, créez un nouveau fichier et tapez le code suivant :
+&lt;/p&gt;</description></item><item><title>Mise en forme du XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/mise_en_forme_du_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/mise_en_forme_du_xml/</guid><description>&lt;p&gt;
+ Si vous utilisez un traitement de texte pour préparer votre travaux et que vous souhaitez présenter le code XML, vous pouvez utiliser cette application pour le mettre en forme. Saisissez votre code XML et copiez la version mise en forme. Vous pouvez ensuite la copier dans votre logiciel de traitement de texte.
+&lt;/p&gt;
+&lt;!-- Prism.js CSS (Default light theme for better Word compatibility) --&gt;
+&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet"/&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"&gt;
+&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"&gt;
+&lt;/script&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&amp;amp;display=swap" rel="stylesheet"/&gt;
+&lt;div id="warning" style="display: none; background: #ffcccc; color: #cc0000; padding: 10px; text-align: center; font-weight: bold;"&gt;
+ Attention : Une ou plusieurs lignes dépassent 80 caractères !
+&lt;/div&gt;
+&lt;div style="display: flex; flex-direction: column;"&gt;
+ &lt;div style="padding: 12px 20px; background: #007acc; color: white; font-weight: 600; font-size: 14px; display: flex; justify-content: space-between; align-items: center;"&gt;
+ Écrivez ou collez du code XML ici
+ &lt;/div&gt;
+ &lt;textarea autofocus="" id="input" spellcheck="false" style="resize: none; font-family: 'Fira Code', 'Consolas', monospace; font-size: 15px; padding: 20px; border: none; outline: none; background: #ffffff; color: #000000; line-height: 1.5; height: 10cm;"&gt;
+&lt;p&gt;&amp;lt;etudiant sexe=&amp;ldquo;M&amp;rdquo;&amp;gt;
+&amp;lt;nom&amp;gt;Jacques&amp;lt;/nom&amp;gt;
+&amp;lt;/etudiant&amp;gt;&lt;/p&gt;</description></item><item><title>Laboratoire sur la structure en arbre des documents XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/laboratoire_sur_la_structure_en_arbre_des_documents_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/laboratoire_sur_la_structure_en_arbre_des_documents_xml/</guid><description>&lt;h1&gt;
+ Laboratoire sur la structure en arbre des documents XML
+&lt;/h1&gt;
+&lt;p&gt;
+ Il est important de bien comprendre la structure en arbre des documents XML. Comme nous l’avons vu, un document XML
+ est arbre dont la racine est toujours le noeud-racine suivi normalement d’autres noeuds, comme des noeuds d’éléments.
+ Les différents noeuds sont ordonnés (si on interverti deux éléments, on crée de facto un nouveau document). Il faut
+ comprendre que les bouts de texte apparaissant dans un document XML sont noeuds à part entière.
+&lt;/p&gt;</description></item><item><title>Vérificateur de XML bien formé</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/labo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/labo/</guid><description>&lt;h1 id="vérificateur-de-xml-bien-formé"&gt;
+ Vérificateur de XML bien formé
+ &lt;a class="anchor" href="#v%c3%a9rificateur-de-xml-bien-form%c3%a9"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Collez votre document XML ci-dessous et cliquez sur le bouton pour vérifier s’il est bien formé.
+Vérifiez votre compréhension de la syntaxe XML en testant différents documents.&lt;/p&gt;
+&lt;textarea id="xmlInput" placeholder="Collez ici votre XML..." style="width: 100%; height: 300px; font-family: Consolas, Monaco, monospace; font-size: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"&gt;&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;catalogue&gt;&amp;#10;    &lt;livre id="1"&gt;&amp;#10;        &lt;titre&gt;Le Petit Prince&lt;/titre&gt;&amp;#10;        &lt;auteur&gt;Antoine de Saint-Exupéry&lt;/auteur&gt;&amp;#10;        &lt;année&gt;1943&lt;/année&gt;&amp;#10;    &lt;/livre&gt;&amp;#10;&lt;/catalogue&gt;&lt;/textarea&gt;
+&lt;p&gt;&lt;button onclick="verifierXML()" style="margin-top: 15px; padding: 10px 20px; font-size: 16px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;"&gt;Vérifier le XML&lt;/button&gt;&lt;/p&gt;</description></item><item><title>Autoévaluation XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/autoevaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/autoevaluation/</guid><description>&lt;h1 id="autoévaluation-xml"&gt;
+ Autoévaluation XML
+ &lt;a class="anchor" href="#auto%c3%a9valuation-xml"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin-bottom: 30px; border-left: 5px solid #2196f3;"&gt;
+ &lt;p&gt;Le bouton &lt;strong&gt;Vérifier mes réponses&lt;/strong&gt; vous indique immédiatement si vos choix sont corrects et vous donne une courte explication.&lt;/p&gt;
+ &lt;p&gt;Commentaires en &lt;span style="color:#155724;"&gt;vert&lt;/span&gt; = bonne réponse&lt;br&gt;
+ Commentaires contenant du &lt;span style="color:#721c24;"&gt;rouge&lt;/span&gt; = erreur, lisez l’explication.&lt;/p&gt;
+ &lt;p&gt;Vous pouvez recommencer à tout moment avec le bouton &lt;strong&gt;Recommencer le quiz&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;form id="quizForm"&gt;
+&lt;!-- Question 2 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 2 – Quelles sont les balises du document suivant ?&lt;/h2&gt;
+ &lt;pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;"&gt;&amp;lt;pageweb&amp;gt;
+&amp;lt;lien&amp;gt;http://www.google.com [Lien externe…]&amp;lt;/lien&amp;gt;
+&amp;lt;description&amp;gt;Un moteur de recherche&amp;lt;/description&amp;gt;
+&amp;lt;/pageweb&amp;gt;&lt;/pre&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q2" value="wrong1" style="margin-right: 10px;"&gt; http://www.google.com[…], Un moteur de recherche.&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q2" value="correct" style="margin-right: 10px;"&gt; &amp;lt;pageweb&amp;gt;, &amp;lt;lien&amp;gt;, &amp;lt;/lien&amp;gt;, &amp;lt;description&amp;gt;, &amp;lt;/description&amp;gt;, &amp;lt;/pageweb&amp;gt;&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q2" value="wrong3" style="margin-right: 10px;"&gt; &amp;lt;lien&amp;gt;http://www.google.com[…] &amp;lt;/lien&amp;gt;, &amp;lt;description&amp;gt;…&amp;lt;/description&amp;gt;&lt;/label&gt;
+ &lt;div class="feedback" id="fb2" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 6 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 6 – Hiérarchie (casse exacte) du document&lt;/h2&gt;
+ &lt;pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;"&gt;&amp;lt;classe&amp;gt;&amp;lt;etudiant&amp;gt;&amp;lt;prenom&amp;gt;Jean&amp;lt;/prenom&amp;gt;&amp;lt;nom&amp;gt;Laroche&amp;lt;/nom&amp;gt;&amp;lt;/etudiant&amp;gt;&amp;lt;etudiant&amp;gt;&amp;lt;prenom&amp;gt;Gaetan&amp;lt;/prenom&amp;gt;&amp;lt;nom&amp;gt;Roche&amp;lt;/nom&amp;gt;&amp;lt;/etudiant&amp;gt;&amp;lt;/classe&amp;gt;&lt;/pre&gt; &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q6" value="wrong" style="margin-right: 10px;"&gt; classe → Etudiant → … (majuscule)&lt;/label&gt;
+&lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q6" value="correct" style="margin-right: 10px;"&gt; classe → etudiant → prenom → Jean … (tout en minuscules sauf les données)&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q6" value="wrong3" style="margin-right: 10px;"&gt; classe → prenom → etudiant → …&lt;/label&gt;
+ &lt;div class="feedback" id="fb6" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 7 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 7 – Quels sont les noms des attributs ?&lt;/h2&gt;
+ &lt;pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;"&gt;&amp;lt;pageweb categorie="recherche"&amp;gt;
+&amp;lt;description type="court texte"&amp;gt;…&amp;lt;/description&amp;gt;
+&amp;lt;/pageweb&amp;gt;&lt;/pre&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q7" value="correct" style="margin-right: 10px;"&gt; categorie, type&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q7" value="wrong" style="margin-right: 10px;"&gt; "recherche", "court texte"&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q7" value="wrong3" style="margin-right: 10px;"&gt; pageweb, lien, description&lt;/label&gt;
+ &lt;div class="feedback" id="fb7" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 8 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 8 – Quelles sont les balises (ouvertes + fermantes) ?&lt;/h2&gt;
+ &lt;pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;"&gt;&amp;lt;pageweb categorie="recherche"&amp;gt;
+&amp;lt;description type="court texte"&amp;gt;…&amp;lt;/description&amp;gt;
+&amp;lt;/pageweb&amp;gt;&lt;/pre&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q8" value="wrong" style="margin-right: 10px;"&gt; categorie, type&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q8" value="wrong2" style="margin-right: 10px;"&gt; "recherche", "court texte"&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q8" value="correct" style="margin-right: 10px;"&gt; pageweb, description&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q8" value="wrong4" style="margin-right: 10px;"&gt; &amp;lt;pageweb categorie=…&amp;gt;, &amp;lt;description&amp;gt;, …&lt;/label&gt;
+ &lt;div class="feedback" id="fb8" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 9 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 9 – Quels sont les noms des éléments ?&lt;/h2&gt;
+ &lt;pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;"&gt;&amp;lt;pageweb categorie="recherche"&amp;gt;
+&amp;lt;description type="court texte"&amp;gt;…&amp;lt;/description&amp;gt;
+&amp;lt;/pageweb&amp;gt;&lt;/pre&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q9" value="wrong" style="margin-right: 10px;"&gt; categorie, type&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q9" value="wrong2" style="margin-right: 10px;"&gt; "recherche", "court texte"&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q9" value="correct" style="margin-right: 10px;"&gt; pageweb, description&lt;/label&gt;
+ &lt;div class="feedback" id="fb9" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 11 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 11 – Pourquoi a-t-on besoin d’entités en XML ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q11" value="correct" style="margin-right: 10px;"&gt; Parce qu’on ne pourrait pas utiliser le symbole &amp;lt; dans le contenu textuel (il marque le début d’une balise).&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q11" value="wrong" style="margin-right: 10px;"&gt; Parce qu’on ne pourrait pas utiliser uniquement le symbole &amp;gt;.&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q11" value="wrong3" style="margin-right: 10px;"&gt; Parce que les cinq caractères &amp;lt;, &amp;gt;, ', ", &amp;amp; sont tous strictement interdits.&lt;/label&gt;
+ &lt;div class="feedback" id="fb11" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 16 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 16 – Quelle est la forme correcte de la déclaration XML ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q16" value="wrong" style="margin-right: 10px;"&gt; &amp;lt;xml version="1.0" /&amp;gt;&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q16" value="wrong2" style="margin-right: 10px;"&gt; &amp;lt;?xml version="1.0" /&amp;gt;&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q16" value="correct" style="margin-right: 10px;"&gt; &amp;lt;?xml version="1.0"?&amp;gt;&lt;/label&gt;
+ &lt;div class="feedback" id="fb16" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 17 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 17 – Ce document est-il bien formé ?&lt;/h2&gt;
+ &lt;pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;"&gt;&amp;lt;?xml version="1.0"?&amp;gt;
+&amp;lt;ami age=19 &amp;gt;
+&amp;lt;/ami&amp;gt;&lt;/pre&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q17" value="wrong" style="margin-right: 10px;"&gt; Vrai&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q17" value="correct" style="margin-right: 10px;"&gt; Faux&lt;/label&gt;
+ &lt;div class="feedback" id="fb17" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 18 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 18 – Un élément ne peut-il pas être vide en XML ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q18" value="wrong" style="margin-right: 10px;"&gt; Vrai&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q18" value="correct" style="margin-right: 10px;"&gt; Faux&lt;/label&gt;
+ &lt;div class="feedback" id="fb18" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 19 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 19 – Lequel de ces noms n’est PAS permis pour un élément ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q19" value="wrong" style="margin-right: 10px;"&gt; x1&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q19" value="correct" style="margin-right: 10px;"&gt; 1x&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q19" value="wrong3" style="margin-right: 10px;"&gt; Nx&lt;/label&gt;
+ &lt;div class="feedback" id="fb19" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 20 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 20 – Lequel de ces noms EST permis pour un élément ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q20" value="correct" style="margin-right: 10px;"&gt; xmlcourse&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q20" value="wrong" style="margin-right: 10px;"&gt; 7eleven&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q20" value="wrong3" style="margin-right: 10px;"&gt; Joe Louis&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q20" value="wrong4" style="margin-right: 10px;"&gt; Aucune de ces réponses&lt;/label&gt;
+ &lt;div class="feedback" id="fb20" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 21 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 21 – Le XML préserve-t-il les espaces (blancs) entre les éléments ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q21" value="correct" style="margin-right: 10px;"&gt; Vrai&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q21" value="wrong" style="margin-right: 10px;"&gt; Faux&lt;/label&gt;
+ &lt;div class="feedback" id="fb21" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 22 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 22 – Combien de nœuds de texte contient ce document ?&lt;/h2&gt;
+ &lt;pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;"&gt;&amp;lt;?xml encoding="ISO-8859-1"?&amp;gt;
+&amp;lt;?xml version="1.0"?&amp;gt;
+&amp;lt;étudiant&amp;gt;
+&amp;lt;nom&amp;gt;Daniel Jacques&amp;lt;/nom&amp;gt;
+&amp;lt;cours&amp;gt;bibliothéconomie&amp;lt;/cours&amp;gt;
+&amp;lt;/étudiant&amp;gt;&lt;/pre&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q22" value="wrong" style="margin-right: 10px;"&gt; 2&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q22" value="correct" style="margin-right: 10px;"&gt; 5&lt;/label&gt;
+ &lt;div class="feedback" id="fb22" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 23 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 23 – Peut-il y avoir des nœuds de texte avant l’élément-racine ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q23" value="wrong" style="margin-right: 10px;"&gt; Vrai&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q23" value="correct" style="margin-right: 10px;"&gt; Faux&lt;/label&gt;
+ &lt;div class="feedback" id="fb23" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 24 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 24 – Peut-il y avoir des nœuds de texte après l’élément-racine ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q24" value="wrong" style="margin-right: 10px;"&gt; Vrai&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q24" value="correct" style="margin-right: 10px;"&gt; Faux&lt;/label&gt;
+ &lt;div class="feedback" id="fb24" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 25 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 25 – Un document avec 12 balises a forcément 6 éléments ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q25" value="wrong" style="margin-right: 10px;"&gt; Vrai&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q25" value="correct" style="margin-right: 10px;"&gt; Faux&lt;/label&gt;
+ &lt;div class="feedback" id="fb25" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Question 26 --&gt;
+&lt;div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"&gt;
+ &lt;h2&gt;Question 26 – Un document avec 12 balises peut-il avoir 12 nœuds de texte ?&lt;/h2&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q26" value="wrong" style="margin-right: 10px;"&gt; Vrai&lt;/label&gt;
+ &lt;label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"&gt;&lt;input type="radio" name="q26" value="correct" style="margin-right: 10px;"&gt; Faux&lt;/label&gt;
+ &lt;div class="feedback" id="fb26" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin: 40px 0;"&gt;
+ &lt;button type="button" id="checkBtn" style="background: #007bff; color: white; border: none; padding: 12px 24px; margin: 0 15px; border-radius: 5px; cursor: pointer; font-size: 16px;"&gt;Vérifier mes réponses&lt;/button&gt;
+ &lt;button type="button" id="resetBtn" style="background: #6c757d; color: white; border: none; padding: 12px 24px; margin: 0 15px; border-radius: 5px; cursor: pointer; font-size: 16px;"&gt;Recommencer le quiz&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style="text-align: center; margin: 20px 0; font-size: 18px; font-weight: bold; color: #28a745;" id="scoreDisplay"&gt;&lt;/div&gt;
+&lt;/form&gt;
+&lt;script&gt;
+document.getElementById('checkBtn').addEventListener('click', function() {
+ let score = 0;
+ const total = 17;
+ const answers = {
+ q2: "correct",
+ q6: "correct",
+ q7: "correct",
+ q8: "correct",
+ q9: "correct",
+ q11: "correct",
+ q16: "correct",
+ q17: "correct",
+ q18: "correct",
+ q19: "correct",
+ q20: "correct",
+ q21: "correct",
+ q22: "correct",
+ q23: "correct",
+ q24: "correct",
+ q25: "correct",
+ q26: "correct"
+ };
+ const explanations = {
+ q2: "Les balises sont les marqueurs &amp;lt;nom&amp;gt; et &amp;lt;/nom&amp;gt;. Le contenu texte n’est pas une balise.",
+ q6: "XML est sensible à la casse : les éléments sont écrits en minuscules (etudiant, prenom, nom).",
+ q7: "Les noms d’attributs sont « categorie » et « type », pas leurs valeurs.",
+ q8: "Les noms d’éléments (donc les balises) sont pageweb et description.",
+ q9: "Les noms d’éléments sont pageweb et description. Les attributs n’en font pas partie.",
+ q11: "Le caractère &amp;lt; est réservé car il introduit une balise ; il doit être échappé avec &amp;lt; dans le texte.",
+ q16: "La déclaration XML correcte est &amp;lt;?xml version=\"1.0\"?&amp;gt; (pas de barre de fermeture /).",
+ q17: "Faux : l’attribut age n’a pas de guillemets autour de la valeur → document mal formé.",
+ q18: "Faux : un élément peut être vide (&amp;lt;br/&amp;gt; ou &amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;).",
+ q19: "Un nom d’élément ne peut pas commencer par un chiffre.",
+ q20: "xmlcourse est autorisé (ne commence pas par « xml » en majuscules interdites en début).",
+ q21: "Vrai : XML préserve tous les espaces (contrairement à HTML).",
+ q22: "Il y a 5 nœuds texte : retours à la ligne et indentations avant/après les éléments + les deux textes réels.",
+ q23: "Faux : seul le prologue (déclaration XML, commentaires, PI) peut précéder la racine.",
+ q24: "Faux : rien ne peut suivre la fermeture de l’élément-racine.",
+ q25: "Faux : certaines balises peuvent être auto-fermantes (&amp;lt;img/&amp;gt; compte comme une seule balise mais un élément).",
+ q26: "Faux : entre deux balises il ne peut y avoir qu’un seul nœud texte (même s’il contient plusieurs espaces/lignes)."
+ };
+ for (let q in answers) {
+ const selected = document.querySelector(`input[name="${q}"]:checked`);
+ const fb = document.getElementById('fb' + q.slice(1));
+ if (selected &amp;&amp; selected.value === answers[q]) {
+ fb.style.backgroundColor = "#d4edda";
+ fb.style.color = "#155724";
+ fb.innerHTML = "Correct ! " + explanations[q];
+ score++;
+ } else if (selected) {
+ fb.style.backgroundColor = "#f8d7da";
+ fb.style.color = "#721c24";
+ fb.innerHTML = "Incorrect. " + explanations[q];
+ } else {
+ fb.style.backgroundColor = "#f8d7da";
+ fb.style.color = "#721c24";
+ fb.innerHTML = "Vous n’avez pas répondu à cette question. " + explanations[q];
+ }
+ fb.style.display = "block";
+ }
+ document.getElementById('scoreDisplay').innerHTML = `Score : ${score} / ${total}`;
+});
+document.getElementById('resetBtn').addEventListener('click', function() {
+ document.getElementById('quizForm').reset();
+ document.querySelectorAll('.feedback').forEach(f =&gt; {
+ f.style.display = "none";
+ f.innerHTML = "";
+ f.style.backgroundColor = "";
+ f.style.color = "";
+ });
+ document.getElementById('scoreDisplay').innerHTML = "";
+});
+&lt;/script&gt;</description></item></channel></rss>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RDF on Programmation orientée-données</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/</link><description>Recent content in RDF on Programmation orientée-données</description><generator>Hugo</generator><language>fr</language><atom:link href="https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction au RDF</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/introduction_au_rdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/introduction_au_rdf/</guid><description>&lt;h1&gt;
+ Introduction au RDF
+&lt;/h1&gt;
+&lt;h2&gt;
+ Introduction
+&lt;/h2&gt;
+&lt;p&gt;
+ Le
+ &lt;i&gt;
+ Resource Description Framework
+ &lt;/i&gt;
+ (RDF) est un langage pour les
+ métadonnées sur le web,
+ c'est-à-dire un langage pour énoncer ce que l'on sait sur quelque chose ou
+ quelqu'un.
+ Par exemple, le RDF est idéal pour indiquer qui est l'auteur d'un document
+ ou quel est le titre du document.
+ De plus, le langage RDF est prévu pour être à la fois simple (mais tout est
+ relatif), suffisamment
+ puissant pour « tout » décrire, et facilement utilisable par des
+ logiciels.
+ Dans le deuxième texte que nous proposons, nous verrons quelques
+ applications intéressantes.
+ Pour l'instant, nous ne présentons dans ce texte que les concepts de base.
+&lt;/p&gt;</description></item><item><title>Applications du RDF</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/applications_du_rdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/applications_du_rdf/</guid><description>&lt;h1&gt;
+ Applications du RDF
+&lt;/h1&gt;
+&lt;p&gt;
+ Le RDF se retrouve un peu partout sur le web, parfois de façon
+ « invisible »,
+ c'est-à-dire qu'il est souvent utilisé dans les échanges automatiques entre
+ les logiciels. En outre, il est
+ utilisé au sein des portails, par exemple. Voyons maintenant
+ quatre applications RDF bien établies :
+&lt;/p&gt;
+&lt;dl&gt;
+ &lt;dt&gt;
+ Dublin Core
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ Il s'agit sans doute de l'utilisation la plus connue et
+ la plus répandue du RDF. La norme
+ &lt;i&gt;
+ Dublin Core
+ &lt;/i&gt;
+ est assez simple et
+ vise à
+ décrire les travaux rendus disponibles sur le web (auteur, titre, date,
+ etc.). Elle est notamment utilisée au sein des livres électroniques
+ (comme les EPUB). Cette norme s'inspire de la bibliothéconomie.
+ &lt;/dd&gt;
+ &lt;dt&gt;
+ Creative Commons
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ Il s'agit d'une façon de décrire les
+ droits accordés sur le contenu placé sur le web.
+ Par exemple, vous voulez savoir si vous pouvez recopier telle ou telle
+ page web; si l'auteur a utilisé
+ la norme
+ &lt;i&gt;
+ Creative Commons
+ &lt;/i&gt;
+ , alors vous devriez pouvoir savoir ce
+ qui est permis par l'auteur.
+ &lt;/dd&gt;
+ &lt;dt&gt;
+ FOAF
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ La norme
+ &lt;i&gt;
+ FOAF
+ &lt;/i&gt;
+ (« Friend Of A Friend » - « ami d'un
+ ami ») permet
+ de décrire un individu et les gens qu'il connaît. Cette norme sert
+ à traiter les réseaux sociaux.
+ &lt;/dd&gt;
+ &lt;dt&gt;
+ RSS/RDF
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ La norme
+ &lt;i&gt;
+ RSS
+ &lt;/i&gt;
+ est utilisée par les blogues et sites de nouvelles.
+ En gros,
+ un document RSS/RDF contient une version XML des dernières nouvelles.
+ Par la suite,
+ plusieurs de ces fichiers XML peuvent être combinés pour créer un
+ portail de nouvelles ou
+ utilisés avec un outil-client de type « RSS aggregator » pour
+ obtenir
+ automatiquement les dernières nouvelles.
+ &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2&gt;
+ Un exemple :
+ &lt;i&gt;
+ Dublin Core
+ &lt;/i&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+ La norme
+ &lt;i&gt;
+ Dublin Core
+ &lt;/i&gt;
+ définit plusieurs « verbes » (au sein
+ du RDF);
+ on peut en consulter la liste à l'adresse
+ &lt;a href="http://dublincore.org/documents/dcmi-terms/"&gt;
+ http://dublincore.org/documents/dcmi-terms/
+ &lt;/a&gt;
+ (en anglais).
+ Cette norme a été publiée pour la première fois
+ en juillet 1999.
+&lt;/p&gt;</description></item><item><title>Autoévaluation</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/autoevaluation_rdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/autoevaluation_rdf/</guid><description>&lt;h1&gt;
+ Autoévaluation
+&lt;/h1&gt;
+&lt;p&gt;
+ Le bouton « Vérifier ma réponse » donne accès à un script qui, en
+ plus de vous permettre
+ de vérifier vos réponses, fournit une courte explication.
+ Si tous les commentaires sont en
+ &lt;span style="color:blue"&gt;
+ bleu
+ &lt;/span&gt;
+ , c'est
+ que vous avez la bonne réponse;
+ sinon, lisez les commentaires en
+ &lt;span style="color:red"&gt;
+ rouge
+ &lt;/span&gt;
+ pour
+ comprendre votre erreur.
+ Puis, essayez de nouveau en cliquant sur le bouton
+ « Recommencer ».
+&lt;/p&gt;
+&lt;div style="margin-left:1cm"&gt;
+ &lt;div style="background-color:#E0EAF0"&gt;
+ &lt;b&gt;
+ Question 1
+ &lt;/b&gt;
+ .
+ Parmi les affirmations suivantes, lesquelles s'appliquent à la norme
+ &lt;i&gt;
+ Dublin Core
+ &lt;/i&gt;
+ ?
+ &lt;/div&gt;
+ &lt;p style="width:90%;"&gt;
+ Choisissez toutes les réponses qui s'appliquent, puis
+ appuyez sur le bouton « Vérifier ma réponse ».
+ &lt;/p&gt;</description></item><item><title>Activité SPARQL</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/sparql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/rdf/sparql/</guid><description>&lt;h1 id="activité-sparql"&gt;
+ Activité SPARQL
+ &lt;a class="anchor" href="#activit%c3%a9-sparql"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;SPARQL (acronyme récursif de SPARQL Protocol and RDF Query Language) est le langage de requête standard pour interroger des données exprimées en RDF (Resource Description Framework). Il a été standardisé par le W3C en 2008 et sa version actuelle la plus utilisée est SPARQL 1.1 (2013).&lt;/p&gt;
+&lt;p&gt;Il permet de récupérer et de manipuler des données stockées dans des triplestores ou dans n’importe quel graphe RDF, que ce soit sur le web (Linked Data), dans une base locale ou via un endpoint SPARQL public comme DBpedia, Wikidata ou data.gouv.fr.&lt;/p&gt;</description></item></channel></rss>

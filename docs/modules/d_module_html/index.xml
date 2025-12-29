@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module HTML, CSS, SVG, MathML on Programmation orientée-données</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/</link><description>Recent content in Module HTML, CSS, SVG, MathML on Programmation orientée-données</description><generator>Hugo</generator><language>fr</language><atom:link href="https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/index.xml" rel="self" type="application/rss+xml"/><item><title>XHTML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/xhtml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/xhtml/</guid><description>&lt;h1 class=""&gt;
+ XHTML
+&lt;/h1&gt;
+&lt;div class=""&gt;
+ &lt;h2&gt;
+ Qu'est-ce que le XHTML?
+ &lt;/h2&gt;
+ &lt;p&gt;
+ Le HTML a été inventé par Tim Berners-Lee, alors qu'il travaillait pour le centre de recherche
+CERN en Suisse. L'intention de Berners-Lee était de proposer un système révolutionnaire de
+gestion de l'information qu'il appela
+ &lt;i&gt;
+ World Wide Web
+ &lt;/i&gt;
+ . Comme pièce maîtresse de son architecture,
+il avait besoin d'un format de documents qu'il appela HTML (
+ &lt;i&gt;
+ HyperText Markup Language
+ &lt;/i&gt;
+ ).
+La première page web, dont l'adresse était http://nxoc01.cern.ch/hypertext/WWW/TheProject.html, 
+vit le jour en 1990.
+ &lt;/p&gt;</description></item><item><title>HTML 5</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/html_5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/html_5/</guid><description>&lt;h1 class=""&gt;
+ HTML 5
+&lt;/h1&gt;
+&lt;div class=""&gt;
+ &lt;p&gt;
+ Un document HTML 5 peut
+ prendre la forme d'un document XML ou d'un document HTML. La déclaration doctype n'est utilisée que
+ dans le cas où le document n'est pas un document XML et a été grandement simplifiée : il suffit d'inclure
+ la ligne &amp;lt;!DOCTYPE html&amp;gt; au début du fichier. Voici un exemple de document HTML 5 :
+ &lt;/p&gt;
+ &lt;pre style=" white-space: pre-wrap; "&gt;&lt;span style="color:#004a43; "&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span style="color:#a65700; "&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;html&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style="color:#a65700; "&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;head&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style="color:#a65700; "&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;meta&lt;/span&gt;&lt;span style="color:#274796; "&gt; &lt;/span&gt;&lt;span style="color:#074726; "&gt;charset&lt;/span&gt;&lt;span style="color:#808030; "&gt;=&lt;/span&gt;&lt;span style="color:#0000e6; "&gt;"UTF-8"&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style="color:#a65700; "&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;title&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;Ceci est un exemple&lt;span style="color:#a65700; "&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;title&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style="color:#a65700; "&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;head&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style="color:#a65700; "&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;body&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style="color:#a65700; "&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;p&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;Voici un paragraphe&lt;span style="color:#008c00; "&gt;.&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;p&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style="color:#a65700; "&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;body&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;
+&lt;span style="color:#a65700; "&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#800000; font-weight:bold; "&gt;html&lt;/span&gt;&lt;span style="color:#a65700; "&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+ &lt;p&gt;
+ Un document HTML 5 en XML ne nécessite pas de déclaration doctype :
+ &lt;/p&gt;</description></item><item><title>Autoévaluation HTML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/autoevaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/autoevaluation/</guid><description>&lt;h1 class=""&gt;
+ Autoévaluation
+&lt;/h1&gt;
+&lt;div class=""&gt;
+ &lt;p&gt;
+ Le bouton « Vérifier ma réponse » donne accès à un script qui, en plus de vous permettre 
+	de vérifier vos réponses, fournit une courte explication. 
+	Si tous les commentaires sont en
+ &lt;span style="color:blue"&gt;
+ bleu
+ &lt;/span&gt;
+ , c'est que vous avez la bonne réponse; 
+	sinon, lisez les commentaires en
+ &lt;span style="color:red"&gt;
+ rouge
+ &lt;/span&gt;
+ pour comprendre votre erreur. 
+	Puis, essayez de nouveau en cliquant sur le bouton « Recommencer ».
+ &lt;/p&gt;
+ &lt;div style="margin-left:1cm"&gt;
+ &lt;div style="background-color:#E0EAF0"&gt;
+ &lt;b&gt;
+ Question 1
+ &lt;/b&gt;
+ .
+		Parmi les documents suivants, lesquels sont du XHTML valide?
+ &lt;/div&gt;
+ &lt;p style="width:90%;"&gt;
+ Choisissez toutes les réponses qui s'appliquent, puis appuyez sur le bouton « Vérifier ma réponse ».
+ &lt;/p&gt;</description></item><item><title>CSS</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/css/</guid><description>&lt;h1 id="css"&gt;
+ CSS
+ &lt;a class="anchor" href="#css"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;La norme CSS a d&amp;rsquo;abord été proposée par Håkon Lie du CERN en Suisse en 1994 (environ 4 ans après l&amp;rsquo;apparition de la première page web). Cette norme a été acceptée comme recommandation officielle du W3C deux ans plus tard, soit en 1996, et la seconde version (CSS 2.0) est devenue une recommandation du W3C l&amp;rsquo;année suivante, soit en 1997. Une troisième version (CSS 3) a été adoptée à compter de 2011. À l&amp;rsquo;origine, les instructions CSS étaient destinées uniquement à indiquer aux navigateurs comment présenter le HTML (couleurs, polices, etc.) ; on s&amp;rsquo;est vite rendu compte qu&amp;rsquo;on pouvait aussi l&amp;rsquo;appliquer au XML et on considère maintenant les CSS comme une technologie qui s&amp;rsquo;applique autant au HTML qu&amp;rsquo;au XML (et aussi, évidemment, au XHTML).&lt;/p&gt;</description></item><item><title>CSS (partie 2)</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/css2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/css2/</guid><description>&lt;h1 id="css-partie-2"&gt;
+ CSS (partie 2)
+ &lt;a class="anchor" href="#css-partie-2"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h3 id="mais-que-se-passe-t-il-en-cas-de-conflit-"&gt;
+ Mais que se passe-t-il en cas de conflit ?
+ &lt;a class="anchor" href="#mais-que-se-passe-t-il-en-cas-de-conflit-"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Plusieurs instructions peuvent s&amp;rsquo;appliquer en même temps : un texte peut être en rouge et souligné. Il peut arriver cependant que deux instructions CSS se contredisent. Par exemple, un texte ne peut être à la fois en rouge et en bleu. Dans ce cas, la sélection la plus spécifique l’emporte. Ainsi, dans l’exemple qui suit :&lt;/p&gt;</description></item><item><title>CSS (partie 3)</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/css3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/css3/</guid><description>&lt;h1 id="css-partie-3"&gt;
+ CSS (partie 3)
+ &lt;a class="anchor" href="#css-partie-3"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h3 id="quand-le-contenu-excède-le-contenant"&gt;
+ Quand le contenu excède le contenant
+ &lt;a class="anchor" href="#quand-le-contenu-exc%c3%a8de-le-contenant"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Il arrive qu’une image ou qu’un texte excède la taille de l’élément dans lequel il a été placé. Par défaut, ce contenu déborde visiblement (&lt;code&gt;overflow: visible&lt;/code&gt;). La propriété &lt;code&gt;overflow: hidden&lt;/code&gt; permet de contrôler ce comportement :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;overflow: hidden&lt;/code&gt; masque la partie qui dépasse.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;overflow: scroll&lt;/code&gt; ajoute des barres de défilement (même si le contenu tient dans la boîte).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;overflow: auto&lt;/code&gt; n’ajoute les barres que si nécessaire.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="encodage-des-caractères"&gt;
+ Encodage des caractères
+ &lt;a class="anchor" href="#encodage-des-caract%c3%a8res"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Il peut être utile de préciser l’encodage utilisé dans le fichier CSS en plaçant au tout premier ligne :&lt;/p&gt;</description></item><item><title>Laboratoire CSS</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/laboratoire_css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/laboratoire_css/</guid><description>&lt;h1&gt;
+ Laboratoire CSS
+&lt;/h1&gt;
+&lt;p&gt;
+ Il peut être fastidieux d’apprendre le CSS en manipulant des fichiers. Heureusement, on peut le faire au sein d’un navigateur.
+&lt;/p&gt;
+&lt;p&gt;
+ Dans ce laboratoire, nous vous demandons d’expérimenter avec les notions de CSS vue jusqu’à présent. Partez du document XML et tentez de le mettre en forme de différentes manières.
+&lt;/p&gt;
+&lt;div style="max-width: 1000px; margin: 0 auto; background-color: #ffffff; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"&gt;
+ &lt;h1 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #1f2937;"&gt;
+ Mise en Forme XML avec CSS
+ &lt;/h1&gt;
+ &lt;p style="margin-bottom: 16px; color: #4b5563;"&gt;
+ Entrez un contenu XML et un style CSS dans les champs ci-dessous, puis cliquez sur "Mise en forme" pour afficher le résultat stylisé dans l'iframe. Exemples :
+ &lt;/p&gt;</description></item><item><title>SVG</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/svg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/svg/</guid><description>&lt;h1 class=""&gt;
+ SVG
+&lt;/h1&gt;
+&lt;div class=""&gt;
+ &lt;p&gt;
+ Le Scalar Vector Graphics (SVG) est un format d'image vectorielle basé sur le langage XML, permettant de créer des graphiques évolutifs qui s'adaptent sans perte de qualité à toutes les tailles d'écran. Contrairement aux images matricielles (comme PNG ou JPEG), les SVG sont définis par des instructions textuelles décrivant des formes, des couleurs et des transformations, ce qui les rend légers, modifiables et idéaux pour le web. Grâce à leur intégration dans le HTML, les SVG peuvent être manipulés dynamiquement avec CSS ou JavaScript pour créer des animations ou des graphiques interactifs.
+ &lt;/p&gt;</description></item><item><title>MathML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/mathml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/mathml/</guid><description>&lt;h1&gt;
+ MathML
+&lt;/h1&gt;
+&lt;style&gt;
+ td {padding:0.1em;}
+&lt;/style&gt;
+&lt;div&gt;
+ &lt;p&gt;
+ Le Mathematical Markup Language (MathML) est un langage basé sur XML conçu pour représenter et afficher des expressions mathématiques de manière structurée sur le web. Contrairement aux images statiques ou aux approximations textuelles, MathML permet de décrire la sémantique et la présentation des formules mathématiques, offrant une accessibilité accrue et une intégration dynamique avec HTML. Il est particulièrement utilisé dans les contextes éducatifs, scientifiques et techniques pour rendre des équations complexes de façon précise et adaptable.
+ &lt;/p&gt;</description></item><item><title>Laboratoire CSS/MathML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/cssmathml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/cssmathml/</guid><description>&lt;h1 id="laboratoire-cssmathml"&gt;
+ Laboratoire CSS/MathML
+ &lt;a class="anchor" href="#laboratoire-cssmathml"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Vous pouvez utiliser CSS pour modifier l&amp;rsquo;apparence du contenu MathML dans votre
+navigateur.
+Je vous invite à éditer le code MathML dans la boîte suivante pour observer le résultat.&lt;/p&gt;
+&lt;h2 id="code-mathml"&gt;
+ Code MathML
+ &lt;a class="anchor" href="#code-mathml"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;textarea id="mathmlCode" style="width:100%; height:400px"&gt;&amp;lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&amp;gt;
+ &amp;lt;mrow&amp;gt;
+ &amp;lt;mi style="color: red; font-style: italic;"&amp;gt;x&amp;lt;/mi&amp;gt;
+ &amp;lt;mo style="color: purple;"&amp;gt;=&amp;lt;/mo&amp;gt;
+ &amp;lt;mfrac&amp;gt;
+ &amp;lt;mrow&amp;gt;
+ &amp;lt;mn style="color: green;"&amp;gt;−1&amp;lt;/mn&amp;gt;
+ &amp;lt;mo style="color: purple;"&amp;gt;±&amp;lt;/mo&amp;gt;
+ &amp;lt;msqrt&amp;gt;
+ &amp;lt;mn style="color: green;"&amp;gt;1&amp;lt;/mn&amp;gt;
+ &amp;lt;mo style="color: purple;"&amp;gt;−&amp;lt;/mo&amp;gt;
+ &amp;lt;mn style="color: green;"&amp;gt;4&amp;lt;/mn&amp;gt;
+ &amp;lt;/msqrt&amp;gt;
+ &amp;lt;/mrow&amp;gt;
+ &amp;lt;mn style="color: green;"&amp;gt;2&amp;lt;/mn&amp;gt;
+ &amp;lt;/mfrac&amp;gt;
+ &amp;lt;/mrow&amp;gt;
+&amp;lt;/math&amp;gt;
+&lt;/textarea&gt;
+&lt;div class="render-container"&gt;
+ &lt;h2&gt;
+ Rendu MathML
+ &lt;/h2&gt;
+ &lt;div id="mathmlRender"&gt;
+ &lt;math display="block" xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+ &lt;mrow&gt;
+ &lt;mi style="color: red; font-style: italic;"&gt;x&lt;/mi&gt;
+ &lt;mo style="color: purple;"&gt;=&lt;/mo&gt;
+ &lt;mfrac&gt;
+ &lt;mrow&gt;
+ &lt;mn style="color: green;"&gt;−1&lt;/mn&gt;
+ &lt;mo style="color: purple;"&gt;±&lt;/mo&gt;
+ &lt;msqrt&gt;
+ &lt;mn style="color: green;"&gt;1&lt;/mn&gt;
+ &lt;mo style="color: purple;"&gt;−&lt;/mo&gt;
+ &lt;mn style="color: green;"&gt;4&lt;/mn&gt;
+ &lt;/msqrt&gt;
+ &lt;/mrow&gt;
+ &lt;mn style="color: green;"&gt;2&lt;/mn&gt;
+ &lt;/mfrac&gt;
+ &lt;/mrow&gt;
+ &lt;/math&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+ const textarea = document.getElementById('mathmlCode');
+ const renderDiv = document.getElementById('mathmlRender');
+ textarea.addEventListener('input', () =&gt; {
+ try {
+ renderDiv.innerHTML = textarea.value;
+ } catch (error) {
+ console.error('Erreur MathML:', error);
+ }
+ });
+&lt;/script&gt;</description></item><item><title>Autoévaluation CSS</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/autoevaluation_css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/autoevaluation_css/</guid><description>&lt;h1 class=""&gt;
+ Autoévaluation
+&lt;/h1&gt;
+&lt;p&gt;
+ Le bouton « Vérifier ma réponse » donne accès à un script qui, en
+ plus de vous permettre
+ de vérifier vos réponses, fournit une courte explication.
+ Si tous les commentaires sont en
+ &lt;span style="color:blue"&gt;
+ bleu
+ &lt;/span&gt;
+ , c'est
+ que vous avez la bonne réponse;
+ sinon, lisez les commentaires en
+ &lt;span style="color:red"&gt;
+ rouge
+ &lt;/span&gt;
+ pour
+ comprendre votre erreur.
+ Puis, essayez de nouveau en cliquant sur le bouton
+ « Recommencer ».
+&lt;/p&gt;
+&lt;div style="margin-left:1cm"&gt;
+ &lt;div style="background-color:#E0EAF0"&gt;
+ &lt;b&gt;
+ Question 1
+ &lt;/b&gt;
+ .
+ Quelle affirmation décrit le mieux un document CSS?
+ &lt;/div&gt;
+ &lt;p style="width:90%;"&gt;
+ Choisissez la bonne réponse parmi les suivantes.
+ &lt;/p&gt;</description></item><item><title>Travail noté</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/travail/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/travail/</guid><description>&lt;h1 id="travail-noté"&gt;
+ Travail noté
+ &lt;a class="anchor" href="#travail-not%c3%a9"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="question-1--expressions-mathématiques-avec-mathml-et-css"&gt;
+ Question 1 : Expressions mathématiques avec MathML et CSS
+ &lt;a class="anchor" href="#question-1--expressions-math%c3%a9matiques-avec-mathml-et-css"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans ce premier travail, vous créerez des expressions mathématiques complexes en utilisant MathML (Mathematical Markup Language) et les mettrez en forme avec du CSS spécifique à MathML. Vous développerez une page web présentant différentes formules mathématiques avec une mise en forme élégante.&lt;/p&gt;
+&lt;p&gt;Voici la structure HTML de base que vous devez utiliser :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;html&lt;/span&gt; &lt;span style="color:#1f2328"&gt;lang&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;fr&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;head&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;meta&lt;/span&gt; &lt;span style="color:#1f2328"&gt;charset&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;title&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;Mathématiques avec MathML&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;title&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;style&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#57606a"&gt;/* C&amp;#39;est à vous d&amp;#39;implémenter le CSS spécifique à MathML ici */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;style&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;head&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;body&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;h1&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;Formules Mathématiques avec MathML&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;h1&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;section&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;h2&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;Équation quadratique&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;h2&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;math&lt;/span&gt; &lt;span style="color:#1f2328"&gt;display&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;block&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;x&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;=&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mfrac&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mrow&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;−&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;b&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;±&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;msqrt&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;msup&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;b&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;2&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;msup&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;−&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;4&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;a&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;c&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;msqrt&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mrow&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mrow&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;2&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;a&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mrow&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mfrac&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;math&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;section&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;section&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;h2&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;Intégrale&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;h2&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;math&lt;/span&gt; &lt;span style="color:#1f2328"&gt;display&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;block&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mrow&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;msubsup&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;∫&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;0&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;π&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;msubsup&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;msup&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;sin&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;2&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;msup&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;x&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;ⅆ&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;x&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;=&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mo&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mfrac&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;π&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mi&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;2&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mn&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mfrac&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;mrow&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;math&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;section&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;body&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;html&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vous devez créer un CSS qui améliore la présentation des expressions MathML avec les propriétés suivantes :&lt;/p&gt;</description></item></channel></rss>
