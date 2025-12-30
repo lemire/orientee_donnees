@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Modèles de programmation on Programmation orientée-données</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/</link><description>Recent content in Modèles de programmation on Programmation orientée-données</description><generator>Hugo</generator><language>fr</language><atom:link href="https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/index.xml" rel="self" type="application/rss+xml"/><item><title>DOM</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/dom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/dom/</guid><description>&lt;h1 id="dom"&gt;
+ DOM
+ &lt;a class="anchor" href="#dom"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Le Document Object Model (DOM) est une interface de programmation standardisée pour accéder et manipuler des documents HTML et XML. Il représente la structure hiérarchique d&amp;rsquo;un document sous forme d&amp;rsquo;un arbre de nœuds, où chaque élément, attribut ou portion de texte est un nœud accessible via des méthodes de programmation. Cette approche permet aux développeurs de naviguer, modifier et interagir dynamiquement avec le contenu et la structure des documents web ou XML, facilitant ainsi la création d&amp;rsquo;applications interactives et la manipulation de données structurées.&lt;/p&gt;</description></item><item><title>Autoévaluation DOM</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/autoevaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/autoevaluation/</guid><description>&lt;h1 id="autoévaluation-dom"&gt;
+ Autoévaluation DOM
+ &lt;a class="anchor" href="#auto%c3%a9valuation-dom"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;
+ Le bouton « Vérifier ma réponse » donne accès à un script qui, en
+ plus de vous permettre
+ de vérifier vos réponses, fournit une courte explication.
+ Si tous les commentaires sont en
+ &lt;span style="color:blue"&gt;
+ bleu
+ &lt;/span&gt;
+ , c'est
+ que vous avez la bonne réponse;
+ sinon, lisez les commentaires en
+ &lt;span style="color:red"&gt;
+ rouge
+ &lt;/span&gt;
+ pour
+ comprendre votre erreur.
+ Puis, essayez de nouveau en cliquant sur le bouton
+ « Recommencer ».
+&lt;/p&gt;
+&lt;div style="margin-left:1cm"&gt;
+ &lt;div style="background-color:#E0EAF0"&gt;
+ &lt;b&gt;
+ Question 1
+ &lt;/b&gt;
+ .
+ Si j'ai une application DOM et que je charge 100 fichiers XML faisant un
+ Mo chacun, je m'attends
+ que mon programme utilise au moins 100 Mo.
+ &lt;/div&gt;
+ &lt;p style="width:90%;"&gt;
+ Choisissez la bonne réponse parmi les suivantes.
+ &lt;/p&gt;</description></item><item><title>Activité JSON/XML avec Jackson</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/jackson/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/jackson/</guid><description>&lt;h1 id="activité-jsonxml-avec-jackson"&gt;
+ Activité JSON/XML avec Jackson
+ &lt;a class="anchor" href="#activit%c3%a9-jsonxml-avec-jackson"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Jackson est l&amp;rsquo;une des bibliothèques Java les plus populaires pour le traitement des formats de données JSON et XML. Développée par FasterXML, elle offre des performances élevées et une API simple pour convertir entre les objets Java et ces formats de données structurés. Cette bibliothèque est particulièrement appréciée dans l&amp;rsquo;écosystème Java pour sa facilité d&amp;rsquo;utilisation et sa flexibilité, permettant aux développeurs de sérialiser et désérialiser des données de manière transparente.&lt;/p&gt;</description></item></channel></rss>

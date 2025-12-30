@@ -155,7 +155,11 @@ nous avons deux &lt;strong&gt;vocabulaires XML&lt;/strong&gt;.&lt;/p&gt;</descri
  (en anglais).
  Cette norme a été publiée pour la première fois
  en juillet 1999.
-&lt;/p&gt;</description></item><item><title>DOM</title><link>https://lemire.github.io/orientee_donnees/legacy/semaine_12/dom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/legacy/semaine_12/dom/</guid><description>&lt;h1 id="dom"&gt;
+&lt;/p&gt;</description></item><item><title>DOM</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/dom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/dom/</guid><description>&lt;h1 id="dom"&gt;
+ DOM
+ &lt;a class="anchor" href="#dom"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Le Document Object Model (DOM) est une interface de programmation standardisée pour accéder et manipuler des documents HTML et XML. Il représente la structure hiérarchique d&amp;rsquo;un document sous forme d&amp;rsquo;un arbre de nœuds, où chaque élément, attribut ou portion de texte est un nœud accessible via des méthodes de programmation. Cette approche permet aux développeurs de naviguer, modifier et interagir dynamiquement avec le contenu et la structure des documents web ou XML, facilitant ainsi la création d&amp;rsquo;applications interactives et la manipulation de données structurées.&lt;/p&gt;</description></item><item><title>DOM</title><link>https://lemire.github.io/orientee_donnees/legacy/semaine_12/dom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/legacy/semaine_12/dom/</guid><description>&lt;h1 id="dom"&gt;
  DOM
  &lt;a class="anchor" href="#dom"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -320,6 +324,41 @@ vit le jour en 1990.
  &lt;/b&gt;
  .
 		Quel énoncé décrit le mieux l'intention des créateurs du XML?
+ &lt;/div&gt;
+ &lt;p style="width:90%;"&gt;
+ Choisissez la bonne réponse parmi les suivantes.
+ &lt;/p&gt;</description></item><item><title>Autoévaluation DOM</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/autoevaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/autoevaluation/</guid><description>&lt;h1 id="autoévaluation-dom"&gt;
+ Autoévaluation DOM
+ &lt;a class="anchor" href="#auto%c3%a9valuation-dom"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;
+ Le bouton « Vérifier ma réponse » donne accès à un script qui, en
+ plus de vous permettre
+ de vérifier vos réponses, fournit une courte explication.
+ Si tous les commentaires sont en
+ &lt;span style="color:blue"&gt;
+ bleu
+ &lt;/span&gt;
+ , c'est
+ que vous avez la bonne réponse;
+ sinon, lisez les commentaires en
+ &lt;span style="color:red"&gt;
+ rouge
+ &lt;/span&gt;
+ pour
+ comprendre votre erreur.
+ Puis, essayez de nouveau en cliquant sur le bouton
+ « Recommencer ».
+&lt;/p&gt;
+&lt;div style="margin-left:1cm"&gt;
+ &lt;div style="background-color:#E0EAF0"&gt;
+ &lt;b&gt;
+ Question 1
+ &lt;/b&gt;
+ .
+ Si j'ai une application DOM et que je charge 100 fichiers XML faisant un
+ Mo chacun, je m'attends
+ que mon programme utilise au moins 100 Mo.
  &lt;/div&gt;
  &lt;p style="width:90%;"&gt;
  Choisissez la bonne réponse parmi les suivantes.
@@ -633,20 +672,20 @@ Vous pouvez modifier les fichier Java et le fichier XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1767054682321689556"&gt;
+&lt;div id="java-multirunner-1767058846402529353"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1767054682321689556 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1767054682321689556 .export-form { margin-bottom:0; }
- #java-multirunner-1767054682321689556 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1767054682321689556 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1767054682321689556 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1767054682321689556 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1767058846402529353 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1767058846402529353 .export-form { margin-bottom:0; }
+ #java-multirunner-1767058846402529353 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1767058846402529353 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1767058846402529353 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1767058846402529353 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1767054682321689556-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1767058846402529353-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -734,14 +773,14 @@ public class SimpleXPath {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1767054682321689556-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1767058846402529353-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1767054682321689556');
+ var root = document.getElementById('java-multirunner-1767058846402529353');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -900,20 +939,20 @@ Vous pouvez modifier les fichiers XSLT et XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1767054682321983654"&gt;
+&lt;div id="java-multirunner-1767058846402815707"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1767054682321983654 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1767054682321983654 .export-form { margin-bottom:0; }
- #java-multirunner-1767054682321983654 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1767054682321983654 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1767054682321983654 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1767054682321983654 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1767058846402815707 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1767058846402815707 .export-form { margin-bottom:0; }
+ #java-multirunner-1767058846402815707 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1767058846402815707 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1767058846402815707 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1767058846402815707 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1767054682321983654-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1767058846402815707-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -1024,14 +1063,14 @@ public class XmlVersConsole {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1767054682321983654-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1767058846402815707-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1767054682321983654');
+ var root = document.getElementById('java-multirunner-1767058846402815707');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -1785,51 +1824,7 @@ Voici un exemple simple d&amp;rsquo;un AndroidManifest.xml pour une application 
  &lt;a class="anchor" href="#modularit%c3%a9-avec-les-%c3%a9l%c3%a9ments--xslapply-templates-"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Cette section explique comment utiliser l&amp;rsquo;élément xsl:apply-templates pour rendre les feuilles de style XSLT plus modulaires et réutilisables, en évitant la répétition de code.&lt;/p&gt;
-&lt;p&gt;Notre fichier « xslt.xml » se complexifie et devient plus difficile à comprendre. Tout est dans un seul modèle, le modèle &lt;em&gt;facture&lt;/em&gt;. Pour simuler un problème probable, imaginons que notre XML est plus complexe et prend la forme :&lt;/p&gt;</description></item><item><title>Asynchronous JavaScript And XML (AJAX)</title><link>https://lemire.github.io/orientee_donnees/docs/modules/e_module_services/asynchronous_javascript_and_xml_ajax/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/e_module_services/asynchronous_javascript_and_xml_ajax/</guid><description>&lt;h1 id="asynchronous-javascript-and-xml-ajax"&gt;
- Asynchronous JavaScript And XML (AJAX)
- &lt;a class="anchor" href="#asynchronous-javascript-and-xml-ajax"&gt;#&lt;/a&gt;
-&lt;/h1&gt;
-&lt;p&gt;Normalement, pour récupérer des données sur le serveur (description d’un produit, horaire, etc.), il faut recharger une nouvelle page. Avec &lt;strong&gt;AJAX&lt;/strong&gt; (&lt;em&gt;Asynchronous JavaScript And XML&lt;/em&gt;), un script JavaScript peut charger un fichier XML (ou JSON) en arrière-plan, sans recharger la page. L’utilisateur a l’impression que l’application est beaucoup plus rapide.&lt;/p&gt;
-&lt;p&gt;Exemples célèbres : Gmail, Google Maps, Facebook (à l’époque), etc.&lt;/p&gt;
-&lt;h2 id="exemple-simple--charger-et-afficher-le-titre-dun-document-xhtml"&gt;
- Exemple simple : charger et afficher le titre d’un document XHTML
- &lt;a class="anchor" href="#exemple-simple--charger-et-afficher-le-titre-dun-document-xhtml"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xhtml" data-lang="xhtml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;html&lt;/span&gt; &lt;span style="color:#1f2328"&gt;xmlns&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;http://www.w3.org/1999/xhtml&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;head&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;title&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;Exemple AJAX&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;title&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;script&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#57606a"&gt;// Charge un document XML/XHTML et appelle afficheTitre()
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#cf222e"&gt;function&lt;/span&gt; &lt;span style="color:#1f2328"&gt;chargeDocument&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#1f2328"&gt;uri&lt;/span&gt;&lt;span style="color:#1f2328"&gt;)&lt;/span&gt; &lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#cf222e"&gt;var&lt;/span&gt; &lt;span style="color:#1f2328"&gt;xmlhttp&lt;/span&gt; &lt;span style="color:#0550ae"&gt;=&lt;/span&gt; &lt;span style="color:#cf222e"&gt;new&lt;/span&gt; &lt;span style="color:#1f2328"&gt;XMLHttpRequest&lt;/span&gt;&lt;span style="color:#1f2328"&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;xmlhttp&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;open&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;GET&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt; &lt;span style="color:#1f2328"&gt;uri&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt; &lt;span style="color:#cf222e"&gt;true&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;xmlhttp&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;onreadystatechange&lt;/span&gt; &lt;span style="color:#0550ae"&gt;=&lt;/span&gt; &lt;span style="color:#cf222e"&gt;function&lt;/span&gt;&lt;span style="color:#1f2328"&gt;()&lt;/span&gt; &lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#cf222e"&gt;if&lt;/span&gt; &lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#1f2328"&gt;xmlhttp&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;readyState&lt;/span&gt; &lt;span style="color:#0550ae"&gt;===&lt;/span&gt; &lt;span style="color:#0550ae"&gt;4&lt;/span&gt; &lt;span style="color:#0550ae"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;xmlhttp&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;status&lt;/span&gt; &lt;span style="color:#0550ae"&gt;===&lt;/span&gt; &lt;span style="color:#0550ae"&gt;200&lt;/span&gt;&lt;span style="color:#1f2328"&gt;)&lt;/span&gt; &lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;afficheTitre&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#1f2328"&gt;xmlhttp&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;responseXML&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;};&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;xmlhttp&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;send&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#cf222e"&gt;null&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#57606a"&gt;// Affiche le contenu de l&amp;#39;élément &amp;lt;title&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#cf222e"&gt;function&lt;/span&gt; &lt;span style="color:#1f2328"&gt;afficheTitre&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#1f2328"&gt;doc&lt;/span&gt;&lt;span style="color:#1f2328"&gt;)&lt;/span&gt; &lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#cf222e"&gt;var&lt;/span&gt; &lt;span style="color:#1f2328"&gt;titre&lt;/span&gt; &lt;span style="color:#0550ae"&gt;=&lt;/span&gt; &lt;span style="color:#1f2328"&gt;doc&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getElementsByTagName&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;)[&lt;/span&gt;&lt;span style="color:#0550ae"&gt;0&lt;/span&gt;&lt;span style="color:#1f2328"&gt;];&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#cf222e"&gt;var&lt;/span&gt; &lt;span style="color:#1f2328"&gt;texte&lt;/span&gt; &lt;span style="color:#0550ae"&gt;=&lt;/span&gt; &lt;span style="color:#1f2328"&gt;titre&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;firstChild&lt;/span&gt; &lt;span style="color:#0550ae"&gt;?&lt;/span&gt; &lt;span style="color:#1f2328"&gt;titre&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;firstChild&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;nodeValue&lt;/span&gt; &lt;span style="color:#0550ae"&gt;:&lt;/span&gt; &lt;span style="color:#0a3069"&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#cf222e"&gt;var&lt;/span&gt; &lt;span style="color:#1f2328"&gt;p&lt;/span&gt; &lt;span style="color:#0550ae"&gt;=&lt;/span&gt; &lt;span style="color:#6639ba"&gt;document&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;createElement&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;p&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;p&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;appendChild&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#6639ba"&gt;document&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;createTextNode&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#1f2328"&gt;texte&lt;/span&gt;&lt;span style="color:#1f2328"&gt;));&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#6639ba"&gt;document&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getElementsByTagName&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;body&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;)[&lt;/span&gt;&lt;span style="color:#0550ae"&gt;0&lt;/span&gt;&lt;span style="color:#1f2328"&gt;].&lt;/span&gt;&lt;span style="color:#1f2328"&gt;appendChild&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#1f2328"&gt;p&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;script&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;head&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;body&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;p&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;Cliquez plusieurs fois sur les liens ci-dessous :&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;p&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;ul&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;li&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;a&lt;/span&gt; &lt;span style="color:#1f2328"&gt;href&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;javascript:chargeDocument(&amp;#39;domtutoriel.xhtml&amp;#39;)&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;domtutoriel.xhtml&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;a&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;li&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;li&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;a&lt;/span&gt; &lt;span style="color:#1f2328"&gt;href&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;javascript:chargeDocument(&amp;#39;travail5.xhtml&amp;#39;)&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;travail5.xhtml&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;a&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;li&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;ul&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;body&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#0550ae"&gt;html&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Dans cet exemple, la fonction &lt;code&gt;chargeDocument&lt;/code&gt; utilise &lt;code&gt;XMLHttpRequest&lt;/code&gt; pour effectuer une requête GET asynchrone vers une URI. Lorsque la réponse est reçue (readyState === 4 et status === 200), elle appelle &lt;code&gt;afficheTitre&lt;/code&gt; qui extrait le contenu de l&amp;rsquo;élément &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; du document XML chargé et l&amp;rsquo;ajoute dynamiquement à la page.&lt;/p&gt;</description></item><item><title>Autoévaluation</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/espaces/autoevaluation_adv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/espaces/autoevaluation_adv/</guid><description>&lt;h1 class=""&gt;
+&lt;p&gt;Notre fichier « xslt.xml » se complexifie et devient plus difficile à comprendre. Tout est dans un seul modèle, le modèle &lt;em&gt;facture&lt;/em&gt;. Pour simuler un problème probable, imaginons que notre XML est plus complexe et prend la forme :&lt;/p&gt;</description></item><item><title>Autoévaluation</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/espaces/autoevaluation_adv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/espaces/autoevaluation_adv/</guid><description>&lt;h1 class=""&gt;
  Autoévaluation
 &lt;/h1&gt;
 &lt;div class=""&gt;
@@ -1854,7 +1849,11 @@ Voici un exemple simple d&amp;rsquo;un AndroidManifest.xml pour une application 
  &lt;/div&gt;
  &lt;p style="width:90%;"&gt;
  Choisissez la bonne réponse parmi les suivantes.
- &lt;/p&gt;</description></item><item><title>Encodage des caractères Unicode</title><link>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/encodage_des_caracteres_unicode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/encodage_des_caracteres_unicode/</guid><description>&lt;h1 id="encodage-des-caractères-unicode"&gt;
+ &lt;/p&gt;</description></item><item><title>Chargement XML/JSON en JavaScript</title><link>https://lemire.github.io/orientee_donnees/docs/modules/e_module_services/asynchronous_javascript_and_xml_ajax/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/e_module_services/asynchronous_javascript_and_xml_ajax/</guid><description>&lt;h1 id="javascript"&gt;
+ JavaScript
+ &lt;a class="anchor" href="#javascript"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;La programmation asynchrone permet d&amp;rsquo;exécuter des tâches en arrière-plan sans bloquer l&amp;rsquo;exécution du programme principal. Contrairement à la programmation synchrone où les opérations se déroulent séquentiellement (une après l&amp;rsquo;autre), l&amp;rsquo;asynchrone permet de lancer une opération longue, comme une requête réseau ou la lecture d&amp;rsquo;un fichier, et de continuer à exécuter d&amp;rsquo;autres tâches pendant que cette opération se déroule. Lorsque l&amp;rsquo;opération asynchrone se termine, un mécanisme de notification (callback, Promise, ou async/await) permet de traiter le résultat sans interrompre le flux principal du programme.&lt;/p&gt;</description></item><item><title>Encodage des caractères Unicode</title><link>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/encodage_des_caracteres_unicode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/encodage_des_caracteres_unicode/</guid><description>&lt;h1 id="encodage-des-caractères-unicode"&gt;
  Encodage des caractères Unicode
  &lt;a class="anchor" href="#encodage-des-caract%c3%a8res-unicode"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -2034,7 +2033,7 @@ Vérifiez votre compréhension de la syntaxe XML en testant différents document
 &lt;/h1&gt;
 &lt;p&gt;
  JSON (JavaScript Object Notation) est aujourd’hui le format le plus populaire pour échanger des données structurées, surtout dans les API web. Il est très strict : tout est basé sur des objets avec des tableaux, des chaînes entre guillemets doubles, des nombres, des booléens (true/false) et null. Sa syntaxe est rigide mais extrêmement prévisible pour les machines, ce qui explique son succès. Cependant, quand un humain doit lire ou écrire du JSON à la main (par exemple dans un fichier de configuration), cette rigueur devient vite pénible : les guillemets partout, les virgules obligatoires, l’absence de commentaires rendent le fichier verbeux et sujet aux erreurs de syntaxe.
-&lt;/p&gt;</description></item><item><title>Activité JSON/XML avec Jackson</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/examples/jackson/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/examples/jackson/</guid><description>&lt;h1 id="activité-jsonxml-avec-jackson"&gt;
+&lt;/p&gt;</description></item><item><title>Activité JSON/XML avec Jackson</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/jackson/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/programmation/jackson/</guid><description>&lt;h1 id="activité-jsonxml-avec-jackson"&gt;
  Activité JSON/XML avec Jackson
  &lt;a class="anchor" href="#activit%c3%a9-jsonxml-avec-jackson"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -2531,11 +2530,13 @@ le document XSLT suivant :&lt;/p&gt;</description></item><item><title>Travail d'
  &lt;a class="anchor" href="#travail-dint%c3%a9gration"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;Ce travail d&amp;rsquo;intégration vous permet de démontrer l&amp;rsquo;acquisition des compétences développées tout au long du cours. Vous devez créer une application web complète qui intègre plusieurs technologies : HTML5, JavaScript, AJAX, Java, JSON, XML, SVG, et les styles CSS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Avertissement&lt;/strong&gt;. Vous devez avoir fait toutes les activités du cours avant de tenter de faire
+l&amp;rsquo;activité d&amp;rsquo;intégration.&lt;/p&gt;
 &lt;h2 id="objectif"&gt;
  Objectif
  &lt;a class="anchor" href="#objectif"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Créer un serveur web Java qui sert une page HTML5 permettant à l&amp;rsquo;utilisateur d&amp;rsquo;entrer une liste de 10 entiers. Ce serveur reçoit ces données via AJAX, génère un graphique à barres SVG avec des styles appropriés, puis retourne le graphique intégré dans une page HTML.&lt;/p&gt;</description></item><item><title>Évaluation</title><link>https://lemire.github.io/orientee_donnees/docs/evaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/evaluation/</guid><description>&lt;h1&gt;
+&lt;p&gt;Créer un serveur web Java qui sert une page HTML5 permettant à l&amp;rsquo;utilisateur d&amp;rsquo;entrer une liste de 10 entiers et de dix étiquettes (par exemple, les dix provinces canadiennes). Ce serveur reçoit ces données via AJAX, génère un graphique à barres SVG avec des styles appropriés, puis retourne le graphique intégré dans un document JSON.&lt;/p&gt;</description></item><item><title>Évaluation</title><link>https://lemire.github.io/orientee_donnees/docs/evaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/evaluation/</guid><description>&lt;h1&gt;
  Évaluation
 &lt;/h1&gt;
 &lt;p&gt;
@@ -3139,12 +3140,6 @@ qui comprend une petite application Python capable de traiter du XSLT et du XML.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;else&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;if&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;POST&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;equals&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getRequestMethod&lt;/span&gt;&lt;span style="color:#1f2328"&gt;()))&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#57606a"&gt;// C&amp;#39;est à vous d&amp;#39;implémenter la logique pour ajouter une ressource&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;sendResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;201&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0550ae"&gt;-&lt;/span&gt;1&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;else&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;if&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;OPTIONS&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;equals&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getRequestMethod&lt;/span&gt;&lt;span style="color:#1f2328"&gt;()))&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#57606a"&gt;// Gérer les requêtes CORS preflight&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;().&lt;/span&gt;&lt;span style="color:#1f2328"&gt;set&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;Access-Control-Allow-Origin&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;*&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;().&lt;/span&gt;&lt;span style="color:#1f2328"&gt;set&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;Access-Control-Allow-Methods&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;GET, POST, PUT, DELETE, OPTIONS&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;().&lt;/span&gt;&lt;span style="color:#1f2328"&gt;set&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;Access-Control-Allow-Headers&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;Content-Type&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;sendResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;200&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0550ae"&gt;-&lt;/span&gt;1&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;else&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;sendResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;405&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0550ae"&gt;-&lt;/span&gt;1&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt;
@@ -3176,12 +3171,6 @@ qui comprend une petite application Python capable de traiter du XSLT et du XML.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;catch&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;Exception&lt;span style="color:#fff"&gt; &lt;/span&gt;e&lt;span style="color:#1f2328"&gt;)&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;sendResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;500&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0550ae"&gt;-&lt;/span&gt;1&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;else&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;if&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;OPTIONS&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;equals&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getRequestMethod&lt;/span&gt;&lt;span style="color:#1f2328"&gt;()))&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#57606a"&gt;// Gérer les requêtes CORS preflight&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;().&lt;/span&gt;&lt;span style="color:#1f2328"&gt;set&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;Access-Control-Allow-Origin&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;*&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;().&lt;/span&gt;&lt;span style="color:#1f2328"&gt;set&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;Access-Control-Allow-Methods&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;GET, PUT, DELETE, OPTIONS&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;getResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;().&lt;/span&gt;&lt;span style="color:#1f2328"&gt;set&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;Access-Control-Allow-Headers&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;Content-Type&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;sendResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;200&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0550ae"&gt;-&lt;/span&gt;1&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;else&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;exchange&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;sendResponseHeaders&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;405&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#0550ae"&gt;-&lt;/span&gt;1&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt;
@@ -3192,7 +3181,7 @@ qui comprend une petite application Python capable de traiter du XSLT et du XML.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;System&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;out&lt;/span&gt;&lt;span style="color:#1f2328"&gt;.&lt;/span&gt;&lt;span style="color:#1f2328"&gt;println&lt;/span&gt;&lt;span style="color:#1f2328"&gt;(&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;Serveur REST démarré sur http://localhost:8080/&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;);&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;}&lt;/span&gt;&lt;span style="color:#fff"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Consignes pour l&amp;rsquo;implémentation :&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>XSLT 2.0 et 3.0</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_20_et_30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_20_et_30/</guid><description>&lt;h1 class=""&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vous devez compléter la logique métier dans chaque endpoint en utilisant Gson pour la manipulation JSON :&lt;/p&gt;</description></item><item><title>XSLT 2.0 et 3.0</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_20_et_30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/xslt_20_et_30/</guid><description>&lt;h1 class=""&gt;
  XSLT 2.0 et 3.0
 &lt;/h1&gt;
 &lt;p&gt;
@@ -3243,8 +3232,8 @@ tous les éléments etudiant en les regroupant selon la valeur de leur attribut 
  Question 1 : Application Java pour le traitement XML
  &lt;a class="anchor" href="#question-1--application-java-pour-le-traitement-xml"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Vous développerez une application Java complète pour traiter et analyser des documents XML. Vous utiliserez les API standard Java pour XML (DOM, SAX, XPath) afin de manipuler des données XML représentant un catalogue de livres.&lt;/p&gt;
-&lt;p&gt;Pour démontrer l&amp;rsquo;utilité de votre travail, vous utiliserez le fichier XML suivant comme base de données :&lt;/p&gt;
+&lt;p&gt;Vous développerez une application Java complète pour traiter et analyser des documents XML.
+Pour démontrer l&amp;rsquo;utilité de votre travail, vous utiliserez le fichier XML suivant comme base de données :&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;bibliotheque&lt;/span&gt; &lt;span style="color:#1f2328"&gt;xmlns=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;http://www.example.com/biblio&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;livre&lt;/span&gt; &lt;span style="color:#1f2328"&gt;id=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;categorie=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;roman&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
