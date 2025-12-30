@@ -633,20 +633,20 @@ Vous pouvez modifier les fichier Java et le fichier XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1767046217755274470"&gt;
+&lt;div id="java-multirunner-1767054682321689556"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1767046217755274470 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1767046217755274470 .export-form { margin-bottom:0; }
- #java-multirunner-1767046217755274470 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1767046217755274470 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1767046217755274470 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1767046217755274470 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1767054682321689556 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1767054682321689556 .export-form { margin-bottom:0; }
+ #java-multirunner-1767054682321689556 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1767054682321689556 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1767054682321689556 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1767054682321689556 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1767046217755274470-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1767054682321689556-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -734,14 +734,14 @@ public class SimpleXPath {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1767046217755274470-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1767054682321689556-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1767046217755274470');
+ var root = document.getElementById('java-multirunner-1767054682321689556');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -900,20 +900,20 @@ Vous pouvez modifier les fichiers XSLT et XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1767046217755507382"&gt;
+&lt;div id="java-multirunner-1767054682321983654"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1767046217755507382 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1767046217755507382 .export-form { margin-bottom:0; }
- #java-multirunner-1767046217755507382 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1767046217755507382 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1767046217755507382 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1767046217755507382 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1767054682321983654 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1767054682321983654 .export-form { margin-bottom:0; }
+ #java-multirunner-1767054682321983654 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1767054682321983654 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1767054682321983654 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1767054682321983654 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1767046217755507382-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1767054682321983654-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -1024,14 +1024,14 @@ public class XmlVersConsole {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1767046217755507382-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1767054682321983654-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1767046217755507382');
+ var root = document.getElementById('java-multirunner-1767054682321983654');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -2526,7 +2526,7 @@ considérons le code XML suivant :&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/étudiant&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/université&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pour afficher le nom de l&amp;rsquo;étudiant, il suffira d&amp;rsquo;utiliser
-le document XSLT suivant :&lt;/p&gt;</description></item><item><title>Travail d'intégration</title><link>https://lemire.github.io/orientee_donnees/docs/modules/travail_integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/travail_integration/</guid><description>&lt;h1 id="travail-dintégration"&gt;
+le document XSLT suivant :&lt;/p&gt;</description></item><item><title>Travail d'intégration</title><link>https://lemire.github.io/orientee_donnees/docs/travail_integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/travail_integration/</guid><description>&lt;h1 id="travail-dintégration"&gt;
  Travail d&amp;rsquo;intégration
  &lt;a class="anchor" href="#travail-dint%c3%a9gration"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -2535,12 +2535,12 @@ le document XSLT suivant :&lt;/p&gt;</description></item><item><title>Travail d'
  Objectif
  &lt;a class="anchor" href="#objectif"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Créer un serveur web Java qui sert une page HTML5 permettant à l&amp;rsquo;utilisateur d&amp;rsquo;entrer une liste de 10 entiers. Ce serveur reçoit ces données via AJAX, génère un graphique à barres SVG avec des styles appropriés, puis retourne le graphique intégré dans une page HTML.&lt;/p&gt;</description></item><item><title>Évaluation</title><link>https://lemire.github.io/orientee_donnees/docs/modules/evaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/evaluation/</guid><description>&lt;h1&gt;
+&lt;p&gt;Créer un serveur web Java qui sert une page HTML5 permettant à l&amp;rsquo;utilisateur d&amp;rsquo;entrer une liste de 10 entiers. Ce serveur reçoit ces données via AJAX, génère un graphique à barres SVG avec des styles appropriés, puis retourne le graphique intégré dans une page HTML.&lt;/p&gt;</description></item><item><title>Évaluation</title><link>https://lemire.github.io/orientee_donnees/docs/evaluation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/evaluation/</guid><description>&lt;h1&gt;
  Évaluation
 &lt;/h1&gt;
 &lt;p&gt;
  Pour évaluer vos apprentissages dans ce cours, nous avons préparé 5 travaux
- notés et un examen. Le tableau qui suit les présente sommairement.
+ notés et un travail d'intégration. Le tableau qui suit les présente sommairement.
 &lt;/p&gt;
 &lt;div class="tableau style1"&gt;
  &lt;table class="table spip"&gt;
@@ -2787,7 +2787,7 @@ le document XSLT suivant :&lt;/p&gt;</description></item><item><title>Travail d'
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span style="color:#1f2328"&gt;match=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;title&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:stylesheet&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le premier élément « xsl:template » sert à capturer l&amp;rsquo;élément « book ». Comme il s&amp;rsquo;agit de l&amp;rsquo;élément-racine, on en profite pour produire les éléments « html », « head » et « body ». Le contenu de l&amp;rsquo;élément « head » sera rempli par l&amp;rsquo;élément « xsl:template » traitant l&amp;rsquo;élément DocBook « bookinfo ». On affiche immédiatement le prénom et le nom de l&amp;rsquo;auteur à l&amp;rsquo;aide des expressions XPath « bookinfo/author/firstname » et « bookinfo/author/surname ». Notez l&amp;rsquo;utilisation de l&amp;rsquo;élément &lt;a href="xsl:text"&gt;xsl:text&lt;/a&gt; &amp;lt;/xsl:text&amp;gt; pour produire un espace entre le nom et le prénom. En effet, sans cet élément, il n&amp;rsquo;y aurait pas d&amp;rsquo;espace puisque les espaces et retours de charriot sont ignorés dans les fichiers XSLT. Le reste du document est produit avec les deux éléments « xsl:template » traitant les éléments « chapter » : on utilise le l&amp;rsquo;attribut mode « tdm » pour produire la table des matières, et le reste du document est produit avec le traitement des éléments « chapter » par défaut (sans attribut mode).&lt;/p&gt;</description></item><item><title>Glossaire</title><link>https://lemire.github.io/orientee_donnees/docs/modules/glossaire/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/glossaire/</guid><description>&lt;h1 id="glossaire"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le premier élément « xsl:template » sert à capturer l&amp;rsquo;élément « book ». Comme il s&amp;rsquo;agit de l&amp;rsquo;élément-racine, on en profite pour produire les éléments « html », « head » et « body ». Le contenu de l&amp;rsquo;élément « head » sera rempli par l&amp;rsquo;élément « xsl:template » traitant l&amp;rsquo;élément DocBook « bookinfo ». On affiche immédiatement le prénom et le nom de l&amp;rsquo;auteur à l&amp;rsquo;aide des expressions XPath « bookinfo/author/firstname » et « bookinfo/author/surname ». Notez l&amp;rsquo;utilisation de l&amp;rsquo;élément &lt;a href="xsl:text"&gt;xsl:text&lt;/a&gt; &amp;lt;/xsl:text&amp;gt; pour produire un espace entre le nom et le prénom. En effet, sans cet élément, il n&amp;rsquo;y aurait pas d&amp;rsquo;espace puisque les espaces et retours de charriot sont ignorés dans les fichiers XSLT. Le reste du document est produit avec les deux éléments « xsl:template » traitant les éléments « chapter » : on utilise le l&amp;rsquo;attribut mode « tdm » pour produire la table des matières, et le reste du document est produit avec le traitement des éléments « chapter » par défaut (sans attribut mode).&lt;/p&gt;</description></item><item><title>Glossaire</title><link>https://lemire.github.io/orientee_donnees/docs/extra/glossaire/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/extra/glossaire/</guid><description>&lt;h1 id="glossaire"&gt;
  Glossaire
  &lt;a class="anchor" href="#glossaire"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -2846,7 +2846,7 @@ le document XSLT suivant :&lt;/p&gt;</description></item><item><title>Travail d'
  Saisissez un fichier XML source et une transformation XSLT valide, puis cliquez sur « Transformer ». Vous pouvez réinitialiser les champs avec le bouton « Réinitialiser ».
  &lt;/span&gt;
  &lt;br/&gt;
-&lt;/p&gt;</description></item><item><title>Pense-bête XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/pense-bete_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/pense-bete_xml/</guid><description>&lt;h1&gt;Pense-bête XML&lt;/h1&gt;
+&lt;/p&gt;</description></item><item><title>Pense-bête XML</title><link>https://lemire.github.io/orientee_donnees/docs/extra/pense-bete_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/extra/pense-bete_xml/</guid><description>&lt;h1&gt;Pense-bête XML&lt;/h1&gt;
 &lt;h2 id="quelques-symboles-importants-en-dtd"&gt;
  Quelques symboles importants en DTD
  &lt;a class="anchor" href="#quelques-symboles-importants-en-dtd"&gt;#&lt;/a&gt;
@@ -2869,7 +2869,7 @@ le document XSLT suivant :&lt;/p&gt;</description></item><item><title>Travail d'
 &lt;dl&gt;
 &lt;dt&gt;&lt;strong&gt;&lt;!ATTLIST nomElementX nomAttributY ...&gt;&lt;/strong&gt;&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;Spécifie qu’un élément &lt;code&gt;nomElementX&lt;/code&gt; possède l’attribut &lt;code&gt;nomAttributY&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Pense-bête JSON</title><link>https://lemire.github.io/orientee_donnees/docs/modules/pense-bete_json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/pense-bete_json/</guid><description>&lt;h1 id="pense-bête-json"&gt;
+&lt;p&gt;Spécifie qu’un élément &lt;code&gt;nomElementX&lt;/code&gt; possède l’attribut &lt;code&gt;nomAttributY&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Pense-bête JSON</title><link>https://lemire.github.io/orientee_donnees/docs/extra/pense-bete_json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/extra/pense-bete_json/</guid><description>&lt;h1 id="pense-bête-json"&gt;
  Pense-bête JSON
  &lt;a class="anchor" href="#pense-b%c3%aate-json"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -2896,7 +2896,7 @@ le document XSLT suivant :&lt;/p&gt;</description></item><item><title>Travail d'
 &lt;/dd&gt;
 &lt;dt&gt;&lt;strong&gt;Booléen&lt;/strong&gt;&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;Valeurs &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Pense-bête YAML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/pense-bete_yaml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/pense-bete_yaml/</guid><description>&lt;h1&gt;Pense-bête YAML&lt;/h1&gt;
+&lt;p&gt;Valeurs &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Pense-bête YAML</title><link>https://lemire.github.io/orientee_donnees/docs/extra/pense-bete_yaml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/extra/pense-bete_yaml/</guid><description>&lt;h1&gt;Pense-bête YAML&lt;/h1&gt;
 &lt;h2 id="types-de-données-en-yaml"&gt;
  Types de données en YAML
  &lt;a class="anchor" href="#types-de-donn%c3%a9es-en-yaml"&gt;#&lt;/a&gt;
@@ -2945,7 +2945,7 @@ Rendez vous sur le site
 &lt;a href="https://github.com/lemire/xsltpy"&gt;
  xsltpy
 &lt;/a&gt;
-qui comprend une petite application Python capable de traiter du XSLT et du XML. Suivez les consignes.</description></item><item><title>Professeur</title><link>https://lemire.github.io/orientee_donnees/docs/modules/professeur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/professeur/</guid><description>&lt;h1 id="à-propos-du-professeur"&gt;
+qui comprend une petite application Python capable de traiter du XSLT et du XML. Suivez les consignes.</description></item><item><title>Professeur</title><link>https://lemire.github.io/orientee_donnees/docs/extra/professeur/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/extra/professeur/</guid><description>&lt;h1 id="à-propos-du-professeur"&gt;
  À propos du professeur
  &lt;a class="anchor" href="#%c3%a0-propos-du-professeur"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
