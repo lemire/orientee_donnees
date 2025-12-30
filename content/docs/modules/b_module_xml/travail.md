@@ -7,8 +7,7 @@ weight: 5000
 
 ## Question 1 : Application Java pour le traitement XML
 
-Vous développerez une application Java complète pour traiter et analyser des documents XML. Vous utiliserez les API standard Java pour XML (DOM, SAX, XPath) afin de manipuler des données XML représentant un catalogue de livres.
-
+Vous développerez une application Java complète pour traiter et analyser des documents XML.
 Pour démontrer l'utilité de votre travail, vous utiliserez le fichier XML suivant comme base de données :
 
 ```xml

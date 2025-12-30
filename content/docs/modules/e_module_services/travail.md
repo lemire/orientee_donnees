@@ -56,12 +56,6 @@ public class ServeurREST {
             } else if ("POST".equals(exchange.getRequestMethod())) {
                 // C'est à vous d'implémenter la logique pour ajouter une ressource
                 exchange.sendResponseHeaders(201, -1);
-            } else if ("OPTIONS".equals(exchange.getRequestMethod())) {
-                // Gérer les requêtes CORS preflight
-                exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
-                exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-                exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "Content-Type");
-                exchange.sendResponseHeaders(200, -1);
             } else {
                 exchange.sendResponseHeaders(405, -1);
             }
@@ -93,12 +87,6 @@ public class ServeurREST {
                 } catch (Exception e) {
                     exchange.sendResponseHeaders(500, -1);
                 }
-            } else if ("OPTIONS".equals(exchange.getRequestMethod())) {
-                // Gérer les requêtes CORS preflight
-                exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
-                exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "GET, PUT, DELETE, OPTIONS");
-                exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "Content-Type");
-                exchange.sendResponseHeaders(200, -1);
             } else {
                 exchange.sendResponseHeaders(405, -1);
             }
@@ -112,7 +100,6 @@ public class ServeurREST {
 ```
 
 
-**Consignes pour l'implémentation :**
 
 Vous devez compléter la logique métier dans chaque endpoint en utilisant Gson pour la manipulation JSON :
 

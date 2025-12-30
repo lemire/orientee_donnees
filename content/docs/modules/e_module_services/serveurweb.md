@@ -55,3 +55,136 @@ Essayez de déposer ce dossier un fichier nommé `test.html` avec le contenu sui
 ```
 
 Vous devriez pouvoir charger ce fichier dans votre navigateur.
+
+## Gestion des chemins avec createContext
+
+La méthode `createContext` de la classe `HttpServer` permet de définir des gestionnaires pour des chemins spécifiques sur le serveur HTTP. Cela offre une flexibilité pour gérer différentes routes et répondre de manière appropriée selon l'URL demandée par le client.
+Pour créer un contexte, vous utilisez `serveur.createContext(path, handler)`, où :
+- `path` est la chaîne de caractères représentant le chemin (par exemple, "/hello")
+- `handler` est une implémentation de l'interface `HttpHandler` qui définit comment traiter les requêtes pour ce chemin
+
+### Qu'est-ce qu'un HttpHandler ?
+
+`HttpHandler` est une interface fonctionnelle définie dans le package `com.sun.net.httpserver`. Elle ne contient qu'une seule méthode abstraite : `void handle(HttpExchange exchange) throws IOException`. Cette méthode est appelée chaque fois qu'une requête HTTP correspond au chemin associé au contexte.
+
+L'objet `HttpExchange` passé en paramètre représente l'échange complet entre le client et le serveur. Il encapsule :
+- La requête entrante (méthode HTTP, URI, en-têtes, corps)
+- La réponse sortante (code de statut, en-têtes, corps)
+
+#### Méthodes importantes de HttpExchange
+
+- `getRequestMethod()` : Retourne la méthode HTTP (GET, POST, etc.)
+- `getRequestURI()` : Retourne l'URI de la requête
+- `getRequestHeaders()` : Retourne les en-têtes de la requête sous forme de map
+- `getRequestBody()` : Retourne un InputStream pour lire le corps de la requête
+- `sendResponseHeaders(int statusCode, long responseLength)` : Envoie les en-têtes de réponse avec le code de statut
+- `getResponseBody()` : Retourne un OutputStream pour écrire le corps de la réponse
+- `getResponseHeaders()` : Retourne les en-têtes de réponse pour les modifier
+
+#### Exemple d'utilisation
+
+Dans l'exemple ci-dessous, le gestionnaire vérifie la méthode de la requête et répond différemment selon qu'il s'agit d'un GET ou d'un POST :
+
+Voici un exemple simple où nous créons un contexte pour le chemin "/hello" qui renvoie une réponse texte :
+
+```java
+import com.sun.net.httpserver.HttpServer;
+import com.sun.net.httpserver.HttpHandler;
+import com.sun.net.httpserver.HttpExchange;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+
+public class ExempleServeurContext {
+    public static void main(String[] args) throws IOException {
+        int port = 8000;
+        HttpServer serveur = HttpServer.create(new InetSocketAddress(port), 0);
+
+        // Contexte pour la racine - sert les fichiers statiques
+        serveur.createContext("/", SimpleFileServer.createFileHandler(Path.of(".").toAbsolutePath()));
+
+        // Contexte personnalisé pour /hello
+        serveur.createContext("/hello", new HttpHandler() {
+            @Override
+            public void handle(HttpExchange exchange) throws IOException {
+                String method = exchange.getRequestMethod();
+                String response;
+                
+                if ("GET".equals(method)) {
+                    response = "Hello, World! (via GET)";
+                } else if ("POST".equals(method)) {
+                    response = "Hello, World! (via POST)";
+                } else {
+                    response = "Méthode non supportée: " + method;
+                    exchange.sendResponseHeaders(405, response.length()); // Method Not Allowed
+                    OutputStream os = exchange.getResponseBody();
+                    os.write(response.getBytes());
+                    os.close();
+                    return;
+                }
+                
+                exchange.sendResponseHeaders(200, response.length());
+                OutputStream os = exchange.getResponseBody();
+                os.write(response.getBytes());
+                os.close();
+            }
+        });
+
+        serveur.start();
+        System.out.println("Serveur démarré sur le port " + port);
+    }
+}
+```
+
+### Gestion des méthodes HTTP GET et PUT
+
+Dans un serveur web, il est essentiel de gérer différentes méthodes HTTP pour implémenter des API RESTful. Les méthodes GET et PUT sont couramment utilisées :
+
+- **GET** : Récupère des données depuis le serveur sans les modifier. Idempotente et mise en cache possible.
+- **PUT** : Met à jour une ressource existante ou en crée une nouvelle à l'emplacement spécifié. Idempotente.
+
+#### Exemple d'implémentation
+
+Voici un exemple de gestionnaire qui traite les requêtes GET et PUT pour un chemin "/api/data" :
+
+```java
+serveur.createContext("/api/data", new HttpHandler() {
+    @Override
+    public void handle(HttpExchange exchange) throws IOException {
+        String method = exchange.getRequestMethod();
+        String response;
+        
+        switch (method) {
+            case "GET":
+                // Simuler la récupération de données
+                response = "{\"message\": \"Données récupérées\", \"data\": \"valeur\"}";
+                exchange.getResponseHeaders().set("Content-Type", "application/json");
+                exchange.sendResponseHeaders(200, response.length());
+                break;
+                
+            case "PUT":
+                // Lire le corps de la requête pour les données à mettre à jour
+                InputStream is = exchange.getRequestBody();
+                String requestBody = new String(is.readAllBytes(), StandardCharsets.UTF_8);
+                is.close();
+                
+                // Traiter les données (ici, simplement les afficher)
+                System.out.println("Données reçues : " + requestBody);
+                
+                response = "{\"message\": \"Données mises à jour\", \"received\": " + requestBody + "}";
+                exchange.getResponseHeaders().set("Content-Type", "application/json");
+                exchange.sendResponseHeaders(200, response.length());
+                break;
+                
+            default:
+                response = "{\"error\": \"Méthode non supportée\"}";
+                exchange.sendResponseHeaders(405, response.length());
+                break;
+        }
+        
+        OutputStream os = exchange.getResponseBody();
+        os.write(response.getBytes(StandardCharsets.UTF_8));
+        os.close();
+    }
+});
+```
