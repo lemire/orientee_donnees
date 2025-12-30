@@ -8,7 +8,7 @@ weight: 160
 </h1>
 <p>
  Pour évaluer vos apprentissages dans ce cours, nous avons préparé 5 travaux
-    notés et un examen. Le tableau qui suit les présente sommairement.
+    notés et un travail d'intégration. Le tableau qui suit les présente sommairement.
 </p>
 <div class="tableau style1">
  <table class="table spip">

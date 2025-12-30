@@ -228,7 +228,6 @@ Un cours en ligne n'est pas pour autant plus facile. Si votre progression est tr
 
 L'une des plus grandes sources de frustration est la difficulté des travaux notés. Plusieurs étudiants espèrent gagner du temps en faisant rapidement les lectures et en omettant les activités d'autoévaluation. C'est une mauvaise idée, parce que vous arriverez alors aux activités notées mal préparé.
 
-Lorsque vous passerez l'examen à la fin du cours, il sera tenu pour acquis que vous aurez fait toutes les activités d'autoévaluation et que vous en maîtriserez donc la matière.
 
 **Note sur l'encadrement**
 
