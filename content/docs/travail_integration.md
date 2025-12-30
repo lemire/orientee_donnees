@@ -5,7 +5,8 @@ weight: 155
 
 # Travail d'intégration
 
-Ce travail d'intégration vous permet de démontrer l'acquisition des compétences développées tout au long du cours. Vous devez créer une application web complète qui intègre plusieurs technologies : HTML5, JavaScript, AJAX, Java, JSON, XML, SVG, et les styles CSS.
+Ce travail d'intégration vous permet de démontrer l'acquisition des compétences développées tout au long du cours. Vous devez créer une application web complète qui intègre plusieurs technologies : HTML5, JavaScript, AJAX, Java, JSON, XML, SVG, MathML,  Maven et les styles CSS. Vous utilisez
+les libraires Java Gson et Jackson.
 
 **Avertissement**. Vous devez avoir fait toutes les activités du cours avant de tenter de faire
 l'activité d'intégration.
@@ -104,7 +105,8 @@ Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra
 ### Graphique SVG
 
 Le SVG doit afficher 10 barres verticales représentant les valeurs saisies par l'utilisateur
-avec les étiquettes associées. Il utilisera des dégradés. Les axes seront étiquetés de manière claire. Le graphique inclura des tooltips au survol des barres.
+avec les étiquettes associées. Il utilisera des dégradés. Les axes seront étiquetés de manière claire. Le graphique inclura des infobulles au survol des barres. Vous devez par ailleurs include une 
+expression MathML dans votre SVG.
 
 ## Structure proposée
 
@@ -304,7 +306,7 @@ public class GraphServer {
 }
 ```
 
-Le SVG doit utiliser des styles CSS appropriés. Pour les barres, vous emploierez un dégradé linéaire `linearGradient`. Les animations utiliseront les propriétés `transition` et `transform` au survol. Les couleurs devront être cohérentes, idéalement avec des variables CSS. La typographie sera soignée avec des polices et tailles appropriées pour les étiquettes. Pour l'accessibilité, n'oubliez pas d'ajouter des éléments `<title>` pour les tooltips.
+Le SVG doit utiliser des styles CSS appropriés. Pour les barres, vous emploierez un dégradé linéaire `linearGradient`. Les animations utiliseront les propriétés `transition` et `transform` au survol. Les couleurs devront être cohérentes, idéalement avec des variables CSS. La typographie sera soignée avec des polices et tailles appropriées pour les étiquettes. Pour l'accessibilité, n'oubliez pas d'ajouter des éléments `<title>` pour les infobulles.
 
 Vous devrez vérifier que exactement 10 valeurs sont fournies dans la requête. Vous devez vérifier
 que les étiquettes sont présentes. La gestion des erreurs devra être appropriée, avec des messages d'erreur clairs en cas de données invalides.

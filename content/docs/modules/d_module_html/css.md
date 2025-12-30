@@ -143,7 +143,90 @@ p {
 
 Il aurait été sans doute préférable d'avoir une instruction dédiée pour centrer les éléments comme il s'agit d'une opération courante.
 
-### les commentaires
+### les infobulles (tooltips)
+
+Les infobulles sont des petits textes d'aide qui apparaissent généralement au survol d'un élément avec la souris. En CSS, on peut créer des infobulles personnalisées en utilisant les pseudo-éléments `::before` ou `::after` combinés avec la pseudo-classe `:hover`.
+
+Voici un exemple simple d'infobulle où le texte est défini directement en CSS :
+
+```css
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip::after {
+  content: "Ceci est une infobulle";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+```
+
+Pour utiliser cette infobulle en HTML :
+
+```html
+<span class="tooltip">Passez la souris ici</span>
+```
+
+Pour des infobulles avec du texte dynamique, on peut utiliser l'attribut `data-tooltip` en remplaçant `content: "Ceci est une infobulle";` par `content: attr(data-tooltip);` et ajouter `data-tooltip="Votre texte"` dans le HTML. On peut personnaliser l'apparence, la position (par exemple, à droite avec `left: 100%`) et ajouter des flèches avec des bordures CSS. Les infobulles améliorent l'accessibilité et l'expérience utilisateur en fournissant des informations contextuelles sans encombrer l'interface.
+
+Voici un exemple complet d'infobulle dynamique :
+
+```css
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+```
+
+Pour utiliser cette infobulle en HTML :
+
+```html
+<span class="tooltip" data-tooltip="Ceci est une infobulle personnalisée">Passez la souris ici</span>
+<span class="tooltip" data-tooltip="Autre information utile">Ou ici</span>
+```
+
+
+
+### Les commentaires
 
 Tout comme en Java, on peut ajouter des commentaires à un fichier CSS qui sont systématiquement ignorés par la machine. Un bloc de commentaire débute par « /* » et se termine par « */ ».
 

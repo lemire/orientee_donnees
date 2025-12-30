@@ -512,3 +512,56 @@ weight: 52
         }
     });
 </script>
+
+
+
+## MathML et SVG
+
+Vous pouvez insérer du MathML dans un document SVG.
+
+
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <line x1="50" y1="250" x2="350" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="200" y1="50" x2="200" y2="250" stroke="black" stroke-width="2"/>
+    <polygon points="350,250 340,245 340,255" fill="black"/>
+  <polygon points="200,50 195,60 205,60" fill="black"/>
+    <text x="340" y="270" font-size="14">x</text>
+  <text x="210" y="65" font-size="14">y</text>
+    <foreignObject x="220" y="80" width="160" height="60">
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi>y</mi>
+      <mo>=</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
+  </foreignObject>
+    <path d="M100,250 Q200,50 300,250" fill="none" stroke="blue" stroke-width="3"/>
+</svg>
+
+**Code**.
+
+```xml
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <line x1="50" y1="250" x2="350" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="200" y1="50" x2="200" y2="250" stroke="black" stroke-width="2"/>
+    <polygon points="350,250 340,245 340,255" fill="black"/>
+  <polygon points="200,50 195,60 205,60" fill="black"/>
+    <text x="340" y="270" font-size="14">x</text>
+  <text x="210" y="65" font-size="14">y</text>
+    <foreignObject x="220" y="80" width="160" height="60">
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi>y</mi>
+      <mo>=</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
+  </foreignObject>
+    <path d="M100,250 Q200,50 300,250" fill="none" stroke="blue" stroke-width="3"/>
+</svg>
+```

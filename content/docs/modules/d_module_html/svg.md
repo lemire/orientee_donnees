@@ -468,6 +468,40 @@ weight: 50
   Ces éléments couvrent la très grande majorité des besoins en illustration vectorielle, diagrammes, icônes animées et graphiques interactifs dans les pages web modernes. SVG est entièrement stylisable avec CSS et animable avec SMIL ou JavaScript.
  </p>
  <h2>
+  L'élément foreignObject
+ </h2>
+ <p>
+  L'élément <code>&lt;foreignObject&gt;</code> permet d'intégrer du contenu HTML ou d'autres langages XML à l'intérieur d'un SVG. Cela est particulièrement utile pour combiner des éléments vectoriels avec du texte riche, des formulaires ou d'autres contenus HTML qui ne sont pas nativement supportés par SVG. L'élément <code>&lt;foreignObject&gt;</code> définit une région rectangulaire dans le SVG où le contenu étranger peut être rendu.
+ </p>
+ <p>
+  Les attributs principaux de <code>&lt;foreignObject&gt;</code> sont :
+  <ul>
+   <li><code>x</code> et <code>y</code> : position du coin supérieur gauche de la région.</li>
+   <li><code>width</code> et <code>height</code> : dimensions de la région.</li>
+  </ul>
+ </p>
+ <p>
+  À l'intérieur de <code>&lt;foreignObject&gt;</code>, vous pouvez utiliser des éléments HTML comme <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;input&gt;</code>, etc. Notez que le contenu HTML doit être bien formé et que les styles CSS peuvent être appliqués normalement.
+ </p>
+ <p>
+  Exemple d'utilisation :
+ </p>
+ <pre><code>&lt;svg width="400" height="200" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;rect x="10" y="10" width="380" height="180" fill="lightblue"/&gt;
+  &lt;foreignObject x="20" y="20" width="360" height="160"&gt;
+    &lt;body xmlns="http://www.w3.org/1999/xhtml"&gt;
+      &lt;p style="color: darkblue; font-family: Arial;"&gt;Ceci est du texte HTML dans un SVG !&lt;/p&gt;
+      &lt;input type="text" placeholder="Entrez quelque chose" /&gt;
+    &lt;/body&gt;
+  &lt;/foreignObject&gt;
+&lt;/svg&gt;</code></pre>
+ <p>
+  Dans cet exemple, un rectangle SVG contient un paragraphe HTML et un champ de saisie. Le contenu HTML est rendu dans la région définie par <code>&lt;foreignObject&gt;</code>.
+ </p>
+ <p>
+  <code>&lt;foreignObject&gt;</code> est particulièrement utile pour créer des graphiques hybrides, des infobulles riches ou des interfaces utilisateur complexes intégrant SVG et HTML.
+ </p>
+ <h2>
   Laboratoire
  </h2>
  <p>
