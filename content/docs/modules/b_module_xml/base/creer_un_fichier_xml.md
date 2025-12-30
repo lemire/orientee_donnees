@@ -60,7 +60,7 @@ Pour éviter cela :
  <strong>
   ANSI
  </strong>
- (équivalent à ISO-8859-1 pour ce cours).
+ (équivalent à ISO-8859-1).
 </p>
 <p>
  Ouvrez maintenant

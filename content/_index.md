@@ -8,13 +8,8 @@ title: "Accueil"
 Bienvenue ! Mon nom est [Daniel Lemire](http://lemire.me/fr/). Je travaille comme professeur et chercheur en informatique. Je suis notamment l'instigateur et le principal auteur du parseur JSON le plus rapide au monde (simdjson),
 nous verrons dans ce cours en quoi consiste JSON.
 
-Ce cours porte sur le XML et les concepts associés (CSS, XSLT, HTML, MathML, etc.).
-Le XML vous permet de générer des graphiques de grande qualité (SVG) que vous pouvez inclure au sein de pages web ou de document Word. Le XML vous permet de produire des équations mathématiques. 
-Nous couvrons aussi des formats comme JSON, YAML et Base64. Vous apprendrez comment créez un document Word à partir d'un programme Java en produisant du XML. Vous apprendrez comment récupérer les dernières nouvelles de Radio-Canada avec un programme analysant du XML. Bref, le cours fait le tour généralement des formats de données et de documents.
-À la fin du cours, vous pourrez comprendre, analyser, filtrer et transformer des documents informatiques XML et JSON.
 
 ## Mise en contexte
-
 
 Les formats de données structurées comme XML, HTML, JSON, YAML et RDF jouent un rôle essentiel dans l'échange et la représentation d'informations en informatique. Chacun d'eux repose sur des structures de données fondamentales qui influencent leur utilisation. Une compréhension des liens entre ces formats et les concepts sous-jacents, tels que les arbres, les compositions de dictionnaires et listes, ou les graphes, permet de mieux choisir l'outil adapté à une situation donnée.
 

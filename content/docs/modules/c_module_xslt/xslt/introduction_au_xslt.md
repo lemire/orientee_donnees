@@ -4,7 +4,7 @@ weight: 10
 ---
 # Introduction au XSLT
 ## Qu'est-ce que le XSLT
- La première version du langage XSLT (_Extensible Stylesheet Language Transformation_) a été publiée en 1997 et elle est devenue une recommandation W3C en 1999. Elle fait partie du XSL (_Extensible Stylesheet Language_) qui comprend une seconde composante, les XSL-FO (_Extensible Stylesheet Language Formatting Objects_). La technologie XSL tire son origine du besoin d'un langage simple, mais suffisamment puissant pour pouvoir contrôler finement l'affichage du XML. On utilise beaucoup le XSLT sur le web et au sein des systèmes d'information, alors que le XSL-FO est davantage utile pour les applications de mise en page spécialisées. Dans ce cours, nous nous soucierons seulement du XSLT, dont l'utilité dépasse de loin les problèmes de présentation.
+ La première version du langage XSLT (_Extensible Stylesheet Language Transformation_) a été publiée en 1997 et elle est devenue une recommandation W3C en 1999. Elle fait partie du XSL (_Extensible Stylesheet Language_) qui comprend une seconde composante, les XSL-FO (_Extensible Stylesheet Language Formatting Objects_). La technologie XSL tire son origine du besoin d'un langage simple, mais suffisamment puissant pour pouvoir contrôler finement l'affichage du XML. On utilise beaucoup le XSLT sur le web et au sein des systèmes d'information, alors que le XSL-FO est davantage utile pour les applications de mise en page spécialisées. 
 
  L'objectif poursuivi par le XSLT est de transformer les documents XML en d'autres documents. Par exemple, supposons que vous ayez le document suivant :
 

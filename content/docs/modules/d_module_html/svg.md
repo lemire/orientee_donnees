@@ -505,8 +505,7 @@ weight: 50
   Laboratoire
  </h2>
  <p>
-  Je vous invite à éditer le code SVG au sein de la boîte suivante pour observer le résultat. Le SVG est notamment mis en forme à l'aide du CSS, un notion que nous
-  allons explorer plus tard dans le cours.
+  Je vous invite à éditer le code SVG au sein de la boîte suivante pour observer le résultat. Le SVG est notamment mis en forme à l'aide du CSS.
  </p>
  <h2 style="text-align: center;">
   Code SVG

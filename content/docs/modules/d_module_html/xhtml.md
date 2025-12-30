@@ -43,9 +43,7 @@ peuvent être représentées par un document DTD.
 en XHTML. Une des raisons principales de l'utilisation du XHTML, c'est que les outils qui
 traitent le XML peuvent aussi traiter du XHTML puisque ce dernier est 
 aussi du XML. Il est donc possible, dans une organisation, de combiner le contenu web (HTML) avec
-le stockage des informations en XML. Comme nous le verrons plus tard dans le cours 
-(module 3, section portant sur le XSLT),  on
-peut même transformer automatiquement le XML en XHTML.
+le stockage des informations en XML.
  </p>
  <p>
   Si on dit « HTML » tout court, ce n'est pas nécessairement du XML et
@@ -152,8 +150,7 @@ en HTML, mais en XHTML, il faut écrire «
 « &lt;p&gt; » par « &lt;P&gt; », alors que ce n'est pas permis en XHTML.
   </li>
  </ul>
- <p>
-  Dans ce cours, nous nous intéresserons surtout au XHTML. Un document XHTML prend la forme suivante :
+ <p>Un document XHTML prend la forme suivante :
  </p>
  <pre><span style="color:#004a43; ">&lt;?</span><span style="color:#800000; font-weight:bold; ">xml</span><span style="color:#004a43; "> </span><span style="color:#074726; ">version</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#7d0045; ">1.0</span><span style="color:#0000e6; ">"</span><span style="color:#004a43; "> </span><span style="color:#074726; ">encoding</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">ISO-8859-1</span><span style="color:#0000e6; ">"</span><span style="color:#004a43; "> </span><span style="color:#004a43; ">?&gt;</span>
 <span style="color:#004a43; ">&lt;!</span><span style="color:#004a43; ">DOCTYPE</span> <span style="color:#004a43; ">html</span> <span style="color:#800000; font-weight:bold; ">PUBLIC</span> <span style="color:#0000e6; ">"-//W3C//DTD XHTML 1.0 Strict//EN"</span>
@@ -1100,8 +1097,6 @@ s'assurer de leur conformité avec les normes (
    http://validator.w3.org/
   </a>
   ).
-Vous pourrez facilement constater que plusieurs pages à l'UQAM ne sont pas du HTML valable,
-y compris certaines pages web de ce cours !
  </p>
  <h2>
   Spécification Relax NG
