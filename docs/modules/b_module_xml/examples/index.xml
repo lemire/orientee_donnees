@@ -41,4 +41,13 @@ Ce format XML facilite la création de contenus 3D portables, visualisables dans
 &lt;/h1&gt;
 &lt;p&gt;Le fichier AndroidManifest.xml est le cœur de toute application Android. Il s&amp;rsquo;agit d&amp;rsquo;un fichier XML obligatoire situé à la racine du projet qui décrit les composants essentiels de l&amp;rsquo;application au système Android. Il déclare notamment le package de l&amp;rsquo;application, les activités (Activity), services, récepteurs de diffusion (Broadcast Receiver) et fournisseurs de contenu (Content Provider). Sans ce fichier correctement configuré, l&amp;rsquo;application ne peut pas être installée ni exécutée sur un appareil ou un émulateur.
 Ce manifeste sert également à déclarer les permissions nécessaires (par exemple l&amp;rsquo;accès à Internet, à la caméra, au stockage), les fonctionnalités matérielles requises (comme la présence d&amp;rsquo;un capteur GPS ou d&amp;rsquo;une caméra), la version minimale et cible de l&amp;rsquo;API Android, ainsi que des métadonnées comme l&amp;rsquo;icône de l&amp;rsquo;application, le label affiché dans le launcher, le thème, ou encore si l&amp;rsquo;application supporte le mode portrait/seulement paysage. Depuis Android 12 et plus, certaines déclarations comme les activités exportées doivent être explicites pour des raisons de sécurité.
-Voici un exemple simple d&amp;rsquo;un AndroidManifest.xml pour une application basique contenant une seule activité :&lt;/p&gt;</description></item></channel></rss>
+Voici un exemple simple d&amp;rsquo;un AndroidManifest.xml pour une application basique contenant une seule activité :&lt;/p&gt;</description></item><item><title>Docx (Microsoft Word)</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/examples/docx_microsoft_word/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/examples/docx_microsoft_word/</guid><description>&lt;h1&gt;
+ Création d'un document Microsoft Word (docx)
+&lt;/h1&gt;
+&lt;p&gt;
+ Un document Word n'est rien d'autre que des fichiers XML dans une archive zip.
+ &lt;a href="https://github.com/lemire/javaword"&gt;
+ Nous vous invitons maintenant à faire notre activité de création de documents Word
+ &lt;/a&gt;
+ .
+&lt;/p&gt;</description></item></channel></rss>
