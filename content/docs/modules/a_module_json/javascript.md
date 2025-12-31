@@ -218,7 +218,7 @@ Vous pouvez tester votre compréhension de la syntaxe avec la console suivante.
         addLine('Chaque commande s\'ajoute à la session précédente.', '#aaa');
         addLine('Exemple : var x = 5; puis console.log(x);', '#aaa');
         addLine('');
-        input.focus();
+        //input.focus();
     }
     function executeCode() {
         const code = input.value.trim();
