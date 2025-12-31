@@ -4,6 +4,8 @@ weight: 30
 bookCollapseSection: true
 ---
 
+# Module XPath, XSLT, XQuery
+
 Ce module se concentre sur les technologies de transformation et d'interrogation des documents XML : XPath pour la navigation et la sélection d'éléments, XSLT pour la transformation de XML vers d'autres formats (HTML, XML, texte), et XQuery pour l'interrogation et la construction de documents XML. Il inclut des laboratoires pratiques, des auto-évaluations, et explore des concepts avancés comme les axes, les boucles, les variables, les espaces de noms, et les versions 2.0/3.0. Des exemples d'intégration avec Java et Python sont fournis. 
 
 ## Un problème ou une suggestion ?

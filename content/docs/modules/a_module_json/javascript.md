@@ -162,7 +162,7 @@ Vous pouvez tester votre compréhension de la syntaxe avec la console suivante.
     <pre id="output" style="height: 300px; overflow-y: auto; padding: 10px; margin: 0; background: #1e1e1e; color: #dcdcdc; font-family: 'Courier New', monospace; white-space: pre-wrap;"></pre>
     <div style="display: flex; padding: 10px; background: #ecf0f1;">
         <span style="color: #2c3e50; margin-right: 10px; align-self: center;">></span>
-        <input type="text" id="input" autocomplete="off" autofocus 
+        <input type="text" id="input" autocomplete="off" 
                 style="flex: 1; border: none; outline: none; font-family: 'Courier New', monospace; font-size: 14px; background: transparent;">
         <button id="run" style="padding: 0 15px; background: #3498db; color: white; border: none; cursor: pointer; margin-left: 10px;">
             Exécuter
@@ -252,7 +252,7 @@ Vous pouvez tester votre compréhension de la syntaxe avec la console suivante.
             console.warn = origWarn;
         }
         input.value = '';
-        input.focus();
+        //input.focus();
     }
     runBtn.addEventListener('click', executeCode);
     resetBtn.addEventListener('click', resetConsole);

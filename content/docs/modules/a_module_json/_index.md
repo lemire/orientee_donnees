@@ -4,6 +4,8 @@ weight: 5
 bookCollapseSection: true
 ---
 
+# Module JSON
+
 Ce module explore le format JSON (JavaScript Object Notation) et ses applications pratiques. Il couvre les bases de la syntaxe JavaScript et JSON, les types de données supportés, et les bonnes pratiques pour l'échange de données structurées. Le module inclut également GeoJSON pour la représentation de données géographiques, la bibliothèque Gson pour le traitement JSON en Java, l'outil en ligne de commande jq pour la manipulation de fichiers JSON, les concepts d'encodage Unicode (UTF-8 et UTF-16), ainsi qu'une introduction au format Markdown avec un laboratoire interactif. 
 
 ## Un problème ou une suggestion ?

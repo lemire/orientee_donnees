@@ -6,7 +6,7 @@ weight: 70
 
 
 
-# JavaScript
+# Chargement XML/JSON en JavaScript
 
 
 La programmation asynchrone permet d'exécuter des tâches en arrière-plan sans bloquer l'exécution du programme principal. Contrairement à la programmation synchrone où les opérations se déroulent séquentiellement (une après l'autre), l'asynchrone permet de lancer une opération longue, comme une requête réseau ou la lecture d'un fichier, et de continuer à exécuter d'autres tâches pendant que cette opération se déroule. Lorsque l'opération asynchrone se termine, un mécanisme de notification (callback, Promise, ou async/await) permet de traiter le résultat sans interrompre le flux principal du programme.
@@ -286,3 +286,18 @@ Cet exemple montre comment :
 - Afficher dynamiquement les données dans le DOM
 
 L'exemple utilise l'API publique JSONPlaceholder pour démontrer une vraie requête HTTP GET. JSON offre une alternative moderne et légère à XML pour l'échange de données en AJAX.
+
+
+## Trucs pour le développement JavaScript dans un navigateur
+
+
+Tous les navigateurs modernes (Chrome, Firefox, Edge, Safari) disposent d'outils de développement intégrés. Ouvrez-les avec F12 ou Ctrl+Shift+I (Cmd+Option+I sur Mac).
+
+- **Console** : Pour les logs (`console.log()`), erreurs, et exécuter du code en direct
+- **Network** : Pour inspecter les requêtes HTTP, voir les réponses AJAX, et déboguer les appels API
+- **Sources** : Pour déboguer le code JavaScript avec des points d'arrêt
+- **Application** : Pour inspecter le stockage local, les cookies, et les données de session
+
+
+Lorsque vous faites des requêtes AJAX vers des domaines différents, vous pouvez rencontrer des erreurs.
+Utilisez un serveur local (comme `ExempleServeurFichiersSimple.java`).
