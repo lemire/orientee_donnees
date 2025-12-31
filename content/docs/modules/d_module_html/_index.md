@@ -4,7 +4,7 @@ weight: 40
 bookCollapseSection: true
 ---
 
-
+Ce module explore les technologies de présentation web : HTML5 pour la structure des pages, CSS (niveaux 2 et 3) pour le style et la mise en forme, SVG pour les graphiques vectoriels évolutifs, MathML pour l'affichage d'expressions mathématiques, et XHTML comme variante XML de HTML. Il inclut des laboratoires pratiques, des auto-évaluations, et des exemples d'intégration (par exemple, CSS avec MathML). 
 
 ## Un problème ou une suggestion ?
 

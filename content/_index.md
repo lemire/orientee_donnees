@@ -9,6 +9,10 @@ Bienvenue ! Mon nom est [Daniel Lemire](http://lemire.me/fr/). Je travaille comm
 nous verrons dans ce cours en quoi consiste JSON.
 
 
+
+Ce cours explore la gestion des données à travers les formats les plus utilisés sur Internet et en science des données. Il présente le format JSON comme la norme actuelle pour les échanges web, ainsi que sa manipulation à l’aide de bibliothèques telles que Gson (Google) et Jackson, ou d’outils spécialisés comme jq. Le cours aborde également le format XML, en couvrant sa validation par DTD et sa transformation par XSLT. Le HTML est traité avec sa stylisation via CSS, ainsi que ses formats compagnons comme MathML et SVG. Le format YAML est présenté comme une alternative lisible par l’humain, étendant les possibilités de JSON pour les fichiers de configuration. Une attention particulière est accordée aux correspondances entre ces formats et les structures de données fondamentales : XML et HTML en tant qu’arbres de nœuds, JSON et YAML comme compositions de dictionnaires et de listes, et RDF comme graphe de relations. Cette approche permet de relier les opérations d’analyse, de validation, de requêtage et de transformation à des concepts centraux en informatique, tels que la représentation en mémoire, le parcours d’arbres, la réécriture de structures, ainsi que la sérialisation et la désérialisation. Des notions complémentaires, comme l’encodage Base64 et les flux RSS, sont également couvertes, avec un accent sur leur manipulation programmatique. À travers des exemples concrets – récupération de flux d’actualités, génération de documents Word au format XML, analyse rapide de données JSON, développement d’un service web exposant JSON ou XML – le cours vise à développer des compétences pratiques pour analyser, transformer et échanger des données dans des environnements professionnels contemporains.
+
+
 ## Mise en contexte
 
 Les formats de données structurées comme XML, HTML, JSON, YAML et RDF jouent un rôle essentiel dans l'échange et la représentation d'informations en informatique. Chacun d'eux repose sur des structures de données fondamentales qui influencent leur utilisation. Une compréhension des liens entre ces formats et les concepts sous-jacents, tels que les arbres, les compositions de dictionnaires et listes, ou les graphes, permet de mieux choisir l'outil adapté à une situation donnée.
@@ -189,9 +193,7 @@ Nous recommandons comme référence pour la programmation Java le manuel [Java p
 
 ## Mathématiques
 
-Ce cours ne nécessite pas beaucoup de mathématiques en dehors de celles déjà couvertes au secondaire. Par exemple, il faut être familier avec la théorie des ensembles (incluant les notions d'union et d'intersection) et la théorie des graphes.
-
-Un site d'aide aux devoirs pour les étudiants du secondaires comme [Allô prof](https://www.alloprof.qc.ca) devrait vous permettre de faire une rapide mise à niveau si ces notions ne vous sont plus familières.
+Ce cours ne nécessite pas beaucoup de mathématiques en dehors de celles déjà couvertes au secondaire. Par exemple, il faut être familier avec la théorie des ensembles (incluant les notions d'union et d'intersection) et des éléments de la théorie des graphes.
 
 
 ## Charge de travail
@@ -210,8 +212,7 @@ Un cours en ligne est beaucoup plus qu'un simple site web. Par exemple, le prés
 
 **Navigation**
 
-Le menu à gauche de l'écran présente l'organisation du cours en semaines. Vous devez suivre le cours
-de la première semaine à le dernière.
+Le menu à gauche de l'écran présente l'organisation du cours en modules. Vous devez suivre le cours du premier module au dernier. Prenez le temps de consulter la feuille de route.
 
 ## L'approche pédagogique du cours
 
