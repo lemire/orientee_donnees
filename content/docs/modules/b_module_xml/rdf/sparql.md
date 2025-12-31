@@ -138,26 +138,6 @@ Ce dernier exemple montre les 10 pays ayant le plus de villes recensées dans Wi
 
 
 
-
-
-Voici la présentation mise à jour avec trois questions d’auto-évaluation ajoutées à la fin.
-
-### Présentation de SPARQL
-
-SPARQL (acronyme récursif de SPARQL Protocol and RDF Query Language) est le langage de requête standard pour interroger des données exprimées en RDF (Resource Description Framework). Il a été standardisé par le W3C en 2008 et sa version actuelle la plus utilisée est SPARQL 1.1 (2013).  
-
-Il permet de récupérer et de manipuler des données stockées dans des triplestores ou dans n’importe quel graphe RDF, que ce soit sur le web (Linked Data), dans une base locale ou via un endpoint SPARQL public comme DBpedia, Wikidata ou data.gouv.fr.
-
-SPARQL ressemble beaucoup à SQL, mais au lieu de tables et colonnes, on travaille avec des triplets de la forme **sujet – prédicat – objet** (ex. : <http://example.org/Paris> rdf:type dbo:City).
-
-Il existe quatre formes principales de requêtes SPARQL :
-- SELECT : retourne un tableau de résultats (le plus courant)
-- CONSTRUCT : crée un nouveau graphe RDF à partir des résultats
-- ASK : retourne simplement vrai ou faux
-- DESCRIBE : retourne une description RDF d’une ressource
-
-(suivent tous les exemples déjà fournis dans le message précédent…)
-
 ### Questions d’auto-évaluation
 
 1. Écrivez une requête SPARQL qui retourne le nom (en français) et la date de naissance de toutes les personnes nées à Paris et décédées après 1950, en utilisant l’endpoint Wikidata. Utilisez le service wikibase:label et ordonnez les résultats par date de naissance décroissante.
@@ -222,6 +202,170 @@ CONSTRUCT {
 
 </details>
 
+
+## Activité avec Apache Jena
+
+Apache Jena est un framework Java open source développé par la fondation Apache, dédié à la construction d'applications pour le Web sémantique et les données liées (Linked Data). Il fournit une API complète pour manipuler des données RDF (Resource Description Framework), lire et écrire des graphes RDF dans divers formats, exécuter des requêtes SPARQL, gérer des ontologies OWL, et même effectuer du raisonnement inférentiel. 
+
+Voici un exemple que vous pouvez exécuter.
+
+
+{{<inlineJava path="DemoRdfXmlSparql.java">}}
+import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import java.io.StringReader;
+
+public class DemoRdfXmlSparql {
+private static final String DONNEES_RDF_XML = """
+        <?xml version="1.0" encoding="UTF-8"?>
+        <rdf:RDF
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:foaf="http://xmlns.com/foaf/0.1/"
+            xmlns:bibo="http://purl.org/ontology/bibo/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+          <bibo:Book rdf:about="http://example.org/books#book1">
+            <dc:title>Semantic Web Primer</dc:title>
+            <dc:creator>
+              <foaf:Person rdf:about="http://example.org/people#grigoris">
+                <foaf:name>Grigoris Antoniou</foaf:name>
+              </foaf:Person>
+            </dc:creator>
+            <dc:creator>
+              <foaf:Person rdf:about="http://example.org/people#frank">
+                <foaf:name>Frank van Harmelen</foaf:name>
+              </foaf:Person>
+            </dc:creator>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</dc:date>
+            <dc:publisher>MIT Press</dc:publisher>
+          </bibo:Book>
+
+          <bibo:Book rdf:about="http://example.org/books#book2">
+            <dc:title>Linked Data</dc:title>
+            <dc:creator>
+              <foaf:Person rdf:about="http://example.org/people#tim">
+                <foaf:name>Tim Berners-Lee</foaf:name>
+              </foaf:Person>
+            </dc:creator>
+            <dc:creator>
+              <foaf:Person rdf:about="http://example.org/people#toby">
+                <foaf:name>Toby Segaran</foaf:name>
+              </foaf:Person>
+            </dc:creator>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2011</dc:date>
+            <dc:publisher>Wiley</dc:publisher>
+          </bibo:Book>
+
+          <bibo:Book rdf:about="http://example.org/books#book3">
+            <dc:title>Programming the Semantic Web</dc:title>
+            <dc:creator>
+               <foaf:Person rdf:about="http://example.org/people#toby"/>
+            </dc:creator>
+            <dc:creator>
+               <foaf:Person rdf:about="http://example.org/people#grigoris"/>
+            </dc:creator>
+            <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2009</dc:date>
+            <dc:publisher>O'Reilly</dc:publisher>
+          </bibo:Book>
+
+        </rdf:RDF>
+        """;
+
+    public static void main(String[] args) {
+        Model modele = ModelFactory.createDefaultModel();
+
+        try (StringReader lecteur = new StringReader(DONNEES_RDF_XML)) {
+            modele.read(lecteur, null, "RDF/XML");
+        }
+
+        System.out.println("Données bibliographiques RDF/XML chargées");
+        System.out.println("Nombre total de triplets : " + modele.size() + "\n");
+
+        // 1. Tous les livres
+        executerRequete(modele,
+            """
+            PREFIX dc:   <http://purl.org/dc/elements/1.1/>
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+            SELECT ?livre ?titre ?nomAuteur
+            WHERE {
+              ?livre dc:title ?titre .
+              ?livre dc:creator ?auteur .
+              ?auteur foaf:name ?nomAuteur .
+            }
+            ORDER BY ?titre
+            """,
+            "Tous les livres avec leurs titres et auteurs");
+
+        // 2. Nombre de livres par éditeur
+        executerRequete(modele,
+            """
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+            SELECT ?editeur (COUNT(?livre) AS ?nombreLivres)
+            WHERE {
+              ?livre dc:publisher ?editeur .
+            }
+            GROUP BY ?editeur
+            ORDER BY DESC(?nombreLivres)
+            """,
+            "Nombre de livres par éditeur");
+
+        // 3. FIX: Livres publiés après 2009
+        executerRequete(modele,
+            """
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            SELECT ?livre ?titre ?annee
+            WHERE {
+              ?livre dc:title ?titre .
+              ?livre dc:date ?annee .
+              FILTER(?annee > "2009"^^xsd:gYear)
+            }
+            """,
+            "Livres publiés après 2009");
+
+        // 4. Auteurs prolifiques
+        executerRequete(modele,
+            """
+            PREFIX dc:   <http://purl.org/dc/elements/1.1/>
+            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+            SELECT ?nomAuteur (COUNT(?livre) AS ?livresEcrits)
+            WHERE {
+              ?livre dc:creator ?auteur .
+              ?auteur foaf:name ?nomAuteur .
+            }
+            GROUP BY ?nomAuteur
+            HAVING (COUNT(?livre) > 1)
+            """,
+            "Auteurs ayant écrit plus d'un livre");
+    }
+
+    private static void executerRequete(Model modele, String requeteString, String description) {
+        System.out.println(description + " :");
+        Query requete = QueryFactory.create(requeteString);
+        try (QueryExecution execution = QueryExecutionFactory.create(requete, modele)) {
+            ResultSet resultats = execution.execSelect();
+            ResultSetFormatter.out(System.out, resultats, requete);
+            System.out.println();
+        } catch (Exception e) {
+            System.err.println("Erreur lors de l'exécution de la requête : " + e.getMessage());
+        }
+    }
+}
+{{</inlineJava>}}
+
+
+
+La constante DONNEES_RDF_XML contient les données RDF au format XML, embarquées directement dans le code. Elles décrivent trois livres bibliographiques en utilisant des vocabulaires standards : dc pour Dublin Core (titres, dates, éditeurs, créateurs), foaf pour les personnes (noms), et bibo pour les concepts bibliographiques (Book). Les dates sont typées en xsd:gYear pour une comparaison précise. Notez quelques ajustements par rapport à des versions précédentes, comme des références abrégées à des personnes existantes, ce qui enrichit les relations entre auteurs.
+
+Dans la méthode main, un modèle vide est créé avec ModelFactory.createDefaultModel(), puis chargé via modele.read() en spécifiant le format "RDF/XML" et en utilisant un StringReader pour parser la chaîne embarquée. 
+
+Le code exécute ensuite quatre requêtes SPARQL via la méthode executerRequete, qui affiche une description, crée la requête avec QueryFactory, l'exécute sur le modèle, et formate les résultats en tableau lisible.
+
+La première requête liste tous les livres avec leurs titres et les noms des auteurs, triés par titre. La deuxième compte les livres par éditeur, avec un tri descendant sur le nombre. La troisième, corrigée avec le préfixe xsd et le type explicite, sélectionne les livres publiés après 2009 en comparant les années typées. La quatrième identifie les auteurs ayant contribué à plus d'un livre, grâce à GROUP BY, COUNT et HAVING.
+
+La méthode executerRequete encapsule la logique d'exécution : création de la requête, ouverture d'une QueryExecution (fermée automatiquement via try-with-resources), récupération des résultats pour une requête SELECT, et affichage formaté. En cas d'erreur, un message clair est imprimé.
 
 ## Activité avec Java
 

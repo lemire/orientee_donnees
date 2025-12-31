@@ -305,3 +305,96 @@ hobbies:
     // Premier rendu avec l'exemple
     convert();
 </script>
+
+
+## Activité YAML avec Jackson
+
+La librairie Jackson supporte YAML grâce au module `jackson-dataformat-yaml`. Exécuter le code suivant qui  utilise un `ObjectMapper` configuré avec une `YAMLFactory` pour analyser une chaîne YAML et la convertir en une structure de données Java facilement navigable.
+
+{{<inlineJava path="LireYamlEnLigne.java">}}
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.fasterxml.jackson.databind.JsonNode;
+import java.io.IOException;
+
+public class LireYamlEnLigne {
+
+    private static final String YAML_EN_LIGNE = """
+        personne:
+          nom: Dupont
+          prenom: Marie
+          age: 31
+          actif: true
+          hobbies:
+            - lecture
+            - randonnée
+            - cuisine
+          adresse:
+            rue: 12 avenue des Lilas
+            ville: Lyon
+            codePostal: 69003
+        serveur:
+          host: localhost
+          port: 8080
+          ssl: false
+          chemins:
+            api: /api/v1
+            admin: /admin
+        """;
+
+    public static void main(String[] args) {
+        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+
+        try {
+            // Lecture du YAML sous forme d'arbre JsonNode (facile à parcourir)
+            JsonNode racine = mapper.readTree(YAML_EN_LIGNE);
+
+            // Exemples d'accès aux valeurs
+            String nom = racine.at("/personne/nom").asText();
+            int age = racine.at("/personne/age").asInt();
+            boolean actif = racine.at("/personne/actif").asBoolean();
+
+            System.out.println("Nom : " + nom);
+            System.out.println("Âge : " + age);
+            System.out.println("Actif : " + actif);
+
+            // Parcours d'une liste
+            System.out.println("Hobbies :");
+            JsonNode hobbies = racine.at("/personne/hobbies");
+            hobbies.forEach(hobby -> System.out.println("  - " + hobby.asText()));
+
+            // Accès à un objet imbriqué
+            String ville = racine.at("/personne/adresse/ville").asText();
+            System.out.println("Ville : " + ville);
+
+            // Lecture complète sous forme de chaîne formatée (pour débogage)
+            System.out.println("\nContenu complet du YAML interprété en JSON :");
+            System.out.println(mapper.writeValueAsString(racine));
+
+        } catch (IOException e) {
+            System.err.println("Erreur lors de la lecture du YAML : " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+{{</inlineJava>}}
+
+
+Le programme illustre plusieurs techniques importantes : l'utilisation de `JsonNode` pour accéder aux valeurs via des chemins JSON-like (avec la méthode `at()`), le parcours de listes YAML, et la conversion entre formats. Cette approche est particulièrement utile pour lire des fichiers de configuration YAML dans des applications Java, offrant une alternative plus lisible au JSON traditionnel tout en conservant la puissance de Jackson pour la manipulation de données.
+
+
+Pour exécuter un tel programme, vous devez inclure les composantes de la librairie Jackson nécessaires.
+Avec Maven, les lignes suivantes peuvent suffire.
+
+```xml
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.17.2</version>
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.dataformat</groupId>
+    <artifactId>jackson-dataformat-yaml</artifactId>
+    <version>2.17.2</version>
+</dependency>
+```

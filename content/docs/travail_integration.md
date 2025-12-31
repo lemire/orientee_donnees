@@ -5,7 +5,7 @@ weight: 155
 
 # Travail d'intégration
 
-Ce travail d'intégration vous permet de démontrer l'acquisition des compétences développées tout au long du cours. Vous devez créer une application web complète qui intègre plusieurs technologies : HTML5, JavaScript, AJAX, Java, JSON, XML, SVG, MathML,  Maven et les styles CSS. Vous utilisez
+Ce travail d'intégration vous permet de démontrer l'acquisition des compétences développées tout au long du cours. Vous devez créer une application web complète qui intègre plusieurs technologies : HTML5, JavaScript, AJAX, Java, JSON, XML, SVG, MathML, YAML, Maven et les styles CSS. Vous utilisez
 les libraires Java Gson et Jackson.
 
 **Avertissement**. Vous devez avoir fait toutes les activités du cours avant de tenter de faire
@@ -87,6 +87,11 @@ Maven est utilisé pour la gestion des dépendances et la construction du projet
             <artifactId>jackson-dataformat-xml</artifactId>
             <version>2.15.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>2.15.2</version>
+        </dependency>
     </dependencies>
 </project>
 ```
@@ -97,6 +102,36 @@ La structure des fichiers doit suivre les conventions Maven :
 - Les ressources statiques (comme `index.html`) dans `src/main/resources/`.
 
 Pour compiler le projet, utilisez `mvn compile`. 
+
+
+### Configuration YAML
+
+Votre service web doit être configurable avec un fichier YAML. Le fichier de configuration `config.yml` doit être placé dans le répertoire `src/main/resources/` du projet Maven. Ce fichier contiendra les paramètres du serveur tels que le port, les chemins par défaut, et d'autres options de configuration.
+
+Exemple de fichier `config.yml` :
+
+```yaml
+server:
+  port: 8080
+  host: localhost
+graph:
+  defaultWidth: 800
+  defaultHeight: 600
+  colors:
+    primary: "#3498db"
+    secondary: "#e74c3c"
+```
+
+Pour charger ce fichier YAML dans votre code Java, utilisez Jackson avec `YAMLFactory` :
+
+```java
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+
+// Dans votre classe serveur
+ObjectMapper yamlMapper = new ObjectMapper(new YAMLFactory());
+Config config = yamlMapper.readValue(new File("src/main/resources/config.yml"), Config.class);
+```
 
 ### Serveur Java
 
