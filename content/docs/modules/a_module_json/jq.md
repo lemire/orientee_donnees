@@ -190,6 +190,11 @@ Créez un fichier `bibliotheque.json` :
 }
 ```
 
+
+## Vidéo suggérée
+
+{{< youtube id="x18F2wIsxgU" >}}
+
 ### Exercices
 
 #### Exercice 1 – Affichage brut et pretty-print

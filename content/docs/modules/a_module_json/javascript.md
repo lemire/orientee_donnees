@@ -319,6 +319,9 @@ Testez vos connaissances avec ces questions. Cliquez sur chaque question pour vo
 </details>
 
 
+## Vidéo suggérée
+
+{{< youtube id="v3Ho7QVaTXM" >}}
 
 ## JSON et JavaScript
 
@@ -500,6 +503,13 @@ try {
         }
     });
 </script>
+
+
+
+
+## Vidéo suggérée
+
+{{< youtube id="o6ULZoMrFGg" >}}
 
 ## Activités suggérées
 
