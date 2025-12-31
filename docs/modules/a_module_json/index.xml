@@ -19,7 +19,11 @@ Le MarkDown qui est un format de texte simple permettant un formattage basique d
  &lt;/p&gt;
  &lt;p&gt;
  Pour utiliser le Markdown, il suffit de maîtriser quelques règles de base. Par exemple, pour créer un titre, on place un ou plusieurs # avant le texte (comme # Titre pour un titre principal), pour mettre du texte en gras, on entoure le mot avec deux étoiles **gras**, et pour une liste, on commence chaque ligne par un tiret -. Ces conventions permettent de structurer un document sans quitter le clavier pour des outils complexes comme Word. Le texte reste lisible même sans conversion, ce qui est parfait pour les gens qui veulent se concentrer sur le contenu plutôt que sur le formatage.
- &lt;/p&gt;</description></item><item><title>Activité avec jq</title><link>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/jq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/jq/</guid><description>&lt;h1 id="laboratoire-pratique-avec-jq"&gt;
+ &lt;/p&gt;</description></item><item><title>JavaScript et JSON</title><link>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/javascript/</guid><description>&lt;h1 id="introduction-à-javascript"&gt;
+ Introduction à JavaScript
+ &lt;a class="anchor" href="#introduction-%c3%a0-javascript"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;JavaScript est un langage de programmation dynamique principalement utilisé pour le développement web côté client, mais aussi côté serveur grâce à des environnements comme Node.js. Si vous êtes déjà familiers avec Java, un langage statiquement typé et orienté objet classique, JavaScript peut sembler au premier abord déroutant en raison de son typage dynamique et de sa flexibilité extrême. Cependant, de nombreuses concepts que vous connaissez déjà en Java existent sous une forme similaire en JavaScript, même si leur implémentation diffère souvent.&lt;/p&gt;</description></item><item><title>Activité avec jq</title><link>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/jq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/jq/</guid><description>&lt;h1 id="laboratoire-pratique-avec-jq"&gt;
  Laboratoire pratique avec jq
  &lt;a class="anchor" href="#laboratoire-pratique-avec-jq"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
