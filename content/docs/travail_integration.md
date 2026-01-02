@@ -6,7 +6,7 @@ weight: 155
 # Travail d'intégration
 
 Ce travail d'intégration vous permet de démontrer l'acquisition des compétences développées tout au long du cours. Vous devez créer une application web complète qui intègre plusieurs technologies : HTML5, JavaScript, AJAX, Java, JSON, XML, SVG, MathML, YAML, Maven et les styles CSS. Vous utilisez
-les libraires Java Gson et Jackson.
+les libraires Java Gson, Jackson et Apache POI.
 
 **Avertissement**. Vous devez avoir fait toutes les activités du cours avant de tenter de faire
 l'activité d'intégration.
@@ -17,7 +17,7 @@ Créer un serveur web Java qui sert une page HTML5 permettant à l'utilisateur d
 
 ## Technologies à utiliser
 
-Pour réaliser ce projet, vous utiliserez plusieurs technologies. Le serveur sera développé en Java avec HttpServer. Pour le traitement des données XML, vous emploierez Jackson, tandis que Gson sera utilisé pour manipuler les données JSON. L'interface utilisateur sera créée en HTML5 valide, avec des graphiques vectoriels SVG stylisés en CSS. La communication asynchrone se fera via AJAX, et les styles CSS3 seront appliqués tant à l'interface qu'aux éléments SVG.
+Pour réaliser ce projet, vous utiliserez plusieurs technologies. Le serveur sera développé en Java avec HttpServer. Pour le traitement des données XML, vous emploierez Jackson, tandis que Gson sera utilisé pour manipuler les données JSON. Apache POI sera utilisé pour générer des documents Excel au format Open XML. L'interface utilisateur sera créée en HTML5 valide, avec des graphiques vectoriels SVG stylisés en CSS. La communication asynchrone se fera via AJAX, et les styles CSS3 seront appliqués tant à l'interface qu'aux éléments SVG.
 
 ## Cahier des charges
 
@@ -92,6 +92,18 @@ Maven est utilisé pour la gestion des dépendances et la construction du projet
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>2.15.2</version>
         </dependency>
+
+        <!-- Apache POI pour la génération de documents Excel Open XML -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.4</version>
+        </dependency>
     </dependencies>
 </project>
 ```
@@ -135,13 +147,17 @@ Config config = yamlMapper.readValue(new File("src/main/resources/config.yml"), 
 
 ### Serveur Java
 
-Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra les données XML sur l'endpoint `/api/graph` via une requête POST. Le serveur validera que exactement 10 entiers sont fournis, générera un SVG avec un graphique à barres, puis retournera un document JSON contenant le SVG.
+Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra les données XML sur l'endpoint `/api/graph` via une requête POST. Le serveur validera que exactement 10 entiers sont fournis, générera un SVG avec un graphique à barres, puis retournera un document JSON contenant le SVG. De plus, un endpoint `/api/excel` devra générer et retourner un fichier Excel Open XML avec les données saisies.
 
 ### Graphique SVG
 
 Le SVG doit afficher 10 barres verticales représentant les valeurs saisies par l'utilisateur
 avec les étiquettes associées. Il utilisera des dégradés. Les axes seront étiquetés de manière claire. Le graphique inclura des infobulles au survol des barres. Vous devez par ailleurs include une 
 expression MathML dans votre SVG.
+
+### Génération d'un document Excel (Open XML)
+
+Le serveur doit également fournir une fonction capable de générer et retourner un document Excel au format Open XML contenant les données saisies par l'utilisateur. Ce document devra inclure une feuille de calcul avec les valeurs et les étiquettes dans des colonnes appropriées. Un endpoint supplémentaire, par exemple `/api/excel`, devra être créé pour permettre le téléchargement du fichier Excel. Vous utiliserez Apache POI pour créer le fichier .xlsx.
 
 ## Structure proposée
 
@@ -348,4 +364,4 @@ que les étiquettes sont présentes. La gestion des erreurs devra être appropri
 
 La page web doit transmettre du XML. Elle doit recevoir du JSON de la part du serveur. Jackson devra être utilisé de manière appropriée pour le XML et Gson pour le JSON.
 
-Vous devrez remettre le code source Java complet avec des commentaires explicatifs. La page HTML avec le formulaire et le JavaScript devra également être fournie. Une documentation expliquant l'architecture et les technologies utilisées sera nécessaire. Des exemples de données d'entrée et de résultats de sortie devront être inclus. Enfin, des tests montrant le fonctionnement avec différentes valeurs devront être présentés.
+Vous devrez remettre le code source Java complet avec des commentaires explicatifs, incluant la génération du SVG et du document Excel Open XML. La page HTML avec le formulaire et le JavaScript devra également être fournie. Une documentation expliquant l'architecture et les technologies utilisées sera nécessaire. Des exemples de données d'entrée et de résultats de sortie (SVG et Excel) devront être inclus. Enfin, des tests montrant le fonctionnement avec différentes valeurs devront être présentés.
