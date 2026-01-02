@@ -6,7 +6,7 @@ bookCollapseSection: true
 
 # Module XML
 
-Ce module approfondit le langage XML (eXtensible Markup Language) et ses écosystèmes. Il commence par les bases : structure arborescente, création de documents, principes fondamentaux, et mise en forme avec CSS. Le module couvre ensuite les espaces de noms pour éviter les conflits, des exemples pratiques d'utilisation du XML dans des formats réels (AndroidManifest.xml, pom.xml, sitemaps, RSS), et la programmation avec DOM pour le traitement XML en Java et en JavaScript. La librairie Jackson pour le traitement de JSON et du XML est présentée. Une section est dédiée au RDF (Resource Description Framework) et SPARQL pour le web sémantique. Enfin, la validation des documents XML avec DTD et schémas est abordée. 
+Ce module approfondit le langage XML (eXtensible Markup Language) et ses écosystèmes. Il commence par les bases : structure arborescente, création de documents, principes fondamentaux, et mise en forme avec CSS. Le module couvre ensuite les espaces de noms pour éviter les conflits, des exemples pratiques d'utilisation du XML dans des formats réels (AndroidManifest.xml, pom.xml, sitemaps, RSS), et la programmation avec DOM pour le traitement XML en Java et en JavaScript. La librairie Jackson pour le traitement de JSON et du XML est présentée. Une section est dédiée au RDF (Resource Description Framework) et SPARQL pour le web sémantique. Enfin, la validation des documents XML avec DTD et schémas est abordée. Le module inclut également une introduction à Open XML, le format ouvert utilisé par Microsoft Office pour les documents Word, Excel et PowerPoint. 
 
 ## Un problème ou une suggestion ?
 
