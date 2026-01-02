@@ -23,10 +23,7 @@ Pour réaliser ce projet, vous utiliserez plusieurs technologies. Le serveur ser
 
 ### Interface utilisateur (HTML5)
 
-La page doit contenir un formulaire avec 10 champs numériques de type `number`
-ainsi que dix champs qui représentent les étiquettes. Par exemple, il pourrait 
-être possible d'associer une valeur numérique à chaque province canadienne.
-Un bouton permettra de générer le graphique. Une zone d'affichage sera réservée pour montrer le résultat SVG. La génération du graphique doit se faire du côté serveur, en Java.
+La page doit contenir 10 champs numériques pour saisir les valeurs et 10 champs texte pour les étiquettes associées. Quatre boutons permettent d'interagir avec les différents endpoints du serveur : générer le graphique (qui affiche le SVG directement dans la page), télécharger le fichier SVG, télécharger un document Excel au format Open XML, et afficher le contenu Markdown généré. Une zone d'affichage est réservée pour montrer le résultat SVG, et une autre zone (initialement cachée) pour afficher le Markdown. Toutes les générations de contenu se font du côté serveur en Java, en utilisant les technologies appropriées pour chaque format.
 
 Indices. Il peut être possible récupérer une réponse JSON d'un serveur avec du code JavaScript similaire à celui-ci.
 
@@ -68,14 +65,11 @@ Maven est utilisé pour la gestion des dépendances et la construction du projet
     </properties>
 
     <dependencies>
-        <!-- Gson pour la manipulation JSON -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
         </dependency>
-
-        <!-- Jackson pour le traitement XML -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -92,8 +86,6 @@ Maven est utilisé pour la gestion des dépendances et la construction du projet
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>2.15.2</version>
         </dependency>
-
-        <!-- Apache POI pour la génération de documents Excel Open XML -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -147,7 +139,7 @@ Config config = yamlMapper.readValue(new File("src/main/resources/config.yml"), 
 
 ### Serveur Java
 
-Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra les données XML sur l'endpoint `/api/graph` via une requête POST. Le serveur validera que exactement 10 entiers sont fournis, générera un SVG avec un graphique à barres, puis retournera un document JSON contenant le SVG. De plus, un endpoint `/api/excel` devra générer et retourner un fichier Excel Open XML avec les données saisies. Enfin, un endpoint `/api/markdown` devra transformer les données XML en Markdown à l'aide d'XSLT et retourner le résultat.
+Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra les données XML sur l'endpoint `/api/graph` via une requête POST. Le serveur validera que exactement 10 entiers sont fournis, générera un SVG avec un graphique à barres, puis retournera un document JSON contenant le SVG. De plus, un endpoint `/api/svg` devra retourner le SVG pur directement. Un endpoint `/api/excel` devra générer et retourner un fichier Excel Open XML avec les données saisies. Enfin, un endpoint `/api/markdown` devra transformer les données XML en Markdown à l'aide d'XSLT et retourner le résultat.
 
 ### Graphique SVG
 
@@ -177,29 +169,52 @@ Le serveur doit prendre les données XML reçues et les transformer en Markdown 
 <body>
     <h1>Générateur de graphiques à barres</h1>
     
-    <form id="graphForm">
-        <div class="input-group">
-            <input type="number" id="val1" placeholder="Valeur 1" min="0" max="100" required>
-            <input type="number" id="val2" placeholder="Valeur 2" min="0" max="100" required>
-            <input type="number" id="val3" placeholder="Valeur 3" min="0" max="100" required>
-            <input type="number" id="val4" placeholder="Valeur 4" min="0" max="100" required>
-            <input type="number" id="val5" placeholder="Valeur 5" min="0" max="100" required>
-            <input type="number" id="val6" placeholder="Valeur 6" min="0" max="100" required>
-            <input type="number" id="val7" placeholder="Valeur 7" min="0" max="100" required>
-            <input type="number" id="val8" placeholder="Valeur 8" min="0" max="100" required>
-            <input type="number" id="val9" placeholder="Valeur 9" min="0" max="100" required>
-            <input type="number" id="val10" placeholder="Valeur 10" min="0" max="100" required>
-        </div>
-        <!--  Ajouter les étiquettes !!! -->
-        <button type="submit">Générer le graphique</button>
-    </form>
+    <div class="input-group">
+        <h3>Valeurs</h3>
+        <input type="number" id="val1" placeholder="Valeur 1" min="0" max="100" required>
+        <input type="number" id="val2" placeholder="Valeur 2" min="0" max="100" required>
+        <input type="number" id="val3" placeholder="Valeur 3" min="0" max="100" required>
+        <input type="number" id="val4" placeholder="Valeur 4" min="0" max="100" required>
+        <input type="number" id="val5" placeholder="Valeur 5" min="0" max="100" required>
+        <input type="number" id="val6" placeholder="Valeur 6" min="0" max="100" required>
+        <input type="number" id="val7" placeholder="Valeur 7" min="0" max="100" required>
+        <input type="number" id="val8" placeholder="Valeur 8" min="0" max="100" required>
+        <input type="number" id="val9" placeholder="Valeur 9" min="0" max="100" required>
+        <input type="number" id="val10" placeholder="Valeur 10" min="0" max="100" required>
+    </div>
+    
+    <div class="input-group">
+        <h3>Étiquettes</h3>
+        <input type="text" id="label1" placeholder="Étiquette 1" required>
+        <input type="text" id="label2" placeholder="Étiquette 2" required>
+        <input type="text" id="label3" placeholder="Étiquette 3" required>
+        <input type="text" id="label4" placeholder="Étiquette 4" required>
+        <input type="text" id="label5" placeholder="Étiquette 5" required>
+        <input type="text" id="label6" placeholder="Étiquette 6" required>
+        <input type="text" id="label7" placeholder="Étiquette 7" required>
+        <input type="text" id="label8" placeholder="Étiquette 8" required>
+        <input type="text" id="label9" placeholder="Étiquette 9" required>
+        <input type="text" id="label10" placeholder="Étiquette 10" required>
+    </div>
+    
+    <button type="button" id="generateGraph">Générer le graphique</button>
+    <button type="button" id="downloadSvg">Télécharger SVG</button>
+    <button type="button" id="downloadExcel">Télécharger Excel</button>
+    <button type="button" id="showMarkdown">Afficher Markdown</button>
 
     <div id="result"></div>
+    <div id="markdownResult" style="display:none;">
+        <h3>Markdown généré</h3>
+        <textarea id="markdownTextarea" rows="10" cols="80" readonly></textarea>
+    </div>
 
     <script>
-        document.getElementById('graphForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
+        document.getElementById('generateGraph').addEventListener('click', () => generate('/api/graph', 'graph'));
+        document.getElementById('downloadSvg').addEventListener('click', () => generate('/api/svg', 'svg'));
+        document.getElementById('downloadExcel').addEventListener('click', () => generate('/api/excel', 'excel'));
+        document.getElementById('showMarkdown').addEventListener('click', () => generate('/api/markdown', 'markdown'));
+
+        async function generate(endpoint, type) {
             // Collecter les valeurs
             const values = [];
             for (let i = 1; i <= 10; i++) {
@@ -211,26 +226,40 @@ Le serveur doit prendre les données XML reçues et les transformer en Markdown 
                 values.push(val);
             }
 
-            const label = []; // à compléter
+            // Collecter les étiquettes
+            const labels = [];
+            for (let i = 1; i <= 10; i++) {
+                const lab = document.getElementById('label' + i).value.trim();
+                if (!lab) {
+                    alert('Veuillez entrer toutes les étiquettes');
+                    return;
+                }
+                labels.push(lab);
+            }
 
-            // Afficher le chargement
-            document.getElementById('result') //.... à compléter
+            // Créer le XML
+            const doc = document.implementation.createDocument(null, 'data');
+            const valuesElement = doc.createElement('values');
+            values.forEach(v => {
+                const valueElement = doc.createElement('value');
+                valueElement.textContent = v;
+                valuesElement.appendChild(valueElement);
+            });
+            doc.documentElement.appendChild(valuesElement);
+
+            const labelsElement = doc.createElement('labels');
+            labels.forEach(l => {
+                const labelElement = doc.createElement('label');
+                labelElement.textContent = l;
+                labelsElement.appendChild(labelElement);
+            });
+            doc.documentElement.appendChild(labelsElement);
+
+            const serializer = new XMLSerializer();
+            const xmlData = serializer.serializeToString(doc);
 
             try {
-                // Envoyer les données au serveur en XML (généré avec DOM)
-                // À faire: ajouter les étiquettes!!!
-                const doc = document.implementation.createDocument(null, 'data');
-                const valuesElement = doc.createElement('values');
-                values.forEach(v => {
-                    const valueElement = doc.createElement('value');
-                    valueElement.textContent = v;
-                    valuesElement.appendChild(valueElement);
-                });
-                doc.documentElement.appendChild(valuesElement);
-                const serializer = new XMLSerializer();
-                const xmlData = serializer.serializeToString(doc);
-
-                const response = await fetch('/api/graph', {
+                const response = await fetch(endpoint, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/xml',
@@ -239,14 +268,43 @@ Le serveur doit prendre les données XML reçues et les transformer en Markdown 
                 });
 
                 if (response.ok) {
-                    //....
+                    if (type === 'graph') {
+                        const data = await response.json();
+                        const container = document.getElementById('result');
+                        container.innerHTML = '';
+                        const parser = new DOMParser();
+                        const svgDoc = parser.parseFromString(data.svg, 'image/svg+xml');
+                        const svgElement = svgDoc.documentElement;
+                        container.appendChild(svgElement);
+                    } else if (type === 'svg') {
+                        const svgText = await response.text();
+                        const blob = new Blob([svgText], {type: 'image/svg+xml'});
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'graph.svg';
+                        a.click();
+                        URL.revokeObjectURL(url);
+                    } else if (type === 'excel') {
+                        const blob = await response.blob();
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'data.xlsx';
+                        a.click();
+                        URL.revokeObjectURL(url);
+                    } else if (type === 'markdown') {
+                        const markdown = await response.text();
+                        document.getElementById('markdownTextarea').value = markdown;
+                        document.getElementById('markdownResult').style.display = 'block';
+                    }
                 } else {
-                    //....
+                    alert('Erreur du serveur: ' + response.status);
                 }
             } catch (error) {
-               //...
+                alert('Erreur: ' + error.message);
             }
-        });
+        }
     </script>
 </body>
 </html>
@@ -346,6 +404,53 @@ public class GraphServer {
             }
         });
 
+        // Endpoint pour retourner le SVG pur
+        server.createContext("/api/svg", exchange -> {
+            if ("POST".equals(exchange.getRequestMethod())) {
+                try {
+                    // Lire les données XML (même logique que /api/graph)
+                    InputStreamReader reader = new InputStreamReader(exchange.getRequestBody(), "UTF-8");
+                    StringBuilder xmlBuilder = new StringBuilder();
+                    char[] buffer = new char[1024];
+                    int length;
+                    while ((length = reader.read(buffer)) != -1) {
+                        xmlBuilder.append(buffer, 0, length);
+                    }
+                    String xmlInput = xmlBuilder.toString();
+
+                    // Parser avec jackson (à compléter)
+
+                    // Convertir en liste d'entiers
+                    int[] values = new int[10];
+                    for (int i = 0; i < 10; i++) {
+                        values[i] = valuesNode.get(i).asInt();
+                    }
+
+                    String[] labels = //... à compléter pour les étiquettes
+
+                    // Générer le SVG
+                    String svgContent = generateSVG(values, labels);
+
+                    // Retourner le SVG directement
+                    exchange.getResponseHeaders().set("Content-Type", "image/svg+xml; charset=UTF-8");
+                    exchange.sendResponseHeaders(200, svgContent.getBytes("UTF-8").length);
+                    try (OutputStream os = exchange.getResponseBody()) {
+                        os.write(svgContent.getBytes("UTF-8"));
+                    }
+
+                } catch (Exception e) {
+                    exchange.sendResponseHeaders(500, -1);
+                }
+            } else if ("OPTIONS".equals(exchange.getRequestMethod())) {
+                exchange.getResponseHeaders().set("Access-Control-Allow-Origin", "*");
+                exchange.getResponseHeaders().set("Access-Control-Allow-Methods", "POST, OPTIONS");
+                exchange.getResponseHeaders().set("Access-Control-Allow-Headers", "Content-Type");
+                exchange.sendResponseHeaders(200, -1);
+            } else {
+                exchange.sendResponseHeaders(405, -1);
+            }
+        });
+
         server.setExecutor(null);
         server.start();
         System.out.println("Serveur de graphiques démarré sur http://localhost:8080/");
@@ -370,6 +475,11 @@ Lors de la création des endpoints du serveur, il est essentiel de définir corr
 - **SVG** : Utilisez `image/svg+xml` pour indiquer que la réponse contient du SVG. Exemple en Java :
   ```java
   exchange.getResponseHeaders().set("Content-Type", "image/svg+xml; charset=UTF-8");
+  ```
+
+- **JSON** : Utilisez `application/json` pour les données JSON. Exemple en Java :
+  ```java
+  exchange.getResponseHeaders().set("Content-Type", "application/json; charset=UTF-8");
   ```
 
 - **Open XML (Excel)** : Pour un fichier .xlsx, utilisez `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`. Pour permettre le téléchargement, ajoutez également un en-tête `Content-Disposition`. Exemple :
