@@ -17,7 +17,7 @@ Créer un serveur web Java qui sert une page HTML5 permettant à l'utilisateur d
 
 ## Technologies à utiliser
 
-Pour réaliser ce projet, vous utiliserez plusieurs technologies. Le serveur sera développé en Java avec HttpServer. Pour le traitement des données XML, vous emploierez Jackson, tandis que Gson sera utilisé pour manipuler les données JSON. Apache POI sera utilisé pour générer des documents Excel au format Open XML. L'interface utilisateur sera créée en HTML5 valide, avec des graphiques vectoriels SVG stylisés en CSS. La communication asynchrone se fera via AJAX, et les styles CSS3 seront appliqués tant à l'interface qu'aux éléments SVG.
+Pour réaliser ce projet, vous utiliserez plusieurs technologies. Le serveur sera développé en Java avec HttpServer. Pour le traitement des données XML, vous emploierez Jackson, tandis que Gson sera utilisé pour manipuler les données JSON. Apache POI sera utilisé pour générer des documents Excel au format Open XML. XSLT sera utilisé pour transformer les données XML en Markdown. L'interface utilisateur sera créée en HTML5 valide, avec des graphiques vectoriels SVG stylisés en CSS. La communication asynchrone se fera via AJAX, et les styles CSS3 seront appliqués tant à l'interface qu'aux éléments SVG.
 
 ## Cahier des charges
 
@@ -147,7 +147,7 @@ Config config = yamlMapper.readValue(new File("src/main/resources/config.yml"), 
 
 ### Serveur Java
 
-Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra les données XML sur l'endpoint `/api/graph` via une requête POST. Le serveur validera que exactement 10 entiers sont fournis, générera un SVG avec un graphique à barres, puis retournera un document JSON contenant le SVG. De plus, un endpoint `/api/excel` devra générer et retourner un fichier Excel Open XML avec les données saisies.
+Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra les données XML sur l'endpoint `/api/graph` via une requête POST. Le serveur validera que exactement 10 entiers sont fournis, générera un SVG avec un graphique à barres, puis retournera un document JSON contenant le SVG. De plus, un endpoint `/api/excel` devra générer et retourner un fichier Excel Open XML avec les données saisies. Enfin, un endpoint `/api/markdown` devra transformer les données XML en Markdown à l'aide d'XSLT et retourner le résultat.
 
 ### Graphique SVG
 
@@ -158,6 +158,10 @@ expression MathML dans votre SVG.
 ### Génération d'un document Excel (Open XML)
 
 Le serveur doit également fournir une fonction capable de générer et retourner un document Excel au format Open XML contenant les données saisies par l'utilisateur. Ce document devra inclure une feuille de calcul avec les valeurs et les étiquettes dans des colonnes appropriées. Un endpoint supplémentaire, par exemple `/api/excel`, devra être créé pour permettre le téléchargement du fichier Excel. Vous utiliserez Apache POI pour créer le fichier .xlsx.
+
+### Transformation XSLT vers Markdown
+
+Le serveur doit prendre les données XML reçues et les transformer en Markdown à l'aide d'une feuille de style XSLT. Un endpoint `/api/markdown` devra retourner le contenu Markdown généré, par exemple sous forme de texte brut ou dans un objet JSON. Vous devrez créer une feuille XSLT qui convertit la structure XML des données (valeurs et étiquettes) en un format Markdown lisible, tel qu'une liste ou un tableau.
 
 ## Structure proposée
 
@@ -359,9 +363,34 @@ public class GraphServer {
 
 Le SVG doit utiliser des styles CSS appropriés. Pour les barres, vous emploierez un dégradé linéaire `linearGradient`. Les animations utiliseront les propriétés `transition` et `transform` au survol. Les couleurs devront être cohérentes, idéalement avec des variables CSS. La typographie sera soignée avec des polices et tailles appropriées pour les étiquettes. Pour l'accessibilité, n'oubliez pas d'ajouter des éléments `<title>` pour les infobulles.
 
+## Types MIME pour les réponses du serveur
+
+Lors de la création des endpoints du serveur, il est essentiel de définir correctement les en-têtes `Content-Type` pour indiquer le type de contenu retourné. Voici les types MIME appropriés pour chaque format :
+
+- **SVG** : Utilisez `image/svg+xml` pour indiquer que la réponse contient du SVG. Exemple en Java :
+  ```java
+  exchange.getResponseHeaders().set("Content-Type", "image/svg+xml; charset=UTF-8");
+  ```
+
+- **Open XML (Excel)** : Pour un fichier .xlsx, utilisez `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`. Pour permettre le téléchargement, ajoutez également un en-tête `Content-Disposition`. Exemple :
+  ```java
+  exchange.getResponseHeaders().set("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+  exchange.getResponseHeaders().set("Content-Disposition", "attachment; filename=\"data.xlsx\"");
+  ```
+
+- **Markdown** : Utilisez `text/plain`. Exemple :
+  ```java
+  exchange.getResponseHeaders().set("Content-Type", "text/plain; charset=UTF-8");
+  ```
+
+Ces en-têtes permettent aux navigateurs et clients de traiter correctement les réponses, que ce soit pour l'affichage inline (SVG), le téléchargement (Excel) ou le rendu textuel (Markdown).
+
+
+## À remettre
+
 Vous devrez vérifier que exactement 10 valeurs sont fournies dans la requête. Vous devez vérifier
 que les étiquettes sont présentes. La gestion des erreurs devra être appropriée, avec des messages d'erreur clairs en cas de données invalides.
 
 La page web doit transmettre du XML. Elle doit recevoir du JSON de la part du serveur. Jackson devra être utilisé de manière appropriée pour le XML et Gson pour le JSON.
 
-Vous devrez remettre le code source Java complet avec des commentaires explicatifs, incluant la génération du SVG et du document Excel Open XML. La page HTML avec le formulaire et le JavaScript devra également être fournie. Une documentation expliquant l'architecture et les technologies utilisées sera nécessaire. Des exemples de données d'entrée et de résultats de sortie (SVG et Excel) devront être inclus. Enfin, des tests montrant le fonctionnement avec différentes valeurs devront être présentés.
+Vous devrez remettre le code source Java complet avec des commentaires explicatifs, incluant la génération du SVG, du document Excel Open XML et de la transformation XSLT vers Markdown. La page HTML avec le formulaire et le JavaScript devra également être fournie. Une documentation expliquant l'architecture et les technologies utilisées sera nécessaire. Des exemples de données d'entrée et de résultats de sortie (SVG, Excel et Markdown) devront être inclus. Enfin, des tests montrant le fonctionnement avec différentes valeurs devront être présentés.

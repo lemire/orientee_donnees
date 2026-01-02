@@ -188,3 +188,153 @@ serveur.createContext("/api/data", new HttpHandler() {
     }
 });
 ```
+
+
+## Types MIME et exemples
+
+Les types MIME (Multipurpose Internet Mail Extensions) sont des identificateurs standardisés qui spécifient le format des données transmises sur Internet. Ils permettent aux navigateurs et autres clients de savoir comment interpréter le contenu d'une réponse HTTP. Dans un serveur Java utilisant `HttpServer`, il est essentiel de définir correctement l'en-tête `Content-Type` pour garantir que le client traite la réponse de manière appropriée.
+
+### Définition du Content-Type dans HttpServer
+
+Pour définir le type MIME d'une réponse, utilisez la méthode `getResponseHeaders().set()` sur l'objet `HttpExchange` :
+
+```java
+exchange.getResponseHeaders().set("Content-Type", "type/sous-type");
+```
+
+Il est également recommandé d'ajouter l'encodage pour les types textuels :
+
+```java
+exchange.getResponseHeaders().set("Content-Type", "text/html; charset=UTF-8");
+```
+
+### Types MIME courants et exemples
+
+Voici les types MIME les plus fréquemment utilisés avec des exemples.
+
+#### 1. HTML (`text/html`)
+
+Utilisé pour servir des pages web.
+
+```java
+serveur.createContext("/page", new HttpHandler() {
+    @Override
+    public void handle(HttpExchange exchange) throws IOException {
+        String html = "<html><body><h1>Hello World</h1></body></html>";
+        exchange.getResponseHeaders().set("Content-Type", "text/html; charset=UTF-8");
+        exchange.sendResponseHeaders(200, html.getBytes("UTF-8").length);
+        try (OutputStream os = exchange.getResponseBody()) {
+            os.write(html.getBytes("UTF-8"));
+        }
+    }
+});
+```
+
+#### 2. JSON (`application/json`)
+
+Pour les API REST et les échanges de données structurées.
+
+```java
+serveur.createContext("/api/data", new HttpHandler() {
+    @Override
+    public void handle(HttpExchange exchange) throws IOException {
+        String json = "{\"message\": \"Hello\", \"status\": \"success\"}";
+        exchange.getResponseHeaders().set("Content-Type", "application/json; charset=UTF-8");
+        exchange.sendResponseHeaders(200, json.getBytes("UTF-8").length);
+        try (OutputStream os = exchange.getResponseBody()) {
+            os.write(json.getBytes("UTF-8"));
+        }
+    }
+});
+```
+
+#### 3. XML (`application/xml` ou `text/xml`)
+
+Pour les données XML.
+
+```java
+serveur.createContext("/api/xml", new HttpHandler() {
+    @Override
+    public void handle(HttpExchange exchange) throws IOException {
+        String xml = "<?xml version=\"1.0\"?><root><message>Hello</message></root>";
+        exchange.getResponseHeaders().set("Content-Type", "application/xml; charset=UTF-8");
+        exchange.sendResponseHeaders(200, xml.getBytes("UTF-8").length);
+        try (OutputStream os = exchange.getResponseBody()) {
+            os.write(xml.getBytes("UTF-8"));
+        }
+    }
+});
+```
+
+#### 4. Texte brut (`text/plain`)
+
+Pour du texte simple.
+
+```java
+serveur.createContext("/text", new HttpHandler() {
+    @Override
+    public void handle(HttpExchange exchange) throws IOException {
+        String text = "Ceci est un texte brut.";
+        exchange.getResponseHeaders().set("Content-Type", "text/plain; charset=UTF-8");
+        exchange.sendResponseHeaders(200, text.getBytes("UTF-8").length);
+        try (OutputStream os = exchange.getResponseBody()) {
+            os.write(text.getBytes("UTF-8"));
+        }
+    }
+});
+```
+
+#### 5. Images (`image/png`, `image/jpeg`, etc.)
+
+Pour servir des images.
+
+```java
+serveur.createContext("/image", new HttpHandler() {
+    @Override
+    public void handle(HttpExchange exchange) throws IOException {
+        // Simuler une image (en pratique, lisez depuis un fichier)
+        byte[] imageData = "fake png data".getBytes(); // Remplacer par de vraies données
+        exchange.getResponseHeaders().set("Content-Type", "image/png");
+        exchange.sendResponseHeaders(200, imageData.length);
+        try (OutputStream os = exchange.getResponseBody()) {
+            os.write(imageData);
+        }
+    }
+});
+```
+
+#### 6. CSS (`text/css`)
+
+Pour les feuilles de style.
+
+```java
+serveur.createContext("/style.css", new HttpHandler() {
+    @Override
+    public void handle(HttpExchange exchange) throws IOException {
+        String css = "body { background-color: lightblue; }";
+        exchange.getResponseHeaders().set("Content-Type", "text/css; charset=UTF-8");
+        exchange.sendResponseHeaders(200, css.getBytes("UTF-8").length);
+        try (OutputStream os = exchange.getResponseBody()) {
+            os.write(css.getBytes("UTF-8"));
+        }
+    }
+});
+```
+
+#### 7. JavaScript (`application/javascript`)
+
+Pour les scripts.
+
+```java
+serveur.createContext("/script.js", new HttpHandler() {
+    @Override
+    public void handle(HttpExchange exchange) throws IOException {
+        String js = "console.log('Hello from server!');";
+        exchange.getResponseHeaders().set("Content-Type", "application/javascript; charset=UTF-8");
+        exchange.sendResponseHeaders(200, js.getBytes("UTF-8").length);
+        try (OutputStream os = exchange.getResponseBody()) {
+            os.write(js.getBytes("UTF-8"));
+        }
+    }
+});
+```
