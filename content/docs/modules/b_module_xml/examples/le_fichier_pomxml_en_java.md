@@ -91,4 +91,3 @@ Voici un exemple simple d’un projet Java console (application Spring Boot mini
 </project>
 ```
 Cet exemple montre comment le XML organise toutes les informations nécessaires à Maven : coordonnées du projet, propriétés réutilisables, dépendances avec gestion de version centralisée, et configuration des plugins de compilation et d’exécution. Vous pouvez bien entendu l’étendre avec des profils, des modules enfants, des repositories personnalisés, etc.
-
