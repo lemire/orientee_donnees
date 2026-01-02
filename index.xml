@@ -677,20 +677,20 @@ Vous pouvez modifier les fichier Java et le fichier XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1767196195845063105"&gt;
+&lt;div id="java-multirunner-1767368872058616678"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1767196195845063105 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1767196195845063105 .export-form { margin-bottom:0; }
- #java-multirunner-1767196195845063105 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1767196195845063105 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1767196195845063105 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1767196195845063105 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1767368872058616678 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1767368872058616678 .export-form { margin-bottom:0; }
+ #java-multirunner-1767368872058616678 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1767368872058616678 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1767368872058616678 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1767368872058616678 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1767196195845063105-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1767368872058616678-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -778,14 +778,14 @@ public class SimpleXPath {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1767196195845063105-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1767368872058616678-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1767196195845063105');
+ var root = document.getElementById('java-multirunner-1767368872058616678');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -944,20 +944,20 @@ Vous pouvez modifier les fichiers XSLT et XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1767196195845418698"&gt;
+&lt;div id="java-multirunner-1767368872058897088"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1767196195845418698 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1767196195845418698 .export-form { margin-bottom:0; }
- #java-multirunner-1767196195845418698 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1767196195845418698 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1767196195845418698 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1767196195845418698 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1767368872058897088 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1767368872058897088 .export-form { margin-bottom:0; }
+ #java-multirunner-1767368872058897088 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1767368872058897088 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1767368872058897088 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1767368872058897088 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1767196195845418698-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1767368872058897088-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -1068,14 +1068,14 @@ public class XmlVersConsole {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1767196195845418698-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1767368872058897088-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1767196195845418698');
+ var root = document.getElementById('java-multirunner-1767368872058897088');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -2288,16 +2288,7 @@ document.getElementById('resetBtn').addEventListener('click', function() {
  });
  document.getElementById('scoreDisplay').innerHTML = "";
 });
-&lt;/script&gt;</description></item><item><title>Docx (Microsoft Word)</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/examples/docx_microsoft_word/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/examples/docx_microsoft_word/</guid><description>&lt;h1&gt;
- Création d'un document Microsoft Word (docx)
-&lt;/h1&gt;
-&lt;p&gt;
- Un document Word n'est rien d'autre que des fichiers XML dans une archive zip.
- &lt;a href="https://github.com/lemire/javaword"&gt;
- Nous vous invitons maintenant à faire notre activité de création de documents Word
- &lt;/a&gt;
- .
-&lt;/p&gt;</description></item><item><title>Les tests</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_tests/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_tests/</guid><description>&lt;h1 id="les-tests"&gt;
+&lt;/script&gt;</description></item><item><title>Les tests</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_tests/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/les_tests/</guid><description>&lt;h1 id="les-tests"&gt;
  Les tests
  &lt;a class="anchor" href="#les-tests"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -2313,7 +2304,16 @@ les symboles « &amp;lt; », « = », « != »,
 Nous utilisons les tests en XSLT avec les éléments « xsl:choose »
 et « xsl:if ».
 Par exemple, faire quelque chose de particulier, si le nom de l&amp;rsquo;élément
-courant est « montant ».&lt;/p&gt;</description></item><item><title>Petit guide d’usage du courriel efficace</title><link>https://lemire.github.io/orientee_donnees/legacy/semaine_1/petit_guide_dusage_du_courriel_efficace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/legacy/semaine_1/petit_guide_dusage_du_courriel_efficace/</guid><description>&lt;h1&gt;
+courant est « montant ».&lt;/p&gt;</description></item><item><title>Office Open XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/examples/docx_microsoft_word/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/examples/docx_microsoft_word/</guid><description>&lt;h1 id="open-xml"&gt;
+ Open XML
+ &lt;a class="anchor" href="#open-xml"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Open XML est un format de fichier ouvert pour les documents bureautiques, développé par Microsoft et standardisé par l&amp;rsquo;ECMA et l&amp;rsquo;ISO. Il permet de créer des documents Word, Excel et PowerPoint qui sont compatibles avec les applications Microsoft Office.&lt;/p&gt;
+&lt;h2 id="organisation-des-documents-open-xml"&gt;
+ Organisation des documents Open XML
+ &lt;a class="anchor" href="#organisation-des-documents-open-xml"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Les documents Open XML sont structurés comme des archives ZIP compressées contenant des fichiers XML et des ressources. Cette structure permet une manipulation programmatique aisée des documents.&lt;/p&gt;</description></item><item><title>Petit guide d’usage du courriel efficace</title><link>https://lemire.github.io/orientee_donnees/legacy/semaine_1/petit_guide_dusage_du_courriel_efficace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/legacy/semaine_1/petit_guide_dusage_du_courriel_efficace/</guid><description>&lt;h1&gt;
  Petit guide d’usage du courriel efficace
 &lt;/h1&gt;
 &lt;p&gt;
