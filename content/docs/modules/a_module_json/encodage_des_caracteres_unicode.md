@@ -63,7 +63,7 @@ Ces exemples montrent comment UTF-8 économise de l'espace pour les caractères 
 
 Le choix entre UTF-8 et UTF-16 dépend du contexte : UTF-8 est recommandé pour le web, les fichiers texte et la compatibilité maximale. UTF-16 peut être préféré dans des environnements où les caractères non-ASCII sont dominants. Dans tous les cas, spécifier l'encodage dans les déclarations (comme `<?xml version="1.0" encoding="UTF-8"?>` en XML) évite les ambiguïtés.
 
-Il peut être intéressant de voir comment le texte est converti en données binaires sur votre disque. Saisissez du texte. Voyez les octets en UTF-8 et UTF-16. Pour distinguer les encodages, il arrive que les systèmes ajoutent quelques octets au début du contenu (appelé BOM pour Byte-Order-Mask). Le format UTF-16 comporte deux variantes : LE (little endian) et BE (big endian).
+Il peut être intéressant de voir comment le texte est converti en données binaires sur votre disque. Saisissez du texte. Voyez les octets en UTF-8 et UTF-16. Pour distinguer les encodages, il arrive que les systèmes ajoutent quelques octets au début du contenu (appelé BOM pour Byte-Order-Mark). Le format UTF-16 comporte deux variantes : LE (little endian) et BE (big endian).
 
 
 
