@@ -7,7 +7,7 @@
  &lt;a class="anchor" href="#question-1--transformations-xslt-pour-la-g%c3%a9n%c3%a9ration-de-rapports"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Pour ce travail, vous utiliserez le document XML suivant contenant des données d&amp;rsquo;étudiants :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;universite&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;etudiant&lt;/span&gt; &lt;span style="color:#1f2328"&gt;id=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;E001&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;nom&amp;gt;&lt;/span&gt;Dupont&lt;span style="color:#0550ae"&gt;&amp;lt;/nom&amp;gt;&lt;/span&gt;

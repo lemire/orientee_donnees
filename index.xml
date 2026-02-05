@@ -182,9 +182,9 @@ nous avons deux &lt;strong&gt;vocabulaires XML&lt;/strong&gt;.&lt;/p&gt;</descri
  &lt;a class="anchor" href="#question-1"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Écrire un programme en Java utilisant l&amp;rsquo;API DOM modifiant un fichier XML de manière à ce que le préfixe « foo » soit ajouté aux noms de tous les éléments. Le fichier&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;element&amp;gt;&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/element&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;element&amp;gt;&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/element&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;deviendra donc&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;fooelement&amp;gt;&amp;lt;fooa&amp;gt;&amp;lt;/fooa&amp;gt;&amp;lt;/fooelement&amp;gt;&lt;/span&gt;.
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;fooelement&amp;gt;&amp;lt;fooa&amp;gt;&amp;lt;/fooa&amp;gt;&amp;lt;/fooelement&amp;gt;&lt;/span&gt;.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vous pouvez supposer que le document ne contient que des éléments, sans attributs, sans espaces de noms.&lt;/p&gt;</description></item><item><title>Format de document</title><link>https://lemire.github.io/orientee_donnees/legacy/semaine_5/format_de_document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/legacy/semaine_5/format_de_document/</guid><description>&lt;h1 id="format-de-document"&gt;
  Format de document
  &lt;a class="anchor" href="#format-de-document"&gt;#&lt;/a&gt;
@@ -469,15 +469,15 @@ qui comprend une petite application Python capable de traiter du XQuery et du XM
 &lt;/h2&gt;
 &lt;p&gt;Écrivez un programme en Java qui utilise l’API DOM et modifie un fichier XML de manière à ce que le préfixe « foo » soit ajouté aux noms de tous les éléments.&lt;/p&gt;
 &lt;p&gt;Le fichier&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;element&amp;gt;&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/element&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;element&amp;gt;&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/element&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;deviendra donc&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;fooelement&amp;gt;&amp;lt;fooa&amp;gt;&amp;lt;/fooa&amp;gt;&amp;lt;/fooelement&amp;gt;&lt;/span&gt;.
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;fooelement&amp;gt;&amp;lt;fooa&amp;gt;&amp;lt;/fooa&amp;gt;&amp;lt;/fooelement&amp;gt;&lt;/span&gt;.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vous pouvez supposer que le document ne contient que des éléments, sans attributs, sans espaces de noms.&lt;/p&gt;
 &lt;h3 id="réponse"&gt;
  Réponse
  &lt;a class="anchor" href="#r%c3%a9ponse"&gt;#&lt;/a&gt;
 &lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;org.w3c.dom.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;org.w3c.dom.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;java.io.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;javax.xml.parsers.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;javax.xml.transform.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
@@ -677,20 +677,20 @@ Vous pouvez modifier les fichier Java et le fichier XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1767717755537197658"&gt;
+&lt;div id="java-multirunner-1770318993752535258"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1767717755537197658 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1767717755537197658 .export-form { margin-bottom:0; }
- #java-multirunner-1767717755537197658 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1767717755537197658 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1767717755537197658 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1767717755537197658 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1770318993752535258 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1770318993752535258 .export-form { margin-bottom:0; }
+ #java-multirunner-1770318993752535258 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1770318993752535258 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1770318993752535258 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1770318993752535258 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1767717755537197658-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1770318993752535258-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -778,14 +778,14 @@ public class SimpleXPath {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1767717755537197658-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1770318993752535258-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1767717755537197658');
+ var root = document.getElementById('java-multirunner-1770318993752535258');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -944,20 +944,20 @@ Vous pouvez modifier les fichiers XSLT et XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1767717755537410094"&gt;
+&lt;div id="java-multirunner-1770318993752750606"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1767717755537410094 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1767717755537410094 .export-form { margin-bottom:0; }
- #java-multirunner-1767717755537410094 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1767717755537410094 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1767717755537410094 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1767717755537410094 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1770318993752750606 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1770318993752750606 .export-form { margin-bottom:0; }
+ #java-multirunner-1770318993752750606 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1770318993752750606 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1770318993752750606 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1770318993752750606 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1767717755537410094-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1770318993752750606-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -1068,14 +1068,14 @@ public class XmlVersConsole {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1767717755537410094-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1770318993752750606-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1767717755537410094');
+ var root = document.getElementById('java-multirunner-1770318993752750606');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -1527,11 +1527,11 @@ Un flux RSS est un fichier XML structuré contenant :&lt;/p&gt;</description></i
  &lt;a class="anchor" href="#sp%c3%a9cifier-les-valeurs-dattributs"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Nous savons maintenant comment aller chercher la valeur d&amp;rsquo;un attribut en utilisant une expression XPath contenant le symbole « @ ». Cependant, qu&amp;rsquo;en est-il de la spécification des valeurs d&amp;rsquo;attributs? Supposons le document suivant :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;facture&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;facture&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;montant&amp;gt;&lt;/span&gt;10.10&lt;span style="color:#0550ae"&gt;&amp;lt;/montant&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;/facture&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nous voulons le simplifier pour n&amp;rsquo;avoir que :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;facture&lt;/span&gt; &lt;span style="color:#1f2328"&gt;montant=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;10.10&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;facture&lt;/span&gt; &lt;span style="color:#1f2328"&gt;montant=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;10.10&amp;#34;&lt;/span&gt; &lt;span style="color:#0550ae"&gt;/&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nous pouvons obtenir ce résultat en utilisant les accolades, pour indiquer une valeur XPath comme valeur d&amp;rsquo;attribut, de la façon suivante :&lt;/p&gt;</description></item><item><title>Solutions aux problèmes résolus</title><link>https://lemire.github.io/orientee_donnees/legacy/semaine_12/solutions_aux_problemes_resolus/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/legacy/semaine_12/solutions_aux_problemes_resolus/</guid><description>&lt;h1&gt;
  Solutions aux problèmes résolus
 &lt;/h1&gt;
@@ -1541,7 +1541,7 @@ Un flux RSS est un fichier XML structuré contenant :&lt;/p&gt;</description></i
 &lt;p&gt;
  Voici une solution possible (affichage récursif de l’arbre DOM avec indentation) :
 &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;org.w3c.dom.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;org.w3c.dom.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;javax.xml.parsers.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;public&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#cf222e"&gt;class&lt;/span&gt; &lt;span style="color:#1f2328"&gt;Arbre&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;&lt;span style="color:#fff"&gt;
@@ -1574,7 +1574,7 @@ Un flux RSS est un fichier XML structuré contenant :&lt;/p&gt;</description></i
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3&gt;
  Solution du problème 2
 &lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;org.w3c.dom.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;org.w3c.dom.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;java.io.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;javax.xml.parsers.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;javax.xml.transform.*&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
@@ -2431,7 +2431,7 @@ il suffit d&amp;rsquo;utiliser l&amp;rsquo;élément « xsl:for-each » comme ce
 &lt;p&gt;Supposons qu&amp;rsquo;on veuille calculer le total des
 éléments « quantite », mais en faisant l&amp;rsquo;aggrégation
 pour chaque valeur de l&amp;rsquo;attribut « type » dans l&amp;rsquo;exemple suivant.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#57606a"&gt;&amp;lt;?xml-stylesheet href=&amp;#34;produits.xsl&amp;#34; type=&amp;#34;text/xsl&amp;#34; ?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;produits&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;france&amp;gt;&lt;/span&gt;
@@ -2461,13 +2461,13 @@ la transformation suivante :&lt;/p&gt;</description></item><item><title>Génére
 de plus simple ! Il suffit d&amp;rsquo;utiliser l&amp;rsquo;instruction xsl:comment comme
 dans cet
 exemple :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:stylesheet&lt;/span&gt; &lt;span style="color:#1f2328"&gt;version=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;1.0&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;xmlns:xsl=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;http://www.w3.org/1999/XSL/Transform&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:comment&amp;gt;&lt;/span&gt;Ceci est un commentaire.&lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:comment&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;/xsl:stylesheet&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le résultat devrait ressembler à ceci :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#57606a"&gt;&amp;lt;!--Ceci est un commentaire.--&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="créer-des-éléments-dynamiquement-avec--xslelement-"&gt;
  Créer des éléments dynamiquement avec « xsl:element »
@@ -2524,7 +2524,7 @@ des éléments. Voici des exemples :&lt;/p&gt;</description></item><item><title>
 &lt;p&gt;Les espaces de noms sont supportés et ne posent pas de problème. Il suffit
 de définir les préfixes, comme on le fait habituellement. Par exemple,
 considérons le code XML suivant :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt; version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34; ?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#57606a"&gt;&amp;lt;?xml-stylesheet href=&amp;#34;class2.xsl&amp;#34; type=&amp;#34;text/xsl&amp;#34; ?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;université&amp;gt;&lt;/span&gt;
@@ -2679,7 +2679,7 @@ l&amp;rsquo;activité d&amp;rsquo;intégration.&lt;/p&gt;</description></item><i
 &lt;/h2&gt;
 &lt;p&gt;On peut utiliser &lt;a href="http://www.google.com"&gt;un document XSLT pour transformer des documents DocBook simple en HTML&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Nous allons passer en revue brièvement les éléments « xsl:template » qu&amp;rsquo;il contient.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;ISO-8859-1&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;xsl:stylesheet&lt;/span&gt; &lt;span style="color:#1f2328"&gt;version=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;1.0&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;xmlns:xsl=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;http://www.w3.org/1999/XSL/Transform&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;xsl:output&lt;/span&gt; &lt;span style="color:#1f2328"&gt;method=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;html&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;indent=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;yes&amp;#34;&lt;/span&gt;
@@ -2933,7 +2933,7 @@ qui comprend une petite application Python capable de traiter du XSLT et du XML.
  &lt;a class="anchor" href="#question-1--application-java-avec-gson-et-geojson"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Dans ce premier travail, vous développerez une application Java utilisant la bibliothèque Gson pour manipuler des données GeoJSON. Pour démontrer l&amp;rsquo;utilité de votre travail, vous utiliserez le fichier GeoJSON suivant comme base, qui représente des lieux emblématiques du Québec :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;:&lt;/span&gt; &lt;span style="color:#0a3069"&gt;&amp;#34;FeatureCollection&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;#34;features&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;:&lt;/span&gt; &lt;span style="color:#1f2328"&gt;[&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
@@ -2994,7 +2994,7 @@ qui comprend une petite application Python capable de traiter du XSLT et du XML.
 &lt;/h2&gt;
 &lt;p&gt;Dans ce premier travail, vous créerez des expressions mathématiques complexes en utilisant MathML (Mathematical Markup Language) et les mettrez en forme avec du CSS spécifique à MathML. Vous développerez une page web présentant différentes formules mathématiques avec une mise en forme élégante.&lt;/p&gt;
 &lt;p&gt;Voici la structure HTML de base que vous devez utiliser :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;html&lt;/span&gt; &lt;span style="color:#1f2328"&gt;lang&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;fr&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;head&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;meta&lt;/span&gt; &lt;span style="color:#1f2328"&gt;charset&lt;/span&gt;&lt;span style="color:#0550ae"&gt;=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;&amp;gt;&lt;/span&gt;
@@ -3071,7 +3071,7 @@ qui comprend une petite application Python capable de traiter du XSLT et du XML.
 &lt;/h2&gt;
 &lt;p&gt;Dans ce premier travail, vous créerez un service web REST simple en Java qui fournit des données JSON. Vous développerez un serveur qui expose plusieurs endpoints REST pour gérer des ressources.&lt;/p&gt;
 &lt;p&gt;Voici la structure Java de base que vous devez utiliser :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;com.sun.net.httpserver.HttpServer&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;com.sun.net.httpserver.HttpServer&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;com.sun.net.httpserver.HttpExchange&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;java.io.IOException&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#cf222e"&gt;import&lt;/span&gt;&lt;span style="color:#fff"&gt; &lt;/span&gt;&lt;span style="color:#24292e"&gt;java.io.OutputStream&lt;/span&gt;&lt;span style="color:#1f2328"&gt;;&lt;/span&gt;&lt;span style="color:#fff"&gt;
@@ -3208,7 +3208,7 @@ tous les éléments etudiant en les regroupant selon la valeur de leur attribut 
 &lt;/h2&gt;
 &lt;p&gt;Vous développerez une application Java complète pour traiter et analyser des documents XML.
 Pour démontrer l&amp;rsquo;utilité de votre travail, vous utiliserez le fichier XML suivant comme base de données :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;bibliotheque&lt;/span&gt; &lt;span style="color:#1f2328"&gt;xmlns=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;http://www.example.com/biblio&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;livre&lt;/span&gt; &lt;span style="color:#1f2328"&gt;id=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style="color:#1f2328"&gt;categorie=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;roman&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;titre&amp;gt;&lt;/span&gt;Le Petit Prince&lt;span style="color:#0550ae"&gt;&amp;lt;/titre&amp;gt;&lt;/span&gt;
@@ -3255,7 +3255,7 @@ Pour démontrer l&amp;rsquo;utilité de votre travail, vous utiliserez le fichie
  &lt;a class="anchor" href="#question-1--transformations-xslt-pour-la-g%c3%a9n%c3%a9ration-de-rapports"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Pour ce travail, vous utiliserez le document XML suivant contenant des données d&amp;rsquo;étudiants :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#57606a"&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#0550ae"&gt;&amp;lt;universite&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;etudiant&lt;/span&gt; &lt;span style="color:#1f2328"&gt;id=&lt;/span&gt;&lt;span style="color:#0a3069"&gt;&amp;#34;E001&amp;#34;&lt;/span&gt;&lt;span style="color:#0550ae"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;lt;nom&amp;gt;&lt;/span&gt;Dupont&lt;span style="color:#0550ae"&gt;&amp;lt;/nom&amp;gt;&lt;/span&gt;

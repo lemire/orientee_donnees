@@ -49,7 +49,7 @@ Le MarkDown qui est un format de texte simple permettant un formattage basique d
  &lt;a class="anchor" href="#question-1--application-java-avec-gson-et-geojson"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Dans ce premier travail, vous développerez une application Java utilisant la bibliothèque Gson pour manipuler des données GeoJSON. Pour démontrer l&amp;rsquo;utilité de votre travail, vous utiliserez le fichier GeoJSON suivant comme base, qui représente des lieux emblématiques du Québec :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;:&lt;/span&gt; &lt;span style="color:#0a3069"&gt;&amp;#34;FeatureCollection&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;#34;features&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;:&lt;/span&gt; &lt;span style="color:#1f2328"&gt;[&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
