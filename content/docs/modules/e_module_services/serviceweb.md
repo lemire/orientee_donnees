@@ -134,12 +134,12 @@ public class ServeurHeure {
 
 1. Compilez le programme Java :
    ```
-   javac ServeurHeureStax.java
+   javac ServeurHeure.java
    ```
 
 2. Lancez le serveur :
    ```
-   java ServeurHeureStax
+   java ServeurHeure
    ```
    Attention. Si un autre serveur sur votre machine utilise le port 8000, le serveur ne pourra pas démarrer correctement. Vous pouvez changer le port dans le programme ou mettre fin à l'autre serveur.
 
@@ -149,8 +149,8 @@ public class ServeurHeure {
 
 ## Description du code
 
-### ServeurHeureStax.java
-Ce fichier contient la classe principale `ServeurHeureStax`. Il utilise l'API `HttpServer` de Java pour créer un serveur HTTP simple écoutant sur le port 8000.
+### ServeurHeure.java
+Ce fichier contient la classe principale `ServeurHeure`. Il utilise l'API `HttpServer` de Java pour créer un serveur HTTP simple écoutant sur le port 8000.
 
 - **Imports** : Inclut les classes nécessaires pour le serveur HTTP, la génération XML avec StAX, la lecture de fichiers, et la manipulation des dates.
 - **Méthode `genererXmlHeure()`** : Génère un document XML simple avec l'heure actuelle au format ISO. Utilise `XMLOutputFactory` et `XMLStreamWriter` pour construire le XML de manière programmatique.
