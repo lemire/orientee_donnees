@@ -66,7 +66,7 @@ Un document valide commence par une déclaration XML, comme celle qui suit :
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
 ```
 
-Elle est suivie d'une déclaration de type de document sous la forme <!DOCTYPE ... SYSTEM ... > , où l'on remplace les premiers trois points par le nom XML de l'élément-racine que le document doit avoir, et les deuxièmes trois points par une URL vers le document DTD. L'URL peut être absolue, comme « http://www.google.com/mydtd.dtd », ou locale, comme « madtd.dtd » ou « ../dtd/madtd.dtd ». Dans le second cas, il faut que le fichier DTD soit sur le disque, à l'endroit indiqué par rapport au fichier XML. Ainsi, dans l'exemple « ../dtd/madtd.dtd », il faudrait que le fichier « madtd.dtd»  soit dans le répertoire « dtd », voisin du répertoire où se trouve le fichier XML. Ainsi, immédiatement après la déclaration XML, on pourrait avoir le texte suivant :
+Elle est suivie d'une déclaration de type de document sous la forme `<!DOCTYPE ... SYSTEM ... >` , où l'on remplace les premiers trois points par le nom XML de l'élément-racine que le document doit avoir, et les deuxièmes trois points par une URL vers le document DTD. L'URL peut être absolue, comme « http://www.google.com/mydtd.dtd », ou locale, comme « madtd.dtd » ou « ../dtd/madtd.dtd ». Dans le second cas, il faut que le fichier DTD soit sur le disque, à l'endroit indiqué par rapport au fichier XML. Ainsi, immédiatement après la déclaration XML, on pourrait avoir le texte suivant :
 
 ```xml
 <!DOCTYPE baliseracine SYSTEM "http://www.mondomain.com/madtd.dtd">
@@ -78,27 +78,27 @@ Rappelons que l'attribut « encoding » nous donne le jeu des caractères. On ch
 
 ## La syntaxe des documents DTD
 
-Les documents DTD contiennent des instructions de la forme <!ELEMENT ... >. Bien que celle-ci ait l'apparence d'une balise XML, ce n'est pas du XML. Dans une instruction, on met d'abord un nom XML qui correspond à un nom d'élément : par exemple, l'instruction « <!ELEMENT montant ... > » définira ce qui peut être contenu dans un élément de nom « montant ». Tout ce qui suit le nom de l'élément dicte ce que l'élément peut contenir. Le plus souvent, on place la description du contenu entre parenthèses (« <!ELEMENT montant (quelque chose) > »), sauf pour les cas particuliers (« ANY » et « EMPTY ») définis plus loin. De façon courante, on définit le contenu d'un élément par une liste de noms XML, correspondant à des noms d'élément et séparés par des virgules. Par exemple, l'instruction « <!ELEMENT montant (devise,valeur) > » nous informe qu'un élément « montant » doit contenir un élément « devise » suivi d'un élément « valeur ». Notons que l'ordre des éléments importe et que les instructions « <!ELEMENT montant (devise,valeur) > » et « <!ELEMENT montant (valeur,devise) > » ne sont pas équivalentes.
+Les documents DTD contiennent des instructions de la forme `<!ELEMENT ... >`. Bien que celle-ci ait l'apparence d'une balise XML, ce n'est pas du XML. Dans une instruction, on met d'abord un nom XML qui correspond à un nom d'élément : par exemple, l'instruction « `<!ELEMENT montant ... >` » définira ce qui peut être contenu dans un élément de nom « montant ». Tout ce qui suit le nom de l'élément dicte ce que l'élément peut contenir. Le plus souvent, on place la description du contenu entre parenthèses (« `<!ELEMENT montant (quelque chose) >` »), sauf pour les cas particuliers (« ANY » et « EMPTY ») définis plus loin. De façon courante, on définit le contenu d'un élément par une liste de noms XML, correspondant à des noms d'élément et séparés par des virgules. Par exemple, l'instruction « `<!ELEMENT montant (devise,valeur) >` » nous informe qu'un élément « montant » doit contenir un élément « devise » suivi d'un élément « valeur ». Notons que l'ordre des éléments importe et que les instructions « `<!ELEMENT montant (devise,valeur) >` » et « `<!ELEMENT montant (valeur,devise) >` » ne sont pas équivalentes.
 
-Bien qu'on ne puisse exprimer toutes les possibilités, la syntaxe DTD permet tout de même de spécifier un grand nombre de règles. Par exemple, le symbole « ? » permet de spécifier qu'un élément peut être présent ou non (élément optionnel). Ainsi, l'instruction « <!ELEMENT montant (devise?,valeur) > » signifie que l'élément « montant » peut contenir un élément « devise » (ou non) et doit contenir un élément « valeur ». Si jamais l'élément « devise » apparaît, il doit apparaître avant l'élément « valeur ». Si jamais on veut qu'un élément soit optionnel et que, s'il apparaît, il puisse apparaître plus d'une fois, on utilise le symbole « * ». Ainsi, l'instruction « <!ELEMENT montant (devise*,valeur) > » signifie qu'on peut avoir zéro, un ou plusieurs éléments « devise », puis un élément « valeur ». De la même façon, le symbole « + » est utilisé pour spécifier qu'un élément doit être présent, mais peut apparaître plus d'une fois.
+Bien qu'on ne puisse exprimer toutes les possibilités, la syntaxe DTD permet tout de même de spécifier un grand nombre de règles. Par exemple, le symbole « ? » permet de spécifier qu'un élément peut être présent ou non (élément optionnel). Ainsi, l'instruction « `<!ELEMENT montant (devise?,valeur) >` » signifie que l'élément « montant » peut contenir un élément « devise » (ou non) et doit contenir un élément « valeur ». Si jamais l'élément « devise » apparaît, il doit apparaître avant l'élément « valeur ». Si jamais on veut qu'un élément soit optionnel et que, s'il apparaît, il puisse apparaître plus d'une fois, on utilise le symbole « * ». Ainsi, l'instruction « `<!ELEMENT montant (devise*,valeur) >` » signifie qu'on peut avoir zéro, un ou plusieurs éléments « devise », puis un élément « valeur ». De la même façon, le symbole « + » est utilisé pour spécifier qu'un élément doit être présent, mais peut apparaître plus d'une fois.
 
-Au lieu d'utiliser la virgule, on peut utiliser le symbole « | » pour spécifier qu'un élément ou un autre peut apparaître. Ainsi, l'instruction « <!ELEMENT montant (devise|valeur) > » signifie que l'élément « montant » peut contenir soit l'élément « devise », soit l'élément « valeur » (l'un ou l'autre, mais pas les deux ou aucun des deux). Finalement, on peut combiner le tout; par exemple, l'instruction « <!ELEMENT montant (devise+|valeur*) > » signifie que l'élément « montant » peut contenir au moins un élément « devise » (et rien d'autre) ou alors, aucun, 1 ou plusieurs éléments « valeur ».
+Au lieu d'utiliser la virgule, on peut utiliser le symbole « | » pour spécifier qu'un élément ou un autre peut apparaître. Ainsi, l'instruction « `<!ELEMENT montant (devise|valeur) >` » signifie que l'élément « montant » peut contenir soit l'élément « devise », soit l'élément « valeur » (l'un ou l'autre, mais pas les deux ou aucun des deux). Finalement, on peut combiner le tout; par exemple, l'instruction « `<!ELEMENT montant (devise+|valeur*) >` » signifie que l'élément « montant » peut contenir au moins un élément « devise » (et rien d'autre) ou alors, aucun, 1 ou plusieurs éléments « valeur ».
 
-Si jamais on veut qu'un élément puisse contenir du texte, on utilise le terme technique « #PCDATA » dans l'instruction DTD. Par exemple, l'instruction « <!ELEMENT montant (#PCDATA) > » signifie que l'élément « montant » contient du texte et seulement du texte (pas d'éléments). Supposons maintenant qu'on veut permettre du contenu mixte, comme dans l'exemple qui suit :
+Si jamais on veut qu'un élément puisse contenir du texte, on utilise le terme technique « #PCDATA » dans l'instruction DTD. Par exemple, l'instruction « `<!ELEMENT montant (#PCDATA) >` » signifie que l'élément « montant » contient du texte et seulement du texte (pas d'éléments). Supposons maintenant qu'on veut permettre du contenu mixte, comme dans l'exemple qui suit :
 
 ```xml
 <mixte> du texte et <important>un élément</important> </mixte>
 ```
 
-On pourrait penser que l'instruction « <!ELEMENT mixte (#PCDATA|important) > » permettra du texte ou des éléments « important », et c'est vrai; mais elle permet l'un (juste du texte) ou l'autre (juste un élément « important »), mais pas un mélange des deux. Pour pouvoir obtenir le résultat désiré, soit un mélange d'éléments « important » et de texte, il faut permettre la répétition du choix, comme dans l'instruction « <!ELEMENT mixte (#PCDATA|important)* > ». Il s'agit de la seule façon de spécifier qu'on permet un mélange de texte et d'éléments (contenu mixte).
+On pourrait penser que l'instruction « `<!ELEMENT mixte (#PCDATA|important) >` » permettra du texte ou des éléments « important », et c'est vrai; mais elle permet l'un (juste du texte) ou l'autre (juste un élément « important »), mais pas un mélange des deux. Pour pouvoir obtenir le résultat désiré, soit un mélange d'éléments « important » et de texte, il faut permettre la répétition du choix, comme dans l'instruction « `<!ELEMENT mixte (#PCDATA|important)* >` ». Il s'agit de la seule façon de spécifier qu'on permet un mélange de texte et d'éléments (contenu mixte).
 
-Voyons un autre exemple de contenu mixte. Considérons l'instruction « <!ELEMENT montant (#PCDATA|devise)* > ». Ce qu'elle signifie exactement, c'est que les éléments « montant » peuvent contenir un mélange de texte et des éléments « devise », comme l'exemple qui suit :
+Voyons un autre exemple de contenu mixte. Considérons l'instruction « `<!ELEMENT montant (#PCDATA|devise)* >` ». Ce qu'elle signifie exactement, c'est que les éléments « montant » peuvent contenir un mélange de texte et des éléments « devise », comme l'exemple qui suit :
 
 ```xml
 <montant>10 $ et <devise>dollars</devise></montant>
 ```
 
-On peut aussi utiliser « ANY » pour spécifier qu'un élément peut contenir n'importe quoi (n'importe quelle séquence d'éléments déclarés dans la DTD et du texte) ou « EMPTY » pour spécifier qu'un élément doit être vide (sans même un seul espace). C'est le seul cas où l'on n'utilise pas de parenthèses lors de la définition du contenu, comme dans ces exemples : <!ELEMENT question ANY> et <!ELEMENT question EMPTY>.
+On peut aussi utiliser « ANY » pour spécifier qu'un élément peut contenir n'importe quoi (n'importe quelle séquence d'éléments déclarés dans la DTD et du texte) ou « EMPTY » pour spécifier qu'un élément doit être vide (sans même un seul espace). C'est le seul cas où l'on n'utilise pas de parenthèses lors de la définition du contenu, comme dans ces exemples : `<!ELEMENT question ANY>` et `<!ELEMENT question EMPTY>`.
 
 Un document DTD prendra donc la forme d'un fichier en format texte contenant une suite d'instructions comme :
 
@@ -132,21 +132,21 @@ Assurez-vous de bien comprendre pourquoi ce document est valide avant de continu
 
 ## Les attributs
 
-Par défaut, aucun élément n'est autorisé à avoir un attribut. Pour permettre d'ajouter un attribut à un élément, il faut une instruction de la forme <!ATTLIST recipiendaire age ...> qui spécifie que l'élément recipiendaire peut avoir un attribut « age ». On permet généralement aux valeurs d'attribut de contenir n'importe quel texte, ce qu'on représente par « CDATA ». Hormis le contenu, il existe deux types d'attributs : les attributs obligatoires (« #REQUIRED ») et les attributs optionnels (« #IMPLIED »). Par exemple, l'instruction «  <!ATTLIST recipiendaire age CDATA #IMPLIED> » signifie qu'on peut (ou pas) accorder à un élément « recipiendaire » un attribut nommé « age » pouvant contenir n'importe quel texte. Si l'on désire que l'attribut soit obligatoire, on utilise une instruction comme « <!ATTLIST recipiendaire age CDATA #REQUIRED> ».
+Par défaut, aucun élément n'est autorisé à avoir un attribut. Pour permettre d'ajouter un attribut à un élément, il faut une instruction de la forme `<!ATTLIST recipiendaire age ...>` qui spécifie que l'élément recipiendaire peut avoir un attribut « age ». On permet généralement aux valeurs d'attribut de contenir n'importe quel texte, ce qu'on représente par « CDATA ». Hormis le contenu, il existe deux types d'attributs : les attributs obligatoires (« #REQUIRED ») et les attributs optionnels (« #IMPLIED »). Par exemple, l'instruction « `<!ATTLIST recipiendaire age CDATA #IMPLIED>` » signifie qu'on peut (ou pas) accorder à un élément « recipiendaire » un attribut nommé « age » pouvant contenir n'importe quel texte. Si l'on désire que l'attribut soit obligatoire, on utilise une instruction comme « `<!ATTLIST recipiendaire age CDATA #REQUIRED>` ».
 
-Si l'on veut permettre à un élément d'avoir plusieurs attributs, on peut le faire en utilisant plusieurs instructions comme dans « <!ATTLIST recipiendaire age CDATA #REQUIRED> <!ATTLIST recipiendaire nom CDATA #REQUIRED> »; on peut aussi combiner les instructions dans une seule : « <!ATTLIST recipiendaire age CDATA #REQUIRED nom CDATA #REQUIRED> ». Cependant, il n'est pas possible de spécifier l'ordre dans lequel les attributs doivent apparaître, les instructions « <!ATTLIST recipiendaire age CDATA #REQUIRED nom CDATA #REQUIRED> » et « <!ATTLIST recipiendaire nom CDATA #REQUIRED age CDATA #REQUIRED> » sont équivalentes.
+Si l'on veut permettre à un élément d'avoir plusieurs attributs, on peut le faire en utilisant plusieurs instructions comme dans « `<!ATTLIST recipiendaire age CDATA #REQUIRED>` `<!ATTLIST recipiendaire nom CDATA #REQUIRED>` »; on peut aussi combiner les instructions dans une seule : « `<!ATTLIST recipiendaire age CDATA #REQUIRED nom CDATA #REQUIRED>` ». Cependant, il n'est pas possible de spécifier l'ordre dans lequel les attributs doivent apparaître, les instructions « `<!ATTLIST recipiendaire age CDATA #REQUIRED nom CDATA #REQUIRED>` » et « `<!ATTLIST recipiendaire nom CDATA #REQUIRED age CDATA #REQUIRED>` » sont équivalentes.
 
-L'attribut « xml:lang » utilisé pour définir la langue d'un texte, peut être déclaré comme ceci : « <!ATTLIST monelement xml:lang CDATA #IMPLIED> ». L'attribut xml:space peut être déclaré comme ceci : « <!ATTLIST monelement xml:space (default|preserve) #IMPLIED> ».
+L'attribut « xml:lang » utilisé pour définir la langue d'un texte, peut être déclaré comme ceci : « `<!ATTLIST monelement xml:lang CDATA #IMPLIED>` ». L'attribut xml:space peut être déclaré comme ceci : « `<!ATTLIST monelement xml:space (default|preserve) #IMPLIED>` ».
 
-On peut également spécifier qu'un élément donné a toujours un attribut donné (indiqué ou non dans le XML) comme ceci : «<!ATTLIST recipiendaire age CDATA #FIXED "40 ans">». Dans ce dernier exemple, tous les éléments « recipiendaire » ont l'attribut « age="40 ans" », même si on omet de l'indiquer dans la balise de départ de l'élément « recipiendaire ».
+On peut également spécifier qu'un élément donné a toujours un attribut donné (indiqué ou non dans le XML) comme ceci : «`<!ATTLIST recipiendaire age CDATA #FIXED "40 ans">`». Dans ce dernier exemple, tous les éléments « recipiendaire » ont l'attribut « age="40 ans" », même si on omet de l'indiquer dans la balise de départ de l'élément « recipiendaire ».
 
-Plus simplement, on peut spécifier une valeur par défaut qui ne prendra effet que si l'on n'a pas explicitement indiqué l'attribut. Par exemple, l'instruction « <!ATTLIST recipiendaire age CDATA "40 ans">  » signifie que l'élément « recipiendaire » aura l'attribut « age="40 ans" », à moins qu'on ne spécifie autre chose dans le XML.
+Plus simplement, on peut spécifier une valeur par défaut qui ne prendra effet que si l'on n'a pas explicitement indiqué l'attribut. Par exemple, l'instruction « `<!ATTLIST recipiendaire age CDATA "40 ans">`  » signifie que l'élément « recipiendaire » aura l'attribut « age="40 ans" », à moins qu'on ne spécifie autre chose dans le XML.
 
-Il peut être utile de donner une liste de valeurs que pourra prendre un attribut. Par exemple, une pièce de monnaie est soit sur « face », soit sur « pile » : il n'y a que deux choix. Si la liste de choix est composée de textes sans espace ou ponctuation, sauf la barre du soulignement ( _  ), le trait d'union ( - ) et le point ( . ), alors on peut faire une énumération comme dans l'exemple suivant : « <!ATTLIST piece position (face|pile) #REQUIRED>». On peut aussi spécifier une valeur par défaut, si l'on suppose, jusqu'à preuve du contraire, que la pièce est dans la position « face », comme ceci «  <!ATTLIST piece position (face|pile) "face"> »
+Il peut être utile de donner une liste de valeurs que pourra prendre un attribut. Par exemple, une pièce de monnaie est soit sur « face », soit sur « pile » : il n'y a que deux choix. Si la liste de choix est composée de textes sans espace ou ponctuation, sauf la barre du soulignement ( _  ), le trait d'union ( - ) et le point ( . ), alors on peut faire une énumération comme dans l'exemple suivant : « `<!ATTLIST piece position (face|pile) #REQUIRED>`». On peut aussi spécifier une valeur par défaut, si l'on suppose, jusqu'à preuve du contraire, que la pièce est dans la position « face », comme ceci «  `<!ATTLIST piece position (face|pile) "face">` »
 
-On peut également spécifier qu'un attribut servira à identifier un élément de façon unique. Pour ce faire, on utilise une instruction comme «  <!ATTLIST recipiendaire code ID> ». Il n'est pas possible, pour deux attributs de type ID, d'avoir la même valeur dans un même document XML. En somme, si l'on donne une valeur « ID », elle devrait correspondre de façon unique à un élément et un seul. Un attribut de type « ID » doit avoir comme valeur un « nom XML », c'est-à-dire un texte sans espace ou ponctuation, sauf la barre du soulignement ( _  ), le trait d'union ( - ) et le point ( . ), et qui ne commence pas par un chiffre, un trait d'union ou un point.
+On peut également spécifier qu'un attribut servira à identifier un élément de façon unique. Pour ce faire, on utilise une instruction comme «  `<!ATTLIST recipiendaire code ID>` ». Il n'est pas possible, pour deux attributs de type ID, d'avoir la même valeur dans un même document XML. En somme, si l'on donne une valeur « ID », elle devrait correspondre de façon unique à un élément et un seul. Un attribut de type « ID » doit avoir comme valeur un « nom XML », c'est-à-dire un texte sans espace ou ponctuation, sauf la barre du soulignement ( _  ), le trait d'union ( - ) et le point ( . ), et qui ne commence pas par un chiffre, un trait d'union ou un point.
 
-On peut faire référence aux attributs de type « ID » avec des attributs de type « IDREF ». La valeur d'un attribut « IDREF » doit non seulement être un nom XML, mais doit aussi avoir un attribut de type « ID » qui possède cette même valeur quelque part dans le document XML. Par exemple, si on a l'instruction «  <!ATTLIST recipiendaire code ID> », on pourra ensuite faire référence à l'élément ayant une valeur d'attribut « code » particulière, avec une instruction comme «  <!ATTLIST mauvaispayeur code IDREF> ».
+On peut faire référence aux attributs de type « ID » avec des attributs de type « IDREF ». La valeur d'un attribut « IDREF » doit non seulement être un nom XML, mais doit aussi avoir un attribut de type « ID » qui possède cette même valeur quelque part dans le document XML. Par exemple, si on a l'instruction «  `<!ATTLIST recipiendaire code ID>` », on pourra ensuite faire référence à l'élément ayant une valeur d'attribut « code » particulière, avec une instruction comme «  `<!ATTLIST mauvaispayeur code IDREF>` ».
 
 Dans ce contexte, le document XML qui suit n'est pas valide :
 
@@ -168,36 +168,27 @@ Il existe d'autres types d'attributs, mais ils sont peu utilisés.
 
 Vous vous rappelez sans doute que le XML définit quelques entités par défaut, « &lt; », par exemple. On peut toutefois définir ses propres entités avec une instruction DTD comme celle-ci :
 
-```xml
-<!ENTITY monentite "Introduction à XML">
-```
+`<!ENTITY monentite "Introduction à XML">`
 
 La signification de ce dernier exemple, c'est que partout où « &monentite; » apparaît dans un document, il sera remplacé par le texte « Introduction à XML ». Ce remplacement s'applique aussi aux valeurs par défaut des attributs de la DTD.
 
 On peut mettre des éléments et des attributs dans une entité comme dans cet exemple :
 
-```xml
-<!ENTITY monentite "<paragraphe>texte</paragraphe>">
-```
+`<!ENTITY monentite "<paragraphe>texte</paragraphe>">`
 
 Il n'est cependant pas permis de ne mettre qu'une partie d'un élément comme ceci :
 
-```xml
-<!ENTITY monentite "<paragraphe>">
-```
+`<!ENTITY monentite "<paragraphe>">`
 
 Une entité peut faire appel à une autre entité :
 
-```xml
-<!ENTITY monentite1 "&monentite2;">
-<!ENTITY monentite2 "texte">
-```
+`<!ENTITY monentite1 "&monentite2;">`
+
+`<!ENTITY monentite2 "texte">`
 
 Une entité ne peut cependant pas faire appel à elle même de manière récursive, directement ou indirectement. Cet exemple n'est donc pas valide :
 
-```xml
-<!ENTITY monentite "&monentite;">
-```
+`<!ENTITY monentite "&monentite;">`
 
 ## DTD interne et externe
 
@@ -212,7 +203,7 @@ Prenons l'exemple suivant, soit un document XML qui débute par :
 ]>
 ```
 
-Dans ce cas, tout ce passe comme si on ajoutait la ligne « <!ELEMENT question #PCDATA> » à la DTD externe. Normalement, il ne devrait jamais y avoir de conflit entre les deux DTD (interne et externe); on ne peut pas redéfinir un élément, mais on peut y définir des éléments! Par contre, les entités peuvent être redéfinies et la définition trouvée dans le DTD interne l'emporte.
+Dans ce cas, tout ce passe comme si on ajoutait la ligne « `<!ELEMENT question #PCDATA>` » à la DTD externe. Normalement, il ne devrait jamais y avoir de conflit entre les deux DTD (interne et externe); on ne peut pas redéfinir un élément, mais on peut y définir des éléments! Par contre, les entités peuvent être redéfinies et la définition trouvée dans le DTD interne l'emporte.
 
 On peut même omettre complètement la DTD externe comme dans l'exemple suivant :
 

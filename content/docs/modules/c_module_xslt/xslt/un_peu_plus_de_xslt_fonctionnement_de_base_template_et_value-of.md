@@ -9,7 +9,7 @@ weight: 40
 
 Dans cette section, nous explorons les éléments xsl:template, qui sont essentiels pour définir des règles de transformation personnalisées dans les feuilles de style XSLT.
 
-Modifions maintenant le fichier « xslt.xml » de façon à rendre l'expérience plus intéressante. Tout d'abord, traitons tous les éléments « facture » du document XML. Pour obtenir le résultat, il faut placer un élément « <xsl:template match="facture"> » dans l'élément-racine du document XSLT comme ceci :
+Modifions maintenant le fichier « xslt.xml » de façon à rendre l'expérience plus intéressante. Tout d'abord, traitons tous les éléments « facture » du document XML. Pour obtenir le résultat, il faut placer un élément « `<xsl:template match="facture">` » dans l'élément-racine du document XSLT comme ceci :
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,7 +21,7 @@ Modifions maintenant le fichier « xslt.xml » de façon à rendre l'expérience
     </xsl:stylesheet>
 ```
 
-Il faut voir l'élément « xsl:template » comme une règle qui dit : à chaque fois qu'on rencontre un élément qui s'appelle « facture », faisons ceci. Le modèle est inclus dans l'élément « xsl:template ». Dans l'exemple de document XSLT que nous venons de voir, le processeur XSLT remplacerait tous les éléments « facture » qu'il rencontre par le texte « On doit mettre quelque chose ici!!! », ce qui donnerait comme résultat le fichier suivant (le résultat exact peut varier un peu selon le processeur XSLT) :
+Il faut voir l'élément « `xsl:template` » comme une règle qui dit : à chaque fois qu'on rencontre un élément qui s'appelle « facture », faisons ceci. Le modèle est inclus dans l'élément « `xsl:template` ». Dans l'exemple de document XSLT que nous venons de voir, le processeur XSLT remplacerait tous les éléments « facture » qu'il rencontre par le texte « On doit mettre quelque chose ici!!! », ce qui donnerait comme résultat le fichier suivant (le résultat exact peut varier un peu selon le processeur XSLT) :
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -43,15 +43,15 @@ Cette fois, si vous ouvrez le document « test.xml », vous devriez voir le text
 
 Dans les exemples que nous allons proposer, nous omettons les éléments « html » et « body » par souci de simplicité. La présence de ces éléments n'est pas nécessaire et n'est utile que pour afficher le résultat dans un navigateur. À vous de les ajouter si vous désirez afficher le résultat.
 
-**Pour résumer, chaque fois que le processeur XSLT rencontre un élément « facture », il applique le modèle qui se trouve dans l'élément « <xsl:template match="facture"> ».** Notez que si l'élément « facture » contient lui-même des éléments, ils ne sont pas automatiquement visités par le processeur XSLT. Ce dernier considère que dès qu'un modèle est appliqué à un élément, il peut alors parcourir le reste du document sans se soucier du contenu de cet élément qui est maintenant « couvert », à moins qu'on lui dise explicitement de traiter les noeuds-enfants avec une instruction comme apply-template. Le XSLT est très bête: il part de la racine et applique les règles à ce qu'il rencontre.
+**Pour résumer, chaque fois que le processeur XSLT rencontre un élément « facture », il applique le modèle qui se trouve dans l'élément « `<xsl:template match="facture">` ».** Notez que si l'élément « facture » contient lui-même des éléments, ils ne sont pas automatiquement visités par le processeur XSLT. Ce dernier considère que dès qu'un modèle est appliqué à un élément, il peut alors parcourir le reste du document sans se soucier du contenu de cet élément qui est maintenant « couvert », à moins qu'on lui dise explicitement de traiter les noeuds-enfants avec une instruction comme apply-template. Le XSLT est très bête: il part de la racine et applique les règles à ce qu'il rencontre.
 
 ## « Éléments xsl:value-of »
 
-Dans cette section, nous découvrons les éléments xsl:value-of, qui permettent d'extraire et d'insérer le contenu textuel des éléments XML dans le résultat de la transformation.
+Dans cette section, nous découvrons les éléments « `xsl:value-of` », qui permettent d'extraire et d'insérer le contenu textuel des éléments XML dans le résultat de la transformation.
 
 Jusqu'à présent, le résultat n'est pas très fascinant parce que les éléments « xsl:template » ont été utilisés comme des outils pour faire du « Rechercher/Remplacer ». Le contenu de l'élément « facture » n'est pas traité, on le remplace bêtement par autre chose.
 
-Nous pouvons traiter le contenu d'un élément à l'aide d'un élément « xsl:value-of » avec la syntaxe <xsl:value-of select="..." />. La valeur de l'élément « select » est une expression XPath. Par exemple, si le processeur traite un élément « facture » qui contient un élément « montant », alors l'élément <xsl:value-of select="montant" /> nous donne le contenu de l'élément « montant ». C'est ainsi que nous pouvons trouver le nom de la personne devant recevoir une facture, en utilisant <xsl:value-of select="personne" />.
+Nous pouvons traiter le contenu d'un élément à l'aide d'un élément « `xsl:value-of` » avec la syntaxe `<xsl:value-of select="..." />`. La valeur de l'élément « select » est une expression XPath. Par exemple, si le processeur traite un élément « facture » qui contient un élément « montant », alors l'élément `<xsl:value-of select="montant" />` nous donne le contenu de l'élément « montant ». C'est ainsi que nous pouvons trouver le nom de la personne devant recevoir une facture, en utilisant `<xsl:value-of select="personne" />`.
 
 Voyons maintenant un exemple plus complexe de fichier XSLT :
 
@@ -88,7 +88,7 @@ Ce qui se passe, c'est que le nouveau document XSLT transforme notre document XM
         de 10.10$ pour: Achat d'ordinateur.</p></body>
         </html>
 ```
-**Pour résumer, nous pouvons aller chercher le contenu textuel d'une expression XPath avec une instruction comme « <xsl:value-of select="..." /> » où « ... » est une expression XPath comme le nom de l'élément.**
+**Pour résumer, nous pouvons aller chercher le contenu textuel d'une expression XPath avec une instruction comme « `<xsl:value-of select="..." />` » où « ... » est une expression XPath comme le nom de l'élément.**
 
 ### Modèle de traitement XSLT
 
@@ -104,8 +104,8 @@ Une autre façon de décrire ce comportement est de dire que le XSLT utilise un 
    fichiers XML « en arbre de nœuds ». Imaginons un arbre où, à la racine, se trouve un nœud 
    spécial représentant le document dans son ensemble. Avec XPath, nous pouvons pointer 
    directement sur le nœud-racine (le document lui-même) en utilisant la barre oblique « / » que nous 
-   plaçons au début de l'expression XPath, comme dans « <xsl:value-of select="/" /> ». 
-   Dans ce cas, « <xsl:value-of select="/jean" /> » donne la valeur de l'élément-racine, 
+   plaçons au début de l'expression XPath, comme dans « `<xsl:value-of select="/" />` ». 
+Dans ce cas, « `<xsl:value-of select="/" />` » donne la valeur de l'élément-racine, 
    si celui-ci se nomme « jean ».
 
 Le nœud-racine contient lui-même l'élément-racine. Chaque élément et chaque élément de texte 
@@ -126,7 +126,7 @@ D'autres nœuds existent comme les nœuds de commentaire, les nœuds
    un enfant (« child »).
 
 Nous avons déjà vu que « * » et « @* » permettaient de sélectionner les sous-éléments et attributs d'un élément. On peut sélectionner 
-   les nœuds de texte avec la fonction XPath « text() ». Notons aussi que l'élément « <xsl:apply-templates/> » signifie que les modèles s'appliquent à tous les nœuds contenus dans le nœud courant. Les règles
+   les nœuds de texte avec la fonction XPath « `text()` ». Notons aussi que l'élément « `<xsl:apply-templates/>` » signifie que les modèles s'appliquent à tous les nœuds contenus dans le nœud courant. Les règles
    par défaut qui s'appliquent en XSLT sont :
 ```xml
 <xsl:template match="*|/">

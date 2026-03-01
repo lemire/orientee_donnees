@@ -7,21 +7,30 @@ weight: 20
 
 ## Quelques principes et notions importantes du XML
 
-Rappelons qu'une **balise** est un segment de texte commençant par < et se terminant par >. Par exemple, <lavie> est une balise qui marque le début de l'élément *lavie*. Une balise commençant par </, comme </lavie>, est une balise de fin; dans cet exemple, elle termine l'élément *lavie*.
+Rappelons qu'une **balise** est un segment de texte commençant par `<` et se terminant par `>`. Par exemple, `<lavie>` est une balise qui marque le début de l'élément *lavie*. Une balise commençant par `</`, comme `</lavie>`, est une balise de fin; dans cet exemple, elle termine l'élément *lavie*.
 
-Le **nom XML** de la balise est le texte suivant le symbole < (ou </ pour une balise de fin) et pouvant contenir n'importe quelle lettre ou chiffre (a, b,... 0, 1, 2,...) ou les quatre symboles de ponctuation, soit la marque de soulignement ( _ ), le trait d'union ( - ), les deux-points (:) ou le point (.); un nom XML ne peut contenir d'autres caractères spéciaux, ni un espace". En outre, il ne peut pas commencer par un chiffre, un trait d'union ou un point. Par exemple, le nom XML de la balise <lavie> est « lavie », alors que la balise <7lavie> ne serait pas autorisée. On réserve les noms débutant par xml, Xml, xMl, xmL, XMl, xML,Xml et XML pour les spécifications XML. Ainsi, la balise <xmldanslavie> est à éviter.
+Le **nom XML** de la balise est le texte suivant le symbole `<` (ou `</` pour une balise de fin) et pouvant contenir n'importe quelle lettre ou chiffre (a, b,... 0, 1, 2,...) ou les quatre symboles de ponctuation, soit la marque de soulignement ( _ ), le trait d'union ( - ), les deux-points (:) ou le point (.); un nom XML ne peut contenir d'autres caractères spéciaux, ni un espace". En outre, il ne peut pas commencer par un chiffre, un trait d'union ou un point. Par exemple, le nom XML de la balise `<lavie>` est « lavie », alors que la balise `<7lavie>` ne serait pas autorisée. On réserve les noms débutant par xml, Xml, xMl, xmL, XMl, xML,Xml et XML pour les spécifications XML. Ainsi, la balise `<xmldanslavie>` est à éviter.
 
-Pour les balises de début, aussi dites d'ouverture, on peut ajouter un **attribut** au nom XML de la balise. Un attribut porte un nom XML qui doit respecter les mêmes règles que les noms XML des balises; il est suivi du symbole « = » et d'une valeur placée entre guillemets ou apostrophes. Par exemple, la balise <lavie age="5"> indique que l'élément *lavie* a un attribut (age="5") qui a comme nom XML « age » et comme valeur « 5 ». Une balise peut avoir plusieurs attributs, comme <lavie age="5" sexe="M">, mais ils doivent tous porter des noms XML différents : <lavie age="5" age="7"> n'est pas autorisée.
+Pour les balises de début, aussi dites d'ouverture, on peut ajouter un **attribut** au nom XML de la balise. Un attribut porte un nom XML qui doit respecter les mêmes règles que les noms XML des balises; il est suivi du symbole « = » et d'une valeur placée entre guillemets droits (`"`) ou apostrophes droites (`'`). Par exemple, la balise `<lavie age="5">` indique que l'élément *lavie* a un attribut (age="5") qui a comme nom XML « age » et comme valeur « 5 ». Une balise peut avoir plusieurs attributs, comme `<lavie age="5" sexe="M">`, mais ils doivent tous porter des noms XML différents : `<lavie age="5" age="7">` n'est pas autorisée. Il est aussi possible d'insérer des retours de charriot dans un attribut Vous pouvez insérer un retour chariot ou un saut de ligne dans la valeur d'un attribut.
 
-Par convention, on réserve l'attribut « xml:lang » à la spécification de la langue dans laquelle le texte est écrit. Cette spécification est optionnelle et assez rarement utilisée. Si on veut indiquer que le contenu d'un élément est en français, on fera comme dans cet exemple : « <explication xml:lang="fr">J'avais besoin d'une voiture.</explication> ». On peut ajouter au code de la langue, un code de région comme dans « fr-CA » ou « en-US ». Le code de la langue et le code de la région doivent être séparés par un tiret. Les codes de langue ou de région qui peuvent être utilisées sont disponibles à l'URL [http://www.iana.org/assignments/language-subtag-registry](http://www.iana.org/assignments/language-subtag-registry).
 
-Un **élément** est l'ensemble du texte borné par deux balises ayant le même nom XML, comme <lavie> et </lavie>. On dit que l'élément <lavie></lavie> a pour nom XML « lavie ». L'élément hérite des attributs de sa balise de départ : l'élément <lavie age="5"></lavie> a l'attribut « age="5" ». Il est à noter que la casse est significative en XML : les balises <A> et <a> n'ont pas le même nom XML. Dans le cas particulier où l'élément est vide (sans contenu), on peut remplacer <lavie></lavie> par <lavie/> pour abréger. Un élément peut contenir d'autres éléments, comme dans <lavie><a></a></lavie>, ou du texte, ou du texte et des éléments comme
+```xml
+<lavie nom="Daniel
+             Lemire">
+</lavie>
+```
+
+Par contre, vous ne pouvez pas compter sur la préservation de ces retours à la ligne tels quels une fois le document analysé. Ils seront transformés en espaces.
+
+Par convention, on réserve l'attribut « xml:lang » à la spécification de la langue dans laquelle le texte est écrit. Cette spécification est optionnelle et assez rarement utilisée. Si on veut indiquer que le contenu d'un élément est en français, on fera comme dans cet exemple : « `<explication xml:lang="fr">J'avais besoin d'une voiture.</explication>` ». On peut ajouter au code de la langue, un code de région comme dans « fr-CA » ou « en-US ». Le code de la langue et le code de la région doivent être séparés par un tiret. Les codes de langue ou de région qui peuvent être utilisées sont disponibles à l'URL [http://www.iana.org/assignments/language-subtag-registry](http://www.iana.org/assignments/language-subtag-registry).
+
+Un **élément** est l'ensemble du texte borné par deux balises ayant le même nom XML, comme `<lavie>` et `</lavie>`. On dit que l'élément `<lavie></lavie>` a pour nom XML « lavie ». L'élément hérite des attributs de sa balise de départ : l'élément `<lavie age="5"></lavie>` a l'attribut « age="5" ». Il est à noter que la casse est significative en XML : les balises `<A>` et `<a>` n'ont pas le même nom XML. Dans le cas particulier où l'élément est vide (sans contenu), on peut remplacer `<lavie></lavie>` par `<lavie/>` pour abréger. Un élément peut contenir d'autres éléments, comme dans `<lavie><a></a></lavie>`, ou du texte, ou du texte et des éléments comme
 
 ```xml
 <lavie>fd<a>fsd</a>fd</lavie>.
 ```
 
-Si un élément contient d'autres éléments, il doit aussi contenir, entre ses balises de début et de fin, les balises de début et de fin de chaque élément. Notez, de plus, que deux éléments ne peuvent se *chevaucher*, comme <b><a></b></a>; avant de passer à un autre élément, il faut terminer le premier avec sa balise de fin. L'exemple précédent est du XML mal formé!
+Si un élément contient d'autres éléments, il doit aussi contenir, entre ses balises de début et de fin, les balises de début et de fin de chaque élément. Notez, de plus, que deux éléments ne peuvent se *chevaucher*, comme `<b><a></b></a>`; avant de passer à un autre élément, il faut terminer le premier avec sa balise de fin. L'exemple précédent est du XML mal formé!
 
 Pour bien comprendre, illustrons notre propos par un exemple. Un document XML prend la forme suivante :
 
@@ -32,7 +41,7 @@ Pour bien comprendre, illustrons notre propos par un exemple. Un document XML pr
 </racine>
 ```
 
-Dans ce document, il y a **trois éléments**. Tout d'abord, il y a **l'élément-racine** qui comprend tout ce qui est entre les balises <racine> et </racine>. La première balise marque le début de l'élément-racine. Tout document XML bien formé doit avoir un élément-racine et un seul élément-racine. Tous les autres éléments doivent être contenus dans cet élément-racine. Dans notre exemple, cet élément a deux sous-éléments :
+Dans ce document, il y a **trois éléments**. Tout d'abord, il y a **l'élément-racine** qui comprend tout ce qui est entre les balises `<racine>` et `</racine>`. La première balise marque le début de l'élément-racine. Tout document XML bien formé doit avoir un élément-racine et un seul élément-racine. Tous les autres éléments doivent être contenus dans cet élément-racine. Dans notre exemple, cet élément a deux sous-éléments :
 
 ```xml
 <element1>http://www.google.com</element1>
@@ -65,9 +74,9 @@ Tout le texte qui ne se trouve pas dans une balise, mais qui se trouve dans l'é
 
 Un document XML ne doit avoir qu'un et un seul élément appelé « élément-racine », qui doit contenir tous les autres éléments.
 
-Il faut correctement ouvrir et fermer les éléments en séquence, ainsi <a><b></a></b> n'a aucun sens en XML, il faut plutôt écrire <a><b></b></a> ou alors <a></a><b></b>.
+Il faut correctement ouvrir et fermer les éléments en séquence, ainsi `<a><b></a></b>` n'a aucun sens en XML, il faut plutôt écrire `<a><b></b></a>` ou alors `<a></a><b></b>`.
 
-Les éléments peuvent eux aussi avoir des attributs, par exemple <a att="test"></a>, mais il faut obligatoirement mettre la valeur de l'attribut entre guillemets (") ou apostrophes (').
+Les éléments peuvent eux aussi avoir des attributs, par exemple `<a att="test"></a>`, mais il faut obligatoirement mettre la valeur de l'attribut entre guillemets (") ou apostrophes (').
 
 ## Dans l'ordre ou dans le désordre
 
@@ -99,17 +108,17 @@ Par contre, l'ordre dans lequel les attributs sont présentés est sans importan
 
 ## Appels d'entités
 
-Un élément peut contenir du texte, mais ne peut contenir le symbole <, comme dans l'exemple `<a><</a>`, parce que cela mène à de la confusion. On ne peut non plus y trouver le symbole & ou la séquence « ]]&gt; ». Que faire alors s'il faut utiliser le caractère < dans un texte mathématique, par exemple? Il faut utiliser un **appel d'entité**. Un appel d'entité est un bout de texte qui commence par une esperluette ( &) et se termine par un point-virgule ( ; ). Nous verrons plus tard que nous pouvons définir nos propres appels d'entités; les appels d'entités suivants font partie de la définition du XML :
+Un élément peut contenir du texte, mais ne peut contenir le symbole `<`, comme dans l'exemple `<a><</a>`, parce que cela mène à de la confusion. On ne peut non plus y trouver le symbole & ou la séquence « `]]>` ». Que faire alors s'il faut utiliser le caractère `<` dans un texte mathématique, par exemple? Il faut utiliser un **appel d'entité**. Un appel d'entité est un bout de texte qui commence par une esperluette (`&`) et se termine par un point-virgule (`;`). Nous pouvons aussi définir nos propres appels d'entités; les appels d'entités suivants font partie de la définition du XML&nbsp;:
 
 | appel d'entité | résultat |
 |---------------|----------|
-| &lt; | < |
+| &lt; | `<` |
 | &amp; | & |
 | &gt; | > |
 | &quot; | " |
 | &apos; | ' |
 
-Ainsi, si le nom de votre compagnie est John&Smith, vous ne devrez pas utiliser un élément comme ceci <nom>John&Smith</nom>; il vous faudra plutôt utiliser
+Ainsi, si le nom de votre compagnie est John&Smith, vous ne devrez pas utiliser un élément comme ceci `<nom>John&Smith</nom>`; il vous faudra plutôt utiliser
 
 ```xml
 <nom>John&amp;Smith</nom>.
@@ -117,17 +126,17 @@ Ainsi, si le nom de votre compagnie est John&Smith, vous ne devrez pas utiliser 
 
 Le texte « ]]&gt; » s'écrit « ]]&gt; ».
 
-On utilise aussi les appels d'entités pour noter les valeurs des attributs. Supposons que la valeur d'un attribut est une apostrophe suivi d'un guillemet ('"). Les deux choix possibles <nom att="'""&gt; et <nom att=''"'&gt; ne sont pas valables. Dans ce cas, il faudra écrire <nom att="'&quot;"&gt;, <nom att='&apos;"'&gt;, <nom att="&apos;&quot;"&gt; ou <nom att='&apos;&quot;'&gt;.
+On utilise aussi les appels d'entités pour noter les valeurs des attributs. Supposons que la valeur d'un attribut est une apostrophe suivi d'un guillemet (`'"`). Les deux choix possibles `<nom att="'">` et `<nom att=''"'>` ne sont pas valables. Dans ce cas, il faudra écrire `<nom att="'&quot;">`, `<nom att='&apos;"'>`, `<nom att="&apos;&quot;">` ou `<nom att='&apos;&quot;'>;`.
 
 Prenez le temps de mémoriser ces appels d'entités et retenez bien dans quel cas on peut être obligé de les utiliser.
 
-Il arrive parfois qu'il soit trop lourd d'utiliser des appels d'entités, et on peut alors utiliser un segment « CDATA ». Un tel segment débute par « <![CDATA[ » et se termine par « ]]&gt; ». Tout le texte au sein du segment est rendu verbatim. Ainsi, le texte « <![CDATA[<monelement />]]&gt; » est équivalent à « <monelement /> ».
+Il arrive parfois qu'il soit trop lourd d'utiliser des appels d'entités, et on peut alors utiliser un segment « CDATA ». Un tel segment débute par « `<![CDATA[` » et se termine par « `]]&gt;` ». Tout le texte au sein du segment est rendu verbatim. Ainsi, le texte « `<![CDATA[<monelement />]]>` » est équivalent à « `<monelement />` ».
 
 ## Les commentaires
 
 Dans un document XML, on peut ajouter un commentaire qui est normalement destiné à être lu par un humain. Par exemple, dans un fichier de configuration XML, les commentaires pourraient être utilisés pour expliquer la signification des différents éléments pour qu'un humain puisse faire des modifications au besoin.
 
-Un commentaire commence par <!-- et se termine par --> et ne doit pas contenir deux tirets de suite (--) entre ces deux bornes, il ne doit pas se terminer par un tiret, mais peut contenir n'importe quel autre texte. Un commentaire peut apparaître avant ou après l'élément-racine, dans un élément, entre deux éléments, etc. Cependant, un commentaire ne peut pas apparaître au sein d'une balise, comme <a <!--ceci est la balise a-->&gt;. C'est du XML mal formé!
+Un commentaire commence par `<!--` et se termine par `-->` et ne doit pas contenir deux tirets de suite (--) entre ces deux bornes, il ne doit pas se terminer par un tiret, mais peut contenir n'importe quel autre texte. Un commentaire peut apparaître avant ou après l'élément-racine, dans un élément, entre deux éléments, etc. Cependant, un commentaire ne peut pas apparaître au sein d'une balise, comme `<a <!--ceci est la balise a-->>`. C'est du XML mal formé!
 
 ## Les instructions de traitement
 
@@ -141,7 +150,7 @@ Par contre, en XML, on peut utiliser des instructions de traitement. L'instructi
 <?cout 423890?>
 ```
 
-La syntaxe d'une telle instruction de traitement est simple. L'instruction débute par <? et se termine par ?&gt;; immédiatement après <?, un nom XML valable doit apparaître (tous les noms XML valables sont autorisés à l'exception de xml, Xml, XMl, XML, XmL, xMl, xML et xmL). Rappelons que, comme pour n'importe quel contenu textuel XML, il faut faire des appels d'entités pour < et &amp;. Une instruction de traitement n'est pas une balise ou un élément.
+La syntaxe d'une telle instruction de traitement est simple. L'instruction débute par `<?` et se termine par `?>` immédiatement après `<?`, un nom XML valable doit apparaître (tous les noms XML valables sont autorisés à l'exception de xml, Xml, XMl, XML, XmL, xMl, xML et xmL). Rappelons que, comme pour n'importe quel contenu textuel XML, il faut faire des appels d'entités pour `<` et `&`. Une instruction de traitement n'est pas une balise ou un élément.
 
 Notez que le langage informatique *PHP* utilise les instructions de traitement avec comme nom « php ». Voyons l'exemple suivant :
 
@@ -165,7 +174,7 @@ La plupart des logiciels récents supportent la norme Unicode. D'ailleurs, depui
 
 ## La déclaration XML
 
-La déclaration XML ressemble à s'y méprendre à une instruction de traitement et prend la forme <?xml ... ?&gt;. Une déclaration XML n'est pas une balise ou un élément. Le contenu d'une déclaration XML comporte généralement au maximum trois *attributs* : version="...", encoding="..." et standalone="...". La version 1.0 du XML est la plus utilisée; bien que la version 1.1 existe, elle est fort peu utilisée. Selon l'un des inventeurs du XML, Tim Bray, il est peu probable qu'il y ait une version 2.0 du XML .
+La déclaration XML ressemble à s'y méprendre à une instruction de traitement et prend la forme `<?xml ... ?>`. Une déclaration XML n'est pas une balise ou un élément. Le contenu d'une déclaration XML comporte généralement au maximum trois *attributs* : version="...", encoding="..." et standalone="...". La version 1.0 du XML est la plus utilisée; bien que la version 1.1 existe, elle est fort peu utilisée. Selon l'un des inventeurs du XML, Tim Bray, il est peu probable qu'il y ait une version 2.0 du XML .
 
 > Je ne pense pas qu'il y aura de XML 2.0. Les obstacles politiques seraient effrayants - tout le monde voudra sa part du gâteau -, et la base installée de logiciels qui reconnaissent XML comprend aujourd'hui à peu près tous les ordinateurs liés à Internet, donc une transition me semblerait trop onéreuse. (Interview de Tim Bray, JDN Développeurs, 29 janvier 2007)
 

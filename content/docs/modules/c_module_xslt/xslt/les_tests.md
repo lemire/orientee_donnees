@@ -10,9 +10,9 @@ weight: 100
 Dans cette section, nous apprenons à utiliser les tests conditionnels en XSLT avec les éléments xsl:if et xsl:choose, permettant de contrôler le flux de transformation basé sur des conditions XPath.
 
 Nous pouvons tester des conditions à l'aide d'expressions XPath contenant
-   les symboles « < », « = », « != »,
+   les symboles « `<` », « = », « != »,
    « or », « and », « > »,
-   « >= », « <= ».
+   « >= », « `<=` ».
    Nous utilisons les tests en XSLT avec les éléments « xsl:choose »
    et « xsl:if ».
    Par exemple, faire quelque chose de particulier, si le nom de l'élément

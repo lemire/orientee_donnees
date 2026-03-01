@@ -16,7 +16,7 @@ Les tableaux JSON utilisent des crochets `[]` et contiennent des valeurs sépar�
 
 La syntaxe JSON est stricte : pas de commentaires, pas de virgule finale, guillemets doubles obligatoires pour les chaînes, pas de fonctions ou d'expressions. Cette rigueur assure une interopérabilité parfaite entre systèmes, mais peut rendre l'écriture manuelle fastidieuse pour les fichiers de configuration complexes.
 
-Pour les chaînes de caractères, JSON supporte les séquences d'échappement standard : `\"` pour les guillemets, `\\` pour la barre oblique inverse, `\/` pour la barre oblique, `\b`, `\f`, `\n`, `\r`, `\t`, et `\uXXXX` pour les caractères Unicode. Cela permet d'inclure n'importe quel caractère dans les chaînes.
+Pour les chaînes de caractères, JSON supporte les séquences d'échappement standard : `\"` pour les guillemets, `\\` pour la barre oblique inverse, `\/` pour la barre oblique, `\b`, `\f`, `\n`, `\r`, `\t`, et `\uXXXX` pour les caractères Unicode. Cela permet d'inclure n'importe quel caractère dans les chaînes. Les chaînes de caractères en JSON ne peuvent pas contenir de guillemets doubles non échappés ni de caractère de contrôle non échappé (U+0000 à U+001F) ce qui inclut les retours de chariot. Une chaîne de caractères en JSON doit donc apparaître sur une seule ligne. Il faut aussi  obligatoirement utiliser les guillemets droits doubles (`"`).
 
 Les nombres en JSON suivent la notation décimale standard, sans distinction entre entiers et flottants. Ils peuvent être positifs ou négatifs, avec ou sans partie décimale : `42`, `-3.14`, `1e10`. Attention aux précisions flottantes qui peuvent varier selon les langages.
 

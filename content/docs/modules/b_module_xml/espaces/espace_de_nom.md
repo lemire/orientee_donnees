@@ -308,8 +308,8 @@ l'élément « nom » appartient à l'espace de noms « http://www.domaine.com/n
 non à l'espace de noms « http://www.domaine.com/facture ».
 
 Par convention, on doit toujours accorder à un préfixe d'espace de noms un URI 
-et il serait incorrect d'écrire <fact:facture /> 
-au lieu de <fact:facture xmlns:fact="http://www.domaine.com/facture"> 
+et il serait incorrect d'écrire `<fact:facture />` 
+au lieu de `<fact:facture xmlns:fact="http://www.domaine.com/facture">` 
 dans l'exemple précédent.
 
 ### Les espaces de noms et Relax NG
@@ -363,8 +363,8 @@ Les deux exemples précédents de Relax NG sont d'ailleurs équivalents.
 ### Le préfixe « xml »
 
 Par convention, le préfixe « xml » est réservé à des
-applications telles que la déclaration de la langue utilisée (« xml:lang »)
-ou le traitement des espaces (« xml:space »). Il n'est pas nécessaire d'y associer
+applications telles que la déclaration de la langue utilisée (« `<xml:lang>` »)
+ou le traitement des espaces (« `<xml:space>` »). Il n'est pas nécessaire d'y associer
 explicitement un 
 URI : l'URI « http://www.w3.org/XML/1998/namespace » y est automatiquement associé.
 
@@ -372,7 +372,7 @@ URI : l'URI « http://www.w3.org/XML/1998/namespace » y est automatiquement ass
 
 Les choses se corsent un peu quand on considère les attributs. 
 Alors qu'un élément sans préfixe tombe dans l'espace de noms par défaut si 
-celui-ci a été défini par un attribut « xmlns="..." », ce n'est pas le cas 
+celui-ci a été défini par un attribut « `<xmlns="...">` », ce n'est pas le cas 
 pour les attributs. Un attribut sans préfixe n'est dans 
 aucun espace de noms; pour y être, un attribut doit être muni d'un préfixe.
 

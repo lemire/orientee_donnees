@@ -42,7 +42,7 @@ Il est maintenant plus fastidieux de trouver le numéro de téléphone d'un cert
 
 Tout d'abord, l'expression « //client » donne une séquence de tous les éléments « client » dans le nœud courant. Avec l'expression XPath « //client[nom='Sylvain'] », nous pouvons obtenir la séquence de tous les éléments « client » ayant pour nom « Sylvain ».
 
-Dans le même ordre d'idée, nous pouvons tester des conditions à l'aide d'expressions XPath contenant les symboles « < », « = », « != », « or », « and », « > », « >= », « <= ».
+Dans le même ordre d'idée, nous pouvons tester des conditions à l'aide d'expressions XPath contenant les symboles « `<` », « = », « != », « or », « and », « > », « >= », « `<=` ».
 
 ### Arithmétique en XPath
 
