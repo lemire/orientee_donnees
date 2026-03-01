@@ -220,8 +220,8 @@ nous avons deux &lt;strong&gt;vocabulaires XML&lt;/strong&gt;.&lt;/p&gt;</descri
  Quelques principes et notions importantes du XML
  &lt;a class="anchor" href="#quelques-principes-et-notions-importantes-du-xml"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Rappelons qu&amp;rsquo;une &lt;strong&gt;balise&lt;/strong&gt; est un segment de texte commençant par &amp;lt; et se terminant par &amp;gt;. Par exemple, &lt;lavie&gt; est une balise qui marque le début de l&amp;rsquo;élément &lt;em&gt;lavie&lt;/em&gt;. Une balise commençant par &amp;lt;/, comme &lt;/lavie&gt;, est une balise de fin; dans cet exemple, elle termine l&amp;rsquo;élément &lt;em&gt;lavie&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Le &lt;strong&gt;nom XML&lt;/strong&gt; de la balise est le texte suivant le symbole &amp;lt; (ou &amp;lt;/ pour une balise de fin) et pouvant contenir n&amp;rsquo;importe quelle lettre ou chiffre (a, b,&amp;hellip; 0, 1, 2,&amp;hellip;) ou les quatre symboles de ponctuation, soit la marque de soulignement ( _ ), le trait d&amp;rsquo;union ( - ), les deux-points (:) ou le point (.); un nom XML ne peut contenir d&amp;rsquo;autres caractères spéciaux, ni un espace&amp;quot;. En outre, il ne peut pas commencer par un chiffre, un trait d&amp;rsquo;union ou un point. Par exemple, le nom XML de la balise &lt;lavie&gt; est « lavie », alors que la balise &amp;lt;7lavie&amp;gt; ne serait pas autorisée. On réserve les noms débutant par xml, Xml, xMl, xmL, XMl, xML,Xml et XML pour les spécifications XML. Ainsi, la balise &lt;xmldanslavie&gt; est à éviter.&lt;/p&gt;</description></item><item><title>XHTML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/xhtml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/xhtml/</guid><description>&lt;h1 class=""&gt;
+&lt;p&gt;Rappelons qu&amp;rsquo;une &lt;strong&gt;balise&lt;/strong&gt; est un segment de texte commençant par &lt;code&gt;&amp;lt;&lt;/code&gt; et se terminant par &lt;code&gt;&amp;gt;&lt;/code&gt;. Par exemple, &lt;code&gt;&amp;lt;lavie&amp;gt;&lt;/code&gt; est une balise qui marque le début de l&amp;rsquo;élément &lt;em&gt;lavie&lt;/em&gt;. Une balise commençant par &lt;code&gt;&amp;lt;/&lt;/code&gt;, comme &lt;code&gt;&amp;lt;/lavie&amp;gt;&lt;/code&gt;, est une balise de fin; dans cet exemple, elle termine l&amp;rsquo;élément &lt;em&gt;lavie&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Le &lt;strong&gt;nom XML&lt;/strong&gt; de la balise est le texte suivant le symbole &lt;code&gt;&amp;lt;&lt;/code&gt; (ou &lt;code&gt;&amp;lt;/&lt;/code&gt; pour une balise de fin) et pouvant contenir n&amp;rsquo;importe quelle lettre ou chiffre (a, b,&amp;hellip; 0, 1, 2,&amp;hellip;) ou les quatre symboles de ponctuation, soit la marque de soulignement ( _ ), le trait d&amp;rsquo;union ( - ), les deux-points (:) ou le point (.); un nom XML ne peut contenir d&amp;rsquo;autres caractères spéciaux, ni un espace&amp;quot;. En outre, il ne peut pas commencer par un chiffre, un trait d&amp;rsquo;union ou un point. Par exemple, le nom XML de la balise &lt;code&gt;&amp;lt;lavie&amp;gt;&lt;/code&gt; est « lavie », alors que la balise &lt;code&gt;&amp;lt;7lavie&amp;gt;&lt;/code&gt; ne serait pas autorisée. On réserve les noms débutant par xml, Xml, xMl, xmL, XMl, xML,Xml et XML pour les spécifications XML. Ainsi, la balise &lt;code&gt;&amp;lt;xmldanslavie&amp;gt;&lt;/code&gt; est à éviter.&lt;/p&gt;</description></item><item><title>XHTML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/xhtml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/xhtml/</guid><description>&lt;h1 class=""&gt;
  XHTML
 &lt;/h1&gt;
 &lt;div class=""&gt;
@@ -677,20 +677,20 @@ Vous pouvez modifier les fichier Java et le fichier XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1770318993752535258"&gt;
+&lt;div id="java-multirunner-1772384964168313999"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1770318993752535258 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1770318993752535258 .export-form { margin-bottom:0; }
- #java-multirunner-1770318993752535258 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1770318993752535258 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1770318993752535258 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1770318993752535258 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1772384964168313999 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1772384964168313999 .export-form { margin-bottom:0; }
+ #java-multirunner-1772384964168313999 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1772384964168313999 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1772384964168313999 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1772384964168313999 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1770318993752535258-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1772384964168313999-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -778,14 +778,14 @@ public class SimpleXPath {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1770318993752535258-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1772384964168313999-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1770318993752535258');
+ var root = document.getElementById('java-multirunner-1772384964168313999');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -944,20 +944,20 @@ Vous pouvez modifier les fichiers XSLT et XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1770318993752750606"&gt;
+&lt;div id="java-multirunner-1772384964168590669"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1770318993752750606 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1770318993752750606 .export-form { margin-bottom:0; }
- #java-multirunner-1770318993752750606 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1770318993752750606 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1770318993752750606 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1770318993752750606 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1772384964168590669 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1772384964168590669 .export-form { margin-bottom:0; }
+ #java-multirunner-1772384964168590669 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1772384964168590669 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1772384964168590669 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1772384964168590669 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1770318993752750606-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1772384964168590669-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -1068,14 +1068,14 @@ public class XmlVersConsole {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1770318993752750606-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1772384964168590669-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1770318993752750606');
+ var root = document.getElementById('java-multirunner-1772384964168590669');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -1389,7 +1389,7 @@ Voici un exemple simple de sitemap.xml contenant quatre pages :&lt;/p&gt;</descr
  &lt;a class="anchor" href="#-%c3%a9l%c3%a9ments-xsltemplate-"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Dans cette section, nous explorons les éléments xsl:template, qui sont essentiels pour définir des règles de transformation personnalisées dans les feuilles de style XSLT.&lt;/p&gt;
-&lt;p&gt;Modifions maintenant le fichier « xslt.xml » de façon à rendre l&amp;rsquo;expérience plus intéressante. Tout d&amp;rsquo;abord, traitons tous les éléments « facture » du document XML. Pour obtenir le résultat, il faut placer un élément « &amp;lt;xsl:template match=&amp;ldquo;facture&amp;rdquo;&amp;gt; » dans l&amp;rsquo;élément-racine du document XSLT comme ceci :&lt;/p&gt;</description></item><item><title>XPath : second laboratoire</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/xpath_second_laboratoire/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/xpath_second_laboratoire/</guid><description>&lt;h1 class=""&gt;
+&lt;p&gt;Modifions maintenant le fichier « xslt.xml » de façon à rendre l&amp;rsquo;expérience plus intéressante. Tout d&amp;rsquo;abord, traitons tous les éléments « facture » du document XML. Pour obtenir le résultat, il faut placer un élément « &lt;code&gt;&amp;lt;xsl:template match=&amp;quot;facture&amp;quot;&amp;gt;&lt;/code&gt; » dans l&amp;rsquo;élément-racine du document XSLT comme ceci :&lt;/p&gt;</description></item><item><title>XPath : second laboratoire</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/xpath_second_laboratoire/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/xpath_second_laboratoire/</guid><description>&lt;h1 class=""&gt;
  XPath : second laboratoire
 &lt;/h1&gt;
 &lt;div class=""&gt;
@@ -1829,10 +1829,10 @@ Voici un exemple simple d&amp;rsquo;un AndroidManifest.xml pour une application 
  &lt;a class="anchor" href="#xslt-modulaire"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
 &lt;h2 id="modularité-avec-les-éléments--xslapply-templates-"&gt;
- Modularité avec les éléments « xsl:apply-templates »
+ Modularité avec les éléments « &lt;code&gt;xsl:apply-templates&lt;/code&gt; »
  &lt;a class="anchor" href="#modularit%c3%a9-avec-les-%c3%a9l%c3%a9ments--xslapply-templates-"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Cette section explique comment utiliser l&amp;rsquo;élément xsl:apply-templates pour rendre les feuilles de style XSLT plus modulaires et réutilisables, en évitant la répétition de code.&lt;/p&gt;
+&lt;p&gt;Cette section explique comment utiliser l&amp;rsquo;élément &lt;code&gt;xsl:apply-templates&lt;/code&gt; pour rendre les feuilles de style XSLT plus modulaires et réutilisables, en évitant la répétition de code.&lt;/p&gt;
 &lt;p&gt;Notre fichier « xslt.xml » se complexifie et devient plus difficile à comprendre. Tout est dans un seul modèle, le modèle &lt;em&gt;facture&lt;/em&gt;. Pour simuler un problème probable, imaginons que notre XML est plus complexe et prend la forme :&lt;/p&gt;</description></item><item><title>Autoévaluation</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/espaces/autoevaluation_adv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/espaces/autoevaluation_adv/</guid><description>&lt;h1 class=""&gt;
  Autoévaluation
 &lt;/h1&gt;
@@ -2298,9 +2298,9 @@ document.getElementById('resetBtn').addEventListener('click', function() {
 &lt;/h2&gt;
 &lt;p&gt;Dans cette section, nous apprenons à utiliser les tests conditionnels en XSLT avec les éléments xsl:if et xsl:choose, permettant de contrôler le flux de transformation basé sur des conditions XPath.&lt;/p&gt;
 &lt;p&gt;Nous pouvons tester des conditions à l&amp;rsquo;aide d&amp;rsquo;expressions XPath contenant
-les symboles « &amp;lt; », « = », « != »,
+les symboles « &lt;code&gt;&amp;lt;&lt;/code&gt; », « = », « != »,
 « or », « and », « &amp;gt; »,
-« &amp;gt;= », « &amp;lt;= ».
+« &amp;gt;= », « &lt;code&gt;&amp;lt;=&lt;/code&gt; ».
 Nous utilisons les tests en XSLT avec les éléments « xsl:choose »
 et « xsl:if ».
 Par exemple, faire quelque chose de particulier, si le nom de l&amp;rsquo;élément
