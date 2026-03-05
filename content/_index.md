@@ -17,6 +17,18 @@ Ce cours explore la gestion des données à travers les formats les plus utilis�
 
 Les formats de données structurées comme XML, HTML, JSON, YAML et RDF jouent un rôle essentiel dans l'échange et la représentation d'informations en informatique. Chacun d'eux repose sur des structures de données fondamentales qui influencent leur utilisation. Une compréhension des liens entre ces formats et les concepts sous-jacents, tels que les arbres, les compositions de dictionnaires et listes, ou les graphes, permet de mieux choisir l'outil adapté à une situation donnée.
 
+### Des formats textuels
+
+On distingue généralement deux types de formats en informatique. Les formats binaires peuvent contenir des séquences de données arbitraires. Il sont très utilisés pour le contenu vidéo et les images. Tous les formats textuels partage la caractéristique d'être une chaîne de caractère. Peu importe le format, s'il est textuel, il est possible de l'ouvrir dans éditeur de texte. Le code informatique (Java, Python, etc.) est généralement stocké dans dans un format textuel.
+
+Les formats les plus populaires en ligne (XML, JSON, etc.) sont textuels. L'Internet repose sur les formats texte. Nos pages web sont en HTML. Le code qui s'y exécute est du JavaScript, envoyé sous forme de texte (code source JavaScript), et non sous forme de code déjà analysé. Vos e-mails, y compris leurs pièces jointes, sont envoyés sous forme de texte (vos fichiers binaires sont transmis en texte). Cela ne s'arrête pas là. Le code Python qui fait tourner votre serveur est stocké sous forme de texte. Il interroge les données en envoyant des requêtes textuelles. Il reçoit souvent la réponse sous forme de texte, qui doit ensuite être décodé. JSON est aujourd'hui le format universel d'échange de données en ligne. Nous partageons des cartes en JSON (GeoJSON). Pourquoi le texte est-il dominant?
+
+**1. Le texte est efficace.** Rappelons que de nombreux formats texte remontent à une époque où les ordinateurs étaient bien plus lents. Si le texte avait représenté un goulot d'étranglement en termes de performances, il ne se serait pas répandu.
+
+**2. Le texte est facile à manipuler.** Si vous recevez du texte d'une source distante, vous pouvez souvent le transformer, l'indexer, le rechercher, le citer, en gérer les versions… avec peu d'effort et sans connaissance approfondie du format. Le texte est souvent autodocumenté. Dans un monde ouvert, où vous ne parlerez jamais avec la personne qui produit les données, le texte facilite et fluidifie généralement tout. En cas de problème à signaler, si les données sont en texte, vous pouvez habituellement copier-coller la section concernée dans un message. 
+
+### XML et HTML
+
 XML et HTML sont fondamentalement basés sur une structure arborescente de nœuds. Un document XML commence par un élément racine unique, à partir duquel se ramifient des éléments enfants, formant une hiérarchie stricte similaire à un arbre. Chaque nœud peut contenir du texte, des attributs ou d'autres nœuds, ce qui facilite la représentation de données ordonnées et imbriquées. HTML suit le même principe, en tant que variante d'XML appliquée au web, où la page est vue comme un arbre  accessible et manipulable par les navigateurs.
 
 **Exemple. XML**
@@ -80,6 +92,8 @@ XML et HTML sont fondamentalement basés sur une structure arborescente de nœud
 </html>
 ```
 
+### JSON et YAML
+
 En contraste, JSON et YAML s'appuient sur des compositions de dictionnaires et de listes. JSON utilise des objets (équivalents à des dictionnaires avec paires clé-valeur) et des tableaux (listes ordonnées), permettant une représentation flexible et légère de données. YAML étend cette approche en offrant une syntaxe plus lisible pour les humains, avec indentation pour les listes et mappings, tout en restant compatible avec les structures de JSON dans de nombreux cas. Ces formats excellent pour les données semi-structurées, comme les configurations ou les échanges API.
 
 
@@ -114,6 +128,8 @@ hobbies:
   - photographie
 ```
 
+### RDF
+
 RDF, quant à lui, adopte une modèle de graphe basé sur des relations. Il repose sur des triples (sujet-prédicat-objet), où chaque affirmation lie deux entités via une relation dirigée. Cela forme un graphe potentiellement non arborescent, avec des connexions multiples et cycliques possibles, idéal pour exprimer des connaissances sémantiques interconnectées.
 
 **Exemple. RDF/XML**
@@ -135,6 +151,9 @@ RDF, quant à lui, adopte une modèle de graphe basé sur des relations. Il repo
 Les ponts entre ces formats et les structures fondamentales révèlent leurs complémentarités. Par exemple, un arbre XML peut être converti en objet JSON en mappant les éléments enfants à des clés de dictionnaire ou des listes, bien que la perte d'ordre ou d'attributs puisse nécessiter des ajustements. YAML, étant un surensemble humain de JSON, facilite cette transition pour les configurations.
 
 Dans ce cours, vous pourrez approfondir votre compréhension de ces notions.
+
+
+
 
 ## Attention : Java
 
