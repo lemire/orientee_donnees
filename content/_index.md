@@ -4,6 +4,9 @@ title: "Accueil"
 
 # Mot de bienvenue
 
+{{< youtube id="2CLNPNkpWE8" >}}
+
+
 
 Bienvenue ! Mon nom est [Daniel Lemire](http://lemire.me/fr/). Je travaille comme professeur et chercheur en informatique. Je suis notamment l'instigateur et le principal auteur du parseur JSON le plus rapide au monde (simdjson),
 nous verrons dans ce cours en quoi consiste JSON.
