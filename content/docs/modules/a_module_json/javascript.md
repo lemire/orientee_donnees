@@ -418,6 +418,95 @@ parsedArray.forEach(personne => {
 ```
 
 
+## GeoJSON et JavaScript
+
+GeoJSON est un format standard ouvert basé sur JSON pour représenter des données géographiques (points, lignes, polygones, etc.). Il est très utilisé avec des bibliothèques de cartographie comme **Leaflet**.
+
+En JavaScript, manipuler du GeoJSON est simple car c’est du JSON : on peut le charger, le modifier et l’afficher facilement.
+
+**Voici la version simplifiée de la section à ajouter :**
+
+```markdown
+## GeoJSON et JavaScript
+
+**GeoJSON** est un format basé sur JSON pour représenter des données géographiques (points, lignes, polygones). Il est  simple à utiliser en JavaScript, surtout avec des bibliothèques comme Leaflet.
+
+Voici un exemple complet prêt à être utilisé.
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>GeoJSON simple avec Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map { height: 500px; width: 100%; }
+    </style>
+</head>
+<body>
+    <h1>Exemple GeoJSON simple</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Création de la carte centrée sur Québec
+        const map = L.map('map').setView([46.8, -71.3], 8);
+
+        // Fond de carte
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        // GeoJSON simple
+        const geojsonSimple = {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-71.25, 46.78]
+                    },
+                    "properties": {
+                        "nom": "Québec"
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [[
+                            [-71.4, 46.7],
+                            [-71.2, 46.7],
+                            [-71.2, 46.9],
+                            [-71.4, 46.9],
+                            [-71.4, 46.7]
+                        ]]
+                    },
+                    "properties": {
+                        "nom": "Zone exemple"
+                    }
+                }
+            ]
+        };
+
+        // Affichage du GeoJSON
+        L.geoJSON(geojsonSimple, {
+            style: { color: "blue", weight: 3, fillOpacity: 0.3 },
+            onEachFeature: function(feature, layer) {
+                layer.bindPopup(`<b>${feature.properties.nom}</b>`);
+            }
+        }).addTo(map);
+    </script>
+</body>
+</html>
+```
+
+Ce code HTML crée une page web affichant une carte interactive. Une règle CSS définit également les dimensions du conteneur de la carte : une hauteur fixe de 500 pixels et une largeur de 100% pour qu'elle occupe tout l'espace horizontal disponible.
+
+La première partie du script crée une instance de carte avec `L.map('map')` et la centre sur la région de Québec à l'aide de la méthode `setView([46.8, -71.3], 8)`, où le tableau contient la latitude et la longitude du centre, et le chiffre 8 représente le niveau de zoom initial. Ensuite, L.tileLayer ajoute un fond de carte provenant d'OpenStreetMap : il s'agit des tuiles d'images qui composent visuellement la carte (rues, villes, reliefs, etc.). L'URL contient des variables `{s}`, `{z}`, `{x}` et `{y}` qui sont remplacées dynamiquement par Leaflet pour récupérer les bonnes tuiles selon le sous-domaine, le niveau de zoom et la position géographique affichée. 
+
+La dernière partie crée un objet GeoJSON, qui est un format standard pour représenter des données géographiques en JSON. Cet objet de type FeatureCollection contient deux entités : un point situé aux coordonnées de Québec avec la propriété nom: "Québec", et un polygone rectangulaire couvrant une zone autour de la ville avec la propriété nom: "Zone exemple". Chaque géométrie suit la convention GeoJSON où les coordonnées sont écrites dans l'ordre `[longitude, latitude]`. Enfin, `L.geoJSON()` ajoute ces données à la carte en appliquant un style bleu avec une épaisseur de trait de 3 et une opacité de remplissage de 0,3 pour le polygone. La fonction onEachFeature attache à chaque entité une infobulle (bindPopup) qui s'affiche au clic et montre le nom stocké dans les propriétés.
+
 ## Mise à l'essai
 
 Utilisez la console suivante pour tester vos programmes JavaScript.

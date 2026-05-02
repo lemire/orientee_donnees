@@ -192,3 +192,32 @@ Essayez de remplacer le GeoJSON dans l'application par l'un des exemples suivant
   }
 }
 ```
+
+
+## Activité suggérée (Java)
+
+
+Nous vous invitons à [compiler et excéuter une application Java](https://github.com/lemire/java_province) qui produit une carte interactive du Canada avec GeoJSON.
+
+## Afficher du GeoJSON en ligne avec Leaflet
+
+Leaflet est une bibliothèque JavaScript légère qui permet d’afficher facilement des cartes interactives dans un navigateur. Elle intègre nativement le support du format GeoJSON, ce qui rend très simple l’affichage de données géographiques (points, lignes, polygones) directement dans une page web sans installation complexe.
+
+Pour afficher du GeoJSON, il suffit d’inclure Leaflet via CDN, de créer une carte avec `L.map()`, puis d’utiliser la fonction `L.geoJSON()` en passant vos données. Vous pouvez personnaliser le style et ajouter des popups pour rendre la carte interactive.
+
+Cette approche est idéale pour des visualisations rapides, des prototypes ou des applications web légères. Elle fonctionne parfaitement avec des fichiers GeoJSON externes ou des données intégrées.
+
+
+```html
+<div id="map" style="height: 400px;"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    const map = L.map('map').setView([48.8566, 2.3522], 11);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+    const geojson = { /* votre GeoJSON ici */ };
+    L.geoJSON(geojson).addTo(map);
+</script>
+```
+

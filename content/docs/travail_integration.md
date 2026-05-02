@@ -45,6 +45,9 @@ const svgElement = svgDoc.documentElement;  // The root <svg> element
 container.appendChild(svgElement);
 ```
 
+Votre interface doit aussi inclure une représentation géographique. Vous pouvez utiliser GeoJSON.
+Vous pouvez réviser [l'activité de visualisation du premier module](https://github.com/lemire/java_province). Elle comprend un fichier GeoJSON du Canada.
+
 ### Maven
 
 Maven est utilisé pour la gestion des dépendances et la construction du projet Java. Vous devez créer un fichier `pom.xml` à la racine du projet. Un fichier possible est celui-ci.
@@ -146,6 +149,13 @@ Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra
 Le SVG doit afficher 10 barres verticales représentant les valeurs saisies par l'utilisateur
 avec les étiquettes associées. Il utilisera des dégradés. Les axes seront étiquetés de manière claire. Le graphique inclura des infobulles au survol des barres. Vous devez par ailleurs include une 
 expression MathML dans votre SVG.
+
+### Représentation GeoJSON
+
+Vous devez aussi afficher les données en les faisant correspondre aux dix provinces canadiennes
+avec un fichier GeoJSON ou autre groupe de dix territoires. Si vous ne souhaitez pas utiliser le
+fichier GeoJSON des provinces canadiennes, vous trouverez facile d'autres fichiers en ligne.
+
 
 ### Génération d'un document Excel (Open XML)
 
