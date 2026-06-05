@@ -16,7 +16,7 @@
  &lt;a class="anchor" href="#quelques-principes-et-notions-importantes-du-xml"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Rappelons qu&amp;rsquo;une &lt;strong&gt;balise&lt;/strong&gt; est un segment de texte commençant par &lt;code&gt;&amp;lt;&lt;/code&gt; et se terminant par &lt;code&gt;&amp;gt;&lt;/code&gt;. Par exemple, &lt;code&gt;&amp;lt;lavie&amp;gt;&lt;/code&gt; est une balise qui marque le début de l&amp;rsquo;élément &lt;em&gt;lavie&lt;/em&gt;. Une balise commençant par &lt;code&gt;&amp;lt;/&lt;/code&gt;, comme &lt;code&gt;&amp;lt;/lavie&amp;gt;&lt;/code&gt;, est une balise de fin; dans cet exemple, elle termine l&amp;rsquo;élément &lt;em&gt;lavie&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Le &lt;strong&gt;nom XML&lt;/strong&gt; de la balise est le texte suivant le symbole &lt;code&gt;&amp;lt;&lt;/code&gt; (ou &lt;code&gt;&amp;lt;/&lt;/code&gt; pour une balise de fin) et pouvant contenir n&amp;rsquo;importe quelle lettre ou chiffre (a, b,&amp;hellip; 0, 1, 2,&amp;hellip;) ou les quatre symboles de ponctuation, soit la marque de soulignement ( _ ), le trait d&amp;rsquo;union ( - ), les deux-points (:) ou le point (.); un nom XML ne peut contenir d&amp;rsquo;autres caractères spéciaux, ni un espace&amp;quot;. En outre, il ne peut pas commencer par un chiffre, un trait d&amp;rsquo;union ou un point. Par exemple, le nom XML de la balise &lt;code&gt;&amp;lt;lavie&amp;gt;&lt;/code&gt; est « lavie », alors que la balise &lt;code&gt;&amp;lt;7lavie&amp;gt;&lt;/code&gt; ne serait pas autorisée. On réserve les noms débutant par xml, Xml, xMl, xmL, XMl, xML,Xml et XML pour les spécifications XML. Ainsi, la balise &lt;code&gt;&amp;lt;xmldanslavie&amp;gt;&lt;/code&gt; est à éviter.&lt;/p&gt;</description></item><item><title>Créer un fichier XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/creer_un_fichier_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/creer_un_fichier_xml/</guid><description>&lt;h1&gt;
+&lt;p&gt;Le &lt;strong&gt;nom XML&lt;/strong&gt; de la balise est le texte suivant le symbole &lt;code&gt;&amp;lt;&lt;/code&gt; (ou &lt;code&gt;&amp;lt;/&lt;/code&gt; pour une balise de fin) et pouvant contenir n&amp;rsquo;importe quelle lettre ou chiffre (a, b,&amp;hellip; 0, 1, 2,&amp;hellip;) ou les quatre symboles de ponctuation, soit la marque de soulignement ( _ ), le trait d&amp;rsquo;union ( - ), les deux-points (:) ou le point (.); un nom XML ne peut contenir d&amp;rsquo;autres caractères spéciaux, ni un espace. En outre, il ne peut pas commencer par un chiffre, un trait d&amp;rsquo;union ou un point. Par exemple, le nom XML de la balise &lt;code&gt;&amp;lt;lavie&amp;gt;&lt;/code&gt; est « lavie », alors que la balise &lt;code&gt;&amp;lt;7lavie&amp;gt;&lt;/code&gt; ne serait pas autorisée. On réserve les noms débutant par xml, xmL, xMl, xML, Xml, XmL, XMl et XML pour les spécifications XML. Ainsi, la balise &lt;code&gt;&amp;lt;xmldanslavie&amp;gt;&lt;/code&gt; est à éviter.&lt;/p&gt;</description></item><item><title>Créer un fichier XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/creer_un_fichier_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/creer_un_fichier_xml/</guid><description>&lt;h1&gt;
  Créer un fichier XML
 &lt;/h1&gt;
 &lt;p&gt;
@@ -37,7 +37,7 @@
 &lt;p&gt;
  Comme premier exercice, créez un nouveau fichier et tapez le code suivant :
 &lt;/p&gt;</description></item><item><title>Mise en forme du XML</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/mise_en_forme_du_xml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/mise_en_forme_du_xml/</guid><description>&lt;p&gt;
- Si vous utilisez un traitement de texte pour préparer votre travaux et que vous souhaitez présenter le code XML, vous pouvez utiliser cette application pour le mettre en forme. Saisissez votre code XML et copiez la version mise en forme. Vous pouvez ensuite la copier dans votre logiciel de traitement de texte.
+ Si vous utilisez un traitement de texte pour préparer vos travaux et que vous souhaitez présenter le code XML, vous pouvez utiliser cette application pour le mettre en forme. Saisissez votre code XML et copiez la version mise en forme. Vous pouvez ensuite la copier dans votre logiciel de traitement de texte.
 &lt;/p&gt;
 &lt;!-- Prism.js CSS (Default light theme for better Word compatibility) --&gt;
 &lt;link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet"/&gt;
@@ -61,9 +61,9 @@
 &lt;/h1&gt;
 &lt;p&gt;
  Il est important de bien comprendre la structure en arbre des documents XML. Comme nous l’avons vu, un document XML
- est arbre dont la racine est toujours le noeud-racine suivi normalement d’autres noeuds, comme des noeuds d’éléments.
- Les différents noeuds sont ordonnés (si on interverti deux éléments, on crée de facto un nouveau document). Il faut
- comprendre que les bouts de texte apparaissant dans un document XML sont noeuds à part entière.
+ est un arbre dont la racine est toujours le noeud-racine suivi normalement d’autres noeuds, comme des noeuds d’éléments.
+ Les différents noeuds sont ordonnés (si on intervertit deux éléments, on crée de facto un nouveau document). Il faut
+ comprendre que les bouts de texte apparaissant dans un document XML sont des noeuds à part entière.
 &lt;/p&gt;</description></item><item><title>Vérificateur de XML bien formé</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/labo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/labo/</guid><description>&lt;h1 id="vérificateur-de-xml-bien-formé"&gt;
  Vérificateur de XML bien formé
  &lt;a class="anchor" href="#v%c3%a9rificateur-de-xml-bien-form%c3%a9"&gt;#&lt;/a&gt;

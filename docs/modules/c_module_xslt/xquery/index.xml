@@ -5,7 +5,7 @@
 &lt;p&gt;XSLT peut servir pour extraire des informations d&amp;rsquo;un document XML. On peut trouver tous les noms des étudiants répondant à certains critères. Dans un sens, XSLT peut être utilisé comme langage dans le contexte des bases de données. Cependant, pour cette fin spécifique, un nouveau langage appelé XQuery a été proposé. La syntaxe du XQuery est un mélange de XPath et de &lt;a href="http://fr.wikipedia.org/wiki/SQL"&gt;SQL&lt;/a&gt; et ressemble davantage à ce que les spécialistes des bases de données connaissent bien.&lt;/p&gt;</description></item><item><title>Laboratoire XQuery avec Python (optionnel)</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xquery/laboratoire_xquery_avec_python_optionnel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xquery/laboratoire_xquery_avec_python_optionnel/</guid><description>&lt;h1&gt;
  Laboratoire XQuery avec Python (optionnel)
 &lt;/h1&gt;
-Rendez vous sur le site
+Rendez-vous sur le site
 &lt;a href="https://github.com/lemire/xquerypy"&gt;
  xquerypy
 &lt;/a&gt;

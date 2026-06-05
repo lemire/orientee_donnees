@@ -15,7 +15,7 @@
 &lt;/script&gt;
 &lt;div class=""&gt;
  &lt;p&gt;
-Le MarkDown qui est un format de texte simple permettant un formattage basique des différents éléments. Il facile de produire du MarkDown, à la main ou à l'aide de logiciel.
+Le MarkDown est un format de texte simple permettant un formatage basique des différents éléments. Il est facile de produire du MarkDown, à la main ou à l'aide d'un logiciel.
  &lt;/p&gt;
  &lt;p&gt;
  Pour utiliser le Markdown, il suffit de maîtriser quelques règles de base. Par exemple, pour créer un titre, on place un ou plusieurs # avant le texte (comme # Titre pour un titre principal), pour mettre du texte en gras, on entoure le mot avec deux étoiles **gras**, et pour une liste, on commence chaque ligne par un tiret -. Ces conventions permettent de structurer un document sans quitter le clavier pour des outils complexes comme Word. Le texte reste lisible même sans conversion, ce qui est parfait pour les gens qui veulent se concentrer sur le contenu plutôt que sur le formatage.
@@ -23,7 +23,7 @@ Le MarkDown qui est un format de texte simple permettant un formattage basique d
  Introduction à JavaScript
  &lt;a class="anchor" href="#introduction-%c3%a0-javascript"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;JavaScript est un langage de programmation dynamique principalement utilisé pour le développement web côté client, mais aussi côté serveur grâce à des environnements comme Node.js. Si vous êtes déjà familiers avec Java, un langage statiquement typé et orienté objet classique, JavaScript peut sembler au premier abord déroutant en raison de son typage dynamique et de sa flexibilité extrême. Cependant, de nombreuses concepts que vous connaissez déjà en Java existent sous une forme similaire en JavaScript, même si leur implémentation diffère souvent.&lt;/p&gt;</description></item><item><title>Activité avec jq</title><link>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/jq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/jq/</guid><description>&lt;h1 id="laboratoire-pratique-avec-jq"&gt;
+&lt;p&gt;JavaScript est un langage de programmation dynamique principalement utilisé pour le développement web côté client, mais aussi côté serveur grâce à des environnements comme Node.js. Si vous êtes déjà familiers avec Java, un langage statiquement typé et orienté objet classique, JavaScript peut sembler au premier abord déroutant en raison de son typage dynamique et de sa flexibilité extrême. Cependant, de nombreux concepts que vous connaissez déjà en Java existent sous une forme similaire en JavaScript, même si leur implémentation diffère souvent.&lt;/p&gt;</description></item><item><title>Activité avec jq</title><link>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/jq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/a_module_json/jq/</guid><description>&lt;h1 id="laboratoire-pratique-avec-jq"&gt;
  Laboratoire pratique avec jq
  &lt;a class="anchor" href="#laboratoire-pratique-avec-jq"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -35,7 +35,7 @@ Le MarkDown qui est un format de texte simple permettant un formattage basique d
  Encodage des caractères Unicode
  &lt;a class="anchor" href="#encodage-des-caract%c3%a8res-unicode"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;Les fichier texte sont stockés un encodage Unicode (soit UTF-16, soit UTF-8).&lt;/p&gt;
+&lt;p&gt;Les fichiers texte sont stockés dans un encodage Unicode (soit UTF-16, soit UTF-8).&lt;/p&gt;
 &lt;h2 id="quest-ce-quunicode-"&gt;
  Qu&amp;rsquo;est-ce qu&amp;rsquo;Unicode ?
  &lt;a class="anchor" href="#quest-ce-quunicode-"&gt;#&lt;/a&gt;
@@ -48,7 +48,7 @@ Le MarkDown qui est un format de texte simple permettant un formattage basique d
  Question 1 : Application Java avec Gson et GeoJSON
  &lt;a class="anchor" href="#question-1--application-java-avec-gson-et-geojson"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Dans ce premier travail, vous développerez une application Java utilisant la bibliothèque Gson pour manipuler des données GeoJSON. Pour démontrer l&amp;rsquo;utilité de votre travail, vous utiliserez le fichier GeoJSON suivant comme base, qui représente des lieux emblématiques du Québec :&lt;/p&gt;
+&lt;p&gt;Dans cette première question, vous développerez une application Java utilisant la bibliothèque Gson pour manipuler des données GeoJSON. Pour démontrer l&amp;rsquo;utilité de votre travail, vous utiliserez le fichier GeoJSON suivant comme base, qui représente des lieux emblématiques du Québec :&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#1f2328"&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;:&lt;/span&gt; &lt;span style="color:#0a3069"&gt;&amp;#34;FeatureCollection&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#0550ae"&gt;&amp;#34;features&amp;#34;&lt;/span&gt;&lt;span style="color:#1f2328"&gt;:&lt;/span&gt; &lt;span style="color:#1f2328"&gt;[&lt;/span&gt;
