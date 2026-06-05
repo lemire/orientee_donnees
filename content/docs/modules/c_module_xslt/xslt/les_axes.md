@@ -43,14 +43,14 @@ weight: 160
  </li>
  <li>
   « ancestor-or-self » : idem que l'axe ancestor exception
-        faite que l'on inclut le nœud courant, on pourrait donc tester si nœud
+        faite que l'on inclut le nœud courant, on pourrait donc tester si le nœud
         courant est contenu dans un paragraphe ou s'il est lui-même un
         paragraphe avec la syntaxe &lt;xsl:if
         test="ancestor-or-self::paragraphe"&gt;...&lt;/xsl:if&gt;.
  </li>
  <li>
   « preceding-sibling » : cet axe consulte en séquence les
-        frères du nœud courant, c'est-à-dire les nœud ayant le même parent, qui
+        frères du nœud courant, c'est-à-dire les nœuds ayant le même parent, qui
         apparaissent avant le nœud courant. Par exemple,
         « preceding-sibling::nom[2] » cherche le second élément-frère
         apparaissant avant le nœud courant.
@@ -67,7 +67,7 @@ weight: 160
  <li>
   « preceding » : cet axe est similaire à
         « preceding-sibling », mais on traverse tous les nœuds qui se
-        sont terminés avant nœud courant. Par exemple,
+        sont terminés avant le nœud courant. Par exemple,
         « preceding::nom[2] » cherche le second élément apparaissant
         avant le nœud courant, même s'il n'a pas le même parent.
  </li>

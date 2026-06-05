@@ -97,7 +97,7 @@ Nous allons passer en revue brièvement les éléments « xsl:template » qu'il 
     </xsl:stylesheet>
 ```
 
-Le premier élément « xsl:template » sert à capturer l'élément « book ». Comme il s'agit de l'élément-racine, on en profite pour produire les éléments « html », « head » et « body ». Le contenu de l'élément « head » sera rempli par l'élément « xsl:template » traitant l'élément DocBook « bookinfo ». On affiche immédiatement le prénom et le nom de l'auteur à l'aide des expressions XPath « bookinfo/author/firstname » et « bookinfo/author/surname ». Notez l'utilisation de l'élément <xsl:text> </xsl:text> pour produire un espace entre le nom et le prénom. En effet, sans cet élément, il n'y aurait pas d'espace puisque les espaces et retours de charriot sont ignorés dans les fichiers XSLT. Le reste du document est produit avec les deux éléments « xsl:template » traitant les éléments « chapter » : on utilise le l'attribut mode « tdm » pour produire la table des matières, et le reste du document est produit avec le traitement des éléments « chapter » par défaut (sans attribut mode).
+Le premier élément « xsl:template » sert à capturer l'élément « book ». Comme il s'agit de l'élément-racine, on en profite pour produire les éléments « html », « head » et « body ». Le contenu de l'élément « head » sera rempli par l'élément « xsl:template » traitant l'élément DocBook « bookinfo ». On affiche immédiatement le prénom et le nom de l'auteur à l'aide des expressions XPath « bookinfo/author/firstname » et « bookinfo/author/surname ». Notez l'utilisation de l'élément <xsl:text> </xsl:text> pour produire un espace entre le nom et le prénom. En effet, sans cet élément, il n'y aurait pas d'espace puisque les espaces et retours de chariot sont ignorés dans les fichiers XSLT. Le reste du document est produit avec les deux éléments « xsl:template » traitant les éléments « chapter » : on utilise l'attribut mode « tdm » pour produire la table des matières, et le reste du document est produit avec le traitement des éléments « chapter » par défaut (sans attribut mode).
 
 ```xml
 <xsl:template match="book"> <html>
@@ -128,7 +128,7 @@ L'élément « xsl:template » traitant l'élément DocBook « bookinfo » est s
     </xsl:template>
 ```
 
-Les élément « xsl:template » avec attribut mode génèrent la table des matières. Les éléments « xsl:number » permettent de numéroter automatiquement les chapitres et sections. Afin de générer des hyperliens permettant de naviguer dans le document à partir de la table des matières, on utilise des fragments générés à partir de la fonction XSLT « generate-id ». Lorsque nous générons le contenu du document lui-même, on utilise à nouveau la fonction XSLT « generate-id » pour placer des ancres dans le document au bon endroit. L'avantage de la fonction XSLT « generate-id » est qu'elle permet de générer facilement un identifiant unique pour chaque paragraphe.
+Les éléments « xsl:template » avec attribut mode génèrent la table des matières. Les éléments « xsl:number » permettent de numéroter automatiquement les chapitres et sections. Afin de générer des hyperliens permettant de naviguer dans le document à partir de la table des matières, on utilise des fragments générés à partir de la fonction XSLT « generate-id ». Lorsque nous générons le contenu du document lui-même, on utilise à nouveau la fonction XSLT « generate-id » pour placer des ancres dans le document au bon endroit. L'avantage de la fonction XSLT « generate-id » est qu'elle permet de générer facilement un identifiant unique pour chaque paragraphe.
 
 ```xml
 <xsl:template match="chapter" mode="tdm">
@@ -147,7 +147,7 @@ Les élément « xsl:template » avec attribut mode génèrent la table des mati
     </xsl:template>
 ```
 
-Les élément « xsl:template » sans attribut mode génèrent le document lui-même. La principale différence avec la génération de la table des matières est la présence de l'élément <xsl:apply-templates/> qui traite le contenu des éléments « section ».
+Les éléments « xsl:template » sans attribut mode génèrent le document lui-même. La principale différence avec la génération de la table des matières est la présence de l'élément <xsl:apply-templates/> qui traite le contenu des éléments « section ».
 
 ```xml
 <xsl:template match="chapter">

@@ -20,7 +20,7 @@ La structure XML d'un fichier csproj commence généralement par l'élément rac
 À l'intérieur, on trouve des groupes importants :
 - **`<PropertyGroup>`** : Définit des propriétés globales telles que :
   - `TargetFramework` (pour indiquer la version .NET ciblée)
-  - `OutputType` (pour spécifier si c'est une bibliothèque ou une exécutable)
+  - `OutputType` (pour spécifier si c'est une bibliothèque ou un exécutable)
 - **`<ItemGroup>`** : Regroupe les inclusions de fichiers et les références :
   - Inclusions de fichiers (comme `<Compile Include="Program.cs"/>`)
   - Références à d'autres projets ou paquets

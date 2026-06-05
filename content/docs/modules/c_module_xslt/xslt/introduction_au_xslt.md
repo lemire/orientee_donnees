@@ -93,7 +93,7 @@ Dans un navigateur, on peut enregistrer ce nouveau document XML dans le même r�
 
 Une fois le fichier XML chargé et la transformation XSLT appliquée, normalement, on ne devrait rien voir à l’écran (une page vide), car le document XSLT utilisé est vide de toute instruction et le résultat ne sera donc pas du HTML. Le résultat peut cependant varier selon le navigateur utilisé, car votre navigateur pourrait afficher le texte, même s’il ne s’agit pas de HTML : dans ce cas, vous ne verriez que le texte contenu dans le document XML, les balises en moins. Nous expliquerons bientôt pourquoi cela est le cas.
 
-## application de bureau java (optionnelle)
+## Application de bureau Java (optionnelle)
 
 Nous avons préparé une application conviviale en Java qui vous permet d’appliquer une transformation XSLT à un document XML.  
 [Nous vous invitons à la mettre à l’essai en suivant nos consignes](https://github.com/lemire/javaxslt).

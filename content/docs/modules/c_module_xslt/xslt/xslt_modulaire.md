@@ -107,7 +107,7 @@ Notre fichier « xslt.xml » est maintenant plus modulaire, parce qu'il contient
 
 **En résumé, il est souvent préférable d'utiliser un élément « `xsl:apply-templates` » qu'un élément « `xsl:value-of` » quand la complexité du modèle augmente; ceci permet d'assurer la modularité et de garder la simplicité du document XSLT.**
 
-Par défaut, l'instruction apply-templates traite les nœuds dans l'ordre où ils se présentent dans le document original. On peut forcer le XSLT à trier les éléments avant de le traiter avec l'instruction `xsl:sort`. Dans notre exemple, on peut remplacer l'élément `<xsl:apply-templates select="recipiendaire" />` par cet élément si on veut que les individus soient triés par leur nom de famille.
+Par défaut, l'instruction apply-templates traite les nœuds dans l'ordre où ils se présentent dans le document original. On peut forcer le XSLT à trier les éléments avant de les traiter avec l'instruction `xsl:sort`. Dans notre exemple, on peut remplacer l'élément `<xsl:apply-templates select="recipiendaire" />` par cet élément si on veut que les individus soient triés par leur nom de famille.
 ```xml
 <xsl:apply-templates select="étudiant" >
    <xsl:sort select="personne/nom" order="ascending" data-type="text" />
@@ -132,4 +132,4 @@ On peut aussi importer un autre fichier XSLT avec l'instruction `xsl:import`. Ce
     </xsl:stylesheet>
 ```
 
-En cas de conflit entre les règles de fichier XSLT principal et celles du fichier importé, les règles du fichier XSLT principal l'emporte.
+En cas de conflit entre les règles du fichier XSLT principal et celles du fichier importé, les règles du fichier XSLT principal l'emportent.

@@ -5,7 +5,7 @@ weight: 70
 
 # Encodage des caractères Unicode
   
-Les fichier texte sont stockés un encodage Unicode (soit UTF-16, soit UTF-8).
+Les fichiers texte sont stockés dans un encodage Unicode (soit UTF-16, soit UTF-8).
 
 ## Qu'est-ce qu'Unicode ?
 
@@ -15,7 +15,7 @@ L'adoption d'Unicode a résolu les problèmes d'encodage multiples qui causaient
 
 ## UTF-8 : L'encodage variable le plus populaire
 
-UTF-8 est l'encodage Unicode le plus largement utilisé sur le web et dans les systèmes modernes. Contrairement à UTF-16 qui utilise une taille fixe de 2 octets par caractère, UTF-8 utilise un nombre variable d'octets : 1 octet pour les caractères ASCII (U+0000 à U+007F), 2 octets pour la plupart des caractères latins accentués et cyrilliques, 3 octets pour la plupart des caractères asiatiques, et 4 octets pour les émojis et caractères rares. Cette conception permet à UTF-8 d'être rétrocompatible avec ASCII : tout fichier ASCII valide est aussi un fichier UTF-8 valide.
+UTF-8 est l'encodage Unicode le plus largement utilisé sur le web et dans les systèmes modernes. Contrairement à UTF-16 qui utilise généralement 2 octets par caractère, UTF-8 utilise un nombre variable d'octets : 1 octet pour les caractères ASCII (U+0000 à U+007F), 2 octets pour la plupart des caractères latins accentués et cyrilliques, 3 octets pour la plupart des caractères asiatiques, et 4 octets pour les émojis et caractères rares. Cette conception permet à UTF-8 d'être rétrocompatible avec ASCII : tout fichier ASCII valide est aussi un fichier UTF-8 valide.
 
 Par exemple, le caractère "A" (U+0041) s'encode en un seul octet : `41` en hexadécimal. Le caractère "é" (U+00E9) s'encode en deux octets : `C3 A9`. Le caractère chinois "中" (U+4E2D) s'encode en trois octets : `E4 B8 AD`. Cette variabilité rend UTF-8 efficace pour les textes principalement en anglais (économie d'espace) tout en supportant pleinement Unicode.
 

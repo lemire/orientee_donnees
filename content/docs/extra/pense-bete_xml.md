@@ -130,4 +130,4 @@ Un document XML est bien-formé s'il respecte la syntaxe XML :
 <!ENTITY entiteExemple "Valeur de l'entite">
 ```
 
-Ces exemples montrent la syntaxe de base pour déclarer un DTD et des éléments/attributs.
+Ces exemples montrent la syntaxe de base pour déclarer une DTD et des éléments/attributs.

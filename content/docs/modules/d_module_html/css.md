@@ -351,7 +351,7 @@ Les espaces de noms ne sont pas supportés en CSS 1 ou CSS 2. Ainsi « `moneleme
 
 ### sélection de la langue
 
-On a vu qu'il est possible en XML de spécifier la langue dans laquelle est écrit un texte avec l'attribut «  `xml:lang` ». On pourrait penser que pour mettre le texte déclaré comme étant en anglais en rouge, il suffirait de l'instruction « `*[lang="fr"] { color:red;}` », mais que se passera-t-il si on a utilisé un code de région avec la langue comme « fr-CA » ? Une solution plus élégante consiste alors à utiliser la sélection sur la langue avec une instruction comme « `:lang(en) { color:red;}` ».
+On a vu qu'il est possible en XML de spécifier la langue dans laquelle est écrit un texte avec l'attribut «  `xml:lang` ». On pourrait penser que pour mettre le texte déclaré comme étant en anglais en rouge, il suffirait de l'instruction « `*[lang="en"] { color:red;}` », mais que se passera-t-il si on a utilisé un code de région avec la langue comme « en-CA » ? Une solution plus élégante consiste alors à utiliser la sélection sur la langue avec une instruction comme « `:lang(en) { color:red;}` ».
 
 ### sélection de plusieurs éléments
 

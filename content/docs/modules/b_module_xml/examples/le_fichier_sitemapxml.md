@@ -6,7 +6,7 @@ weight: 40
 # Le fichier sitemap.xml
 
 Le sitemap.xml est un fichier au format XML qui liste les URLs importantes d'un site web afin d'aider les moteurs de recherche (Google, Bing, etc.) à découvrir et indexer plus efficacement ses pages. Il est particulièrement utile pour les sites volumineux, les nouveaux sites ou ceux qui possèdent beaucoup de contenu difficilement accessible par les liens internes classiques. Bien qu'il ne garantisse pas l'indexation de toutes les pages listées, il constitue un signal fort pour les crawlers et améliore généralement la couverture du site.
-Ce fichier doit être placé à la racine du site[](https://example.com/sitemap.xml) et suivre le protocole officiel défini sur sitemaps.org. On peut y indiquer pour chaque URL la date de dernière modification (`<lastmod>`), la fréquence de mise à jour estimée (`<changefreq>`), et une priorité relative (`<priority>`) entre 0.0 et 1.0. Depuis quelques années, il est aussi possible d'utiliser des sitemaps vidéo, image, news ou même des index de sitemaps quand le fichier dépasse 50 000 URLs ou 50 Mo.
+Ce fichier doit être placé à la racine du site (par exemple `https://example.com/sitemap.xml`) et suivre le protocole officiel défini sur sitemaps.org. On peut y indiquer pour chaque URL la date de dernière modification (`<lastmod>`), la fréquence de mise à jour estimée (`<changefreq>`), et une priorité relative (`<priority>`) entre 0.0 et 1.0. Depuis quelques années, il est aussi possible d'utiliser des sitemaps vidéo, image, news ou même des index de sitemaps quand le fichier dépasse 50 000 URLs ou 50 Mo.
 Voici un exemple simple de sitemap.xml contenant quatre pages :
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

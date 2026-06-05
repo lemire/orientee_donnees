@@ -103,13 +103,13 @@ En passant, ce n'est pas un vrai article<span style="color:#008c00; ">...</span>
  </p>
  <figure>
   <img src="https://www.teluq.ca/siteweb/univ/fichiers/images/profs/dlemire.jpg"/>
-  <legend>
+  <figcaption>
    Photo du professeur
-  </legend>
+  </figcaption>
  </figure>
  <pre><span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">figure</span><span style="color:#a65700; ">&gt;</span>
  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"http://lemire.me/fr/images/JPG/profile2011B_152.jpg"</span><span style="color:#274796; "> </span><span style="color:#a65700; ">/&gt;</span>
- <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">legend</span><span style="color:#a65700; ">&gt;</span>Photo du professeur<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">legend</span><span style="color:#a65700; ">&gt;</span>
+ <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">figcaption</span><span style="color:#a65700; ">&gt;</span>Photo du professeur<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">figcaption</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">figure</span><span style="color:#a65700; ">&gt;</span>
 </pre>
  <p>
@@ -130,7 +130,7 @@ En passant, ce n'est pas un vrai article<span style="color:#008c00; ">...</span>
    <br/>
    <label>
     Date de naissance
-    <input id="courriel" name="ddn" required="" type="date"/>
+    <input id="ddn" name="ddn" required="" type="date"/>
    </label>
    <br/>
    <label>
@@ -197,7 +197,7 @@ En passant, ce n'est pas un vrai article<span style="color:#008c00; ">...</span>
 		</label>
 		<br /> 
     	<label>Date de naissance
-        <input id="courriel" name="ddn" type="date" required>
+        <input id="ddn" name="ddn" type="date" required>
 		</label>
 		<br />
         <label>Courriel 

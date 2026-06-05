@@ -19,7 +19,7 @@ Il y a plusieurs méthodes. Voici les deux plus simples pour un débutant.
 
 1. Ouvrez votre navigateur et allez ici : https://github.com/jqlang/jq/releases
 2. Descendez à la dernière version.
-3. Sous “Assets”, cliquez sur le fichier `jq-win64.exe`. Il est possible que vous deviez chercher un peu, le fichier est bel est bien présent.
+3. Sous “Assets”, cliquez sur le fichier `jq-win64.exe`. Il est possible que vous deviez chercher un peu, le fichier est bel et bien présent.
 4. Le fichier se télécharge (environ 3-4 Mo).
 
 5. **Renommez-le pour plus de simplicité** : cliquez droit sur le fichier → Renommer → appelez-le simplement `jq.exe`

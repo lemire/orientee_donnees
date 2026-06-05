@@ -183,7 +183,7 @@ weight: 130
     document situé à l'adresse @href :
     &lt;xsl:copy-of select="document(@href)"/&gt;. (L'élément
     « xsl:copy-of » sert
-    ici à faire une copies des nœuds contenus dans le document distant.) Elle
+    ici à faire une copie des nœuds contenus dans le document distant.) Elle
     est cependant sujette à des contraintes
     de sécurité lorsqu'on l'utilise dans un navigateur : il n'est pas
     permis de charger

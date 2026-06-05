@@ -7,12 +7,12 @@ weight: 90
 </h1>
 <p>
  Il est important de bien comprendre la structure en arbre des documents XML. Comme nous l’avons vu, un document XML
-    est arbre dont la racine est toujours le noeud-racine suivi normalement d’autres noeuds, comme des noeuds d’éléments.
-    Les différents noeuds sont ordonnés (si on interverti deux éléments, on crée de facto un nouveau document). Il faut
-    comprendre que les bouts de texte apparaissant dans un document XML sont noeuds à part entière.
+    est un arbre dont la racine est toujours le noeud-racine suivi normalement d’autres noeuds, comme des noeuds d’éléments.
+    Les différents noeuds sont ordonnés (si on intervertit deux éléments, on crée de facto un nouveau document). Il faut
+    comprendre que les bouts de texte apparaissant dans un document XML sont des noeuds à part entière.
 </p>
 <p>
- Nous vous invitons donc à utiliser l’application suivant pour bien vous familiariser avec la structure des documents
+ Nous vous invitons donc à utiliser l’application suivante pour bien vous familiariser avec la structure des documents
     XML. Vous pouvez saisir un document XML et le décomposer. Essayez de créer vos propres documents (bien formés) pour
     tester votre compréhension.
 </p>
@@ -21,7 +21,7 @@ weight: 90
     message d’erreur.
 </p>
 <p>
- Faites des expérience jusqu’à ce que vous soyez certain d’avoir bien compris.
+ Faites des expériences jusqu’à ce que vous soyez certain d’avoir bien compris.
 </p>
 <div style="max-width: 800px; margin: 0 auto; background-color: #ffffff; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
  <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #1f2937;">

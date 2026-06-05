@@ -8,7 +8,7 @@ weight: 1000
 
 ## Question 1 : Application Java avec Gson et GeoJSON
 
-Dans ce premier travail, vous développerez une application Java utilisant la bibliothèque Gson pour manipuler des données GeoJSON. Pour démontrer l'utilité de votre travail, vous utiliserez le fichier GeoJSON suivant comme base, qui représente des lieux emblématiques du Québec :
+Dans cette première question, vous développerez une application Java utilisant la bibliothèque Gson pour manipuler des données GeoJSON. Pour démontrer l'utilité de votre travail, vous utiliserez le fichier GeoJSON suivant comme base, qui représente des lieux emblématiques du Québec :
 
 ```json
 {
@@ -80,7 +80,7 @@ Votre code devra être organisé selon les bonnes pratiques Java, utiliser Maven
 
 ## Question 2 : Script jq pour l'analyse de données JSON
 
-Pour ce deuxième travail, vous créerez un ensemble de scripts jq  permettant d'analyser et transformer des données JSON complexes représentant un catalogue de produits. Vous commencerez par utiliser le fichier JSON suivant comme base de données, qui représente un inventaire de produits électroniques :
+Pour cette deuxième question, vous créerez un ensemble de scripts jq permettant d'analyser et transformer des données JSON complexes représentant un catalogue de produits. Vous commencerez par utiliser le fichier JSON suivant comme base de données, qui représente un inventaire de produits électroniques :
 
 ```json
 {

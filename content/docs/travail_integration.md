@@ -6,7 +6,7 @@ weight: 155
 # Travail d'intégration
 
 Ce travail d'intégration vous permet de démontrer l'acquisition des compétences développées tout au long du cours. Vous devez créer une application web complète qui intègre plusieurs technologies : HTML5, JavaScript, AJAX, Java, JSON, XML, SVG, MathML, YAML, Maven et les styles CSS. Vous utilisez
-les libraires Java Gson, Jackson et Apache POI.
+les bibliothèques Java Gson, Jackson et Apache POI.
 
 **Avertissement**. Vous devez avoir fait toutes les activités du cours avant de tenter de faire
 l'activité d'intégration.
@@ -108,7 +108,9 @@ La structure des fichiers doit suivre les conventions Maven :
 - Les fichiers Java (comme `GraphServer.java`) dans `src/main/java/`.
 - Les ressources statiques (comme `index.html`) dans `src/main/resources/`.
 
-Pour compiler le projet, utilisez `mvn compile`. 
+Pour compiler le projet, utilisez `mvn compile`.
+
+**Attention aux chemins.** Le code de départ lit `index.html` et `config.yml` à partir d'un chemin relatif (par exemple `Paths.get("index.html")` ou `new File("src/main/resources/config.yml")`). Ces chemins sont résolus par rapport au **répertoire courant** d'exécution, pas par rapport au classpath. Lancez donc le programme depuis la racine du projet, ou bien chargez ces ressources via le classpath avec `getClass().getResourceAsStream("/index.html")` si vous packagez le projet dans un jar.
 
 
 ### Configuration YAML
@@ -147,8 +149,8 @@ Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra
 ### Graphique SVG
 
 Le SVG doit afficher 10 barres verticales représentant les valeurs saisies par l'utilisateur
-avec les étiquettes associées. Il utilisera des dégradés. Les axes seront étiquetés de manière claire. Le graphique inclura des infobulles au survol des barres. Vous devez par ailleurs include une 
-expression MathML dans votre SVG.
+avec les étiquettes associées. Il utilisera des dégradés. Les axes seront étiquetés de manière claire. Le graphique inclura des infobulles au survol des barres. Vous devez par ailleurs inclure une 
+expression MathML dans votre SVG (par exemple au moyen d'un élément `<foreignObject>`).
 
 ### Représentation GeoJSON
 

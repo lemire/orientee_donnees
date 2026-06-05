@@ -7,7 +7,7 @@ weight: 20
 
 XSLT peut servir pour extraire des informations d'un document XML. On peut trouver tous les noms des étudiants répondant à certains critères. Dans un sens, XSLT peut être utilisé comme langage dans le contexte des bases de données. Cependant, pour cette fin spécifique, un nouveau langage appelé XQuery a été proposé. La syntaxe du XQuery est un mélange de XPath et de [SQL](http://fr.wikipedia.org/wiki/SQL) et ressemble davantage à ce que les spécialistes des bases de données connaissent bien.
 
-Pour tester les requêtes XQuery, Saxon est un outil pratique écrit en java. Pour utiliser Saxon, 
+Pour tester les requêtes XQuery, Saxon est un outil pratique écrit en Java. Pour utiliser Saxon, 
 suivez d'abord les consignes à l'adresse [https://github.com/lemire/javasaxon](https://github.com/lemire/javasaxon).
 
 

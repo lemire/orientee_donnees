@@ -15,7 +15,7 @@ Cependant, il arrive qu’on veuille vérifier que le document est non seulement
 
 La procédure que nous proposons suppose que vous connaissez bien les éléments de base d’un système d’exploitation, comme l’utilisation de la ligne de commande et l’exécution de programmes. Nous ne donnons la procédure que pour Windows, mais elle est très similaire sous macOS ou Linux.
 
-## Demonstration en ligne
+## Démonstration en ligne
 
 
 Vous pouvez valider le fichier XML en ligne, en appuyant sur le bouton *exécuter*.
@@ -95,9 +95,9 @@ public class Validateur {
 
 ## Vérification de la procédure
 
-Après avoir tapé la commande « java Validateur mauvais.xml » pour vérifier si le fichier « mauvais.xml » est valable, vous devriez obtenir le message d’erreur suivant indiquant qu’il manque un élément « numero » (le message exact peut varier et il pourrait être en français) :
+Après avoir tapé la commande « java Validateur mauvais.xml » pour vérifier si le fichier « mauvais.xml » est valable, vous devriez obtenir le message d’erreur suivant indiquant qu’il manque un élément « age » (le message exact peut varier et il pourrait être en français) :
 ```
-mauvais.xml:7:1: Élément "etudiant" doit contenir un élément "numero".
+mauvais.xml:7:1: Élément "etudiant" doit contenir un élément "age".
 ```
 
 Pour vous assurer de bien comprendre, reprenez la procédure ; créez un autre document appelé « bon.xml » avec le contenu suivant :

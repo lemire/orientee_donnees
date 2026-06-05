@@ -3,7 +3,7 @@ title: "Mise en forme du XML"
 weight: 80
 ---
 <p>
- Si vous utilisez un traitement de texte pour préparer votre travaux et que vous souhaitez présenter le code XML, vous pouvez utiliser cette application pour le mettre en forme. Saisissez votre code XML et copiez la version mise en forme. Vous pouvez ensuite la copier dans votre logiciel de traitement de texte.
+ Si vous utilisez un traitement de texte pour préparer vos travaux et que vous souhaitez présenter le code XML, vous pouvez utiliser cette application pour le mettre en forme. Saisissez votre code XML et copiez la version mise en forme. Vous pouvez ensuite la copier dans votre logiciel de traitement de texte.
 </p>
 <!-- Prism.js CSS (Default light theme for better Word compatibility) -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet"/>

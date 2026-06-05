@@ -180,7 +180,7 @@ weight: 1110
                     contenu de l'élément, moins les balises,
                     mais en respectant les espaces entre les éléments. Il n'y
                     aurait pas d'espace entre les éléments
-                    si le document XML avait pris le forme
+                    si le document XML avait pris la forme
                     « &lt;prenom&gt;Jean&lt;/prenom&gt;&lt;nom&gt;Graton&lt;/nom&gt; »
                     (sans espace entre les deux éléments).
     </span>
@@ -760,7 +760,7 @@ weight: 1110
             &lt;description&gt;Un cours d'introduction à l'informatique pour les
             étudiants en éducation.&lt;/description&gt;&lt;/cours&gt;
             &lt;cours&gt;&lt;nom&gt;INF 103 Java&lt;/nom&gt;
-            description&gt;Un cours d'introduction au
+            &lt;description&gt;Un cours d'introduction au
             Java&lt;/description&gt;&lt;/cours&gt;
             &lt;/universite&gt;
   </p>
@@ -1447,7 +1447,7 @@ weight: 1110
                     pas à produire du XML. On peut déclarer que l'on souhaite
                     produire
                     du texte avec une telle instruction :
-                    &lt;xslt:output method="text" omit-xml-declaration="yes"
+                    &lt;xsl:output method="text" omit-xml-declaration="yes"
                     /&gt;.
     </span>
    </li>
@@ -1470,7 +1470,7 @@ weight: 1110
    Question 18
   </b>
   .
-        Le XSLT ne s'applique qu'à des fichiers XML valide.
+        Le XSLT ne s'applique qu'à des fichiers XML valides.
  </div>
  <p style="width:90%;">
   Choisissez la bonne réponse parmi les suivantes.

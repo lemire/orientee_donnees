@@ -9,7 +9,7 @@ weight: 10
 
 Nous avons vu ce qu'était un document XML bien formé : un seul élément-racine, les éléments ne se chevauchent pas, les noms XML ne commencent pas par un chiffre, et ainsi de suite. De plus, un document XML bien formé peut contenir n'importe quel élément et dans n'importe quel ordre, et tous les éléments peuvent contenir des attributs, et peu importe ceux-ci.
 
-En pratique, il est souvent suffisant pour les documents XML d'être bien formés, mais il arrive qu'on veuille imposer des contraintes supplémentaires aux éléments et attributs pouvant être utilisés. Par exemple, un élément « étudiant » pourrait posséder un numéro d'étudiant, mais pas l'inverse : un élément « numéro d'étudiant » ne pouvant contenir qu'un numéro et pas d'autres éléments. On peut aussi vouloir contraindre le contenu d'un document XML pour des raisons d'interopérabilité. Par exemple, si un groupe d'experts s'entendent sur un format XML pour un type de données, il est utile de pouvoir vérifier si un fichier XML donné correspond bien à ce sur quoi on s'est entendu. Un document XML qui est bien formé et qui respecte les contraintes définissant son type de document est dit valide (ou parfois valable).
+En pratique, il est souvent suffisant pour les documents XML d'être bien formés, mais il arrive qu'on veuille imposer des contraintes supplémentaires aux éléments et attributs pouvant être utilisés. Par exemple, un élément « étudiant » pourrait posséder un numéro d'étudiant, mais pas l'inverse : un élément « numéro d'étudiant » ne pouvant contenir qu'un numéro et pas d'autres éléments. On peut aussi vouloir contraindre le contenu d'un document XML pour des raisons d'interopérabilité. Par exemple, si un groupe d'experts s'entend sur un format XML pour un type de données, il est utile de pouvoir vérifier si un fichier XML donné correspond bien à ce sur quoi on s'est entendu. Un document XML qui est bien formé et qui respecte les contraintes définissant son type de document est dit valide (ou parfois valable).
 
 En d'autres mots, un document XML qui est bien formé et qui, en plus, satisfait aux contraintes dictant quels éléments et attributs peuvent être utilisés, et dans quel ordre et avec quel contenu, est dit valide.
 
@@ -17,7 +17,7 @@ En d'autres mots, un document XML qui est bien formé et qui, en plus, satisfait
 
 Il y a plusieurs façons de définir des types de documents XML. L'approche la plus répandue, la plus ancienne et la plus simple, est la norme de définition de type de document (DTD). Les deux autres possibilités émergentes les plus répandues sont XML Schema et Relax NG.
 
-On fait généralement deux reproches à l'approche DTD : un document DTD n'est pas du XML et la norme n'est pas assez riche pour spécifier le contenu des documents XML avec finesse. En effet, L'approche DTD ne permet pas de déclarer qu'un contenu textuel doit être une date ou un nombre, et il n'y a pas de support pour les espaces de noms, sujet que nous traiterons plus loin dans ce module.
+On fait généralement deux reproches à l'approche DTD : un document DTD n'est pas du XML et la norme n'est pas assez riche pour spécifier le contenu des documents XML avec finesse. En effet, l'approche DTD ne permet pas de déclarer qu'un contenu textuel doit être une date ou un nombre, et il n'y a pas de support pour les espaces de noms, sujet que nous traiterons plus loin dans ce module.
 
 D'un autre côté, la norme DTD est très répandue et tous les logiciels qui supportent XML supportent maintenant cette norme, incluant Java, Google Chrome et Firefox. Les formats comme XHTML 2.0 sont toujours publiés avec une spécification DTD. Les autres possibilités, comme XML Schema, Relax NG, Schematron et Examplotron, sont moins bien supportées.
 
@@ -52,7 +52,7 @@ element addressBook {
 
 Cet exemple spécifie que le document XML doit avoir comme élément racine un élément « addressBook », contenant zéro ou plus éléments « card ». Un élément « card » doit obligatoirement contenir un élément « name » suivi d'un élément « email ».
 
-Tout en étant plus élégante que la norme DTD, le format Relax NG est plus limitée que XML Schema puisqu'il ne permet que quatre types de contraintes sur le nombre d'occurences d'un élément (zeroOrMore comme dans notre exemple, optional, un nombre précis (comme une seule fois) et oneOrMore) alors que le XML Schema permet des contraintes beaucoup plus spécifiques. Cependant, la richesse de la norme XML Schema a un coût : il s'agit d'une norme beaucoup plus difficile à utiliser et à apprendre en pratique.
+Tout en étant plus élégant que la norme DTD, le format Relax NG est plus limité que XML Schema puisqu'il ne permet que quatre types de contraintes sur le nombre d'occurrences d'un élément (zeroOrMore comme dans notre exemple, optional, un nombre précis (comme une seule fois) et oneOrMore) alors que le XML Schema permet des contraintes beaucoup plus spécifiques. Cependant, la richesse de la norme XML Schema a un coût : il s'agit d'une norme beaucoup plus difficile à utiliser et à apprendre en pratique.
 
 On peut passer automatiquement d'un document DTD à un document XML Schema ou Relax NG avec un outil comme NekoDTD.
 
@@ -232,7 +232,7 @@ Pour rendre un fichier DTD plus compréhensible, on peut ajouter des commentaire
 <!-- ceci est un commentaire -->
 ```
 
-Les commentaires dans les fichiers Relax NG non-textuel sont obtenus en débutant une ligne par le symbole « # » comme dans cet exemple.
+Les commentaires dans les fichiers Relax NG non textuels sont obtenus en débutant une ligne par le symbole « # » comme dans cet exemple.
 
 ```xml
 # ceci est un commentaire
@@ -359,7 +359,7 @@ En bref, il est facile de diviser des spécifications Relax NG ou DTD en plusieu
 
 ## Définir l'élément-racine
 
-Avec une DTD, il n'est pas possible de définir l'élément-racine. Celui-ci est déclaré par l'instruction DOCTYPE qui se trouve dans le document XML. Avec Relax NG, on peut non seulement spécifier l'élément-racine avec le mot-clef start, mais on peut aussi permettre une certaine flexibilité. Par exemple, l'instruction « start = problemset | choice » placée dans un fichier Relax NG, nous indique qu'on peut utilisé l'élément problemset ou l'élément choice comme élément-racine.
+Avec une DTD, il n'est pas possible de définir l'élément-racine. Celui-ci est déclaré par l'instruction DOCTYPE qui se trouve dans le document XML. Avec Relax NG, on peut non seulement spécifier l'élément-racine avec le mot-clef start, mais on peut aussi permettre une certaine flexibilité. Par exemple, l'instruction « start = problemset | choice » placée dans un fichier Relax NG, nous indique qu'on peut utiliser l'élément problemset ou l'élément choice comme élément-racine.
 
 ## Définir le type de contenu en Relax NG
 
@@ -367,13 +367,13 @@ Dans tous nos exemples de Relax NG, nous n'avons prévu que du contenu textuel (
 
 | Type | Explication | Exemple |
 |------|-------------|---------|
-| xsd:date | Une date formattée avec la convention YYYY-MM-DD | 2001-01-01 ou 1999-12-30 |
+| xsd:date | Une date formatée avec la convention YYYY-MM-DD | 2001-01-01 ou 1999-12-30 |
 | xsd:dateTime | Un moment spécifique à la seconde près | 2000-12-31T03:32:00 |
 | xsd:string {pattern = "[^:]+" } | Une chaîne de caractères contenant au moins un caractère, à l'exclusion du symbole : | maison |
-| xsd:string { pattern = ".+/.+" } | Deux chaînes de caractères séparée par un caractère / | 01/01 |
-| xsd:string { pattern = ".+@.+"} | Deux chaînes de caractères séparée par un caractère @ | lala@to.com |
+| xsd:string { pattern = ".+/.+" } | Deux chaînes de caractères séparées par un caractère / | 01/01 |
+| xsd:string { pattern = ".+@.+"} | Deux chaînes de caractères séparées par un caractère @ | lala@to.com |
 | "text" \| "html" | text ou html | text |
-| xsd:string { minLength="7" maxLength="25" } | Une chaîne caractères faisant entre 7 et 25 caractères | monmotdepasse |
+| xsd:string { minLength="7" maxLength="25" } | Une chaîne de caractères faisant entre 7 et 25 caractères | monmotdepasse |
 | xsd:decimal { minExclusive="0.0" maxInclusive="10.0" } | Un nombre entre 0 et 10 | 5 |
 | xsd:decimal { fractionDigits="3" } | Un nombre n'ayant pas plus de 3 chiffres après la virgule (le point) | 5.001 |
 

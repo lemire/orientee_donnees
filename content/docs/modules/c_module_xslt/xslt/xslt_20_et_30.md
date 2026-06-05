@@ -11,7 +11,7 @@ weight: 1100
 <p>
  Une nouvelle version du XSLT est disponible, nommée XSLT 2.0. Elle ajoute
 notamment la possibilité de générer plusieurs documents plutôt qu'un seul
-avec l'instruction xslt:result-document. On peut aussi traiter
+avec l'instruction xsl:result-document. On peut aussi traiter
 non seulement des fichiers XML, mais aussi d'autres types de fichiers
 dont les fichiers CSV (comma-separated values) générés par les
 chiffriers électroniques et bases de données. L'instruction « xsl:analyze-string » 
@@ -20,7 +20,7 @@ de caractères de XPath 2.0. L'instruction « xsl:function » permet quant à
 elle de définir de nouvelles fonctions qui pourront être utilisées au sein des
 expressions XPath. L'instruction « xsl:for-each-group » permet 
  de visiter les nœuds par groupes : on peut ainsi visiter
-tous les éléments etudiant en les regroupant selon la valeur de leur attribut nom.
+tous les éléments étudiant en les regroupant selon la valeur de leur attribut nom.
 </p>
 <p>
  Elliotte Rusty Harold a publié  une

@@ -1,5 +1,5 @@
 ---
-title: "Contenu suppplémentaire"
+title: "Contenu supplémentaire"
 weight: 20
 bookCollapseSection: true
 ---

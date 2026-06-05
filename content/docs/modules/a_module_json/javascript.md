@@ -5,9 +5,9 @@ weight: 36
 
 # Introduction à JavaScript
 
-JavaScript est un langage de programmation dynamique principalement utilisé pour le développement web côté client, mais aussi côté serveur grâce à des environnements comme Node.js. Si vous êtes déjà familiers avec Java, un langage statiquement typé et orienté objet classique, JavaScript peut sembler au premier abord déroutant en raison de son typage dynamique et de sa flexibilité extrême. Cependant, de nombreuses concepts que vous connaissez déjà en Java existent sous une forme similaire en JavaScript, même si leur implémentation diffère souvent.
+JavaScript est un langage de programmation dynamique principalement utilisé pour le développement web côté client, mais aussi côté serveur grâce à des environnements comme Node.js. Si vous êtes déjà familiers avec Java, un langage statiquement typé et orienté objet classique, JavaScript peut sembler au premier abord déroutant en raison de son typage dynamique et de sa flexibilité extrême. Cependant, de nombreux concepts que vous connaissez déjà en Java existent sous une forme similaire en JavaScript, même si leur implémentation diffère souvent.
 
-En JavaScript, la déclaration de variables se fait principalement avec deux mots-clés : let et const.La différence principale entre let et const réside dans la réassignation : let permet de modifier la valeur de la variable après sa déclaration, tandis que const interdit toute réassignation (bien que pour les objets, les propriétés internes restent modifiables). Il est recommandé d'utiliser const par défaut et let uniquement quand une réassignation est nécessaire, en évitant complètement var dans le code moderne.
+En JavaScript, la déclaration de variables se fait principalement avec deux mots-clés : let et const. La différence principale entre let et const réside dans la réassignation : let permet de modifier la valeur de la variable après sa déclaration, tandis que const interdit toute réassignation (bien que pour les objets, les propriétés internes restent modifiables). Il est recommandé d'utiliser const par défaut et let uniquement quand une réassignation est nécessaire, en évitant complètement var dans le code moderne.
 
 Voici un exemple illustrant ces différences. La fonction `console.log` est équivalente à
 `System.out.println` en Java.
@@ -106,7 +106,7 @@ try {
 }
 ```
 
-Une autre exemple courant avec une fonction.
+Un autre exemple courant avec une fonction.
 
 ```javascript
 function diviser(a, b) {

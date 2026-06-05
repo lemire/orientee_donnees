@@ -43,7 +43,7 @@ Cette fois, si vous ouvrez le document « test.xml », vous devriez voir le text
 
 Dans les exemples que nous allons proposer, nous omettons les éléments « html » et « body » par souci de simplicité. La présence de ces éléments n'est pas nécessaire et n'est utile que pour afficher le résultat dans un navigateur. À vous de les ajouter si vous désirez afficher le résultat.
 
-**Pour résumer, chaque fois que le processeur XSLT rencontre un élément « facture », il applique le modèle qui se trouve dans l'élément « `<xsl:template match="facture">` ».** Notez que si l'élément « facture » contient lui-même des éléments, ils ne sont pas automatiquement visités par le processeur XSLT. Ce dernier considère que dès qu'un modèle est appliqué à un élément, il peut alors parcourir le reste du document sans se soucier du contenu de cet élément qui est maintenant « couvert », à moins qu'on lui dise explicitement de traiter les noeuds-enfants avec une instruction comme apply-template. Le XSLT est très bête: il part de la racine et applique les règles à ce qu'il rencontre.
+**Pour résumer, chaque fois que le processeur XSLT rencontre un élément « facture », il applique le modèle qui se trouve dans l'élément « `<xsl:template match="facture">` ».** Notez que si l'élément « facture » contient lui-même des éléments, ils ne sont pas automatiquement visités par le processeur XSLT. Ce dernier considère que dès qu'un modèle est appliqué à un élément, il peut alors parcourir le reste du document sans se soucier du contenu de cet élément qui est maintenant « couvert », à moins qu'on lui dise explicitement de traiter les noeuds-enfants avec une instruction comme apply-templates. Le XSLT est très bête: il part de la racine et applique les règles à ce qu'il rencontre.
 
 ## « Éléments xsl:value-of »
 
@@ -143,11 +143,11 @@ Nous avons déjà vu que « * » et « @* » permettaient de sélectionner les s
 La première règle (ou instruction) indique que si on rencontre un élément ou la racine du document, on applique tout simplement les autres instructions aux noeuds que l'on y trouve. La seconde règle indique que si on trouve un noeud de texte ou un attribut, on retourne tout simplement la valeur textuelle du noeud. Finalement, la dernière règle indique que si on trouve un commentaire ou une instruction de traitement, on n'en traite pas le contenu.
 Un processeur XSLT représente un document XML comme un arbre et tente de le visiter de la racine vers les feuilles. Lorsqu'il rencontre un modèle pour un nœud, il l'applique et ne poursuit pas automatiquement la visite des nœuds qui y sont contenus, à moins de rencontrer un élément « xsl:apply-templates ».
 
-Par défaut, un traitement XSLT va extraire le contenu textuel du document XML provenant des noeuds de texte et des attributs. Le produit final sera un aggrégat de tout le contenu textuel ainsi extrait.
+Par défaut, un traitement XSLT va extraire le contenu textuel du document XML provenant des noeuds de texte et des attributs. Le produit final sera un agrégat de tout le contenu textuel ainsi extrait.
 
 Récapitulons. Le XSLT fait ce qu'on lui dit de faire, rien de plus, rien de moins. Il commence avec la racine du document et applique les règles. Il est muni de règles de base lui indiquant quoi faire avec des éléments, des attributs, etc. Vous pouvez ajouter de nouvelles règles ou remplacer les règles de base.
 
-Si vous utilisez la règle suivant, indiquant au XSLT de ne rien faire à partir de la racine, alors il ne fera rien (rien ne sera généré).
+Si vous utilisez la règle suivante, indiquant au XSLT de ne rien faire à partir de la racine, alors il ne fera rien (rien ne sera généré).
 
 ```xml
 <xsl:template match="/">
@@ -166,13 +166,13 @@ Le XSLT applique de préférence vos règles plutôt que celles par défaut. Ain
 
 Cela illustre que le XSLT ne génère pas nécessairement du XML valide. Certains moteurs XSLT s'attendent à obtenir du XML ou du HTML (si l'élément-racine est nommé en conséquence) et peuvent générer une erreur dans le cas contraire. Certains moteurs peuvent même modifier le résultat de manière à ce qu'il s'agisse de XML ou du HTML valide. D'autres processeurs vont refuser de produire autre chose que du XML ou du HTML, à moins d'indication contraire.
 
-Les règles s'appliquent selon un ordre de priorité. Vos règles s'appliquent avant celles par défaut. Les règles spécifiques (nommant un élément XML par son nom) s'appliquent avant les règles génériques (par exemple, celles spécifiant le type de noeud comme « * »). Une disjonction ( « | ») est traitée comme un ensemble de règles distinctes. Si deux règles ont une priorité égale, le moteur XSLT peut choisir arbitrairement un des deux règles ou générer une erreur.
+Les règles s'appliquent selon un ordre de priorité. Vos règles s'appliquent avant celles par défaut. Les règles spécifiques (nommant un élément XML par son nom) s'appliquent avant les règles génériques (par exemple, celles spécifiant le type de noeud comme « * »). Une disjonction ( « | ») est traitée comme un ensemble de règles distinctes. Si deux règles ont une priorité égale, le moteur XSLT peut choisir arbitrairement une des deux règles ou générer une erreur.
 
 ## Un exemple
 
 Dans cette section, nous illustrons le fonctionnement du XSLT avec un exemple pratique montrant l'application des règles de transformation sur un document XML simple.
 
-Pour illustrer le fonctionnement du XSLT, prenons un example. Soit ce document XML:
+Pour illustrer le fonctionnement du XSLT, prenons un exemple. Soit ce document XML:
 
 ```xml
 <racine>

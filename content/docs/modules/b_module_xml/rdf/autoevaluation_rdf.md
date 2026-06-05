@@ -40,14 +40,6 @@ weight: 30
   Choisissez toutes les réponses qui s'appliquent, puis
         appuyez sur le bouton « Vérifier ma réponse ».
  </p>
- <span style="position: absolute;left: -43123px;">
-  We've collated all the
-        most relevant information on free spins -
-  <a href="https://slots-online-canada.ca/casino-bonuses/free-spins/">
-   https://slots-online-canada.ca/casino-bonuses/free-spins/
-  </a>
-  no deposit offers.
- </span>
  <form id="idp140346360250720">
   <ol>
    <li>

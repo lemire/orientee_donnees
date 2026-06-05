@@ -6,7 +6,7 @@ weight: 30
 
 ### Expression XPath avec « | »
 
-Parfois, nous voulons sélectionner plusieurs noms d'éléments; nous pouvons obtenir ce résultat avec le symbole « | » (barre verticale) qui signifie « union ». Par exemple, le modèle qui suit s'applique à tous les éléments « facture » et « montant », et seulement à ces éléments est facture|montant.
+Parfois, nous voulons sélectionner plusieurs noms d'éléments; nous pouvons obtenir ce résultat avec le symbole « | » (barre verticale) qui signifie « union ». Par exemple, le modèle « facture|montant » s'applique à tous les éléments « facture » et « montant », et seulement à ces éléments.
 
 ### Expression XPath pour le nom d'un élément
 
@@ -83,7 +83,7 @@ La fonction XPath « sum » nous permet de calculer la somme des montants sans e
 </xsl:stylesheet>
 ```
 
-Comme en Java, on a aussi les fonctions « floor », « ceiling », « mod » et « round ». On peut aussi utiliser les paranthèses dans toutes expressions XPath : « (5 + 2) div 2 ».
+Comme en Java, on a aussi les fonctions « floor », « ceiling », « mod » et « round ». On peut aussi utiliser les parenthèses dans toutes les expressions XPath : « (5 + 2) div 2 ».
 
 La fonction « count » compte le nombre de valeurs. On obtient la moyenne en divisant la somme par le compte (sum(x)/count(x)). Et ainsi de suite.
 
@@ -99,7 +99,7 @@ On peut tester une chaîne pour la présence d'une sous-chaîne avec la fonction
 
 ### Tester le contenu des chaînes de caractères
 
-Nous avons vu comment comparer le nom ou le contenu d'un élément avec une chaîne de caractères donnée, mais il arrive qu'on veuille faire des comparaisons plus fine. Heureusement, il existe des fonctions XPath permettant d'analyser le contenu des chaînes. Par exemple, « starts-with(@toto,"a") » renvoie la valeur vraie si et seulement si la valeur de l'attribut « toto » débute avec la lettre « a ». L'expression « ends-with(@toto,"a") » est vraie si et seulement si la valeur de l'attribut « toto » se termine avec la lettre « a ». De la même façon, « contains(@toto,"abc") » renvoie la valeur vraie si et seulement si la valeur de l'attribut « toto » contient la chaîne « abc » (comme dans « j'ai un abc »).
+Nous avons vu comment comparer le nom ou le contenu d'un élément avec une chaîne de caractères donnée, mais il arrive qu'on veuille faire des comparaisons plus fines. Heureusement, il existe des fonctions XPath permettant d'analyser le contenu des chaînes. Par exemple, « starts-with(@toto,"a") » renvoie la valeur vraie si et seulement si la valeur de l'attribut « toto » débute avec la lettre « a ». L'expression « ends-with(@toto,"a") » est vraie si et seulement si la valeur de l'attribut « toto » se termine avec la lettre « a ». De la même façon, « contains(@toto,"abc") » renvoie la valeur vraie si et seulement si la valeur de l'attribut « toto » contient la chaîne « abc » (comme dans « j'ai un abc »).
 
 ### Accès aux éléments d'un ensemble d'éléments
 
@@ -121,7 +121,7 @@ Maintenant, si nous voulons obtenir le numéro de téléphone du deuxième clien
 
 Notez que l'expression « /listedeclients/client[0] » n'est pas valable, car la numérotation des éléments d'une séquence débute à 1 en XPath, contrairement à Java et à C/C++.
 
-Notez aussi qu'on aurait pu obtenir le même résultat avec l'expression XPath « (/listedeclients/client/@telephone)[2] », car « /listedeclients/client/@telephone » est aussi une séquence (mais une séquence d'attributs). Nous devons toutefois ajouter une parenthèse pour marquer la priorité des opérations. En effet, la syntaxe « a/b[2] » signifie : deuxième nœud de type « b » dans les nœuds de type « b ». Comme il ne peut y avoir qu'un seul attribut d'un type donné dans un élément, la syntaxe « a/@b[2] » donnera toujours un ensemble vide. D'un autre côté, la syntaxe « (a/b)[2] » signifie : deuxième nœud de type « b » dans la séquence des nœuds de type « b » contenus dans les nœuds de type « a ». De la même manière, « //b[2] » donne la liste de tous les éléments b « b » dans le document apparaissant deuxième dans la liste des éléments contenus dans un autre élément, alors que « (//b)[2] » est le deuxième élément « b » rencontré dans tout le document.
+Notez aussi qu'on aurait pu obtenir le même résultat avec l'expression XPath « (/listedeclients/client/@telephone)[2] », car « /listedeclients/client/@telephone » est aussi une séquence (mais une séquence d'attributs). Nous devons toutefois ajouter une parenthèse pour marquer la priorité des opérations. En effet, la syntaxe « a/b[2] » signifie : deuxième nœud de type « b » dans les nœuds de type « b ». Comme il ne peut y avoir qu'un seul attribut d'un type donné dans un élément, la syntaxe « a/@b[2] » donnera toujours un ensemble vide. D'un autre côté, la syntaxe « (a/b)[2] » signifie : deuxième nœud de type « b » dans la séquence des nœuds de type « b » contenus dans les nœuds de type « a ». De la même manière, « //b[2] » donne la liste de tous les éléments « b » dans le document apparaissant deuxième dans la liste des éléments contenus dans un autre élément, alors que « (//b)[2] » est le deuxième élément « b » rencontré dans tout le document.
 
 Vous croyez avoir bien compris ? Quelle est la différence entre « (b)[2] » et « b[2] » ? Quelle est la différence entre « (b[2])/a » et « b[2]/a » ?
 

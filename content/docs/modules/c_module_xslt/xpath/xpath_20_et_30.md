@@ -24,7 +24,7 @@ weight: 60
         avg, max, min, etc. Alors que
         XPath 1.0 ne traite que des nombres, des chaînes de caractères, des valeurs booléennes et des ensembles de nœuds, XPath 2.0
         introduit la notion de séquence et plusieurs autres types
-        de données pour noter les notes, la durée, les entiers,
+        de données pour noter les dates, la durée, les entiers,
         les nombres à virgule flottante, etc. XPath 2.0 supporte aussi
         les
   <a href="https://www.w3.org/TR/xpath-functions/#string.match" shape="rect">
@@ -34,12 +34,12 @@ weight: 60
         une fonction fn:doc() équivalente à la fonction « document » du XSLT.
  </p>
  <p>
-  XPath 2.0 comprend maintenant un syntaxe if/then/else comme dans cet exemple :
+  XPath 2.0 comprend maintenant une syntaxe if/then/else comme dans cet exemple :
         « if ( @sexe eq 'm' ) then 'Monsieur' else 'Madame' ». On peut aussi utiliser des boucles :
         « for $i in //etudiant return $i/note ». On peut vérifier si au moins un (some) ou
         tous (every) les éléments d'une séquence satisfont une condition: « every $i in //etudiant
         satisfies $i/note &gt; 0 » ou « some $i in //etudiant
-        satisfies $i/note &lt; 100 ». En somme, XPath 2.0 permet d'effectuer plusieurs traitement qui n'étaient possible
+        satisfies $i/note &lt; 100 ». En somme, XPath 2.0 permet d'effectuer plusieurs traitements qui n'étaient possibles
         qu'avec des instructions XSLT auparavant.
  </p>
  <p>

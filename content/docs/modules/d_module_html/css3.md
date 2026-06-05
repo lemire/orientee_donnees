@@ -15,7 +15,7 @@ Il arrive qu’une image ou qu’un texte excède la taille de l’élément dan
 
 ### Encodage des caractères
 
-Il peut être utile de préciser l’encodage utilisé dans le fichier CSS en plaçant au tout premier ligne :
+Il peut être utile de préciser l’encodage utilisé dans le fichier CSS en plaçant à la toute première ligne :
 
 ```css
 @charset "UTF-8";

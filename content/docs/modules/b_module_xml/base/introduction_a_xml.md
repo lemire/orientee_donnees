@@ -146,5 +146,5 @@ weight: 10
  </li>
 </ul>
 <p>
- Le XML n'est pas une nouveauté scientifique. Le XML représente, par contre, un pas en avant parce que c'est un des rares méta-langages universel. Le XML est aussi fondé sur des principes importants comme la pérennité, la simplicité, etc. qui ne sont pas toujours présents en technologie de l'information.
+ Le XML n'est pas une nouveauté scientifique. Le XML représente, par contre, un pas en avant parce que c'est un des rares méta-langages universels. Le XML est aussi fondé sur des principes importants comme la pérennité, la simplicité, etc. qui ne sont pas toujours présents en technologie de l'information.
 </p>

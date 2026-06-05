@@ -8,7 +8,7 @@ title: "Accueil"
 
 
 
-Bienvenue ! Mon nom est [Daniel Lemire](http://lemire.me/fr/). Je travaille comme professeur et chercheur en informatique. Je suis notamment l'instigateur et le principal auteur du parseur JSON le plus rapide au monde (simdjson),
+Bienvenue ! Mon nom est [Daniel Lemire](http://lemire.me/fr/). Je travaille comme professeur et chercheur en informatique. Je suis notamment l'instigateur et le principal auteur du parseur JSON le plus rapide au monde (simdjson) ;
 nous verrons dans ce cours en quoi consiste JSON.
 
 
@@ -22,7 +22,7 @@ Les formats de données structurées comme XML, HTML, JSON, YAML et RDF jouent u
 
 ### Des formats textuels
 
-On distingue généralement deux types de formats en informatique. Les formats binaires peuvent contenir des séquences de données arbitraires. Il sont très utilisés pour le contenu vidéo et les images. Tous les formats textuels partage la caractéristique d'être une chaîne de caractère. Peu importe le format, s'il est textuel, il est possible de l'ouvrir dans éditeur de texte. Le code informatique (Java, Python, etc.) est généralement stocké dans dans un format textuel.
+On distingue généralement deux types de formats en informatique. Les formats binaires peuvent contenir des séquences de données arbitraires. Ils sont très utilisés pour le contenu vidéo et les images. Tous les formats textuels partagent la caractéristique d'être une chaîne de caractères. Peu importe le format, s'il est textuel, il est possible de l'ouvrir dans un éditeur de texte. Le code informatique (Java, Python, etc.) est généralement stocké dans un format textuel.
 
 Les formats les plus populaires en ligne (XML, JSON, etc.) sont textuels. L'Internet repose sur les formats texte. Nos pages web sont en HTML. Le code qui s'y exécute est du JavaScript, envoyé sous forme de texte (code source JavaScript), et non sous forme de code déjà analysé. Vos e-mails, y compris leurs pièces jointes, sont envoyés sous forme de texte (vos fichiers binaires sont transmis en texte). Cela ne s'arrête pas là. Le code Python qui fait tourner votre serveur est stocké sous forme de texte. Il interroge les données en envoyant des requêtes textuelles. Il reçoit souvent la réponse sous forme de texte, qui doit ensuite être décodé. JSON est aujourd'hui le format universel d'échange de données en ligne. Nous partageons des cartes en JSON (GeoJSON). Pourquoi le texte est-il dominant?
 
@@ -32,7 +32,7 @@ Les formats les plus populaires en ligne (XML, JSON, etc.) sont textuels. L'Inte
 
 ### XML et HTML
 
-XML et HTML sont fondamentalement basés sur une structure arborescente de nœuds. Un document XML commence par un élément racine unique, à partir duquel se ramifient des éléments enfants, formant une hiérarchie stricte similaire à un arbre. Chaque nœud peut contenir du texte, des attributs ou d'autres nœuds, ce qui facilite la représentation de données ordonnées et imbriquées. HTML suit le même principe, en tant que variante d'XML appliquée au web, où la page est vue comme un arbre  accessible et manipulable par les navigateurs.
+XML et HTML sont fondamentalement basés sur une structure arborescente de nœuds. Un document XML commence par un élément racine unique, à partir duquel se ramifient des éléments enfants, formant une hiérarchie stricte similaire à un arbre. Chaque nœud peut contenir du texte, des attributs ou d'autres nœuds, ce qui facilite la représentation de données ordonnées et imbriquées. HTML suit le même principe arborescent : une page web est vue comme un arbre de nœuds (le DOM), accessible et manipulable par les navigateurs. HTML et XML sont des formats apparentés, sans qu'HTML soit pour autant un dialecte strict de XML.
 
 **Exemple. XML**
 ```xml
@@ -133,7 +133,7 @@ hobbies:
 
 ### RDF
 
-RDF, quant à lui, adopte une modèle de graphe basé sur des relations. Il repose sur des triples (sujet-prédicat-objet), où chaque affirmation lie deux entités via une relation dirigée. Cela forme un graphe potentiellement non arborescent, avec des connexions multiples et cycliques possibles, idéal pour exprimer des connaissances sémantiques interconnectées.
+RDF, quant à lui, adopte un modèle de graphe basé sur des relations. Il repose sur des triples (sujet-prédicat-objet), où chaque affirmation lie deux entités via une relation dirigée. Cela forme un graphe potentiellement non arborescent, avec des connexions multiples et cycliques possibles, idéal pour exprimer des connaissances sémantiques interconnectées.
 
 **Exemple. RDF/XML**
 ```xml
@@ -151,7 +151,7 @@ RDF, quant à lui, adopte une modèle de graphe basé sur des relations. Il repo
 </rdf:RDF>
 ```
 
-Les ponts entre ces formats et les structures fondamentales révèlent leurs complémentarités. Par exemple, un arbre XML peut être converti en objet JSON en mappant les éléments enfants à des clés de dictionnaire ou des listes, bien que la perte d'ordre ou d'attributs puisse nécessiter des ajustements. YAML, étant un surensemble humain de JSON, facilite cette transition pour les configurations.
+Les ponts entre ces formats et les structures fondamentales révèlent leurs complémentarités. Par exemple, un arbre XML peut être converti en objet JSON en mappant les éléments enfants à des clés de dictionnaire ou des listes, bien que la perte d'ordre ou d'attributs puisse nécessiter des ajustements. YAML, étant un surensemble de JSON plus lisible par l'humain, facilite cette transition pour les configurations.
 
 Dans ce cours, vous pourrez approfondir votre compréhension de ces notions.
 
@@ -160,7 +160,7 @@ Dans ce cours, vous pourrez approfondir votre compréhension de ces notions.
 
 ## Attention : Java
 
-Avant de suivre ce cours, vous devez normalement avoir un suivi au moins un cours de Java ou l'équivalent.
+Avant de suivre ce cours, vous devez normalement avoir suivi au moins un cours de Java ou l'équivalent.
 Ce cours suppose que vous êtes capable d'utiliser et de compiler un programme Java en ligne de commande. Avant de commencer le cours, créez un fichier intitulé « HelloWorld.java » avec le contenu suivant.
 
 {{<inlineJava path="HelloWorld.java">}}
@@ -220,7 +220,7 @@ Ce cours ne nécessite pas beaucoup de mathématiques en dehors de celles déjà
 
 ## Charge de travail
 
-Le cours exige une charge de travail d'environ 9 heures par semaine pendant 15 semaines. Vous devez donc prévoir une à deux journées pleine à consacrer au cours par semaine.
+Le cours exige une charge de travail d'environ 9 heures par semaine pendant 15 semaines. Vous devez donc prévoir une à deux journées pleines à consacrer au cours par semaine.
 
 Il est de votre responsabilité de vous assurer que vous avez assez de temps dans votre horaire pour réussir ce cours.
 
@@ -230,7 +230,7 @@ L'utilisation de textes ou de travaux écrits par autrui sans attribution, est d
 
 ## L'environnement technologique du cours
 
-Un cours en ligne est beaucoup plus qu'un simple site web. Par exemple, le présent cours comprend des dizaine d'articles, plus d'une centaine de problèmes avec solutions, beaucoup de logiciel, des dizaines d'exemples, et des dizaines de liens vers des sites externes. Le professeur ou une personne tutrice sera également à votre disposition pour répondre à vos questions.
+Un cours en ligne est beaucoup plus qu'un simple site web. Par exemple, le présent cours comprend des dizaines d'articles, plus d'une centaine de problèmes avec solutions, beaucoup de logiciel, des dizaines d'exemples, et des dizaines de liens vers des sites externes. Le professeur ou une personne tutrice sera également à votre disposition pour répondre à vos questions.
 
 **Navigation**
 
@@ -253,7 +253,7 @@ En tout temps, vous pourrez communiquer avec le professeur ou la personne tutric
 
 Il n'y a pas de contact de démarrage dans ce cours contrairement à ce que la documentation de la Télé-université peut suggérer. Vous devez commencer le cours dès que possible.
 
-# Intelligence artificielle
+## Intelligence artificielle
 
 Dans ce cours, l'utilisation de l'intelligence artificielle (Claude, ChatGPT, Copilot, Grok, etc.) est permise et même recommandée (mais optionnelle). Cependant, vous devez l'utiliser de manière responsable :
 
@@ -261,11 +261,11 @@ Dans ce cours, l'utilisation de l'intelligence artificielle (Claude, ChatGPT, Co
 
 - Expliquez votre démarche. Qu'est-ce que vous avez fait avec l'IA ? Nous vous encourageons à inclure des copies des résultats de vos interactions avec l'IA.
 
-- Assurez-vous de bien expliquer vos résultats, en vos propres mots.
+- Assurez-vous de bien expliquer vos résultats, dans vos propres mots.
 
 
 
-# Assistance par intelligence artificielle
+## Assistance par intelligence artificielle
 
 <p>
  Pour bénéficier d’une assistance par intelligence artificielle directement dans l’éditeur, il est possible d’ajouter GitHub Copilot, un outil d’autocomplétion alimenté par l’intelligence artificielle. Voici comment procéder.
@@ -277,8 +277,9 @@ Dans ce cours, l'utilisation de l'intelligence artificielle (Claude, ChatGPT, Co
    le site GitHub
   </a>
   .
+  Vous pouvez en profiter pour consulter
   <a href="https://github.com/lemire">
-   Vous pouvez en profiter vous consulter la page du professeur
+   la page GitHub du professeur
   </a>
   .
  </li>

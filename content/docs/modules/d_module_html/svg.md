@@ -7,10 +7,10 @@ weight: 50
 </h1>
 <div class="">
  <p>
-  Le Scalar Vector Graphics (SVG) est un format d'image vectorielle basé sur le langage XML, permettant de créer des graphiques évolutifs qui s'adaptent sans perte de qualité à toutes les tailles d'écran. Contrairement aux images matricielles (comme PNG ou JPEG), les SVG sont définis par des instructions textuelles décrivant des formes, des couleurs et des transformations, ce qui les rend légers, modifiables et idéaux pour le web. Grâce à leur intégration dans le HTML, les SVG peuvent être manipulés dynamiquement avec CSS ou JavaScript pour créer des animations ou des graphiques interactifs.
+  Le Scalable Vector Graphics (SVG) est un format d'image vectorielle basé sur le langage XML, permettant de créer des graphiques évolutifs qui s'adaptent sans perte de qualité à toutes les tailles d'écran. Contrairement aux images matricielles (comme PNG ou JPEG), les SVG sont définis par des instructions textuelles décrivant des formes, des couleurs et des transformations, ce qui les rend légers, modifiables et idéaux pour le web. Grâce à leur intégration dans le HTML, les SVG peuvent être manipulés dynamiquement avec CSS ou JavaScript pour créer des animations ou des graphiques interactifs.
  </p>
  <p>
-  On utilise de plus en plus la norme Scalar Vector Graphics (SVG)
+  On utilise de plus en plus la norme Scalable Vector Graphics (SVG)
         pour dessiner des figures en utilisant le XML. Vous pouvez déjà utiliser le format
         SVG avec plusieurs logiciels de bureautique ou tout simplement insérer
         un élément « svg » dans un document HTML comme nous allons le voir.

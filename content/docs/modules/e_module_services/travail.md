@@ -8,7 +8,7 @@ weight: 1000
 
 ## Question 1 : Service web REST avec JSON
 
-Dans ce premier travail, vous créerez un service web REST simple en Java qui fournit des données JSON. Vous développerez un serveur qui expose plusieurs endpoints REST pour gérer des ressources.
+Dans cette première question, vous créerez un service web REST simple en Java qui fournit des données JSON. Vous développerez un serveur qui expose plusieurs endpoints REST pour gérer des ressources.
 
 Voici la structure Java de base que vous devez utiliser :
 
@@ -145,4 +145,10 @@ numbers:
   - 3
 ```
 
-Expliquez les erreurs.
+Pour chaque problème, expliquez l'erreur et fournissez la version corrigée du fichier YAML (un fichier valide).
+
+**Ressources** :
+- Spécification YAML : https://yaml.org/spec/1.2.2/
+- Validateur en ligne : https://www.yamllint.com/
+
+**Livrables** : Le fichier YAML corrigé et un document expliquant chacune des erreurs identifiées.

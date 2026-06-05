@@ -51,7 +51,7 @@ et, par conséquent, plusieurs vocabulaires.
 Avant de préciser le lien entre les DTD et les espaces de noms, il importe de comprendre 
 que les espaces de noms furent proposés après l'adoption des DTD. Il y a donc une certaine 
 incompatibilité entre les DTD et les espaces de noms. C'est d'ailleurs l'une des raisons 
-pour laquelle plusieurs organismes, dont OASIS et le W3C, tentent de proposer 
+pour lesquelles plusieurs organismes, dont OASIS et le W3C, tentent de proposer 
 des solutions de remplacement pour les DTD.
 
 Rappelons que l'on donne une DTD à un document, en ajoutant une déclaration de type de document, 
@@ -143,7 +143,7 @@ Ainsi, le document suivant est bien formé, mais il ne respecte pas les conventi
 Avez-vous remarqué que ces derniers documents n'ont pas de déclaration de type de document et ne peuvent 
 donc pas être des documents XML valables dans le cadre d'une validation DTD? La plupart des documents XML utilisant les espaces 
 de noms sont dans ce cas. Si jamais nous avions une déclaration de type de document, il faudrait une 
-DTD qui contiennent les éléments « fact:facture », « fact:montant » et « fact:nom ». 
+DTD qui contienne les éléments « fact:facture », « fact:montant » et « fact:nom ». 
 En d'autres mots, ce nouveau document XML ne peut utiliser la DTD facture décrite plus haut. 
 Nous ne traiterons pas de cette approche ici, car on combine rarement les DTD de la sorte.
 

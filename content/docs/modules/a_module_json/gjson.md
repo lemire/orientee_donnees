@@ -34,7 +34,7 @@ Pour l'inclure dans un projet Maven, ajoutez la dépendance suivante.
 ## Sérialisation et désérialisation de base
 
 La sérialisation convertit un objet Java en chaîne JSON. La désérialisation fait l'inverse. Par défaut, Gson sérialise les champs privés, exclut les champs `transient` et `static`, et omet les valeurs `null`. Les champs `transient`
-en Java ne sont pas destinés à être sauvegardé.
+en Java ne sont pas destinés à être sauvegardés.
 
 Voici un exemple autonome.
 

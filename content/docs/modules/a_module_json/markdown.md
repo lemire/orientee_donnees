@@ -8,7 +8,7 @@ weight: 31
 </script>
 <div class="">
  <p>
-Le MarkDown qui est un format de texte simple permettant un formattage basique des différents éléments. Il facile de produire du MarkDown, à la main ou à l'aide de logiciel.
+Le MarkDown est un format de texte simple permettant un formatage basique des différents éléments. Il est facile de produire du MarkDown, à la main ou à l'aide d'un logiciel.
  </p>
  <p>
   Pour utiliser le Markdown, il suffit de maîtriser quelques règles de base. Par exemple, pour créer un titre, on place un ou plusieurs # avant le texte (comme # Titre pour un titre principal), pour mettre du texte en gras, on entoure le mot avec deux étoiles **gras**, et pour une liste, on commence chaque ligne par un tiret -. Ces conventions permettent de structurer un document sans quitter le clavier pour des outils complexes comme Word. Le texte reste lisible même sans conversion, ce qui est parfait pour les gens qui veulent se concentrer sur le contenu plutôt que sur le formatage.

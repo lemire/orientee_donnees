@@ -30,7 +30,7 @@ La syntaxe de l'élément « xsl:if » est très simple; si la valeur de
    l'expression XPath
    contenue dans l'attribut « test » est vraie, le contenu de
    l'élément « xsl:if » s'applique,
-   sinon, on l'omet. Notez qu'il n'y a pas d'élément « xsl:else »
+   sinon, on l'omet. Notez qu'il n'y a pas d'élément « xsl:else ».
 
 Nous pouvons aussi traiter plusieurs tests dans un seul élément
    « xsl:choose » comme ceci :
@@ -71,7 +71,7 @@ On peut aussi combiner plusieurs tests avec les opérateurs logiques
 
 On peut aussi tester la langue d'un élément avec la fonction
    XPath « lang ». L'expression « count(//p[lang('en')]) »
-   compte le nombre d'élément « p » ayant été déclaré comme contenant
+   compte le nombre d'éléments « p » ayant été déclarés comme contenant
    du
    texte en langue anglaise.
 

@@ -36,7 +36,7 @@ Prenons un exemple classique d'une scène X3D simple affichant un cône rouge to
 </X3D>
 ```
 
-Ce code définit une scène basique dans le profil Immersive de X3D version 4.0. La balise &lt;Background&gt; crée un ciel bleu clair, &lt;Viewpoint&gt; positionne la caméra à 5 unités sur l'axe Z pour voir l'origine, et &lt;DirectionalLight&gt; ajoute un éclairage directionnel par défaut. Le cône est créé via &lt;Cone&gt; avec un rayon de base de 1 et une hauteur de 2, coloré en rouge (&lt;Material diffuseColor='1 0 0'&gt;). Un &lt;TimeSensor&gt; nommé Clock génère un cycle de 4 secondes en boucle, envoyant une fraction (de 0 à 1) via une ROUTE à l'&lt;OrientationInterpolator&gt; SpinPath, qui interpole une rotation autour de l'axe Y de 0 à deux tours complets (en radians). Cette valeur est routée vers la rotation du &lt;Transform&gt; Spinner contenant le cône, produisant une animation de rotation continue. L'ensemble forme un exemple pédagogique démontrant géométrie primitive, apparence, éclairage et animation par interpolation temporelle.
+Ce code définit une scène basique dans le profil Immersive de X3D version 4.0. La balise &lt;Background&gt; crée un ciel bleu clair, &lt;Viewpoint&gt; positionne la caméra à 5 unités sur l'axe Z pour voir l'origine, et &lt;DirectionalLight&gt; ajoute un éclairage directionnel par défaut. Le cône est créé via &lt;Cone&gt; avec un rayon de base de 1 et une hauteur de 2, coloré en rouge (&lt;Material diffuseColor='1 0 0'&gt;). Un &lt;TimeSensor&gt; nommé Clock génère un cycle de 4 secondes en boucle, envoyant une fraction (de 0 à 1) via une ROUTE à l'&lt;OrientationInterpolator&gt; SpinPath, qui interpole une rotation autour de l'axe Y de 0 à un tour complet (en radians). Cette valeur est routée vers la rotation du &lt;Transform&gt; Spinner contenant le cône, produisant une animation de rotation continue. L'ensemble forme un exemple pédagogique démontrant géométrie primitive, apparence, éclairage et animation par interpolation temporelle.
 
 
 <script defer src="https://cdn.jsdelivr.net/npm/x_ite@latest/dist/x_ite.min.js"></script>
@@ -160,7 +160,7 @@ Essayez les exemples suivants.
 </X3D>
 ```
 
-## un cylindre vert et texte en 3D
+## Un cylindre vert et texte en 3D
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

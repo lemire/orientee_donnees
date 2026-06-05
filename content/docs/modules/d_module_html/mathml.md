@@ -358,7 +358,7 @@ weight: 52
     </td>
     <td>
      <code>
-      &lt;mtable&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;
+      &lt;mtable&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;
      </code>
     </td>
     <td>

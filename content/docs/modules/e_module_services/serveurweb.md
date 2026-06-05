@@ -18,7 +18,7 @@ facile d'y arriver avec Java.
 Créez un fichier `ExempleServeurFichiersSimple.java`
 avec le contenu suivant, compilez et exécutez-le dans un dossier. Si le port 8000 n'est pas utilisé sur votre ordinateur
 vous aurez un serveur web fonctionnant sur votre machine. (Dans le cas contraire, remplacez le port 8000 par 8001 ou 8002.) Vous pouvez déposer des fichiers HTML
-dans ce répertoire et les chargez dans votre navigateur.
+dans ce répertoire et les charger dans votre navigateur.
 
 
 ```java {style=github}
@@ -44,7 +44,7 @@ public class ExempleServeurFichiersSimple {
 }
 ```
 
-Essayez de déposer ce dossier un fichier nommé `test.html` avec le contenu suivant.
+Essayez de déposer dans ce dossier un fichier nommé `test.html` avec le contenu suivant.
 
 ```html
 <html>

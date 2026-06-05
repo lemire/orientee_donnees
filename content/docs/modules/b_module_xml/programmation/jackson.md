@@ -305,7 +305,7 @@ public class ExempleJsonProperty {
 
 Certaines propriétés d'un objet Java ne devraient pas être incluses dans la sérialisation JSON, soit pour des raisons de sécurité (mots de passe), soit pour des considérations de performance (données temporaires), soit simplement parce qu'elles sont internes à l'application. L'annotation `@JsonIgnore` permet d'exclure complètement un champ de la sérialisation et désérialisation.
 
-Cette annotation est particulièrement importante pour éviter de exposer des données sensibles dans les réponses JSON des APIs. Elle peut être appliquée sur les champs, getters ou setters, et Jackson l'ignorera complètement lors des opérations de conversion.
+Cette annotation est particulièrement importante pour éviter d'exposer des données sensibles dans les réponses JSON des APIs. Elle peut être appliquée sur les champs, getters ou setters, et Jackson l'ignorera complètement lors des opérations de conversion.
 
 Dans cet exemple, le champ `motDePasse` est marqué avec `@JsonIgnore`, donc il n'apparaîtra pas dans le JSON produit, protégeant ainsi les informations sensibles.
 
@@ -399,6 +399,6 @@ public class App {
 
 <p>
  <a href="https://github.com/lemire/javajackson">
-  Nous vous invitons maintenant à faire une activité practique avec la librairie Java Jackson.
+  Nous vous invitons maintenant à faire une activité pratique avec la librairie Java Jackson.
  </a>  L'activité vous amènera sur la plateforme GitHub et vous devrez utiliser Maven.
 </p>

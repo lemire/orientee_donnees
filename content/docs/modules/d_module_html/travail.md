@@ -7,7 +7,7 @@ weight: 1000
 
 ## Question 1 : Expressions mathématiques avec MathML et CSS
 
-Dans ce premier travail, vous créerez des expressions mathématiques complexes en utilisant MathML (Mathematical Markup Language) et les mettrez en forme avec du CSS spécifique à MathML. Vous développerez une page web présentant différentes formules mathématiques avec une mise en forme élégante.
+Dans cette première question, vous créerez des expressions mathématiques complexes en utilisant MathML (Mathematical Markup Language) et les mettrez en forme avec du CSS spécifique à MathML. Vous développerez une page web présentant différentes formules mathématiques avec une mise en forme élégante.
 
 Voici la structure HTML de base que vous devez utiliser :
 
@@ -91,8 +91,8 @@ Vous devez créer un CSS qui améliore la présentation des expressions MathML a
 
 2. **Fractions (`mfrac`)** :
    - `padding: 2px 0;` pour espacer la fraction
-   - Utiliser `border-top: 1px solid #000;` sur le numérateur pour créer la barre de fraction
-   - `margin: 4px 0;` pour séparer visuellement numérateur et dénominateur
+   - L'élément `<mfrac>` dessine déjà nativement la barre de fraction ; ajustez-la au besoin avec `fraction-bar-thickness` plutôt que d'ajouter une `border` (ce qui produirait une double barre)
+   - `margin: 4px 0;` pour aérer la fraction
 
 3. **Variables (`mi`)** :
    - `font-style: italic;` pour différencier les variables
@@ -117,7 +117,7 @@ Vous devez créer un CSS qui améliore la présentation des expressions MathML a
 
 ## Question 2 : Graphiques vectoriels avec SVG et CSS
 
-Dans ce deuxième travail, vous créerez des graphiques vectoriels complexes en utilisant SVG (Scalable Vector Graphics) et les mettrez en forme avec du CSS spécifique à SVG. Vous développerez une visualisation de données statistiques avec animations et interactions.
+Dans cette deuxième question, vous créerez des graphiques vectoriels complexes en utilisant SVG (Scalable Vector Graphics) et les mettrez en forme avec du CSS spécifique à SVG. Vous développerez une visualisation de données statistiques avec animations et interactions.
 
 Voici la structure HTML de base que vous devez utiliser :
 
@@ -135,6 +135,18 @@ Voici la structure HTML de base que vous devez utiliser :
     <h1>Visualisation de données avec SVG</h1>
 
     <svg width="600" height="400" viewBox="0 0 600 400">
+        <!-- Dégradés réutilisables pour les barres -->
+        <defs>
+            <linearGradient id="degradeBarre" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="#4CAF50"/>
+                <stop offset="100%" stop-color="#81C784"/>
+            </linearGradient>
+            <linearGradient id="degradeBarreSurvol" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="#66BB6A"/>
+                <stop offset="100%" stop-color="#A5D6A7"/>
+            </linearGradient>
+        </defs>
+
         <!-- Titre -->
         <text x="300" y="30" class="title">Ventes mensuelles 2024</text>
 
@@ -182,10 +194,10 @@ Vous devez créer un CSS qui améliore la présentation du graphique SVG avec le
    - `stroke-width: 2;` pour une épaisseur visible
 
 3. **Barres (`.bar`)** :
-   - `fill: linear-gradient(to top, #4CAF50, #81C784);` pour un dégradé vert
+   - En SVG, la propriété `fill` n'accepte **pas** la fonction CSS `linear-gradient()`. Pour obtenir un dégradé, définissez un `<linearGradient>` dans une section `<defs>` du SVG, puis référencez-le : `fill: url(#degradeBarre);`
    - `stroke: #2E7D32;` pour une bordure plus foncée
    - `stroke-width: 1;` pour une bordure fine
-   - Au survol : `fill: linear-gradient(to top, #66BB6A, #A5D6A7);` pour éclaircir
+   - Au survol : référencez un second dégradé plus clair, par exemple `fill: url(#degradeBarreSurvol);`
 
 4. **Étiquettes (`.label`)** :
    - `text-anchor: middle;` pour centrer sous les barres
@@ -195,7 +207,8 @@ Vous devez créer un CSS qui améliore la présentation du graphique SVG avec le
 5. **Points de données (`.data-point`)** :
    - `opacity: 0;` pour les rendre invisibles par défaut
    - `fill: #FF5722;` pour une couleur orange visible
-   - Au survol des barres : `opacity: 1;` avec `transition: opacity 0.3s ease;`
+   - `transition: opacity 0.3s ease;` pour une apparition en douceur
+   - Faites-les apparaître au survol. Notez qu'en CSS il n'existe pas de sélecteur « parent » : comme les barres et les points sont des éléments frères, `.bar:hover .data-point` ne fonctionne pas. Utilisez plutôt un survol du conteneur SVG (`svg:hover .data-point { opacity: 1; }`) ou un sélecteur de frères.
 
 
 **Ressources** :

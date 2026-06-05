@@ -10,7 +10,7 @@ Cette section explique comment contrôler le format de sortie des transformation
 
 Par défaut, le document créé par une transformation XSLT est en XML, sauf si
     le nœud-racine est nommé HTML et qu'il est précédé uniquement d'espaces et
-    de retours de charriot, auquel cas le document créé est un document HTML.
+    de retours de chariot, auquel cas le document créé est un document HTML.
     L'instruction xsl:output permet de spécifier explicitement le format du
     document
     nouvellement créé comme étant en XML, en HTML ou même au format texte (sans

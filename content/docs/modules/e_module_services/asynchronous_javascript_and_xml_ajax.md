@@ -47,7 +47,7 @@ async function maFonction() {
 }
 ```
 
-Un fonction `async` ne bloque pas l'exécution du JavaScript dans la page. Elle est asynchrone.
+Une fonction `async` ne bloque pas l'exécution du JavaScript dans la page. Elle est asynchrone.
 
 Cela permet d'écrire du code asynchrone de manière synchrone, facilitant la lecture et la gestion des erreurs. Sans `async`/`await`, il faudrait utiliser des callbacks ou chaîner des `.then()`, ce qui peut rapidement devenir complexe et difficile à déboguer. L'avantage principal est que le code ressemble à du code synchrone tout en restant non-bloquant, améliorant considérablement la lisibilité et la maintenabilité des applications JavaScript modernes.
 
@@ -125,7 +125,7 @@ Exemples célèbres : Gmail, Google Maps, Facebook (à l’époque), etc.
 </html>
 ```
 
-Dans cet exemple, la fonction `chargeDocument` utilise `XMLHttpRequest` pour effectuer une requête GET asynchrone vers une URI. Lorsque la réponse est reçue (readyState === 4 et status === 200), elle appelle `afficheTitre` qui extrait le contenu de l'élément `<title>` du document XML chargé et l'ajoute dynamiquement à la page.
+Dans cet exemple, la fonction `chargeDocument` utilise `fetch()` pour effectuer une requête GET asynchrone vers une URI. Lorsque la réponse est reçue, elle appelle `afficheTitre` qui extrait le contenu de l'élément `<title>` du document XML chargé et l'ajoute dynamiquement à la page.
 
 ## Exemple avancé : afficher les titres d’un flux RSS (Le Devoir)
 

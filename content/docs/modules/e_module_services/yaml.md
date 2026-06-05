@@ -18,7 +18,7 @@ weight: 90
  Si on compare avec XML, on voit que YAML et XML poursuivent des objectifs opposés bien qu’ils soient tous les deux plus lisibles que JSON brut. XML est un langage de balisage (markup language) avec des balises ouvrantes et fermantes, des attributs, des namespaces, conçu à l’origine pour structurer des documents. Il est extrêmement verbeux et exigeant en syntaxe. YAML, au contraire, n’est pas un langage de balisage mais un format de sérialisation de données. Il cherche la concision et la clarté maximale pour représenter des structures de données (objets, listes, valeurs scalaires) sans aucune balise. Là où XML répète le nom de la balise deux fois (&lt;person&gt;…&lt;/person&gt;), YAML écrit simplement person: suivi de ses propriétés indentées.
 </p>
 <p>
- On peut voir une évolution : XML (années 90-2000) → JSON (années 2010, priorité à la simplicité machine) → YAML (priorité à la lisibilité humaine tout en restant 100 % compatible avec JSON. C’est pourquoi YAML s’est imposé massivement dans les fichiers de configuration (Docker Compose, Kubernetes, GitHub Actions, Ansible, etc.) : il offre le offre un  compromis.
+ On peut voir une évolution : XML (années 90-2000) → JSON (années 2010, priorité à la simplicité machine) → YAML (priorité à la lisibilité humaine tout en restant 100 % compatible avec JSON). C’est pourquoi YAML s’est imposé massivement dans les fichiers de configuration (Docker Compose, Kubernetes, GitHub Actions, Ansible, etc.) : il offre un bon compromis.
 </p>
 <h2>
  Syntaxe
@@ -124,9 +124,9 @@ actif: true          # ou True, TRUE, on, On, yes…
 inactif: false       # ou off, no…
 site_web: null       # ou ~ ou simplement rien → site_web:
 </pre>
-<h2>
+<h3>
  7. Les commentaires
-</h2>
+</h3>
 <pre>
 # Ceci est un commentaire
 nom: Alice    # commentaire en fin de ligne autorisé

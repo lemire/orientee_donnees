@@ -68,7 +68,7 @@ weight: 50
      L'élément « client » qui se trouve dans le contexte actuel.
      <span class="feedback" id="idp140293223501424false" style="display: none;font-weight:bold;">
       <br/>
-      (Réponse incorrecte!) Il pourrait y avoir aucun ou plusieurs éléments « client ».
+      (Réponse incorrecte!) Il pourrait n'y avoir aucun ou plusieurs éléments « client ».
      </span>
     </li>
     <li>
@@ -109,7 +109,7 @@ weight: 50
      L'élément « client » qui se trouve dans le contexte actuel.
      <span class="feedback" id="idp140293223506832false" style="display: none;font-weight:bold;">
       <br/>
-      (Réponse incorrecte!) Il pourrait y avoir aucun ou plusieurs éléments « client ».
+      (Réponse incorrecte!) Il pourrait n'y avoir aucun ou plusieurs éléments « client ».
      </span>
     </li>
     <li>
@@ -564,7 +564,7 @@ weight: 50
      Vrai
      <span class="feedback" id="idp140293223580624false" style="display: none;font-weight:bold;">
       <br/>
-      (Réponse incorrecte!) Non. La première expression est vraie s'il y a un élément p dont le contenu est différent de 'jean', alors que la seconde est vraie seulement si tous les éléments sont est différents de 'jean'.
+      (Réponse incorrecte!) Non. La première expression est vraie s'il y a un élément p dont le contenu est différent de 'jean', alors que la seconde est vraie seulement si tous les éléments sont différents de 'jean'.
      </span>
     </li>
     <li>

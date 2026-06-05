@@ -1,14 +1,14 @@
 ---
-title: "Clés et aggrégation"
+title: "Clés et agrégation"
 weight: 120
 ---
 
-# Clés et aggrégation
+# Clés et agrégation
 
-## Obtenir l'aggrégation avec la fonction « generate-id »
+## Obtenir l'agrégation avec la fonction « generate-id »
 
 Supposons qu'on veuille calculer le total des
-   éléments « quantite », mais en faisant l'aggrégation
+   éléments « quantite », mais en faisant l'agrégation
    pour chaque valeur de l'attribut « type » dans l'exemple suivant.
 
 ```xml
@@ -90,7 +90,7 @@ Pour calculer la somme qu'une seule fois pour chaque valeur de l'attribut
    document XML et permet donc de distinguer les éléments entre eux même
    lorsqu'ils ont le même contenu.
    L'expression
-   « //quantite[@type=current()/@type]) » donne la séquence de tous
+   « //quantite[@type=current()/@type] » donne la séquence de tous
    les éléments quantite ayant un attribut type de même valeur que l'élément
    courant,
    alors que
@@ -104,7 +104,7 @@ Pour calculer la somme qu'une seule fois pour chaque valeur de l'attribut
    avec l'expression
    « generate-id((//quantite[@type=current()/@type])[last()])
    = generate-id(.) ». En utilisant cette astuce, on peut obtenir
-   l'aggrégation
+   l'agrégation
    souhaitée avec le programme XSLT suivant où l'on fait la somme seulement
    pour le premier élément rencontré ayant un certain type :
 ```xml
@@ -202,23 +202,23 @@ On peut trier le nom des clients en utilisant un
 
 ### Un peu plus de performance avec la fonction XSLT « key »
 
-Cette section explore l'utilisation de la fonction XSLT « key » pour améliorer les performances lors de l'aggrégation de données.
+Cette section explore l'utilisation de la fonction XSLT « key » pour améliorer les performances lors de l'agrégation de données.
 
 Le problème avec l'utilisation d'expressions XPath telles que
    //client[nom=current()/nom] est qu'elles peuvent s'avérer coûteuses en temps
-   de calcul si on les utilisent à répétition. Afin d'accélérer les choses
+   de calcul si on les utilise à répétition. Afin d'accélérer les choses
    et simplifier un peu nos programmes, on peut créer un
 [tableau associatif](http://fr.wikipedia.org/wiki/Table_associative)
 avec l'élément xsl:key et sa
    fonction correspondante key. Un tableau
-   associatif est simplement une structure de donnée qui associe à chaque clef
-   ou au plusieurs
+   associatif est simplement une structure de données qui associe à chaque clef
+   une ou plusieurs
    valeurs. Puisque ce tableau est construit une seule fois lorsque le
    processeur rencontre
    l'élément xsl:key, le processeur XSLT n'a pas à visiter les nœuds du
    document plusieurs fois.
    L'élément xsl:key comprend trois attributs incluant le nom du tableau
-   associative (name),
+   associatif (name),
    les clefs à inclure (use) et les nœuds à traiter (match). L'instruction
    `<xsl:key name="montableau" match="client" use="nom"/>` va créer un
    tableau associatif

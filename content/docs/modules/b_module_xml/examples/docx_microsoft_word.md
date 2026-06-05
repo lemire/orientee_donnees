@@ -254,7 +254,9 @@ Pour utiliser Docx4j dans un projet Maven, ajoutez la dépendance suivante dans 
 
 ### Création d'un document Word
 
-La bibliothèque utilise les mêmes principes que les autres librairies Open XML : elle traite les fichiers .docx comme des archives ZIP contenant des fichiers XML structurés.## Création d'un document Microsoft Word (docx)
+La bibliothèque utilise les mêmes principes que les autres librairies Open XML : elle traite les fichiers .docx comme des archives ZIP contenant des fichiers XML structurés.
+
+### Création d'un document Microsoft Word (docx)
 
 Voici un exemple de code Java utilisant la bibliothèque Docx4j pour créer un document Word avec un titre, un paragraphe formaté et une liste :
 

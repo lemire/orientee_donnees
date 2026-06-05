@@ -586,14 +586,14 @@ weight: 20
     par le XML.
     Nous pourrions très bien nous en tenir au tableau sujet/verbe/complément ou
     utiliser une
-    autre syntaxe. Un syntaxe plus populaire que le XML est sans doute celle
+    autre syntaxe. Une syntaxe plus populaire que le XML est sans doute celle
     décrite par la
  <a href="http://www.ietf.org/rfc/rfc2731.txt">
   RFC 2731
  </a>
  .
     Elle est facile à comprendre: il suffit d'utiliser des éléments meta avec
-    les attributs name et content. La convention est que si l'attribute débute
+    les attributs name et content. La convention est que si l'attribut débute
     par le préfixe « DC.» ce qui suit est une information Dublin Core. Voici un
     exemple:
 </p>
@@ -688,7 +688,7 @@ weight: 20
  , qui
     utilise le préfixe « http://web.resource.org/cc/ ». Cette norme
     définit
-    une classe « Work » (travail, en anglais, ici au sens d'oœuvre),
+    une classe « Work » (travail, en anglais, ici au sens d'œuvre),
     mais emprunte pratiquement tout le reste
     à
  <i>
@@ -968,7 +968,7 @@ weight: 20
    La licence pose comme condition.
   </b>
   <i>
-   Creatives Commons
+   Creative Commons
   </i>
   définit
         quatre URI pouvant être utilisés

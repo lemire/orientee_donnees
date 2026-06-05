@@ -12,7 +12,7 @@ Pour démontrer l'utilité de votre travail, vous utiliserez le fichier XML suiv
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<bibliotheque xmlns="http://www.example.com/biblio">
+<bibliotheque>
   <livre id="1" categorie="roman">
     <titre>Le Petit Prince</titre>
     <auteur>Antoine de Saint-Exupéry</auteur>
@@ -53,9 +53,9 @@ Pour démontrer l'utilité de votre travail, vous utiliserez le fichier XML suiv
 
 Votre application devra  implémenter les fonctionnalités suivantes :
 1. Charger le fichier XML fourni et afficher le nombre total de livres.
-2. Utiliser XPath pour extraire et afficher tous les titres de livres de catégorie "roman".
+2. Extraire et afficher tous les titres de livres de catégorie "roman" (vous pouvez utiliser DOM ou XPath).
 3. Calculer et afficher des statistiques : nombre total de livres, valeur totale du stock (prix × stock), moyenne des prix.
-5. Valider le document XML par rapport à une DTD simple que vous créerez.
+4. Valider le document XML par rapport à une DTD simple que vous créerez.
 
 Votre application devra pouvoir charger ce fichier, effectuer les opérations demandées, et produire des résultats cohérents.
 
@@ -64,7 +64,7 @@ Votre application devra pouvoir charger ce fichier, effectuer les opérations de
 
 ## Question 2 : Conversion et traitement de données avec Jackson
 
-Dans ce troisième travail, vous utiliserez la bibliothèque Jackson pour créer une application Java capable de convertir et traiter des données entre les formats JSON et XML. Vous développerez un système de gestion d'inventaire de produits qui peut importer des données depuis des fichiers JSON ou XML, effectuer des opérations de traitement, et exporter les résultats dans les deux formats.
+Dans cette deuxième question, vous utiliserez la bibliothèque Jackson pour créer une application Java capable de convertir et traiter des données entre les formats JSON et XML. Vous développerez un système de gestion d'inventaire de produits qui peut importer des données depuis des fichiers JSON ou XML, effectuer des opérations de traitement, et exporter les résultats dans les deux formats.
 
 Pour votre projet, vous travaillerez avec les données JSON suivantes représentant un inventaire de produits :
 
@@ -115,7 +115,7 @@ Votre application devra impérativement implémenter les fonctionnalités suivan
 1. Charger les données depuis un fichier JSON et les convertir en objets Java structurés.
 2. Convertir les données Java en format XML et sauvegarder dans un fichier "inventaire.xml".
 3. Charger les données depuis le fichier XML généré et les reconvertir en objets Java.
-6. Générer un rapport JSON final avec les statistiques complètes de l'inventaire.
+4. Générer un rapport JSON final avec les statistiques complètes de l'inventaire.
 
 **Ressources** : Consultez la documentation officielle de Jackson : https://github.com/FasterXML/jackson
 
@@ -123,7 +123,7 @@ Votre application devra impérativement implémenter les fonctionnalités suivan
 
 ## Question 3 : Exécuteur SPARQL avec Apache Jena
 
-Dans ce quatrième travail, vous utiliserez l'exécuteur SPARQL du projet JavaRDF disponible sur GitHub (https://github.com/lemire/javardf). 
+Dans cette troisième question, vous utiliserez l'exécuteur SPARQL du projet JavaRDF disponible sur GitHub (https://github.com/lemire/javardf). 
 Voici un exemple de données RDF/XML que vous utiliserez (plus riche que l'exemple du projet de base) :
 
 ```xml

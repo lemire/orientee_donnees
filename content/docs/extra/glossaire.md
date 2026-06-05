@@ -15,7 +15,7 @@ Un appel d’entité est une suite de caractères qui commence par une esperluet
 | `&amp;amp;` | `&` |
 | `&amp;gt;` | `>` |
 | `&amp;quot;` | `"` |
-| `&amp;apos;` | `’` |
+| `&amp;apos;` | `'` |
 
 
 **Attribut**
@@ -38,7 +38,7 @@ Commence par `<!--` et se termine par `-->`. On ne peut pas avoir deux tirets co
 
 **Déclaration de type de document (DOCTYPE)**
 
-Une déclaration DOCTYPE a la forme `<!DOCTYPE racine SYSTEM "URL">`. Elle indique le nom de l’élément racine attendu et (optionnellement) l’emplacement du DTD.
+Une déclaration DOCTYPE a la forme `<!DOCTYPE racine SYSTEM "URL">`. Elle indique le nom de l’élément racine attendu et (optionnellement) l’emplacement de la DTD.
 
 ---
 
@@ -302,7 +302,7 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
  <strong>
   DTD (
   <i>
-   Définition de Type Document
+   Définition de Type de Document
   </i>
   ) :
  </strong>
@@ -447,7 +447,7 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
  <br class="autobr"/>
  L’instruction de traitement ne fait rien en
  <br class="autobr"/>
- soit, mais peut indiquer aux programmes comment obtenir un
+ soi, mais peut indiquer aux programmes comment obtenir un
  <br class="autobr"/>
  certain résultat. Une instruction de traitement débute par
     « &lt; ? »
@@ -588,7 +588,7 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
  <strong>
   Valide :
  </strong>
- : Un document est valide s’il répond à
+ Un document est valide s’il répond à
     certains critères
  <br class="autobr"/>
  de base de l’application XML. Un document XML qui est bien formé, qui en
@@ -624,7 +624,7 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
   XML :
  </strong>
  <i>
-  eXtensible MarkupLanguage
+  eXtensible Markup Language
  </i>
  .
 </p>

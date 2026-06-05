@@ -5,7 +5,7 @@ weight: 30
 <h1>
  Laboratoire XQuery avec Python (optionnel)
 </h1>
-Rendez vous sur le site
+Rendez-vous sur le site
 <a href="https://github.com/lemire/xquerypy">
  xquerypy
 </a>

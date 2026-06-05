@@ -167,7 +167,7 @@ Essayez de remplacer le GeoJSON dans l'application par l'un des exemples suivant
     "name": "Centre-ville de Montréal"
   }
 }
-````
+```
 
 
 ## Montréal (Vieux Port)
@@ -197,7 +197,7 @@ Essayez de remplacer le GeoJSON dans l'application par l'un des exemples suivant
 ## Activité suggérée (Java)
 
 
-Nous vous invitons à [compiler et excéuter une application Java](https://github.com/lemire/java_province) qui produit une carte interactive du Canada avec GeoJSON.
+Nous vous invitons à [compiler et exécuter une application Java](https://github.com/lemire/java_province) qui produit une carte interactive du Canada avec GeoJSON.
 
 ## Afficher du GeoJSON en ligne avec Leaflet
 

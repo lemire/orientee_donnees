@@ -79,7 +79,7 @@ weight: 70
      Faux.
      <span class="feedback" id="idp140504183008112true" style="display: none;font-weight:bold;">
       <br/>
-      (Réponse correcte!)  Bien que compatible avec la norme XML, 
+      (Réponse correcte!)  Bien que compatibles avec la norme XML, 
  les espaces de noms n'en font pas partie.
      </span>
     </li>
@@ -88,7 +88,7 @@ weight: 70
      Vrai.
      <span class="feedback" id="idp140504183009616false" style="display: none;font-weight:bold;">
       <br/>
-      (Réponse incorrecte!)  Bien que compatible avec la norme 1.0, 
+      (Réponse incorrecte!)  Bien que compatibles avec la norme 1.0, 
  les espaces de noms furent introduits plus tard, environ un an après.
      </span>
     </li>

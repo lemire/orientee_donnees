@@ -554,7 +554,7 @@ noter le titre du tableau :
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">head</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">body</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">table</span> <span style="color:#274796; ">border</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">1</span><span style="color:#0000e6; ">"</span><span style="color:#a65700; ">&gt;</span>
-<span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">caption</span><span style="color:#a65700; ">&gt;</span>Valeur de différents véhicule<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">caption</span><span style="color:#a65700; ">&gt;</span>
+<span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">caption</span><span style="color:#a65700; ">&gt;</span>Valeur de différents véhicules<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">caption</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">tr</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">th</span><span style="color:#a65700; ">&gt;</span>Nom<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">th</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">th</span><span style="color:#a65700; ">&gt;</span>Valeur<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">th</span><span style="color:#a65700; ">&gt;</span>
@@ -595,7 +595,7 @@ Pour des caractères en gras, comme
   , en écrivant &lt;i&gt;&lt;b&gt;maman&lt;/b&gt;&lt;/i&gt; 
 ou bien &lt;b&gt;&lt;i&gt;maman&lt;/i&gt;&lt;/b&gt;. Il est cependant préférable d'utiliser
 « em » (emphase) au lieu de « i » et « strong » (fort) au lieu de « b » : le navigateur choisira alors de 
-rendre le texte dans un élément  « em » avec un italique ou une autre technique appropriée, et de rendre le texte dans un élément « strong » en caractères gras ou une autre technique appropriée. On évite ainsi de confondre la présentation (italique ou gras) et la sémantique (emphase ou point fort). Dans le cas où un terme est défini, vous devriez utiliser un élément « dfn » (définition) comme dans cet exemple: « La &lt;dfn&gt;mort&lt;/dfn&gt; est la fin de la vie ». La plupart des navigateurs afficheront alors le mot « mort » en caratères italiques.
+rendre le texte dans un élément  « em » avec un italique ou une autre technique appropriée, et de rendre le texte dans un élément « strong » en caractères gras ou une autre technique appropriée. On évite ainsi de confondre la présentation (italique ou gras) et la sémantique (emphase ou point fort). Dans le cas où un terme est défini, vous devriez utiliser un élément « dfn » (définition) comme dans cet exemple: « La &lt;dfn&gt;mort&lt;/dfn&gt; est la fin de la vie ». La plupart des navigateurs afficheront alors le mot « mort » en caractères italiques.
  </p>
  <h2>
   Les listes de définitions
@@ -712,12 +712,12 @@ mènera l'utilisateur dans le document « pageweb.html », précisément au ma
 s'il existe, évidemment.
  </p>
  <h2>
-  Les abbréviations
+  Les abréviations
  </h2>
  <p>
-  On utilise parfois des abbréviations dans une page web tel que « etc. » ou « no ». On peut indiquer au navigateur qu'il
-s'agit d'une abbréviation avec un élément abbr comme ceci : « &lt;abbr&gt;no&lt;/abbr&gt; ». Il est parfois utile d'utiliser
-l'attribut « title » pour décrire l'abbréviation en question
+  On utilise parfois des abréviations dans une page web tel que « etc. » ou « no ». On peut indiquer au navigateur qu'il
+s'agit d'une abréviation avec un élément abbr comme ceci : « &lt;abbr&gt;no&lt;/abbr&gt; ». Il est parfois utile d'utiliser
+l'attribut « title » pour décrire l'abréviation en question
 comme dans ceci : « &lt;abbr title="numéro"&gt;no&lt;/abbr&gt; ». De la même façon, on peut noter les acronymes avec un élément « acronym » comme 
 ceci : « &lt;acronym title="Organisation du traité de l'Atlantique Nord"&gt;OTAN&lt;/acronym&gt; ».
  </p>
@@ -725,12 +725,12 @@ ceci : « &lt;acronym title="Organisation du traité de l'Atlantique Nord"&gt;
   Les adresses
  </h2>
  <p>
-  Il est fréquent qu'une page web contienne un adresse. Le XHTML nous permet
+  Il est fréquent qu'une page web contienne une adresse. Le XHTML nous permet
 d'indiquer au navigateur qu'il s'agit bien d'une adresse avec l'élément « address », comme ceci :
 « &lt;address&gt;
 Daniel Lemire&lt;br /&gt;
 100, rue Sherbrooke
-&lt;/address&gt; ». Ici, l'élément « br » sert à noter un retour de charriot.
+&lt;/address&gt; ». Ici, l'élément « br » sert à noter un retour de chariot.
  </p>
  <h2>
   Les indices et exposants
@@ -738,7 +738,7 @@ Daniel Lemire&lt;br /&gt;
  <p>
   Dans un texte, il arrive qu'on veuille utiliser des exposants
 et des indices. Les éléments « sup » et « sub » servent à cette fonction.
-Par exemple, « premier » peut s'écrit « 1
+Par exemple, « premier » peut s'écrire « 1
   <sup>
    er
   </sup>
@@ -874,7 +874,7 @@ Les exemples de sortie à l'écran peuvent s'écrire dans un élément « samp�
   Les citations
  </h2>
  <p>
-  Pour citer quelqu'un, on peut utiliser un élément  « q » lorsqu'il s'agit d'un courte citation au sein d'un paragraphe ou élément  « blockquote » lorsque la citation doit former un court paragraphe. Plusieurs navigateur mettent automatiquement le contenu de l'élément  « q » entre guillemets et le contenu de l'élément  « blockquote » en retrait. Voici un exemple : «
+  Pour citer quelqu'un, on peut utiliser un élément  « q » lorsqu'il s'agit d'une courte citation au sein d'un paragraphe ou élément  « blockquote » lorsque la citation doit former un court paragraphe. Plusieurs navigateurs mettent automatiquement le contenu de l'élément  « q » entre guillemets et le contenu de l'élément  « blockquote » en retrait. Voici un exemple : «
   <span style="color:#a65700; ">
    &lt;
   </span>
@@ -970,7 +970,7 @@ chargera d'afficher les retraits et les ajouts de manière compréhensible.
  </h2>
  <p>
   Le XHTML respecte la spécification XML voulant qu'on indique
-la langue dans laquelle est écrite un texte avec l'attribute « xml:lang ». Cet attribut est optionnel, mais peut 
+la langue dans laquelle est écrit un texte avec l'attribut « xml:lang ». Cet attribut est optionnel, mais peut 
 s'avérer pratique. Dans le cas où un texte 
 en langue étrangère est présent dans un paragraphe, on peut utiliser
 l'élément « span » pour en indiquer la langue.
@@ -1103,8 +1103,8 @@ s'assurer de leur conformité avec les normes (
  </h2>
  <p>
   Il existe des définitions de type de document
-officielle pour le XHML, mais elles sont longues et 
-peu lisible. Sean B. Palmer a écrit une spécification
+officielles pour le XHTML, mais elles sont longues et 
+peu lisibles. Sean B. Palmer a écrit une spécification
 Relax NG pour un sous-ensemble du XHTML que je
 reproduis ici avec permission.
 Je vous invite à vérifier que vous pouvez
@@ -1648,7 +1648,7 @@ que l'on peut le faire d'une page HTML mal formée.
   Activité d'autoévaluation
  </h2>
  <p>
-  Afin de vous assurez d'avoir bien compris les notions présentées dans cette leçon, vous devez créer un document XHTML valable, utilisant les différents éléments que nous avons étudiés. Afin que votre navigateur reconnaisse le document comme étant du XHTML, vous devriez utiliser l'extension « xhtml ». Si vous déposez le fichier sur un serveur web Apache, il peut être nécessaire de créer aussi un fichier « .htaccess » et de le déposer dans
+  Afin de vous assurer d'avoir bien compris les notions présentées dans cette leçon, vous devez créer un document XHTML valable, utilisant les différents éléments que nous avons étudiés. Afin que votre navigateur reconnaisse le document comme étant du XHTML, vous devriez utiliser l'extension « xhtml ». Si vous déposez le fichier sur un serveur web Apache, il peut être nécessaire de créer aussi un fichier « .htaccess » et de le déposer dans
 le même répertoire que votre fichier XHTML afin que le serveur puisse reconnaître
 les fichiers XHTML. Votre fichier « .htaccess » pourrait avoir le contenu suivant :
  </p>

@@ -483,12 +483,12 @@ Voici un diagramme qui résume le modèle de boîte CSS (le diagramme original �
   </g>
   <!-- Text -->
   <text fill="#000000" font-family="Times" font-size="214" font-style="italic" font-weight="normal" text-anchor="start" x="6300" y="3675">
-   margin:bottom
+   margin-bottom
   </text>
   <!-- Text -->
   <g transform="translate(8025,2550) rotate(-90)">
    <text fill="#000000" font-family="Times" font-size="214" font-style="italic" font-weight="normal" text-anchor="start" x="0" y="0">
-    rmargin-right
+    margin-right
    </text>
   </g>
   <!-- Text -->
