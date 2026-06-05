@@ -105,7 +105,7 @@
 &lt;/dd&gt;
 &lt;dt&gt;&lt;strong&gt;Chaînes&lt;/strong&gt;&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;Texte simple ou entre guillemets. Supporte les multi-lignes.&lt;/p&gt;
+&lt;p&gt;Texte simple ou entre guillemets. Prend en charge les multi-lignes.&lt;/p&gt;
 &lt;/dd&gt;
 &lt;dt&gt;&lt;strong&gt;Nombres&lt;/strong&gt;&lt;/dt&gt;
 &lt;dd&gt;
