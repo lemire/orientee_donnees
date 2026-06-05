@@ -77,7 +77,7 @@ p {
 }
 ```
 
-Le CSS supporte de nombreuses unités : px, cm, in, %, em, rem, etc.
+Le CSS prend en charge de nombreuses unités : px, cm, in, %, em, rem, etc.
 
 On peut ensuite définir une marge (margin) autour de tout objet. La marge est une zone transparente où rien ne peut apparaître ; elle ne fait pas partie de l’objet lui-même.
 

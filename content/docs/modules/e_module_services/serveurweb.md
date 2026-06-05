@@ -115,7 +115,7 @@ public class ExempleServeurContext {
                 } else if ("POST".equals(method)) {
                     response = "Hello, World! (via POST)";
                 } else {
-                    response = "Méthode non supportée: " + method;
+                    response = "Méthode non prise en charge: " + method;
                     exchange.sendResponseHeaders(405, response.length()); // Method Not Allowed
                     OutputStream os = exchange.getResponseBody();
                     os.write(response.getBytes());
@@ -177,7 +177,7 @@ serveur.createContext("/api/data", new HttpHandler() {
                 break;
                 
             default:
-                response = "{\"error\": \"Méthode non supportée\"}";
+                response = "{\"error\": \"Méthode non prise en charge\"}";
                 exchange.sendResponseHeaders(405, response.length());
                 break;
         }

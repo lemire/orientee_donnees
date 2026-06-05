@@ -74,7 +74,7 @@ Voyons maintenant un exemple plus complexe de fichier XSLT :
     </xsl:stylesheet>
 ```
 
-Si vous modifiez le fichier « xslt.xml » et que vous ouvrez le fichier « test.xml » dans un navigateur supportant le XSLT, vous devriez voir s'afficher à l'écran la ligne « Ceci est une facture pour Jean Rochond de 10.10$ pour: Achat d'ordinateur. ». Il faut avouer que c'est déjà beaucoup plus intéressant comme application!
+Si vous modifiez le fichier « xslt.xml » et que vous ouvrez le fichier « test.xml » dans un navigateur prenant en charge le XSLT, vous devriez voir s'afficher à l'écran la ligne « Ceci est une facture pour Jean Rochond de 10.10$ pour: Achat d'ordinateur. ». Il faut avouer que c'est déjà beaucoup plus intéressant comme application!
 
 Ce qui se passe, c'est que le nouveau document XSLT transforme notre document XML en un document HTML :
 

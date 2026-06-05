@@ -235,10 +235,10 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
     </li>
     <li>
      <input name="idp140549854448032" type="checkbox" value="idp140549854450608false"/>
-     Les navigateurs ne supportent pas encore XHTML.
+     Les navigateurs ne prennent pas encore en charge XHTML.
      <span class="feedback" id="idp140549854450608false" style="display: none;font-weight:bold;">
       <br/>
-      C'est faux. La plupart des navigateurs supportent bien le XHTML, mais tous ne supportent pas 
+      C'est faux. La plupart des navigateurs prennent bien en charge le XHTML, mais tous ne le prennent pas en charge 
   l'ensemble des normes XML.
      </span>
     </li>

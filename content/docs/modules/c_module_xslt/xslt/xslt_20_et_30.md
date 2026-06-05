@@ -6,7 +6,7 @@ weight: 1100
  XSLT 2.0 et 3.0
 </h1>
 <p>
- Nous nous sommes concentrés sur la version 1.0 du XSLT car elle est la plus répandue et la mieux supportée.
+ Nous nous sommes concentrés sur la version 1.0 du XSLT car elle est la plus répandue et la mieux prise en charge.
 </p>
 <p>
  Une nouvelle version du XSLT est disponible, nommée XSLT 2.0. Elle ajoute

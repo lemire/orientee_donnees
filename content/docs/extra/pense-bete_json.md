@@ -50,7 +50,7 @@ weight: 182
 - **Clés uniques :** Dans un objet, chaque clé doit être unique.
 - **Virgules :** Séparent les paires clé-valeur dans les objets et les valeurs dans les tableaux. Pas de virgule après le dernier élément.
 - **Guillemets :** Les clés et les chaînes doivent être entre guillemets doubles.
-- **Pas de commentaires :** JSON ne supporte pas les commentaires nativement.
+- **Pas de commentaires :** JSON ne prend pas en charge les commentaires nativement.
 - **Encodage :** Généralement en UTF-8.
 
 ## Échappement et caractères spéciaux

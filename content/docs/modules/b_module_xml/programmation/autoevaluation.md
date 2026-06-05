@@ -292,7 +292,7 @@ weight: 30
     <span class="feedback" id="idp140356078666272true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) C'est juste. Deux
-                    librairies DOM pourraient, avec le même arbre, générer des
+                    bibliothèques DOM pourraient, avec le même arbre, générer des
                     documents XML différents.
     </span>
    </li>

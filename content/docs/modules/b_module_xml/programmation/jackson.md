@@ -348,7 +348,7 @@ public class ExempleJsonIgnore {
 
 Jackson offre une API unifiée pour traiter à la fois JSON et XML, permettant aux développeurs d'écrire du code largement indépendant du format de données. L'exemple suivant démontre cette dualité en utilisant le même objet `Person` pour produire des représentations JSON et XML équivalentes.
 
-Cette approche est particulièrement puissante pour les applications qui doivent supporter plusieurs formats de données (par exemple, une API qui peut retourner JSON ou XML selon l'en-tête Accept de la requête HTTP). Le code métier reste identique, seule la classe de mapper change.
+Cette approche est particulièrement puissante pour les applications qui doivent prendre en charge plusieurs formats de données (par exemple, une API qui peut retourner JSON ou XML selon l'en-tête Accept de la requête HTTP). Le code métier reste identique, seule la classe de mapper change.
 
 Observez comment le même objet produit des sorties dans les deux formats : JSON avec des accolades et XML avec des balises, mais contenant les mêmes informations structurées.
 
@@ -399,6 +399,6 @@ public class App {
 
 <p>
  <a href="https://github.com/lemire/javajackson">
-  Nous vous invitons maintenant à faire une activité pratique avec la librairie Java Jackson.
+  Nous vous invitons maintenant à faire une activité pratique avec la bibliothèque Java Jackson.
  </a>  L'activité vous amènera sur la plateforme GitHub et vous devrez utiliser Maven.
 </p>

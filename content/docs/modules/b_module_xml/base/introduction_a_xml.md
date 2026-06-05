@@ -48,7 +48,7 @@ weight: 10
  doit toujours être bien formé en plus de respecter les contraintes de l'application.
 </p>
 <p>
- En théorie, on pourrait penser que l'importance du XML est mineure. En effet, n'est-il pas facile de s'entendre sur des formats communs? L'expérience montre que ce n'est pas si facile. D'abord, définir avec rigueur un format de données est complexe. D'autre part, le développement de logiciels particuliers à chaque format est coûteux : avec un métalangage comme XML, on peut réutiliser souvent les mêmes librairies logicielles. Finalement, il est plus facile de trouver des experts en XML que des experts dans un format de données, format particulier à un domaine pointu.
+ En théorie, on pourrait penser que l'importance du XML est mineure. En effet, n'est-il pas facile de s'entendre sur des formats communs? L'expérience montre que ce n'est pas si facile. D'abord, définir avec rigueur un format de données est complexe. D'autre part, le développement de logiciels particuliers à chaque format est coûteux : avec un métalangage comme XML, on peut réutiliser souvent les mêmes bibliothèques logicielles. Finalement, il est plus facile de trouver des experts en XML que des experts dans un format de données, format particulier à un domaine pointu.
 </p>
 <p>
  Le XML n'est pas un langage de programmation bien qu'on puisse l'utiliser avec des langages comme Java. On se sert par contre du XML pour les fichiers de configuration des logiciels. Par exemple, il est possible que, si vous utilisez un serveur web dans votre entreprise, ce serveur ait des fichiers de configuration en XML. Un document XML ne fait rien : ce n'est qu'une source passive d'informations, comme n'importe quel document, comme des pages web. On peut bien sûr programmer en utilisant une syntaxe XML cependant : nous verrons plus tard dans le cours comment programmer en XSLT. Mais, encore une fois, le fichier XML ne fait rien en lui-même si ce n'est que représenter le programme.
@@ -109,7 +109,7 @@ weight: 10
   Le XML ne dépend pas d'une plate-forme particulière : que vous utilisiez Linux, Mac OS ou Windows, vous pouvez travailler avec le XML.
  </li>
  <li>
-  Le XML est international : le XML supporte toutes les langues, pas seulement l'anglais.
+  Le XML est international : le XML prend en charge toutes les langues, pas seulement l'anglais.
  </li>
  <li>
   Le XML est extensible : on peut facilement faire évoluer les formats sans avoir à réécrire tous nos logiciels.

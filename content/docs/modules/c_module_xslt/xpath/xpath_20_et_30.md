@@ -10,7 +10,7 @@ weight: 60
  <p>
  </p>
  <p>
-  Jusqu'à présent, nous avons présenté XPath 1.0. Il s'agit de la version la plus largement supportée. Elle est la seule version supportée dans tous les grands navigateurs.
+  Jusqu'à présent, nous avons présenté XPath 1.0. Il s'agit de la version la plus largement prise en charge. C'est la seule version prise en charge dans tous les grands navigateurs.
  </p>
  <p>
   XPath 2.0 ajoute de nombreuses
@@ -25,7 +25,7 @@ weight: 60
         XPath 1.0 ne traite que des nombres, des chaînes de caractères, des valeurs booléennes et des ensembles de nœuds, XPath 2.0
         introduit la notion de séquence et plusieurs autres types
         de données pour noter les dates, la durée, les entiers,
-        les nombres à virgule flottante, etc. XPath 2.0 supporte aussi
+        les nombres à virgule flottante, etc. XPath 2.0 prend aussi en charge
         les
   <a href="https://www.w3.org/TR/xpath-functions/#string.match" shape="rect">
    expressions régulières
@@ -53,7 +53,7 @@ weight: 60
 
 ## XPath 2.0 et 3.0 en Java
 
-Nous pouvons utiliser la librairie Saxon en Java pour illustrer les fonctions propres à XPath 2.0 et 3.0.
+Nous pouvons utiliser la bibliothèque Saxon en Java pour illustrer les fonctions propres à XPath 2.0 et 3.0.
 
 {{<inlineJava path="IllustrationXPathSaxon.java">}}
 

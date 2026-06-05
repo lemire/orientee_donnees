@@ -109,7 +109,7 @@ Les fichiers .xlsx sont organisés ainsi :
   - **_rels/** : Relations spécifiques à la partie xl.
   - **media/** : Images et graphiques (optionnel).
 
-Voici un exemple de fichier `workbook.xml`.
+Voici un exemple de feuille de calcul `worksheets/sheet1.xml`.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -179,7 +179,7 @@ Voici un exemple de fichier `workbook.xml`.
 </worksheet>
 ```
 
-Cet exemple de `workbook.xml` montre une feuille de calcul Excel simple avec des données organisées en lignes et colonnes. La feuille s'étend de A1 à C5, avec des largeurs de colonnes personnalisées. Les données sont stockées dans `sheetData` avec 5 lignes : la première ligne contient une seule cellule (A1), tandis que les lignes 2 à 5 contiennent chacune 3 cellules (colonnes A, B, C). Les valeurs des cellules sont des références aux chaînes partagées (attribut `t="s"`), optimisant l'espace en évitant la répétition de texte identique. Les indices correspondent aux entrées dans le fichier `sharedStrings.xml` du document Excel.
+Cet exemple de `worksheets/sheet1.xml` montre une feuille de calcul Excel simple avec des données organisées en lignes et colonnes. La feuille s'étend de A1 à C5, avec des largeurs de colonnes personnalisées. Les données sont stockées dans `sheetData` avec 5 lignes : la première ligne contient une seule cellule (A1), tandis que les lignes 2 à 5 contiennent chacune 3 cellules (colonnes A, B, C). Les valeurs des cellules sont des références aux chaînes partagées (attribut `t="s"`), optimisant l'espace en évitant la répétition de texte identique. Les indices correspondent aux entrées dans le fichier `sharedStrings.xml` du document Excel.
 
 Voici le document `sharedStrings.xml` correspondant.
 
@@ -228,7 +228,7 @@ Voici le document `sharedStrings.xml` correspondant.
 </sst>
 ```
 
-Ce fichier `sharedStrings.xml` contient toutes les chaînes de caractères uniques utilisées dans le classeur Excel, permettant d'optimiser l'espace de stockage. Il compte 13 chaînes (count="13", uniqueCount="13"), chacune encapsulée dans un élément `<si>` (Shared Item). Les chaînes incluent le titre du classeur ("Mon classeur Excel généré avec Apache POI"), les en-têtes de colonnes ("Nom", "Âge", "Ville") et les données des cellules (noms, âges, villes). Dans `workbook.xml`, les cellules font référence à ces chaînes par leur indice (0 pour la première, 1 pour la deuxième, etc.), évitant ainsi la répétition du texte dans chaque cellule et réduisant la taille du fichier.
+Ce fichier `sharedStrings.xml` contient toutes les chaînes de caractères uniques utilisées dans le classeur Excel, permettant d'optimiser l'espace de stockage. Il compte 13 chaînes (count="13", uniqueCount="13"), chacune encapsulée dans un élément `<si>` (Shared Item). Les chaînes incluent le titre du classeur ("Mon classeur Excel généré avec Apache POI"), les en-têtes de colonnes ("Nom", "Âge", "Ville") et les données des cellules (noms, âges, villes). Dans `worksheets/sheet1.xml`, les cellules font référence à ces chaînes par leur indice (0 pour la première, 1 pour la deuxième, etc.), évitant ainsi la répétition du texte dans chaque cellule et réduisant la taille du fichier.
 
 ## Docx4j
 
@@ -252,9 +252,9 @@ Pour utiliser Docx4j dans un projet Maven, ajoutez la dépendance suivante dans 
 ```
 
 
-### Création d'un document Word
+### Principe de fonctionnement
 
-La bibliothèque utilise les mêmes principes que les autres librairies Open XML : elle traite les fichiers .docx comme des archives ZIP contenant des fichiers XML structurés.
+La bibliothèque utilise les mêmes principes que les autres bibliothèques Open XML : elle traite les fichiers .docx comme des archives ZIP contenant des fichiers XML structurés.
 
 ### Création d'un document Microsoft Word (docx)
 

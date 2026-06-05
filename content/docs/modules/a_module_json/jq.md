@@ -7,7 +7,7 @@ weight: 38
 
 jq est un puissant processeur de données JSON en ligne de commande, conçu pour manipuler, filtrer et transformer des fichiers JSON de manière efficace et expressive. Inspiré des outils Unix comme sed et awk, jq permet aux développeurs et analystes de données de travailler avec des structures JSON complexes sans écrire de code complexe. Que ce soit pour extraire des valeurs spécifiques, reformater des données, ou effectuer des requêtes avancées, jq offre une syntaxe concise et fonctionnelle qui s'intègre parfaitement dans les pipelines shell.
 
-Au-delà de ses capacités de base, jq excelle dans le traitement de gros volumes de données JSON, supportant des opérations comme le filtrage conditionnel, les agrégations, et les transformations structurelles. Il est particulièrement utile pour l'analyse de logs, le traitement d'APIs REST, ou la préparation de données pour d'autres outils. Grâce à sa nature fonctionnelle, les requêtes jq peuvent être composées et réutilisées, faisant de cet outil un incontournable pour quiconque travaille régulièrement avec du JSON dans un environnement de développement ou de production.
+Au-delà de ses capacités de base, jq excelle dans le traitement de gros volumes de données JSON, prenant en charge des opérations comme le filtrage conditionnel, les agrégations, et les transformations structurelles. Il est particulièrement utile pour l'analyse de logs, le traitement d'APIs REST, ou la préparation de données pour d'autres outils. Grâce à sa nature fonctionnelle, les requêtes jq peuvent être composées et réutilisées, faisant de cet outil un incontournable pour quiconque travaille régulièrement avec du JSON dans un environnement de développement ou de production.
 
 
 
@@ -141,7 +141,7 @@ jq utilise un langage de programmation fonctionnel pour manipuler les données J
 
 Les requêtes peuvent être chaînées avec le pipe `|`, permettant de composer des transformations complexes. Par exemple, `.bibliotheque.livres[] | .titre` parcourt d'abord le tableau des livres, puis extrait le titre de chaque livre. Cette approche fonctionnelle rend jq puissant pour filtrer, transformer et agréger des données JSON.
 
-jq supporte différents types d'expressions : sélecteurs pour naviguer dans la structure, filtres pour sélectionner des éléments, et constructeurs pour créer de nouveaux objets. Les tableaux sont gérés avec `[]` pour itérer, et les conditions utilisent `select()` pour filtrer. Par exemple, `select(.prix < 20)` garde seulement les objets où le prix est inférieur à 20.
+jq prend en charge différents types d'expressions : sélecteurs pour naviguer dans la structure, filtres pour sélectionner des éléments, et constructeurs pour créer de nouveaux objets. Les tableaux sont gérés avec `[]` pour itérer, et les conditions utilisent `select()` pour filtrer. Par exemple, `select(.prix < 20)` garde seulement les objets où le prix est inférieur à 20.
 
 Les transformations permettent de reconstruire les données. Utilisez `{clé: valeur}` pour créer des objets, ou `[expression]` pour des tableaux. Les variables temporaires avec `as $var` facilitent les références. Par exemple, `.titre as $t | .auteur | "\($t) par \(.auteur)"` combine titre et auteur dans une chaîne.
 

@@ -471,7 +471,7 @@ weight: 50
   L'élément foreignObject
  </h2>
  <p>
-  L'élément <code>&lt;foreignObject&gt;</code> permet d'intégrer du contenu HTML ou d'autres langages XML à l'intérieur d'un SVG. Cela est particulièrement utile pour combiner des éléments vectoriels avec du texte riche, des formulaires ou d'autres contenus HTML qui ne sont pas nativement supportés par SVG. L'élément <code>&lt;foreignObject&gt;</code> définit une région rectangulaire dans le SVG où le contenu étranger peut être rendu.
+  L'élément <code>&lt;foreignObject&gt;</code> permet d'intégrer du contenu HTML ou d'autres langages XML à l'intérieur d'un SVG. Cela est particulièrement utile pour combiner des éléments vectoriels avec du texte riche, des formulaires ou d'autres contenus HTML qui ne sont pas nativement pris en charge par SVG. L'élément <code>&lt;foreignObject&gt;</code> définit une région rectangulaire dans le SVG où le contenu étranger peut être rendu.
  </p>
  <p>
   Les attributs principaux de <code>&lt;foreignObject&gt;</code> sont :

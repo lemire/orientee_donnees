@@ -20,7 +20,7 @@ weight: 184
 
 **Chaînes**
 
-: Texte simple ou entre guillemets. Supporte les multi-lignes.
+: Texte simple ou entre guillemets. Prend en charge les multi-lignes.
 
 **Nombres**
 

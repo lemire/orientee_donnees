@@ -270,7 +270,7 @@ public class ExempleExpose {
 
 <p>
  <a href="https://github.com/lemire/javagson">
-  Nous vous invitons maintenant à faire une activité pratique avec la librairie Java Gson. 
+  Nous vous invitons maintenant à faire une activité pratique avec la bibliothèque Java Gson. 
  </a> L'activité vous amènera sur la plateforme GitHub et vous devrez utiliser Maven.
  Cette démarche ressemble à une activité industrielle.
 </p>

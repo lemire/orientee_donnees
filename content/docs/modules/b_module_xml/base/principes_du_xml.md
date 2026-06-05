@@ -170,7 +170,7 @@ UTF-8 et UTF-16 sont les deux encodages Unicode les plus utilisés en XML. UTF-8
 
 Les caractères de la langue anglaise (ASCII) sont toujours stockés de la même façon, qu'on utilise UTF-8 ou ISO-8859-1, en utilisant 7 bits. C'est donc dire que les programmeurs anglophones travaillant pour des utilisateurs anglophones peuvent, jusqu'à un certain point, ignorer les questions d'encodage des caractères.
 
-La plupart des logiciels récents supportent la norme Unicode. D'ailleurs, depuis le tout début, une chaîne de caractères en Java est représentée en utilisant la norme Unicode. Par contre, il restera toujours des logiciels utilisant d'autres jeux de caractères.
+La plupart des logiciels récents prennent en charge la norme Unicode. D'ailleurs, depuis le tout début, une chaîne de caractères en Java est représentée en utilisant la norme Unicode. Par contre, il restera toujours des logiciels utilisant d'autres jeux de caractères.
 
 ## La déclaration XML
 

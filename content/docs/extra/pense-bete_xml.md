@@ -40,8 +40,6 @@ weight: 180
 
 : Définit une entité nommée `nomEntiteX` qui vaut `Yvaleur`.
 
-> Note : j'ai remplacé `valeurY` par `Yvaleur` dans l'exemple pour éviter une répétition maladroite du mot "valeur".
-
 **<!ENTITY % nomEntiteX "Yvaleur">**
 
 : Entité paramètre pour la DTD (locale à la DTD) — `nomEntiteX` prend la valeur `Yvaleur`.

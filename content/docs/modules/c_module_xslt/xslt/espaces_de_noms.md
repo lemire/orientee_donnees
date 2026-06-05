@@ -8,7 +8,7 @@ weight: 150
 
 Cette section explique comment travailler avec les espaces de noms XML en XSLT.
 
-Les espaces de noms sont supportés et ne posent pas de problème. Il suffit
+Les espaces de noms sont pris en charge et ne posent pas de problème. Il suffit
     de définir les préfixes, comme on le fait habituellement. Par exemple,
     considérons le code XML suivant :
 

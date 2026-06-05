@@ -9,7 +9,7 @@ Les fichiers texte sont stockés dans un encodage Unicode (soit UTF-16, soit UTF
 
 ## Qu'est-ce qu'Unicode ?
 
-Unicode est un standard international qui attribue un numéro unique, appelé point de code, à chaque caractère utilisé dans les écritures du monde entier. Contrairement aux anciens systèmes d'encodage comme ASCII qui ne supportaient que 128 caractères (principalement l'anglais), Unicode peut représenter plus de 140 000 caractères, incluant des lettres, des symboles, des émojis, des caractères de contrôle et des scripts anciens. Par exemple, le caractère "A" a le point de code U+0041, tandis que l'émoji "😀" a U+1F600. Unicode assure l'interopérabilité entre différentes langues et plateformes, permettant à un document de mélanger du texte en français, chinois, arabe et emoji sans problèmes de compatibilité.
+Unicode est un standard international qui attribue un numéro unique, appelé point de code, à chaque caractère utilisé dans les écritures du monde entier. Contrairement aux anciens systèmes d'encodage comme ASCII qui ne prenaient en charge que 128 caractères (principalement l'anglais), Unicode peut représenter plus de 140 000 caractères, incluant des lettres, des symboles, des émojis, des caractères de contrôle et des scripts anciens. Par exemple, le caractère "A" a le point de code U+0041, tandis que l'émoji "😀" a U+1F600. Unicode assure l'interopérabilité entre différentes langues et plateformes, permettant à un document de mélanger du texte en français, chinois, arabe et emoji sans problèmes de compatibilité.
 
 L'adoption d'Unicode a résolu les problèmes d'encodage multiples qui causaient des erreurs d'affichage, comme les caractères "�" (replacement character) lorsqu'un fichier était ouvert avec un mauvais encodage. Unicode définit également des règles pour la normalisation des caractères, comme la décomposition des caractères accentués (par exemple, "é" peut être représenté comme "e" + "´" ou comme un seul caractère U+00E9).
 
@@ -17,11 +17,11 @@ L'adoption d'Unicode a résolu les problèmes d'encodage multiples qui causaient
 
 UTF-8 est l'encodage Unicode le plus largement utilisé sur le web et dans les systèmes modernes. Contrairement à UTF-16 qui utilise généralement 2 octets par caractère, UTF-8 utilise un nombre variable d'octets : 1 octet pour les caractères ASCII (U+0000 à U+007F), 2 octets pour la plupart des caractères latins accentués et cyrilliques, 3 octets pour la plupart des caractères asiatiques, et 4 octets pour les émojis et caractères rares. Cette conception permet à UTF-8 d'être rétrocompatible avec ASCII : tout fichier ASCII valide est aussi un fichier UTF-8 valide.
 
-Par exemple, le caractère "A" (U+0041) s'encode en un seul octet : `41` en hexadécimal. Le caractère "é" (U+00E9) s'encode en deux octets : `C3 A9`. Le caractère chinois "中" (U+4E2D) s'encode en trois octets : `E4 B8 AD`. Cette variabilité rend UTF-8 efficace pour les textes principalement en anglais (économie d'espace) tout en supportant pleinement Unicode.
+Par exemple, le caractère "A" (U+0041) s'encode en un seul octet : `41` en hexadécimal. Le caractère "é" (U+00E9) s'encode en deux octets : `C3 A9`. Le caractère chinois "中" (U+4E2D) s'encode en trois octets : `E4 B8 AD`. Cette variabilité rend UTF-8 efficace pour les textes principalement en anglais (économie d'espace) tout en prenant pleinement en charge Unicode.
 
 Un avantage majeur de UTF-8 est son absence d'endianness (ordre des octets) : les octets sont toujours dans le même ordre, éliminant les problèmes de big-endian vs little-endian. Cependant, certains systèmes ajoutent un BOM (Byte Order Mark, U+FEFF) au début des fichiers pour indiquer explicitement l'encodage UTF-8, bien que ce ne soit pas obligatoire.
 
-## UTF-16 : L'encodage à largeur fixe
+## UTF-16 : un encodage à largeur variable
 
 UTF-16 utilise 2 octets (16 bits) pour la plupart des caractères courants, mais peut utiliser des paires de substituts (4 octets au total) pour les caractères au-delà du Plan Multilingue de Base (BMP), comme les émojis. Par exemple, "A" s'encode en `00 41` (en little-endian) ou `41 00` (en big-endian). Le caractère "中" s'encode en `2D 4E`. Pour un émoji comme "😀" (U+1F600), qui est au-delà du BMP, UTF-16 utilise deux unités de code : `D8 3D DE 00` (little-endian).
 

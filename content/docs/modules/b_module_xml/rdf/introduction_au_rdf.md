@@ -141,7 +141,7 @@ weight: 10
     tout ce qui apparaît après ce symbole forme le « fragment ».
     Notons
     que les accents ne peuvent pas être utilisés dans un URI selon la norme RFC3986; ainsi,
-    « http://école.com » n'est pas un URI valable. Par contre, la plupart des navigateurs modernes utilisent la norme WHATWG URL qui supporte les caractères non-ASCII selon certaines conditions.
+    « http://école.com » n'est pas un URI valable. Par contre, la plupart des navigateurs modernes utilisent la norme WHATWG URL qui prend en charge les caractères non-ASCII selon certaines conditions.
     Un protocole particulier, « urn », est parfois utilisé dans
     les URI. Par exemple, pour
     identifier un livre par son code ISBN, nous pouvons utiliser l'URI

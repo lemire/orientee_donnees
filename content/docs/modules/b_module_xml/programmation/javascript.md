@@ -7,7 +7,7 @@ weight: 24
 
 # DOM et JavaScript
 
-Les implémentations JavaScript supportent bien l'API DOM en général.  La principale différence entre DOM en JavaScript et DOM en Java est que certaines méthodes en Java deviennent des attributs ou des propriétés en JavaScript (getNodeValue() devient nodeValue).
+Les implémentations JavaScript prennent bien en charge l'API DOM en général.  La principale différence entre DOM en JavaScript et DOM en Java est que certaines méthodes en Java deviennent des attributs ou des propriétés en JavaScript (getNodeValue() devient nodeValue).
 
 JavaScript peut donc lire et traiter des documents XML avec l'API DOM. En particulier, si JavaScript est utilisé au sein d'une page XHTML, le script peut modifier la page dynamiquement en utilisant l'API DOM. La principale différence entre l'utilisation de DOM en Java et JavaScript est qu'à l'exception des méthodes getAttribute, setAttribute, getAttributeNS, setAttributeNS, getAttributeNode, setAttributeNode, getAttributeNodeNS, setAttributeNodeNS, getElementsByTagName et getElementById, toutes les méthodes dont le nom commence par « get » ou « set » sont remplacées par un attribut de l'objet (ou « property » en anglais). Au lieu d'écrire « e.getChildNodes(); », on écrit « e.childNodes; », au lieu d'écrire « e.setNodeValue("texte"); », on écrit « e.nodeValue="texte"; », et ainsi de suite.
 

@@ -325,7 +325,7 @@ Testez vos connaissances avec ces questions. Cliquez sur chaque question pour vo
 
 ## JSON et JavaScript
 
-En JavaScript, JSON est nativement supporté grâce aux méthodes `JSON.stringify()` pour convertir des objets JavaScript en chaînes JSON, et `JSON.parse()` pour analyser des chaînes JSON et les convertir en objets JavaScript.
+En JavaScript, JSON est nativement pris en charge grâce aux méthodes `JSON.stringify()` pour convertir des objets JavaScript en chaînes JSON, et `JSON.parse()` pour analyser des chaînes JSON et les convertir en objets JavaScript.
 
 Voici quelques exemples pratiques illustrant comment générer et consommer du JSON en JavaScript.
 
@@ -423,13 +423,6 @@ parsedArray.forEach(personne => {
 GeoJSON est un format standard ouvert basé sur JSON pour représenter des données géographiques (points, lignes, polygones, etc.). Il est très utilisé avec des bibliothèques de cartographie comme **Leaflet**.
 
 En JavaScript, manipuler du GeoJSON est simple car c’est du JSON : on peut le charger, le modifier et l’afficher facilement.
-
-**Voici la version simplifiée de la section à ajouter :**
-
-```markdown
-## GeoJSON et JavaScript
-
-**GeoJSON** est un format basé sur JSON pour représenter des données géographiques (points, lignes, polygones). Il est  simple à utiliser en JavaScript, surtout avec des bibliothèques comme Leaflet.
 
 Voici un exemple complet prêt à être utilisé.
 

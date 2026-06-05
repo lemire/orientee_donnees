@@ -135,7 +135,7 @@ Exemple :
 }
 ```
 
-JSON est facile à parser et largement supporté par les langages. Quand on convertit entre XML, JSON et YAML, il faut décider comment représenter les attributs, les éléments vides et l'ordre des nœuds.
+JSON est facile à parser et largement pris en charge par les langages. Quand on convertit entre XML, JSON et YAML, il faut décider comment représenter les attributs, les éléments vides et l'ordre des nœuds.
 
 **JSON Schema**
 
@@ -251,7 +251,7 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
  <br class="autobr"/>
  accents dans le document ; par défaut, on ne peut pas utiliser les
  <br class="autobr"/>
- accents dans un document XML, sans des outils supportant les normes
+ accents dans un document XML, sans des outils prenant en charge les normes
  <br class="autobr"/>
  UTF-8/UTF-16. L’attribut « standalone » prend les
  <br class="autobr"/>

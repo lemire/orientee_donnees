@@ -19,7 +19,7 @@ On dit qu’un modèle DOM est une structure en arbre. En informatique, un arbre
 
 ## Point de vue critique
 
-L’API DOM est très utilisée et supportée dans de nombreux langages (Java, JavaScript, C#, C++, etc.). Cependant, elle consomme beaucoup de mémoire et nécessite souvent beaucoup de code pour des opérations simples. Malgré ces défauts, sa large adoption en fait une référence incontournable.
+L’API DOM est très utilisée et prise en charge dans de nombreux langages (Java, JavaScript, C#, C++, etc.). Cependant, elle consomme beaucoup de mémoire et nécessite souvent beaucoup de code pour des opérations simples. Malgré ces défauts, sa large adoption en fait une référence incontournable.
 
 
 ## Principaux concepts
@@ -192,4 +192,4 @@ public class CreationDOM {
 
 ## DOM et autres langages
 
-L'API DOM est supportée en C++ (voir [Xerces-C](http://xml.apache.org/xerces-c/)), en Python (paquetage xml.dom), en Perl (voir [Xerces-P](http://xml.apache.org/xerces-p/)), en JavaScript, etc. C'est d'ailleurs la principale force de cette API : peu importe le contexte, il y a fort à parier que vous aurez accès à l'API DOM. Ce n'est sans doute pas la meilleure API possible, mais son ubiquité fait en sorte qu'il vaut la peine d'apprendre à la connaître.
+L'API DOM est prise en charge en C++ (voir [Xerces-C](http://xml.apache.org/xerces-c/)), en Python (paquetage xml.dom), en Perl (voir [Xerces-P](http://xml.apache.org/xerces-p/)), en JavaScript, etc. C'est d'ailleurs la principale force de cette API : peu importe le contexte, il y a fort à parier que vous aurez accès à l'API DOM. Ce n'est sans doute pas la meilleure API possible, mais son ubiquité fait en sorte qu'il vaut la peine d'apprendre à la connaître.

@@ -12,7 +12,7 @@ weight: 90
  YAML (YAML Ain’t Markup Language) est né justement pour résoudre ce problème de lisibilité tout en restant compatible, dans une très large mesure, avec la structure de données de JSON. YAML est en réalité un sur-ensemble de JSON : tout fichier JSON valide est aussi un YAML valide. Cela signifie que vous pouvez prendre n’importe quel JSON et le parser avec un parseur YAML sans modification. Mais YAML va beaucoup plus loin en offrant une syntaxe beaucoup plus naturelle et agréable pour les humains.
 </p>
 <p>
- Contrairement à JSON qui n’autorise qu’une seule façon d’écrire les données (accolades et crochets), YAML propose deux syntaxes principales : la syntaxe indentée (la plus courante, proche du Python) et la syntaxe « en ligne » qui ressemble énormément à JSON. Grâce à l’indentation (généralement 2 espaces), on élimine presque totalement les accolades, les virgules de fin et les guillemets autour des clés. YAML autorise aussi nativement les commentaires avec #, les listes simples avec - et supporte des types supplémentaires comme les dates, les timestamps ou les valeurs null écrites ~ ou null ou simplement absentes.
+ Contrairement à JSON qui n’autorise qu’une seule façon d’écrire les données (accolades et crochets), YAML propose deux syntaxes principales : la syntaxe indentée (la plus courante, proche du Python) et la syntaxe « en ligne » qui ressemble énormément à JSON. Grâce à l’indentation (généralement 2 espaces), on élimine presque totalement les accolades, les virgules de fin et les guillemets autour des clés. YAML autorise aussi nativement les commentaires avec #, les listes simples avec - et prend en charge des types supplémentaires comme les dates, les timestamps ou les valeurs null écrites ~ ou null ou simplement absentes.
 </p>
 <p>
  Si on compare avec XML, on voit que YAML et XML poursuivent des objectifs opposés bien qu’ils soient tous les deux plus lisibles que JSON brut. XML est un langage de balisage (markup language) avec des balises ouvrantes et fermantes, des attributs, des namespaces, conçu à l’origine pour structurer des documents. Il est extrêmement verbeux et exigeant en syntaxe. YAML, au contraire, n’est pas un langage de balisage mais un format de sérialisation de données. Il cherche la concision et la clarté maximale pour représenter des structures de données (objets, listes, valeurs scalaires) sans aucune balise. Là où XML répète le nom de la balise deux fois (&lt;person&gt;…&lt;/person&gt;), YAML écrit simplement person: suivi de ses propriétés indentées.
@@ -309,7 +309,7 @@ hobbies:
 
 ## Activité YAML avec Jackson
 
-La librairie Jackson supporte YAML grâce au module `jackson-dataformat-yaml`. Exécuter le code suivant qui  utilise un `ObjectMapper` configuré avec une `YAMLFactory` pour analyser une chaîne YAML et la convertir en une structure de données Java facilement navigable.
+La bibliothèque Jackson prend en charge YAML grâce au module `jackson-dataformat-yaml`. Exécuter le code suivant qui  utilise un `ObjectMapper` configuré avec une `YAMLFactory` pour analyser une chaîne YAML et la convertir en une structure de données Java facilement navigable.
 
 {{<inlineJava path="LireYamlEnLigne.java">}}
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -383,7 +383,7 @@ public class LireYamlEnLigne {
 Le programme illustre plusieurs techniques importantes : l'utilisation de `JsonNode` pour accéder aux valeurs via des chemins JSON-like (avec la méthode `at()`), le parcours de listes YAML, et la conversion entre formats. Cette approche est particulièrement utile pour lire des fichiers de configuration YAML dans des applications Java, offrant une alternative plus lisible au JSON traditionnel tout en conservant la puissance de Jackson pour la manipulation de données.
 
 
-Pour exécuter un tel programme, vous devez inclure les composantes de la librairie Jackson nécessaires.
+Pour exécuter un tel programme, vous devez inclure les composantes de la bibliothèque Jackson nécessaires.
 Avec Maven, les lignes suivantes peuvent suffire.
 
 ```xml

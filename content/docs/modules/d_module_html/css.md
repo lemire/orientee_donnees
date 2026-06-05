@@ -347,7 +347,7 @@ Il arrive fréquemment qu'une valeur d'attribut contienne plusieurs mots, comme 
 
 ### les espaces de noms
 
-Les espaces de noms ne sont pas supportés en CSS 1 ou CSS 2. Ainsi « `monelement { color:red;}` » met en rouge le contenu de tous les éléments monelement, peu importe leur espace de noms. Il est incorrect d'utiliser la syntaxe « `xhtml:monelement { color:red;}` ».
+Les espaces de noms ne sont pas pris en charge en CSS 1 ou CSS 2. Ainsi « `monelement { color:red;}` » met en rouge le contenu de tous les éléments monelement, peu importe leur espace de noms. Il est incorrect d'utiliser la syntaxe « `xhtml:monelement { color:red;}` ».
 
 ### sélection de la langue
 
