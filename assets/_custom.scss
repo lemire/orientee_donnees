@@ -1,10 +1,155 @@
-p {
-  text-align: justify;
+/* ============================================================
+   Habillage « académique moderne » (accent indigo)
+   Surcouche par-dessus le thème hugo-book — aucune modification
+   du thème. Ce fichier est importé en dernier ; il a donc le
+   dernier mot sur les couleurs et la mise en forme.
+   ============================================================ */
+
+/* --- Palette : on redéfinit les variables CSS du thème --------- */
+:root {
+  --color-link: #3a4cb8;          /* indigo : liens, menu actif */
+  --color-link-hover: #2c3a8f;    /* indigo plus foncé au survol */
+  --color-visited-link: #6b4bbd;  /* violet discret : liens visités */
+
+  --gray-100: #f4f5fa;            /* fond des blocs de code */
+  --gray-200: #e7e9f5;            /* code en ligne, bordures, lignes de tableau */
+
+  --heading-color: #1f2433;       /* ardoise foncée : titres */
+  --accent: #3a4cb8;
+  --accent-soft: #eef0fb;         /* fond très clair indigo (encadrés) */
 }
 
-code.has-jax {font: inherit;
-              font-size: 100%;
-              background: inherit;
-              border: inherit;
-              color: #515151;}
-          
+/* --- Lisibilité du texte -------------------------------------- */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.markdown {
+  line-height: 1.7;
+}
+
+p {
+  text-align: left;
+}
+
+/* --- Titres --------------------------------------------------- */
+.markdown {
+  h1, h2, h3, h4 {
+    color: var(--heading-color);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  h1 { line-height: 1.15; }
+
+  /* h2 : fine ligne d'accent sous le titre */
+  h2 {
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--gray-200);
+  }
+
+  h3 { color: #2b3142; }
+}
+
+/* --- Liens ---------------------------------------------------- */
+.markdown a {
+  color: var(--color-link);
+  &:hover { color: var(--color-link-hover); }
+}
+
+/* --- Code ----------------------------------------------------- */
+.markdown {
+  /* code en ligne : teinte indigo discrète */
+  code {
+    background: var(--accent-soft);
+    color: #34408f;
+    border: 1px solid #dfe2f4;
+    padding: 0.1em 0.35em;
+    font-size: 0.85em;
+  }
+
+  /* blocs de code : fond clair, bordure douce, plus d'air */
+  pre {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--gray-200);
+    line-height: 1.55;
+
+    code {
+      background: none;
+      border: none;
+      color: inherit;
+      padding: 0;
+      font-size: 0.9em;
+    }
+  }
+
+  /* code coloré avec numéros de ligne */
+  .highlight {
+    border: 1px solid var(--gray-200);
+    pre { border: none; }
+  }
+}
+
+/* --- Citations / encadrés ------------------------------------- */
+.markdown blockquote {
+  background: var(--accent-soft);
+  border-inline-start: 4px solid var(--accent);
+  padding: 0.6rem 1rem;
+  color: #2b3142;
+}
+
+/* --- Tableaux ------------------------------------------------- */
+.markdown table {
+  tr th {
+    background: var(--accent-soft);
+    color: var(--heading-color);
+    font-weight: 700;
+    text-align: start;
+  }
+}
+
+/* --- Menu latéral : état actif et survol ---------------------- */
+.book-menu {
+  .book-menu-content { padding-top: 1.25rem; }
+
+  a {
+    border-radius: 5px;
+    padding: 0.15rem 0.4rem;
+    margin-inline-start: -0.4rem;
+    transition: background 0.12s ease, color 0.12s ease;
+
+    &:hover {
+      background: var(--accent-soft);
+      text-decoration: none;
+    }
+  }
+
+  a.active {
+    color: var(--color-link);
+    font-weight: 700;
+    background: var(--accent-soft);
+  }
+}
+
+/* --- Titre / logo de l'en-tête du menu ------------------------ */
+.book-brand {
+  font-weight: 700;
+  a { color: var(--heading-color); }
+}
+
+/* --- Table des matières (colonne de droite) ------------------- */
+.book-toc {
+  nav > ul > li > a { font-weight: 600; }
+  a:hover { color: var(--color-link-hover); }
+}
+
+/* --- MathJax : ne pas styliser comme du code ------------------ */
+code.has-jax {
+  font: inherit;
+  font-size: 100%;
+  background: inherit;
+  border: inherit;
+  color: #515151;
+  padding: 0;
+}

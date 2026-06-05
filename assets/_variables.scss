@@ -1,0 +1,9 @@
+/* Overrides des variables SASS du thème hugo-book.
+   Ce fichier est lu en priorité sur celui du thème (aucune modification du thème).
+   Voir _custom.scss pour les couleurs (variables CSS) et le reste de la mise en forme. */
+
+// Coins légèrement plus arrondis (blocs de code, encadrés, tableaux)
+$border-radius: 6px;
+
+// Largeur de lecture un peu plus généreuse
+$container-max-width: 70rem;
