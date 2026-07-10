@@ -182,7 +182,7 @@ Les implémentations JavaScript supportent bien l&amp;rsquo;API DOM en général
  Traitement on-demand du JSON en C++ avec simdjson (activité optionnelle)
  &lt;a class="anchor" href="#traitement-on-demand-du-json-en-c-avec-simdjson-activit%c3%a9-optionnelle"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;simdjson est la bibliothèque JSON la plus rapide au monde (2025). Elle est conçue dès le départ pour le parsing &lt;strong&gt;on-demand&lt;/strong&gt; (aussi appelé &lt;strong&gt;zero-copy&lt;/strong&gt; ou &lt;strong&gt;lazy parsing&lt;/strong&gt;) : elle ne construit les objets C++ que pour les parties du JSON que vous consultez réellement. Si vous maîtriser le C++, il s&amp;rsquo;agit d&amp;rsquo;une librairie à connaître.&lt;/p&gt;
+&lt;p&gt;simdjson est la bibliothèque JSON la plus rapide au monde (2025). Elle est conçue dès le départ pour le parsing &lt;strong&gt;on-demand&lt;/strong&gt; (aussi appelé &lt;strong&gt;zero-copy&lt;/strong&gt; ou &lt;strong&gt;lazy parsing&lt;/strong&gt;) : elle ne construit les objets C++ que pour les parties du JSON que vous consultez réellement. Si vous maîtrisez le C++, il s&amp;rsquo;agit d&amp;rsquo;une librairie à connaître.&lt;/p&gt;
 &lt;p&gt;Site officiel : &lt;a href="https://github.com/simdjson/simdjson"&gt;https://github.com/simdjson/simdjson&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Travail 4</title><link>https://lemire.github.io/orientee_donnees/legacy/semaine_12/travail_4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/legacy/semaine_12/travail_4/</guid><description>&lt;h1 id="travail-4"&gt;
  Travail 4
  &lt;a class="anchor" href="#travail-4"&gt;#&lt;/a&gt;

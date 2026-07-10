@@ -46,20 +46,20 @@ Vous pouvez modifier les fichiers XSLT et XML.&lt;/p&gt;
  
  
 
-&lt;div id="java-multirunner-1780626905242907518"&gt;
+&lt;div id="java-multirunner-1783720837879069088"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"&gt;
  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css"&gt;
  &lt;style&gt;
- #java-multirunner-1780626905242907518 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
- #java-multirunner-1780626905242907518 .export-form { margin-bottom:0; }
- #java-multirunner-1780626905242907518 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
- #java-multirunner-1780626905242907518 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
- #java-multirunner-1780626905242907518 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
- #java-multirunner-1780626905242907518 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
+ #java-multirunner-1783720837879069088 .export-form textarea { width:100%; min-height:120px; font-family:monospace; border-radius:4px; border:1px solid #ccc; }
+ #java-multirunner-1783720837879069088 .export-form { margin-bottom:0; }
+ #java-multirunner-1783720837879069088 .export-result { background:#222; color:#eee; padding:12px; border-radius:6px; margin-top:16px; white-space:pre-wrap; font-family:monospace; }
+ #java-multirunner-1783720837879069088 .export-btn { background:#1976d2; color:#fff; border:none; border-radius:4px; padding:8px 16px; font-size:1em; cursor:pointer; margin-top:8px; }
+ #java-multirunner-1783720837879069088 .export-file-block { max-width: 100%;max-width: 100%;flex:1 1 350px; background:#f9f9f9; border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:8px; }
+ #java-multirunner-1783720837879069088 .export-file-block .export-file-name { font-weight:bold; margin-bottom:4px; }
  .cm-java-error { background: #ffe0e0 !important; border-bottom: 2px dotted #c00; cursor: pointer; }
  .cm-java-error-line { background: #fff0f0 !important; }
  &lt;/style&gt;
- &lt;form class="export-form java-multirunner-1780626905242907518-form" style="margin-bottom:0;"&gt;
+ &lt;form class="export-form java-multirunner-1783720837879069088-form" style="margin-bottom:0;"&gt;
  &lt;input type="hidden" class="export-endpoint-var" value="https://flask-service-inf1220-java.90qakjuvfj4f8.ca-central-1.cs.amazonlightsail.com/run"&gt;
  &lt;div style="display:flex;gap:12px;flex-wrap:wrap;"&gt;
  
@@ -170,14 +170,14 @@ public class XmlVersConsole {
 &amp;lt;/bibliotheque&amp;gt;&lt;/textarea&gt;&lt;/div&gt;
  
  &lt;/div&gt;
- &lt;button type="submit" class="export-btn java-multirunner-1780626905242907518-btn"&gt;Exécuter&lt;/button&gt;
+ &lt;button type="submit" class="export-btn java-multirunner-1783720837879069088-btn"&gt;Exécuter&lt;/button&gt;
  &lt;/form&gt;
  &lt;div class="export-result"&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;(function(){
- var root = document.getElementById('java-multirunner-1780626905242907518');
+ var root = document.getElementById('java-multirunner-1783720837879069088');
  if (!root) return;
  var form = root.querySelector('form');
  var resultDiv = root.querySelector('.export-result');
@@ -451,9 +451,9 @@ XPath de la forme « sum(//quantite[@type=current()/@type]) ».
 Malheureusement, on risque
 alors de calculer plusieurs fois la même somme. Par exemple, tentez
 d&amp;rsquo;appliquer
-la transformation suivante :&lt;/p&gt;</description></item><item><title>Générer des noeuds dynamiquement</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/generer_des_noeuds_dynamiquement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/generer_des_noeuds_dynamiquement/</guid><description>&lt;h1 id="générer-des-noeuds-dynamiquement"&gt;
- Générer des noeuds dynamiquement
- &lt;a class="anchor" href="#g%c3%a9n%c3%a9rer-des-noeuds-dynamiquement"&gt;#&lt;/a&gt;
+la transformation suivante :&lt;/p&gt;</description></item><item><title>Générer des nœuds dynamiquement</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/generer_des_noeuds_dynamiquement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/generer_des_noeuds_dynamiquement/</guid><description>&lt;h1 id="générer-des-nœuds-dynamiquement"&gt;
+ Générer des nœuds dynamiquement
+ &lt;a class="anchor" href="#g%c3%a9n%c3%a9rer-des-n%c5%93uds-dynamiquement"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
 &lt;h2 id="générer-un-commentaire"&gt;
  Générer un commentaire
@@ -497,7 +497,7 @@ exemple :&lt;/p&gt;
  expressions XPath en utilisant le symbole « $ ». Ainsi, si la variable se
  nomme test, l'expression $test aura comme valeur la valeur de la variable.
  L'exemple suivant peut être utilisé pour remplacer tous les éléments
- « produit » par le noeud de texte « bozo ».
+ « produit » par le nœud de texte « bozo ».
 &lt;/p&gt;</description></item><item><title>Mise en forme</title><link>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/mise_en_forme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xslt/mise_en_forme/</guid><description>&lt;h1 id="mise-en-forme"&gt;
  Mise en forme
  &lt;a class="anchor" href="#mise-en-forme"&gt;#&lt;/a&gt;

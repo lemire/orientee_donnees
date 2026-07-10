@@ -61,9 +61,9 @@
 &lt;/h1&gt;
 &lt;p&gt;
  Il est important de bien comprendre la structure en arbre des documents XML. Comme nous l’avons vu, un document XML
- est un arbre dont la racine est toujours le noeud-racine suivi normalement d’autres noeuds, comme des noeuds d’éléments.
- Les différents noeuds sont ordonnés (si on intervertit deux éléments, on crée de facto un nouveau document). Il faut
- comprendre que les bouts de texte apparaissant dans un document XML sont des noeuds à part entière.
+ est un arbre dont la racine est toujours le nœud-racine suivi normalement d’autres nœuds, comme des nœuds d’éléments.
+ Les différents nœuds sont ordonnés (si on intervertit deux éléments, on crée de facto un nouveau document). Il faut
+ comprendre que les bouts de texte apparaissant dans un document XML sont des nœuds à part entière.
 &lt;/p&gt;</description></item><item><title>Vérificateur de XML bien formé</title><link>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/labo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lemire.github.io/orientee_donnees/docs/modules/b_module_xml/base/labo/</guid><description>&lt;h1 id="vérificateur-de-xml-bien-formé"&gt;
  Vérificateur de XML bien formé
  &lt;a class="anchor" href="#v%c3%a9rificateur-de-xml-bien-form%c3%a9"&gt;#&lt;/a&gt;
@@ -272,7 +272,7 @@ document.getElementById('checkBtn').addEventListener('click', function() {
  q9: "Les noms d’éléments sont pageweb et description. Les attributs n’en font pas partie.",
  q11: "Le caractère &amp;lt; est réservé car il introduit une balise ; il doit être échappé avec &amp;amp;lt; dans le texte.",
  q16: "La déclaration XML correcte est &amp;lt;?xml version=\"1.0\"?&amp;gt; (pas de barre de fermeture /).",
- q17: "Faux : l’attribut age n’a pas de guillemets autour de la valeur → document mal formé.",
+ q17: "Faux : l’attribut age n’a pas de guillemets autour de la valeur → document malformé.",
  q18: "Faux : un élément peut être vide (&amp;lt;br/&amp;gt; ou &amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;).",
  q19: "Un nom d’élément ne peut pas commencer par un chiffre.",
  q20: "xmlcourse est le seul nom valide : « 7eleven » commence par un chiffre et « Joe Louis » contient une espace, deux interdictions dans les noms XML.",
