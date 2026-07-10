@@ -10,7 +10,7 @@ weight: 40
   Il est temps de refaire un laboratoire XPath. Utilisez ce nouveau document XML et tentez de sélectionner différents numéros de téléphones, listes de clients, etc. en utilisant des expressions XPath appropriées.
  </p>
  <p>
-  Instructions : il suffit de saisir un document XML source et une expression XPath et d'appuyer sur le bouton. Le contenu textuel de chaque résultat est retourné. L'expression XPath est toujours appliquée à partir du noeud-racine. Cette petite application est limitée: elle suppose que le résultat prend une certaine forme (un  ensemble de noeuds ou node set).
+  Instructions : il suffit de saisir un document XML source et une expression XPath et d'appuyer sur le bouton. Le contenu textuel de chaque résultat est retourné. L'expression XPath est toujours appliquée à partir du nœud-racine. Cette petite application est limitée: elle suppose que le résultat prend une certaine forme (un ensemble de nœuds ou node set).
  </p>
  <form action="">
   <p>

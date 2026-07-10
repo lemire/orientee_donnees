@@ -109,7 +109,7 @@ Vous devez compléter la logique métier dans chaque endpoint en utilisant Gson 
 4. **PUT /api/ressources/{id}** : Modifier une ressource existante (404 si inexistante)
 5. **DELETE /api/ressources/{id}** : Supprimer une ressource (404 si inexistante)
 
-Vous devez utiliser la bibliothèque  Gson pour la manipulation JSON.
+Vous devez utiliser la bibliothèque Gson pour la manipulation JSON.
 
 **Ressources** :
 - Guide REST API : https://restfulapi.net/

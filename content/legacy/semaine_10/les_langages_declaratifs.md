@@ -50,7 +50,7 @@ En pratique, personne ne se plaint vraiment de la lenteur relative du XSLT, de S
 source de confusion. Avec l'expérience, on se rend compte que, pour bien des problèmes, la programmation déclarative est préférable surtout lorsqu'on ne veut pas se soucier des détails techniques comme la façon dont le fichier XML est lu et comment il est stocké en mémoire.
 </p>
 <p>
- Le XSLT  peut aussi être considéré comme un langage fonctionnel (voir
+ Le XSLT peut aussi être considéré comme un langage fonctionnel (voir
  <a href="http://sourceforge.net/projects/fxsl/" shape="rect">
   FXSL
  </a>

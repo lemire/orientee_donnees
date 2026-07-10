@@ -201,7 +201,7 @@ document.getElementById('checkBtn').addEventListener('click', function() {
         q9: "Les noms d’éléments sont pageweb et description. Les attributs n’en font pas partie.",
         q11: "Le caractère &lt; est réservé car il introduit une balise ; il doit être échappé avec &amp;lt; dans le texte.",
         q16: "La déclaration XML correcte est &lt;?xml version=\"1.0\"?&gt; (pas de barre de fermeture /).",
-        q17: "Faux : l’attribut age n’a pas de guillemets autour de la valeur → document mal formé.",
+        q17: "Faux : l’attribut age n’a pas de guillemets autour de la valeur → document malformé.",
         q18: "Faux : un élément peut être vide (&lt;br/&gt; ou &lt;br&gt;&lt;/br&gt;).",
         q19: "Un nom d’élément ne peut pas commencer par un chiffre.",
         q20: "xmlcourse est le seul nom valide : « 7eleven » commence par un chiffre et « Joe Louis » contient une espace, deux interdictions dans les noms XML.",

@@ -7,13 +7,13 @@ weight: 20
 </h1>
 <div class="">
  <p>
-  Étant donné un document XML, on peut sélectionner un noeud au sein du document avec une expression XPath. Plus généralement, étant donné un document XML et un noeud courant, on peut sélectionner, relativement à ce noeud, tout autre noeud ou ensemble de noeuds correspondant à un certain motif régulier.
+  Étant donné un document XML, on peut sélectionner un nœud au sein du document avec une expression XPath. Plus généralement, étant donné un document XML et un nœud courant, on peut sélectionner, relativement à ce nœud, tout autre nœud ou ensemble de nœuds correspondant à un certain motif régulier.
  </p>
  <p>
   Dans cette première activité de familiarisation avec XPath, nous allons d’abord passer en revue rapidement les éléments de base et vous inviter à faire un petit laboratoire.
  </p>
  <p>
-  Les expressions XPath les plus simples comprennent seulement un nom XML. Dans ce cas, on sélectionne l’élément ayant le nom correspondant.  Par exemple, l’expression « chien » va sélectionner tout élément nommé « chien » et contenu dans le noeud courant. S’il y en a plus d’un, plusieurs éléments pourront être sélectionnés. On peut utiliser l’astérisque (*) pour sélectionner tous les éléments du contexte courant, peu importe leur nom. Les deux points (..) permettent de sélectionner le parent du noeud courant (indiqué par « . »), ainsi « ../chien » permet de sélectionner les éléments « chien » dans le noeud parent. Si on veut ignorer le noeud courant et sélectionner tous les éléments chien, on peut obtenir ce résultat avec l’expression « //chien ». On peut aussi sélectionner le noeud racine... avec l’expression XPath « / ». Ainsi donc, « /* » sélectionnera toujours l’élément-racine. L’instruction « //* » va sélectionner tous les noeuds du document. On peut sélectionner un attribut avec le symbole « @ ». Ainsi, on peut sélectionner le contenu de l’attribut race de tous les éléments chien avec l’expression « //chien/@race ».
+  Les expressions XPath les plus simples comprennent seulement un nom XML. Dans ce cas, on sélectionne l’élément ayant le nom correspondant. Par exemple, l’expression « chien » va sélectionner tout élément nommé « chien » et contenu dans le nœud courant. S’il y en a plus d’un, plusieurs éléments pourront être sélectionnés. On peut utiliser l’astérisque (*) pour sélectionner tous les éléments du contexte courant, peu importe leur nom. Les deux points (..) permettent de sélectionner le parent du nœud courant (indiqué par « . »), ainsi « ../chien » permet de sélectionner les éléments « chien » dans le nœud parent. Si on veut ignorer le nœud courant et sélectionner tous les éléments chien, on peut obtenir ce résultat avec l’expression « //chien ». On peut aussi sélectionner le nœud racine... avec l’expression XPath « / ». Ainsi donc, « /* » sélectionnera toujours l’élément-racine. L’instruction « //* » va sélectionner tous les nœuds du document. On peut sélectionner un attribut avec le symbole « @ ». Ainsi, on peut sélectionner le contenu de l’attribut race de tous les éléments chien avec l’expression « //chien/@race ».
  </p>
  <pre style="color:#000000;background:#ffffff;"><span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">animaux</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">chien</span> <span style="color:#274796; ">race</span><span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">caniche</span><span style="color:#800000; ">"</span> <span style="color:#a65700; ">/&gt;</span>
@@ -26,7 +26,7 @@ weight: 20
   XPath en ligne
  </h1>
  <p>
-  Instructions : il suffit de saisir un document XML source et une expression XPath et d'appuyer sur le bouton. Le contenu textuel de chaque résultat est retourné. L'expression XPath est toujours appliquée à partir du noeud-racine.  Cette petite application est limitée: elle suppose que le résultat prend une certaine forme (un  ensemble de noeuds ou node set).
+  Instructions : il suffit de saisir un document XML source et une expression XPath et d'appuyer sur le bouton. Le contenu textuel de chaque résultat est retourné. L'expression XPath est toujours appliquée à partir du nœud-racine. Cette petite application est limitée: elle suppose que le résultat prend une certaine forme (un ensemble de nœuds ou node set).
  </p>
  <form action="">
   <p>

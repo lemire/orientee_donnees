@@ -7,13 +7,13 @@ weight: 40
 </h1>
 <div class="">
  <p>
-  Dans ce cours, vous serez amené à utiliser le language JavaScript, aussi parfois appelé JavaScript. Il s’agit du langage de programmation utilisé par tous les navigateurs au sein des pages.
+  Dans ce cours, vous serez amené à utiliser le langage JavaScript. Il s’agit du langage de programmation utilisé par tous les navigateurs au sein des pages.
  </p>
  <p>
   Même s’il s’agit d’un langage de programmation complètement différent du Java, la syntaxe est similaire. Puisque vous maîtrisez Java, vous devriez être capable d’utiliser le JavaScript sans grand mal.
  </p>
  <p>
-  Il n’est pas nécessaire de devenir un exemple en la matière, mais nous vous invitons tout de même à vous familiariser avec la langage au besoin. Un point d’entrée est le livre en ligne
+  Il n’est pas nécessaire de devenir un expert en la matière, mais nous vous invitons tout de même à vous familiariser avec le langage au besoin. Un point d’entrée est le livre en ligne
   <a class="spip_out" href="https://fr.wikibooks.org/wiki/Programmation_JavaScript" rel="noopener noreferrer external" target="_blank">
    Programmation JavaScript
   </a>

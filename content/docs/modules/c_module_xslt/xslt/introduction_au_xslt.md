@@ -47,8 +47,8 @@ Le document XSLT contient des règles qu'un « processeur XSLT » applique aux
     votre navigateur tente automatiquement de trouver et d'exécuter un document XSLT
     pour transformer le document XML.
 
-Un processeur XSLT va parcourir les noeuds de votre document en
-    commençant par l'élément-racine et, à chaque fois, il va tenter d'appliquer une règle. Certaines règles peuvent lui dire de continuer l'application des règles au sein des noeuds contenus dans un élément (avec l'instruction apply-template) alors que d'autres peuvent simplement extraire une information particulière.
+Un processeur XSLT va parcourir les nœuds de votre document en
+    commençant par l'élément-racine et, à chaque fois, il va tenter d'appliquer une règle. Certaines règles peuvent lui dire de continuer l'application des règles au sein des nœuds contenus dans un élément (avec l'instruction apply-template) alors que d'autres peuvent simplement extraire une information particulière.
 
 Commençons par créer le fichier XSLT suivant qu'on enregistrera
     sur le disque comme étant « xslt.xml » :

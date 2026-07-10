@@ -36,7 +36,7 @@ weight: 60
 </p>
 
 
-##  Convertisseur d'octets en Base64
+## Convertisseur d'octets en Base64
 
 
 <p style="text-align:center;margin:20px 0;">

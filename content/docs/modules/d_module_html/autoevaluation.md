@@ -81,7 +81,7 @@ de la casse et l'élément « p » n'est pas la même chose que l'élément «
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" [
- &lt;!ENTITY texte  "&lt;p&gt;Note légale: vous pouvez faire ce que vous voulez&lt;/p&gt;
+ &lt;!ENTITY texte "&lt;p&gt;Note légale: vous pouvez faire ce que vous voulez&lt;/p&gt;
  &lt;p&gt;Copyright 2004&lt;/p&gt;"&gt;
  ]&gt;
  &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
@@ -104,7 +104,7 @@ de la casse et l'élément « p » n'est pas la même chose que l'élément «
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" [
- &lt;!ENTITY texte  "Voici mon document&lt;/p&gt;"&gt;
+ &lt;!ENTITY texte "Voici mon document&lt;/p&gt;"&gt;
  ]&gt;
  &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
  &lt;head&gt;

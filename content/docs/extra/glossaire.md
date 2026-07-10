@@ -360,7 +360,7 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
  </em>
  , comme &lt;b&gt;&lt;a&gt;&lt;/b&gt;&lt;/a&gt;,
  <br class="autobr"/>
- qui est du XML mal formé.
+ qui est du XML malformé.
 </p>
 <p>
  <strong>

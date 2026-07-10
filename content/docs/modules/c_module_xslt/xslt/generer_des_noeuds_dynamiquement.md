@@ -1,9 +1,9 @@
 ---
-title: "Générer des noeuds dynamiquement"
+title: "Générer des nœuds dynamiquement"
 weight: 120
 ---
 
-# Générer des noeuds dynamiquement
+# Générer des nœuds dynamiquement
 ## Générer un commentaire
 
 Cette section explique comment générer des commentaires dans la sortie XML à l'aide de XSLT.

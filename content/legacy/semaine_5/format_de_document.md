@@ -142,7 +142,7 @@ L'élément de base d'un document DocBook est l'élément « para » qui note la
 </book>
 ```
 
-Observe que tous les éléments « chapter », ainsi que tous les éléments « section » débutent par un élément « title » : c'est souvent suffisant. Il n'est pas permis de commencer un élément « section » ou « chapter » directement par un élément « para ». Par contre, on pourrait omettre d'avoir des sections dans nos chapitres, comme dans l'exemple qui suit :
+Observez que tous les éléments « chapter », ainsi que tous les éléments « section » débutent par un élément « title » : c'est souvent suffisant. Il n'est pas permis de commencer un élément « section » ou « chapter » directement par un élément « para ». Par contre, on pourrait omettre d'avoir des sections dans nos chapitres, comme dans l'exemple qui suit :
 
 ```xml
 <?xml version="1.0" encoding='ISO-8859-1' standalone="no"?>

@@ -219,7 +219,7 @@ public class Main {
             """;
 
         try {
-            Processor processor = new Processor(false);  // Saxon-HE
+            Processor processor = new Processor(false); // Saxon-HE
             DocumentBuilder builder = processor.newDocumentBuilder();
 
             // Construction du document XML à partir de la chaîne
@@ -231,7 +231,7 @@ public class Main {
 
             XQueryCompiler compiler = processor.newXQueryCompiler();
             // Déclaration de la variable externe $doc
-            compiler.declareNamespace("", "");  // namespace par défaut si nécessaire
+            compiler.declareNamespace("", ""); // namespace par défaut si nécessaire
             XQueryExecutable executable = compiler.compile(xquery);
 
             XQueryEvaluator evaluator = executable.load();

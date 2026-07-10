@@ -400,5 +400,5 @@ public class App {
 <p>
  <a href="https://github.com/lemire/javajackson">
   Nous vous invitons maintenant à faire une activité pratique avec la bibliothèque Java Jackson.
- </a>  L'activité vous amènera sur la plateforme GitHub et vous devrez utiliser Maven.
+ </a> L'activité vous amènera sur la plateforme GitHub et vous devrez utiliser Maven.
 </p>

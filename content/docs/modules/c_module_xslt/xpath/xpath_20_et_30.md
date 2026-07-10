@@ -3,7 +3,7 @@ title: "XPath 2.0 et 3.0"
 weight: 60
 ---
 
-#  XPath 2.0 et 3.0
+# XPath 2.0 et 3.0
 
 
 <div class="">

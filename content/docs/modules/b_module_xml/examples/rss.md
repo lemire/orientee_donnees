@@ -164,9 +164,9 @@ public class RssFeedReader {
                 String link = getElementValue(item, "link");
                 String pubDate = getElementValue(item, "pubDate");
                 System.out.println("Article " + (i + 1) + ":");
-                System.out.println("  Titre : " + title);
-                System.out.println("  Lien : " + link);
-                System.out.println("  Date de publication : " + pubDate);
+                System.out.println(" Titre : " + title);
+                System.out.println(" Lien : " + link);
+                System.out.println(" Date de publication : " + pubDate);
                 System.out.println();
             }
             inputStream.close();

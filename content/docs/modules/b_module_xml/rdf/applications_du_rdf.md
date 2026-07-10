@@ -1528,7 +1528,7 @@ weight: 20
 </pre>
 <p>
  Nous constatons une classe « channel » (canal, en anglais) qui
-    contient un titre, un URL (link) et une description.
+    contient un titre, une URL (link) et une description.
     Il y a aussi une liste de nouvelles (item). Généralement, nous combinons le
     tout dans un seul fichier, comme ceci :
 </p>

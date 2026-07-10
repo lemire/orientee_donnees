@@ -5,7 +5,7 @@ weight: 105
 
 # Traitement on-demand du JSON en C++ avec simdjson (activité optionnelle)
 
-simdjson est la bibliothèque JSON la plus rapide au monde (2025).   Elle est conçue dès le départ pour le parsing **on-demand** (aussi appelé **zero-copy** ou **lazy parsing**) : elle ne construit les objets C++ que pour les parties du JSON que vous consultez réellement. Si vous maîtriser le C++, il s'agit d'une librairie à connaître.
+simdjson est la bibliothèque JSON la plus rapide au monde (2025). Elle est conçue dès le départ pour le parsing **on-demand** (aussi appelé **zero-copy** ou **lazy parsing**) : elle ne construit les objets C++ que pour les parties du JSON que vous consultez réellement. Si vous maîtrisez le C++, il s'agit d'une librairie à connaître.
 
 Site officiel : https://github.com/simdjson/simdjson  
 

@@ -286,7 +286,7 @@ private static final String DONNEES_RDF_XML = """
         // 1. Tous les livres
         executerRequete(modele,
             """
-            PREFIX dc:   <http://purl.org/dc/elements/1.1/>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
             PREFIX foaf: <http://xmlns.com/foaf/0.1/>
             SELECT ?livre ?titre ?nomAuteur
             WHERE {
@@ -328,7 +328,7 @@ private static final String DONNEES_RDF_XML = """
         // 4. Auteurs prolifiques
         executerRequete(modele,
             """
-            PREFIX dc:   <http://purl.org/dc/elements/1.1/>
+            PREFIX dc: <http://purl.org/dc/elements/1.1/>
             PREFIX foaf: <http://xmlns.com/foaf/0.1/>
             SELECT ?nomAuteur (COUNT(?livre) AS ?livresEcrits)
             WHERE {

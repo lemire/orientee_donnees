@@ -154,7 +154,7 @@ weight: 30
      (Réponse incorrecte!) Non. Le lien
                     « http://www.ledevoir.com/2004/09/30/65081.html »
                     est un
-                    URI, pas nécessairement un URL.
+                    URI, pas nécessairement une URL.
     </span>
    </li>
    <li>

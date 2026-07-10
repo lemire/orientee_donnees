@@ -34,7 +34,7 @@ public class Question1 {
 
     /**
      * Cette méthode parcours récurssivement l'arbre DOM et ajoute
-     * le préfixe à chauque élément noeud
+     * le préfixe à chauque élément nœud
      * @param node
      * @param i
      * @param prefix
@@ -208,7 +208,7 @@ XSLT est un langage recommandé par W3C pour transformer des documents XML en d�
 La différence principale entre ces langages réside dans leur rôle. XSLT est conçu comme une feuille de style qui transforme des documents XML afin qu’ils soient compréhensibles sur un écran, le web, le papier, etc. XQuery, quant à lui, interroge et manipule une collection de documents XML comme SQL. XSLT et XQuery incluent XPath pour accéder aux composants des documents XML. XPath sert donc comme un support pour XSLT et XQuery. Finalement, XLink ne permet ni d’extraire ou de transformer des données XML, mais plutôt d'insérer des liaisons entre ces données.
 
 ## Question 7
-Que signifie l’expression Xpath suivante?  
+Que signifie l’expression XPath suivante?  
 //table[@border="0" and @cellspacing="0"] | //table[@border="1" and @cellspacing="1"]
 
 ### Réponse
@@ -297,11 +297,11 @@ Exemple de document.xml
 
     <tr>
 
-        <td style="color:red;">cet element ne doit pas etre retourne 1</td>
+        <td style="color:red;">cet élément ne doit pas être retourné 1</td>
 
-        <td>cet element doit etre retourne 1</td>
+        <td>cet élément doit être retourné 1</td>
 
-        <td>cet element doit etre retourne 2 ?</td>
+        <td>cet élément doit être retourné 2 ?</td>
 
     </tr>
 </table>
@@ -309,11 +309,11 @@ Exemple de document.xml
 
     <tr>
 
-        <td style="color:red;">cet element ne doit pas etre retourne 1</td>
+        <td style="color:red;">cet élément ne doit pas être retourné 1</td>
 
-        <td>cet element ne doit pas etre retourne 1</td>
+        <td>cet élément ne doit pas être retourné 1</td>
 
-        <td>cet element ne doit pas etre retourne 2 ?</td>
+        <td>cet élément ne doit pas être retourné 2 ?</td>
 
     </tr>
 </table>
@@ -323,7 +323,7 @@ Exemple de document.xml
 
 L’exécution de la commande java Question12 document.xml retourne   
 
-cet element doit etre retourne 1
+cet élément doit être retourné 1
 
 ## Question 13
 Expliquez ce que fera le fichier XSLT suivant.
@@ -370,7 +370,7 @@ Traitement avec modèle en arbre. Un document XML peut être vu comme un arbre a
 Définissez AJAX et expliquez pourquoi il s'agit d'une technique importante en développement web. Quel est le lien entre AJAX et DOM?
 
 ### Réponse
-AJAX, ou Asynchronous JavaScript And XML (« XML et Javascript asynchrones »), est un acronyme désignant une méthode informatique de développement d'applications web. Dans une application web classique, une requête envoyée à un serveur HTTP agit en fonction de l'action et des données reçues et renvoie une nouvelle page. Ce type de fonctionnement recharge systématiquement la totalité de la page même si qu’une partie de cette page est requise. Les applications utilisant les techniques AJAX, quant à elles, peuvent envoyer des requêtes au serveur HTTP pour récupérer uniquement les données nécessaires en utilisant la requête HTTP XMLHttpRequest, et en utilisant la puissance des feuilles de style (CSS) ainsi que le langage Javascript côté client pour interpréter la réponse du serveur HTTP. Les applications sont alors plus réactives.  
+AJAX, ou Asynchronous JavaScript And XML (« XML et JavaScript asynchrones »), est un acronyme désignant une méthode informatique de développement d'applications web. Dans une application web classique, une requête envoyée à un serveur HTTP agit en fonction de l'action et des données reçues et renvoie une nouvelle page. Ce type de fonctionnement recharge systématiquement la totalité de la page même si une partie de cette page est requise. Les applications utilisant les techniques AJAX, quant à elles, peuvent envoyer des requêtes au serveur HTTP pour récupérer uniquement les données nécessaires en utilisant la requête HTTP XMLHttpRequest, et en utilisant la puissance des feuilles de style (CSS) ainsi que le langage JavaScript côté client pour interpréter la réponse du serveur HTTP. Les applications sont alors plus réactives.  
 En AJAX, on utilise des scripts JavaScript pour charger des informations à partir d’un serveur donné. Les implémentations JavaScript supportent bien l'API DOM en général. JavaScript fait donc le lien entre AJAX et l’API DOM.
 
 ## Question 17

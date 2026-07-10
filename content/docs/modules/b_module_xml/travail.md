@@ -51,7 +51,7 @@ Pour démontrer l'utilité de votre travail, vous utiliserez le fichier XML suiv
 </bibliotheque>
 ```
 
-Votre application devra  implémenter les fonctionnalités suivantes :
+Votre application devra implémenter les fonctionnalités suivantes :
 1. Charger le fichier XML fourni et afficher le nombre total de livres.
 2. Extraire et afficher tous les titres de livres de catégorie "roman" (vous pouvez utiliser DOM ou XPath).
 3. Calculer et afficher des statistiques : nombre total de livres, valeur totale du stock (prix × stock), moyenne des prix.

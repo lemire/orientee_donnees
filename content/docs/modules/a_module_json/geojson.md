@@ -16,7 +16,7 @@ Prenons l'exemple fourni pour illustrer concrètement ces concepts. L'objet Feat
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
-    #container { width: 100%;  height: 100%; display: flex; flex-direction: column; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    #container { width: 100%; height: 100%; display: flex; flex-direction: column; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     #editor { flex: 1; min-height: 300px; display: flex; flex-direction: column; background: white; }
     #textarea { flex: 1; font-family: monospace; font-size: 14px; padding: 10px; border: none; resize: none; }
     #status { padding: 5px 10px; background: #f0f0f0; font-size: 12px; }

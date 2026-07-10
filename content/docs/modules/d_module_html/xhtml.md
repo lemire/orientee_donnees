@@ -171,7 +171,7 @@ mais si nous voulons écrire en français avec des lettres accentuées, il est n
 d'avoir la déclaration XML de notre exemple.
  </p>
  <p>
-  On reconnaît ensuite la déclaration de type de document :  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  On reconnaît ensuite la déclaration de type de document : &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;. 
 Observez qu'elle apparaît sur deux lignes, que c'est souvent le cas, mais que c'est un choix purement esthétique. 
 La déclaration de type de document est un peu particulière : il s'agit d'une déclaration utilisant 
@@ -595,7 +595,7 @@ Pour des caractères en gras, comme
   , en écrivant &lt;i&gt;&lt;b&gt;maman&lt;/b&gt;&lt;/i&gt; 
 ou bien &lt;b&gt;&lt;i&gt;maman&lt;/i&gt;&lt;/b&gt;. Il est cependant préférable d'utiliser
 « em » (emphase) au lieu de « i » et « strong » (fort) au lieu de « b » : le navigateur choisira alors de 
-rendre le texte dans un élément  « em » avec un italique ou une autre technique appropriée, et de rendre le texte dans un élément « strong » en caractères gras ou une autre technique appropriée. On évite ainsi de confondre la présentation (italique ou gras) et la sémantique (emphase ou point fort). Dans le cas où un terme est défini, vous devriez utiliser un élément « dfn » (définition) comme dans cet exemple: « La &lt;dfn&gt;mort&lt;/dfn&gt; est la fin de la vie ». La plupart des navigateurs afficheront alors le mot « mort » en caractères italiques.
+rendre le texte dans un élément « em » avec un italique ou une autre technique appropriée, et de rendre le texte dans un élément « strong » en caractères gras ou une autre technique appropriée. On évite ainsi de confondre la présentation (italique ou gras) et la sémantique (emphase ou point fort). Dans le cas où un terme est défini, vous devriez utiliser un élément « dfn » (définition) comme dans cet exemple: « La &lt;dfn&gt;mort&lt;/dfn&gt; est la fin de la vie ». La plupart des navigateurs afficheront alors le mot « mort » en caractères italiques.
  </p>
  <h2>
   Les listes de définitions
@@ -874,7 +874,7 @@ Les exemples de sortie à l'écran peuvent s'écrire dans un élément « samp�
   Les citations
  </h2>
  <p>
-  Pour citer quelqu'un, on peut utiliser un élément  « q » lorsqu'il s'agit d'une courte citation au sein d'un paragraphe ou élément  « blockquote » lorsque la citation doit former un court paragraphe. Plusieurs navigateurs mettent automatiquement le contenu de l'élément  « q » entre guillemets et le contenu de l'élément  « blockquote » en retrait. Voici un exemple : «
+  Pour citer quelqu'un, on peut utiliser un élément « q » lorsqu'il s'agit d'une courte citation au sein d'un paragraphe ou élément « blockquote » lorsque la citation doit former un court paragraphe. Plusieurs navigateurs mettent automatiquement le contenu de l'élément « q » entre guillemets et le contenu de l'élément « blockquote » en retrait. Voici un exemple : «
   <span style="color:#a65700; ">
    &lt;
   </span>
@@ -1057,7 +1057,7 @@ Voici un exemple :
    &gt;
   </span>
   ». L'élément « span » 
-ne sert  qu'à nous permettre de sélectionner un texte
+ne sert qu'à nous permettre de sélectionner un texte
 au sein d'un autre élément.
  </p>
  <h2>
@@ -1079,13 +1079,13 @@ on ne peut pas ajuster l'indentation des paragraphes et on ne peut que difficile
 Nous verrons au module 3, dans la section sur le CSS, qu'il existe une façon élégante d'y arriver.
  </p>
  <h2>
-  Convertir du HTML mal formé
+  Convertir du HTML malformé
  </h2>
  <p>
   Dans une organisation, il est fréquent d'avoir à composer avec des sites web
 qui ne respectent pas les normes les plus élémentaires. Réécrire le HTML en XHTML
 peut sembler une tâche très ardue. Heureusement, il existe des outils gratuits
-pour corriger du HTML mal formé et générer automatiquement un XHTML valable, comme
+pour corriger du HTML malformé et générer automatiquement un XHTML valable, comme
 par exemple HTMLTidy (
   <a href="http://tidy.sourceforge.net/">
    http://tidy.sourceforge.net/
@@ -1621,9 +1621,9 @@ Notez qu'il existe de très bons livres de référence pour approfondir le XHTML
 pour ce cours, il suffit de connaître les quelques balises présentées dans ce document.
  </p>
  <p>
-  Un des avantages importants du XHTML sur des pages web traditionnelles (souvent mal formées)
-est qu'on peut facilement traiter des pages XHTML avec des outils destinés au XML.  En somme, on peut plus facilement extraire et traiter l'information d'une page XHTML
-que l'on peut le faire d'une page HTML mal formée.
+  Un des avantages importants du XHTML sur des pages web traditionnelles (souvent malformées)
+est qu'on peut facilement traiter des pages XHTML avec des outils destinés au XML. En somme, on peut plus facilement extraire et traiter l'information d'une page XHTML
+que l'on peut le faire d'une page HTML malformée.
  </p>
  <h2>
   Livres de référence

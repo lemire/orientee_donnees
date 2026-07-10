@@ -177,7 +177,7 @@ weight: 10
     « http://lemire.me/fr/ »
     pour identifier le professeur « Daniel Lemire » qui est
     responsable d'un
-    cours portant sur le XML. Dans ce dernier exemple, l'URI est aussi un URL
+    cours portant sur le XML. Dans ce dernier exemple, l'URI est aussi une URL
     qui pointe
     vers la page personnelle du professeur. Nous voyons immédiatement l'avantage
     des URI : alors

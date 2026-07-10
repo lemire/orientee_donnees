@@ -53,7 +53,7 @@ Cela permet d'écrire du code asynchrone de manière synchrone, facilitant la le
 
 
 
-L'API  `fetch()` est l'API moderne pour effectuer des requêtes HTTP en JavaScript. 
+L'API `fetch()` est l'API moderne pour effectuer des requêtes HTTP en JavaScript. 
 
 ```javascript
 fetch('https://api.example.com/data')

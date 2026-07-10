@@ -16,7 +16,7 @@ weight: 80
   Consignes
  </h2>
  <p>
-  Lorsque vous aurez terminé le travail, transmettez à votre personne tutrice, un seul document (Word  97/2000/XP,
+  Lorsque vous aurez terminé le travail, transmettez à votre personne tutrice, un seul document (Word 97/2000/XP,
   <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office">
    ODF
   </a>
@@ -37,7 +37,7 @@ weight: 80
   D’une part, cela est inutile. D’autre part, cela engendre des manipulations supplémentaires. Les travaux transmis sous la forme d’archive compressée pourront être considéré comme n’ayant pas été reçu. Il est de votre responsabilité de lire et de suivre les consignes. Les archives RAR ne sont jamais acceptées.
  </p>
  <p>
-  Précision :  Nous n’offrons pas d’accusé de réception. C’est inutile, car il n’y a pas de pénalité pour les remises de travail en retard dans ce cours. Gardez toujours une copie de chacun de vos travaux jusqu’à la fin du cours.
+  Précision : Nous n’offrons pas d’accusé de réception. C’est inutile, car il n’y a pas de pénalité pour les remises de travail en retard dans ce cours. Gardez toujours une copie de chacun de vos travaux jusqu’à la fin du cours.
  </p>
  <p>
   Cette activité notée compte pour 10% de la note globale.
@@ -94,7 +94,7 @@ weight: 80
   Combien comptez-vous d’erreurs ? Expliquez chacune des erreurs identifiées.
  </p>
  <p>
-  Rappel :  Les archives RAR ne sont pas acceptées lors de la remise des travaux.
+  Rappel : Les archives RAR ne sont pas acceptées lors de la remise des travaux.
  </p>
 </div>
 <hr/>

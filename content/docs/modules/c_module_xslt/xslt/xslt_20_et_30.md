@@ -23,7 +23,7 @@ expressions XPath. L'instruction « xsl:for-each-group » permet
 tous les éléments étudiant en les regroupant selon la valeur de leur attribut nom.
 </p>
 <p>
- Elliotte Rusty Harold a publié  une
+ Elliotte Rusty Harold a publié une
  <a href="http://www.cafeconleche.org/slides/sd2002west/xslt2/XSLT_2.0_and_Beyond.html" shape="rect">
   page sur XSLT 2.0
  </a>

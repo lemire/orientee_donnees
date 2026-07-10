@@ -30,7 +30,7 @@ Un **élément** est l'ensemble du texte borné par deux balises ayant le même 
 <lavie>fd<a>fsd</a>fd</lavie>.
 ```
 
-Si un élément contient d'autres éléments, il doit aussi contenir, entre ses balises de début et de fin, les balises de début et de fin de chaque élément. Notez, de plus, que deux éléments ne peuvent se *chevaucher*, comme `<b><a></b></a>`; avant de passer à un autre élément, il faut terminer le premier avec sa balise de fin. L'exemple précédent est du XML mal formé!
+Si un élément contient d'autres éléments, il doit aussi contenir, entre ses balises de début et de fin, les balises de début et de fin de chaque élément. Notez, de plus, que deux éléments ne peuvent se *chevaucher*, comme `<b><a></b></a>`; avant de passer à un autre élément, il faut terminer le premier avec sa balise de fin. L'exemple précédent est du XML malformé!
 
 Pour bien comprendre, illustrons notre propos par un exemple. Un document XML prend la forme suivante :
 
@@ -136,7 +136,7 @@ Il arrive parfois qu'il soit trop lourd d'utiliser des appels d'entités, et on 
 
 Dans un document XML, on peut ajouter un commentaire qui est normalement destiné à être lu par un humain. Par exemple, dans un fichier de configuration XML, les commentaires pourraient être utilisés pour expliquer la signification des différents éléments pour qu'un humain puisse faire des modifications au besoin.
 
-Un commentaire commence par `<!--` et se termine par `-->` et ne doit pas contenir deux tirets de suite (--) entre ces deux bornes, il ne doit pas se terminer par un tiret, mais peut contenir n'importe quel autre texte. Un commentaire peut apparaître avant ou après l'élément-racine, dans un élément, entre deux éléments, etc. Cependant, un commentaire ne peut pas apparaître au sein d'une balise, comme `<a <!--ceci est la balise a-->>`. C'est du XML mal formé!
+Un commentaire commence par `<!--` et se termine par `-->` et ne doit pas contenir deux tirets de suite (--) entre ces deux bornes, il ne doit pas se terminer par un tiret, mais peut contenir n'importe quel autre texte. Un commentaire peut apparaître avant ou après l'élément-racine, dans un élément, entre deux éléments, etc. Cependant, un commentaire ne peut pas apparaître au sein d'une balise, comme `<a <!--ceci est la balise a-->>`. C'est du XML malformé!
 
 ## Les instructions de traitement
 

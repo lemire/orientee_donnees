@@ -23,7 +23,7 @@ weight: 130
     expressions XPath en utilisant le symbole « $ ». Ainsi, si la variable se
     nomme test, l'expression $test aura comme valeur la valeur de la variable.
     L'exemple suivant peut être utilisé pour remplacer tous les éléments
-    « produit » par le noeud de texte « bozo ».
+    « produit » par le nœud de texte « bozo ».
 </p>
 <pre><span style="color:#004a43; ">&lt;?</span><span style="color:#800000; font-weight:bold; ">xml</span><span style="color:#004a43; "> </span><span style="color:#074726; ">version</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#7d0045; ">1.0</span><span style="color:#0000e6; ">"</span><span style="color:#004a43; ">
     </span><span style="color:#074726; ">encoding</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">ISO-8859-1</span><span style="color:#0000e6; ">"</span><span style="color:#004a43; ">?&gt;</span>

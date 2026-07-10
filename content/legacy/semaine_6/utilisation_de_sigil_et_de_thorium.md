@@ -33,9 +33,9 @@ weight: 30
     déjà ouvert. Quelque chose comme ceci :
 </p>
 <pre style=" white-space: pre-wrap;       /* CSS 3 */
-        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-        white-space: -pre-wrap;      /* Opera 4-6 */
-        white-space: -o-pre-wrap;    /* Opera 7 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
         word-wrap: break-word;       /* Internet Explorer 5.5+ */"><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Mon premier livre<span style="color:#008c00; ">.</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
 </pre>
 <p>
@@ -129,16 +129,16 @@ weight: 30
     le fichier content.opf :
 </p>
 <pre style=" white-space: pre-wrap;       /* CSS 3 */
-        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-        white-space: -pre-wrap;      /* Opera 4-6 */
-        white-space: -o-pre-wrap;    /* Opera 7 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
         word-wrap: break-word;       /* Internet Explorer 5.5+ */"><span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">item</span> <span style="color:#274796; ">href</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">Styles/pgepub.css</span><span style="color:#0000e6; ">"</span> <span style="color:#274796; ">id</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">item1</span><span style="color:#0000e6; ">"</span> <span style="color:#274796; ">media-type</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">text/css</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">item</span> <span style="color:#274796; ">href</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">Text/www.gutenberg.org%40files%4011049%4011049-8-0.html</span><span style="color:#0000e6; ">"</span> <span style="color:#274796; ">id</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">id00000</span><span style="color:#0000e6; ">"</span> <span style="color:#274796; ">media-type</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">application/xhtml+xml</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">item</span> <span style="color:#274796; ">href</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">Text/www.gutenberg.org%40files%4011049%4011049-8-1.html</span><span style="color:#0000e6; ">"</span> <span style="color:#274796; ">id</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">id00639</span><span style="color:#0000e6; ">"</span> <span style="color:#274796; ">media-type</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">application/xhtml+xml</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">item</span> <span style="color:#274796; ">href</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">Text/www.gutenberg.org%40files%4011049%4011049-8-2.html</span><span style="color:#0000e6; ">"</span> <span style="color:#274796; ">id</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">id01301</span><span style="color:#0000e6; ">"</span> <span style="color:#274796; ">media-type</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">application/xhtml+xml</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
 </pre>
 <p>
- Si le coeur vous en dit, vous pouvez modifier les mots de Balzac, enregistrer
+ Si le cœur vous en dit, vous pouvez modifier les mots de Balzac, enregistrer
     le nouveau document EPUB et le lire en famille.
 </p>
 <p>

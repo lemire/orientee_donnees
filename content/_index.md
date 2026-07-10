@@ -55,7 +55,7 @@ XML et HTML sont fondamentalement basés sur une structure arborescente de nœud
 
 **Exemple. HTML**
 
-```xml
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -89,7 +89,7 @@ XML et HTML sont fondamentalement basés sur une structure arborescente de nœud
     </main>
     
     <footer>
-        <p>&copy; 2025 Exemple</p>
+        <p>&copy; 2026 Exemple</p>
     </footer>
 </body>
 </html>
@@ -230,7 +230,7 @@ L'utilisation de textes ou de travaux écrits par autrui sans attribution, est d
 
 ## L'environnement technologique du cours
 
-Un cours en ligne est beaucoup plus qu'un simple site web. Par exemple, le présent cours comprend des dizaines d'articles, plus d'une centaine de problèmes avec solutions, beaucoup de logiciel, des dizaines d'exemples, et des dizaines de liens vers des sites externes. Le professeur ou une personne tutrice sera également à votre disposition pour répondre à vos questions.
+Un cours en ligne est beaucoup plus qu'un simple site web. Par exemple, le présent cours comprend des dizaines d'articles, plus d'une centaine de problèmes avec solutions, beaucoup de logiciels, des dizaines d'exemples, et des dizaines de liens vers des sites externes. Le professeur ou une personne tutrice sera également à votre disposition pour répondre à vos questions.
 
 **Navigation**
 
@@ -244,7 +244,7 @@ Un cours en ligne n'est pas pour autant plus facile. Si votre progression est tr
 
 **Les activités d'autoévaluation sont obligatoires.**
 
-L'une des plus grandes sources de frustration est la difficulté des travaux notés. Plusieurs étudiants espèrent gagner du temps en faisant rapidement les lectures et en omettant les activités d'autoévaluation. C'est une mauvaise idée, parce que vous arriverez alors aux activités notées mal préparé.
+L'une des plus grandes sources de frustration est la difficulté des travaux notés. Plusieurs étudiants espèrent gagner du temps en faisant rapidement les lectures et en omettant les activités d'autoévaluation. C'est une mauvaise idée, parce que vous arriverez alors aux activités notées mal préparés.
 
 
 **Note sur l'encadrement**

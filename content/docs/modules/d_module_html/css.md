@@ -4,7 +4,7 @@ weight: 40
 ---
 # CSS
 
-La norme CSS a d'abord été proposée par Håkon Lie du CERN en Suisse en 1994 (environ 4 ans après l'apparition de la première page web). Cette norme a été acceptée comme recommandation officielle du W3C deux ans plus tard, soit en 1996, et la seconde version (CSS 2.0) est devenue une recommandation du W3C l'année suivante, soit en 1997. Une troisième version (CSS 3) a été adoptée à compter de 2011. À l'origine, les instructions CSS étaient destinées uniquement à indiquer aux navigateurs comment présenter le HTML (couleurs, polices, etc.) ; on s'est vite rendu compte qu'on pouvait aussi l'appliquer au XML et on considère maintenant les CSS comme une technologie qui s'applique autant au HTML qu'au XML (et aussi, évidemment, au XHTML).
+La norme CSS a d'abord été proposée par Håkon Lie du CERN en Suisse en 1994 (environ 4 ans après l'apparition de la première page web). Cette norme a été acceptée comme recommandation officielle du W3C deux ans plus tard, soit en 1996, et la seconde version (CSS 2.0) est devenue une recommandation du W3C en 1998. Une troisième version (CSS 3) a été adoptée à compter de 2011. À l'origine, les instructions CSS étaient destinées uniquement à indiquer aux navigateurs comment présenter le HTML (couleurs, polices, etc.) ; on s'est vite rendu compte qu'on pouvait aussi l'appliquer au XML et on considère maintenant les CSS comme une technologie qui s'applique autant au HTML qu'au XML (et aussi, évidemment, au XHTML).
 
 Nous avons vu que le XSLT permettait de transformer du XML en HTML pour l'affichage dans un navigateur. En général, le XSLT permet de transformer tout document XML en un autre format (HTML, XML ou autre).
 
@@ -12,7 +12,7 @@ Un fichier CSS est beaucoup plus limité dans la mesure où il ne transforme pas
 
 ## point de vue critique
 
-CSS est un langage déclaratif relativement limité. Il n'est pas possible de définir des variables, des fonctions ou de faire de l'arithmétique en CSS. On peut, par contre, redéfinir à volonté des règles, ce qui peut rendre le comportement final difficile à comprendre pour un humain. Il n'est pas facile, en CSS, de détecter le navigateur utilisé alors que tous les navigateurs ne traitent pas les règles de la même façon.
+CSS est un langage déclaratif relativement limité. On peut y définir des variables (propriétés personnalisées, comme `--couleur: blue`), faire un peu d'arithmétique avec `calc()`, `min()` ou `max()`, et s'appuyer sur des fonctions utilitaires, mais le langage reste bien plus restreint qu'un langage de programmation généraliste. On peut, par contre, redéfinir à volonté des règles, ce qui peut rendre le comportement final difficile à comprendre pour un humain. Il n'est pas facile, en CSS, de détecter le navigateur utilisé alors que tous les navigateurs ne traitent pas les règles de la même façon.
 
 ### notions de base
 
@@ -351,7 +351,7 @@ Les espaces de noms ne sont pas pris en charge en CSS 1 ou CSS 2. Ainsi « `mone
 
 ### sélection de la langue
 
-On a vu qu'il est possible en XML de spécifier la langue dans laquelle est écrit un texte avec l'attribut «  `xml:lang` ». On pourrait penser que pour mettre le texte déclaré comme étant en anglais en rouge, il suffirait de l'instruction « `*[lang="en"] { color:red;}` », mais que se passera-t-il si on a utilisé un code de région avec la langue comme « en-CA » ? Une solution plus élégante consiste alors à utiliser la sélection sur la langue avec une instruction comme « `:lang(en) { color:red;}` ».
+On a vu qu'il est possible en XML de spécifier la langue dans laquelle est écrit un texte avec l'attribut « `xml:lang` ». On pourrait penser que pour mettre le texte déclaré comme étant en anglais en rouge, il suffirait de l'instruction « `*[lang="en"] { color:red;}` », mais que se passera-t-il si on a utilisé un code de région avec la langue comme « en-CA » ? Une solution plus élégante consiste alors à utiliser la sélection sur la langue avec une instruction comme « `:lang(en) { color:red;}` ».
 
 ### sélection de plusieurs éléments
 
