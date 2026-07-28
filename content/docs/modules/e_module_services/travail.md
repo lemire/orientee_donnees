@@ -153,6 +153,13 @@ Pour chaque problème, expliquez l'erreur et fournissez la version corrigée du 
 
 **Livrables** : Le fichier YAML corrigé et un document expliquant chacune des erreurs identifiées.
 
+## Rapport vidéo
+
+Vous pouvez remettre votre rapport sous forme de **vidéo** plutôt qu'en format écrit : une
+démonstration commentée à l'écran dans laquelle vous présentez votre code, son exécution et vos
+résultats. Le code source et les fichiers demandés doivent tout de même être remis. Les critères
+du barème s'appliquent de la même façon, que le rapport soit écrit ou filmé.
+
 ## Barème de correction
 
 Ce travail est noté sur **10 points**, soit les **10 %** qu'il vaut dans la note finale.

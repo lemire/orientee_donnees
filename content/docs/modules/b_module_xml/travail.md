@@ -173,6 +173,13 @@ Composer et exécuter trois requêtes SPARQL spécifiques :
 
 **Livrables** : Les requêtes et vos explications.
 
+## Rapport vidéo
+
+Vous pouvez remettre votre rapport sous forme de **vidéo** plutôt qu'en format écrit : une
+démonstration commentée à l'écran dans laquelle vous présentez votre code, son exécution et vos
+résultats. Le code source et les fichiers demandés doivent tout de même être remis. Les critères
+du barème s'appliquent de la même façon, que le rapport soit écrit ou filmé.
+
 ## Barème de correction
 
 Ce travail est noté sur **10 points**, soit les **10 %** qu'il vaut dans la note finale.

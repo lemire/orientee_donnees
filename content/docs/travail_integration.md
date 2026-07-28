@@ -517,6 +517,13 @@ La page web doit transmettre du XML. Elle doit recevoir du JSON de la part du se
 
 Vous devrez remettre le code source Java complet avec des commentaires explicatifs, incluant la génération du SVG, du document Excel Open XML et de la transformation XSLT vers Markdown. La page HTML avec le formulaire et le JavaScript devra également être fournie. Une documentation expliquant l'architecture et les technologies utilisées sera nécessaire. Des exemples de données d'entrée et de résultats de sortie (SVG, Excel et Markdown) devront être inclus. Enfin, des tests montrant le fonctionnement avec différentes valeurs devront être présentés.
 
+## Rapport vidéo
+
+Vous pouvez remettre votre rapport sous forme de **vidéo** plutôt qu'en format écrit : une
+démonstration commentée à l'écran dans laquelle vous présentez votre code, son exécution et vos
+résultats. Le code source et les fichiers demandés doivent tout de même être remis. Les critères
+du barème s'appliquent de la même façon, que le rapport soit écrit ou filmé.
+
 ## Barème de correction
 
 Ce travail est noté sur **40 points**, soit les **40 %** qu'il vaut dans la note finale.
