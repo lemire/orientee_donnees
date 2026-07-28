@@ -152,3 +152,17 @@ Pour chaque problème, expliquez l'erreur et fournissez la version corrigée du 
 - Validateur en ligne : https://www.yamllint.com/
 
 **Livrables** : Le fichier YAML corrigé et un document expliquant chacune des erreurs identifiées.
+
+## Barème de correction
+
+Ce travail est noté sur **10 points**, soit les **10 %** qu'il vaut dans la note finale.
+
+| Critère | Points |
+|---|---|
+| Question 1 — service web REST avec Gson (les cinq endpoints) | 7 |
+| Question 2 — correction et explication du fichier YAML | 2 |
+| Documentation des endpoints et qualité du code | 1 |
+
+Les points de chaque critère sont accordés au prorata de ce qui fonctionne et de ce qui est
+démontré dans la remise. Un travail qui ne compile pas ou ne s'exécute pas ne peut obtenir plus
+de la moitié des points.

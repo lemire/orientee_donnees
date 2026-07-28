@@ -172,3 +172,18 @@ Composer et exécuter trois requêtes SPARQL spécifiques :
    - **Requête 3** : Calculer des statistiques sur les publications : nombre total d'articles, nombre d'auteurs distincts, et articles les plus cités.
 
 **Livrables** : Les requêtes et vos explications.
+
+## Barème de correction
+
+Ce travail est noté sur **10 points**, soit les **10 %** qu'il vaut dans la note finale.
+
+| Critère | Points |
+|---|---|
+| Question 1 — traitement XML en Java et validation par DTD | 3,5 |
+| Question 2 — conversions JSON ↔ XML avec Jackson | 3,5 |
+| Question 3 — requêtes SPARQL | 2 |
+| Documentation, README et qualité du code | 1 |
+
+Les points de chaque critère sont accordés au prorata de ce qui fonctionne et de ce qui est
+démontré dans la remise. Un travail qui ne compile pas ou ne s'exécute pas ne peut obtenir plus
+de la moitié des points.

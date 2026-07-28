@@ -138,3 +138,18 @@ return
 - Tutoriel XQuery : https://www.w3schools.com/xml/xquery_intro.asp
 
 **Livrables** : Requêtes XQuery (.xq), résultats des analyses, et documentation des fonctionnalités utilisées.
+
+## Barème de correction
+
+Ce travail est noté sur **15 points**, soit les **15 %** qu'il vaut dans la note finale.
+
+| Critère | Points |
+|---|---|
+| Question 1 — transformation XSLT vers JSON | 4,5 |
+| Question 2 — expressions XPath | 4,5 |
+| Question 3 — requêtes XQuery | 4,5 |
+| Documentation, explications et résultats fournis | 1,5 |
+
+Les points de chaque critère sont accordés au prorata de ce qui fonctionne et de ce qui est
+démontré dans la remise. Un travail qui ne compile pas ou ne s'exécute pas ne peut obtenir plus
+de la moitié des points.

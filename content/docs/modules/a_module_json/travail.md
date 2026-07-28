@@ -154,3 +154,17 @@ Enfin, vous intégrerez des mécanismes de validation pour vérifier que les fic
 **Ressources** : Consultez la documentation officielle de jq pour les opérations de traitement JSON : https://jqlang.org/manual/
 
 **Livrables** : Scripts jq (.jq), fichier JSON d'exemple, et un fichier README en Markdown avec des exemples d'exécution et d'explication des scripts.
+
+## Barème de correction
+
+Ce travail est noté sur **10 points**, soit les **10 %** qu'il vaut dans la note finale.
+
+| Critère | Points |
+|---|---|
+| Question 1 — application Java avec Gson et GeoJSON | 4,5 |
+| Question 2 — scripts jq | 4 |
+| Documentation, README et qualité du code | 1,5 |
+
+Les points de chaque critère sont accordés au prorata de ce qui fonctionne et de ce qui est
+démontré dans la remise. Un travail qui ne compile pas ou ne s'exécute pas ne peut obtenir plus
+de la moitié des points.

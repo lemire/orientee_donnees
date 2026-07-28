@@ -516,3 +516,23 @@ que les étiquettes sont présentes. La gestion des erreurs devra être appropri
 La page web doit transmettre du XML. Elle doit recevoir du JSON de la part du serveur. Jackson devra être utilisé de manière appropriée pour le XML et Gson pour le JSON.
 
 Vous devrez remettre le code source Java complet avec des commentaires explicatifs, incluant la génération du SVG, du document Excel Open XML et de la transformation XSLT vers Markdown. La page HTML avec le formulaire et le JavaScript devra également être fournie. Une documentation expliquant l'architecture et les technologies utilisées sera nécessaire. Des exemples de données d'entrée et de résultats de sortie (SVG, Excel et Markdown) devront être inclus. Enfin, des tests montrant le fonctionnement avec différentes valeurs devront être présentés.
+
+## Barème de correction
+
+Ce travail est noté sur **40 points**, soit les **40 %** qu'il vaut dans la note finale.
+
+| Critère | Points |
+|---|---|
+| Interface HTML5 et communication AJAX | 6 |
+| Serveur Java et ses quatre endpoints | 8 |
+| Traitement des données : Jackson, Gson et validation des entrées | 6 |
+| Graphique SVG et représentation GeoJSON | 8 |
+| Document Excel (Apache POI) et Markdown (XSLT) | 6 |
+| Configuration YAML, structure Maven et documentation | 6 |
+
+Les points de chaque critère sont accordés au prorata de ce qui fonctionne et de ce qui est
+démontré dans la remise. Un travail qui ne compile pas ou ne s'exécute pas ne peut obtenir plus
+de la moitié des points.
+
+Le barème récompense l'**intégration** : une technologie exigée qui est contournée (XML analysé à
+la main, JSON concaténé, Markdown produit sans XSLT) ne rapporte pas les points du critère visé.

@@ -216,3 +216,17 @@ Vous devez créer un CSS qui améliore la présentation du graphique SVG avec le
 - Guide SVG MDN : https://developer.mozilla.org/fr/docs/Web/SVG
 
 **Livrables** : Page HTML complète avec SVG et CSS, et documentation des choix de mise en forme.
+
+## Barème de correction
+
+Ce travail est noté sur **15 points**, soit les **15 %** qu'il vaut dans la note finale.
+
+| Critère | Points |
+|---|---|
+| Question 1 — MathML et CSS | 7 |
+| Question 2 — SVG et CSS | 7 |
+| Validation HTML et documentation des choix | 1 |
+
+Les points de chaque critère sont accordés au prorata de ce qui fonctionne et de ce qui est
+démontré dans la remise. Un travail qui ne compile pas ou ne s'exécute pas ne peut obtenir plus
+de la moitié des points.
