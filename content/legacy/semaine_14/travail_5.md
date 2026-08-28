@@ -110,15 +110,15 @@ weight: 40
  <table border="1" class="tablebleu">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>

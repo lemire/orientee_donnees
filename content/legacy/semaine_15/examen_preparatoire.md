@@ -6,7 +6,7 @@ weight: 20
 
 Afin de bien vous préparer à l’examen final de ce cours, voici un examen préparatoire.
 
-# Examen factice
+## Examen factice
 
 ## Question 1
 

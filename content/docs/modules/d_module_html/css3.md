@@ -5,7 +5,7 @@ weight: 44
 
 # CSS (partie 3)
 
-### Quand le contenu excède le contenant
+## Quand le contenu excède le contenant
 
 Il arrive qu’une image ou qu’un texte excède la taille de l’élément dans lequel il a été placé. Par défaut, ce contenu déborde visiblement (`overflow: visible`). La propriété `overflow: hidden` permet de contrôler ce comportement :
 
@@ -13,7 +13,7 @@ Il arrive qu’une image ou qu’un texte excède la taille de l’élément dan
 - `overflow: scroll` ajoute des barres de défilement (même si le contenu tient dans la boîte).
 - `overflow: auto` n’ajoute les barres que si nécessaire.
 
-### Encodage des caractères
+## Encodage des caractères
 
 Il peut être utile de préciser l’encodage utilisé dans le fichier CSS en plaçant à la toute première ligne :
 
@@ -27,7 +27,7 @@ ou
 @charset "ISO-8859-1";
 ```
 
-### Différentes règles pour différents médias
+## Différentes règles pour différents médias
 
 On peut appliquer des règles CSS différentes selon le type de média avec `@media` :
 
@@ -44,7 +44,7 @@ On peut appliquer des règles CSS différentes selon le type de média avec `@me
 
 Sans `@media`, la règle s’applique à tous les médias.
 
-### Inclure d’autres fichiers CSS
+## Inclure d’autres fichiers CSS
 
 Pour une approche modulaire, on peut importer d’autres feuilles de style avec `@import` (à placer après un éventuel `@charset`) :
 
@@ -53,7 +53,7 @@ Pour une approche modulaire, on peut importer d’autres feuilles de style avec 
 @import "print-mineure.css" print;
 ```
 
-### Indentation de la première ligne d’un paragraphe
+## Indentation de la première ligne d’un paragraphe
 
 ```css
 p {
@@ -61,7 +61,7 @@ p {
 }
 ```
 
-### Modifier la casse du texte
+## Modifier la casse du texte
 
 ```css
 h1 { text-transform: uppercase; }     /* TOUT EN MAJUSCULES */
@@ -69,7 +69,7 @@ h2 { text-transform: capitalize; } /* Première Lettre De Chaque Mot */
 p  { text-transform: lowercase; }     /* tout en minuscules */
 ```
 
-### Autres variantes des polices
+## Autres variantes des polices
 
 Quelques propriétés courantes :
 
@@ -80,7 +80,7 @@ Quelques propriétés courantes :
 - `text-decoration: underline;`, `overline;`, `line-through;`, `blink;`
 - `cursor: pointer;` (main pour les liens), `text`, `wait`, etc.
 
-### Ajouter des compteurs
+## Ajouter des compteurs
 
 Exemple 1 – numérotation romaine des paragraphes entre chaque `<h1>` :
 
@@ -97,13 +97,13 @@ h1 { counter-increment: h1-num; }
 h1:before { content: counter(h1-num, decimal) ". "; }
 ```
 
-### Traitement des retours de chariot
+## Traitement des retours de chariot
 
 - `white-space: normal` → comportement par défaut (les retours à la ligne du source sont ignorés)
 - `white-space: pre` → préserve tous les espaces et retours à la ligne (utile pour du code)
 - `white-space: nowrap` → empêche tout retour à la ligne automatique
 
-### Des nouveautés en CSS 3
+## Des nouveautés en CSS 3
 
 CSS 3 introduit de nombreux nouveaux sélecteurs. Voici les plus utilisés :
 
@@ -144,7 +144,7 @@ p.rotated { transform: rotate(180deg); }
 p.mirror  { transform: scale(-1, 1); }
 ```
 
-### Optimisation des fichiers CSS
+## Optimisation des fichiers CSS
 
 Un même effet peut souvent s’obtenir de façon plus concise en regroupant les déclarations communes :
 
@@ -173,11 +173,11 @@ texte {
 
 Des outils comme CSSTidy peuvent automatiser ce genre d’optimisation.
 
-### En terminant
+## En terminant
 
 La syntaxe CSS est extrêmement riche. Pour aller plus loin, consultez la référence officielle :  
 [https://developer.mozilla.org/fr/docs/Web/CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
 
-### Livres de référence
+## Livres de référence
 
 - David Sawyer McFarland, *CSS: The Missing Manual*, O'Reilly Media, 2015, 718 pages.

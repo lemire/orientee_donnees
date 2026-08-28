@@ -8,7 +8,7 @@ weight: 20
 Il y a plusieurs façons de traiter du XML. Chaque méthode a ses avantages et ses inconvénients. Bien que ce module s'intéresse surtout à l'approche DOM, il est important de connaître l'ensemble des méthodologies possibles et d'avoir une idée des forces et faiblesses relatives de chacune.
 
 
-### Traitement du XML comme du texte
+## Traitement du XML comme du texte
 
 Le traitement du XML comme du texte consiste à manipuler les fichiers XML en utilisant les fonctions de traitement de chaînes de caractères disponibles dans les langages de programmation. Cette approche est simple à implémenter mais peut être source d'erreurs si le XML n'est pas correctement formé.
 
@@ -41,7 +41,7 @@ Cependant, comment savoir si le XML produit est bien formé ? Dans l'exemple pr�
 ```
 
 
-### Traitement événementiel
+## Traitement événementiel
 
 Le traitement événementiel, comme SAX, lit le document XML de manière séquentielle et génère des événements à chaque élément rencontré. Cette méthode est efficace pour les gros fichiers mais nécessite une gestion manuelle de l'état.
 
@@ -99,7 +99,7 @@ public class MonApplicationSAX extends DefaultHandler {
 
 
 
-### Traitement avec itérateurs (StAX)
+## Traitement avec itérateurs (StAX)
 
 StAX (Streaming API for XML) offre une approche "pull" plus intuitive que SAX, permettant au programmeur de contrôler la lecture du document XML de manière itérative.
 
@@ -139,7 +139,7 @@ public class staxex {
 
 
 
-### Traitement avec modèle en arbre (DOM)
+## Traitement avec modèle en arbre (DOM)
 
 Le modèle DOM (Document Object Model) charge l'intégralité du document XML en mémoire sous forme d'arbre d'objets, permettant une navigation et une manipulation faciles mais consommatrice de ressources.
 Un document XML peut être vu comme un arbre. Le DOM charge tout le document en mémoire sous forme d'objets.
@@ -162,14 +162,14 @@ Représentation en arbre :
 ```
 
 
-### Transformations (XSLT)
+## Transformations (XSLT)
 
 XSLT (eXtensible Stylesheet Language Transformations) est un langage de transformation XML qui permet de convertir des documents XML vers d'autres formats comme HTML ou texte de manière déclarative.
 XSLT est idéal pour les transformations simples (XML → HTML, XML → texte…). Pour des traitements complexes avec bases de données, il est insuffisant.
 
 
 
-### XPath
+## XPath
 XPath est un langage d'expression qui permet de naviguer et d'extraire des données spécifiques dans un document XML de manière concise et puissante.
 XPath permet d'extraire très simplement des données depuis Java.
 
@@ -185,7 +185,7 @@ XPath xpath = XPathFactory.newInstance().newXPath();
 String title = xpath.evaluate("//nom/text()", doc);
 ```
 
-### Sérialization Java
+## Sérialization Java
 
 La sérialisation en Java permet de convertir l'état d'un objet en un flux d'octets, afin de le stocker (par exemple dans un fichier) ou de le transmettre sur un réseau. Le processus inverse, la désérialisation, recrée l'objet à partir de ce flux. Ce mécanisme est particulièrement utile pour persister des données ou échanger des objets entre applications.
 
@@ -252,7 +252,7 @@ public class ExempleSerializable {
 }
 {{</inlineJava>}}
 
-### Réflexion
+## Réflexion
 
 La réflexion joue un rôle crucial dans les mécanismes de sérialisation et de désérialisation en Java, permettant un traitement générique et dynamique des objets sans nécessiter de code spécifique pour chaque classe. Par exemple, la sérialisation native de Java (via `java.io.Serializable`) utilise la réflexion pour inspecter automatiquement les champs d'une classe, y compris les champs privés, et les écrire dans un flux binaire. Lors de la désérialisation, elle crée une instance vide de la classe (sans appeler de constructeur) et remplit les champs via la réflexion, en ignorant les validations potentielles des constructeurs.
 
@@ -337,7 +337,7 @@ Vous pouvez même définir vos propres annotations.)
 
 
 
-### Traitement par abstraction
+## Traitement par abstraction
 
 Le traitement par abstraction utilise des bibliothèques de haut niveau qui masquent la complexité du XML, permettant de travailler avec des objets métier sans se soucier du format de sérialisation. 
 De nombreuses bibliothèques (JAXB, bases de données, frameworks) manipulent du XML sans jamais vous forcer à écrire du XML à la main. Ils utilisent souvent
@@ -345,7 +345,7 @@ la réflexion.
 
 
 
-### Sérialisation XML Java Beans
+## Sérialisation XML Java Beans
 
 La sérialisation XML d'objet Java avec Bean permet de convertir des objets Java en XML et vice-versa, facilitant la persistance et l'échange de données.
 Prenez quelques secondes pour exécuter le programme suivant.
@@ -440,7 +440,7 @@ Si vous essayez de sérialiser un objet personnalisé qui ne respecte pas ces r�
 
 De plus, XMLEncoder ne conserve pas l’identité des objets en cas de références partagées : chaque occurrence d’un même objet sera dupliquée lors de la désérialisation, contrairement à la sérialisation binaire classique qui préserve les références. Cela peut poser problème pour des structures de données complexes avec des graphes d’objets.
 
-### Services web
+## Services web
 
 
 Les services web REST utilisent les méthodes HTTP standard pour exposer des ressources XML via des API web, permettant l'interopérabilité entre différentes plateformes.

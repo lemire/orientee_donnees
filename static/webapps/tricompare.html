@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparaison de tris</title>
+<style>
+  body { margin: 0; padding: 1.5rem; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         background: #f3f4f6; color: #1f2433; display: flex; justify-content: center; }
+  main { width: 100%; max-width: 960px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+             overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  :focus-visible { outline: 3px solid #3a4cb8; outline-offset: 2px; }
+  button { min-height: 44px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Comparaison de tris</h1>
 <div style="width: 100%; max-width: 700px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 24px; margin-bottom: 32px;">
     <div style="margin-bottom: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
       <button id="sortingApp_startAllButton" style="padding: 12px 24px; background-color: #2563eb; color: #ffffff; font-weight: 700; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease-in-out; cursor: pointer; transform: scale(1);" onmouseover="this.style.backgroundColor='#1d4ed8'" onmouseout="this.style.backgroundColor='#2563eb'" onmousedown="this.style.transform='scale(0.95)'" onmouseup="this.style.transform='scale(1)'">Lancer tous les tris</button>
@@ -100,11 +119,11 @@
           bar.style.width = `${barWidth}px`;
 
           if (sortedIndices[algorithmName].has(index)) {
-              bar.style.backgroundColor = '#10b981';
+              bar.style.backgroundColor = '#047857';
           } else if (index === highlight.pivot) {
               bar.style.backgroundColor = '#22c55e';
           } else if (Array.isArray(highlight.swapping) && highlight.swapping.includes(index)) {
-              bar.style.backgroundColor = '#3b82f6';
+              bar.style.backgroundColor = '#1d4ed8';
           } else if (Array.isArray(highlight.comparing) && highlight.comparing.includes(index)) {
               bar.style.backgroundColor = '#ef4444';
           } else {
@@ -335,3 +354,6 @@
       });
     })();
   </script>
+</main>
+</body>
+</html>

@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problème de logique : qui arrive le premier ?</title>
+<style>
+  body { margin: 0; padding: 1.5rem; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         background: #f3f4f6; color: #1f2433; display: flex; justify-content: center; }
+  main { width: 100%; max-width: 960px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+             overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  :focus-visible { outline: 3px solid #3a4cb8; outline-offset: 2px; }
+  button { min-height: 44px; }
+</style>
+</head>
+<body>
+<main>
   <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); text-align: center; max-width: 500px; width: 100%;">
         <h1 style="font-size: 24px; margin-bottom: 20px; color: #2c3e50;">Problème de logique : qui arrive le premier ?</h1>
         <p style="font-size: 16px; margin-bottom: 20px;">Jean et Pierre travaillent ensemble. Jean s’assure d’être toujours immédiatement suivi par Pierre quand ils arrivent au travail. Qui arrive le premier au travail ?</p>
@@ -12,7 +30,7 @@
                 <input type="radio" name="answer" value="Les deux" style="margin-right: 10px;"> Les deux
             </label>
         </div>
-        <button id="submitButton" style="background: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Soumettre</button>
+        <button id="submitButton" style="background: #1a6a9c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Soumettre</button>
         <p id="result" style="margin-top: 20px; font-size: 16px; color: #333;"></p>
     </div>
     <script>
@@ -21,7 +39,7 @@
             const resultElement = document.getElementById('result');
             if (!selectedAnswer) {
                 resultElement.textContent = 'Veuillez sélectionner une réponse.';
-                resultElement.style.color = '#e74c3c';
+                resultElement.style.color = '#b03a2e';
                 return;
             }
             const answer = selectedAnswer.value;
@@ -30,9 +48,12 @@
                 resultElement.style.color = '#2ecc71';
             } else {
                 resultElement.textContent = 'Incorrect. Jean arrive le premier, car il s’assure d’être immédiatement suivi par Pierre.';
-                resultElement.style.color = '#e74c3c';
+                resultElement.style.color = '#b03a2e';
             }
             this.style.cssText = 'background: #95a5a6; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: not-allowed; font-size: 16px;';
             this.disabled = true;
         });
     </script>
+</main>
+</body>
+</html>

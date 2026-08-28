@@ -229,15 +229,15 @@ weight: 20
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -381,9 +381,9 @@ weight: 20
 </p>
 <svg contentstyletype="text/css" font-size="0.7em" height="500" preserveaspectratio="xMidYMid meet" version="1.0" width="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomandpan="magnify">
  ../module5/dc.pdf
- <g class="graph" id="graph0" transform="scale(1)">
+ <g class="graph" id="svg1-graph0" transform="scale(1)">
   <!-- 0 -->
-  <g class="node" id="node1">
+  <g class="node" id="svg1-node1">
    <a xlink:actuate="onRequest" xlink:href="http%3A//www.uquebec.ca/rdfexemples.html" xlink:show="replace" xlink:title="rdfexemples.html" xlink:type="simple">
     <ellipse cx="67" cy="239" rx="62" ry="18" style="fill:none;stroke:black;">
     </ellipse>
@@ -393,7 +393,7 @@ weight: 20
    </a>
   </g>
   <!-- 0&#45;&gt;0 -->
-  <g class="edge" id="edge20">
+  <g class="edge" id="svg1-edge20">
    <path d="M30,224C17,214 30,203 67,203 93,203 107,208 109,215" style="fill:none;stroke:black;">
    </path>
    <polygon points="112,217 104,224 106,214 112,217" style="fill:black;stroke:black;">
@@ -403,7 +403,7 @@ weight: 20
    </text>
   </g>
   <!-- 1 -->
-  <g class="node" id="node2">
+  <g class="node" id="svg1-node2">
    <ellipse cx="388" cy="23" rx="106" ry="18" style="fill:none;stroke:black;">
    </ellipse>
    <text font-size="0.9em" text-anchor="middle" x="388" y="28">
@@ -411,7 +411,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;1 -->
-  <g class="edge" id="edge2">
+  <g class="edge" id="svg1-edge2">
    <path d="M73,221C84,191 109,131 147,93 182,59 233,41 280,32" style="fill:none;stroke:black;">
    </path>
    <polygon points="280,29 290,30 281,35 280,29" style="fill:black;stroke:black;">
@@ -421,7 +421,7 @@ weight: 20
    </text>
   </g>
   <!-- 2 -->
-  <g class="node" id="node4">
+  <g class="node" id="svg1-node4">
    <polygon points="428,59 348,59 348,95 428,95 428,59" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="388" y="82">
@@ -429,7 +429,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;2 -->
-  <g class="edge" id="edge4">
+  <g class="edge" id="svg1-edge4">
    <path d="M79,221C93,201 119,167 147,145 202,102 285,86 337,80" style="fill:none;stroke:black;">
    </path>
    <polygon points="337,77 347,79 337,83 337,77" style="fill:black;stroke:black;">
@@ -439,7 +439,7 @@ weight: 20
    </text>
   </g>
   <!-- 3 -->
-  <g class="node" id="node6">
+  <g class="node" id="svg1-node6">
    <polygon points="454,113 322,113 322,149 454,149 454,113" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="388" y="136">
@@ -448,7 +448,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;3 -->
-  <g class="edge" id="edge6">
+  <g class="edge" id="svg1-edge6">
    <path d="M92,222C108,212 128,200 147,190 183,173 192,169 229,158 255,151 285,145 311,141" style="fill:none;stroke:black;">
    </path>
    <polygon points="311,138 321,139 312,144 311,138" style="fill:black;stroke:black;">
@@ -458,7 +458,7 @@ weight: 20
    </text>
   </g>
   <!-- 4 -->
-  <g class="node" id="node8">
+  <g class="node" id="svg1-node8">
    <polygon points="415,167 361,167 361,203 415,203 415,167" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="388" y="190">
@@ -466,7 +466,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;4 -->
-  <g class="edge" id="edge8">
+  <g class="edge" id="svg1-edge8">
    <path d="M114,227C125,224 136,221 147,219 220,206 303,195 351,189" style="fill:none;stroke:black;">
    </path>
    <polygon points="351,186 361,188 351,192 351,186" style="fill:black;stroke:black;">
@@ -476,7 +476,7 @@ weight: 20
    </text>
   </g>
   <!-- 5 -->
-  <g class="node" id="node10">
+  <g class="node" id="svg1-node10">
    <polygon points="415,221 361,221 361,257 415,257 415,221" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="388" y="244">
@@ -484,7 +484,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;5 -->
-  <g class="edge" id="edge10">
+  <g class="edge" id="svg1-edge10">
    <path d="M129,239C195,239 296,239 351,239" style="fill:none;stroke:black;">
    </path>
    <polygon points="351,235 361,239 351,242 351,235" style="fill:black;stroke:black;">
@@ -494,7 +494,7 @@ weight: 20
    </text>
   </g>
   <!-- 6 -->
-  <g class="node" id="node12">
+  <g class="node" id="svg1-node12">
    <polygon points="415,275 361,275 361,311 415,311 415,275" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="388" y="298">
@@ -502,7 +502,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;6 -->
-  <g class="edge" id="edge12">
+  <g class="edge" id="svg1-edge12">
    <path d="M113,251C124,254 136,257 147,259 220,273 303,283 351,289" style="fill:none;stroke:black;">
    </path>
    <polygon points="351,286 361,290 351,292 351,286" style="fill:black;stroke:black;">
@@ -512,7 +512,7 @@ weight: 20
    </text>
   </g>
   <!-- 7 -->
-  <g class="node" id="node14">
+  <g class="node" id="svg1-node14">
    <polygon points="482,329 294,329 294,365 482,365 482,329" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="388" y="352">
@@ -521,7 +521,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;7 -->
-  <g class="edge" id="edge14">
+  <g class="edge" id="svg1-edge14">
    <path d="M90,256C105,267 127,281 147,291 190,312 240,325 283,333" style="fill:none;stroke:black;">
    </path>
    <polygon points="284,330 293,335 283,336 284,330" style="fill:black;stroke:black;">
@@ -531,7 +531,7 @@ weight: 20
    </text>
   </g>
   <!-- 8 -->
-  <g class="node" id="node16">
+  <g class="node" id="svg1-node16">
    <polygon points="547,383 229,383 229,423 547,423 547,383" style="fill:none;stroke:black;">
    </polygon>
    <text font-size="0.9em" text-anchor="middle" x="388" y="400">
@@ -543,7 +543,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;8 -->
-  <g class="edge" id="edge16">
+  <g class="edge" id="svg1-edge16">
    <path d="M78,257C92,278 118,314 147,337 172,357 203,370 234,380" style="fill:none;stroke:black;">
    </path>
    <polygon points="235,377 244,383 233,383 235,377" style="fill:black;stroke:black;">
@@ -553,7 +553,7 @@ weight: 20
    </text>
   </g>
   <!-- 9 -->
-  <g class="node" id="node18">
+  <g class="node" id="svg1-node18">
    <polygon points="415,441 361,441 361,477 415,477 415,441" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="388" y="464">
@@ -561,7 +561,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;9 -->
-  <g class="edge" id="edge18">
+  <g class="edge" id="svg1-edge18">
    <path d="M73,257C83,288 107,352 147,391 203,444 298,457 351,459" style="fill:none;stroke:black;">
    </path>
    <polygon points="351,455 361,459 351,462 351,455" style="fill:black;stroke:black;">
@@ -715,15 +715,15 @@ weight: 20
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -791,15 +791,15 @@ weight: 20
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -857,10 +857,10 @@ weight: 20
  Voici la représentation sous la forme d'un graphe :
 </p>
 <svg contentstyletype="text/css" font-size="0.7em" height="150" version="1.0" width="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomandpan="magnify">
- <g class="graph" id="graph0" transform="scale(1)">
+ <g class="graph" id="svg2-graph0" transform="scale(1)">
   ../module5/cc.pdf
   <!-- 0 -->
-  <g class="node" id="node1">
+  <g class="node" id="svg2-node1">
    <a xlink:actuate="onRequest" xlink:href="http%3A//teluq.ca/rdfexemples.html" xlink:show="replace" xlink:title="rdfexemples.html\n{Work}" xlink:type="simple">
     <ellipse cx="71" cy="50" rx="64" ry="28" style="fill:none;stroke:black;">
     </ellipse>
@@ -873,7 +873,7 @@ weight: 20
    </a>
   </g>
   <!-- 1 -->
-  <g class="node" id="node2">
+  <g class="node" id="svg2-node2">
    <polygon points="427,5 287,5 287,41 427,41 427,5" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="357" y="28">
@@ -882,7 +882,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;1 -->
-  <g class="edge" id="edge2">
+  <g class="edge" id="svg2-edge2">
    <path d="M135,44C177,40 232,35 277,31" style="fill:none;stroke:black;">
    </path>
    <polygon points="277,28 287,30 277,34 277,28" style="fill:black;stroke:black;">
@@ -892,7 +892,7 @@ weight: 20
    </text>
   </g>
   <!-- 2 -->
-  <g class="node" id="node4">
+  <g class="node" id="svg2-node4">
    <ellipse cx="357" cy="77" rx="143" ry="18" style="fill:none;stroke:black;">
    </ellipse>
    <text font-size="0.9em" text-anchor="middle" x="357" y="82">
@@ -900,7 +900,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;2 -->
-  <g class="edge" id="edge4">
+  <g class="edge" id="svg2-edge4">
    <path d="M132,60C140,61 148,62 155,63 175,66 195,67 215,69" style="fill:none;stroke:black;">
    </path>
    <polygon points="215,66 225,70 215,72 215,66" style="fill:black;stroke:black;">
@@ -1012,15 +1012,15 @@ weight: 20
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -1290,10 +1290,10 @@ weight: 20
  Voici le graphe équivalent :
 </p>
 <svg contentstyletype="text/css" font-size="0.7em" height="300" preserveaspectratio="xMidYMid meet" version="1.0" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomandpan="magnify">
- <g class="graph" id="graph0" transform="scale(1)">
+ <g class="graph" id="svg3-graph0" transform="scale(1)">
   <!-- 0 -->
   ../module5/foaf.pdf
-  <g class="node" id="node1">
+  <g class="node" id="svg3-node1">
    <a xlink:actuate="onRequest" xlink:href="http%3A//4suite.org/rdf/anonymous/61841b36-5a83-4833-9526-85153a4c3704" xlink:show="replace" xlink:title="Anonymous\nPerson" xlink:type="simple">
     <ellipse cx="56" cy="131" rx="50" ry="28" style="fill:none;stroke:black;">
     </ellipse>
@@ -1306,7 +1306,7 @@ weight: 20
    </a>
   </g>
   <!-- 1 -->
-  <g class="node" id="node2">
+  <g class="node" id="svg3-node2">
    <polygon points="350,5 296,5 296,41 350,41 350,5" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="323" y="28">
@@ -1314,7 +1314,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;1 -->
-  <g class="edge" id="edge2">
+  <g class="edge" id="svg3-edge2">
    <path d="M83,107C95,97 110,86 125,78 177,51 244,36 285,29" style="fill:none;stroke:black;">
    </path>
    <polygon points="285,26 295,27 286,32 285,26" style="fill:black;stroke:black;">
@@ -1324,7 +1324,7 @@ weight: 20
    </text>
   </g>
   <!-- 2 -->
-  <g class="node" id="node4">
+  <g class="node" id="svg3-node4">
    <polygon points="351,59 295,59 295,95 351,95 351,59" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="323" y="82">
@@ -1332,7 +1332,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;2 -->
-  <g class="edge" id="edge4">
+  <g class="edge" id="svg3-edge4">
    <path d="M101,117C109,115 117,113 125,111 180,98 244,88 284,82" style="fill:none;stroke:black;">
    </path>
    <polygon points="284,79 294,81 284,85 284,79" style="fill:black;stroke:black;">
@@ -1342,7 +1342,7 @@ weight: 20
    </text>
   </g>
   <!-- 3 -->
-  <g class="node" id="node6">
+  <g class="node" id="svg3-node6">
    <ellipse cx="323" cy="131" rx="106" ry="18" style="fill:none;stroke:black;">
    </ellipse>
    <text font-size="0.9em" text-anchor="middle" x="323" y="136">
@@ -1350,7 +1350,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;3 -->
-  <g class="edge" id="edge6">
+  <g class="edge" id="svg3-edge6">
    <path d="M107,131C135,131 172,131 207,131" style="fill:none;stroke:black;">
    </path>
    <polygon points="207,127 217,131 207,134 207,127" style="fill:black;stroke:black;">
@@ -1360,7 +1360,7 @@ weight: 20
    </text>
   </g>
   <!-- 4 -->
-  <g class="node" id="node8">
+  <g class="node" id="svg3-node8">
    <polygon points="379,167 267,167 267,203 379,203 379,167" style="fill:none;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="323" y="190">
@@ -1368,7 +1368,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;4 -->
-  <g class="edge" id="edge8">
+  <g class="edge" id="svg3-edge8">
    <path d="M101,145C109,147 117,149 125,151 169,161 218,170 257,175" style="fill:none;stroke:black;">
    </path>
    <polygon points="258,172 267,177 257,178 258,172" style="fill:black;stroke:black;">
@@ -1378,7 +1378,7 @@ weight: 20
    </text>
   </g>
   <!-- 5 -->
-  <g class="node" id="node10">
+  <g class="node" id="svg3-node10">
    <ellipse cx="323" cy="239" rx="38" ry="18" style="fill:none;stroke:black;">
    </ellipse>
    <text text-anchor="middle" x="323" y="244">
@@ -1386,7 +1386,7 @@ weight: 20
    </text>
   </g>
   <!-- 0&#45;&gt;5 -->
-  <g class="edge" id="edge10">
+  <g class="edge" id="svg3-edge10">
    <path d="M81,156C93,167 109,179 125,187 174,212 235,226 276,232" style="fill:none;stroke:black;">
    </path>
    <polygon points="277,229 286,234 276,235 277,229" style="fill:black;stroke:black;">

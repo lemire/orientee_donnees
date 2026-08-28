@@ -1,0 +1,76 @@
+{{/* Accessibilité — corrections applicables seulement à l'exécution.
+     1. WCAG 2.1.1 : un bloc de code qui déborde horizontalement doit être
+        atteignable au clavier pour être défilé. On ne rend focusable que
+        ceux qui débordent réellement, pour ne pas alourdir l'ordre de
+        tabulation.
+     2. WCAG 2.4.3 : le lien d'évitement doit vraiment déplacer le focus. */}}
+<script>
+(function () {
+  "use strict";
+
+  function marquerBlocsDefilants() {
+    var blocs = document.querySelectorAll(
+      ".markdown pre, .markdown .highlight, .markdown table");
+    var n = { code: 0, tableau: 0 };
+    Array.prototype.forEach.call(blocs, function (bloc) {
+      // .highlight enveloppe un <pre> : ne garder que le conteneur qui défile.
+      if (bloc.tagName === "PRE" && bloc.parentElement &&
+          bloc.parentElement.classList.contains("highlight")) {
+        return;
+      }
+      var tableau = bloc.tagName === "TABLE";
+      var deborde = bloc.scrollWidth > bloc.clientWidth + 1;
+      if (deborde) {
+        if (!bloc.hasAttribute("tabindex")) {
+          // Les noms doivent rester distincts : plusieurs régions portant
+          // le même nom sont signalées comme des repères ambigus.
+          var rang = tableau ? ++n.tableau : ++n.code;
+          bloc.setAttribute("tabindex", "0");
+          if (!tableau) {
+            bloc.setAttribute("role", "region");
+            bloc.setAttribute("aria-label", "Bloc de code défilant " + rang);
+          } else if (!bloc.hasAttribute("aria-label") &&
+                     !bloc.querySelector("caption")) {
+            bloc.setAttribute("aria-label", "Tableau défilant " + rang);
+          }
+        }
+      } else if (bloc.getAttribute("role") === "region" ||
+                 (tableau && bloc.getAttribute("tabindex") === "0")) {
+        bloc.removeAttribute("tabindex");
+        bloc.removeAttribute("role");
+        if (/^(Bloc de code|Tableau) défilant /.test(bloc.getAttribute("aria-label") || "")) {
+          bloc.removeAttribute("aria-label");
+        }
+      }
+    });
+  }
+
+  function deplacerFocusVersContenu() {
+    var lien = document.querySelector(".skip-link");
+    if (!lien) return;
+    lien.addEventListener("click", function () {
+      var cible = document.getElementById("contenu");
+      if (cible) {
+        cible.focus({ preventScroll: false });
+      }
+    });
+  }
+
+  function init() {
+    marquerBlocsDefilants();
+    deplacerFocusVersContenu();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+
+  var minuteur;
+  window.addEventListener("resize", function () {
+    clearTimeout(minuteur);
+    minuteur = setTimeout(marquerBlocsDefilants, 200);
+  });
+})();
+</script>

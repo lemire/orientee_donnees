@@ -48,7 +48,7 @@ Ce code définit une scène basique dans le profil Immersive de X3D version 4.0.
     button { padding: 10px; font-size: 16px; margin-top: 10px; }
 </style>
 
-<textarea id="x3dCode">
+<textarea aria-label="Code X3D de la scène" id="x3dCode">
 &lt;X3D profile='Immersive' version='4.0' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-4.0.xsd'&gt;
   &lt;head&gt;
     &lt;meta name='title' content='Simple Cone'/&gt;

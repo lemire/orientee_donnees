@@ -51,15 +51,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -90,15 +90,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -259,15 +259,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -303,15 +303,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -349,15 +349,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -383,15 +383,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -472,9 +472,9 @@ weight: 10
 </p>
 <svg font-size="0.65em" height="134pt" viewbox="0 0 513 134" width="513pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  ../module5/dlprof.pdf
- <g class="graph" id="graph0">
+ <g class="graph" id="svg1-graph0">
   <!-- http://www.daniel-lemire.com/fr/ -->
-  <g class="node" id="node1">
+  <g class="node" id="svg1-node1">
    http://www.daniel-lemire.com/fr/
    <ellipse cx="217" cy="23" rx="106" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -483,7 +483,7 @@ weight: 10
    </text>
   </g>
   <!-- Person -->
-  <g class="node" id="node3">
+  <g class="node" id="svg1-node3">
    Person
    <ellipse cx="37" cy="111" rx="32" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -492,7 +492,7 @@ weight: 10
    </text>
   </g>
   <!-- http://www.daniel-lemire.com/fr/-&gt;Person -->
-  <g class="edge" id="edge2">
+  <g class="edge" id="svg1-edge2">
    http://www.daniel-lemire.com/fr/-&gt;P
                 erson
    <path d="M182,40C149,56 102,79 70,95" style="fill:none;stroke:black;">
@@ -504,7 +504,7 @@ weight: 10
    </text>
   </g>
   <!-- Daniel Lemire -->
-  <g class="node" id="node5">
+  <g class="node" id="svg1-node5">
    Daniel Lemire
    <ellipse cx="141" cy="111" rx="54" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -513,7 +513,7 @@ weight: 10
    </text>
   </g>
   <!-- http://www.daniel-lemire.com/fr/-&gt;Daniel Lemire -->
-  <g class="edge" id="edge4">
+  <g class="edge" id="svg1-edge4">
    http://www.daniel-lemire.com/fr/-&gt;D
                 aniel Lemire
    <path d="M201,41C190,54 175,72 163,86" style="fill:none;stroke:black;">
@@ -525,7 +525,7 @@ weight: 10
    </text>
   </g>
   <!-- lemire@gmail.com -->
-  <g class="node" id="node7">
+  <g class="node" id="svg1-node7">
    lemire@gmail.com
    <ellipse cx="293" cy="111" rx="80" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -534,7 +534,7 @@ weight: 10
    </text>
   </g>
   <!-- http://www.daniel-lemire.com/fr/-&gt;lemire@gmail.com -->
-  <g class="edge" id="edge6">
+  <g class="edge" id="svg1-edge6">
    http://www.daniel-lemire.com/fr/-&gt;d
                 lemire@teluq.ca
    <path d="M233,41C244,54 259,71 271,85" style="fill:none;stroke:black;">
@@ -546,7 +546,7 @@ weight: 10
    </text>
   </g>
   <!-- Professeur -->
-  <g class="node" id="node9">
+  <g class="node" id="svg1-node9">
    Professeur
    <ellipse cx="433" cy="111" rx="42" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -555,7 +555,7 @@ weight: 10
    </text>
   </g>
   <!-- http://www.daniel-lemire.com/fr/-&gt;Professeur -->
-  <g class="edge" id="edge8">
+  <g class="edge" id="svg1-edge8">
    http://www.daniel-lemire.com/fr/-&gt;P
                 rofesseur
    <path d="M259,40C274,46 292,53 308,59 336,70 368
@@ -694,15 +694,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -759,15 +759,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -807,15 +807,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -866,15 +866,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -976,15 +976,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -1042,15 +1042,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -1140,15 +1140,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -1196,15 +1196,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>
@@ -1274,9 +1274,9 @@ weight: 10
 </p>
 <svg font-size="0.65em" height="222pt" viewbox="0 0 373 222" width="373pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  ../module5/othello.pdf
- <g class="graph" id="graph0">
+ <g class="graph" id="svg2-graph0">
   <!-- http://www.othello.org/ -->
-  <g class="node" id="node1">
+  <g class="node" id="svg2-node1">
    http://www.othello.org/
    <ellipse cx="117" cy="23" rx="79" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -1285,7 +1285,7 @@ weight: 10
    </text>
   </g>
   <!-- PieceDeTheatre -->
-  <g class="node" id="node3">
+  <g class="node" id="svg2-node3">
    PieceDeTheatre
    <ellipse cx="63" cy="111" rx="58" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -1294,7 +1294,7 @@ weight: 10
    </text>
   </g>
   <!-- http://www.othello.org/-&gt;PieceDeTheatre -->
-  <g class="edge" id="edge2">
+  <g class="edge" id="svg2-edge2">
    http://www.othello.org/-&gt;PieceDeTheatre
    <path d="M106,41C99,53 88,70 79,84" style="fill:none;stroke:black;">
    </path>
@@ -1305,7 +1305,7 @@ weight: 10
    </text>
   </g>
   <!-- http://www.shakespeare.org -->
-  <g class="node" id="node5">
+  <g class="node" id="svg2-node5">
    http://www.shakespeare.org
    <ellipse cx="230" cy="111" rx="91" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -1314,7 +1314,7 @@ weight: 10
    </text>
   </g>
   <!-- http://www.othello.org/-&gt;http://www.shakespeare.org -->
-  <g class="edge" id="edge4">
+  <g class="edge" id="svg2-edge4">
    http://www.othello.org/-&gt;http://www.shakespeare.org
    <path d="M139,40C156,54 180,72 199,87" style="fill:none;stroke:black;">
    </path>
@@ -1325,7 +1325,7 @@ weight: 10
    </text>
   </g>
   <!-- Personne -->
-  <g class="node" id="node7">
+  <g class="node" id="svg2-node7">
    Personne
    <ellipse cx="165" cy="199" rx="39" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -1334,7 +1334,7 @@ weight: 10
    </text>
   </g>
   <!-- http://www.shakespeare.org-&gt;Personne -->
-  <g class="edge" id="edge6">
+  <g class="edge" id="svg2-edge6">
    http://www.shakespeare.org-&gt;Personne
    <path d="M217,129C207,142 194,160 184,174" style="fill:none;stroke:black;">
    </path>
@@ -1345,7 +1345,7 @@ weight: 10
    </text>
   </g>
   <!-- William Shakespeare -->
-  <g class="node" id="node9">
+  <g class="node" id="svg2-node9">
    William Shakespeare
    <ellipse cx="295" cy="199" rx="73" ry="18" style="fill:none;stroke:black;">
    </ellipse>
@@ -1355,7 +1355,7 @@ weight: 10
    </text>
   </g>
   <!-- http://www.shakespeare.org-&gt;William Shakespeare -->
-  <g class="edge" id="edge8">
+  <g class="edge" id="svg2-edge8">
    http://www.shakespeare.org-&gt;William Shakespeare
    <path d="M243,129C253,141 266,159 276,173" style="fill:none;stroke:black;">
    </path>
@@ -1449,15 +1449,15 @@ weight: 10
  <table border="1" class="tabNormal">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sujet
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Verbe
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Objet
-    </td>
+    </th>
    </tr>
    <tr>
     <td>

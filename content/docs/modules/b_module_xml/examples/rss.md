@@ -7,14 +7,14 @@ weight: 50
 
 RSS (Really Simple Syndication) et Atom sont deux formats de syndication de contenu web qui permettent de diffuser automatiquement des mises à jour (articles, billets de blog, balados, vidéos, etc.) sans avoir à visiter manuellement chaque site. Ils sont nés au début des années 2000, à une époque où les blogs explosaient et où les lecteurs voulaient centraliser leurs sources d’information.
 
-#### RSS : l’original
+## RSS : l’original
 La première version de RSS est apparue en 1999 (Netscape), mais c’est la version RSS 2.0 (2002, publiée par Dave Winer sous licence Creative Commons) qui s’est imposée comme le standard le plus utilisé.  
 Un flux RSS est un fichier XML structuré contenant :
 - les métadonnées du site (titre, description, lien, langue)  
 - une liste d’« items » (articles) avec titre, lien, description, date de publication, et souvent un GUID unique.
 
 
-#### Atom : le successeur normalisé
+## Atom : le successeur normalisé
 Atom 1.0 a été standardisé en 2005 par l’IETF (RFC 4287). Il corrige les ambiguïtés de RSS et apporte :
 - une séparation claire entre le flux (feed) et les entrées (entry)  
 - un support natif des résumés et du contenu complet  
@@ -23,7 +23,7 @@ Atom 1.0 a été standardisé en 2005 par l’IETF (RFC 4287). Il corrige les am
 
 Atom est un peu plus verbeux que RSS, mais plus propre et plus extensible. 
 
-#### Quelques exemples
+## Quelques exemples
 
 Prenez le temps de consulter les sources suivantes.
 
@@ -42,7 +42,7 @@ Prenez le temps de consulter les sources suivantes.
 
 
 
-#### Exemple Java (Radio-Canada)
+## Exemple Java (Radio-Canada)
 
 Prenez quelques secondes pour exécuter ce programme qui charge les dernières nouvelles de Radio-Canada 
 en utilisant le XML. N'essayez pas de comprendre le code en détail, nous reviendrons
@@ -109,7 +109,7 @@ public class RadioCanadaCinqDernieres {
 
 
 
-#### Exemple Java (Blogue de Daniel Lemire)
+## Exemple Java (Blogue de Daniel Lemire)
 
 Prenez quelques secondes pour exécuter ce programme qui charge les dernières nouvelles du blogue de Daniel Lemire
 en utilisant le XML. N'essayez pas de comprendre le code en détail, nous reviendrons
@@ -188,7 +188,7 @@ public class RssFeedReader {
 {{</inlineJava>}}
 
 
-### Exemple d'application
+## Exemple d'application
 
 Créez un fichier nommé `LemireBlogReader.java`, 
 faites `javac LemireBlogReader.java` puis `java LemireBlogReader`.

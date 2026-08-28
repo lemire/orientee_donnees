@@ -1,0 +1,24 @@
+{{/* Surcouche : le 404 du thème affichait « 404 » à opacité 0,25
+     (contraste 1,4:1) et son texte était en anglais. */}}
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    {{ partial "docs/html-head" . }}
+    {{ partial "docs/inject/head" . }}
+    <style>
+      .not-found { text-align: center; }
+      .not-found h1 { margin: .25em 0 0 0; font-size: 40vmin; color: #6b7280; }
+      .not-found h2 { color: #1f2433; }
+    </style>
+  </head>
+  <body>
+    <main class="flex justify-center not-found">
+      <div>
+        <h1>404</h1>
+        <h2>Page introuvable</h2>
+        <p><a href="{{ .Site.Home.RelPermalink }}">Retour à l’accueil — {{ .Site.Title }}</a></p>
+      </div>
+    </main>
+    {{ partial "docs/inject/body" . }}
+  </body>
+</html>

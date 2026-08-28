@@ -22,9 +22,9 @@ weight: 20
  <p>
   Avant de continuer plus loin avec la syntaxe XPath, nous vous invitons à utiliser le petit script suivant pour vous familiariser davantage avec la syntaxe :
  </p>
- <h1>
+ <h2>
   XPath en ligne
- </h1>
+ </h2>
  <p>
   Instructions : il suffit de saisir un document XML source et une expression XPath et d'appuyer sur le bouton. Le contenu textuel de chaque résultat est retourné. L'expression XPath est toujours appliquée à partir du nœud-racine. Cette petite application est limitée: elle suppose que le résultat prend une certaine forme (un ensemble de nœuds ou node set).
  </p>
@@ -32,7 +32,7 @@ weight: 20
   <p>
    Fichier XML:
   </p>
-  <textarea cols="75" id="xmlsource" rows="20">&lt;?xml version="1.0" ?&gt; 
+  <textarea aria-label="Document XML source" cols="75" id="xmlsource" rows="20">&lt;?xml version="1.0" ?&gt; 
 &lt;boite&gt;
 &lt;monmessage&gt;
 &lt;de&gt;Jean&lt;/de&gt; 
@@ -51,7 +51,7 @@ weight: 20
   <p>
    Sélection XPath:
   </p>
-  <input id="myxpath" type="text" value="//titre/@type"/>
+  <input aria-label="Sélection XPath" id="myxpath" type="text" value="//titre/@type"/>
   <input onclick="
 function sel(doc,path) {
   var snapshot = doc.evaluate(path, doc, null, 7, null);

@@ -59,9 +59,9 @@ Voici un exemple plus élaboré montrant une structure JSON typique pour une API
 
 Cet exemple illustre comment JSON peut représenter des données relationnelles complexes avec imbrication et tableaux. Chaque niveau ajoute de la structure sans complexité syntaxique excessive.
 <div style="max-width: 800px; margin: 0 auto; background-color: #ffffff; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
- <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #1f2937;">
+ <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #1f2937;">
   Application d'Arborescence JSON
- </h1>
+ </h2>
  <p style="margin-bottom: 16px; color: #4b5563;">
   Entrez un contenu JSON dans le champ ci-dessous, puis cliquez sur "Dessine" pour afficher l'arborescence sous forme de liste hiérarchique. Exemple :
  </p>

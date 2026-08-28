@@ -5,7 +5,7 @@ weight: 42
 
 # CSS (partie 2)
 
-### Mais que se passe-t-il en cas de conflit ?
+## Mais que se passe-t-il en cas de conflit ?
 
 Plusieurs instructions peuvent s'appliquer en même temps : un texte peut être en rouge et souligné. Il peut arriver cependant que deux instructions CSS se contredisent. Par exemple, un texte ne peut être à la fois en rouge et en bleu. Dans ce cas, la sélection la plus spécifique l’emporte. Ainsi, dans l’exemple qui suit :
 
@@ -67,7 +67,7 @@ z z[x] a            { text-decoration: underline; } /* 0,0,1,3 */
 z > z a , z z z + a { color: red ; }           /* deux règles : 0,0,0,3 et 0,0,0,4 */
 ```
 
-### Le modèle de boîte CSS
+## Le modèle de boîte CSS
 
 En CSS, on peut spécifier la hauteur et la largeur d’un objet à l’aide des propriétés `width` et `height`. Par exemple, pour indiquer qu’un paragraphe ne doit avoir que 20 pixels de largeur :
 

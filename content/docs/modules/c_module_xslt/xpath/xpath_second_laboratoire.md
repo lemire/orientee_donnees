@@ -16,7 +16,7 @@ weight: 40
   <p>
    Fichier XML:
   </p>
-  <textarea cols="75" id="xmlsource" rows="20">&lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
+  <textarea aria-label="Document XML source" cols="75" id="xmlsource" rows="20">&lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
  &lt;listes&gt;
  &lt;vendeur nom="Jean"&gt;
  &lt;client telephone="543-5454"&gt;&lt;nom&gt;Jacques&lt;/nom&gt;&lt;/client&gt;
@@ -35,7 +35,7 @@ weight: 40
   <p>
    Sélection XPath:
   </p>
-  <input id="myxpath" size="80" type="text" value='//vendeur[@nom="Raymond"]/client[nom="Arthur"]/@telephone'/>
+  <input aria-label="Sélection XPath" id="myxpath" size="80" type="text" value='//vendeur[@nom="Raymond"]/client[nom="Arthur"]/@telephone'/>
   <input onclick="
 function sel(doc,path) {
   var snapshot = doc.evaluate(path, doc, null, 7, null);

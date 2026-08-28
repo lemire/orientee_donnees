@@ -24,9 +24,9 @@ weight: 30
 <p>
  Comme premier exercice, créez un nouveau fichier et tapez le code suivant :
 </p>
-<pre><span style="color:#e06c75;">&lt;premier&gt;</span>
+<pre><span style="color:#a3323c;">&lt;premier&gt;</span>
     Ceci est mon premier document XML.
-<span style="color:#e06c75;">&lt;/premier&gt;</span></pre>
+<span style="color:#a3323c;">&lt;/premier&gt;</span></pre>
 <p>
  Enregistrez-le sous le nom
  <code>
@@ -73,11 +73,11 @@ Si tout est correct, vous verrez le texte s’afficher. En cas d’erreur de syn
 <h2>
  Un exemple de XHTML bien formé (donc aussi du XML valide)
 </h2>
-<pre><span style="color:#e06c75;">&lt;html&gt;</span>
-    <span style="color:#e06c75;">&lt;body&gt;</span>
+<pre><span style="color:#a3323c;">&lt;html&gt;</span>
+    <span style="color:#a3323c;">&lt;body&gt;</span>
         Bonjour le monde !
-    <span style="color:#e06c75;">&lt;/body&gt;</span>
-<span style="color:#e06c75;">&lt;/html&gt;</span></pre>
+    <span style="color:#a3323c;">&lt;/body&gt;</span>
+<span style="color:#a3323c;">&lt;/html&gt;</span></pre>
 <p>
  Exercice facultatif :  
 recopiez ce code dans un fichier nommé

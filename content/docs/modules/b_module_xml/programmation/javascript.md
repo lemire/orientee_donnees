@@ -198,6 +198,8 @@ try {
         lineNumbers: true,
         mode: "javascript",
         theme: "default",
+        // Nomme le <textarea> caché que CodeMirror utilise pour la saisie.
+        screenReaderLabel: "Éditeur de code JavaScript",
         indentUnit: 4,
         tabSize: 4
     });

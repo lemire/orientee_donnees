@@ -510,7 +510,7 @@ weight: 50
  <h2 style="text-align: center;">
   Code SVG
  </h2>
- <textarea id="svgCode" style="width: 100%; height: 300px; background: #f4f4f4; padding: 10px; border-radius: 5px; font-family: monospace; resize: vertical;">&lt;svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"&gt;
+ <textarea aria-label="Code SVG" id="svgCode" style="width: 100%; height: 300px; background: #f4f4f4; padding: 10px; border-radius: 5px; font-family: monospace; resize: vertical;">&lt;svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"&gt;
     &lt;rect x="20" y="20" width="100" height="60" style="fill: #3498db; stroke: #2c3e50; stroke-width: 2;" /&gt;
     &lt;circle cx="200" cy="50" r="30" style="fill: #e74c3c; stroke: #2c3e50; stroke-width: 2;" /&gt;
     &lt;line x1="20" y1="120" x2="280" y2="180" style="stroke: #27ae60; stroke-width: 4;" /&gt;

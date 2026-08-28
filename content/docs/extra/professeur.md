@@ -10,7 +10,7 @@ Daniel Lemire est professeur d'informatique à l'Université TÉLUQ. Il a aussi 
 
 À lire : [Les géants du numérique raffolent des algorithmes de ce prof québécois](https://www.journaldemontreal.com/2024/10/18/les-geants-du-numerique-raffolent-des-algorithmes-de-ce-prof-quebecois) (Journal de Montréal).
 
-### Quelques-uns des travaux de Daniel Lemire
+## Quelques-uns des travaux de Daniel Lemire
 
 Avec Geoff Langdale, John Keiser, Paul Dreik et d'autres, il est l'auteur de la bibliothèque JSON la plus rapide au monde : simdjson. C'est la première bibliothèque capable de parser plusieurs gigaoctets de JSON par seconde. Elle est utilisée par de nombreux systèmes importants tels que Meta Velox, le runtime Node.js, ClickHouse, WatermelonDB, Apache Doris, Milvus, StarRocks. En 2024, l'article On-demand JSON: A better way to parse documents? a été l'article le plus lu des cinq dernières années dans la revue Software: Practice and Experience.
 

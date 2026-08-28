@@ -11,7 +11,7 @@ navigateur.
 
 ## Code MathML
 
-<textarea id="mathmlCode" style="width:100%; height:400px">&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;
+<textarea aria-label="Code MathML" id="mathmlCode" style="width:100%; height:400px">&lt;math xmlns="http://www.w3.org/1998/Math/MathML" display="block"&gt;
     &lt;mrow&gt;
         &lt;mi style="color: red; font-style: italic;"&gt;x&lt;/mi&gt;
         &lt;mo style="color: purple;"&gt;=&lt;/mo&gt;

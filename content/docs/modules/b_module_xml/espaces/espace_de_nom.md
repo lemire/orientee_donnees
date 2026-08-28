@@ -7,7 +7,7 @@ weight: 10
 
 Les espaces de noms en XML permettent de distinguer des éléments et attributs provenant de vocabulaires différents, évitant ainsi les conflits de noms. Ils sont essentiels pour combiner plusieurs schémas XML dans un même document.
 
-### Les vocabulaires XML
+## Les vocabulaires XML
 
 Un « vocabulaire XML » est un ensemble de noms de balises et d'attributs ayant une signification donnée. 
 Par exemple, les gens de la comptabilité au sein d'une entreprise pourraient avoir un vocabulaire XML pour décrire 
@@ -23,7 +23,7 @@ devra utiliser deux vocabulaires.
 Un vocabulaire XML peut être associé à un document DTD; il peut aussi être 
 associé à un espace de noms.
 
-### Les identificateurs de ressources uniformes (URI)
+## Les identificateurs de ressources uniformes (URI)
 
 Un identificateur de ressources uniformes (*Uniform Resource Identifier* ou *URI*) est une adresse Internet 
 composée d'un nom de protocole ou « schéma », comme file, http, ftp, news, mailto, gopher, urn, suivi d'un 
@@ -34,7 +34,7 @@ ou une adresse pointant vers une application logicielle sur un serveur.
 Par exemple, « http://www.mondomain.com/fichier » et « mailto:billg@microsoft.com » 
 sont des URI. Les URI ne doivent pas contenir d'accents, et la casse est significative sauf pour ce qui est du nom du protocole (HTTP versus http) et du nom de domaine (xerox.com versus XEROX.COM). Nous reviendrons sur les URI dans le module 5.
 
-### Les espaces de noms
+## Les espaces de noms
 
 Un espace de noms est identifié par un URI; il y a correspondance unique entre 
 les espaces de noms et les URI. Deux espaces de noms ayant le même URI sont identiques. 
@@ -46,7 +46,7 @@ Il s'agit d'une analogie un peu étrange, voire originale, mais c'est ainsi.
 Évidemment, la notion d'espace de noms n'a de sens que si l'on considère plusieurs espaces de noms 
 et, par conséquent, plusieurs vocabulaires.
 
-### Les DTD et les espaces de noms
+## Les DTD et les espaces de noms
 
 Avant de préciser le lien entre les DTD et les espaces de noms, il importe de comprendre 
 que les espaces de noms furent proposés après l'adoption des DTD. Il y a donc une certaine 
@@ -102,7 +102,7 @@ qui ont les DTD suivantes :
 <!ELEMENT adresse (#PCDATA)>
 ```
 
-### Déclaration de l'espace de noms
+## Déclaration de l'espace de noms
 
 On peut utiliser le symbole « : » dans les noms XML, mais on ne l'utilise généralement 
 qu'une seule fois dans un nom donné. Tout ce qui précède le deux-points est appelé le « préfixe ».
@@ -236,7 +236,7 @@ comme le montre le prochain exemple :
 </fact:facture>
 ```
 
-### Les déclarations croisées
+## Les déclarations croisées
 
 La déclaration d'espace de noms n'est valable qu'au sein de l'élément. Pour
 déterminer l'espace de nom auquel appartient un élément, il ne suffit donc pas
@@ -252,7 +252,7 @@ l'exemple suivant est « http://www.domaine.com/facture » et non « http://www.
 <fact:montant />
 </fact:facture>
 ```
-### Le préfixe par défaut
+## Le préfixe par défaut
 
 On peut utiliser le préfixe par défaut, c'est-à-dire ne pas mettre de préfixe du tout. 
 L'utilisation du préfixe par défaut est optionnelle dans un document XML. Comme tout autre préfixe, 
@@ -275,7 +275,7 @@ Notons cependant que le préfixe par défaut ne s'utilise que pour les élément
 **les attributs sans préfixe 
 ne sont dans aucun espace de noms, et cela sans exception.**
 
-### Rappel des notions formelles
+## Rappel des notions formelles
 
 La définition d'un préfixe d'espace de noms inclut l'élément où le préfixe 
 est défini et tout son contenu, et rien d'autre. 
@@ -312,7 +312,7 @@ et il serait incorrect d'écrire `<fact:facture />`
 au lieu de `<fact:facture xmlns:fact="http://www.domaine.com/facture">` 
 dans l'exemple précédent.
 
-### Les espaces de noms et Relax NG
+## Les espaces de noms et Relax NG
 
 Alors que les DTD ne permettent pas de traiter les espaces
 de noms, les spécifications Relax NG et XML Schema le permettent.
@@ -360,7 +360,7 @@ element fact:facture {
 
 Les deux exemples précédents de Relax NG sont d'ailleurs équivalents.
 
-### Le préfixe « xml »
+## Le préfixe « xml »
 
 Par convention, le préfixe « xml » est réservé à des
 applications telles que la déclaration de la langue utilisée (« `<xml:lang>` »)
@@ -368,7 +368,7 @@ ou le traitement des espaces (« `<xml:space>` »). Il n'est pas nécessaire d'y
 explicitement un 
 URI : l'URI « http://www.w3.org/XML/1998/namespace » y est automatiquement associé.
 
-### Rappel : des espaces de noms pour les attributs?
+## Rappel : des espaces de noms pour les attributs?
 
 Les choses se corsent un peu quand on considère les attributs. 
 Alors qu'un élément sans préfixe tombe dans l'espace de noms par défaut si 
@@ -376,7 +376,7 @@ celui-ci a été défini par un attribut « `<xmlns="...">` », ce n'est pas le 
 pour les attributs. Un attribut sans préfixe n'est dans 
 aucun espace de noms; pour y être, un attribut doit être muni d'un préfixe.
 
-### En résumé, qu'est-ce que les espaces de noms?
+## En résumé, qu'est-ce que les espaces de noms?
 
 Une DTD définit un ensemble fixe d'éléments, ensemble qui ne peut être recombiné avec d'autres DTD; 
 c'est un instrument rigide. Par contre, les espaces de noms permettent de recombiner 

@@ -1,0 +1,31 @@
+{{/* Pages de section (docs/, legacy/, chaque module, chaque semaine).
+     Le gabarit du thème se contentait de rendre {{ .Content }} ; comme les
+     fichiers _index.md ne contiennent qu'un en-tête, 28 pages s'affichaient
+     entièrement vides — aucun titre de niveau 1, aucun texte (le <h3> de
+     .book-header est masqué au-delà du seuil mobile).
+     On ajoute donc un <h1> et, à défaut de contenu, la liste des pages
+     de la section. WCAG 1.3.1 / 2.4.6. */}}
+{{ define "main" }}
+  <article id="contenu" tabindex="-1" class="markdown book-article">
+    {{ $content := .Content }}
+    {{ if not (strings.Contains $content "<h1") }}
+      <h1>{{ partial "docs/title" . }}</h1>
+    {{ end }}
+
+    {{- $content -}}
+
+    {{ if not (trim ($content | plainify) " \n\t") }}
+      {{ with .Pages.ByWeight }}
+        <nav class="book-section-index" aria-label="Pages de cette section">
+          <ul>
+            {{ range . }}
+              <li><a href="{{ .RelPermalink }}">{{ partial "docs/title" . }}</a></li>
+            {{ end }}
+          </ul>
+        </nav>
+      {{ else }}
+        <p>Cette section ne contient pas encore de page.</p>
+      {{ end }}
+    {{ end }}
+  </article>
+{{ end }}

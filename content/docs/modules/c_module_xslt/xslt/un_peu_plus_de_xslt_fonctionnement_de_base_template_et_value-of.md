@@ -267,7 +267,7 @@ Vous pouvez mettre cet exemple en marche dans votre navigateur.
  </div>
 </div>
 <div style="text-align:center; margin-top:1rem;">
- <button class="btn-primary" onclick="transform()" style="padding: 10px 18px; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; background: #10b981; color: white;">
+ <button class="btn-primary" onclick="transform()" style="padding: 10px 18px; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; background: #047857; color: white;">
   Transformer
  </button>
  <button class="btn-secondary" onclick="resetFields()" style="padding: 10px 18px; font-weight: 600; border: none; border-radius: 6px; cursor: pointer; background: #6b7280; color: white;">

@@ -19,20 +19,20 @@ weight: 30
     <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">title</span><span style="color:#a65700; ">&gt;</span>Ceci est un exemple<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">title</span><span style="color:#a65700; ">&gt;</span>
   <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">head</span><span style="color:#a65700; ">&gt;</span>
   <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">body</span><span style="color:#a65700; ">&gt;</span>
-    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Voici un paragraphe<span style="color:#008c00; ">.</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Voici un paragraphe<span style="color:#046a04; ">.</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
   <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">body</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">html</span><span style="color:#a65700; ">&gt;</span>
 </pre>
  <p>
   Un document HTML 5 en XML ne nécessite pas de déclaration doctype :
  </p>
- <pre>&lt;?xml version="<span style="color:#008c00; ">1.0</span>" encoding="UTF-<span style="color:#008c00; ">8</span>"?&gt;
+ <pre>&lt;?xml version="<span style="color:#046a04; ">1.0</span>" encoding="UTF-<span style="color:#046a04; ">8</span>"?&gt;
 <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">html</span><span style="color:#274796; "> xmlns</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"http://www.w3.org/1999/xhtml"</span><span style="color:#a65700; ">&gt;</span>
   <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">head</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">title</span><span style="color:#a65700; ">&gt;</span>Ceci est un exemple<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">title</span><span style="color:#a65700; ">&gt;</span>
   <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">head</span><span style="color:#a65700; ">&gt;</span>
   <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">body</span><span style="color:#a65700; ">&gt;</span>
-    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Voici un paragraphe<span style="color:#008c00; ">.</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Voici un paragraphe<span style="color:#046a04; ">.</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
   <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">body</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">html</span><span style="color:#a65700; ">&gt;</span>
 </pre>
@@ -58,7 +58,7 @@ weight: 30
  <p>
   Voici un exemple de HTML 5 valable:
  </p>
- <pre>&lt;?xml version="<span style="color:#008c00; ">1.0</span>" encoding="UTF-<span style="color:#008c00; ">8</span>"?&gt;
+ <pre>&lt;?xml version="<span style="color:#046a04; ">1.0</span>" encoding="UTF-<span style="color:#046a04; ">8</span>"?&gt;
 <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">html</span><span style="color:#274796; "> xmlns</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"http://www.w3.org/1999/xhtml"</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">head</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">title</span><span style="color:#a65700; ">&gt;</span>Ceci est un exemple<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">title</span><span style="color:#a65700; ">&gt;</span>
@@ -71,15 +71,15 @@ weight: 30
 <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>La magie du XML<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>J'aime le XML<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">header</span><span style="color:#a65700; ">&gt;</span>
-<span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Nous aimons tous le XML<span style="color:#008c00; ">...</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
+<span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Nous aimons tous le XML<span style="color:#046a04; ">...</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">article</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">section</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">footer</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h3</span><span style="color:#a65700; ">&gt;</span>Une annexe<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h3</span><span style="color:#a65700; ">&gt;</span>
-<span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Cet article a été écrit par Daniel<span style="color:#008c00; ">...</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
+<span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>Cet article a été écrit par Daniel<span style="color:#046a04; ">...</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">p</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">footer</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">aside</span><span style="color:#a65700; ">&gt;</span>
-En passant, ce n'est pas un vrai article<span style="color:#008c00; ">...</span>
+En passant, ce n'est pas un vrai article<span style="color:#046a04; ">...</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">aside</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">body</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">html</span><span style="color:#a65700; ">&gt;</span>
@@ -94,15 +94,15 @@ En passant, ce n'est pas un vrai article<span style="color:#008c00; ">...</span>
  <meter value="0.66">
   66%
  </meter>
- <pre><span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">meter</span><span style="color:#274796; "> </span><span style="color:#074726; ">value</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"2"</span><span style="color:#274796; "> min</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"0"</span><span style="color:#274796; "> max</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"10"</span><span style="color:#a65700; ">&gt;</span><span style="color:#008c00; ">2</span> sur <span style="color:#008c00; ">10</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">meter</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">br /</span><span style="color:#a65700; ">&gt;</span>
-<span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">meter</span><span style="color:#274796; "> </span><span style="color:#074726; ">value</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"0.66"</span><span style="color:#a65700; ">&gt;</span><span style="color:#008c00; ">66</span>%<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">meter</span><span style="color:#a65700; ">&gt;</span>
+ <pre><span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">meter</span><span style="color:#274796; "> </span><span style="color:#074726; ">value</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"2"</span><span style="color:#274796; "> min</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"0"</span><span style="color:#274796; "> max</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"10"</span><span style="color:#a65700; ">&gt;</span><span style="color:#046a04; ">2</span> sur <span style="color:#046a04; ">10</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">meter</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">br /</span><span style="color:#a65700; ">&gt;</span>
+<span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">meter</span><span style="color:#274796; "> </span><span style="color:#074726; ">value</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"0.66"</span><span style="color:#a65700; ">&gt;</span><span style="color:#046a04; ">66</span>%<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">meter</span><span style="color:#a65700; ">&gt;</span>
 </pre>
  <p>
   On peut
         aussi ajouter une figure à un document avec une légende:
  </p>
  <figure>
-  <img src="https://www.teluq.ca/siteweb/univ/fichiers/images/profs/dlemire.jpg"/>
+  <img src="https://www.teluq.ca/siteweb/univ/fichiers/images/profs/dlemire.jpg" alt="Portrait de Daniel Lemire, professeur du cours"/>
   <figcaption>
    Photo du professeur
   </figcaption>
@@ -116,9 +116,9 @@ En passant, ce n'est pas un vrai article<span style="color:#008c00; ">...</span>
   On peut aussi créer rapidement des formulaires en ligne:
  </p>
  <form id="inscription" onsubmit="return false;">
-  <h1>
+  <h2>
    Inscription au cours de XML
-  </h1>
+  </h2>
   <fieldset>
    <legend>
     Information personnelle
@@ -189,7 +189,7 @@ En passant, ce n'est pas un vrai article<span style="color:#008c00; ">...</span>
 
 ```html
 <form id="inscription">
-<h1>Inscription au cours de XML</h1>
+<h2>Inscription au cours de XML</h2>
   <fieldset> 
     <legend>Information personnelle</legend> 
         <label>Nom

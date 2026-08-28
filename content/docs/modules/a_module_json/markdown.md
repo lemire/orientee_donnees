@@ -14,9 +14,9 @@ Le MarkDown est un format de texte simple permettant un formatage basique des di
   Pour utiliser le Markdown, il suffit de maîtriser quelques règles de base. Par exemple, pour créer un titre, on place un ou plusieurs # avant le texte (comme # Titre pour un titre principal), pour mettre du texte en gras, on entoure le mot avec deux étoiles **gras**, et pour une liste, on commence chaque ligne par un tiret -. Ces conventions permettent de structurer un document sans quitter le clavier pour des outils complexes comme Word. Le texte reste lisible même sans conversion, ce qui est parfait pour les gens qui veulent se concentrer sur le contenu plutôt que sur le formatage.
  </p>
  <div style="max-width: 1000px; margin: 0 auto; background-color: #ffffff; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-  <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #1f2937;">
+  <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #1f2937;">
    Laboratoire Markdown : Rendu de Liste d'étudiants
-  </h1>
+  </h2>
   <p style="margin-bottom: 16px; color: #4b5563;">
    Modifiez ou utilisez le contenu Markdown ci-dessous, puis cliquez sur "Rendre" pour afficher le résultat formaté. Exemple :
   </p>
@@ -38,7 +38,7 @@ Voici une liste d'étudiants inscrits :
    <p style="font-size: 16px; font-weight: bold; color: #374151; margin-bottom: 8px;">
     Contenu Markdown :
    </p>
-   <textarea cols="45" id="mdInput" rows="15" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; font-family: monospace; font-size: 14px; margin-bottom: 16px;"># Liste d'étudiants
+   <textarea aria-label="Contenu Markdown" cols="45" id="mdInput" rows="15" style="width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; font-family: monospace; font-size: 14px; margin-bottom: 16px;"># Liste d'étudiants
 Voici une liste d'étudiants inscrits :
 - **Jean Aaron**
 - **Pierre Laroche**

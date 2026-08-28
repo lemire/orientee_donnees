@@ -83,7 +83,7 @@ Il peut être intéressant de voir comment le texte est converti en données bin
    LE
   </label>
   <label style="display:inline-flex; align-items:center; gap:6px; font-size:13px; color:#334155;">
-   <input name="endian" style="margin:0;" type="radio" value="be"/>
+   <input name="endian" style="margin:0;" type="radio" value="be" aria-labelledby="rep-be-0"/>
    BE
   </label>
  </div>
@@ -91,7 +91,7 @@ Il peut être intéressant de voir comment le texte est converti en données bin
   <input id="bom" style="margin:0;" type="checkbox"/>
   Inclure BOM
  </label>
- <div style="margin-left:auto; font-size:12px; color:#64748b;">
+ <div style="margin-left:auto; font-size:12px; color:#64748b;" id="rep-be-0">
   Les valeurs sont affichées en hexadécimal (octets).
  </div>
 </section>

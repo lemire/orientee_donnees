@@ -49,9 +49,9 @@ Achat d'un crayon
 
 Ce document XML est difficile à lire, même sans les balises, surtout si vous n'êtes pas un expert en XML. Sans le transformer, il est possible de l'afficher avec de la couleur ou de l'italique, comme ceci :
 
-- Jean Rochond <span style="color:red">10.10</span>  
+- Jean Rochond <span style="color:#c00000">10.10</span>  
   <i>Achat d'ordinateur</i>
-- Madeleine Bédard <span style="color:red">20.10</span>  
+- Madeleine Bédard <span style="color:#c00000">20.10</span>  
   <i>Achat d'un crayon</i>
 
 Voilà qui est nettement plus lisible ! Nous pouvons obtenir ce résultat à l'aide du fichier CSS suivant :

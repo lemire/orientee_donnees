@@ -1,0 +1,33 @@
+{{/* Surcouche : les flèches portaient alt="Previous"/"Next" (anglais) en
+     doublon du titre affiché juste à côté, plus un title= redondant.
+     Les icônes deviennent décoratives et le sens du lien est porté par un
+     texte lisible par lecteur d'écran. */}}
+{{ $bookSection := default "docs" .Site.Params.BookSection  }}
+{{ if eq $bookSection "*" }}
+  {{ $bookSection = "/" }}{{/* Backward compatibility */}}
+{{ end }}
+
+{{ with .Site.GetPage $bookSection }}
+  {{ $pages := partialCached "docs/prev-next-cache" .Pages }}
+  {{ $homepage := .Site.Home }}
+  {{ $allPages := slice $homepage | append $pages }}
+  {{ $prev := $allPages.Next $ }}
+  {{ $next := $allPages.Prev $ }}
+
+  {{- if or $prev $next }}
+  <nav class="flex flex-wrap {{ if and $prev $next }}justify-between{{ else if $next }}justify-end{{ else }}justify-start{{ end }}" aria-label="Page précédente et page suivante">
+    {{ with $prev }}
+      <a href="{{ .RelPermalink }}" class="flex align-center float-left book-icon">
+        <img src="{{ "svg/backward.svg" | relURL }}" alt="" />
+        <span><span class="sr-only">Page précédente&nbsp;: </span>{{ partial "docs/title" . }}</span>
+      </a>
+    {{ end }}
+    {{ with $next }}
+      <a href="{{ .RelPermalink }}" class="flex align-center float-right book-icon">
+        <span><span class="sr-only">Page suivante&nbsp;: </span>{{ partial "docs/title" . }}</span>
+        <img src="{{ "svg/forward.svg" | relURL }}" alt="" />
+      </a>
+    {{ end }}
+  </nav>
+  {{ end -}}
+{{ end }}

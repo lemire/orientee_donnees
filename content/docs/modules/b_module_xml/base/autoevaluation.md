@@ -165,10 +165,10 @@ weight: 100
     <div class="feedback" id="fb26" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"></div>
 </div>
 <div style="text-align: center; margin: 40px 0;">
-    <button type="button" id="checkBtn" style="background: #007bff; color: white; border: none; padding: 12px 24px; margin: 0 15px; border-radius: 5px; cursor: pointer; font-size: 16px;">Vérifier mes réponses</button>
+    <button type="button" id="checkBtn" style="background: #0056b3; color: white; border: none; padding: 12px 24px; margin: 0 15px; border-radius: 5px; cursor: pointer; font-size: 16px;">Vérifier mes réponses</button>
     <button type="button" id="resetBtn" style="background: #6c757d; color: white; border: none; padding: 12px 24px; margin: 0 15px; border-radius: 5px; cursor: pointer; font-size: 16px;">Recommencer le quiz</button>
 </div>
-<div style="text-align: center; margin: 20px 0; font-size: 18px; font-weight: bold; color: #28a745;" id="scoreDisplay"></div>
+<div style="text-align: center; margin: 20px 0; font-size: 18px; font-weight: bold; color: #1a7431;" id="scoreDisplay"></div>
 </form>
 <script>
 document.getElementById('checkBtn').addEventListener('click', function() {

@@ -19,7 +19,7 @@ weight: 80
  <div style="padding: 12px 20px; background: #007acc; color: white; font-weight: 600; font-size: 14px; display: flex; justify-content: space-between; align-items: center;">
   Écrivez ou collez du code XML ici
  </div>
- <textarea autofocus="" id="input" spellcheck="false" style="resize: none; font-family: 'Fira Code', 'Consolas', monospace; font-size: 15px; padding: 20px; border: none; outline: none; background: #ffffff; color: #000000; line-height: 1.5; height: 10cm;">
+ <textarea aria-label="Code XML à mettre en forme" autofocus="" id="input" spellcheck="false" style="resize: none; font-family: 'Fira Code', 'Consolas', monospace; font-size: 15px; padding: 20px; border: none; outline: none; background: #ffffff; color: #000000; line-height: 1.5; height: 10cm;">
 
 &lt;etudiant sexe="M"&gt;
 &lt;nom&gt;Jacques&lt;/nom&gt;

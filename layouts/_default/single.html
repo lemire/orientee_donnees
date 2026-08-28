@@ -1,0 +1,12 @@
+{{/* Surcouche : deux pages de contenu ne commençaient par aucun titre de
+     niveau 1 (le <h3> de .book-header est masqué hors affichage mobile).
+     On reprend la même garde que dans list.html. */}}
+{{ define "main" }}
+  <article id="contenu" tabindex="-1" class="markdown book-article">
+    {{ $content := .Content }}
+    {{ if not (strings.Contains $content "<h1") }}
+      <h1>{{ partial "docs/title" . }}</h1>
+    {{ end }}
+    {{- $content -}}
+  </article>
+{{ end }}

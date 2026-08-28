@@ -153,3 +153,285 @@ code.has-jax {
   color: #515151;
   padding: 0;
 }
+
+/* ============================================================
+   Accessibilité (WCAG 2.1 AA)
+   ============================================================ */
+
+/* --- Le site n'a qu'une palette claire : ne pas annoncer
+       « dark » (le thème compile uniquement theme-light). ----- */
+:root {
+  color-scheme: light;
+
+  /* Pouce d'ascenseur : --gray-500 d'origine (#adb5bd) n'offrait
+     que 2,07:1 sur blanc. */
+  --gray-500: #8b9299;
+}
+
+/* --- 1.4.1 Utilisation de la couleur ---------------------------
+   Les liens du corps de texte étaient distingués par la seule
+   couleur : l'indigo n'offre que 2,91:1 face au texte noir voisin
+   (le minimum est de 3:1). On rétablit le soulignement, ce qui
+   rend le repère indépendant de la couleur.
+   `.anchor` = les « # » de titre, `.book-icon` = liens illustrés. */
+.markdown a:not(.anchor):not(.book-icon) {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 0.06em;
+
+  &:hover {
+    text-decoration-thickness: 0.12em;
+  }
+}
+
+/* --- 2.4.1 Contourner des blocs ---------------------------------
+   Lien d'évitement : ~110 liens précèdent le contenu principal. */
+.skip-link {
+  position: absolute;
+  inset-inline-start: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  background: var(--body-background);
+  color: var(--color-link);
+  border: 2px solid var(--accent);
+  border-radius: 0 0 6px 0;
+  font-weight: 700;
+  text-decoration: underline;
+
+  &:focus {
+    inset-inline-start: 0;
+  }
+}
+
+/* Cible du lien d'évitement : pas de contour permanent. */
+.book-article:focus {
+  outline: none;
+}
+
+/* --- 2.5.8 Dimension de la cible (minimum 24 x 24 px) ----------
+   Les liens du menu latéral ne faisaient que 20,9 px de haut. */
+.book-menu a {
+  padding: 0.35rem 0.5rem;
+  margin-inline-start: -0.5rem;
+}
+
+/* --- 2.1.1 Clavier ---------------------------------------------
+   Les blocs de code qui débordent horizontalement reçoivent
+   tabindex="0" (voir docs/inject/body) : on leur donne un focus
+   visible et on annonce qu'ils défilent. */
+.markdown pre[tabindex="0"]:focus-visible,
+.markdown .highlight[tabindex="0"]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* --- Focus visible partout -------------------------------------
+   Le thème s'appuie sur `outline-color: currentColor`, peu
+   contrasté sur les liens indigo. On force un contour net. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* --- Titre des pages de section (voir layouts/_default/list.html) */
+.book-section-index {
+  margin-top: 1.5rem;
+
+  li {
+    margin-bottom: 0.35rem;
+  }
+}
+
+/* --- Zone réservée aux annonces destinées aux lecteurs d'écran - */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============================================================
+   Exécuteur Java (shortcodes javaRunner / inlineJava /
+   javaMultiRunner). Ces règles étaient auparavant dupliquées
+   dans un bloc <style> par instance, préfixé par l'identifiant
+   unique du shortcode.
+   ============================================================ */
+
+.java-runner {
+  margin: 1.5rem 0;
+
+  .export-form {
+    margin-bottom: 0;
+  }
+
+  .export-file-grid {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .export-file-block {
+    flex: 1 1 350px;
+    max-width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+
+  .export-file-name {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--heading-color);
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 120px;
+    font-family: monospace;
+    border-radius: 4px;
+    border: 1px solid #767676; /* 4,54:1 sur #f9f9f9 — WCAG 1.4.11 */
+  }
+
+  /* #1976d2 sur blanc : 4,60:1. #15599c : 6,26:1, confortable pour
+     un texte de bouton et pour la bordure au focus. */
+  .export-btn {
+    background: #15599c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 8px;
+    min-height: 44px;
+
+    &:hover {
+      background: #0f4478;
+    }
+
+    &[disabled] {
+      background: #5c6a78;
+      cursor: progress;
+    }
+  }
+
+  .export-result {
+    margin-top: 16px;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  .export-output {
+    padding: 12px;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    margin: 0;
+  }
+
+  .export-output-succes {
+    color: #14290f;
+    background: #e0ffe0;
+  }
+
+  .export-output-erreur {
+    color: #8a0000; /* 7,05:1 sur #ffe0e0 */
+    background: #ffe0e0;
+  }
+
+  .export-output-brut {
+    color: #eee;
+    background: #222;
+  }
+
+  /* Liste des erreurs de compilation : remplace les infobulles au
+     survol, qui étaient inatteignables au clavier (WCAG 1.4.13). */
+  .java-error-list {
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 4px;
+    }
+  }
+
+  .java-error-jump {
+    display: block;
+    width: 100%;
+    text-align: start;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #8a0000;
+    background: #fff0f0;
+    border: 1px solid #c00;
+    border-radius: 4px;
+    padding: 8px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: #ffe0e0;
+    }
+  }
+}
+
+/* Ligne fautive surlignée dans l'éditeur. Le trait pointillé sous la
+   ligne double le signal de couleur (WCAG 1.4.1). */
+.cm-java-error {
+  background: #ffe0e0 !important;
+  border-bottom: 2px dotted #c00;
+}
+
+.cm-java-error-line {
+  background: #fff0f0 !important;
+}
+
+/* --- Contraste dans les éditeurs CodeMirror ---------------------
+   Les thèmes « eclipse » et « default » colorent les numéros de
+   ligne en #bfbfbf / #999 (1,83:1 et 2,65:1) et les annotations en
+   #ff1717 (3,89:1). Ces règles visent tous les éditeurs de la page,
+   pas seulement ceux du shortcode d'exécution Java. */
+/* La feuille CodeMirror du CDN est chargée après celle-ci : il faut
+   une spécificité supérieure à la sienne (.cm-s-xxx .cm-yyy). */
+.markdown .CodeMirror {
+  .CodeMirror-linenumber {
+    color: #4f5866; /* 6,37:1 sur le fond de gouttière ci-dessous */
+  }
+
+  .CodeMirror-gutters {
+    background: #f0f1f5;
+    border-right: 1px solid #d7d9e3;
+  }
+
+  .cm-meta       { color: #9a3412; }  /* @SerializedName, @JsonProperty */
+  .cm-comment    { color: #545c66; }
+  .cm-keyword    { color: #7b1fa2; }
+  .cm-string     { color: #0b6b3a; }
+  .cm-number     { color: #8a4b00; }
+  .cm-variable-3 { color: #0b5394; }
+  .cm-atom       { color: #8a4b00; }
+  .cm-def        { color: #0b5394; }
+}
+
+/* --- Tableaux larges : défilement atteignable au clavier -------- */
+.markdown table[tabindex="0"]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}

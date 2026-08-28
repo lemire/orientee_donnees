@@ -4,15 +4,15 @@ weight: 30
 ---
 # XPath : approfondissement
 
-### Expression XPath avec « | »
+## Expression XPath avec « | »
 
 Parfois, nous voulons sélectionner plusieurs noms d'éléments; nous pouvons obtenir ce résultat avec le symbole « | » (barre verticale) qui signifie « union ». Par exemple, le modèle « facture|montant » s'applique à tous les éléments « facture » et « montant », et seulement à ces éléments.
 
-### Expression XPath pour le nom d'un élément
+## Expression XPath pour le nom d'un élément
 
 Supposons que nous voulions afficher uniquement les noms des éléments (sans leur contenu). Nous pouvons obtenir ce résultat avec la fonction XPath « name » qui donne le nom de l'élément. La fonction name inclut le préfixe de l'espace de noms. Si on souhaite le nom de l'élément sans le préfixe, on peut utiliser la fonction « local-name ». La fonction « namespace-uri » donne l'URI de l'espace de noms de l'élément. Nous reviendrons sur ces expressions XPath dans le contexte du XSLT.
 
-### Sélection conditionnelle
+## Sélection conditionnelle
 
 L'expression XPath « /listedeclients/client[nom='Sylvain'] » nous donnera les éléments pour lesquels le contenu du sous-élément « nom » est « Sylvain ». L'expression plus complète «&nbsp;/listedeclients/client[nom='Sylvain']/@telephone » pointera directement sur l'attribut « telephone ». D'un autre côté, l'expression XPath « /listedeclients/client[@telephone='533-3445']/nom », nous donnera l'élément « nom » contenant le nom du client ayant le numéro de téléphone indiqué.
 
@@ -44,7 +44,7 @@ Tout d'abord, l'expression « //client » donne une séquence de tous les élém
 
 Dans le même ordre d'idée, nous pouvons tester des conditions à l'aide d'expressions XPath contenant les symboles « `<` », « = », « != », « or », « and », « > », « >= », « `<=` ».
 
-### Arithmétique en XPath
+## Arithmétique en XPath
 
 Nous pouvons aussi nous servir des expressions XPath pour faire du calcul simple. Par exemple, les trois expressions suivantes donneront 2, 2 et 2.5 respectivement :
 
@@ -87,7 +87,7 @@ Comme en Java, on a aussi les fonctions « floor », « ceiling », « mod » et
 
 La fonction « count » compte le nombre de valeurs. On obtient la moyenne en divisant la somme par le compte (sum(x)/count(x)). Et ainsi de suite.
 
-### Manipulations des chaînes de caractères en XPath
+## Manipulations des chaînes de caractères en XPath
 
 Outre les fonctions arithmétiques, on peut aussi manipuler les chaînes de caractères en XPath. La fonction la plus simple est « string-length ». Elle calcule la longueur d'une chaîne. Une autre fonction simple est « normalize-space » qui élimine tous les espaces au début et à la fin d'une chaîne en plus de remplacer les espaces répétés par un espace simple. La fonction « translate » permet de remplacer des caractères. Par exemple, pour remplacer les é par des e et les à par des a, on pourrait utiliser l'instruction suivante « translate("à la vérité","éà","ea") » qui renvoie « a la verite ».
 
@@ -97,11 +97,11 @@ On peut aussi additionner deux chaînes de caractères pour en faire une seule a
 
 On peut tester une chaîne pour la présence d'une sous-chaîne avec la fonction XPath « contains ». L'expression « contains("abc","bc") » est vraie parce que "bc" est une sous-chaîne de "abc", alors que l'expression « contains("abc","bz") » est fausse.
 
-### Tester le contenu des chaînes de caractères
+## Tester le contenu des chaînes de caractères
 
 Nous avons vu comment comparer le nom ou le contenu d'un élément avec une chaîne de caractères donnée, mais il arrive qu'on veuille faire des comparaisons plus fines. Heureusement, il existe des fonctions XPath permettant d'analyser le contenu des chaînes. Par exemple, « starts-with(@toto,"a") » renvoie la valeur vraie si et seulement si la valeur de l'attribut « toto » débute avec la lettre « a ». L'expression « ends-with(@toto,"a") » est vraie si et seulement si la valeur de l'attribut « toto » se termine avec la lettre « a ». De la même façon, « contains(@toto,"abc") » renvoie la valeur vraie si et seulement si la valeur de l'attribut « toto » contient la chaîne « abc » (comme dans « j'ai un abc »).
 
-### Accès aux éléments d'un ensemble d'éléments
+## Accès aux éléments d'un ensemble d'éléments
 
 Avec XPath, nous pouvons traiter du XML un peu comme nous traitons un tableau en Java ou en C/C++. Par exemple, supposons que nous ayons une liste de clients avec leur numéro de téléphone, comme ceci :
 
@@ -125,7 +125,7 @@ Notez aussi qu'on aurait pu obtenir le même résultat avec l'expression XPath �
 
 Vous croyez avoir bien compris ? Quelle est la différence entre « (b)[2] » et « b[2] » ? Quelle est la différence entre « (b[2])/a » et « b[2]/a » ?
 
-### Union, intersection et différence en XPath
+## Union, intersection et différence en XPath
 
 Nous avons vu que le symbole « | » nous permet d'obtenir l'union de deux expressions XPath. Prenons l'exemple de ce document :
 

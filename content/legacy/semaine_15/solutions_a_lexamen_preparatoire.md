@@ -347,7 +347,7 @@ xmlns:dc="http://purl.org/dc/elements/1.1/"
 ```
 
 ### Réponse
-Le fichier XSLT met les valeurs de l’attribut type entre <li> et </li>
+Le fichier XSLT met les valeurs de l’attribut type entre `<li>` et `</li>`
 
 ## Question 14
 Écrivez une expression XPath qui compte le nombre d'éléments ayant été déclarés comme contenant du texte en langue française.

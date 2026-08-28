@@ -418,6 +418,7 @@ pour
 contiennent des éléments « td » (éléments correspondant à une cellule). Ainsi, pour obtenir un tableau comme celui-ci :
  </p>
  <table border="0" class="tabblanc">
+  <caption>Résultat obtenu avec le code XHTML ci-dessous (tableau sans bordure)</caption>
   <!-- border='0' est un convention pour le traitement XSLT -->
   <tbody>
    <tr>
@@ -480,6 +481,7 @@ d'utiliser l'attribut « border ». Sa valeur numérique représente l'épaiss
 Ainsi, pour obtenir ce résultat :
  </p>
  <table border="1" class="tabblanc">
+  <caption>Résultat obtenu avec l’attribut « border » (tableau avec bordure)</caption>
   <tbody>
    <tr>
     <td style="border-style: solid;">

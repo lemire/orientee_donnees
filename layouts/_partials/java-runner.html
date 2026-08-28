@@ -1,0 +1,48 @@
+{{/* Balisage commun aux shortcodes javaRunner, inlineJava et javaMultiRunner.
+     Contexte : (dict "page" … "id" … "files" (slice (dict "name" … "content" …)) "endpoint" …)
+
+     Accessibilité : chaque éditeur a une <label> associée, le résultat et la
+     liste d'erreurs sont des régions live, et le groupe entier est un repère
+     nommé. Voir assets/java-runner.js pour le comportement, et
+     assets/_custom.scss pour la présentation (les trois shortcodes
+     dupliquaient auparavant un bloc <style> par instance). */}}
+{{ $id := .id }}
+{{ $files := .files }}
+{{ $endpoint := .endpoint }}
+{{ $page := .page }}
+
+{{/* CodeMirror et le script partagé ne sont chargés qu'une fois par page. */}}
+{{ if not ($page.Store.Get "javaRunnerAssets") }}
+  {{ $page.Store.Set "javaRunnerAssets" true }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/eclipse.min.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/clike/clike.min.js"></script>
+  {{ $js := resources.Get "java-runner.js" | resources.Minify | resources.Fingerprint }}
+  <script defer src="{{ $js.RelPermalink }}"></script>
+{{ end }}
+
+<section class="java-runner" id="{{ $id }}" data-endpoint="{{ $endpoint }}"
+         aria-label="Exécuteur de code Java{{ with $files }}{{ with (index . 0) }} — {{ .name }}{{ end }}{{ end }}">
+  <form class="export-form">
+    <div class="export-file-grid">
+      {{ range $i, $f := $files }}
+        {{ $taID := printf "%s-fichier-%d" $id $i }}
+        <div class="export-file-block" data-file-name="{{ $f.name }}">
+          <label class="export-file-name" for="{{ $taID }}">{{ $f.name }}</label>
+          <textarea id="{{ $taID }}" spellcheck="false" wrap="off">{{ $f.content }}</textarea>
+        </div>
+      {{ end }}
+    </div>
+    <button type="submit" class="export-btn">Exécuter</button>
+  </form>
+
+  {{/* Régions nommées plutôt que titres masqués : un <h2 class="sr-only">
+       s'insérerait dans le plan du document au milieu du contenu du cours. */}}
+  <div class="export-result" role="status" aria-live="polite" aria-atomic="true"
+       aria-label="Résultat de l'exécution"></div>
+
+  <div role="status" aria-live="polite" aria-label="Erreurs de compilation">
+    <ul class="java-error-list" hidden></ul>
+  </div>
+</section>

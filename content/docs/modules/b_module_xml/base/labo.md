@@ -11,15 +11,15 @@ Vérifiez votre compréhension de la syntaxe XML en testant différents document
 <textarea id="xmlInput" placeholder="Collez ici votre XML..." style="width: 100%; height: 300px; font-family: Consolas, Monaco, monospace; font-size: 14px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"><?xml version="1.0" encoding="UTF-8"?>
 <catalogue>&#10;    <livre id="1">&#10;        <titre>Le Petit Prince</titre>&#10;        <auteur>Antoine de Saint-Exupéry</auteur>&#10;        <année>1943</année>&#10;    </livre>&#10;</catalogue></textarea>
 
-<button onclick="verifierXML()" style="margin-top: 15px; padding: 10px 20px; font-size: 16px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">Vérifier le XML</button>
+<button onclick="verifierXML()" style="margin-top: 15px; padding: 10px 20px; font-size: 16px; background: #1a6a9c; color: white; border: none; border-radius: 4px; cursor: pointer;">Vérifier le XML</button>
 
 <div id="resultat" style="margin-top: 20px; padding: 15px; font-size: 18px; font-weight: bold; border-radius: 4px;"></div>
 
 <script>
     function appliquerStyleValide(element) {
         element.style.background = '#d5efda';
-        element.style.color = '#27ae60';
-        element.style.border = '1px solid #27ae60';
+        element.style.color = '#136c3a';
+        element.style.border = '1px solid #136c3a';
     }
 
     function appliquerStyleInvalide(element) {

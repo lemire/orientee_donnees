@@ -10,7 +10,7 @@ simdjson est la bibliothèque JSON la plus rapide au monde (2025). Elle est con�
 Site officiel : https://github.com/simdjson/simdjson  
 
 
-### Principes du parsing on-demand
+## Principes du parsing on-demand
 
 Au lieu de matérialiser le document comme avec DOM, un index est construit rapidement qui permet de naviguer
 avec aisance vers les parties importantes du document JSON. L'index est porté pour une instance du type `parser`
@@ -18,9 +18,9 @@ avec aisance vers les parties importantes du document JSON. L'index est porté p
 les éléments nécessaires sont analysés, lors de l'appel `.get_string()`, `.get_uint64()`, etc. 
 
 
-### Exemples complets
+## Exemples complets
 
-#### 1. Parcourir un tableau géant sans jamais tout charger en mémoire
+## 1. Parcourir un tableau géant sans jamais tout charger en mémoire
 
 ```cpp
 #include <iostream>
@@ -51,7 +51,7 @@ int main() {
 ```
 
 
-#### 2. Accès à des chemins imbriqués profonds sans tout matérialiser
+## 2. Accès à des chemins imbriqués profonds sans tout matérialiser
 
 ```cpp
 for (auto user : doc["results"]["users"]) {
@@ -73,7 +73,7 @@ Chaque accès (`user["profile"]`, etc.) ne déclenche le parsing que de cette br
 
 ## Vidéos
 
-{{< youtube id="wlvKAT7SZIQ" >}}
+{{< youtube id="wlvKAT7SZIQ" title="Présentation de simdjson (1re partie)" >}}
 
-{{< youtube id="9tWvDFhBlNU" >}}
+{{< youtube id="9tWvDFhBlNU" title="Présentation de simdjson (2e partie)" >}}
 

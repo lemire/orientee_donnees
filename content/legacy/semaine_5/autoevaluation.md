@@ -15,7 +15,7 @@ weight: 30
   </span>
   , c'est que vous avez la bonne réponse; 
 	sinon, lisez les commentaires en
-  <span style="color:red">
+  <span style="color:#c00000">
    rouge
   </span>
   pour comprendre votre erreur. 
@@ -35,26 +35,26 @@ weight: 30
   <form id="idp140650828092048">
    <ol>
     <li>
-     <input name="idp140650828092048" onclick="javascript:var Click_MenuId='idp140650828092944false';var formid='idp140650828092048'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828092944false"/>
-     Ils voulaient créer un format destiné aux programmeurs.
-     <span class="feedback" id="idp140650828092944false" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828092048" onclick="javascript:var Click_MenuId='idp140650828092944false';var formid='idp140650828092048'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828092944false"/>
+     Ils voulaient créer un format destiné aux programmeurs.</label>
+    <span class="feedback" id="idp140650828092944false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Bien que cela soit vrai en partie, leur but premier était de créer 
      un format de documents simple et efficace.
      </span>
     </li>
     <li>
-     <input name="idp140650828092048" onclick="javascript:var Click_MenuId='idp140650828094592true';var formid='idp140650828092048'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828094592true"/>
-     Ils voulaient créer un format de documents similaire au SGML ou au HTML.
-     <span class="feedback" id="idp140650828094592true" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828092048" onclick="javascript:var Click_MenuId='idp140650828094592true';var formid='idp140650828092048'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828094592true"/>
+     Ils voulaient créer un format de documents similaire au SGML ou au HTML.</label>
+    <span class="feedback" id="idp140650828094592true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Effectivement.
      </span>
     </li>
     <li>
-     <input name="idp140650828092048" onclick="javascript:var Click_MenuId='idp140650828096032false';var formid='idp140650828092048'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828096032false"/>
-     Ils voulaient créer un format universel pour l'échange des données sur le web.
-     <span class="feedback" id="idp140650828096032false" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828092048" onclick="javascript:var Click_MenuId='idp140650828096032false';var formid='idp140650828092048'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828096032false"/>
+     Ils voulaient créer un format universel pour l'échange des données sur le web.</label>
+    <span class="feedback" id="idp140650828096032false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non. Leur but premier était de créer un format pour les documents.
      </span>
@@ -77,9 +77,9 @@ weight: 30
   <form id="idp140650828097744">
    <ol>
     <li>
-     <input name="idp140650828097744" type="checkbox" value="idp140650828098640true"/>
-     Le XML aide à séparer le contenu d'un document de sa présentation.
-     <span class="feedback" id="idp140650828098640true" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828097744" type="checkbox" value="idp140650828098640true"/>
+     Le XML aide à séparer le contenu d'un document de sa présentation.</label>
+    <span class="feedback" id="idp140650828098640true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement, dans le contexte des documents XML, le XML sert le plus 
    souvent à décrire le contenu du document plutôt que la façon dont il sera présenté. 
@@ -87,19 +87,19 @@ weight: 30
      </span>
     </li>
     <li>
-     <input name="idp140650828097744" type="checkbox" value="idp140650828100528false"/>
+     <label><input name="idp140650828097744" type="checkbox" value="idp140650828100528false"/>
      Le XML encourage l'utilisation des formats propriétaires dans la création des documents 
-   comme Microsoft Word 97 ou PowerPoint 97.
-     <span class="feedback" id="idp140650828100528false" style="display: none;font-weight:bold;">
+   comme Microsoft Word 97 ou PowerPoint 97.</label>
+    <span class="feedback" id="idp140650828100528false" style="display: none;font-weight:bold;">
       <br/>
       Non. Le XML n'encourage pas les formats propriétaires pour les documents; il encourage 
      plutôt l'utilisation d'applications XML qui agissent comme des normes acceptées par des communautés.
      </span>
     </li>
     <li>
-     <input name="idp140650828097744" type="checkbox" value="idp140650828102448true"/>
-     Le XML permet de publier un même document dans plusieurs formats.
-     <span class="feedback" id="idp140650828102448true" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828097744" type="checkbox" value="idp140650828102448true"/>
+     Le XML permet de publier un même document dans plusieurs formats.</label>
+    <span class="feedback" id="idp140650828102448true" style="display: none;font-weight:bold;">
       <br/>
       Généralement, la version XML originale n'est pas destinée à être lue par les humains; 
      on s'attend plutôt à ce que le document XML soit transformé ou publié dans un format pratique pour la lecture.
@@ -156,10 +156,10 @@ weight: 30
   <form id="idp140650828104288">
    <ol>
     <li>
-     <input name="idp140650828104288" type="checkbox" value="idp140650828105760true"/>
+     <label><input name="idp140650828104288" type="checkbox" value="idp140650828105760true"/>
      Dans ce document, il suffit de modifier le nom du responsable à un seul endroit
-     et les changements s'appliqueront automatiquement dans tout le document.
-     <span class="feedback" id="idp140650828105760true" style="display: none;font-weight:bold;">
+     et les changements s'appliqueront automatiquement dans tout le document.</label>
+    <span class="feedback" id="idp140650828105760true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement, la DTD interne contient deux déclarations d'entités qui nous permettent 
       d'éviter de recopier partout le nom du responsable. On ne risque donc pas de commettre des erreurs 
@@ -167,18 +167,18 @@ weight: 30
      </span>
     </li>
     <li>
-     <input name="idp140650828104288" type="checkbox" value="idp140650828107904true"/>
-     Le document contient un chapitre et deux paragraphes.
-     <span class="feedback" id="idp140650828107904true" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828104288" type="checkbox" value="idp140650828107904true"/>
+     Le document contient un chapitre et deux paragraphes.</label>
+    <span class="feedback" id="idp140650828107904true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement, la structure du document est claire.
      </span>
     </li>
     <li>
-     <input name="idp140650828104288" type="checkbox" value="idp140650828109184false"/>
+     <label><input name="idp140650828104288" type="checkbox" value="idp140650828109184false"/>
      Une fois publié dans un format comme HTML, PDF ou RTF, le lecteur verra un chapitre 
-     commençant par "Ceci est le premier chapitre" et se terminant avec "terminer ce document".
-     <span class="feedback" id="idp140650828109184false" style="display: none;font-weight:bold;">
+     commençant par "Ceci est le premier chapitre" et se terminant avec "terminer ce document".</label>
+    <span class="feedback" id="idp140650828109184false" style="display: none;font-weight:bold;">
       <br/>
       Non, la phrase "Il faudrait bien que je me dépêche à terminer ce document." est un commentaire XML 
       et ne sera normalement pas incluse dans la version destinée à la consommation par des humains.
@@ -212,18 +212,18 @@ weight: 30
   <form id="idp140650828112208">
    <ol>
     <li>
-     <input name="idp140650828112208" onclick="javascript:var Click_MenuId='idp140650828113360false';var formid='idp140650828112208'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828113360false"/>
-     Rien. Il s'agit d'un document valide.
-     <span class="feedback" id="idp140650828113360false" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828112208" onclick="javascript:var Click_MenuId='idp140650828113360false';var formid='idp140650828112208'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828113360false"/>
+     Rien. Il s'agit d'un document valide.</label>
+    <span class="feedback" id="idp140650828113360false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non. La déclaration de type déclare l'élément-racine « book », 
 alors que l'élément-racine est « para ».
      </span>
     </li>
     <li>
-     <input name="idp140650828112208" onclick="javascript:var Click_MenuId='idp140650828115440true';var formid='idp140650828112208'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828115440true"/>
-     Il y a une erreur dans la déclaration de type.
-     <span class="feedback" id="idp140650828115440true" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828112208" onclick="javascript:var Click_MenuId='idp140650828115440true';var formid='idp140650828112208'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828115440true"/>
+     Il y a une erreur dans la déclaration de type.</label>
+    <span class="feedback" id="idp140650828115440true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Effectivement, il faudrait avoir &lt;!DOCTYPE para PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
 et non &lt;!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" comme première partie de la 
@@ -231,9 +231,9 @@ déclaration de type, puisque l'élément-racine est de type « para » et non
      </span>
     </li>
     <li>
-     <input name="idp140650828112208" onclick="javascript:var Click_MenuId='idp140650828117328false';var formid='idp140650828112208'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828117328false"/>
-     Il y a une erreur dans l'élément « para ».
-     <span class="feedback" id="idp140650828117328false" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828112208" onclick="javascript:var Click_MenuId='idp140650828117328false';var formid='idp140650828112208'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828117328false"/>
+     Il y a une erreur dans l'élément « para ».</label>
+    <span class="feedback" id="idp140650828117328false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non. L'élément « para » est correct.
      </span>
@@ -256,31 +256,31 @@ déclaration de type, puisque l'élément-racine est de type « para » et non
   <form id="idp140650828118736">
    <ol>
     <li>
-     <input name="idp140650828118736" type="checkbox" value="idp140650828119680true"/>
+     <label><input name="idp140650828118736" type="checkbox" value="idp140650828119680true"/>
      L'auteur d'un document DocBook se soucie uniquement du contenu 
 et ne perd pas de temps à choisir des polices de caractères ou des couleurs
-pour son texte.
-     <span class="feedback" id="idp140650828119680true" style="display: none;font-weight:bold;">
+pour son texte.</label>
+    <span class="feedback" id="idp140650828119680true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement.
      </span>
     </li>
     <li>
-     <input name="idp140650828118736" type="checkbox" value="idp140650828121152true"/>
+     <label><input name="idp140650828118736" type="checkbox" value="idp140650828121152true"/>
      Si plusieurs personnes produisent la documentation pour un projet, il n'y a
 aucun problème à faire en sorte que la présentation soit uniforme, puisque le
-format DocBook ne contient aucune information touchant la présentation du texte.
-     <span class="feedback" id="idp140650828121152true" style="display: none;font-weight:bold;">
+format DocBook ne contient aucune information touchant la présentation du texte.</label>
+    <span class="feedback" id="idp140650828121152true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement, puisqu'il n'y a pas d'information de formatage dans les documents DocBook, 
 le formatage se fait dans une deuxième étape.
      </span>
     </li>
     <li>
-     <input name="idp140650828118736" type="checkbox" value="idp140650828123744false"/>
+     <label><input name="idp140650828118736" type="checkbox" value="idp140650828123744false"/>
      Le format DocBook est du XML; on peut donc employer tous les outils XML sur tous
-les documents DocBook.
-     <span class="feedback" id="idp140650828123744false" style="display: none;font-weight:bold;">
+les documents DocBook.</label>
+    <span class="feedback" id="idp140650828123744false" style="display: none;font-weight:bold;">
       <br/>
       Ce n'est malheureusement pas entièrement vrai. La plupart des nouveaux
 documents DocBook sont écrits en XML, mais il existe encore beaucoup de documents DocBook
@@ -323,27 +323,27 @@ qui ne sont pas du XML, mais du SGML.
   <form id="idp140650828125440">
    <ol>
     <li>
-     <input name="idp140650828125440" onclick="javascript:var Click_MenuId='idp140650828128720false';var formid='idp140650828125440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828128720false"/>
-     Le premier choix est préférable, car il n'y a qu'un seul numéro de série par ligne et le résultat est plus lisible.
-     <span class="feedback" id="idp140650828128720false" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828125440" onclick="javascript:var Click_MenuId='idp140650828128720false';var formid='idp140650828125440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828128720false"/>
+     Le premier choix est préférable, car il n'y a qu'un seul numéro de série par ligne et le résultat est plus lisible.</label>
+    <span class="feedback" id="idp140650828128720false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non. On pourrait très bien récrire ce même document avec tous les numéros sur la même ligne, 
 tout en produisant un document XML équivalent du point de vue des balises.
      </span>
     </li>
     <li>
-     <input name="idp140650828125440" onclick="javascript:var Click_MenuId='idp140650828130480false';var formid='idp140650828125440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828130480false"/>
-     Le second choix est préférable parce qu'il utilise moins d'espace.
-     <span class="feedback" id="idp140650828130480false" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828125440" onclick="javascript:var Click_MenuId='idp140650828130480false';var formid='idp140650828125440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828130480false"/>
+     Le second choix est préférable parce qu'il utilise moins d'espace.</label>
+    <span class="feedback" id="idp140650828130480false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Il est vrai qu'il utilise moins d'espace, mais il est difficile de comprendre
 le contenu; dans 10 ou 20 ans, on ne saura plus ce qui signifie tous ces numéros.
      </span>
     </li>
     <li>
-     <input name="idp140650828125440" onclick="javascript:var Click_MenuId='idp140650828132272true';var formid='idp140650828125440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828132272true"/>
-     Le premier choix est préférable parce qu'on peut voir tout de suite les numéros de série.
-     <span class="feedback" id="idp140650828132272true" style="display: none;font-weight:bold;">
+     <label><input name="idp140650828125440" onclick="javascript:var Click_MenuId='idp140650828132272true';var formid='idp140650828125440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140650828132272true"/>
+     Le premier choix est préférable parce qu'on peut voir tout de suite les numéros de série.</label>
+    <span class="feedback" id="idp140650828132272true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Effectivement. On dit qu'un tel document fourni une autodescription des données.
      </span>
@@ -366,8 +366,8 @@ le contenu; dans 10 ou 20 ans, on ne saura plus ce qui signifie tous ces numéro
   <form id="idp140650828133792">
    <ol>
     <li>
-     <input name="idp140650828133792" type="checkbox" value="idp140650828134560true"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140650828133792" type="checkbox" value="idp140650828134560true" aria-labelledby="rep-idp140650828134560true-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140650828134560true-0">
       &lt;?xml version="1.0" encoding='ISO-8859-1' standalone="no"?&gt;
     &lt;!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4CR2//EN"
      "http://www.oasis-open.org/docbook/xml/4.4CR2/docbookx.dtd"&gt;
@@ -401,8 +401,8 @@ contenir plusieurs éléments « para ».
      </span>
     </li>
     <li>
-     <input name="idp140650828133792" type="checkbox" value="idp140650828136368true"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140650828133792" type="checkbox" value="idp140650828136368true" aria-labelledby="rep-idp140650828136368true-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140650828136368true-0">
       &lt;?xml version="1.0" encoding='ISO-8859-1' standalone="no"?&gt;
   &lt;!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4CR2//EN"
      "http://www.oasis-open.org/docbook/xml/4.4CR2/docbookx.dtd"&gt;
@@ -434,8 +434,8 @@ un élément « programlisting » dans un élément « para ».
      </span>
     </li>
     <li>
-     <input name="idp140650828133792" type="checkbox" value="idp140650828138224false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140650828133792" type="checkbox" value="idp140650828138224false" aria-labelledby="rep-idp140650828138224false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140650828138224false-0">
       &lt;?xml version="1.0" encoding='ISO-8859-1' standalone="no"?&gt;
     &lt;!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4CR2//EN"
      "http://www.oasis-open.org/docbook/xml/4.4CR2/docbookx.dtd"&gt;
@@ -466,8 +466,8 @@ en premier dans un élément « chapter », et non pas en dernier.
      </span>
     </li>
     <li>
-     <input name="idp140650828133792" type="checkbox" value="idp140650828140128false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140650828133792" type="checkbox" value="idp140650828140128false" aria-labelledby="rep-idp140650828140128false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140650828140128false-0">
       &lt;?xml version="1.0" encoding='ISO-8859-1' standalone="no"?&gt;
     &lt;!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4CR2//EN"
      "http://www.oasis-open.org/docbook/xml/4.4CR2/docbookx.dtd"&gt;
@@ -499,8 +499,8 @@ il aurait fallu utiliser l'entité « &amp;lt; ».
      </span>
     </li>
     <li>
-     <input name="idp140650828133792" type="checkbox" value="idp140650828141936false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140650828133792" type="checkbox" value="idp140650828141936false" aria-labelledby="rep-idp140650828141936false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140650828141936false-0">
       &lt;?xml version="1.0" encoding='ISO-8859-1' standalone="no"?&gt;
     &lt;!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4CR2//EN"
      "http://www.oasis-open.org/docbook/xml/4.4CR2/docbookx.dtd"&gt;

@@ -79,25 +79,25 @@ weight: 40
  </p>
  <ol>
   <li>
-   <input name="agebalzac" onclick="javascript:document.getElementById('reponse1').style.display = 'block';" type="radio"/>
-   1799.
-   <span class="feedback" id="reponse1" style="display: none;font-weight:bold;">
+   <label><input name="agebalzac" onclick="javascript:document.getElementById('reponse1').style.display = 'block';" type="radio"/>
+   1799.</label>
+    <span class="feedback" id="reponse1" style="display: none;font-weight:bold;">
     <br/>
     (Réponse correcte!)
    </span>
   </li>
   <li>
-   <input name="agebalzac" onclick="javascript:document.getElementById('reponse2').style.display = 'block';" type="radio"/>
-   1832.
-   <span class="feedback" id="reponse2" style="display: none;font-weight:bold;">
+   <label><input name="agebalzac" onclick="javascript:document.getElementById('reponse2').style.display = 'block';" type="radio"/>
+   1832.</label>
+    <span class="feedback" id="reponse2" style="display: none;font-weight:bold;">
     <br/>
     (Réponse incorrecte!)
    </span>
   </li>
   <li>
-   <input name="agebalzac" onclick="javascript:document.getElementById('reponse3').style.display = 'block';" type="radio"/>
-   1910.
-   <span class="feedback" id="reponse3" style="display: none;font-weight:bold;">
+   <label><input name="agebalzac" onclick="javascript:document.getElementById('reponse3').style.display = 'block';" type="radio"/>
+   1910.</label>
+    <span class="feedback" id="reponse3" style="display: none;font-weight:bold;">
     <br/>
     (Réponse incorrecte!)
    </span>

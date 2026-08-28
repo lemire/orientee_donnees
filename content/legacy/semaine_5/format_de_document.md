@@ -5,7 +5,7 @@ weight: 20
 
 # Format de document
 
-### Le SGML (*Standardized General Markup Language*)
+## Le SGML (*Standardized General Markup Language*)
 
 En 1969, Charles Goldfarb, Edward Mosher et Raymond Lorie ont inventé le GML (*Generalized Markup Language*). Chercheurs chez IBM, ils voulaient faciliter l'échange d'informations entre les outils d'édition, de formatage et de recherche de documents. Le GML possédait déjà un concept de « type de documents » similaire aux documents DTD modernes. Chez IBM, le GML a été utilisé pour la production d'environ 90 % des documents électroniques.
 
@@ -15,7 +15,7 @@ On dit souvent que le SGML est l'ancêtre du XML, dans la mesure où les créate
 
 Le SGML n'est pas très différent du XHTML. Par exemple, les paragraphes sont spécifiés avec des éléments « para » de la même façon qu'ils sont spécifiés avec des éléments « p » en XHTML.
 
-### Le XML comme format de documents
+## Le XML comme format de documents
 
 Notons que le SGML, le HTML et le XML sont avant tout des formats de documents. On utilise maintenant le XML comme outil de programmation pour stocker et pour échanger des informations entre les logiciels; toutefois, l'objectif des créateurs du XML n'était que de créer un format de documents simple et pratique.
 
@@ -34,7 +34,7 @@ Le XML est aussi très utile pour aider à l'autodescription des informations. P
 
 En outre, le XML est un format ouvert : on peut utiliser une multitude d'outils différents pour manipuler les documents XML; nous ne sommes pas limités à des produits spécifiques à une compagnie ou institution donnée. Le XML a donc l'avantage sur plusieurs autres formats quant à sa pérennité.
 
-### Le format DocBook
+## Le format DocBook
 
 Développé à partir de 1991, le format DocBook est un format de documents souvent utilisé pour la documentation technique. Le format DocBook est une application SGML qui devient une application XML. Il existe de nombreux outils permettant de transformer un document DocBook en document HTML ou PDF.
 
@@ -230,7 +230,7 @@ Tout comme en HTML, on peut créer des listes avec les éléments « itemizedlis
 
 Le format DocBook est supporté par certains traitement de textes comme [OpenOffice](http://fr.openoffice.org/) qui est disponible gratuitement.
 
-### L'ODF (*Open Document Format*)
+## L'ODF (*Open Document Format*)
 
 Historiquement, les formats de bureautiques ont été propriétaires, que ce soit le format WordPerfect ou le format Microsoft Word. Pour une institution, cela pose le problème de la pérennité des documents : qu'est-ce qui se produit si la compagnie qui propose un format décide de ne plus supporter un ancien format, parce qu'elle fait faillite ou change sa stratégie commerciale ? Qu'est-ce qui se produit si elle décide d'augmenter le coût de ses produits ? L'*Open Document Format* (ODF) est une norme XML [adoptée en mai 2005](http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office) par OASIS et est devenu une norme ISO (ISO 26300.2006) le 30 novembre 2006. Le format ODF est un format XML que tout le monde peut utiliser librement. Nous allons voir différentes techniques dans ce cours qui permettent de manipuler des documents XML et elles s'appliquent au format ODF.
 

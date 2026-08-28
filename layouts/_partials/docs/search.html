@@ -1,0 +1,14 @@
+{{/* Surcouche : les résultats étaient injectés en silence.
+     role="status" + aria-live les fait annoncer (WCAG 4.1.3). */}}
+{{ if default true .Site.Params.BookSearch }}
+<div class="book-search hidden" role="search">
+  <label for="book-search-input" class="sr-only">Rechercher dans le cours</label>
+  <input type="search" id="book-search-input" placeholder="Rechercher" aria-label="Rechercher dans le cours" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden" aria-hidden="true"></div>
+  {{/* role="status" n'est pas autorisé sur <ul> : on le porte par un conteneur. */}}
+  <div role="status" aria-live="polite" aria-label="Résultats de la recherche">
+    <ul id="book-search-results"></ul>
+  </div>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+{{ end }}

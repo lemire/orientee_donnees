@@ -16,7 +16,7 @@ weight: 30
  , c'est
     que vous avez la bonne réponse;
     sinon, lisez les commentaires en
- <span style="color:red">
+ <span style="color:#c00000">
   rouge
  </span>
  pour
@@ -43,37 +43,37 @@ weight: 30
  <form id="idp140346360250720">
   <ol>
    <li>
-    <input name="idp140346360250720" type="checkbox" value="idp140346360252160false"/>
+    <label><input name="idp140346360250720" type="checkbox" value="idp140346360252160false"/>
     La première version de
     <i>
      Dublin
                     Core
     </i>
-    a été publiée en 2001.
+    a été publiée en 2001.</label>
     <span class="feedback" id="idp140346360252160false" style="display: none;font-weight:bold;">
      <br/>
      Non. C'est en juillet 1999.
     </span>
    </li>
    <li>
-    <input name="idp140346360250720" type="checkbox" value="idp140346360253824true"/>
+    <label><input name="idp140346360250720" type="checkbox" value="idp140346360253824true"/>
     <i>
      Dublin Core
     </i>
     est une forme
-                de RDF.
+                de RDF.</label>
     <span class="feedback" id="idp140346360253824true" style="display: none;font-weight:bold;">
      <br/>
      Effectivement.
     </span>
    </li>
    <li>
-    <input name="idp140346360250720" type="checkbox" value="idp140346360255360false"/>
+    <label><input name="idp140346360250720" type="checkbox" value="idp140346360255360false"/>
     <i>
      Dublin Core
     </i>
     est une forme
-                de XML.
+                de XML.</label>
     <span class="feedback" id="idp140346360255360false" style="display: none;font-weight:bold;">
      <br/>
      Non. L'information
@@ -84,14 +84,14 @@ weight: 30
     </span>
    </li>
    <li>
-    <input name="idp140346360250720" type="checkbox" value="idp140346360257392true"/>
+    <label><input name="idp140346360250720" type="checkbox" value="idp140346360257392true"/>
     La norme
     <i>
      Dublin Core
     </i>
     peut
                 être utilisée pour décrire des photographies ou objets
-                multimédias.
+                multimédias.</label>
     <span class="feedback" id="idp140346360257392true" style="display: none;font-weight:bold;">
      <br/>
      Oui. En fait, la norme
@@ -141,14 +141,14 @@ weight: 30
  <form id="idp140346360259856">
   <ol>
    <li>
-    <input name="idp140346360259856" onclick="javascript:var Click_MenuId='idp140346360261888false';var formid='idp140346360259856'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360261888false"/>
+    <label><input name="idp140346360259856" onclick="javascript:var Click_MenuId='idp140346360261888false';var formid='idp140346360259856'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360261888false"/>
     Il
                 y a un article à l'URL
                 « http://www.ledevoir.com/2004/09/30/65081.html »
                 écrit par quelqu'un nommé Alec Castonguay; l'article a été écrit
                 le 30 septembre 2004 et porte
                 le titre « Harper est prêt pour de nouvelles
-                élections ».
+                élections ».</label>
     <span class="feedback" id="idp140346360261888false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non. Le lien
@@ -158,13 +158,13 @@ weight: 30
     </span>
    </li>
    <li>
-    <input name="idp140346360259856" onclick="javascript:var Click_MenuId='idp140346360262528true';var formid='idp140346360259856'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360262528true"/>
+    <label><input name="idp140346360259856" onclick="javascript:var Click_MenuId='idp140346360262528true';var formid='idp140346360259856'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360262528true"/>
     Le
                 document ayant l'URI
                 « http://www.ledevoir.com/2004/09/30/65081.html »,
                 portant le titre « Harper est prêt pour de nouvelles
                 élections » et daté du 30 septembre 2004,
-                a été écrit par quelqu'un nommé Alec Castonguay.
+                a été écrit par quelqu'un nommé Alec Castonguay.</label>
     <span class="feedback" id="idp140346360262528true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!)
@@ -172,12 +172,12 @@ weight: 30
     </span>
    </li>
    <li>
-    <input name="idp140346360259856" onclick="javascript:var Click_MenuId='idp140346360266080false';var formid='idp140346360259856'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360266080false"/>
+    <label><input name="idp140346360259856" onclick="javascript:var Click_MenuId='idp140346360266080false';var formid='idp140346360259856'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360266080false"/>
     Alec
                 Castonguay a écrit l'article ayant l'URI
                 « http://www.ledevoir.com/2004/09/30/65081.html »
                 et le titre « Harper est prêt pour de nouvelles
-                élections », le 30 septembre 2004.
+                élections », le 30 septembre 2004.</label>
     <span class="feedback" id="idp140346360266080false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non. On ne sait
@@ -210,37 +210,37 @@ weight: 30
  <form id="idp140346360268272">
   <ol>
    <li>
-    <input name="idp140346360268272" type="checkbox" value="idp140346360269584true"/>
+    <label><input name="idp140346360268272" type="checkbox" value="idp140346360269584true"/>
     La première version de
     <i>
      Creative
                     Common
     </i>
-    s a été publiée en 2001.
+    s a été publiée en 2001.</label>
     <span class="feedback" id="idp140346360269584true" style="display: none;font-weight:bold;">
      <br/>
      Correct.
     </span>
    </li>
    <li>
-    <input name="idp140346360268272" type="checkbox" value="idp140346360271248true"/>
+    <label><input name="idp140346360268272" type="checkbox" value="idp140346360271248true"/>
     <i>
      Creative Commons
     </i>
     est une
-                forme de RDF.
+                forme de RDF.</label>
     <span class="feedback" id="idp140346360271248true" style="display: none;font-weight:bold;">
      <br/>
      Effectivement.
     </span>
    </li>
    <li>
-    <input name="idp140346360268272" type="checkbox" value="idp140346360272784false"/>
+    <label><input name="idp140346360268272" type="checkbox" value="idp140346360272784false"/>
     <i>
      Creative Commons
     </i>
     sert
-                surtout à décrire le contenu des documents.
+                surtout à décrire le contenu des documents.</label>
     <span class="feedback" id="idp140346360272784false" style="display: none;font-weight:bold;">
      <br/>
      Non.
@@ -313,9 +313,9 @@ weight: 30
  <form id="idp140346360275088">
   <ol>
    <li>
-    <input name="idp140346360275088" onclick="javascript:var Click_MenuId='idp140346360277120false';var formid='idp140346360275088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360277120false"/>
+    <label><input name="idp140346360275088" onclick="javascript:var Click_MenuId='idp140346360277120false';var formid='idp140346360275088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360277120false"/>
     Ce
-                document n'est pas valable.
+                document n'est pas valable.</label>
     <span class="feedback" id="idp140346360277120false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non. Il s'agit un
@@ -323,12 +323,12 @@ weight: 30
     </span>
    </li>
    <li>
-    <input name="idp140346360275088" onclick="javascript:var Click_MenuId='idp140346360278448false';var formid='idp140346360275088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360278448false"/>
+    <label><input name="idp140346360275088" onclick="javascript:var Click_MenuId='idp140346360278448false';var formid='idp140346360275088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360278448false"/>
     Le
                 document à l'URL
                 « http://www.mavieestbelle.com/index.html »
                 peut être modifié et reproduit dans un contexte non commercial
-                ou reproduit sans modification dans un contexte commercial.
+                ou reproduit sans modification dans un contexte commercial.</label>
     <span class="feedback" id="idp140346360278448false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) L'adresse
@@ -339,12 +339,12 @@ weight: 30
     </span>
    </li>
    <li>
-    <input name="idp140346360275088" onclick="javascript:var Click_MenuId='idp140346360280496true';var formid='idp140346360275088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360280496true"/>
+    <label><input name="idp140346360275088" onclick="javascript:var Click_MenuId='idp140346360280496true';var formid='idp140346360275088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140346360280496true"/>
     Le
                 document représenté par l'URI
                 « http://www.mavieestbelle.com/index.html »
                 peut être modifié et reproduit dans un contexte non commercial
-                ou reproduit sans modification dans un contexte commercial.
+                ou reproduit sans modification dans un contexte commercial.</label>
     <span class="feedback" id="idp140346360280496true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!)
@@ -375,13 +375,13 @@ weight: 30
  <form id="idp140346360282368">
   <ol>
    <li>
-    <input name="idp140346360282368" type="checkbox" value="idp140346360283392false"/>
+    <label><input name="idp140346360282368" type="checkbox" value="idp140346360283392false"/>
     Au départ,
     <i>
      FOAF
     </i>
     ne devait
-                pas être du RDF.
+                pas être du RDF.</label>
     <span class="feedback" id="idp140346360283392false" style="display: none;font-weight:bold;">
      <br/>
      Non. Tout document
@@ -393,12 +393,12 @@ weight: 30
     </span>
    </li>
    <li>
-    <input name="idp140346360282368" type="checkbox" value="idp140346360285440false"/>
+    <label><input name="idp140346360282368" type="checkbox" value="idp140346360285440false"/>
     <i>
      FOAF
     </i>
     est un projet informel
-                qui ne respecte pas toujours les normes.
+                qui ne respecte pas toujours les normes.</label>
     <span class="feedback" id="idp140346360285440false" style="display: none;font-weight:bold;">
      <br/>
      Non. Le premier document
@@ -410,9 +410,9 @@ weight: 30
     </span>
    </li>
    <li>
-    <input name="idp140346360282368" type="checkbox" value="idp140346360287504true"/>
+    <label><input name="idp140346360282368" type="checkbox" value="idp140346360287504true"/>
     La première spécification du RDF
-                date de 1999.
+                date de 1999.</label>
     <span class="feedback" id="idp140346360287504true" style="display: none;font-weight:bold;">
      <br/>
      Effectivement. En 1998, Daniel Brickley
@@ -440,14 +440,14 @@ weight: 30
  <form id="idp140346360289168">
   <ol>
    <li>
-    <input name="idp140346360289168" type="checkbox" value="idp140346360289936true"/>
+    <label><input name="idp140346360289168" type="checkbox" value="idp140346360289936true"/>
     Pour l'essentiel, les applications
                 RDF présentées dans ce cours, telles que
     <i>
      Dublin Core
     </i>
     ,
-                datent de 1999.
+                datent de 1999.</label>
     <span class="feedback" id="idp140346360289936true" style="display: none;font-weight:bold;">
      <br/>
      C'est vrai. Seul
@@ -459,13 +459,13 @@ weight: 30
     </span>
    </li>
    <li>
-    <input name="idp140346360289168" type="checkbox" value="idp140346360292144true"/>
+    <label><input name="idp140346360289168" type="checkbox" value="idp140346360292144true"/>
     Un document
     <i>
      FOAF
     </i>
     doit être
-                du RDF valable.
+                du RDF valable.</label>
     <span class="feedback" id="idp140346360292144true" style="display: none;font-weight:bold;">
      <br/>
      C'est vrai, même si l'exemple original
@@ -473,12 +473,12 @@ weight: 30
     </span>
    </li>
    <li>
-    <input name="idp140346360289168" type="checkbox" value="idp140346360293984false"/>
+    <label><input name="idp140346360289168" type="checkbox" value="idp140346360293984false"/>
     <i>
      RSS
     </i>
     est une technologie
-                émergente peu utilisée.
+                émergente peu utilisée.</label>
     <span class="feedback" id="idp140346360293984false" style="display: none;font-weight:bold;">
      <br/>
      Au contraire, des milliers de portails

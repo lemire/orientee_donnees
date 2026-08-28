@@ -1,7 +1,16 @@
+{{/* Insère une application de démonstration de static/webapps/ dans une page.
+     Ces fichiers sont désormais des documents HTML complets (ils sont aussi
+     publiés tels quels) : on n'en reprend donc que le contenu de <main>. */}}
 {{ $path := .Get "path" }}
 {{ $filePath := printf "static/webapps/%s" $path }}
 {{ if fileExists $filePath }}
-  <div>{{ $filePath | readFile | safeHTML }}</div>
+  {{ $html := readFile $filePath }}
+  {{ $corps := $html }}
+  {{ if strings.Contains $html "<main>" }}
+    {{ $corps = index (findRE `(?s)<main>(.*)</main>` $html 1) 0 }}
+    {{ $corps = replaceRE `(?s)^<main>|</main>$` "" $corps }}
+  {{ end }}
+  <div class="webapp-embed">{{ $corps | safeHTML }}</div>
 {{ else }}
-  <p>Error: Code file not found at {{ $filePath }}</p>
+  <p>Erreur : application introuvable ({{ $filePath }}).</p>
 {{ end }}

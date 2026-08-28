@@ -24,8 +24,8 @@ weight: 40
  Bonne chance!
 </p>
 <p>
- <a href="$@QUIZVIEWBYID*158488@$" target="_blank">
-  Pour passer votre examen
+ <a href="$@QUIZVIEWBYID*158488@$" target="_blank" rel="noopener">
+  Pour passer votre examen (s'ouvre dans un nouvel onglet)
  </a>
 </p>
 <hr/>
@@ -36,27 +36,27 @@ weight: 40
  INF 2007 : Programmation avancée
 </h3>
 <p>
- <iframe frameborder="0" height="315" src="https://www.youtube.com/embed/Of7vbY4eAGI?si=dP11_e0mX3SJr6IG" title="YouTube video player" width="560">
+ <iframe frameborder="0" height="315" src="https://www.youtube.com/embed/Of7vbY4eAGI?si=dP11_e0mX3SJr6IG" title="Vidéo de présentation du cours INF 2007 : Programmation avancée" width="560">
  </iframe>
 </p>
 <h3>
  INF 6460 : recherche d'informations
 </h3>
 <p>
- <iframe frameborder="0" height="315" src="https://www.youtube.com/embed/xh_l-2qhe48?si=gZARtwOxEaoVeOJc" title="YouTube video player" width="560">
+ <iframe frameborder="0" height="315" src="https://www.youtube.com/embed/xh_l-2qhe48?si=gZARtwOxEaoVeOJc" title="Vidéo de présentation du cours INF 6460 : recherche d'informations" width="560">
  </iframe>
 </p>
 <h3>
  INF 9004 : Entrepôts de données
 </h3>
 <p>
- <iframe frameborder="0" height="315" src="https://www.youtube.com/embed/Qq3W6OUfrc0?si=a0GZcyqHVph-kiaF" title="YouTube video player" width="560">
+ <iframe frameborder="0" height="315" src="https://www.youtube.com/embed/Qq3W6OUfrc0?si=a0GZcyqHVph-kiaF" title="Vidéo de présentation du cours INF 9004 : Entrepôts de données" width="560">
  </iframe>
 </p>
 <h3>
  INF 2020 : programmation en Python
 </h3>
 <p>
- <iframe frameborder="0" height="315" src="https://www.youtube.com/embed/F6fI-1dtxxw?si=W9XuXAAWc8Xfpo_Q" title="YouTube video player" width="560">
+ <iframe frameborder="0" height="315" src="https://www.youtube.com/embed/F6fI-1dtxxw?si=W9XuXAAWc8Xfpo_Q" title="Vidéo de présentation du cours INF 2020 : programmation en Python" width="560">
  </iframe>
 </p>

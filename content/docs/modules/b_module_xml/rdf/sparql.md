@@ -17,7 +17,7 @@ Il existe quatre formes principales de requêtes SPARQL :
 - ASK : retourne simplement vrai ou faux
 - DESCRIBE : retourne une description RDF d’une ressource
 
-### Syntaxe de base
+## Syntaxe de base
 
 Une requête SELECT classique ressemble à ceci :
 
@@ -35,9 +35,9 @@ ORDER BY DESC(?population)
 LIMIT 10
 ```
 
-### Exemples concrets
+## Exemples concrets
 
-#### 1. Exemple très simple – capitale de la France (sur DBpedia)
+## 1. Exemple très simple – capitale de la France (sur DBpedia)
 
 ```sparql
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -52,7 +52,7 @@ SELECT ?capitale WHERE {
 
 Résultat attendu : http://dbpedia.org/resource/Paris avec le label "Paris".
 
-#### 2. Trouver tous les films réalisés par Quentin Tarantino (Wikidata)
+## 2. Trouver tous les films réalisés par Quentin Tarantino (Wikidata)
 
 ```sparql
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
@@ -68,7 +68,7 @@ SELECT ?film ?filmLabel ?annee WHERE {
 ORDER BY ?annee
 ```
 
-#### 3. Exemple avec OPTIONAL (données facultatives)
+## 3. Exemple avec OPTIONAL (données facultatives)
 
 ```sparql
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -85,7 +85,7 @@ LIMIT 20
 
 Si une personne n’a pas d’email ou de site web, la ligne apparaît quand même avec les cellules vides.
 
-#### 4. Exemple CONSTRUCT – créer un petit graphe
+## 4. Exemple CONSTRUCT – créer un petit graphe
 
 ```sparql
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -103,7 +103,7 @@ CONSTRUCT {
 
 Cela génère un nouveau graphe contenant les amis des amis d’Alice.
 
-#### 5. Exemple avec FILTER, LANG et REGEX (recherche de labels en français contenant “église”)
+## 5. Exemple avec FILTER, LANG et REGEX (recherche de labels en français contenant “église”)
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema/>
@@ -117,7 +117,7 @@ SELECT ?monument ?label WHERE {
 LIMIT 15
 ```
 
-#### 6. Exemple d’agrégation (GROUP BY, COUNT)
+## 6. Exemple d’agrégation (GROUP BY, COUNT)
 
 ```sparql
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
@@ -138,7 +138,7 @@ Ce dernier exemple montre les 10 pays ayant le plus de villes recensées dans Wi
 
 
 
-### Questions d’auto-évaluation
+## Questions d’auto-évaluation
 
 1. Écrivez une requête SPARQL qui retourne le nom (en français) et la date de naissance de toutes les personnes nées à Paris et décédées après 1950, en utilisant l’endpoint Wikidata. Utilisez le service wikibase:label et ordonnez les résultats par date de naissance décroissante.
 

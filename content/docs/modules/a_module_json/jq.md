@@ -193,7 +193,7 @@ Créez un fichier `bibliotheque.json` :
 
 ## Vidéo suggérée
 
-{{< youtube id="x18F2wIsxgU" >}}
+{{< youtube id="x18F2wIsxgU" title="Vidéo suggérée sur l’outil jq" >}}
 
 ### Exercices
 

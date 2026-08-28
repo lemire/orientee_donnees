@@ -83,7 +83,7 @@ weight: 80
 <p>
  Vous pouvez tester votre solution en ligne:
 </p>
-<textarea cols="45" id="xmlsource" rows="15" style="display:none;">&lt;?xml
+<textarea aria-label="Document XML source" cols="45" id="xmlsource" rows="15" style="display:none;">&lt;?xml
     version="1.0" ?&gt;
     &lt;a&gt;
     &lt;b&gt;Rouge&lt;/b&gt;
@@ -103,7 +103,7 @@ weight: 80
 <p>
  Document CSS:
 </p>
-<textarea cols="45" id="csssource" rows="15"> a {
+<textarea aria-label="Feuille de style CSS" cols="45" id="csssource" rows="15"> a {
     display: block;
     color: red;
     }
@@ -177,7 +177,7 @@ weight: 80
 <p>
  Résultat :
 </p>
-<iframe height="300" id="dis" src="data:application/xml;charset=utf-8,%3C?xml%20version=%221.0%22?%3E%3C?xml-stylesheet%20type=%22text/css%22%20href=%22data:text/css;charset=utf-8,%2520%2520a%2520%257B%250A%2520%2520display:%2520block;%250A%2520%2520color:%2520red;%250A%2520%2520%257D%250A%2520%22?%3E%3Ca%3E%0A%20%3Cb%3ERouge%3C/b%3E%0A%20%3Cc%3E%3Ca%3EOlive%3C/a%3E%0A%20%3Cb%3EBleu%3C/b%3E%0A%20%3Ca%3E%3Ca%3ENoir%3C/a%3E%20%0A%20Olive%20%0A%20%3Cb%3EBleu%3C/b%3E%0A%20%3Ca%3ERouge%3C/a%3E%0A%20%3Ca%3ENoir%3C/a%3E%0A%20%3C/a%3E%3C/c%3E%0A%20%3Cb%3E%3Ca%3ERouge%3C/a%3E%0A%20%3Cb%3ENoir%3C/b%3E%3C/b%3E%0A%3Cd%3Emajuscule%3C/d%3E%0A%3C/a%3E" width="300">
+<iframe height="300" id="dis" title="Aperçu du document XML mis en forme par la feuille CSS" src="data:application/xml;charset=utf-8,%3C?xml%20version=%221.0%22?%3E%3C?xml-stylesheet%20type=%22text/css%22%20href=%22data:text/css;charset=utf-8,%2520%2520a%2520%257B%250A%2520%2520display:%2520block;%250A%2520%2520color:%2520red;%250A%2520%2520%257D%250A%2520%22?%3E%3Ca%3E%0A%20%3Cb%3ERouge%3C/b%3E%0A%20%3Cc%3E%3Ca%3EOlive%3C/a%3E%0A%20%3Cb%3EBleu%3C/b%3E%0A%20%3Ca%3E%3Ca%3ENoir%3C/a%3E%20%0A%20Olive%20%0A%20%3Cb%3EBleu%3C/b%3E%0A%20%3Ca%3ERouge%3C/a%3E%0A%20%3Ca%3ENoir%3C/a%3E%0A%20%3C/a%3E%3C/c%3E%0A%20%3Cb%3E%3Ca%3ERouge%3C/a%3E%0A%20%3Cb%3ENoir%3C/b%3E%3C/b%3E%0A%3Cd%3Emajuscule%3C/d%3E%0A%3C/a%3E" width="300">
 </iframe>
 <h2>
  Exercice 2
@@ -238,9 +238,9 @@ weight: 80
   Vous pouvez
         tester votre solution en ligne à l'aide du laboratoire XSLT.
 </p>
-<h4>
+<h3>
  Indices
-</h4>
+</h3>
 <ol>
  <li>
   <p>
@@ -250,12 +250,12 @@ weight: 80
   <table border="1">
    <tbody>
     <tr>
-     <td>
+     <th scope="col">
       Étudiant
-     </td>
-     <td>
+     </th>
+     <th scope="col">
       Moyenne
-     </td>
+     </th>
     </tr>
     <tr>
      <td>
@@ -330,15 +330,15 @@ weight: 80
  <table border="1">
   <tbody>
    <tr>
-    <td>
+    <th scope="col">
      Sigle
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Nombre d'étudiants
-    </td>
-    <td>
+    </th>
+    <th scope="col">
      Moyenne du cours
-    </td>
+    </th>
    </tr>
    <tr>
     <td>

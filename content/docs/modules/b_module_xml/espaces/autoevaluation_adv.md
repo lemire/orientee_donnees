@@ -12,7 +12,7 @@ weight: 70
    bleu
   </span>
   , c'est que vous avez la bonne réponse; sinon, lisez les commentaires en
-  <span style="color:red">
+  <span style="color:#c00000">
    rouge
   </span>
   pour comprendre votre erreur. Puis, essayez de nouveau en cliquant sur le bouton « Recommencer ».
@@ -31,27 +31,27 @@ weight: 70
   <form id="idp140504183001936">
    <ol>
     <li>
-     <input name="idp140504183001936" onclick="javascript:var Click_MenuId='idp140504183002848false';var formid='idp140504183001936'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183002848false"/>
-     Un espace de noms XML est décrit par une DTD.
-     <span class="feedback" id="idp140504183002848false" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183001936" onclick="javascript:var Click_MenuId='idp140504183002848false';var formid='idp140504183001936'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183002848false"/>
+     Un espace de noms XML est décrit par une DTD.</label>
+    <span class="feedback" id="idp140504183002848false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Une DTD peut être utilisée, mais ce n'est pas la seule possibilité.
      </span>
     </li>
     <li>
-     <input name="idp140504183001936" onclick="javascript:var Click_MenuId='idp140504183004288true';var formid='idp140504183001936'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183004288true"/>
+     <label><input name="idp140504183001936" onclick="javascript:var Click_MenuId='idp140504183004288true';var formid='idp140504183001936'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183004288true"/>
      Un espace de noms XML est un ensemble de balises et d'attributs 
- auquel peut correspondre un URI.
-     <span class="feedback" id="idp140504183004288true" style="display: none;font-weight:bold;">
+ auquel peut correspondre un URI.</label>
+    <span class="feedback" id="idp140504183004288true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) En effet.
      </span>
     </li>
     <li>
-     <input name="idp140504183001936" onclick="javascript:var Click_MenuId='idp140504183005632false';var formid='idp140504183001936'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183005632false"/>
+     <label><input name="idp140504183001936" onclick="javascript:var Click_MenuId='idp140504183005632false';var formid='idp140504183001936'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183005632false"/>
      Un espace de noms XML est décrit par un URI qui est une adresse 
- web pointant vers un document.
-     <span class="feedback" id="idp140504183005632false" style="display: none;font-weight:bold;">
+ web pointant vers un document.</label>
+    <span class="feedback" id="idp140504183005632false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Un URI est une adresse symbolique qui ne pointe 
  pas nécessairement vers un document.
@@ -75,18 +75,18 @@ weight: 70
   <form id="idp140504183007040">
    <ol>
     <li>
-     <input name="idp140504183007040" onclick="javascript:var Click_MenuId='idp140504183008112true';var formid='idp140504183007040'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183008112true"/>
-     Faux.
-     <span class="feedback" id="idp140504183008112true" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183007040" onclick="javascript:var Click_MenuId='idp140504183008112true';var formid='idp140504183007040'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183008112true"/>
+     Faux.</label>
+    <span class="feedback" id="idp140504183008112true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Bien que compatibles avec la norme XML, 
  les espaces de noms n'en font pas partie.
      </span>
     </li>
     <li>
-     <input name="idp140504183007040" onclick="javascript:var Click_MenuId='idp140504183009616false';var formid='idp140504183007040'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183009616false"/>
-     Vrai.
-     <span class="feedback" id="idp140504183009616false" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183007040" onclick="javascript:var Click_MenuId='idp140504183009616false';var formid='idp140504183007040'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183009616false"/>
+     Vrai.</label>
+    <span class="feedback" id="idp140504183009616false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Bien que compatibles avec la norme 1.0, 
  les espaces de noms furent introduits plus tard, environ un an après.
@@ -110,18 +110,18 @@ weight: 70
   <form id="idp140504183011296">
    <ol>
     <li>
-     <input name="idp140504183011296" onclick="javascript:var Click_MenuId='idp140504183012304true';var formid='idp140504183011296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183012304true"/>
-     Faux.
-     <span class="feedback" id="idp140504183012304true" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183011296" onclick="javascript:var Click_MenuId='idp140504183012304true';var formid='idp140504183011296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183012304true"/>
+     Faux.</label>
+    <span class="feedback" id="idp140504183012304true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) On peut utiliser une DTD ou ne pas en utiliser, 
  mais on ne peut pas en utiliser deux.
      </span>
     </li>
     <li>
-     <input name="idp140504183011296" onclick="javascript:var Click_MenuId='idp140504183013648false';var formid='idp140504183011296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183013648false"/>
-     Vrai.
-     <span class="feedback" id="idp140504183013648false" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183011296" onclick="javascript:var Click_MenuId='idp140504183013648false';var formid='idp140504183011296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183013648false"/>
+     Vrai.</label>
+    <span class="feedback" id="idp140504183013648false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Les espaces de noms ne changent rien à la 
  validation des documents : il faut toujours avoir une seule DTD.
@@ -145,18 +145,18 @@ weight: 70
   <form id="idp140504183015168">
    <ol>
     <li>
-     <input name="idp140504183015168" onclick="javascript:var Click_MenuId='idp140504183016192false';var formid='idp140504183015168'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183016192false"/>
-     Faux.
-     <span class="feedback" id="idp140504183016192false" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183015168" onclick="javascript:var Click_MenuId='idp140504183016192false';var formid='idp140504183015168'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183016192false"/>
+     Faux.</label>
+    <span class="feedback" id="idp140504183016192false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Les espaces de noms permettent effectivement 
  d'utiliser plus d'un vocabulaire XML en même temps.
      </span>
     </li>
     <li>
-     <input name="idp140504183015168" onclick="javascript:var Click_MenuId='idp140504183017744true';var formid='idp140504183015168'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183017744true"/>
-     Vrai.
-     <span class="feedback" id="idp140504183017744true" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183015168" onclick="javascript:var Click_MenuId='idp140504183017744true';var formid='idp140504183015168'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183017744true"/>
+     Vrai.</label>
+    <span class="feedback" id="idp140504183017744true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) On peut en fait combiner autant de vocabulaires XML 
  que l'on veut.
@@ -185,34 +185,34 @@ weight: 70
   <form id="idp140504183019024">
    <ol>
     <li>
-     <input name="idp140504183019024" onclick="javascript:var Click_MenuId='idp140504183020672false';var formid='idp140504183019024'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183020672false"/>
-     B
-     <span class="feedback" id="idp140504183020672false" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183019024" onclick="javascript:var Click_MenuId='idp140504183020672false';var formid='idp140504183019024'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183020672false"/>
+     B</label>
+    <span class="feedback" id="idp140504183020672false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non. Il s'agit du nom de l'élément.
      </span>
     </li>
     <li>
-     <input name="idp140504183019024" onclick="javascript:var Click_MenuId='idp140504183022048false';var formid='idp140504183019024'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183022048false"/>
-     A
-     <span class="feedback" id="idp140504183022048false" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183019024" onclick="javascript:var Click_MenuId='idp140504183022048false';var formid='idp140504183019024'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183022048false"/>
+     A</label>
+    <span class="feedback" id="idp140504183022048false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non. Il s'agit d'un nom d'élément.
      </span>
     </li>
     <li>
-     <input name="idp140504183019024" onclick="javascript:var Click_MenuId='idp140504183023424false';var formid='idp140504183019024'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183023424false"/>
-     foo
-     <span class="feedback" id="idp140504183023424false" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183019024" onclick="javascript:var Click_MenuId='idp140504183023424false';var formid='idp140504183019024'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183023424false"/>
+     foo</label>
+    <span class="feedback" id="idp140504183023424false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non. « foo » est un préfixe d'espace de noms qui n'est pas utilisé 
   dans le document par un élément.
      </span>
     </li>
     <li>
-     <input name="idp140504183019024" onclick="javascript:var Click_MenuId='idp140504183025024true';var formid='idp140504183019024'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183025024true"/>
-     http://www.bar.org/
-     <span class="feedback" id="idp140504183025024true" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183019024" onclick="javascript:var Click_MenuId='idp140504183025024true';var formid='idp140504183019024'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183025024true"/>
+     http://www.bar.org/</label>
+    <span class="feedback" id="idp140504183025024true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Effectivement. L'élément « B » appartient à l'espace de noms par défaut 
   qui est associé à l'URI « http://www.bar.org/ ».
@@ -246,19 +246,19 @@ weight: 70
   <form id="idp140504183026720">
    <ol>
     <li>
-     <input name="idp140504183026720" onclick="javascript:var Click_MenuId='idp140504183028576false';var formid='idp140504183026720'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183028576false"/>
+     <label><input name="idp140504183026720" onclick="javascript:var Click_MenuId='idp140504183028576false';var formid='idp140504183026720'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183028576false"/>
      Il n'y a aucune différence puisque l'élément « A » est associé 
-  par défaut à l'URI « http://www.foo.org/ ».
-     <span class="feedback" id="idp140504183028576false" style="display: none;font-weight:bold;">
+  par défaut à l'URI « http://www.foo.org/ ».</label>
+    <span class="feedback" id="idp140504183028576false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non.
      </span>
     </li>
     <li>
-     <input name="idp140504183026720" onclick="javascript:var Click_MenuId='idp140504183030208true';var formid='idp140504183026720'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183030208true"/>
+     <label><input name="idp140504183026720" onclick="javascript:var Click_MenuId='idp140504183030208true';var formid='idp140504183026720'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183030208true"/>
      Dans le premier cas, l'élément « A » est dans l'espace de noms « foo »,
-  alors que dans le second, « A » est dans l'espace de noms par défaut.
-     <span class="feedback" id="idp140504183030208true" style="display: none;font-weight:bold;">
+  alors que dans le second, « A » est dans l'espace de noms par défaut.</label>
+    <span class="feedback" id="idp140504183030208true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Effectivement.
      </span>
@@ -288,17 +288,17 @@ weight: 70
   <form id="idp140504183032256">
    <ol>
     <li>
-     <input name="idp140504183032256" onclick="javascript:var Click_MenuId='idp140504183033856false';var formid='idp140504183032256'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183033856false"/>
-     http://www.mondomaine.org/
-     <span class="feedback" id="idp140504183033856false" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183032256" onclick="javascript:var Click_MenuId='idp140504183033856false';var formid='idp140504183032256'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183033856false"/>
+     http://www.mondomaine.org/</label>
+    <span class="feedback" id="idp140504183033856false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non. L'espace de noms a été redéfini.
      </span>
     </li>
     <li>
-     <input name="idp140504183032256" onclick="javascript:var Click_MenuId='idp140504183035104true';var formid='idp140504183032256'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183035104true"/>
-     http://www.monsite.org/
-     <span class="feedback" id="idp140504183035104true" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183032256" onclick="javascript:var Click_MenuId='idp140504183035104true';var formid='idp140504183032256'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183035104true"/>
+     http://www.monsite.org/</label>
+    <span class="feedback" id="idp140504183035104true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Effectivement.
      </span>
@@ -321,8 +321,8 @@ weight: 70
   <form id="idp140504183036608">
    <ol>
     <li>
-     <input name="idp140504183036608" type="checkbox" value="idp140504183037696true"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140504183036608" type="checkbox" value="idp140504183037696true" aria-labelledby="rep-idp140504183037696true-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140504183037696true-0">
       &lt;bou:A xmlns:bou="http://www.foo.org/"&gt;
  &lt;bou:B&gt;
         &lt;bou:C xmlns:bou="http://www.bar.org/"&gt;
@@ -337,8 +337,8 @@ weight: 70
      </span>
     </li>
     <li>
-     <input name="idp140504183036608" type="checkbox" value="idp140504183040000true"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140504183036608" type="checkbox" value="idp140504183040000true" aria-labelledby="rep-idp140504183040000true-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140504183040000true-0">
       &lt;A xmlns="http://www.mondomaine.org/"&gt;
  &lt;B xmlns="http://www.monsite.org/"&gt;abcd&lt;/B&gt;
  &lt;C xmlns="http://www.mondomaine.org/"&gt;efgh&lt;/C&gt;
@@ -355,8 +355,8 @@ weight: 70
      </span>
     </li>
     <li>
-     <input name="idp140504183036608" type="checkbox" value="idp140504183042528false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140504183036608" type="checkbox" value="idp140504183042528false" aria-labelledby="rep-idp140504183042528false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140504183042528false-0">
       &lt;pre:A&gt;
  &lt;pre:B /&gt;
  &lt;/pre:A&gt;
@@ -393,28 +393,28 @@ weight: 70
   <form id="idp140504183044736">
    <ol>
     <li>
-     <input name="idp140504183044736" onclick="javascript:var Click_MenuId='idp140504183046480false';var formid='idp140504183044736'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183046480false"/>
+     <label><input name="idp140504183044736" onclick="javascript:var Click_MenuId='idp140504183046480false';var formid='idp140504183044736'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183046480false"/>
      « base='10' » est dans l'espace de noms « urn:exemple1 », 
- alors que « c:unite='annee' » est dans l'espace de noms « urn:exemple2 »
-     <span class="feedback" id="idp140504183046480false" style="display: none;font-weight:bold;">
+ alors que « c:unite='annee' » est dans l'espace de noms « urn:exemple2 »</label>
+    <span class="feedback" id="idp140504183046480false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non, « base » n'est dans aucun espace de noms, car il n'a pas de préfixe.
      </span>
     </li>
     <li>
-     <input name="idp140504183044736" onclick="javascript:var Click_MenuId='idp140504183047728false';var formid='idp140504183044736'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183047728false"/>
+     <label><input name="idp140504183044736" onclick="javascript:var Click_MenuId='idp140504183047728false';var formid='idp140504183044736'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183047728false"/>
      « base='10' » est dans l'espace de noms « "" » (vide), alors que 
- « c:unite='annee' » est dans l'espace de noms « urn:exemple2 »
-     <span class="feedback" id="idp140504183047728false" style="display: none;font-weight:bold;">
+ « c:unite='annee' » est dans l'espace de noms « urn:exemple2 »</label>
+    <span class="feedback" id="idp140504183047728false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Il n'y a pas de raison que « base » soit dans l'espace de noms «""».
      </span>
     </li>
     <li>
-     <input name="idp140504183044736" onclick="javascript:var Click_MenuId='idp140504183049376true';var formid='idp140504183044736'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183049376true"/>
+     <label><input name="idp140504183044736" onclick="javascript:var Click_MenuId='idp140504183049376true';var formid='idp140504183044736'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183049376true"/>
      « base='10' » n'est dans aucun espace de noms, alors que 
- « c:unite='annee' » est dans l'espace de noms « urn:exemple2 »
-     <span class="feedback" id="idp140504183049376true" style="display: none;font-weight:bold;">
+ « c:unite='annee' » est dans l'espace de noms « urn:exemple2 »</label>
+    <span class="feedback" id="idp140504183049376true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) 
  Effectivement, un attribut sans préfixe n'est pas dans un espace de noms.
@@ -438,17 +438,17 @@ weight: 70
   <form id="idp140504183051088">
    <ol>
     <li>
-     <input name="idp140504183051088" onclick="javascript:var Click_MenuId='idp140504183052112false';var formid='idp140504183051088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183052112false"/>
-     Vrai
-     <span class="feedback" id="idp140504183052112false" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183051088" onclick="javascript:var Click_MenuId='idp140504183052112false';var formid='idp140504183051088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183052112false"/>
+     Vrai</label>
+    <span class="feedback" id="idp140504183052112false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non, l'URI n'est qu'un identifiant.
      </span>
     </li>
     <li>
-     <input name="idp140504183051088" onclick="javascript:var Click_MenuId='idp140504183053104true';var formid='idp140504183051088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183053104true"/>
-     Faux
-     <span class="feedback" id="idp140504183053104true" style="display: none;font-weight:bold;">
+     <label><input name="idp140504183051088" onclick="javascript:var Click_MenuId='idp140504183053104true';var formid='idp140504183051088'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183053104true"/>
+     Faux</label>
+    <span class="feedback" id="idp140504183053104true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Effectivement, l'URI peut ne pas pointer vers un véritable site web.
      </span>

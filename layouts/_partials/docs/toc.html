@@ -1,0 +1,8 @@
+{{/* Surcouche : Hugo produit un <nav id="TableOfContents"> sans nom.
+     Il n'y en a qu'un de visible à la fois (la copie mobile est masquée
+     au-delà du seuil), mais nommer les deux évite un repère anonyme. */}}
+{{ partial "docs/inject/toc-before" . }}
+{{ .TableOfContents
+    | replaceRE `<nav id="TableOfContents">` `<nav id="TableOfContents" aria-label="Sommaire de cette page">`
+    | safeHTML }}
+{{ partial "docs/inject/toc-after" . }}

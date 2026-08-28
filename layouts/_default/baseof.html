@@ -1,0 +1,98 @@
+{{/* Surcouche du gabarit du thème hugo-book — accessibilité.
+     Différences avec le gabarit d'origine :
+       - lien d'évitement vers le contenu principal (WCAG 2.4.1) ;
+       - repères ARIA nommés et distincts (aside/nav en double) ;
+       - l'article porte id="contenu" tabindex="-1" (cible du lien) ;
+       - la copie mobile de la table des matières ne réutilise plus
+         l'identifiant « TableOfContents » (doublon sur 151 pages).
+     Le thème lui-même n'est pas modifié. */}}
+<!DOCTYPE html>
+<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+<head>
+  {{ partial "docs/html-head" . }}
+  {{ partial "docs/inject/head" . }}
+</head>
+<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+  <a href="#contenu" class="skip-link">Aller au contenu principal</a>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu" aria-label="Navigation du cours">
+      <div class="book-menu-content">
+        {{ template "menu" . }} <!-- Left menu Content -->
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        {{ template "header" . }} <!-- Mobile layout header -->
+      </header>
+
+      {{ partial "docs/inject/content-before" . }}
+      {{ template "main" . }} <!-- Page Content -->
+      {{ partial "docs/inject/content-after" . }}
+
+      <footer class="book-footer">
+        {{ template "footer" . }} <!-- Footer under page content -->
+        {{ partial "docs/inject/footer" . }}
+      </footer>
+
+      {{ template "comments" . }} <!-- Comments block -->
+
+      <label for="menu-control" class="hidden book-menu-overlay" aria-hidden="true"></label>
+    </div>
+
+    {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+    <aside class="book-toc" aria-label="Sommaire de la page">
+      <div class="book-toc-content">
+        {{ template "toc" . }} <!-- Table of Contents -->
+      </div>
+    </aside>
+    {{ end }}
+  </main>
+
+  {{ partial "docs/inject/body" . }}
+</body>
+</html>
+
+{{ define "menu" }}
+  {{ partial "docs/menu" . }}
+{{ end }}
+
+{{ define "header" }}
+  {{ partial "docs/header" . }}
+
+  {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+  {{/* Copie mobile du sommaire : on renomme l'identifiant et le repère
+       pour ne pas dupliquer ceux de la colonne de droite. */}}
+  <aside class="hidden clearfix" aria-label="Sommaire de la page (affichage mobile)">
+    {{ partial "docs/inject/toc-before" . }}
+    {{ .TableOfContents
+        | replaceRE `<nav id="TableOfContents">` `<nav id="TableOfContentsMobile" aria-label="Sommaire de cette page">`
+        | safeHTML }}
+    {{ partial "docs/inject/toc-after" . }}
+  </aside>
+  {{ end }}
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "docs/footer" . }}
+{{ end }}
+
+{{ define "comments" }}
+  {{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
+  <div class="book-comments">
+    {{- partial "docs/comments" . -}}
+  </div>
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  <article id="contenu" tabindex="-1" class="markdown book-article">
+    {{- .Content -}}
+  </article>
+{{ end }}
+
+{{ define "toc" }}
+  {{ partial "docs/toc" . }}
+{{ end }}

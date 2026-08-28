@@ -14,7 +14,7 @@ weight: 40
  </span>
  , c'est que vous avez la bonne réponse;
     sinon, lisez les commentaires en
- <span style="color:red">
+ <span style="color:#c00000">
   rouge
  </span>
  pour
@@ -44,9 +44,9 @@ weight: 40
  <form id="idp140520596444672">
   <ol>
    <li>
-    <input name="idp140520596444672" onclick="javascript:var Click_MenuId='idp140520596445536true';var formid='idp140520596444672'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596445536true"/>
+    <label><input name="idp140520596444672" onclick="javascript:var Click_MenuId='idp140520596445536true';var formid='idp140520596444672'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596445536true"/>
     Une
-                seule.
+                seule.</label>
     <span class="feedback" id="idp140520596445536true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Par contre, il peut
@@ -57,9 +57,9 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596444672" onclick="javascript:var Click_MenuId='idp140520596447216false';var formid='idp140520596444672'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596447216false"/>
+    <label><input name="idp140520596444672" onclick="javascript:var Click_MenuId='idp140520596447216false';var formid='idp140520596444672'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596447216false"/>
     Autant
-                qu'on veut.
+                qu'on veut.</label>
     <span class="feedback" id="idp140520596447216false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
@@ -85,8 +85,8 @@ weight: 40
  <form id="idp140520596448432">
   <ol>
    <li>
-    <input name="idp140520596448432" onclick="javascript:var Click_MenuId='idp140520596449584true';var formid='idp140520596448432'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596449584true"/>
-    Vrai.
+    <label><input name="idp140520596448432" onclick="javascript:var Click_MenuId='idp140520596449584true';var formid='idp140520596448432'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596449584true"/>
+    Vrai.</label>
     <span class="feedback" id="idp140520596449584true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Un document est dit
@@ -95,8 +95,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596448432" onclick="javascript:var Click_MenuId='idp140520596450976false';var formid='idp140520596448432'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596450976false"/>
-    Faux.
+    <label><input name="idp140520596448432" onclick="javascript:var Click_MenuId='idp140520596450976false';var formid='idp140520596448432'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596450976false"/>
+    Faux.</label>
     <span class="feedback" id="idp140520596450976false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) On peut seulement
@@ -121,10 +121,10 @@ weight: 40
  <form id="idp140520596452464">
   <ol>
    <li>
-    <input name="idp140520596452464" onclick="javascript:var Click_MenuId='idp140520596453344false';var formid='idp140520596452464'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596453344false"/>
+    <label><input name="idp140520596452464" onclick="javascript:var Click_MenuId='idp140520596453344false';var formid='idp140520596452464'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596453344false"/>
     Une
                 DTD qui a été conçue à l'interne, dans une compagnie
-                ou institution.
+                ou institution.</label>
     <span class="feedback" id="idp140520596453344false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Incorrect. La
@@ -132,10 +132,10 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596452464" onclick="javascript:var Click_MenuId='idp140520596454720true';var formid='idp140520596452464'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596454720true"/>
+    <label><input name="idp140520596452464" onclick="javascript:var Click_MenuId='idp140520596454720true';var formid='idp140520596452464'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596454720true"/>
     Une
                 DTD qui apparaît dans le document XML
-                entre des crochets.
+                entre des crochets.</label>
     <span class="feedback" id="idp140520596454720true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Correct.
@@ -160,32 +160,32 @@ weight: 40
  <form id="idp140520596456016">
   <ol>
    <li>
-    <input name="idp140520596456016" onclick="javascript:var Click_MenuId='idp140520596457152true';var formid='idp140520596456016'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596457152true"/>
-    ?
+    <label><input name="idp140520596456016" onclick="javascript:var Click_MenuId='idp140520596457152true';var formid='idp140520596456016'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596457152true"/>
+    ?</label>
     <span class="feedback" id="idp140520596457152true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Oui.
     </span>
    </li>
    <li>
-    <input name="idp140520596456016" onclick="javascript:var Click_MenuId='idp140520596458528false';var formid='idp140520596456016'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596458528false"/>
-    *
+    <label><input name="idp140520596456016" onclick="javascript:var Click_MenuId='idp140520596458528false';var formid='idp140520596456016'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596458528false"/>
+    *</label>
     <span class="feedback" id="idp140520596458528false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596456016" onclick="javascript:var Click_MenuId='idp140520596459936false';var formid='idp140520596456016'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596459936false"/>
-    +
+    <label><input name="idp140520596456016" onclick="javascript:var Click_MenuId='idp140520596459936false';var formid='idp140520596456016'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596459936false"/>
+    +</label>
     <span class="feedback" id="idp140520596459936false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596456016" onclick="javascript:var Click_MenuId='idp140520596461376false';var formid='idp140520596456016'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596461376false"/>
-    |
+    <label><input name="idp140520596456016" onclick="javascript:var Click_MenuId='idp140520596461376false';var formid='idp140520596456016'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596461376false"/>
+    |</label>
     <span class="feedback" id="idp140520596461376false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
@@ -211,32 +211,32 @@ weight: 40
  <form id="idp140520596462976">
   <ol>
    <li>
-    <input name="idp140520596462976" onclick="javascript:var Click_MenuId='idp140520596464208false';var formid='idp140520596462976'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596464208false"/>
-    ?
+    <label><input name="idp140520596462976" onclick="javascript:var Click_MenuId='idp140520596464208false';var formid='idp140520596462976'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596464208false"/>
+    ?</label>
     <span class="feedback" id="idp140520596464208false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596462976" onclick="javascript:var Click_MenuId='idp140520596465616true';var formid='idp140520596462976'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596465616true"/>
-    *
+    <label><input name="idp140520596462976" onclick="javascript:var Click_MenuId='idp140520596465616true';var formid='idp140520596462976'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596465616true"/>
+    *</label>
     <span class="feedback" id="idp140520596465616true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Oui.
     </span>
    </li>
    <li>
-    <input name="idp140520596462976" onclick="javascript:var Click_MenuId='idp140520596467024false';var formid='idp140520596462976'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596467024false"/>
-    +
+    <label><input name="idp140520596462976" onclick="javascript:var Click_MenuId='idp140520596467024false';var formid='idp140520596462976'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596467024false"/>
+    +</label>
     <span class="feedback" id="idp140520596467024false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596462976" onclick="javascript:var Click_MenuId='idp140520596468432false';var formid='idp140520596462976'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596468432false"/>
-    |
+    <label><input name="idp140520596462976" onclick="javascript:var Click_MenuId='idp140520596468432false';var formid='idp140520596462976'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596468432false"/>
+    |</label>
     <span class="feedback" id="idp140520596468432false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
@@ -261,32 +261,32 @@ weight: 40
  <form id="idp140520596469968">
   <ol>
    <li>
-    <input name="idp140520596469968" onclick="javascript:var Click_MenuId='idp140520596471072false';var formid='idp140520596469968'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596471072false"/>
-    ?
+    <label><input name="idp140520596469968" onclick="javascript:var Click_MenuId='idp140520596471072false';var formid='idp140520596469968'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596471072false"/>
+    ?</label>
     <span class="feedback" id="idp140520596471072false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596469968" onclick="javascript:var Click_MenuId='idp140520596472480false';var formid='idp140520596469968'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596472480false"/>
-    *
+    <label><input name="idp140520596469968" onclick="javascript:var Click_MenuId='idp140520596472480false';var formid='idp140520596469968'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596472480false"/>
+    *</label>
     <span class="feedback" id="idp140520596472480false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596469968" onclick="javascript:var Click_MenuId='idp140520596473888true';var formid='idp140520596469968'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596473888true"/>
-    +
+    <label><input name="idp140520596469968" onclick="javascript:var Click_MenuId='idp140520596473888true';var formid='idp140520596469968'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596473888true"/>
+    +</label>
     <span class="feedback" id="idp140520596473888true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Oui.
     </span>
    </li>
    <li>
-    <input name="idp140520596469968" onclick="javascript:var Click_MenuId='idp140520596475296false';var formid='idp140520596469968'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596475296false"/>
-    |
+    <label><input name="idp140520596469968" onclick="javascript:var Click_MenuId='idp140520596475296false';var formid='idp140520596469968'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596475296false"/>
+    |</label>
     <span class="feedback" id="idp140520596475296false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
@@ -311,32 +311,32 @@ weight: 40
  <form id="idp140520596476832">
   <ol>
    <li>
-    <input name="idp140520596476832" onclick="javascript:var Click_MenuId='idp140520596477920false';var formid='idp140520596476832'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596477920false"/>
-    ?
+    <label><input name="idp140520596476832" onclick="javascript:var Click_MenuId='idp140520596477920false';var formid='idp140520596476832'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596477920false"/>
+    ?</label>
     <span class="feedback" id="idp140520596477920false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596476832" onclick="javascript:var Click_MenuId='idp140520596479328false';var formid='idp140520596476832'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596479328false"/>
-    *
+    <label><input name="idp140520596476832" onclick="javascript:var Click_MenuId='idp140520596479328false';var formid='idp140520596476832'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596479328false"/>
+    *</label>
     <span class="feedback" id="idp140520596479328false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596476832" onclick="javascript:var Click_MenuId='idp140520596480736false';var formid='idp140520596476832'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596480736false"/>
-    +
+    <label><input name="idp140520596476832" onclick="javascript:var Click_MenuId='idp140520596480736false';var formid='idp140520596476832'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596480736false"/>
+    +</label>
     <span class="feedback" id="idp140520596480736false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596476832" onclick="javascript:var Click_MenuId='idp140520596482144true';var formid='idp140520596476832'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596482144true"/>
-    |
+    <label><input name="idp140520596476832" onclick="javascript:var Click_MenuId='idp140520596482144true';var formid='idp140520596476832'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596482144true"/>
+    |</label>
     <span class="feedback" id="idp140520596482144true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Oui.
@@ -371,25 +371,25 @@ weight: 40
  <form id="idp140520596483680">
   <ol>
    <li>
-    <input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596485152false';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596485152false"/>
+    <label><input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596485152false';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596485152false"/>
     Au
-                moins un.
+                moins un.</label>
     <span class="feedback" id="idp140520596485152false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596487392false';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596487392false"/>
-    1
+    <label><input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596487392false';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596487392false"/>
+    1</label>
     <span class="feedback" id="idp140520596487392false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596488768true';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596488768true"/>
-    2
+    <label><input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596488768true';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596488768true"/>
+    2</label>
     <span class="feedback" id="idp140520596488768true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Effectivement. La
@@ -402,17 +402,17 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596490656false';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596490656false"/>
-    3
+    <label><input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596490656false';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596490656false"/>
+    3</label>
     <span class="feedback" id="idp140520596490656false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596492032false';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596492032false"/>
+    <label><input name="idp140520596483680" onclick="javascript:var Click_MenuId='idp140520596492032false';var formid='idp140520596483680'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596492032false"/>
     3
-                ou plus
+                ou plus</label>
     <span class="feedback" id="idp140520596492032false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
@@ -449,8 +449,8 @@ weight: 40
  <form id="idp140520596493792">
   <ol>
    <li>
-    <input name="idp140520596493792" type="checkbox" value="idp140520596496256true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596493792" type="checkbox" value="idp140520596496256true" aria-labelledby="rep-idp140520596496256true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596496256true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE etudiant SYSTEM
@@ -467,8 +467,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596493792" type="checkbox" value="idp140520596498608false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596493792" type="checkbox" value="idp140520596498608false" aria-labelledby="rep-idp140520596498608false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596498608false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE etudiant SYSTEM
@@ -487,8 +487,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596493792" type="checkbox" value="idp140520596501200false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596493792" type="checkbox" value="idp140520596501200false" aria-labelledby="rep-idp140520596501200false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596501200false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE nom SYSTEM
@@ -507,8 +507,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596493792" type="checkbox" value="idp140520596503680true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596493792" type="checkbox" value="idp140520596503680true" aria-labelledby="rep-idp140520596503680true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596503680true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE nom SYSTEM
@@ -523,8 +523,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596493792" type="checkbox" value="idp140520596506816true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596493792" type="checkbox" value="idp140520596506816true" aria-labelledby="rep-idp140520596506816true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596506816true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE etudiant SYSTEM
@@ -543,8 +543,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596493792" type="checkbox" value="idp140520596509408false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596493792" type="checkbox" value="idp140520596509408false" aria-labelledby="rep-idp140520596509408false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596509408false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE etudiant SYSTEM
@@ -595,8 +595,8 @@ weight: 40
  <form id="idp140520596512032">
   <ol>
    <li>
-    <input name="idp140520596512032" type="checkbox" value="idp140520596514592false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596512032" type="checkbox" value="idp140520596514592false" aria-labelledby="rep-idp140520596514592false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596514592false-0">
      &lt;!DOCTYPE etudiant SYSTEM
                     "http://www.mondomain.com/madtd.dtd"&gt;
                     &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
@@ -615,8 +615,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596512032" type="checkbox" value="idp140520596516896false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596512032" type="checkbox" value="idp140520596516896false" aria-labelledby="rep-idp140520596516896false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596516896false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE etudiant SYSTEM
@@ -634,8 +634,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596512032" type="checkbox" value="idp140520596519376true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596512032" type="checkbox" value="idp140520596519376true" aria-labelledby="rep-idp140520596519376true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596519376true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE etudiant SYSTEM
@@ -687,8 +687,8 @@ weight: 40
  <form id="idp140520596522000">
   <ol>
    <li>
-    <input name="idp140520596522000" type="checkbox" value="idp140520596523952false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596522000" type="checkbox" value="idp140520596523952false" aria-labelledby="rep-idp140520596523952false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596523952false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -711,8 +711,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596522000" type="checkbox" value="idp140520596527200true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596522000" type="checkbox" value="idp140520596527200true" aria-labelledby="rep-idp140520596527200true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596527200true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -735,8 +735,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596522000" type="checkbox" value="idp140520596529760false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596522000" type="checkbox" value="idp140520596529760false" aria-labelledby="rep-idp140520596529760false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596529760false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -759,8 +759,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596522000" type="checkbox" value="idp140520596532192true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596522000" type="checkbox" value="idp140520596532192true" aria-labelledby="rep-idp140520596532192true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596532192true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -791,8 +791,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596522000" type="checkbox" value="idp140520596533856false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596522000" type="checkbox" value="idp140520596533856false" aria-labelledby="rep-idp140520596533856false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596533856false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -857,8 +857,8 @@ weight: 40
  <form id="idp140520596538544">
   <ol>
    <li>
-    <input name="idp140520596538544" type="checkbox" value="idp140520596540544false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596538544" type="checkbox" value="idp140520596540544false" aria-labelledby="rep-idp140520596540544false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596540544false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -878,8 +878,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596538544" type="checkbox" value="idp140520596543520false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596538544" type="checkbox" value="idp140520596543520false" aria-labelledby="rep-idp140520596543520false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596543520false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -901,8 +901,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596538544" type="checkbox" value="idp140520596546288true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596538544" type="checkbox" value="idp140520596546288true" aria-labelledby="rep-idp140520596546288true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596546288true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -922,8 +922,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596538544" type="checkbox" value="idp140520596548752false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596538544" type="checkbox" value="idp140520596548752false" aria-labelledby="rep-idp140520596548752false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596548752false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -979,8 +979,8 @@ weight: 40
  <form id="idp140520596551568">
   <ol>
    <li>
-    <input name="idp140520596551568" type="checkbox" value="idp140520596553424true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596551568" type="checkbox" value="idp140520596553424true" aria-labelledby="rep-idp140520596553424true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596553424true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie [
@@ -1013,8 +1013,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596551568" type="checkbox" value="idp140520596556096true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596551568" type="checkbox" value="idp140520596556096true" aria-labelledby="rep-idp140520596556096true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596556096true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE taxe SYSTEM
@@ -1042,8 +1042,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596551568" type="checkbox" value="idp140520596559184false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596551568" type="checkbox" value="idp140520596559184false" aria-labelledby="rep-idp140520596559184false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596559184false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie SYSTEM
@@ -1098,8 +1098,8 @@ weight: 40
  <form id="idp140520596562240">
   <ol>
    <li>
-    <input name="idp140520596562240" type="checkbox" value="idp140520596564208false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596562240" type="checkbox" value="idp140520596564208false" aria-labelledby="rep-idp140520596564208false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596564208false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE jeu [
@@ -1124,8 +1124,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596562240" type="checkbox" value="idp140520596567088true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596562240" type="checkbox" value="idp140520596567088true" aria-labelledby="rep-idp140520596567088true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596567088true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE jeu [
@@ -1149,8 +1149,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596562240" type="checkbox" value="idp140520596569696true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596562240" type="checkbox" value="idp140520596569696true" aria-labelledby="rep-idp140520596569696true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596569696true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE jeu [
@@ -1175,8 +1175,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596562240" type="checkbox" value="idp140520596572416true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596562240" type="checkbox" value="idp140520596572416true" aria-labelledby="rep-idp140520596572416true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596572416true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE jeu [
@@ -1204,8 +1204,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596562240" type="checkbox" value="idp140520596574416false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596562240" type="checkbox" value="idp140520596574416false" aria-labelledby="rep-idp140520596574416false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596574416false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE jeu [
@@ -1255,8 +1255,8 @@ weight: 40
  <form id="idp140520596577264">
   <ol>
    <li>
-    <input name="idp140520596577264" type="checkbox" value="idp140520596579552false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596577264" type="checkbox" value="idp140520596579552false" aria-labelledby="rep-idp140520596579552false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596579552false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE activite [
@@ -1288,8 +1288,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596577264" type="checkbox" value="idp140520596583408false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596577264" type="checkbox" value="idp140520596583408false" aria-labelledby="rep-idp140520596583408false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596583408false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE activite [
@@ -1322,8 +1322,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596577264" type="checkbox" value="idp140520596587232false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596577264" type="checkbox" value="idp140520596587232false" aria-labelledby="rep-idp140520596587232false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596587232false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE activite [
@@ -1356,8 +1356,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596577264" type="checkbox" value="idp140520596591696true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596577264" type="checkbox" value="idp140520596591696true" aria-labelledby="rep-idp140520596591696true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596591696true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE activite [
@@ -1385,8 +1385,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596577264" type="checkbox" value="idp140520596593680false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596577264" type="checkbox" value="idp140520596593680false" aria-labelledby="rep-idp140520596593680false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596593680false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE activite [
@@ -1438,8 +1438,8 @@ weight: 40
  <form id="idp140520596596784">
   <ol>
    <li>
-    <input name="idp140520596596784" type="checkbox" value="idp140520596599056false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596596784" type="checkbox" value="idp140520596599056false" aria-labelledby="rep-idp140520596599056false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596599056false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE cheque [
@@ -1466,8 +1466,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596596784" type="checkbox" value="idp140520596600960true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596596784" type="checkbox" value="idp140520596600960true" aria-labelledby="rep-idp140520596600960true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596600960true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE cheque [
@@ -1496,8 +1496,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596596784" type="checkbox" value="idp140520596603744false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596596784" type="checkbox" value="idp140520596603744false" aria-labelledby="rep-idp140520596603744false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596603744false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE cheque [
@@ -1527,8 +1527,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596596784" type="checkbox" value="idp140520596606656true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596596784" type="checkbox" value="idp140520596606656true" aria-labelledby="rep-idp140520596606656true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596606656true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE cheque [
@@ -1560,8 +1560,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596596784" type="checkbox" value="idp140520596608688false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596596784" type="checkbox" value="idp140520596608688false" aria-labelledby="rep-idp140520596608688false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596608688false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE cheque [
@@ -1596,8 +1596,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596596784" type="checkbox" value="idp140520596611472false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596596784" type="checkbox" value="idp140520596611472false" aria-labelledby="rep-idp140520596611472false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596611472false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE chequier [
@@ -1644,8 +1644,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596596784" type="checkbox" value="idp140520596614320true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596596784" type="checkbox" value="idp140520596614320true" aria-labelledby="rep-idp140520596614320true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596614320true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE chequier [
@@ -1694,8 +1694,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596596784" type="checkbox" value="idp140520596616224true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596596784" type="checkbox" value="idp140520596616224true" aria-labelledby="rep-idp140520596616224true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596616224true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE chequier [
@@ -1773,11 +1773,11 @@ weight: 40
  <form id="idp140520596618288">
   <ol>
    <li>
-    <input name="idp140520596618288" onclick="javascript:var Click_MenuId='idp140520596620304false';var formid='idp140520596618288'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596620304false"/>
+    <label><input name="idp140520596618288" onclick="javascript:var Click_MenuId='idp140520596620304false';var formid='idp140520596618288'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596620304false"/>
     Que les éléments « etudiant » doivent toujours avoir
                 explicitement
                 un attribut « universite » ayant comme valeur
-                « Université du Québec à Montréal ».
+                « Université du Québec à Montréal ».</label>
     <span class="feedback" id="idp140520596620304false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -1785,11 +1785,11 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596618288" onclick="javascript:var Click_MenuId='idp140520596621808false';var formid='idp140520596618288'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596621808false"/>
+    <label><input name="idp140520596618288" onclick="javascript:var Click_MenuId='idp140520596621808false';var formid='idp140520596618288'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596621808false"/>
     Que les éléments « etudiant » ont toujours
                 implicitement un attribut « universite »
                 ayant comme valeur « Université du Québec à
-                Montréal ».
+                Montréal ».</label>
     <span class="feedback" id="idp140520596621808false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -1797,12 +1797,12 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596618288" onclick="javascript:var Click_MenuId='idp140520596623376true';var formid='idp140520596618288'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596623376true"/>
+    <label><input name="idp140520596618288" onclick="javascript:var Click_MenuId='idp140520596623376true';var formid='idp140520596618288'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596623376true"/>
     Que les éléments « etudiant » ont implicitement un
                 attribut « universite »
                 ayant comme valeur « Université du Québec à
                 Montréal », à moins que l'on fournisse
-                une autre valeur de type CDATA.
+                une autre valeur de type CDATA.</label>
     <span class="feedback" id="idp140520596623376true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!)
@@ -1810,13 +1810,13 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596618288" onclick="javascript:var Click_MenuId='idp140520596625408false';var formid='idp140520596618288'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596625408false"/>
+    <label><input name="idp140520596618288" onclick="javascript:var Click_MenuId='idp140520596625408false';var formid='idp140520596618288'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596625408false"/>
     Que les éléments « etudiant » ont implicitement un
                 attribut « universite » ayant
                 comme valeur « Université du Québec à Montréal » et
                 que si l'on fournit explicitement l'attribut,
                 il doit avoir comme valeur « Université du Québec à
-                Montréal ».
+                Montréal ».</label>
     <span class="feedback" id="idp140520596625408false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -1849,11 +1849,11 @@ weight: 40
  <form id="idp140520596627440">
   <ol>
    <li>
-    <input name="idp140520596627440" onclick="javascript:var Click_MenuId='idp140520596629248false';var formid='idp140520596627440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596629248false"/>
+    <label><input name="idp140520596627440" onclick="javascript:var Click_MenuId='idp140520596629248false';var formid='idp140520596627440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596629248false"/>
     Que les éléments « etudiant » doivent toujours avoir
                 explicitement un attribut « universite »
                 ayant comme valeur « Université du Québec à
-                Montréal ».
+                Montréal ».</label>
     <span class="feedback" id="idp140520596629248false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -1861,11 +1861,11 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596627440" onclick="javascript:var Click_MenuId='idp140520596630960false';var formid='idp140520596627440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596630960false"/>
+    <label><input name="idp140520596627440" onclick="javascript:var Click_MenuId='idp140520596630960false';var formid='idp140520596627440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596630960false"/>
     Que les éléments « etudiant » ont toujours
                 implicitement un attribut « universite »
                 ayant comme valeur « Université du Québec à
-                Montréal ».
+                Montréal ».</label>
     <span class="feedback" id="idp140520596630960false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -1874,12 +1874,12 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596627440" onclick="javascript:var Click_MenuId='idp140520596632528false';var formid='idp140520596627440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596632528false"/>
+    <label><input name="idp140520596627440" onclick="javascript:var Click_MenuId='idp140520596632528false';var formid='idp140520596627440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596632528false"/>
     Que les éléments « etudiant » ont implicitement un
                 attribut « universite »
                 ayant comme valeur « Université du Québec à
                 Montréal », à moins que l'on fournisse
-                une autre valeur de type CDATA.
+                une autre valeur de type CDATA.</label>
     <span class="feedback" id="idp140520596632528false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -1887,14 +1887,14 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596627440" onclick="javascript:var Click_MenuId='idp140520596634560true';var formid='idp140520596627440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596634560true"/>
+    <label><input name="idp140520596627440" onclick="javascript:var Click_MenuId='idp140520596634560true';var formid='idp140520596627440'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596634560true"/>
     Que les éléments « etudiant » ont implicitement un
                 attribut « universite »
                 ayant comme valeur « Université du Québec à
                 Montréal »,
                 et que si l'on fournit explicitement l'attribut, il doit avoir
                 comme valeur « Université du
-                Québec à Montréal ».
+                Québec à Montréal ».</label>
     <span class="feedback" id="idp140520596634560true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!)
@@ -1933,10 +1933,10 @@ weight: 40
  <form id="idp140520596636592">
   <ol>
    <li>
-    <input name="idp140520596636592" onclick="javascript:var Click_MenuId='idp140520596638880false';var formid='idp140520596636592'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596638880false"/>
+    <label><input name="idp140520596636592" onclick="javascript:var Click_MenuId='idp140520596638880false';var formid='idp140520596636592'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596638880false"/>
     Partout dans le document XML où le texte
                 « &amp;administration; » apparaît,
-                il est remplacé par « president,comptable,adjoint ».
+                il est remplacé par « president,comptable,adjoint ».</label>
     <span class="feedback" id="idp140520596638880false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -1945,10 +1945,10 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596636592" onclick="javascript:var Click_MenuId='idp140520596641024true';var formid='idp140520596636592'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596641024true"/>
+    <label><input name="idp140520596636592" onclick="javascript:var Click_MenuId='idp140520596641024true';var formid='idp140520596636592'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596641024true"/>
     Partout dans la DTD externe, le texte
                 « %administration; » est remplacé
-                par « president,comptable,adjoint ».
+                par « president,comptable,adjoint ».</label>
     <span class="feedback" id="idp140520596641024true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!)
@@ -1956,11 +1956,11 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596636592" onclick="javascript:var Click_MenuId='idp140520596642608false';var formid='idp140520596636592'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596642608false"/>
+    <label><input name="idp140520596636592" onclick="javascript:var Click_MenuId='idp140520596642608false';var formid='idp140520596636592'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596642608false"/>
     Partout dans la DTD externe, à supposer qu'elle ne définisse pas
                 déjà l'entité « administration »,
                 le texte « %administration; » est remplacé par
-                « president,comptable,adjoint ».
+                « president,comptable,adjoint ».</label>
     <span class="feedback" id="idp140520596642608false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -1987,8 +1987,8 @@ weight: 40
  <form id="idp140520596645360">
   <ol>
    <li>
-    <input name="idp140520596645360" type="checkbox" value="idp140520596646224false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596645360" type="checkbox" value="idp140520596646224false" aria-labelledby="rep-idp140520596646224false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596646224false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE dossier [
@@ -2017,8 +2017,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596645360" type="checkbox" value="idp140520596648048false"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596645360" type="checkbox" value="idp140520596648048false" aria-labelledby="rep-idp140520596648048false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596648048false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE dossier [
@@ -2046,8 +2046,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596645360" type="checkbox" value="idp140520596649936true"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+    <input name="idp140520596645360" type="checkbox" value="idp140520596649936true" aria-labelledby="rep-idp140520596649936true-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596649936true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE dossier [
@@ -2094,8 +2094,8 @@ weight: 40
  <form id="idp140520596652000">
   <ol>
    <li>
-    <input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596652928false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596652928false"/>
-    XML Schema
+    <label><input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596652928false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596652928false"/>
+    XML Schema</label>
     <span class="feedback" id="idp140520596652928false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -2104,8 +2104,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596654384false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596654384false"/>
-    Relax NG
+    <label><input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596654384false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596654384false"/>
+    Relax NG</label>
     <span class="feedback" id="idp140520596654384false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -2114,8 +2114,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596656176false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596656176false"/>
-    DTD
+    <label><input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596656176false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596656176false"/>
+    DTD</label>
     <span class="feedback" id="idp140520596656176false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -2123,8 +2123,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596657664false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596657664false"/>
-    Schematron
+    <label><input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596657664false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596657664false"/>
+    Schematron</label>
     <span class="feedback" id="idp140520596657664false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -2133,8 +2133,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596659168true';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596659168true"/>
-    XML
+    <label><input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596659168true';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596659168true"/>
+    XML</label>
     <span class="feedback" id="idp140520596659168true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!)
@@ -2142,10 +2142,10 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596660640false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596660640false"/>
+    <label><input name="idp140520596652000" onclick="javascript:var Click_MenuId='idp140520596660640false';var formid='idp140520596652000'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596660640false"/>
     <i>
      Examplotron
-    </i>
+    </i></label>
     <span class="feedback" id="idp140520596660640false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -2172,8 +2172,8 @@ weight: 40
  <form id="idp140520596662640">
   <ol>
    <li>
-    <input name="idp140520596662640" onclick="javascript:var Click_MenuId='idp140520596663712false';var formid='idp140520596662640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596663712false"/>
-    XML Schema
+    <label><input name="idp140520596662640" onclick="javascript:var Click_MenuId='idp140520596663712false';var formid='idp140520596662640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596663712false"/>
+    XML Schema</label>
     <span class="feedback" id="idp140520596663712false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -2181,8 +2181,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596662640" onclick="javascript:var Click_MenuId='idp140520596665312false';var formid='idp140520596662640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596665312false"/>
-    Relax NG
+    <label><input name="idp140520596662640" onclick="javascript:var Click_MenuId='idp140520596665312false';var formid='idp140520596662640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596665312false"/>
+    Relax NG</label>
     <span class="feedback" id="idp140520596665312false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!)
@@ -2190,8 +2190,8 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596662640" onclick="javascript:var Click_MenuId='idp140520596667280true';var formid='idp140520596662640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596667280true"/>
-    DTD
+    <label><input name="idp140520596662640" onclick="javascript:var Click_MenuId='idp140520596667280true';var formid='idp140520596662640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596667280true"/>
+    DTD</label>
     <span class="feedback" id="idp140520596667280true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!)
@@ -2216,27 +2216,27 @@ weight: 40
  <form id="idp140520596668960">
   <ol>
    <li>
-    <input name="idp140520596668960" onclick="javascript:var Click_MenuId='idp140520596669824true';var formid='idp140520596668960'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596669824true"/>
+    <label><input name="idp140520596668960" onclick="javascript:var Click_MenuId='idp140520596669824true';var formid='idp140520596668960'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596669824true"/>
     Document
-                Type Definition
+                Type Definition</label>
     <span class="feedback" id="idp140520596669824true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Effectivement.
     </span>
    </li>
    <li>
-    <input name="idp140520596668960" onclick="javascript:var Click_MenuId='idp140520596671232false';var formid='idp140520596668960'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596671232false"/>
+    <label><input name="idp140520596668960" onclick="javascript:var Click_MenuId='idp140520596671232false';var formid='idp140520596668960'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596671232false"/>
     Document
-                Type Declaration
+                Type Declaration</label>
     <span class="feedback" id="idp140520596671232false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596668960" onclick="javascript:var Click_MenuId='idp140520596672672false';var formid='idp140520596668960'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596672672false"/>
+    <label><input name="idp140520596668960" onclick="javascript:var Click_MenuId='idp140520596672672false';var formid='idp140520596668960'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596672672false"/>
     Dynamic
-                Type Definition
+                Type Definition</label>
     <span class="feedback" id="idp140520596672672false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
@@ -2260,27 +2260,27 @@ weight: 40
  <form id="idp140520596674240">
   <ol>
    <li>
-    <input name="idp140520596674240" onclick="javascript:var Click_MenuId='idp140520596675232true';var formid='idp140520596674240'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596675232true"/>
+    <label><input name="idp140520596674240" onclick="javascript:var Click_MenuId='idp140520596675232true';var formid='idp140520596674240'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596675232true"/>
     La
-                spécification DTD fait partie intégrante du XML.
+                spécification DTD fait partie intégrante du XML.</label>
     <span class="feedback" id="idp140520596675232true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Effectivement.
     </span>
    </li>
    <li>
-    <input name="idp140520596674240" onclick="javascript:var Click_MenuId='idp140520596676752false';var formid='idp140520596674240'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596676752false"/>
+    <label><input name="idp140520596674240" onclick="javascript:var Click_MenuId='idp140520596676752false';var formid='idp140520596674240'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596676752false"/>
     Le
-                nom des éléments doit être en minuscule.
+                nom des éléments doit être en minuscule.</label>
     <span class="feedback" id="idp140520596676752false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
     </span>
    </li>
    <li>
-    <input name="idp140520596674240" onclick="javascript:var Click_MenuId='idp140520596678224false';var formid='idp140520596674240'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596678224false"/>
+    <label><input name="idp140520596674240" onclick="javascript:var Click_MenuId='idp140520596678224false';var formid='idp140520596674240'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596678224false"/>
     Tous
-                les documents doivent avoir une DTD.
+                les documents doivent avoir une DTD.</label>
     <span class="feedback" id="idp140520596678224false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non.
@@ -2304,18 +2304,18 @@ weight: 40
  <form id="idp140520596679808">
   <ol>
    <li>
-    <input name="idp140520596679808" onclick="javascript:var Click_MenuId='idp140520596680800true';var formid='idp140520596679808'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596680800true"/>
+    <label><input name="idp140520596679808" onclick="javascript:var Click_MenuId='idp140520596680800true';var formid='idp140520596679808'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596680800true"/>
     Toutes
-                ces réponses sont vraies
+                ces réponses sont vraies</label>
     <span class="feedback" id="idp140520596680800true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Effectivement.
     </span>
    </li>
    <li>
-    <input name="idp140520596679808" onclick="javascript:var Click_MenuId='idp140520596682288false';var formid='idp140520596679808'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596682288false"/>
+    <label><input name="idp140520596679808" onclick="javascript:var Click_MenuId='idp140520596682288false';var formid='idp140520596679808'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596682288false"/>
     Le
-                XML est sensible à la casse des cararactères
+                XML est sensible à la casse des cararactères</label>
     <span class="feedback" id="idp140520596682288false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Oui, mais ce
@@ -2323,9 +2323,9 @@ weight: 40
     </span>
    </li>
    <li>
-    <input name="idp140520596679808" onclick="javascript:var Click_MenuId='idp140520596683808false';var formid='idp140520596679808'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596683808false"/>
+    <label><input name="idp140520596679808" onclick="javascript:var Click_MenuId='idp140520596683808false';var formid='idp140520596679808'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596683808false"/>
     Tous
-                les documents XML doivent avoir un élément-racine.
+                les documents XML doivent avoir un élément-racine.</label>
     <span class="feedback" id="idp140520596683808false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Oui, mais ce

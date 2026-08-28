@@ -50,7 +50,7 @@ weight: 60
  ou 72 101 108 108 111 32 87 111 114 108 100 33
 </div>
 <textarea id="inputBytes" placeholder="Exemple : 72 101 108 108 111 32 87 111 114 108 100 33  →  aGVsbG8gV29ybGQh" rows="8" style="width:100%;padding:14px;font-family:monospace;font-size:16px;border:1px solid #ccc;border-radius:8px;box-sizing:border-box;resize:vertical;"></textarea>
-<div id="output" style="margin-top:25px;padding:20px;background:#2c3e50;color:#ecf0f1;border-radius:8px;min-height:70px;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:20px;word-break:break-all;text-align:center;">
+<div id="output" style="margin-top:25px;padding:20px;background:#2c3e50;color:#ffffff;border-radius:8px;min-height:70px;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:20px;word-break:break-all;text-align:center;">
  Le résultat Base64 apparaîtra ici...
 </div>
 <script>
@@ -59,7 +59,7 @@ weight: 60
     const outputDiv = document.getElementById('output');
     if (!input) {
         outputDiv.textContent = "Veuillez entrer des octets";
-        outputDiv.style.background = "#e74c3c";
+        outputDiv.style.background = "#b03a2e";
         return;
     }
     const numbers = input
@@ -71,7 +71,7 @@ weight: 60
     const invalid = numbers.some(n => isNaN(n) || n < 0 || n > 255);
     if (invalid || numbers.length === 0) {
         outputDiv.textContent = "Erreur : toutes les valeurs doivent être entre 0 et 255";
-        outputDiv.style.background = "#e74c3c";
+        outputDiv.style.background = "#b03a2e";
         return;
     }
     const uint8 = new Uint8Array(numbers);
@@ -79,7 +79,7 @@ weight: 60
     uint8.forEach(b => binary += String.fromCharCode(b));
     const base64 = btoa(binary);
     outputDiv.textContent = base64;
-    outputDiv.style.background = "#27ae60";
+    outputDiv.style.background = "#1d7a45";
 }
 // Conversion en temps réel
 document.getElementById('inputBytes').addEventListener('input', convertToBase64);

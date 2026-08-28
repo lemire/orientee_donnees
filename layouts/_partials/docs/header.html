@@ -1,0 +1,15 @@
+{{/* Surcouche : textes alternatifs en français (le site est en lang="fr")
+     et bascules annoncées comme telles. */}}
+<div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Afficher ou masquer le menu" />
+  </label>
+
+  <h3>{{ partial "docs/title" . }}</h3>
+
+  <label for="toc-control">
+    {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+    <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Afficher ou masquer le sommaire" />
+    {{ end }}
+  </label>
+</div>

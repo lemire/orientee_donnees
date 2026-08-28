@@ -156,18 +156,18 @@ if ({}) console.log("Objet vide : truthy");
 Vous pouvez tester votre compréhension de la syntaxe avec la console suivante.
 
 <div style="max-width: 800px; margin: auto; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden;">
-    <h1 style="background: #2c3e50; color: white; margin: 0; padding: 15px; text-align: center; font-size: 1.5em;">
+    <h2 style="background: #2c3e50; color: white; margin: 0; padding: 15px; text-align: center; font-size: 1.5em;">
         Console JavaScript
-    </h1>
+    </h2>
     <pre id="output" style="height: 300px; overflow-y: auto; padding: 10px; margin: 0; background: #1e1e1e; color: #dcdcdc; font-family: 'Courier New', monospace; white-space: pre-wrap;"></pre>
     <div style="display: flex; padding: 10px; background: #ecf0f1;">
         <span style="color: #2c3e50; margin-right: 10px; align-self: center;">></span>
-        <input type="text" id="input" autocomplete="off" 
+        <input aria-label="Commande JavaScript à exécuter" type="text" id="input" autocomplete="off" 
                 style="flex: 1; border: none; outline: none; font-family: 'Courier New', monospace; font-size: 14px; background: transparent;">
-        <button id="run" style="padding: 0 15px; background: #3498db; color: white; border: none; cursor: pointer; margin-left: 10px;">
+        <button id="run" style="padding: 0 15px; background: #1a6a9c; color: white; border: none; cursor: pointer; margin-left: 10px;">
             Exécuter
         </button>
-        <button id="reset" style="padding: 0 15px; background: #e74c3c; color: white; border: none; cursor: pointer; margin-left: 10px;">
+        <button id="reset" style="padding: 0 15px; background: #b03a2e; color: white; border: none; cursor: pointer; margin-left: 10px;">
             Remettre à zéro
         </button>
     </div>
@@ -231,7 +231,7 @@ Vous pouvez tester votre compréhension de la syntaxe avec la console suivante.
             addLine(args.join(' '), '#fff');
         };
         console.error = (...args) => {
-            addLine(args.join(' '), '#e74c3c');
+            addLine(args.join(' '), '#b03a2e');
         };
         console.warn = (...args) => {
             addLine(args.join(' '), '#ffd43b');
@@ -243,7 +243,7 @@ Vous pouvez tester votre compréhension de la syntaxe avec la console suivante.
                 addLine(String(result), '#2ecc71');
             }
         } catch (err) {
-            addLine(err.name + ': ' + err.message, '#e74c3c');
+            addLine(err.name + ': ' + err.message, '#b03a2e');
             // En cas d'erreur, on peut choisir de ne pas ajouter la commande erronée, ou la retirer
             // Pour simplifier, on la laisse, mais on peut ajuster
         } finally {
@@ -321,7 +321,7 @@ Testez vos connaissances avec ces questions. Cliquez sur chaque question pour vo
 
 ## Vidéo suggérée
 
-{{< youtube id="v3Ho7QVaTXM" >}}
+{{< youtube id="v3Ho7QVaTXM" title="Vidéo suggérée sur les bases de JavaScript" >}}
 
 ## JSON et JavaScript
 
@@ -509,7 +509,7 @@ Utilisez la console suivante pour tester vos programmes JavaScript.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
 
 <div id="editor-container" style="flex: 1; border-bottom: 1px solid #ccc;"></div>
-<button id="run-code" style="padding: 10px; background: #007bff; color: white; border: none; cursor: pointer;">
+<button id="run-code" style="padding: 10px; background: #0056b3; color: white; border: none; cursor: pointer;">
     Exécuter le code
 </button>
 <pre id="console" style="margin: 0; height: 200px; background: #1e1e1e; color: #fff; padding: 10px; overflow-y: auto; font-family: monospace; white-space: pre-wrap;">
@@ -534,6 +534,8 @@ try {
         lineNumbers: true,
         mode: "javascript",
         theme: "default",
+        // Nomme le <textarea> caché que CodeMirror utilise pour la saisie.
+        screenReaderLabel: "Éditeur de code JavaScript",
         indentUnit: 4,
         tabSize: 4
     });
@@ -541,7 +543,7 @@ try {
     // Hover sur le bouton
     const runButton = document.getElementById("run-code");
     runButton.addEventListener("mouseenter", () => runButton.style.background = "#0056b3");
-    runButton.addEventListener("mouseleave", () => runButton.style.background = "#007bff");
+    runButton.addEventListener("mouseleave", () => runButton.style.background = "#0056b3");
     // Surcharge de la console
     const consoleOutput = document.getElementById("console");
     const toriginalLog = console.log;
@@ -591,7 +593,7 @@ try {
 
 ## Vidéo suggérée
 
-{{< youtube id="o6ULZoMrFGg" >}}
+{{< youtube id="o6ULZoMrFGg" title="Vidéo suggérée sur JSON et JavaScript" >}}
 
 ## Activités suggérées
 

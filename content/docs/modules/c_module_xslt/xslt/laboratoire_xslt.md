@@ -30,7 +30,7 @@ weight: 180
   <label for="xmlsource" style="display: block;  font-weight: 500; color: #374151; margin-bottom: 0.5rem;">
    Fichier XML :
   </label>
-  <textarea aria-describedby="xmlsource-help" id="xmlsource" placeholder="Saisissez votre XML ici" rows="10" style="width: 100%; border: 1px solid #d1d5db; border-radius: 6px; padding: 12px; line-height: 1.5; resize: vertical; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);">&lt;book&gt;
+  <textarea aria-label="Fichier XML" id="xmlsource" placeholder="Saisissez votre XML ici" rows="10" style="width: 100%; border: 1px solid #d1d5db; border-radius: 6px; padding: 12px; line-height: 1.5; resize: vertical; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);">&lt;book&gt;
         &lt;bookinfo&gt;
         &lt;title&gt;Notre documentation&lt;/title&gt;
         &lt;author&gt;
@@ -54,7 +54,7 @@ weight: 180
   <label for="xstlsource" style="display: block;  font-weight: 500; color: #374151; margin-bottom: 0.5rem;">
    Transformation XSLT :
   </label>
-  <textarea aria-describedby="xstlsource-help" id="xstlsource" placeholder="Saisissez votre XSLT ici" rows="10" style="width: 100%; border: 1px solid #d1d5db; border-radius: 6px; padding: 12px;  line-height: 1.5; resize: vertical; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);">&lt;?xml version="1.0"
+  <textarea aria-label="Transformation XSLT" id="xstlsource" placeholder="Saisissez votre XSLT ici" rows="10" style="width: 100%; border: 1px solid #d1d5db; border-radius: 6px; padding: 12px;  line-height: 1.5; resize: vertical; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);">&lt;?xml version="1.0"
         encoding="ISO-8859-1"?&gt;
         &lt;xsl:stylesheet version="1.0"
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
@@ -156,7 +156,7 @@ weight: 180
   </p>
  </div>
  <div style="text-align: center;">
-  <button onclick="applyXSLT()" style="background-color: #3b82f6; color: white; font-weight: 600; padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer;" type="button">
+  <button onclick="applyXSLT()" style="background-color: #1d4ed8; color: white; font-weight: 600; padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer;" type="button">
    Transformer
   </button>
   <button onclick="resetFields()" style="background-color: #6b7280; color: white; font-weight: 600; padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer; margin-left: 10px;" type="button">

@@ -15,7 +15,7 @@ weight: 31
   </span>
   , c'est que vous avez la bonne réponse; 
 	sinon, lisez les commentaires en
-  <span style="color:red">
+  <span style="color:#c00000">
    rouge
   </span>
   pour comprendre votre erreur. 
@@ -35,8 +35,8 @@ weight: 31
   <form id="idp140549857061152">
    <ol>
     <li>
-     <input name="idp140549857061152" type="checkbox" value="idp140549857061920false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140549857061152" type="checkbox" value="idp140549857061920false" aria-labelledby="rep-idp140549857061920false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140549857061920false-0">
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
@@ -55,8 +55,8 @@ weight: 31
      </span>
     </li>
     <li>
-     <input name="idp140549857061152" type="checkbox" value="idp140549857064080false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140549857061152" type="checkbox" value="idp140549857064080false" aria-labelledby="rep-idp140549857064080false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140549857064080false-0">
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
@@ -76,8 +76,8 @@ de la casse et l'élément « p » n'est pas la même chose que l'élément «
      </span>
     </li>
     <li>
-     <input name="idp140549857061152" type="checkbox" value="idp140549857066656true"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140549857061152" type="checkbox" value="idp140549857066656true" aria-labelledby="rep-idp140549857066656true-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140549857066656true-0">
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" [
@@ -99,8 +99,8 @@ de la casse et l'élément « p » n'est pas la même chose que l'élément «
      </span>
     </li>
     <li>
-     <input name="idp140549857061152" type="checkbox" value="idp140549857069264false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140549857061152" type="checkbox" value="idp140549857069264false" aria-labelledby="rep-idp140549857069264false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140549857069264false-0">
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" [
@@ -122,8 +122,8 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
      </span>
     </li>
     <li>
-     <input name="idp140549857061152" type="checkbox" value="idp140549854439456false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140549857061152" type="checkbox" value="idp140549854439456false" aria-labelledby="rep-idp140549854439456false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140549854439456false-0">
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" &gt;
@@ -176,20 +176,20 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
   <form id="idp140549854443296">
    <ol>
     <li>
-     <input name="idp140549854443296" onclick="javascript:var Click_MenuId='idp140549854444064true';var formid='idp140549854443296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854444064true"/>
-     Un document XHTML est du XML bien formé.
-     <span class="feedback" id="idp140549854444064true" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854443296" onclick="javascript:var Click_MenuId='idp140549854444064true';var formid='idp140549854443296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854444064true"/>
+     Un document XHTML est du XML bien formé.</label>
+    <span class="feedback" id="idp140549854444064true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) 
   Effectivement. Du XHTML doit absolument être bien formé.
      </span>
     </li>
     <li>
-     <input name="idp140549854443296" onclick="javascript:var Click_MenuId='idp140549854445088false';var formid='idp140549854443296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854445088false"/>
+     <label><input name="idp140549854443296" onclick="javascript:var Click_MenuId='idp140549854445088false';var formid='idp140549854443296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854445088false"/>
      Le document XHTML devrait être du XML bien formé, 
   mais le navigateur va tolérer de petites erreurs comme des balises 
-  croisées &lt;b&gt;&lt;i&gt;test&lt;/b&gt;&lt;/i&gt;.
-     <span class="feedback" id="idp140549854445088false" style="display: none;font-weight:bold;">
+  croisées &lt;b&gt;&lt;i&gt;test&lt;/b&gt;&lt;/i&gt;.</label>
+    <span class="feedback" id="idp140549854445088false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Justement pas : 
   on ne tolère pas de telles erreurs en XHTML, car cela rend la vie plus difficile aux machines 
@@ -197,10 +197,10 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
      </span>
     </li>
     <li>
-     <input name="idp140549854443296" onclick="javascript:var Click_MenuId='idp140549854446656false';var formid='idp140549854443296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854446656false"/>
+     <label><input name="idp140549854443296" onclick="javascript:var Click_MenuId='idp140549854446656false';var formid='idp140549854443296'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854446656false"/>
      Le XHTML est une nouvelle technologie qui exige un 
-  investissement important et une conversion coûteuse des documents.
-     <span class="feedback" id="idp140549854446656false" style="display: none;font-weight:bold;">
+  investissement important et une conversion coûteuse des documents.</label>
+    <span class="feedback" id="idp140549854446656false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) 
   Non. Le XHTML est très similaire au HTML.
@@ -224,29 +224,29 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
   <form id="idp140549854448032">
    <ol>
     <li>
-     <input name="idp140549854448032" type="checkbox" value="idp140549854448944true"/>
+     <label><input name="idp140549854448032" type="checkbox" value="idp140549854448944true"/>
      Si mon entreprise utilise déjà beaucoup le XML, le XHTML est un 
-  choix plus facile.
-     <span class="feedback" id="idp140549854448944true" style="display: none;font-weight:bold;">
+  choix plus facile.</label>
+    <span class="feedback" id="idp140549854448944true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement. On peut facilement transformer le XML en XHTML 
   et si vous connaissez les outils XML, vous pouvez les utiliser avec le XHTML.
      </span>
     </li>
     <li>
-     <input name="idp140549854448032" type="checkbox" value="idp140549854450608false"/>
-     Les navigateurs ne prennent pas encore en charge XHTML.
-     <span class="feedback" id="idp140549854450608false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854448032" type="checkbox" value="idp140549854450608false"/>
+     Les navigateurs ne prennent pas encore en charge XHTML.</label>
+    <span class="feedback" id="idp140549854450608false" style="display: none;font-weight:bold;">
       <br/>
       C'est faux. La plupart des navigateurs prennent bien en charge le XHTML, mais tous ne le prennent pas en charge 
   l'ensemble des normes XML.
      </span>
     </li>
     <li>
-     <input name="idp140549854448032" type="checkbox" value="idp140549854451872true"/>
+     <label><input name="idp140549854448032" type="checkbox" value="idp140549854451872true"/>
      Le XHTML est une technologie favorisant la pérennité des 
-  documents.
-     <span class="feedback" id="idp140549854451872true" style="display: none;font-weight:bold;">
+  documents.</label>
+    <span class="feedback" id="idp140549854451872true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement. Comme le XHTML suit une DTD fixe, 
   il sera possible dans le futur de bien interpréter les documents XHTML, alors que le HTML que 
@@ -273,27 +273,27 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
   <form id="idp140549854453536">
    <ol>
     <li>
-     <input name="idp140549854453536" type="checkbox" value="idp140549854454496true"/>
-     On peut utiliser les balises XHTML dans nos propres DTD.
-     <span class="feedback" id="idp140549854454496true" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854453536" type="checkbox" value="idp140549854454496true"/>
+     On peut utiliser les balises XHTML dans nos propres DTD.</label>
+    <span class="feedback" id="idp140549854454496true" style="display: none;font-weight:bold;">
       <br/>
       C'est sans problème. On peut recopier les parties des DTD XHTML et 
   les utiliser dans nos propres DTD. Cela peut être utile si un document XML doit être transformé en XHTML plus tard.
      </span>
     </li>
     <li>
-     <input name="idp140549854453536" type="checkbox" value="idp140549854455872false"/>
-     On peut utiliser nos propres balises en XHTML.
-     <span class="feedback" id="idp140549854455872false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854453536" type="checkbox" value="idp140549854455872false"/>
+     On peut utiliser nos propres balises en XHTML.</label>
+    <span class="feedback" id="idp140549854455872false" style="display: none;font-weight:bold;">
       <br/>
       Pas si nous utilisons les DTD officielles. Si nous écrivons vos propres DTD, il est possible 
   que notre navigateur ne reconnaisse pas le contenu comme étant du XHTML.
      </span>
     </li>
     <li>
-     <input name="idp140549854453536" type="checkbox" value="idp140549854457216true"/>
-     On peut définir ses propres entités en XHTML.
-     <span class="feedback" id="idp140549854457216true" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854453536" type="checkbox" value="idp140549854457216true"/>
+     On peut définir ses propres entités en XHTML.</label>
+    <span class="feedback" id="idp140549854457216true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement. Nous avons vu plus haut que les entités pouvaient être utilisées pour marquer le titre d'un 
   livre ou le nom d'un auteur, mais on peut aussi définir des entités 
@@ -320,25 +320,25 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
   <form id="idp140549854458928">
    <ol>
     <li>
-     <input name="idp140549854458928" type="checkbox" value="idp140549854459952true"/>
-     Il s'agit d'un document HTML pouvant s'afficher dans un navigateur.
-     <span class="feedback" id="idp140549854459952true" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854458928" type="checkbox" value="idp140549854459952true"/>
+     Il s'agit d'un document HTML pouvant s'afficher dans un navigateur.</label>
+    <span class="feedback" id="idp140549854459952true" style="display: none;font-weight:bold;">
       <br/>
       Oui. D'ailleurs, le texte d'introduction à HTML en est un exemple.
      </span>
     </li>
     <li>
-     <input name="idp140549854458928" type="checkbox" value="idp140549854461472true"/>
-     Il s'agit d'un document XML bien formé.
-     <span class="feedback" id="idp140549854461472true" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854458928" type="checkbox" value="idp140549854461472true"/>
+     Il s'agit d'un document XML bien formé.</label>
+    <span class="feedback" id="idp140549854461472true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement.
      </span>
     </li>
     <li>
-     <input name="idp140549854458928" type="checkbox" value="idp140549854462944true"/>
-     Il s'agit d'un document XML valide.
-     <span class="feedback" id="idp140549854462944true" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854458928" type="checkbox" value="idp140549854462944true"/>
+     Il s'agit d'un document XML valide.</label>
+    <span class="feedback" id="idp140549854462944true" style="display: none;font-weight:bold;">
       <br/>
       Effectivement, avec une déclaration de type de document utilisant un identifiant public.
      </span>
@@ -378,33 +378,33 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
   <form id="idp140549854464640">
    <ol>
     <li>
-     <input name="idp140549854464640" onclick="javascript:var Click_MenuId='idp140549854466608true';var formid='idp140549854464640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854466608true"/>
-     1
-     <span class="feedback" id="idp140549854466608true" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854464640" onclick="javascript:var Click_MenuId='idp140549854466608true';var formid='idp140549854464640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854466608true"/>
+     1</label>
+    <span class="feedback" id="idp140549854466608true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Oui.
      </span>
     </li>
     <li>
-     <input name="idp140549854464640" onclick="javascript:var Click_MenuId='idp140549854468272false';var formid='idp140549854464640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854468272false"/>
-     2
-     <span class="feedback" id="idp140549854468272false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854464640" onclick="javascript:var Click_MenuId='idp140549854468272false';var formid='idp140549854464640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854468272false"/>
+     2</label>
+    <span class="feedback" id="idp140549854468272false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non.
      </span>
     </li>
     <li>
-     <input name="idp140549854464640" onclick="javascript:var Click_MenuId='idp140549854469648false';var formid='idp140549854464640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854469648false"/>
-     3
-     <span class="feedback" id="idp140549854469648false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854464640" onclick="javascript:var Click_MenuId='idp140549854469648false';var formid='idp140549854464640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854469648false"/>
+     3</label>
+    <span class="feedback" id="idp140549854469648false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non.
      </span>
     </li>
     <li>
-     <input name="idp140549854464640" onclick="javascript:var Click_MenuId='idp140549854471024false';var formid='idp140549854464640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854471024false"/>
-     Aucune de ces réponses
-     <span class="feedback" id="idp140549854471024false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854464640" onclick="javascript:var Click_MenuId='idp140549854471024false';var formid='idp140549854464640'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854471024false"/>
+     Aucune de ces réponses</label>
+    <span class="feedback" id="idp140549854471024false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non.
      </span>
@@ -443,33 +443,33 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
   <form id="idp140549854472400">
    <ol>
     <li>
-     <input name="idp140549854472400" onclick="javascript:var Click_MenuId='idp140549854474368false';var formid='idp140549854472400'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854474368false"/>
-     1
-     <span class="feedback" id="idp140549854474368false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854472400" onclick="javascript:var Click_MenuId='idp140549854474368false';var formid='idp140549854472400'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854474368false"/>
+     1</label>
+    <span class="feedback" id="idp140549854474368false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non. Il ne s'agit pas de XHTML valide; la balise &lt;/P&gt; est incorrecte.
      </span>
     </li>
     <li>
-     <input name="idp140549854472400" onclick="javascript:var Click_MenuId='idp140549854476176false';var formid='idp140549854472400'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854476176false"/>
-     2
-     <span class="feedback" id="idp140549854476176false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854472400" onclick="javascript:var Click_MenuId='idp140549854476176false';var formid='idp140549854472400'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854476176false"/>
+     2</label>
+    <span class="feedback" id="idp140549854476176false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Ce serait vrai s'il s'agissait de XHTML valide.
      </span>
     </li>
     <li>
-     <input name="idp140549854472400" onclick="javascript:var Click_MenuId='idp140549854477552false';var formid='idp140549854472400'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854477552false"/>
-     3
-     <span class="feedback" id="idp140549854477552false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854472400" onclick="javascript:var Click_MenuId='idp140549854477552false';var formid='idp140549854472400'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854477552false"/>
+     3</label>
+    <span class="feedback" id="idp140549854477552false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non.
      </span>
     </li>
     <li>
-     <input name="idp140549854472400" onclick="javascript:var Click_MenuId='idp140549854478928true';var formid='idp140549854472400'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854478928true"/>
-     Aucune de ces réponses
-     <span class="feedback" id="idp140549854478928true" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854472400" onclick="javascript:var Click_MenuId='idp140549854478928true';var formid='idp140549854472400'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854478928true"/>
+     Aucune de ces réponses</label>
+    <span class="feedback" id="idp140549854478928true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Effectivement. Il ne s'agit pas de XHTML valide, la seconde balise paragraphe se terminant 
       par &lt;/P&gt;. Un logiciel compatible avec XHTML comme Google Chrome ou Firefox peut très bien ne rien afficher à l'écran.
@@ -507,33 +507,33 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
   <form id="idp140549854481952">
    <ol>
     <li>
-     <input name="idp140549854481952" onclick="javascript:var Click_MenuId='idp140549854483072false';var formid='idp140549854481952'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854483072false"/>
-     1
-     <span class="feedback" id="idp140549854483072false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854481952" onclick="javascript:var Click_MenuId='idp140549854483072false';var formid='idp140549854481952'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854483072false"/>
+     1</label>
+    <span class="feedback" id="idp140549854483072false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non.
      </span>
     </li>
     <li>
-     <input name="idp140549854481952" onclick="javascript:var Click_MenuId='idp140549854485440true';var formid='idp140549854481952'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854485440true"/>
-     2
-     <span class="feedback" id="idp140549854485440true" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854481952" onclick="javascript:var Click_MenuId='idp140549854485440true';var formid='idp140549854481952'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854485440true"/>
+     2</label>
+    <span class="feedback" id="idp140549854485440true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Oui.
      </span>
     </li>
     <li>
-     <input name="idp140549854481952" onclick="javascript:var Click_MenuId='idp140549854486720false';var formid='idp140549854481952'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854486720false"/>
-     3
-     <span class="feedback" id="idp140549854486720false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854481952" onclick="javascript:var Click_MenuId='idp140549854486720false';var formid='idp140549854481952'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854486720false"/>
+     3</label>
+    <span class="feedback" id="idp140549854486720false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non.
      </span>
     </li>
     <li>
-     <input name="idp140549854481952" onclick="javascript:var Click_MenuId='idp140549854488096false';var formid='idp140549854481952'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854488096false"/>
-     Aucune de ces réponses
-     <span class="feedback" id="idp140549854488096false" style="display: none;font-weight:bold;">
+     <label><input name="idp140549854481952" onclick="javascript:var Click_MenuId='idp140549854488096false';var formid='idp140549854481952'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854488096false"/>
+     Aucune de ces réponses</label>
+    <span class="feedback" id="idp140549854488096false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) Non.
      </span>
@@ -556,8 +556,8 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
   <form id="idp140549854489472">
    <ol>
     <li>
-     <input name="idp140549854489472" onclick="javascript:var Click_MenuId='idp140549854490464false';var formid='idp140549854489472'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854490464false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140549854489472" onclick="javascript:var Click_MenuId='idp140549854490464false';var formid='idp140549854489472'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854490464false" aria-labelledby="rep-idp140549854490464false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140549854490464false-0">
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
@@ -579,8 +579,8 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
      </span>
     </li>
     <li>
-     <input name="idp140549854489472" onclick="javascript:var Click_MenuId='idp140549854493008false';var formid='idp140549854489472'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854493008false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140549854489472" onclick="javascript:var Click_MenuId='idp140549854493008false';var formid='idp140549854489472'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854493008false" aria-labelledby="rep-idp140549854493008false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140549854493008false-0">
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
      &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
@@ -602,8 +602,8 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
      </span>
     </li>
     <li>
-     <input name="idp140549854489472" onclick="javascript:var Click_MenuId='idp140549854495648true';var formid='idp140549854489472'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854495648true"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140549854489472" onclick="javascript:var Click_MenuId='idp140549854495648true';var formid='idp140549854489472'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854495648true" aria-labelledby="rep-idp140549854495648true-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140549854495648true-0">
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
      &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
@@ -625,8 +625,8 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
      </span>
     </li>
     <li>
-     <input name="idp140549854489472" onclick="javascript:var Click_MenuId='idp140549854498160false';var formid='idp140549854489472'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854498160false"/>
-     <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
+     <input name="idp140549854489472" onclick="javascript:var Click_MenuId='idp140549854498160false';var formid='idp140549854489472'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140549854498160false" aria-labelledby="rep-idp140549854498160false-0"/>
+     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140549854498160false-0">
       &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
      &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;

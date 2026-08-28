@@ -26,7 +26,7 @@ Prenons l'exemple fourni pour illustrer concrètement ces concepts. L'objet Feat
 
 <div id="container">
         <div id="editor">
-            <textarea id="textarea">{
+            <textarea aria-label="Code GeoJSON à visualiser" id="textarea">{
   "type": "FeatureCollection",
   "features": [
     {
