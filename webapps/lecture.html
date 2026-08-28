@@ -1,13 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulation de l'algorithme de lecture</title>
+<style>
+  body { margin: 0; padding: 1.5rem; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         background: #f3f4f6; color: #1f2433; display: flex; justify-content: center; }
+  main { width: 100%; max-width: 960px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+             overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  :focus-visible { outline: 3px solid #3a4cb8; outline-offset: 2px; }
+  button { min-height: 44px; }
+</style>
+</head>
+<body>
+<main>
 <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); text-align: center; max-width: 600px; width: 100%;">
         <h1 style="font-size: 24px; margin-bottom: 20px; color: #2c3e50;">Simulation de l'algorithme de lecture</h1>
         <div style="margin: 20px 0; font-size: 18px;">
-            Étape : <span id="step" style="font-weight: bold; color: #e74c3c;">Initialisation</span><br>
-            Calepin : <span id="notepad" style="font-weight: bold; color: #e74c3c;">0</span><br>
-            Pages lues : <span id="pagesRead" style="font-weight: bold; color: #e74c3c;">Aucune</span>
+            Étape : <span id="step" style="font-weight: bold; color: #b03a2e;">Initialisation</span><br>
+            Calepin : <span id="notepad" style="font-weight: bold; color: #b03a2e;">0</span><br>
+            Pages lues : <span id="pagesRead" style="font-weight: bold; color: #b03a2e;">Aucune</span>
         </div>
         <div id="pages" style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;"></div>
-        <button id="stepButton" style="background: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Prochaine étape</button>
-        <button id="resetButton" style="background: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Réinitialiser</button>
+        <button id="stepButton" style="background: #1a6a9c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Prochaine étape</button>
+        <button id="resetButton" style="background: #1a6a9c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Réinitialiser</button>
         <div id="log" style="margin-top: 20px; text-align: left; max-height: 150px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; background: #f9f9f9; font-size: 14px;"></div>
     </div>
     <script>
@@ -52,14 +70,14 @@
             const stepButton = document.getElementById('stepButton');
             stepButton.style.cssText = lectureStep === 'end' || lectureIsRunning || lectureHasCrashed ?
                 'background: #95a5a6; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: not-allowed; font-size: 16px;' :
-                'background: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;';
+                'background: #1a6a9c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;';
         }
 
         function log(message, isError = false) {
             const logDiv = document.getElementById('log');
             const messageDiv = document.createElement('div');
             messageDiv.textContent = message;
-            if (isError) messageDiv.style.color = '#e74c3c';
+            if (isError) messageDiv.style.color = '#b03a2e';
             if (isError) messageDiv.style.fontWeight = 'bold';
             logDiv.appendChild(messageDiv);
             logDiv.scrollTop = logDiv.scrollHeight;
@@ -121,3 +139,6 @@
         initializePages();
         updateDisplay();
     </script>
+</main>
+</body>
+</html>

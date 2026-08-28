@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les huit bits d’un octet</title>
+<style>
+  body { margin: 0; padding: 1.5rem; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         background: #f3f4f6; color: #1f2433; display: flex; justify-content: center; }
+  main { width: 100%; max-width: 960px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+             overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  :focus-visible { outline: 3px solid #3a4cb8; outline-offset: 2px; }
+  button { min-height: 44px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Les huit bits d’un octet</h1>
   <div id="bitApp" style="font-family: Arial, sans-serif; max-width: 400px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; text-align: center;">
     <h2 style="margin: 0 0 20px; font-size: 24px;">Manipulateur de 8 bits</h2>
     <div id="bitContainer" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
@@ -47,7 +66,7 @@
         let binary = '';
         for (let i = 0; i < 8; i++) {
           buttons[7 - i].textContent = bits[i];
-          buttons[7 - i].style.backgroundColor = bits[i] ? '#4caf50' : '#f0f0f0';
+          buttons[7 - i].style.backgroundColor = bits[i] ? '#2e7d32' : '#f0f0f0';
           binary = bits[i] + binary; // Construit la chaîne binaire de gauche à droite
         }
         binaryDisplay.textContent = binary;
@@ -58,3 +77,6 @@
       updateDisplay();
     })();
   </script>
+</main>
+</body>
+</html>
