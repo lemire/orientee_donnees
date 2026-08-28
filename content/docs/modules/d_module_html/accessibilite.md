@@ -9,24 +9,14 @@ weight: 57
 
 ### Définition
 
-L'**accessibilité numérique** — souvent abrégée *a11y* (« a », onze lettres, « y ») — consiste à concevoir des sites et des applications que **toute personne peut percevoir, comprendre et utiliser**, y compris en situation de handicap.
+L'*accessibilité numérique* consiste à concevoir des sites et des applications que *toute personne peut percevoir, comprendre et utiliser*, y compris en situation de handicap.
 
 Il ne faut pas la confondre avec deux notions voisines :
 
-- l'**ergonomie** (ou *utilisabilité*) cherche à rendre un site agréable et efficace pour l'utilisateur moyen ;
-- la **qualité web** couvre plus largement la performance, le référencement, la maintenabilité, l'éco-conception.
+- l'*ergonomie* (ou *utilisabilité*) cherche à rendre un site agréable et efficace pour l'utilisateur moyen ;
+- la *qualité web* couvre plus largement la performance, le référencement, la maintenabilité, l'éco-conception.
 
-Les trois se recoupent beaucoup, mais l'accessibilité a une particularité : elle est **normée** et, pour de nombreux organismes, **obligatoire**. Un site peut être joli et rapide tout en étant strictement inutilisable pour une personne aveugle.
-
-### Pourquoi cela concerne tout le monde
-
-On imagine souvent l'accessibilité comme un service rendu à une petite minorité. C'est une erreur de perspective. Une limitation peut être :
-
-- **permanente** — une personne aveugle de naissance ;
-- **temporaire** — un bras dans le plâtre, une conjonctivite, une otite ;
-- **situationnelle** — consulter son téléphone en plein soleil, regarder une vidéo dans un autobus bruyant sans écouteurs, tenir un enfant d'un bras et naviguer de l'autre.
-
-Une même solution technique sert les trois cas. Les sous-titres profitent à la personne sourde, à celle qui a une otite, et à celle qui est dans l'autobus. Un bon contraste sert la personne malvoyante et celle qui est en plein soleil.
+Les trois se recoupent beaucoup, mais l'accessibilité a une particularité : elle est *normée* et, pour de nombreux organismes, *obligatoire*. Un site peut être joli et rapide tout en étant strictement inutilisable pour une personne aveugle.
 
 ### Types de limitations
 
@@ -38,50 +28,27 @@ Une même solution technique sert les trois cas. Les sous-titres profitent à la
 | Cognitive et troubles d'apprentissage | Dyslexie, TDAH, déficience intellectuelle, aphasie | Langue claire, structure prévisible, pas de limite de temps arbitraire |
 | Photosensibilité | Épilepsie photosensible | Aucun clignotement rapide |
 
-Ces catégories se combinent, et elles évoluent : le vieillissement de la population fait de la basse vision et de la perte d'audition des situations très courantes.
-
-### Technologies d'assistance
-
-Il est difficile de bien coder sans savoir *qui* lira le code. Les principaux outils sont :
-
-- les **lecteurs d'écran**, qui transforment la page en parole ou en braille : NVDA et JAWS sous Windows, VoiceOver sous macOS et iOS, TalkBack sous Android ;
-- la **navigation au clavier seul**, sans souris, avec `Tab`, `Maj+Tab`, `Entrée`, `Espace` et les flèches ;
-- le **zoom** et les loupes d'écran ;
-- les **modes de contraste élevé** du système d'exploitation ;
-- les **sous-titres** et les transcriptions ;
-- les dispositifs de pointage alternatifs : contacteurs, commande oculaire, commande vocale.
-
-Un lecteur d'écran ne « voit » pas votre page : il lit l'**arbre d'accessibilité** que le navigateur construit à partir de votre HTML. C'est pourquoi tout commence par le balisage.
-
-### Bénéfices collatéraux
-
-Le travail d'accessibilité n'est presque jamais du travail perdu :
-
-- **référencement** : les titres, `alt` et libellés explicites sont exactement ce qu'indexe un moteur de recherche ;
-- **robustesse** : une page bien structurée survit mieux aux navigateurs anciens, aux connexions lentes, aux extensions de lecture ;
-- **mobile** : les grandes cibles et le contenu qui se remet en page servent d'abord au téléphone ;
-- **clarté du code** : `<button>` dit ce qu'il fait ; `<div onclick>` ne dit rien.
 
 ### Les principes POUR des WCAG
 
-La référence internationale est le standard **WCAG** (*Web Content Accessibility Guidelines*) du W3C. Il s'organise autour de quatre principes, retenus par l'acronyme **POUR** :
+La référence internationale est le standard WCAG (*Web Content Accessibility Guidelines*) du W3C. Il s'organise autour de quatre principes, retenus par l'acronyme POUR :
 
-1. **Perceptible** — l'information doit pouvoir être perçue par au moins un sens disponible : texte de remplacement, sous-titres, contraste suffisant.
-2. **Utilisable** (*Operable*) — l'interface doit pouvoir être manipulée : clavier, temps suffisant, pas de clignotement dangereux, navigation claire.
-3. **Compréhensible** — le contenu et le fonctionnement doivent être intelligibles : langue déclarée, comportement prévisible, aide à la saisie.
-4. **Robuste** — le code doit être interprétable de façon fiable par les navigateurs et les technologies d'assistance, aujourd'hui et demain.
+1. Perceptible — l'information doit pouvoir être perçue par au moins un sens disponible : texte de remplacement, sous-titres, contraste suffisant.
+2. Utilisable (*Operable*) — l'interface doit pouvoir être manipulée : clavier, temps suffisant, pas de clignotement dangereux, navigation claire.
+3. Compréhensible — le contenu et le fonctionnement doivent être intelligibles : langue déclarée, comportement prévisible, aide à la saisie.
+4. Robuste — le code doit être interprétable de façon fiable par les navigateurs et les technologies d'assistance, aujourd'hui et demain.
 
-Chaque principe se décline en directives, puis en **critères de succès** vérifiables, numérotés (par exemple 1.4.3 « Contraste (minimum) »).
+Chaque principe se décline en directives, puis en critères de succès vérifiables, numérotés (par exemple 1.4.3 « Contraste (minimum) »).
 
 ### Niveaux A, AA, AAA
 
 Chaque critère porte un niveau :
 
-- **A** : le minimum absolu ; sans lui, des groupes entiers sont exclus.
-- **AA** : le niveau visé en pratique par la réglementation et par l'industrie.
-- **AAA** : exigences supplémentaires, parfois impossibles à tenir sur tout un site (le W3C lui-même ne recommande pas d'en faire une cible générale).
+- A : le minimum absolu ; sans lui, des groupes entiers sont exclus.
+- AA : le niveau visé en pratique par la réglementation et par l'industrie.
+- AAA : exigences supplémentaires, parfois impossibles à tenir sur tout un site (le W3C lui-même ne recommande pas d'en faire une cible générale).
 
-**La cible réaliste est AA**, et c'est celle que retiennent les cadres réglementaires.
+La cible réaliste est AA, et c'est celle que retiennent les cadres réglementaires.
 
 ### WCAG 2.1 et 2.2
 
@@ -95,17 +62,6 @@ WCAG 2.1 (2018) a ajouté des critères pensés pour le mobile et pour les limit
 | 2.4.11 Focus non masqué | AA | 2.2 | L'élément focalisé ne doit pas être caché par un en-tête flottant |
 | 3.3.7 Saisie redondante | A | 2.2 | Ne pas redemander une information déjà fournie dans le même processus |
 
-### Le cadre québécois et canadien
-
-Au Québec, le **SGQRI 008 3.0** — *Standard sur l'accessibilité des sites Web* — s'impose aux ministères et organismes publics, et par extension aux réseaux de l'éducation et de la santé. Sa version 3.0 s'aligne sur **WCAG 2.1 niveau AA**, en y ajoutant certains critères de WCAG 2.2 et quelques critères de niveau AAA, dont **2.3.2 « Trois flashs »** (aucun contenu ne doit clignoter plus de trois fois par seconde).
-
-Au fédéral, la **Loi canadienne sur l'accessibilité** (2019) vise les entités sous réglementation fédérale et impose des plans d'accessibilité et une reddition de comptes ; elle fixe un objectif d'un Canada sans obstacle. Elle fonctionne par obligation de planification et de rapport, alors que le standard québécois fixe directement des exigences techniques aux sites publics.
-
-Retenez la distinction pratique : **une obligation technique précise pour les sites publics québécois, un cadre de planification plus général au fédéral.**
-
-{{< hint info >}}
-**Accessibilité n'est pas synonyme de site laid.** Aucun critère WCAG n'interdit une direction artistique forte, une belle typographie ou des animations. Les critères portent sur le contraste, la structure, le clavier et les équivalents textuels — pas sur le goût. Les contraintes ressemblent à celles d'un bon typographe : elles cadrent le travail, elles ne l'appauvrissent pas.
-{{< /hint >}}
 
 ## 2. HTML sémantique : la fondation
 
@@ -144,7 +100,7 @@ On le redéclare ponctuellement pour les passages dans une autre langue :
 
 ### Le titre du document
 
-`<title>` est la toute première chose annoncée à l'ouverture d'une page, et c'est le libellé de l'onglet et du signet. Il doit être **unique** dans le site et **descriptif**, du plus précis au plus général :
+`<title>` est la toute première chose annoncée à l'ouverture d'une page, et c'est le libellé de l'onglet et du signet. Il doit être unique dans le site et descriptif, du plus précis au plus général :
 
 ```html
 <title>Accessibilité web — Module HTML — INF 1220</title>
@@ -152,13 +108,13 @@ On le redéclare ponctuellement pour les passages dans une autre langue :
 
 ### La hiérarchie des titres
 
-Les titres `<h1>` à `<h6>` forment le **plan du document**. C'est le principal moyen de navigation d'un utilisateur de lecteur d'écran, qui peut sauter de titre en titre pour balayer la page comme on parcourt une table des matières.
+Les titres `<h1>` à `<h6>` forment le plan du document. C'est le principal moyen de navigation d'un utilisateur de lecteur d'écran, qui peut sauter de titre en titre pour balayer la page comme on parcourt une table des matières.
 
 Trois règles :
 
-1. **Un seul `<h1>`** par page : le sujet de la page.
-2. **Pas de saut de niveau** : après un `<h2>` vient un `<h3>`, jamais directement un `<h4>`.
-3. **Un titre est une structure, pas une décoration.** Si vous voulez du gros texte, utilisez le CSS ; si vous voulez du petit texte en tête de section, c'est quand même un titre.
+1. Un seul `<h1>` par page : le sujet de la page.
+2. Pas de saut de niveau : après un `<h2>` vient un `<h3>`, jamais directement un `<h4>`.
+3. Un titre est une structure, pas une décoration. Si vous voulez du gros texte, utilisez le CSS ; si vous voulez du petit texte en tête de section, c'est quand même un titre.
 
 ```html
 <!-- À éviter : le niveau est choisi pour la taille du texte -->
@@ -172,7 +128,7 @@ Trois règles :
 
 ### Les régions (*landmarks*)
 
-Les éléments de section de HTML5 créent des **repères** que les technologies d'assistance savent lister et atteindre directement :
+Les éléments de section de HTML5 créent des repères que les technologies d'assistance savent lister et atteindre directement :
 
 ```html
 <body>
@@ -193,15 +149,9 @@ Les éléments de section de HTML5 créent des **repères** que les technologies
 </body>
 ```
 
-Points de vigilance :
-
-- **un seul `<main>`** par page, et il ne contient pas la navigation du site ;
-- s'il y a plusieurs `<nav>`, chacun doit être **distingué par un `aria-label`**, sinon l'utilisateur entend « navigation, navigation, navigation » ;
-- l'élément `<search>` existe depuis 2023 pour la zone de recherche ; en attendant un support universel, `<form role="search">` reste plus sûr.
-
 ### Le lien d'évitement
 
-Sur un site avec un menu latéral, plusieurs dizaines de liens précèdent le contenu. Sans lien d'évitement, la personne qui navigue au clavier les traverse **à chaque page**.
+Sur un site avec un menu latéral, plusieurs dizaines de liens précèdent le contenu. Sans lien d'évitement, la personne qui navigue au clavier les traverse à chaque page.
 
 ```html
 <a href="#contenu" class="skip-link">Aller au contenu principal</a>
@@ -246,11 +196,11 @@ Une liste balisée `<ul>` est annoncée « liste de 5 éléments », ce qui aide
 
 Utilisez `<ol>` quand l'ordre compte, `<dl>` pour des paires terme/définition, `<blockquote>` pour une citation en bloc et `<q>` en ligne.
 
-Pour l'emphase, `<em>` et `<strong>` portent un **sens** (le lecteur d'écran peut le rendre), alors que `<i>` et `<b>` ne sont que typographiques. Réservez `<i>` aux cas où la mise en italique est une convention sans emphase : titres d'œuvres, termes en langue étrangère, noms scientifiques.
+Pour l'emphase, `<em>` et `<strong>` portent un sens (le lecteur d'écran peut le rendre), alors que `<i>` et `<b>` ne sont que typographiques. Réservez `<i>` aux cas où la mise en italique est une convention sans emphase : titres d'œuvres, termes en langue étrangère, noms scientifiques.
 
 ### Tableaux
 
-Un tableau sert à présenter des **données**, jamais à faire de la mise en page — pour cela, il y a la grille et le *flexbox* CSS.
+Un tableau sert à présenter des données, jamais à faire de la mise en page — pour cela, il y a la grille et le *flexbox* CSS.
 
 ```html
 <table>
@@ -283,20 +233,17 @@ Un tableau sert à présenter des **données**, jamais à faire de la mise en pa
 
 ### Liens et boutons
 
-C'est la confusion la plus répandue, et elle a des conséquences réelles.
 
 | Aspect | `<a href="…">` | `<button>` |
 | --- | --- | --- |
 | Rôle | Naviguer vers une ressource | Déclencher une action |
 | Annoncé comme | « lien » | « bouton » |
-| Touche d'activation | `Entrée` | `Entrée` **et** `Espace` |
+| Touche d'activation | `Entrée` | `Entrée` et `Espace` |
 | Menu contextuel | Ouvrir dans un onglet, copier l'adresse | Sans objet |
-
-Un `<div onclick>` n'est ni l'un ni l'autre : il n'est pas dans l'ordre de tabulation, il ne réagit pas au clavier, et il n'est annoncé par aucun rôle.
 
 ### Le texte des liens
 
-Un utilisateur de lecteur d'écran peut demander la **liste de tous les liens** de la page. Une liste de quinze « cliquez ici » est inutilisable. Le libellé doit se suffire à lui-même :
+Un utilisateur de lecteur d'écran peut demander la liste de tous les liens de la page. Une liste de quinze « cliquez ici » est inutilisable. Le libellé doit se suffire à lui-même :
 
 ```html
 <!-- À éviter -->
@@ -317,7 +264,7 @@ Si le lien s'ouvre dans un nouvel onglet, dites-le — le changement de contexte
 
 ### Ordre du DOM
 
-L'ordre de lecture d'un lecteur d'écran et l'ordre de tabulation suivent l'**ordre du code source**, pas l'ordre visuel produit par le CSS. Si `order`, `row-reverse` ou un positionnement absolu réorganisent visuellement les éléments, l'ordre au clavier ne suit pas, et l'expérience devient incohérente. Rangez le DOM dans l'ordre logique et n'utilisez le réordonnancement CSS que pour des ajustements mineurs.
+L'ordre de lecture d'un lecteur d'écran et l'ordre de tabulation suivent l'ordre du code source, pas l'ordre visuel produit par le CSS. Si `order`, `row-reverse` ou un positionnement absolu réorganisent visuellement les éléments, l'ordre au clavier ne suit pas, et l'expérience devient incohérente. Rangez le DOM dans l'ordre logique et n'utilisez le réordonnancement CSS que pour des ajustements mineurs.
 
 ### Masquer correctement
 
@@ -351,43 +298,26 @@ N'appliquez jamais `aria-hidden="true"` à un élément qui contient un lien, un
 
 ### Décoratif ou informatif
 
-La question à se poser devant tout élément non textuel : **si je le retire, le lecteur perd-il de l'information ?** Si oui, il faut un équivalent textuel. Si non, il faut le masquer aux technologies d'assistance (`alt=""`, `aria-hidden="true"`) pour ne pas encombrer la lecture.
+La question à se poser devant tout élément non textuel : si je le retire, le lecteur perd-il de l'information ? Si oui, il faut un équivalent textuel. Si non, il faut le masquer aux technologies d'assistance (`alt=""`, `aria-hidden="true"`) pour ne pas encombrer la lecture.
 
 ### Attributs de base
 
-- Les `id` doivent être **uniques** dans la page : les références `for`, `aria-labelledby` et les ancres en dépendent.
-- L'attribut `title` produit une infobulle qui n'apparaît **ni au clavier, ni au toucher**, et dont le rendu est inconstant. Ne lui confiez jamais une information nécessaire.
+- Les `id` doivent être uniques dans la page : les références `for`, `aria-labelledby` et les ancres en dépendent.
+- L'attribut `title` produit une infobulle qui n'apparaît ni au clavier, ni au toucher, et dont le rendu est inconstant. Ne lui confiez jamais une information nécessaire.
 - N'utilisez pas de `tabindex` positif (`tabindex="1"`, `tabindex="2"`…) : il déplace l'élément en tête de l'ordre de tabulation et désynchronise tout le reste de la page. Seuls `0` (rendre focalisable) et `-1` (focalisable par script uniquement) sont recommandés.
-
-### Aperçu : ARIA
-
-**ARIA** (*Accessible Rich Internet Applications*) est un ensemble d'attributs qui ajoutent rôle, état et propriétés à un élément quand le HTML natif ne suffit pas — typiquement pour des composants riches, en JavaScript, qui n'existent pas en HTML.
-
-La première règle d'ARIA est de **ne pas utiliser ARIA** : si un élément HTML natif fait l'affaire, il est toujours préférable, car il apporte gratuitement le rôle, le comportement clavier et le rendu.
-
-```html
-<!-- Inutile : <nav> porte déjà le rôle « navigation » -->
-<nav role="navigation">…</nav>
-
-<!-- Correct : ARIA nomme deux repères de même rôle -->
-<nav aria-label="Navigation principale">…</nav>
-<nav aria-label="Fil d'Ariane">…</nav>
-```
-
-Un ARIA mal posé est **pire** que pas d'ARIA du tout : il ment au lecteur d'écran.
 
 ## 3. Images et contenu non textuel
 
 ### L'attribut `alt` est obligatoire
 
-Toute balise `<img>` doit porter un attribut `alt`, **même vide**. Un `alt` absent et un `alt=""` ne veulent pas dire la même chose :
+Toute balise `<img>` doit porter un attribut `alt`, même vide. Un `alt` absent et un `alt=""` ne veulent pas dire la même chose :
 
 - `alt=""` — « cette image est décorative, ignore-la » ;
 - pas d'attribut du tout — le lecteur d'écran ne sait pas quoi faire et annonce souvent le nom du fichier, ce qui donne « photo underscore i m g underscore 4 7 2 point j p g ».
 
 ### Écrire un bon `alt`
 
-Un bon texte de remplacement est un **équivalent**, pas une description exhaustive. Demandez-vous : *si je lisais cette page au téléphone à quelqu'un, que dirais-je à cet endroit ?*
+Un bon texte de remplacement est un équivalent, pas une description exhaustive. Demandez-vous : *si je lisais cette page au téléphone à quelqu'un, que dirais-je à cet endroit ?*
 
 ```html
 <!-- Trop vague -->
@@ -400,7 +330,7 @@ Un bon texte de remplacement est un **équivalent**, pas une description exhaust
 <img src="chat.jpg" alt="Chat roux endormi sur un clavier d'ordinateur">
 ```
 
-Le bon `alt` dépend du **contexte**. La même photographie de campus mérite `alt=""` si elle illustre une page d'accueil, et une description précise si elle sert à comparer deux bâtiments.
+Le bon `alt` dépend du contexte. La même photographie de campus mérite `alt=""` si elle illustre une page d'accueil, et une description précise si elle sert à comparer deux bâtiments.
 
 ### Images décoratives
 
@@ -413,7 +343,7 @@ Un `alt=""` suffit dans la quasi-totalité des cas ; `role="presentation"` ne fa
 
 ### Images complexes
 
-Un graphique, une carte ou une infographie ne tient pas dans un `alt` d'une ligne. La méthode : un `alt` court qui **identifie** l'image, plus une description longue accessible à tous.
+Un graphique, une carte ou une infographie ne tient pas dans un `alt` d'une ligne. La méthode : un `alt` court qui identifie l'image, plus une description longue accessible à tous.
 
 ```html
 <figure>
@@ -427,11 +357,11 @@ Un graphique, une carte ou une infographie ne tient pas dans un `alt` d'une lign
 </figure>
 ```
 
-Le mieux reste souvent de **donner les chiffres** : la description longue profite aussi à qui voit mal le graphique, l'imprime en noir et blanc, ou veut vérifier une valeur.
+Le mieux reste souvent de donner les chiffres : la description longue profite aussi à qui voit mal le graphique, l'imprime en noir et blanc, ou veut vérifier une valeur.
 
 ### Éviter le texte dans les images
 
-Le critère 1.4.5 « Texte sous forme d'image » demande d'utiliser du **vrai texte** plutôt qu'une image de texte. Une image de texte ne se redimensionne pas proprement, ne se recherche pas, ne se traduit pas, ne s'adapte pas aux préférences de contraste, et devient floue au zoom.
+Le critère 1.4.5 « Texte sous forme d'image » demande d'utiliser du vrai texte plutôt qu'une image de texte. Une image de texte ne se redimensionne pas proprement, ne se recherche pas, ne se traduit pas, ne s'adapte pas aux préférences de contraste, et devient floue au zoom.
 
 Un SVG contenant de véritables éléments `<text>` est un bon compromis : il est vectoriel et son contenu reste du texte.
 
@@ -465,7 +395,7 @@ Deux cas seulement :
 
 ### Logos et favicons
 
-Pour un logo qui sert de lien vers l'accueil, le texte de remplacement est le **nom de l'organisme**, pas une description graphique :
+Pour un logo qui sert de lien vers l'accueil, le texte de remplacement est le nom de l'organisme, pas une description graphique :
 
 ```html
 <a href="/"><img src="logo.svg" alt="Université TÉLUQ — accueil"></a>
@@ -476,7 +406,7 @@ Si le nom apparaît déjà en texte à côté du logo, le logo devient décorati
 ### Médias temporels
 
 - Sous-titres synchronisés par `<track kind="captions" srclang="fr" label="Français">` ;
-- **transcription** textuelle sous la vidéo — utile aussi pour chercher, citer et indexer ;
+- transcription textuelle sous la vidéo — utile aussi pour chercher, citer et indexer ;
 - contrôles natifs (`controls`), pour pouvoir mettre en pause ;
 - pas de lecture automatique de plus de trois secondes sans moyen d'arrêter le son.
 
@@ -489,9 +419,7 @@ Si le nom apparaît déjà en texte à côté du logo, le logo devient décorati
 </video>
 ```
 
-{{< hint danger >}}
-**Les CAPTCHA sont un piège classique.** Un CAPTCHA visuel exclut les personnes aveugles ; sa version audio exclut les personnes sourdes ; les deux ensemble excluent les personnes sourdaveugles, et beaucoup de CAPTCHA « cognitifs » excluent les personnes dyslexiques. Le critère 1.1.1 exige au minimum **deux modalités différentes**. Mieux : privilégiez des méthodes invisibles — champ leurre (*honeypot*), limitation de débit, analyse côté serveur.
-{{< /hint >}}
+
 
 ## 4. Formulaires accessibles
 
@@ -511,22 +439,7 @@ Un formulaire inaccessible bloque une inscription, un paiement, une demande d'ai
 </label>
 ```
 
-Une étiquette associée ne sert pas qu'au lecteur d'écran : elle **agrandit la zone cliquable** au texte de l'étiquette, ce qui aide tout le monde, en particulier au doigt.
-
-### Le placeholder n'est pas une étiquette
-
-C'est l'erreur la plus fréquente. Le texte de substitution disparaît dès la première frappe, son contraste est faible par construction, il n'est pas fiablement annoncé, et l'utilisateur qui revient sur un formulaire à moitié rempli ne sait plus ce qu'on lui demandait.
-
-```html
-<!-- À éviter -->
-<input type="text" placeholder="Nom de famille">
-
-<!-- Correct : étiquette permanente, placeholder en complément -->
-<label for="nom">Nom de famille</label>
-<input type="text" id="nom" name="nom" autocomplete="family-name"
-       placeholder="ex. Tremblay">
-```
-
+Une étiquette associée ne sert pas qu'au lecteur d'écran : elle agrandit la zone cliquable au texte de l'étiquette, ce qui aide tout le monde, en particulier au doigt.
 ### Grouper les champs liés
 
 Des boutons radio isolés n'ont pas de sens : il faut la question. `<fieldset>` et `<legend>` la fournissent.
@@ -561,7 +474,7 @@ C'est le critère 1.3.5 « Identifier la finalité de la saisie ».
 
 ### Champs obligatoires
 
-Indiquez l'obligation **dans le texte**, pas seulement par une couleur ou un astérisque isolé, et utilisez l'attribut `required` pour que l'état soit exposé par programmation.
+Indiquez l'obligation dans le texte, pas seulement par une couleur ou un astérisque isolé, et utilisez l'attribut `required` pour que l'état soit exposé par programmation.
 
 ```html
 <label for="courriel">Adresse de courriel (obligatoire)</label>
@@ -572,7 +485,7 @@ Indiquez l'obligation **dans le texte**, pas seulement par une couleur ou un ast
 
 ### Messages d'erreur
 
-Un bon message d'erreur est **textuel**, **précis**, **visible**, et **relié au champ** par `aria-describedby`. Une bordure rouge seule ne dit rien à qui ne voit pas les couleurs.
+Un bon message d'erreur est textuel, précis, visible, et relié au champ par `aria-describedby`. Une bordure rouge seule ne dit rien à qui ne voit pas les couleurs.
 
 ```html
 <label for="cp">Code postal</label>
@@ -583,11 +496,11 @@ Un bon message d'erreur est **textuel**, **précis**, **visible**, et **relié a
 </p>
 ```
 
-Placez un **résumé des erreurs en tête de formulaire**, avec un lien vers chaque champ fautif ; c'est ce qui aide le plus sur un long formulaire.
+Placez un résumé des erreurs en tête de formulaire, avec un lien vers chaque champ fautif ; c'est ce qui aide le plus sur un long formulaire.
 
 ### Instructions au bon endroit
 
-Les consignes (format attendu, longueur du mot de passe, unités) doivent apparaître **avant** le champ, pas seulement après un échec de validation. Quelqu'un qui navigue à la voix rencontre le champ avant le texte qui le suit.
+Les consignes (format attendu, longueur du mot de passe, unités) doivent apparaître avant le champ, pas seulement après un échec de validation. Quelqu'un qui navigue à la voix rencontre le champ avant le texte qui le suit.
 
 ### Ordre et bouton de soumission
 
@@ -640,7 +553,7 @@ Le HTML porte la structure ; le CSS décide si elle reste perceptible.
 
 ### Contraste et couleur
 
-Le **rapport de contraste** compare la luminance relative de deux couleurs. Il va de 1:1 (identiques) à 21:1 (noir sur blanc).
+Le rapport de contraste compare la luminance relative de deux couleurs. Il va de 1:1 (identiques) à 21:1 (noir sur blanc).
 
 | Contenu | Niveau AA | Niveau AAA |
 | --- | --- | --- |
@@ -663,7 +576,7 @@ Le rouge pur est un piège classique : il *paraît* fort, mais sa luminance le p
 
 ### Jamais la couleur seule
 
-Le critère 1.4.1 interdit de faire porter une information **uniquement** par la couleur. Il faut un second canal : soulignement, symbole, motif, texte, épaisseur.
+Le critère 1.4.1 interdit de faire porter une information uniquement par la couleur. Il faut un second canal : soulignement, symbole, motif, texte, épaisseur.
 
 ```css
 /* À éviter : seul l'indigo distingue le lien du texte noir */
@@ -677,7 +590,7 @@ a {
 }
 ```
 
-Le cas des liens dans un paragraphe est explicitement prévu : sans soulignement, le lien doit contraster d'au moins **3:1 avec le texte environnant** *et* recevoir un repère visuel au survol et au focus. En pratique, garder le soulignement est plus simple et plus sûr.
+Le cas des liens dans un paragraphe est explicitement prévu : sans soulignement, le lien doit contraster d'au moins 3:1 avec le texte environnant *et* recevoir un repère visuel au survol et au focus. En pratique, garder le soulignement est plus simple et plus sûr.
 
 Même logique pour un graphique : ne distinguez pas cinq courbes par la seule couleur. Ajoutez des symboles, des types de trait, ou des étiquettes directes.
 
@@ -695,7 +608,7 @@ Même logique pour un graphique : ne distinguez pas cinq courbes par la seule co
 }
 ```
 
-Ne déclarez `color-scheme: light dark` que si votre feuille de style **définit réellement** un thème sombre : sinon, le navigateur rend les contrôles de formulaire en sombre sur une page restée claire.
+Ne déclarez `color-scheme: light dark` que si votre feuille de style définit réellement un thème sombre : sinon, le navigateur rend les contrôles de formulaire en sombre sur une page restée claire.
 
 ### Focus et interaction
 
@@ -718,7 +631,7 @@ input:focus-visible,
 }
 ```
 
-L'indicateur doit contraster d'au moins **3:1** avec ce qu'il entoure et être suffisamment épais. Depuis WCAG 2.2, il ne doit pas non plus être **masqué** par un en-tête ou un bandeau flottant (critère 2.4.11) ; pensez à `scroll-margin-top` :
+L'indicateur doit contraster d'au moins 3:1 avec ce qu'il entoure et être suffisamment épais. Depuis WCAG 2.2, il ne doit pas non plus être masqué par un en-tête ou un bandeau flottant (critère 2.4.11) ; pensez à `scroll-margin-top` :
 
 ```css
 :target, [tabindex="-1"]:focus {
@@ -737,7 +650,7 @@ Essayez : les trois contrôles ci-dessous ont un focus bien visible. Atteignez-l
 
 ### Taille et espacement des cibles
 
-Le critère 2.5.8 (AA, WCAG 2.2) demande des cibles d'au moins **24 × 24 px CSS**, ou un espacement équivalent autour de cibles plus petites. Le critère 2.5.5 (AAA) monte à 44 × 44 px, ce qui correspond mieux à l'usage au doigt.
+Le critère 2.5.8 (AA, WCAG 2.2) demande des cibles d'au moins 24 × 24 px CSS, ou un espacement équivalent autour de cibles plus petites. Le critère 2.5.5 (AAA) monte à 44 × 44 px, ce qui correspond mieux à l'usage au doigt.
 
 ```css
 .bouton-icone {
@@ -755,10 +668,10 @@ Des liens de menu serrés les uns contre les autres échouent souvent à ce crit
 
 ### Typographie et lisibilité
 
-- **Unités relatives** : dimensionnez le texte en `rem` ou `em`, jamais en `px` figés, pour que la taille de police choisie par l'utilisateur soit respectée.
-- **Zoom à 200 %** sans perte de contenu ni défilement horizontal (critères 1.4.4 et 1.4.10). Tableaux et cartes sont les exceptions admises.
-- **Hauteur de ligne** d'au moins 1,5 dans les paragraphes ; **longueur de ligne** d'environ 80 caractères au maximum.
-- **Pas de texte justifié** : l'alignement des deux marges crée des « rivières » d'espaces blancs qui gênent particulièrement les personnes dyslexiques.
+- Unités relatives : dimensionnez le texte en `rem` ou `em`, jamais en `px` figés, pour que la taille de police choisie par l'utilisateur soit respectée.
+- Zoom à 200 % sans perte de contenu ni défilement horizontal (critères 1.4.4 et 1.4.10). Tableaux et cartes sont les exceptions admises.
+- Hauteur de ligne d'au moins 1,5 dans les paragraphes ; longueur de ligne d'environ 80 caractères au maximum.
+- Pas de texte justifié : l'alignement des deux marges crée des « rivières » d'espaces blancs qui gênent particulièrement les personnes dyslexiques.
 - Le critère 1.4.12 exige que la page reste lisible si l'utilisateur force `line-height: 1.5`, `letter-spacing: 0.12em`, `word-spacing: 0.16em` et `margin-bottom: 2em` sur les paragraphes. Évitez donc les conteneurs à hauteur fixe.
 
 ```css
@@ -792,20 +705,20 @@ Cette requête média reflète un réglage système ; la respecter évite de dé
 
 Deux autres règles :
 
-- **aucun contenu ne doit clignoter plus de trois fois par seconde** (critère 2.3.1, et 2.3.2 au niveau AAA, retenu par le standard québécois) : au-delà, on risque de provoquer une crise d'épilepsie photosensible ;
-- tout contenu qui **défile, s'anime ou se met à jour automatiquement** pendant plus de cinq secondes doit pouvoir être mis en pause, arrêté ou masqué (critère 2.2.2) — carrousels et bandeaux défilants au premier chef.
+- aucun contenu ne doit clignoter plus de trois fois par seconde (critère 2.3.1, et 2.3.2 au niveau AAA, retenu par le standard québécois) : au-delà, on risque de provoquer une crise d'épilepsie photosensible ;
+- tout contenu qui défile, s'anime ou se met à jour automatiquement pendant plus de cinq secondes doit pouvoir être mis en pause, arrêté ou masqué (critère 2.2.2) — carrousels et bandeaux défilants au premier chef.
 
 ### Contenu au survol ou au focus
 
 Le critère 1.4.13 impose trois qualités à toute infobulle ou tout menu déroulant apparaissant au survol :
 
-- **escamotable** : on peut le fermer avec `Échap` sans bouger le pointeur ;
-- **survolable** : on peut amener la souris dessus sans qu'il disparaisse (indispensable au zoom fort) ;
-- **persistant** : il reste affiché tant que le pointeur ou le focus n'a pas quitté la zone.
+- escamotable : on peut le fermer avec `Échap` sans bouger le pointeur ;
+- survolable : on peut amener la souris dessus sans qu'il disparaisse (indispensable au zoom fort) ;
+- persistant : il reste affiché tant que le pointeur ou le focus n'a pas quitté la zone.
 
 ### Mise en page
 
-- Le critère 1.4.10 « Redistribution » exige que le contenu reste utilisable dans une fenêtre équivalente à **320 px de large** sans défilement horizontal.
+- Le critère 1.4.10 « Redistribution » exige que le contenu reste utilisable dans une fenêtre équivalente à 320 px de large sans défilement horizontal.
 - Vérifiez que l'ordre visuel produit par `flex` ou `grid` correspond à l'ordre du DOM.
 - Attention à `overflow: hidden` et aux hauteurs fixes, qui coupent le texte agrandi.
 - Une feuille `@media print` soignée — fond blanc, texte noir, adresses des liens affichées — est un bonus apprécié.
@@ -823,7 +736,7 @@ Le clavier est le dénominateur commun : lecteurs d'écran, contacteurs, command
 
 ### La règle fondamentale
 
-**Tout ce qui est actionnable à la souris doit l'être au clavier.** Les touches attendues :
+Tout ce qui est actionnable à la souris doit l'être au clavier. Les touches attendues :
 
 | Touche | Effet attendu |
 | --- | --- |
@@ -850,7 +763,7 @@ Y compris quand il entre dans un menu déroulant ou une zone défilante. Une zon
 
 ### Limites des menus en CSS pur
 
-Un menu déroulant reposant uniquement sur `:hover` est **inaccessible au clavier** et au toucher :
+Un menu déroulant reposant uniquement sur `:hover` est inaccessible au clavier et au toucher :
 
 ```css
 /* À éviter : le sous-menu n'apparaît jamais au clavier */
@@ -873,26 +786,15 @@ Le critère 2.1.4 vise les raccourcis composés d'une seule lettre (« s » pour
 
 ## 7. Tester
 
-Aucun outil automatique ne détecte plus d'une **fraction** des problèmes réels : ils vérifient ce qui se mesure — contraste, attributs manquants — mais pas si un `alt` a du sens ou si l'ordre de lecture est logique. Combinez donc trois approches.
+Aucun outil automatique ne détecte plus d'une fraction des problèmes réels : ils vérifient ce qui se mesure — contraste, attributs manquants — mais pas si un `alt` a du sens ou si l'ordre de lecture est logique. Combinez donc trois approches.
 
 ### Tests manuels, à faire en premier
 
-1. **Au clavier seul.** Rangez la souris. Parcourez la page avec `Tab`. Le focus est-il toujours visible ? Atteignez-vous tout ? Pouvez-vous ressortir de partout ?
-2. **Zoom à 200 %**, puis fenêtre réduite à 320 px de large. Perdez-vous du contenu ? Y a-t-il un défilement horizontal ?
-3. **Sans les images.** Désactivez-les dans le navigateur : la page reste-t-elle compréhensible ?
-4. **Sans le CSS.** L'ordre du contenu est-il encore logique ? C'est l'ordre qu'entendra un lecteur d'écran.
+1. Au clavier seul. Rangez la souris. Parcourez la page avec `Tab`. Le focus est-il toujours visible ? Atteignez-vous tout ? Pouvez-vous ressortir de partout ?
+2. Zoom à 200 %, puis fenêtre réduite à 320 px de large. Perdez-vous du contenu ? Y a-t-il un défilement horizontal ?
+3. Sans les images. Désactivez-les dans le navigateur : la page reste-t-elle compréhensible ?
+4. Sans le CSS. L'ordre du contenu est-il encore logique ? C'est l'ordre qu'entendra un lecteur d'écran.
 
-### Outils automatiques
-
-- L'**inspecteur d'accessibilité** intégré à Chrome, Firefox et Safari, qui montre l'arbre d'accessibilité et le nom calculé de chaque élément ;
-- **Lighthouse**, onglet « Accessibilité », intégré aux outils de développement de Chrome ;
-- les extensions **axe DevTools** et **WAVE** ;
-- un **vérificateur de contraste** : le *Contrast Checker* de WebAIM en ligne, ou le *Colour Contrast Analyser* en application locale ;
-- le **validateur HTML du W3C**, dont les erreurs de structure sont souvent des problèmes d'accessibilité déguisés.
-
-### Un lecteur d'écran, même brièvement
-
-Dix minutes suffisent à changer votre façon de coder. **VoiceOver** est déjà installé sur macOS (`Cmd+F5`) ; **NVDA** est gratuit sous Windows. Essayez surtout la navigation par titres, par repères et par liens : c'est ainsi qu'on lit vraiment une page à la voix, et c'est là que les défauts de structure sautent aux oreilles.
 
 ### Liste de vérification A/AA pour du HTML et du CSS
 
@@ -931,11 +833,7 @@ Voici les défauts que l'on rencontre le plus souvent, et leur correction.
 | Contenu important seulement au `:hover` | Inaccessible au clavier et au toucher | Ajouter `:focus-within`, ou `<details>` |
 | Ordre inversé par `flex` ou `order` | L'ordre au clavier ne suit pas l'ordre visuel | Corriger l'ordre du DOM |
 | Texte dans une image | Ne se zoome pas, ne se recherche pas | Vrai texte, ou SVG avec `<text>` |
-| Animation ignorant les préférences | Vertiges, nausées | Respecter `prefers-reduced-motion` |
-
-{{< hint info >}}
-**Une dernière idée à retenir.** L'accessibilité n'est pas une couche que l'on ajoute à la fin — à ce stade, elle coûte cher et se voit. C'est une conséquence du fait d'écrire du HTML qui dit ce que les choses *sont*, et du CSS qui n'efface pas ce que le navigateur offre déjà. La plus grande partie du travail consiste, littéralement, à ne pas défaire ce qui fonctionne déjà.
-{{< /hint >}}
+| Animation ignorant les préférences | Vertiges, nausées | Respecter `prefers-reduced-motion`
 
 ## Pour aller plus loin
 
