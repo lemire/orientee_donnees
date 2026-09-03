@@ -1,5 +1,6 @@
 ---
 title: "Modules"
+bookIcon: modules
 weight: 10
 bookCollapseSection: false
 ---

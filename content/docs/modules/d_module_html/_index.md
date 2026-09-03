@@ -1,5 +1,6 @@
 ---
 title: "Module HTML, CSS, SVG, MathML"
+bookIcon: web
 weight: 40
 bookCollapseSection: true
 ---

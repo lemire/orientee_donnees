@@ -1,5 +1,6 @@
 ---
 title: "Module XML"
+bookIcon: xml
 weight: 20
 bookCollapseSection: true
 ---

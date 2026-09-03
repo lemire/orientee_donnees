@@ -1,5 +1,6 @@
 ---
 title: "Évaluation et feuille de route"
+bookIcon: evaluation
 weight: 160
 ---
 

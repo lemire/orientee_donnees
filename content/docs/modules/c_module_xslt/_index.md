@@ -1,5 +1,6 @@
 ---
 title: "Module XPath, XSLT, XQuery"
+bookIcon: transformation
 weight: 30
 bookCollapseSection: true
 ---

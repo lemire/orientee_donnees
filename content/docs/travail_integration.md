@@ -1,5 +1,6 @@
 ---
 title: "Travail d'intégration"
+bookIcon: travail
 weight: 155
 ---
 

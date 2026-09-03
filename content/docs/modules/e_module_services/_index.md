@@ -1,5 +1,6 @@
 ---
 title: "Module Services et YAML"
+bookIcon: services
 weight: 50
 bookCollapseSection: true
 ---

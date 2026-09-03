@@ -1,5 +1,6 @@
 ---
 title: "Module JSON"
+bookIcon: json
 weight: 5
 bookCollapseSection: true
 ---
