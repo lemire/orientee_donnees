@@ -518,6 +518,12 @@ La page web doit transmettre du XML. Elle doit recevoir du JSON de la part du se
 
 Vous devrez remettre le code source Java complet avec des commentaires explicatifs, incluant la génération du SVG, du document Excel Open XML et de la transformation XSLT vers Markdown. La page HTML avec le formulaire et le JavaScript devra également être fournie. Une documentation expliquant l'architecture et les technologies utilisées sera nécessaire. Des exemples de données d'entrée et de résultats de sortie (SVG, Excel et Markdown) devront être inclus. Enfin, des tests montrant le fonctionnement avec différentes valeurs devront être présentés.
 
+## Remise
+
+La remise de ce travail se fait sur le site institutionnel **ENA** (environnement numérique
+d'apprentissage). Déposez-y l'ensemble des fichiers demandés (code source, données, README et
+rapport écrit ou vidéo).
+
 ## Rapport vidéo
 
 Vous pouvez remettre votre rapport sous forme de **vidéo** plutôt qu'en format écrit : une

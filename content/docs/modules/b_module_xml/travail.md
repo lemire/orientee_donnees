@@ -173,6 +173,12 @@ Composer et exécuter trois requêtes SPARQL spécifiques :
 
 **Livrables** : Les requêtes et vos explications.
 
+## Remise
+
+La remise de ce travail se fait sur le site institutionnel **ENA** (environnement numérique
+d'apprentissage). Déposez-y l'ensemble des fichiers demandés (code source, données, README et
+rapport écrit ou vidéo).
+
 ## Rapport vidéo
 
 Vous pouvez remettre votre rapport sous forme de **vidéo** plutôt qu'en format écrit : une

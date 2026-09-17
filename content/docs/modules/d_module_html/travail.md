@@ -217,6 +217,12 @@ Vous devez créer un CSS qui améliore la présentation du graphique SVG avec le
 
 **Livrables** : Page HTML complète avec SVG et CSS, et documentation des choix de mise en forme.
 
+## Remise
+
+La remise de ce travail se fait sur le site institutionnel **ENA** (environnement numérique
+d'apprentissage). Déposez-y l'ensemble des fichiers demandés (code source, données, README et
+rapport écrit ou vidéo).
+
 ## Rapport vidéo
 
 Vous pouvez remettre votre rapport sous forme de **vidéo** plutôt qu'en format écrit : une

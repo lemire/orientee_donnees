@@ -153,6 +153,12 @@ Pour chaque problème, expliquez l'erreur et fournissez la version corrigée du 
 
 **Livrables** : Le fichier YAML corrigé et un document expliquant chacune des erreurs identifiées.
 
+## Remise
+
+La remise de ce travail se fait sur le site institutionnel **ENA** (environnement numérique
+d'apprentissage). Déposez-y l'ensemble des fichiers demandés (code source, données, README et
+rapport écrit ou vidéo).
+
 ## Rapport vidéo
 
 Vous pouvez remettre votre rapport sous forme de **vidéo** plutôt qu'en format écrit : une

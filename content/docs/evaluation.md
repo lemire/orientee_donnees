@@ -18,6 +18,8 @@ Pour évaluer vos apprentissages dans ce cours, nous avons préparé 5 travaux n
 | Travail d'intégration     | 40 %        |
 | Total                     | 100 %       |
 
+La remise de chacune de ces activités notées se fait sur le site institutionnel **ENA** (environnement numérique d'apprentissage).
+
 ## Feuille de route pour les 15 semaines
 
 Pour réussir ce cours, nous vous recommandons de répartir votre temps de travail sur les 15 semaines, avec environ 9 heures par semaine. Voici une proposition de planning :

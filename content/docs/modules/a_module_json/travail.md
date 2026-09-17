@@ -155,6 +155,12 @@ Enfin, vous intégrerez des mécanismes de validation pour vérifier que les fic
 
 **Livrables** : Scripts jq (.jq), fichier JSON d'exemple, et un fichier README en Markdown avec des exemples d'exécution et d'explication des scripts.
 
+## Remise
+
+La remise de ce travail se fait sur le site institutionnel **ENA** (environnement numérique
+d'apprentissage). Déposez-y l'ensemble des fichiers demandés (code source, données, README et
+rapport écrit ou vidéo).
+
 ## Rapport vidéo
 
 Vous pouvez remettre votre rapport sous forme de **vidéo** plutôt qu'en format écrit : une
