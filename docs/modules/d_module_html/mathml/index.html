@@ -1,11 +1,440 @@
-<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content='
  MathML
 
 
 
  
   Le Mathematical Markup Language (MathML) est un langage basé sur XML conçu pour représenter et afficher des expressions mathématiques de manière structurée sur le web. Contrairement aux images statiques ou aux approximations textuelles, MathML permet de décrire la sémantique et la présentation des formules mathématiques, offrant une accessibilité accrue et une intégration dynamique avec HTML. Il est particulièrement utilisé dans les contextes éducatifs, scientifiques et techniques pour rendre des équations complexes de façon précise et adaptable.
- "><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/mathml/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="MathML"><meta property="og:description" content="MathML Le Mathematical Markup Language (MathML) est un langage basé sur XML conçu pour représenter et afficher des expressions mathématiques de manière structurée sur le web. Contrairement aux images statiques ou aux approximations textuelles, MathML permet de décrire la sémantique et la présentation des formules mathématiques, offrant une accessibilité accrue et une intégration dynamique avec HTML. Il est particulièrement utilisé dans les contextes éducatifs, scientifiques et techniques pour rendre des équations complexes de façon précise et adaptable."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>MathML | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/mathml/><link rel=stylesheet href=/orientee_donnees/book.min.ce7709aaf1cbdc64a26197ef13e4e4b5e4a8200bbd77ccf4ad9b7fcc806d25be.css integrity="sha256-zncJqvHL3GSiYZfvE+TkteSoIAu9d8z0rZt/zIBtJb4=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.aa7b7555df61bc86ec23d0b4f528f6116b921e4a0e0ddcd72945e3777bcf44ac.js integrity="sha256-qnt1Vd9hvIbsI9C09Sj2EWuSHkoODdzXKUXjd3vPRKw=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
+ 
+ 
+  MathML gagne en popularité pour afficher des formules mathématiques dans des documents web ou des logiciels spécialisés. Vous pouvez intégrer des éléments MathML directement dans un document HTML, comme nous allons le voir.
+ 
+ 
+  La syntaxe MathML repose sur deux approches principales : la présentation (pour l’affichage visuel) et le contenu (pour la sémantique). Les éléments de présentation, comme mrow, mfrac, msup ou msqrt, organisent visuellement les expressions, tandis que les éléments de contenu, comme apply ou plus, décrivent leur structure logique. Les formules sont construites à partir d’éléments comme mi (identifiants), mn (nombres) et mo (opérateurs), placés dans une balise math. Les attributs comme display (block ou inline) contrôlent le rendu, et les styles CSS peuvent personnaliser l’apparence. MathML utilise un modèle arborescent où chaque élément imbriqué définit une partie de l’expression, garantissant une grande précision pour des formules complexes.
+ 
+ 
+  Les attributs en MathML jouent un rôle essentiel pour ajuster l’apparence et le comportement des expressions. Par exemple, l’attribut mathvariant permet de définir le style des identifiants (par exemple, italic pour les variables). Les attributs comme numalign ou denomalign dans mfrac contrôlent l’alignement des fractions. Pour les exposants ou indices (msup, msub), l’attribut scriptlevel ajuste la taille du texte. Les éléments de présentation comme mtable permettent de créer des matrices avec des attributs comme rowspacing ou columnalign pour l’espacement et l’alignement. Enfin, l’attribut id facilite l’interaction avec CSS ou JavaScript, et xmlns garantit la compatibilité XML. Ces attributs offrent une flexibilité pour un rendu précis et accessible.
+ 
+ 
+  Principales balises de présentation MathML
+ 
+ 
+  Voici une description détaillée des balises les plus couramment utilisées en MathML de présentation (MathML-Presentation). Toutes ces balises doivent être placées à l’intérieur de l’élément racine
+  
+   <math>
+  
+  .
+ 
+ 
+  
+   
+    
+     Balise
+    
+    
+     Description
+    
+    
+     Exemple d’utilisation
+    
+    
+     Rendu approximatif
+    
+   
+  
+  
+   
+    
+     
+      <math>
+     
+    
+    
+     Élément racine obligatoire de toute expression MathML. L’attribut
+     
+      display="block"
+     
+     ou
+     
+      "inline"
+     
+     contrôle le mode d’affichage.
+    
+    
+     
+      <math display="block">…</math>
+     
+    
+    
+     —
+    
+   
+   
+    
+     
+      <mi>
+     
+    
+    
+     Identifiant (variable, constante, fonction). Par défaut en italique.
+    
+    
+     
+      <mi>x</mi>
+     
+     ou
+     
+      <mi mathvariant="normal">sin</mi>
+     
+    
+    
+     x, sin
+    
+   
+   
+    
+     
+      <mn>
+     
+    
+    
+     Nombre.
+    
+    
+     
+      <mn>123.45</mn>
+     
+    
+    
+     123.45
+    
+   
+   
+    
+     
+      <mo>
+     
+    
+    
+     Opérateur, symbole ou séparateur (+, −, ×, =, (, etc.). L’espacement est géré automatiquement.
+    
+    
+     
+      <mo>+</mo>
+     
+     ou
+     
+      <mo fence="true">(</mo>
+     
+    
+    
+     + , (
+    
+   
+   
+    
+     
+      <mtext>
+     
+    
+    
+     Texte brut (non mathématique), utile pour les unités ou commentaires.
+    
+    
+     
+      <mtext>kg</mtext>
+     
+    
+    
+     kg
+    
+   
+   
+    
+     
+      <mrow>
+     
+    
+    
+     Groupe horizontal d’éléments. Sert à structurer l’arbre sans effet visuel particulier.
+    
+    
+     
+      <mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow>
+     
+    
+    
+     a + b
+    
+   
+   
+    
+     
+      <mfrac>
+     
+    
+    
+     Fraction. Attributs utiles :
+     
+      bevelled="true"
+     
+     ,
+     
+      numalign
+     
+     ,
+     
+      denomalign
+     
+     .
+    
+    
+     
+      <mfrac><mi>a</mi><mi>b</mi></mfrac>
+     
+    
+    
+     a/b
+    
+   
+   
+    
+     
+      <msqrt>
+     
+    
+    
+     Racine carrée.
+    
+    
+     
+      <msqrt><mi>x</mi></msqrt>
+     
+    
+    
+     √x
+    
+   
+   
+    
+     
+      <mroot>
+     
+    
+    
+     Racine n-ième (indice en premier enfant).
+    
+    
+     
+      <mroot><mi>x</mi><mn>3</mn></mroot>
+     
+    
+    
+     ³√x
+    
+   
+   
+    
+     
+      <msup>
+     
+    
+    
+     Exposant.
+    
+    
+     
+      <msup><mi>x</mi><mn>2</mn></msup>
+     
+    
+    
+     x²
+    
+   
+   
+    
+     
+      <msub>
+     
+    
+    
+     Indice.
+    
+    
+     
+      <msub><mi>x</mi><mn>1</mn></msub>
+     
+    
+    
+     x₁
+    
+   
+   
+    
+     
+      <msubsup>
+     
+    
+    
+     Indice et exposant simultanés.
+    
+    
+     
+      <msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup>
+     
+    
+    
+     x₁²
+    
+   
+   
+    
+     
+      <munder>
+     
+    
+    
+     Élément placé sous le premier enfant (ex. limite).
+    
+    
+     
+      <munder><mi>lim</mi><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></munder>
+     
+    
+    
+     lim sous x→0
+    
+   
+   
+    
+     
+      <mover>
+     
+    
+    
+     Élément placé au-dessus (ex. barre, vecteur).
+    
+    
+     
+      <mover><mi>x</mi><mo>→</mo></mover>
+     
+    
+    
+     x avec flèche au-dessus
+    
+   
+   
+    
+     
+      <munderover>
+     
+    
+    
+     Sous et au-dessus (ex. somme, intégrale).
+    
+    
+     
+      <munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover>
+     
+    
+    
+     ∑ avec i=1 en bas et n en haut
+    
+   
+   
+    
+     
+      <mtable>, <mtr>, <mtd>
+     
+    
+    
+     Tableau ou matrice. Fonctionne comme un tableau HTML.
+    
+    
+     
+      <mtable><mtr><mtd><mn>1</mn></mtd></mtr></mtable>
+     
+    
+    
+     Matrice
+    
+   
+   
+    
+     
+      <mspace>
+     
+    
+    
+     Espace vide personnalisé (attributs width, height, depth).
+    
+    
+     
+      <mspace width="1em"/>
+     
+    
+    
+     —
+    
+   
+   
+    
+     
+      <menclose>
+     
+    
+    
+     Encadre ou décore une expression (longdiv, circle, box, etc.).
+    
+    
+     
+      <menclose notation="box"><mi>x</mi></menclose>
+     
+    
+    
+     x encadré
+    
+   
+  
+ 
+ 
+  Cette liste couvre environ 90 % des besoins courants en MathML de présentation. Pour des cas plus avancés (opérateurs extensibles, annotations sémantiques, MathML-Content), il existe de nombreuses autres balises, mais celles-ci constituent la base indispensable pour commencer à écrire des formules complexes directement dans une page web.
+ 
+ 
+  Laboratoire en ligne
+ 
+ 
+  Je vous invite à éditer le code MathML dans la boîte suivante pour observer le résultat.
+ 
+ 
+  Code MathML
+ 
+ <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mrow>
+        <mi>x</mi>
+        <mo>=</mo>
+        <mfrac>
+            <mrow>
+                <mo>-</mo>
+                <mi>b</mi>
+                <mo>±</mo>
+                <msqrt>
+                    <msup><mi>b</mi><mn>2</mn></msup>
+                    <mo>-</mo>
+                    <mn>4</mn>
+                    <mi>a</mi>
+                    <mi>c</mi>
+                </msqrt>
+            </mrow>
+            <mrow>
+                <mn>2</mn>
+                <mi>a</mi>
+            </mrow>
+        </mfrac>
+    </mrow>
+</math>
+        
+'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/mathml/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="MathML"><meta property="og:description" content='MathML Le Mathematical Markup Language (MathML) est un langage basé sur XML conçu pour représenter et afficher des expressions mathématiques de manière structurée sur le web. Contrairement aux images statiques ou aux approximations textuelles, MathML permet de décrire la sémantique et la présentation des formules mathématiques, offrant une accessibilité accrue et une intégration dynamique avec HTML. Il est particulièrement utilisé dans les contextes éducatifs, scientifiques et techniques pour rendre des équations complexes de façon précise et adaptable. MathML gagne en popularité pour afficher des formules mathématiques dans des documents web ou des logiciels spécialisés. Vous pouvez intégrer des éléments MathML directement dans un document HTML, comme nous allons le voir. La syntaxe MathML repose sur deux approches principales : la présentation (pour l’affichage visuel) et le contenu (pour la sémantique). Les éléments de présentation, comme mrow, mfrac, msup ou msqrt, organisent visuellement les expressions, tandis que les éléments de contenu, comme apply ou plus, décrivent leur structure logique. Les formules sont construites à partir d’éléments comme mi (identifiants), mn (nombres) et mo (opérateurs), placés dans une balise math. Les attributs comme display (block ou inline) contrôlent le rendu, et les styles CSS peuvent personnaliser l’apparence. MathML utilise un modèle arborescent où chaque élément imbriqué définit une partie de l’expression, garantissant une grande précision pour des formules complexes. Les attributs en MathML jouent un rôle essentiel pour ajuster l’apparence et le comportement des expressions. Par exemple, l’attribut mathvariant permet de définir le style des identifiants (par exemple, italic pour les variables). Les attributs comme numalign ou denomalign dans mfrac contrôlent l’alignement des fractions. Pour les exposants ou indices (msup, msub), l’attribut scriptlevel ajuste la taille du texte. Les éléments de présentation comme mtable permettent de créer des matrices avec des attributs comme rowspacing ou columnalign pour l’espacement et l’alignement. Enfin, l’attribut id facilite l’interaction avec CSS ou JavaScript, et xmlns garantit la compatibilité XML. Ces attributs offrent une flexibilité pour un rendu précis et accessible. Principales balises de présentation MathML Voici une description détaillée des balises les plus couramment utilisées en MathML de présentation (MathML-Presentation). Toutes ces balises doivent être placées à l’intérieur de l’élément racine <math> . Balise Description Exemple d’utilisation Rendu approximatif <math> Élément racine obligatoire de toute expression MathML. L’attribut display="block" ou "inline" contrôle le mode d’affichage. <math display="block">…</math> — <mi> Identifiant (variable, constante, fonction). Par défaut en italique. <mi>x</mi> ou <mi mathvariant="normal">sin</mi> x, sin <mn> Nombre. <mn>123.45</mn> 123.45 <mo> Opérateur, symbole ou séparateur (+, −, ×, =, (, etc.). L’espacement est géré automatiquement. <mo>+</mo> ou <mo fence="true">(</mo> + , ( <mtext> Texte brut (non mathématique), utile pour les unités ou commentaires. <mtext>kg</mtext> kg <mrow> Groupe horizontal d’éléments. Sert à structurer l’arbre sans effet visuel particulier. <mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow> a + b <mfrac> Fraction. Attributs utiles : bevelled="true" , numalign , denomalign . <mfrac><mi>a</mi><mi>b</mi></mfrac> a/b <msqrt> Racine carrée. <msqrt><mi>x</mi></msqrt> √x <mroot> Racine n-ième (indice en premier enfant). <mroot><mi>x</mi><mn>3</mn></mroot> ³√x <msup> Exposant. <msup><mi>x</mi><mn>2</mn></msup> x² <msub> Indice. <msub><mi>x</mi><mn>1</mn></msub> x₁ <msubsup> Indice et exposant simultanés. <msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup> x₁² <munder> Élément placé sous le premier enfant (ex. limite). <munder><mi>lim</mi><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></munder> lim sous x→0 <mover> Élément placé au-dessus (ex. barre, vecteur). <mover><mi>x</mi><mo>→</mo></mover> x avec flèche au-dessus <munderover> Sous et au-dessus (ex. somme, intégrale). <munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover> ∑ avec i=1 en bas et n en haut <mtable>, <mtr>, <mtd> Tableau ou matrice. Fonctionne comme un tableau HTML. <mtable><mtr><mtd><mn>1</mn></mtd></mtr></mtable> Matrice <mspace> Espace vide personnalisé (attributs width, height, depth). <mspace width="1em"/> — <menclose> Encadre ou décore une expression (longdiv, circle, box, etc.). <menclose notation="box"><mi>x</mi></menclose> x encadré Cette liste couvre environ 90 % des besoins courants en MathML de présentation. Pour des cas plus avancés (opérateurs extensibles, annotations sémantiques, MathML-Content), il existe de nombreuses autres balises, mais celles-ci constituent la base indispensable pour commencer à écrire des formules complexes directement dans une page web. Laboratoire en ligne Je vous invite à éditer le code MathML dans la boîte suivante pour observer le résultat. Code MathML <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mrow> <mi>x</mi> <mo>=</mo> <mfrac> <mrow> <mo>-</mo> <mi>b</mi> <mo>±</mo> <msqrt> <msup><mi>b</mi><mn>2</mn></msup> <mo>-</mo> <mn>4</mn> <mi>a</mi> <mi>c</mi> </msqrt> </mrow> <mrow> <mn>2</mn> <mi>a</mi> </mrow> </mfrac> </mrow> </math>'><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>MathML | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/mathml/><link rel=stylesheet href=/orientee_donnees/book.min.d4b72d9c56b6bf5762b5ea3984648a657ca3f678e49cd0343332108645d83c5d.css integrity="sha256-1LctnFa2v1diteo5hGSKZXyj9njknNA0MzIQhkXYPF0=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.c76331043c50baf17c50506b81f3ffdabf3e6901b1ba27360cb71bf32a68de5e.js integrity="sha256-x2MxBDxQuvF8UFBrgfP/2r8+aQGxuic2DLcb8ypo3l4=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
 <input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu aria-label="Navigation du cours"><div class=book-menu-content><nav aria-label="Menu du cours"><h2 class=book-brand><a class="flex align-center" href=/orientee_donnees/><img src=/orientee_donnees/favicon.png alt class=book-icon><span>Programmation orientée-données</span></a></h2><div class="book-search hidden" role=search><label for=book-search-input class=sr-only>Rechercher dans le cours</label>
 <input type=search id=book-search-input placeholder=Rechercher aria-label="Rechercher dans le cours" maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden" aria-hidden=true></div><div role=status aria-live=polite aria-label="Résultats de la recherche"><ul id=book-search-results></ul></div></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=/orientee_donnees/docs/modules/><img src=/orientee_donnees/icons/modules.svg class=book-icon alt>Modules</a><ul><li><input type=checkbox id=section-e0cc4658cb7e0b0785f48bc734a0d868 class=toggle aria-label="Déplier ou replier la section Module JSON">

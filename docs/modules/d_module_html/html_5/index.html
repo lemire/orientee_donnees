@@ -1,17 +1,17 @@
-<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content='
  HTML 5
 
 
  
   Un document HTML 5 peut
-        prendre la forme d'un document XML ou d'un document HTML. La déclaration doctype n'est utilisée que
-        dans le cas où le document n'est pas un document XML et a été grandement simplifiée : il suffit d'inclure
+        prendre la forme d&#39;un document XML ou d&#39;un document HTML. La déclaration doctype n&#39;est utilisée que
+        dans le cas où le document n&#39;est pas un document XML et a été grandement simplifiée : il suffit d&#39;inclure
         la ligne <!DOCTYPE html> au début du fichier. Voici un exemple de document HTML 5 :
  
  <!doctype html>
 <html>
   <head>
-    <meta charset=&#34;UTF-8&#34;>
+    <meta charset="UTF-8">
     <title>Ceci est un exemple</title>
   </head>
   <body>
@@ -21,7 +21,280 @@
 
  
   Un document HTML 5 en XML ne nécessite pas de déclaration doctype :
- "><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/html_5/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="HTML 5"><meta property="og:description" content="HTML 5 Un document HTML 5 peut prendre la forme d'un document XML ou d'un document HTML. La déclaration doctype n'est utilisée que dans le cas où le document n'est pas un document XML et a été grandement simplifiée : il suffit d'inclure la ligne <!DOCTYPE html> au début du fichier. Voici un exemple de document HTML 5 : <!doctype html> <html> <head> <meta charset=&#34;UTF-8&#34;> <title>Ceci est un exemple</title> </head> <body> <p>Voici un paragraphe.</p> </body> </html> Un document HTML 5 en XML ne nécessite pas de déclaration doctype :"><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>HTML 5 | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/html_5/><link rel=stylesheet href=/orientee_donnees/book.min.ce7709aaf1cbdc64a26197ef13e4e4b5e4a8200bbd77ccf4ad9b7fcc806d25be.css integrity="sha256-zncJqvHL3GSiYZfvE+TkteSoIAu9d8z0rZt/zIBtJb4=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.aa7b7555df61bc86ec23d0b4f528f6116b921e4a0e0ddcd72945e3777bcf44ac.js integrity="sha256-qnt1Vd9hvIbsI9C09Sj2EWuSHkoODdzXKUXjd3vPRKw=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
+ 
+ <?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Ceci est un exemple</title>
+  </head>
+  <body>
+    <p>Voici un paragraphe.</p>
+  </body>
+</html>
+
+ 
+  En HTML 5, on n&#39;utilise plus les éléments acronym et plusieurs autres
+        éléments moins utiles (basefont, big, center, s, strike, tt, u, frame, frameset, noframe, applet, isindex, dir).
+        Plusieurs nouveaux éléments ont été ajoutés notamment les éléments section et article. Ces éléments permettent d&#39;organiser le contenu de manière logique.
+ 
+ 
+  
+   Élément section: permet de regrouper du contenu dans une section contenant peut-être plusieurs paragraphes ou articles ayant un thème commun.
+  
+  
+   Élément article: permet d&#39;indiquer que le contenu est un article. Un article peut disposer d&#39;une entête (header) comprenant un titre.
+  
+  
+   Élément aside: permet d&#39;ajouter une note optionnelle au contenu.
+  
+  
+   Élément footer: permet d&#39;indiquer une section dédiée aux métadonnées du document. Chaque section peut avoir son élément footer.
+  
+ 
+ 
+  Voici un exemple de HTML 5 valable:
+ 
+ <?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ceci est un exemple</title>
+</head>
+<body>
+<h1>Un article sur le XML</h1>
+<section>
+<article>
+<header>
+<h2>La magie du XML</h2>
+<p>J&#39;aime le XML</p>
+</header>
+<p>Nous aimons tous le XML...</p>
+</article>
+</section>
+<footer>
+<h3>Une annexe</h3>
+<p>Cet article a été écrit par Daniel...</p>
+</footer>
+<aside>
+En passant, ce n&#39;est pas un vrai article...
+</aside>
+</body>
+</html>
+
+ 
+  On peut facilement créer des indicateurs de progression:
+ 
+ 
+  2 sur 10
+ 
+ 
+ 
+  66%
+ 
+ <meter value="2" min="0" max="10">2 sur 10</meter><br />
+<meter value="0.66">66%</meter>
+
+ 
+  On peut
+        aussi ajouter une figure à un document avec une légende:
+ 
+ 
+  
+  
+   Photo du professeur
+  
+ 
+ <figure>
+ <img src="http://lemire.me/fr/images/JPG/profile2011B_152.jpg" />
+ <figcaption>Photo du professeur</figcaption>
+</figure>
+
+ 
+  On peut aussi créer rapidement des formulaires en ligne:
+ 
+ 
+  
+   Inscription au cours de XML
+  
+  
+   
+    Information personnelle
+   
+   
+    Nom
+    
+   
+   
+   
+    Date de naissance
+    
+   
+   
+   
+    Courriel
+    
+   
+   
+   
+    Site personnel
+    
+   
+   
+   
+    Téléphone
+    
+   
+   
+   
+    Nombre de cours suivis précédemment
+    
+   
+   
+   
+    Aptitude en informatique
+    
+    
+     0
+    
+   
+   
+   
+    Adresse
+    
+   
+   
+   
+    Pays
+    
+    
+     
+     
+     
+     
+     
+     
+    
+   
+  
+  
+   
+    S&#39;inscrire
+   
+  
+ 
+<form id="inscription">
+<h2>Inscription au cours de XML</h2>
+  <fieldset> 
+    <legend>Information personnelle</legend> 
+        <label>Nom
+        <input id="nom" name="nom" type="text" placeholder="Votre nom" required autofocus> 
+		</label>
+		<br /> 
+    	<label>Date de naissance
+        <input id="ddn" name="ddn" type="date" required>
+		</label>
+		<br />
+        <label>Courriel 
+        <input id="courriel" name="courriel" type="email" placeholder="lemire@jo.com" required>
+		</label>
+		<br />  
+        <label>Site personnel 
+        <input id="url" name="url" type="url" placeholder="http://monsite.com">
+		</label>
+		<br /> 
+        <label>Téléphone  
+        <input id="telephone" name="telephone" type="tel" placeholder="Par ex. 450 111-4444" required>
+		</label>
+		<br />  
+		<label>Nombre de cours suivis précédemment
+		<input id="cours" name="cours" type="number" min="0" max="50" step="0.5" value="1">
+		</label>
+		<br /> 
+		<label>Aptitude en informatique 
+		<input id="aptitude" name="aptitude" type="range" min="1" max="100" value="0">
+		<output name="output" onforminput="value=a.value">0</output>
+		</label>
+		<br /> 
+        <label>Adresse 
+        <textarea id="adresse" name="address" rows=5 required></textarea>
+		</label>
+		<br />  
+        <label>Pays
+        <input id="pays" name="pays" list="nomsdepays" type="text" required> 
+        <datalist id="nomsdepays"> 
+        	<option label="États-Unis" value="us"></option> 
+        	<option label="Canada" value="ca"></option> 
+        	<option label="France" value="fr"></option> 
+        </datalist>
+		</label> 
+  </fieldset> 
+  <fieldset> 
+	    <button type=submit>S&#39;inscrire</button> 
+  </fieldset> 
+</form>
+ 
+  Les éléments canvas, video et audio sont aussi ajoutés : le HTML devient pleinement multimédia.
+ 
+L&rsquo;exemple suivant illustre comment on peut combiner HTML et JavaScript pour dessiner.
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple simple Canvas</title>
+    <style>
+        canvas { 
+            border: 2px solid #333; 
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Exemple basique de Canvas</h2>
+<canvas id="monCanvas" width="400" height="300"></canvas>
+
+<script>
+// 1. On récupère l&#39;élément canvas
+const canvas = document.getElementById(&#39;monCanvas&#39;);
+const ctx = canvas.getContext(&#39;2d&#39;); // contexte 2d (le plus courant)
+
+// 2. Carré rouge
+ctx.fillStyle = &#39;red&#39;;
+ctx.fillRect(50, 50, 100, 100); // x, y, largeur, hauteur
+
+// 3. Cercle bleu
+ctx.fillStyle = &#39;blue&#39;;
+ctx.beginPath();
+ctx.arc(280, 100, 50, 0, Math.PI * 2); // centre x, centre y, rayon, angle départ, angle fin
+ctx.fill();
+
+// 4. Ligne verte
+ctx.strokeStyle = &#39;green&#39;;
+ctx.lineWidth = 8;
+ctx.beginPath();
+ctx.moveTo(50, 200);   // point de départ
+ctx.lineTo(350, 200);  // point d&#39;arrivée
+ctx.stroke();
+
+// 5. Texte
+ctx.font = &#39;30px Arial&#39;;
+ctx.fillStyle = &#39;black&#39;;
+ctx.fillText(&#39;Hello Canvas !&#39;, 90, 260);
+</script>
+
+</body>
+</html>
+
+
+ 
+  Pour en savoir plus, consulter le guide du
+  
+   HTML 5 chez Mozilla
+  
+  .
+ 
+'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/html_5/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="HTML 5"><meta property="og:description" content='HTML 5 Un document HTML 5 peut prendre la forme d&#39;un document XML ou d&#39;un document HTML. La déclaration doctype n&#39;est utilisée que dans le cas où le document n&#39;est pas un document XML et a été grandement simplifiée : il suffit d&#39;inclure la ligne <!DOCTYPE html> au début du fichier. Voici un exemple de document HTML 5 : <!doctype html> <html> <head> <meta charset="UTF-8"> <title>Ceci est un exemple</title> </head> <body> <p>Voici un paragraphe.</p> </body> </html> Un document HTML 5 en XML ne nécessite pas de déclaration doctype : <?xml version="1.0" encoding="UTF-8"?> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Ceci est un exemple</title> </head> <body> <p>Voici un paragraphe.</p> </body> </html> En HTML 5, on n&#39;utilise plus les éléments acronym et plusieurs autres éléments moins utiles (basefont, big, center, s, strike, tt, u, frame, frameset, noframe, applet, isindex, dir). Plusieurs nouveaux éléments ont été ajoutés notamment les éléments section et article. Ces éléments permettent d&#39;organiser le contenu de manière logique. Élément section: permet de regrouper du contenu dans une section contenant peut-être plusieurs paragraphes ou articles ayant un thème commun. Élément article: permet d&#39;indiquer que le contenu est un article. Un article peut disposer d&#39;une entête (header) comprenant un titre. Élément aside: permet d&#39;ajouter une note optionnelle au contenu. Élément footer: permet d&#39;indiquer une section dédiée aux métadonnées du document. Chaque section peut avoir son élément footer. Voici un exemple de HTML 5 valable: <?xml version="1.0" encoding="UTF-8"?> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Ceci est un exemple</title> </head> <body> <h1>Un article sur le XML</h1> <section> <article> <header> <h2>La magie du XML</h2> <p>J&#39;aime le XML</p> </header> <p>Nous aimons tous le XML...</p> </article> </section> <footer> <h3>Une annexe</h3> <p>Cet article a été écrit par Daniel...</p> </footer> <aside> En passant, ce n&#39;est pas un vrai article... </aside> </body> </html> On peut facilement créer des indicateurs de progression: 2 sur 10 66% <meter value="2" min="0" max="10">2 sur 10</meter><br /> <meter value="0.66">66%</meter> On peut aussi ajouter une figure à un document avec une légende: Photo du professeur <figure> <img src="http://lemire.me/fr/images/JPG/profile2011B_152.jpg" /> <figcaption>Photo du professeur</figcaption> </figure> On peut aussi créer rapidement des formulaires en ligne: Inscription au cours de XML Information personnelle Nom Date de naissance Courriel Site personnel Téléphone Nombre de cours suivis précédemment Aptitude en informatique 0 Adresse Pays S&#39;inscrire <form id="inscription"> <h2>Inscription au cours de XML</h2> <fieldset> <legend>Information personnelle</legend> <label>Nom <input id="nom" name="nom" type="text" placeholder="Votre nom" required autofocus> </label> <br /> <label>Date de naissance <input id="ddn" name="ddn" type="date" required> </label> <br /> <label>Courriel <input id="courriel" name="courriel" type="email" placeholder="lemire@jo.com" required> </label> <br /> <label>Site personnel <input id="url" name="url" type="url" placeholder="http://monsite.com"> </label> <br /> <label>Téléphone <input id="telephone" name="telephone" type="tel" placeholder="Par ex. 450 111-4444" required> </label> <br /> <label>Nombre de cours suivis précédemment <input id="cours" name="cours" type="number" min="0" max="50" step="0.5" value="1"> </label> <br /> <label>Aptitude en informatique <input id="aptitude" name="aptitude" type="range" min="1" max="100" value="0"> <output name="output" onforminput="value=a.value">0</output> </label> <br /> <label>Adresse <textarea id="adresse" name="address" rows=5 required></textarea> </label> <br /> <label>Pays <input id="pays" name="pays" list="nomsdepays" type="text" required> <datalist id="nomsdepays"> <option label="États-Unis" value="us"></option> <option label="Canada" value="ca"></option> <option label="France" value="fr"></option> </datalist> </label> </fieldset> <fieldset> <button type=submit>S&#39;inscrire</button> </fieldset> </form> Les éléments canvas, video et audio sont aussi ajoutés : le HTML devient pleinement multimédia. L’exemple suivant illustre comment on peut combiner HTML et JavaScript pour dessiner.
+<!DOCTYPE html> <html lang="fr"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Exemple simple Canvas</title> <style> canvas { border: 2px solid #333; background: #f0f0f0; } </style> </head> <body> <h2>Exemple basique de Canvas</h2> <canvas id="monCanvas" width="400" height="300"></canvas> <script> // 1. On récupère l&#39;élément canvas const canvas = document.getElementById(&#39;monCanvas&#39;); const ctx = canvas.getContext(&#39;2d&#39;); // contexte 2d (le plus courant) // 2. Carré rouge ctx.fillStyle = &#39;red&#39;; ctx.fillRect(50, 50, 100, 100); // x, y, largeur, hauteur // 3. Cercle bleu ctx.fillStyle = &#39;blue&#39;; ctx.beginPath(); ctx.arc(280, 100, 50, 0, Math.PI * 2); // centre x, centre y, rayon, angle départ, angle fin ctx.fill(); // 4. Ligne verte ctx.strokeStyle = &#39;green&#39;; ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(50, 200); // point de départ ctx.lineTo(350, 200); // point d&#39;arrivée ctx.stroke(); // 5. Texte ctx.font = &#39;30px Arial&#39;; ctx.fillStyle = &#39;black&#39;; ctx.fillText(&#39;Hello Canvas !&#39;, 90, 260); </script> </body> </html> Pour en savoir plus, consulter le guide du HTML 5 chez Mozilla .'><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>HTML 5 | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/html_5/><link rel=stylesheet href=/orientee_donnees/book.min.d4b72d9c56b6bf5762b5ea3984648a657ca3f678e49cd0343332108645d83c5d.css integrity="sha256-1LctnFa2v1diteo5hGSKZXyj9njknNA0MzIQhkXYPF0=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.c76331043c50baf17c50506b81f3ffdabf3e6901b1ba27360cb71bf32a68de5e.js integrity="sha256-x2MxBDxQuvF8UFBrgfP/2r8+aQGxuic2DLcb8ypo3l4=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
 <input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu aria-label="Navigation du cours"><div class=book-menu-content><nav aria-label="Menu du cours"><h2 class=book-brand><a class="flex align-center" href=/orientee_donnees/><img src=/orientee_donnees/favicon.png alt class=book-icon><span>Programmation orientée-données</span></a></h2><div class="book-search hidden" role=search><label for=book-search-input class=sr-only>Rechercher dans le cours</label>
 <input type=search id=book-search-input placeholder=Rechercher aria-label="Rechercher dans le cours" maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden" aria-hidden=true></div><div role=status aria-live=polite aria-label="Résultats de la recherche"><ul id=book-search-results></ul></div></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=/orientee_donnees/docs/modules/><img src=/orientee_donnees/icons/modules.svg class=book-icon alt>Modules</a><ul><li><input type=checkbox id=section-e0cc4658cb7e0b0785f48bc734a0d868 class=toggle aria-label="Déplier ou replier la section Module JSON">

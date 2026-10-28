@@ -1,4 +1,4 @@
-<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content='
  Autoévaluation
 
 
@@ -9,7 +9,7 @@
   
    bleu
   
-  , c'est que vous avez la bonne réponse; 
+  , c&#39;est que vous avez la bonne réponse; 
 	sinon, lisez les commentaires en
   
    rouge
@@ -26,8 +26,628 @@
 		Parmi les documents suivants, lesquels sont du XHTML valide?
   
   
-   Choisissez toutes les réponses qui s'appliquent, puis appuyez sur le bouton « Vérifier ma réponse ».
-  "><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/autoevaluation/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="Autoévaluation HTML"><meta property="og:description" content="Autoévaluation Le bouton « Vérifier ma réponse » donne accès à un script qui, en plus de vous permettre de vérifier vos réponses, fournit une courte explication. Si tous les commentaires sont en bleu , c'est que vous avez la bonne réponse; sinon, lisez les commentaires en rouge pour comprendre votre erreur. Puis, essayez de nouveau en cliquant sur le bouton « Recommencer ». Question 1 . Parmi les documents suivants, lesquels sont du XHTML valide? Choisissez toutes les réponses qui s'appliquent, puis appuyez sur le bouton « Vérifier ma réponse »."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Autoévaluation HTML | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/autoevaluation/><link rel=stylesheet href=/orientee_donnees/book.min.ce7709aaf1cbdc64a26197ef13e4e4b5e4a8200bbd77ccf4ad9b7fcc806d25be.css integrity="sha256-zncJqvHL3GSiYZfvE+TkteSoIAu9d8z0rZt/zIBtJb4=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.aa7b7555df61bc86ec23d0b4f528f6116b921e4a0e0ddcd72945e3777bcf44ac.js integrity="sha256-qnt1Vd9hvIbsI9C09Sj2EWuSHkoODdzXKUXjd3vPRKw=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
+   Choisissez toutes les réponses qui s&#39;appliquent, puis appuyez sur le bouton « Vérifier ma réponse ».
+  
+  
+   
+    
+     
+     
+      <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Un titre</title>
+ </head>
+ <body>
+ <p>Voici mon document
+ </body>
+ </html>
+     
+     
+      
+      Non. La balise « p » doit être fermée.
+     
+    
+    
+     
+     
+      <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Un titre</title>
+ </head>
+ <body>
+ <P>Voici mon document</P>
+ </body>
+ </html>
+     
+     
+      
+      Non. La balise « P » n&#39;existe pas en XHTML : le XML tient compte 
+de la casse et l&#39;élément « p » n&#39;est pas la même chose que l&#39;élément « P ».
+     
+    
+    
+     
+     
+      <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" [
+ <!ENTITY texte "<p>Note légale: vous pouvez faire ce que vous voulez</p>
+ <p>Copyright 2004</p>">
+ ]>
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Un titre</title>
+ </head>
+ <body>
+ &amp;texte;
+ </body>
+ </html>
+     
+     
+      
+      Oui. L&#39;entité contient deux éléments bien formés et le résultat est du XHTML valide.
+     
+    
+    
+     
+     
+      <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" [
+ <!ENTITY texte "Voici mon document</p>">
+ ]>
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Un titre</title>
+ </head>
+ <body>
+ <p>&amp;texte;
+ </body>
+ </html>
+     
+     
+      
+      Non. Une entité doit être du XML bien formé et si une entité contient des balises, 
+il doit s&#39;agir d&#39;éléments avec balise ouvrante et balise fermante.
+     
+    
+    
+     
+     
+      <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Un titre</title>
+ </head>
+ <body>
+ <img src=http://www.uqam.ca/img/logo/logo.jpg 
+ alt="logo de l&#39;UQÀM" />
+ </body>
+ </html>
+     
+     
+      
+      Non, les attributs doivent être entre guillemets comme ceci :
+      
+       <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Un titre</title>
+ </head>
+ <body>
+ <img src="http://www.uqam.ca/img/logo/logo.jpg" 
+ alt="logo de l&#39;UQÀM" />
+ </body>
+ </html>
+      
+     
+    
+   
+   
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 2
+   
+   .
+		Quel énoncé décrit le mieux le XHTML?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Un document XHTML est du XML bien formé.
+    
+      
+      (Réponse correcte!) 
+  Effectivement. Du XHTML doit absolument être bien formé.
+     
+    
+    
+     
+     Le document XHTML devrait être du XML bien formé, 
+  mais le navigateur va tolérer de petites erreurs comme des balises 
+  croisées <b><i>test</b></i>.
+    
+      
+      (Réponse incorrecte!) Justement pas : 
+  on ne tolère pas de telles erreurs en XHTML, car cela rend la vie plus difficile aux machines 
+  et mène à des problèmes de compatibilité entre les navigateurs.
+     
+    
+    
+     
+     Le XHTML est une nouvelle technologie qui exige un 
+  investissement important et une conversion coûteuse des documents.
+    
+      
+      (Réponse incorrecte!) 
+  Non. Le XHTML est très similaire au HTML.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 3
+   
+   .
+		Par rapport au XHTML, les énoncés suivants sont-ils justes?
+  
+  
+   Choisissez toutes les réponses qui s&#39;appliquent, puis appuyez sur le bouton « Vérifier ma réponse ».
+  
+  
+   
+    
+     
+     Si mon entreprise utilise déjà beaucoup le XML, le XHTML est un 
+  choix plus facile.
+    
+      
+      Effectivement. On peut facilement transformer le XML en XHTML 
+  et si vous connaissez les outils XML, vous pouvez les utiliser avec le XHTML.
+     
+    
+    
+     
+     Les navigateurs ne prennent pas encore en charge XHTML.
+    
+      
+      C&#39;est faux. La plupart des navigateurs prennent bien en charge le XHTML, mais tous ne le prennent pas en charge 
+  l&#39;ensemble des normes XML.
+     
+    
+    
+     
+     Le XHTML est une technologie favorisant la pérennité des 
+  documents.
+    
+      
+      Effectivement. Comme le XHTML suit une DTD fixe, 
+  il sera possible dans le futur de bien interpréter les documents XHTML, alors que le HTML que 
+  l&#39;on trouve sur le web est souvent désuet après quelques mises à jour des navigateurs.
+     
+    
+   
+   
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 4
+   
+   .
+		Quels énoncés, parmi les suivants, décrivent bien le XHTML dans le contexte du XML?
+  
+  
+   Choisissez toutes les réponses qui s&#39;appliquent, puis appuyez sur le bouton « Vérifier ma réponse ».
+  
+  
+   
+    
+     
+     On peut utiliser les balises XHTML dans nos propres DTD.
+    
+      
+      C&#39;est sans problème. On peut recopier les parties des DTD XHTML et 
+  les utiliser dans nos propres DTD. Cela peut être utile si un document XML doit être transformé en XHTML plus tard.
+     
+    
+    
+     
+     On peut utiliser nos propres balises en XHTML.
+    
+      
+      Pas si nous utilisons les DTD officielles. Si nous écrivons vos propres DTD, il est possible 
+  que notre navigateur ne reconnaisse pas le contenu comme étant du XHTML.
+     
+    
+    
+     
+     On peut définir ses propres entités en XHTML.
+    
+      
+      Effectivement. Nous avons vu plus haut que les entités pouvaient être utilisées pour marquer le titre d&#39;un 
+  livre ou le nom d&#39;un auteur, mais on peut aussi définir des entités 
+  pour obtenir des caractères spéciaux, et ainsi de suite.
+     
+    
+   
+   
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 5
+   
+   .
+		Parmi les énoncés suivants, lesquels s&#39;appliquent à un document XHTML?
+  
+  
+   Choisissez toutes les réponses qui s&#39;appliquent, puis appuyez sur le bouton « Vérifier ma réponse ».
+  
+  
+   
+    
+     
+     Il s&#39;agit d&#39;un document HTML pouvant s&#39;afficher dans un navigateur.
+    
+      
+      Oui. D&#39;ailleurs, le texte d&#39;introduction à HTML en est un exemple.
+     
+    
+    
+     
+     Il s&#39;agit d&#39;un document XML bien formé.
+    
+      
+      Effectivement.
+     
+    
+    
+     
+     Il s&#39;agit d&#39;un document XML valide.
+    
+      
+      Effectivement, avec une déclaration de type de document utilisant un identifiant public.
+     
+    
+   
+   
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 6
+   
+   .
+		Combien de paragraphes compte le document XHTML suivant?
+   
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Titre de mon document</title>
+ </head>
+ <body>
+ L&#39;enfant pleure dans la rue. Subitement, le Soleil se lève.
+Ah! Que la vie est belle!
+</body>
+</html>
+   
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     1
+    
+      
+      (Réponse correcte!) Oui.
+     
+    
+    
+     
+     2
+    
+      
+      (Réponse incorrecte!) Non.
+     
+    
+    
+     
+     3
+    
+      
+      (Réponse incorrecte!) Non.
+     
+    
+    
+     
+     Aucune de ces réponses
+    
+      
+      (Réponse incorrecte!) Non.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 7
+   
+   .
+		Combien de paragraphes compte le document XHTML suivant?
+   
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Titre de mon document</title>
+ </head>
+ <body>
+ <p>L&#39;enfant pleure dans la rue.
+ Subitement, le Soleil se lève.<p>
+<p>Ah! Que la vie est belle!</P>
+</body>
+</html>
+   
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     1
+    
+      
+      (Réponse incorrecte!) Non. Il ne s&#39;agit pas de XHTML valide; la balise </P> est incorrecte.
+     
+    
+    
+     
+     2
+    
+      
+      (Réponse incorrecte!) Ce serait vrai s&#39;il s&#39;agissait de XHTML valide.
+     
+    
+    
+     
+     3
+    
+      
+      (Réponse incorrecte!) Non.
+     
+    
+    
+     
+     Aucune de ces réponses
+    
+      
+      (Réponse correcte!) Effectivement. Il ne s&#39;agit pas de XHTML valide, la seconde balise paragraphe se terminant 
+      par </P>. Un logiciel compatible avec XHTML comme Google Chrome ou Firefox peut très bien ne rien afficher à l&#39;écran.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 8
+   
+   .
+		Combien de lignes horizontales sont représentées par ce document XHTML?
+   
+    <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Titre de mon document</title>
+ </head>
+ <body>
+ <hr />
+ <hr></hr>
+ </body>
+ </html>
+   
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     1
+    
+      
+      (Réponse incorrecte!) Non.
+     
+    
+    
+     
+     2
+    
+      
+      (Réponse correcte!) Oui.
+     
+    
+    
+     
+     3
+    
+      
+      (Réponse incorrecte!) Non.
+     
+    
+    
+     
+     Aucune de ces réponses
+    
+      
+      (Réponse incorrecte!) Non.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 9
+   
+   .
+		Comment représente-t-on une liste numérotée en XHTML?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     
+      <?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <title>Titre de mon document</title>
+ </head>
+ <body>
+ <li>
+  <ul>élément</ul>
+  <ul>élément</ul>
+  </li>
+ </body>
+ </html>
+     
+     
+      
+      (Réponse incorrecte!) Non. Ce n&#39;est pas du XHTML valide.
+     
+    
+    
+     
+     
+      <?xml version="1.0" encoding="ISO-8859-1" ?>
+     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+     <html xmlns="http://www.w3.org/1999/xhtml">
+     <head>
+     <title>Titre de mon document</title>
+     </head>
+     <body>
+     <li>
+      <ol>élément</ol>
+  <ol>élément</ol>
+  </li>
+     </body>
+     </html>
+     
+     
+      
+      (Réponse incorrecte!) Non, ce n&#39;est pas du XHTML valide.
+     
+    
+    
+     
+     
+      <?xml version="1.0" encoding="ISO-8859-1" ?>
+     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+     <html xmlns="http://www.w3.org/1999/xhtml">
+     <head>
+     <title>Titre de mon document</title>
+     </head>
+     <body>
+     <ol>
+      <li>élément</li>
+  <li>élément</li>
+  </ol>
+     </body>
+     </html>
+     
+     
+      
+      (Réponse correcte!) Oui.
+     
+    
+    
+     
+     
+      <?xml version="1.0" encoding="ISO-8859-1" ?>
+     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+     <html xmlns="http://www.w3.org/1999/xhtml">
+     <head>
+     <title>Titre de mon document</title>
+     </head>
+     <body>
+     <ul>
+      <li>élément</li>
+  <li>élément</li>
+  </ul>
+     </body>
+     </html>
+     
+     
+      
+      (Réponse incorrecte!) Non. C&#39;est bien du XHTML valide, mais la liste n&#39;est pas numérotée.
+     
+    
+   
+  
+ 
+ 
+'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/autoevaluation/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="Autoévaluation HTML"><meta property="og:description" content='Autoévaluation Le bouton « Vérifier ma réponse » donne accès à un script qui, en plus de vous permettre de vérifier vos réponses, fournit une courte explication. Si tous les commentaires sont en bleu , c&#39;est que vous avez la bonne réponse; sinon, lisez les commentaires en rouge pour comprendre votre erreur. Puis, essayez de nouveau en cliquant sur le bouton « Recommencer ». Question 1 . Parmi les documents suivants, lesquels sont du XHTML valide? Choisissez toutes les réponses qui s&#39;appliquent, puis appuyez sur le bouton « Vérifier ma réponse ». <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Un titre</title> </head> <body> <p>Voici mon document </body> </html> Non. La balise « p » doit être fermée. <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Un titre</title> </head> <body> <P>Voici mon document</P> </body> </html> Non. La balise « P » n&#39;existe pas en XHTML : le XML tient compte de la casse et l&#39;élément « p » n&#39;est pas la même chose que l&#39;élément « P ». <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" [ <!ENTITY texte "<p>Note légale: vous pouvez faire ce que vous voulez</p> <p>Copyright 2004</p>"> ]> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Un titre</title> </head> <body> &amp;texte; </body> </html> Oui. L&#39;entité contient deux éléments bien formés et le résultat est du XHTML valide. <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" [ <!ENTITY texte "Voici mon document</p>"> ]> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Un titre</title> </head> <body> <p>&amp;texte; </body> </html> Non. Une entité doit être du XML bien formé et si une entité contient des balises, il doit s&#39;agir d&#39;éléments avec balise ouvrante et balise fermante. <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Un titre</title> </head> <body> <img src=http://www.uqam.ca/img/logo/logo.jpg alt="logo de l&#39;UQÀM" /> </body> </html> Non, les attributs doivent être entre guillemets comme ceci : <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Un titre</title> </head> <body> <img src="http://www.uqam.ca/img/logo/logo.jpg" alt="logo de l&#39;UQÀM" /> </body> </html> Question 2 . Quel énoncé décrit le mieux le XHTML? Choisissez la bonne réponse parmi les suivantes. Un document XHTML est du XML bien formé. (Réponse correcte!) Effectivement. Du XHTML doit absolument être bien formé. Le document XHTML devrait être du XML bien formé, mais le navigateur va tolérer de petites erreurs comme des balises croisées <b><i>test</b></i>. (Réponse incorrecte!) Justement pas : on ne tolère pas de telles erreurs en XHTML, car cela rend la vie plus difficile aux machines et mène à des problèmes de compatibilité entre les navigateurs. Le XHTML est une nouvelle technologie qui exige un investissement important et une conversion coûteuse des documents. (Réponse incorrecte!) Non. Le XHTML est très similaire au HTML. Question 3 . Par rapport au XHTML, les énoncés suivants sont-ils justes? Choisissez toutes les réponses qui s&#39;appliquent, puis appuyez sur le bouton « Vérifier ma réponse ». Si mon entreprise utilise déjà beaucoup le XML, le XHTML est un choix plus facile. Effectivement. On peut facilement transformer le XML en XHTML et si vous connaissez les outils XML, vous pouvez les utiliser avec le XHTML. Les navigateurs ne prennent pas encore en charge XHTML. C&#39;est faux. La plupart des navigateurs prennent bien en charge le XHTML, mais tous ne le prennent pas en charge l&#39;ensemble des normes XML. Le XHTML est une technologie favorisant la pérennité des documents. Effectivement. Comme le XHTML suit une DTD fixe, il sera possible dans le futur de bien interpréter les documents XHTML, alors que le HTML que l&#39;on trouve sur le web est souvent désuet après quelques mises à jour des navigateurs. Question 4 . Quels énoncés, parmi les suivants, décrivent bien le XHTML dans le contexte du XML? Choisissez toutes les réponses qui s&#39;appliquent, puis appuyez sur le bouton « Vérifier ma réponse ». On peut utiliser les balises XHTML dans nos propres DTD. C&#39;est sans problème. On peut recopier les parties des DTD XHTML et les utiliser dans nos propres DTD. Cela peut être utile si un document XML doit être transformé en XHTML plus tard. On peut utiliser nos propres balises en XHTML. Pas si nous utilisons les DTD officielles. Si nous écrivons vos propres DTD, il est possible que notre navigateur ne reconnaisse pas le contenu comme étant du XHTML. On peut définir ses propres entités en XHTML. Effectivement. Nous avons vu plus haut que les entités pouvaient être utilisées pour marquer le titre d&#39;un livre ou le nom d&#39;un auteur, mais on peut aussi définir des entités pour obtenir des caractères spéciaux, et ainsi de suite. Question 5 . Parmi les énoncés suivants, lesquels s&#39;appliquent à un document XHTML? Choisissez toutes les réponses qui s&#39;appliquent, puis appuyez sur le bouton « Vérifier ma réponse ». Il s&#39;agit d&#39;un document HTML pouvant s&#39;afficher dans un navigateur. Oui. D&#39;ailleurs, le texte d&#39;introduction à HTML en est un exemple. Il s&#39;agit d&#39;un document XML bien formé. Effectivement. Il s&#39;agit d&#39;un document XML valide. Effectivement, avec une déclaration de type de document utilisant un identifiant public. Question 6 . Combien de paragraphes compte le document XHTML suivant? <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Titre de mon document</title> </head> <body> L&#39;enfant pleure dans la rue. Subitement, le Soleil se lève. Ah! Que la vie est belle! </body> </html>
+Choisissez la bonne réponse parmi les suivantes. 1 (Réponse correcte!) Oui. 2 (Réponse incorrecte!) Non. 3 (Réponse incorrecte!) Non. Aucune de ces réponses (Réponse incorrecte!) Non. Question 7 . Combien de paragraphes compte le document XHTML suivant? <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Titre de mon document</title> </head> <body> <p>L&#39;enfant pleure dans la rue. Subitement, le Soleil se lève.<p> <p>Ah! Que la vie est belle!</P> </body> </html>
+Choisissez la bonne réponse parmi les suivantes. 1 (Réponse incorrecte!) Non. Il ne s&#39;agit pas de XHTML valide; la balise </P> est incorrecte. 2 (Réponse incorrecte!) Ce serait vrai s&#39;il s&#39;agissait de XHTML valide. 3 (Réponse incorrecte!) Non. Aucune de ces réponses (Réponse correcte!) Effectivement. Il ne s&#39;agit pas de XHTML valide, la seconde balise paragraphe se terminant par </P>. Un logiciel compatible avec XHTML comme Google Chrome ou Firefox peut très bien ne rien afficher à l&#39;écran. Question 8 . Combien de lignes horizontales sont représentées par ce document XHTML? <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Titre de mon document</title> </head> <body> <hr /> <hr></hr> </body> </html> Choisissez la bonne réponse parmi les suivantes. 1 (Réponse incorrecte!) Non. 2 (Réponse correcte!) Oui. 3 (Réponse incorrecte!) Non. Aucune de ces réponses (Réponse incorrecte!) Non. Question 9 . Comment représente-t-on une liste numérotée en XHTML? Choisissez la bonne réponse parmi les suivantes. <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Titre de mon document</title> </head> <body> <li> <ul>élément</ul> <ul>élément</ul> </li> </body> </html> (Réponse incorrecte!) Non. Ce n&#39;est pas du XHTML valide. <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Titre de mon document</title> </head> <body> <li> <ol>élément</ol> <ol>élément</ol> </li> </body> </html> (Réponse incorrecte!) Non, ce n&#39;est pas du XHTML valide. <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Titre de mon document</title> </head> <body> <ol> <li>élément</li> <li>élément</li> </ol> </body> </html> (Réponse correcte!) Oui. <?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>Titre de mon document</title> </head> <body> <ul> <li>élément</li> <li>élément</li> </ul> </body> </html> (Réponse incorrecte!) Non. C&#39;est bien du XHTML valide, mais la liste n&#39;est pas numérotée.'><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Autoévaluation HTML | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/d_module_html/autoevaluation/><link rel=stylesheet href=/orientee_donnees/book.min.d4b72d9c56b6bf5762b5ea3984648a657ca3f678e49cd0343332108645d83c5d.css integrity="sha256-1LctnFa2v1diteo5hGSKZXyj9njknNA0MzIQhkXYPF0=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.c76331043c50baf17c50506b81f3ffdabf3e6901b1ba27360cb71bf32a68de5e.js integrity="sha256-x2MxBDxQuvF8UFBrgfP/2r8+aQGxuic2DLcb8ypo3l4=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
 <input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu aria-label="Navigation du cours"><div class=book-menu-content><nav aria-label="Menu du cours"><h2 class=book-brand><a class="flex align-center" href=/orientee_donnees/><img src=/orientee_donnees/favicon.png alt class=book-icon><span>Programmation orientée-données</span></a></h2><div class="book-search hidden" role=search><label for=book-search-input class=sr-only>Rechercher dans le cours</label>
 <input type=search id=book-search-input placeholder=Rechercher aria-label="Rechercher dans le cours" maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden" aria-hidden=true></div><div role=status aria-live=polite aria-label="Résultats de la recherche"><ul id=book-search-results></ul></div></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=/orientee_donnees/docs/modules/><img src=/orientee_donnees/icons/modules.svg class=book-icon alt>Modules</a><ul><li><input type=checkbox id=section-e0cc4658cb7e0b0785f48bc734a0d868 class=toggle aria-label="Déplier ou replier la section Module JSON">

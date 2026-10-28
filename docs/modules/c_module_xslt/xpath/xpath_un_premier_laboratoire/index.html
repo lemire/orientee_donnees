@@ -1,4 +1,4 @@
-<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+<!doctype html><html lang=fr dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content='
  XPath : un premier laboratoire
 
 
@@ -7,7 +7,55 @@
  
  
   Dans cette première activité de familiarisation avec XPath, nous allons d’abord passer en revue rapidement les éléments de base et vous inviter à faire un petit laboratoire.
- "><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/xpath_un_premier_laboratoire/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="XPath : un premier laboratoire"><meta property="og:description" content="XPath : un premier laboratoire Étant donné un document XML, on peut sélectionner un nœud au sein du document avec une expression XPath. Plus généralement, étant donné un document XML et un nœud courant, on peut sélectionner, relativement à ce nœud, tout autre nœud ou ensemble de nœuds correspondant à un certain motif régulier. Dans cette première activité de familiarisation avec XPath, nous allons d’abord passer en revue rapidement les éléments de base et vous inviter à faire un petit laboratoire."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>XPath : un premier laboratoire | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/xpath_un_premier_laboratoire/><link rel=stylesheet href=/orientee_donnees/book.min.ce7709aaf1cbdc64a26197ef13e4e4b5e4a8200bbd77ccf4ad9b7fcc806d25be.css integrity="sha256-zncJqvHL3GSiYZfvE+TkteSoIAu9d8z0rZt/zIBtJb4=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.aa7b7555df61bc86ec23d0b4f528f6116b921e4a0e0ddcd72945e3777bcf44ac.js integrity="sha256-qnt1Vd9hvIbsI9C09Sj2EWuSHkoODdzXKUXjd3vPRKw=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
+ 
+ 
+  Les expressions XPath les plus simples comprennent seulement un nom XML. Dans ce cas, on sélectionne l’élément ayant le nom correspondant. Par exemple, l’expression « chien » va sélectionner tout élément nommé « chien » et contenu dans le nœud courant. S’il y en a plus d’un, plusieurs éléments pourront être sélectionnés. On peut utiliser l’astérisque (*) pour sélectionner tous les éléments du contexte courant, peu importe leur nom. Les deux points (..) permettent de sélectionner le parent du nœud courant (indiqué par « . »), ainsi « ../chien » permet de sélectionner les éléments « chien » dans le nœud parent. Si on veut ignorer le nœud courant et sélectionner tous les éléments chien, on peut obtenir ce résultat avec l’expression « //chien ». On peut aussi sélectionner le nœud racine... avec l’expression XPath « / ». Ainsi donc, « /* » sélectionnera toujours l’élément-racine. L’instruction « //* » va sélectionner tous les nœuds du document. On peut sélectionner un attribut avec le symbole « @ ». Ainsi, on peut sélectionner le contenu de l’attribut race de tous les éléments chien avec l’expression « //chien/@race ».
+ 
+ <animaux>
+<chien race="caniche" />
+</animaux>
+
+ 
+  Avant de continuer plus loin avec la syntaxe XPath, nous vous invitons à utiliser le petit script suivant pour vous familiariser davantage avec la syntaxe :
+ 
+ 
+  XPath en ligne
+ 
+ 
+  Instructions : il suffit de saisir un document XML source et une expression XPath et d&#39;appuyer sur le bouton. Le contenu textuel de chaque résultat est retourné. L&#39;expression XPath est toujours appliquée à partir du nœud-racine. Cette petite application est limitée: elle suppose que le résultat prend une certaine forme (un ensemble de nœuds ou node set).
+ 
+ 
+  
+   Fichier XML:
+  
+  <?xml version="1.0" ?> 
+<boite>
+<monmessage>
+<de>Jean</de> 
+<a>Pierre</a> 
+<titre type="émotion">Ouch!</titre> 
+<corps>Maman!</corps> 
+</monmessage>
+<monmessage>
+<de>Marie</de> 
+<a>Jean</a> 
+<titre type="émotion">Bah!</titre> 
+<corps>Papa!</corps> 
+</monmessage>
+</boite>
+
+  
+   Sélection XPath:
+  
+  
+  
+  
+   Résultat :
+  
+  
+  
+ 
+'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/xpath_un_premier_laboratoire/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="XPath : un premier laboratoire"><meta property="og:description" content='XPath : un premier laboratoire Étant donné un document XML, on peut sélectionner un nœud au sein du document avec une expression XPath. Plus généralement, étant donné un document XML et un nœud courant, on peut sélectionner, relativement à ce nœud, tout autre nœud ou ensemble de nœuds correspondant à un certain motif régulier. Dans cette première activité de familiarisation avec XPath, nous allons d’abord passer en revue rapidement les éléments de base et vous inviter à faire un petit laboratoire. Les expressions XPath les plus simples comprennent seulement un nom XML. Dans ce cas, on sélectionne l’élément ayant le nom correspondant. Par exemple, l’expression « chien » va sélectionner tout élément nommé « chien » et contenu dans le nœud courant. S’il y en a plus d’un, plusieurs éléments pourront être sélectionnés. On peut utiliser l’astérisque (*) pour sélectionner tous les éléments du contexte courant, peu importe leur nom. Les deux points (..) permettent de sélectionner le parent du nœud courant (indiqué par « . »), ainsi « ../chien » permet de sélectionner les éléments « chien » dans le nœud parent. Si on veut ignorer le nœud courant et sélectionner tous les éléments chien, on peut obtenir ce résultat avec l’expression « //chien ». On peut aussi sélectionner le nœud racine... avec l’expression XPath « / ». Ainsi donc, « /* » sélectionnera toujours l’élément-racine. L’instruction « //* » va sélectionner tous les nœuds du document. On peut sélectionner un attribut avec le symbole « @ ». Ainsi, on peut sélectionner le contenu de l’attribut race de tous les éléments chien avec l’expression « //chien/@race ». <animaux> <chien race="caniche" /> </animaux> Avant de continuer plus loin avec la syntaxe XPath, nous vous invitons à utiliser le petit script suivant pour vous familiariser davantage avec la syntaxe : XPath en ligne Instructions : il suffit de saisir un document XML source et une expression XPath et d&#39;appuyer sur le bouton. Le contenu textuel de chaque résultat est retourné. L&#39;expression XPath est toujours appliquée à partir du nœud-racine. Cette petite application est limitée: elle suppose que le résultat prend une certaine forme (un ensemble de nœuds ou node set). Fichier XML: <?xml version="1.0" ?> <boite> <monmessage> <de>Jean</de> <a>Pierre</a> <titre type="émotion">Ouch!</titre> <corps>Maman!</corps> </monmessage> <monmessage> <de>Marie</de> <a>Jean</a> <titre type="émotion">Bah!</titre> <corps>Papa!</corps> </monmessage> </boite> Sélection XPath: Résultat :'><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>XPath : un premier laboratoire | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/xpath_un_premier_laboratoire/><link rel=stylesheet href=/orientee_donnees/book.min.d4b72d9c56b6bf5762b5ea3984648a657ca3f678e49cd0343332108645d83c5d.css integrity="sha256-1LctnFa2v1diteo5hGSKZXyj9njknNA0MzIQhkXYPF0=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.c76331043c50baf17c50506b81f3ffdabf3e6901b1ba27360cb71bf32a68de5e.js integrity="sha256-x2MxBDxQuvF8UFBrgfP/2r8+aQGxuic2DLcb8ypo3l4=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
 <input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu aria-label="Navigation du cours"><div class=book-menu-content><nav aria-label="Menu du cours"><h2 class=book-brand><a class="flex align-center" href=/orientee_donnees/><img src=/orientee_donnees/favicon.png alt class=book-icon><span>Programmation orientée-données</span></a></h2><div class="book-search hidden" role=search><label for=book-search-input class=sr-only>Rechercher dans le cours</label>
 <input type=search id=book-search-input placeholder=Rechercher aria-label="Rechercher dans le cours" maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden" aria-hidden=true></div><div role=status aria-live=polite aria-label="Résultats de la recherche"><ul id=book-search-results></ul></div></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=/orientee_donnees/docs/modules/><img src=/orientee_donnees/icons/modules.svg class=book-icon alt>Modules</a><ul><li><input type=checkbox id=section-e0cc4658cb7e0b0785f48bc734a0d868 class=toggle aria-label="Déplier ou replier la section Module JSON">

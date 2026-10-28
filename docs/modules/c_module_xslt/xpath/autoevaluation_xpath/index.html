@@ -56,7 +56,569 @@
   
   
    Choisissez la bonne réponse parmi les suivantes.
-  "><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/autoevaluation_xpath/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="Autoévaluation"><meta property="og:description" content="Autoévaluation Question 1 . Quelle est la valeur de l'expression XPath « client.nom »? Choisissez la bonne réponse parmi les suivantes. Une séquence de tous les éléments « client.nom » dans le contexte actuel. (Réponse correcte!) Effectivement. Le point « . » perd ici sa signification de « contexte actuel », car il fait partie d'une chaîne de caractères désignant un nom d'élément. Tous les éléments « nom » contenus dans les éléments « client » qui se trouvent dans le contexte actuel. (Réponse incorrecte!) Non, ce serait « nom/client ». Les éléments « client » qui précèdent le contexte actuel, ainsi que les éléments « nom » qui suivent le contexte actuel. (Réponse incorrecte!) Cette explication n'a pas de sens. Question 2 . Quelle est la valeur de l'expression XPath « ./client »? Choisissez la bonne réponse parmi les suivantes."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Autoévaluation | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/autoevaluation_xpath/><link rel=stylesheet href=/orientee_donnees/book.min.ce7709aaf1cbdc64a26197ef13e4e4b5e4a8200bbd77ccf4ad9b7fcc806d25be.css integrity="sha256-zncJqvHL3GSiYZfvE+TkteSoIAu9d8z0rZt/zIBtJb4=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.aa7b7555df61bc86ec23d0b4f528f6116b921e4a0e0ddcd72945e3777bcf44ac.js integrity="sha256-qnt1Vd9hvIbsI9C09Sj2EWuSHkoODdzXKUXjd3vPRKw=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
+  
+  
+   
+    
+     
+     L'élément « client » qui se trouve dans le contexte actuel.
+    
+      
+      (Réponse incorrecte!) Il pourrait n'y avoir aucun ou plusieurs éléments « client ».
+     
+    
+    
+     
+     Une séquence de tous les éléments « client » dans le contexte actuel.
+    
+      
+      (Réponse correcte!) Effectivement, le contexte pouvant être l'élément courant, par exemple. La séquence d'éléments peut être vide.
+     
+    
+    
+     
+     Une séquence de tous les éléments et attributs « client » dans le contexte actuel.
+    
+      
+      (Réponse incorrecte!) Non. Les attributs de nom « client » s'obtiennent avec la syntaxe « @client ».
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 3
+   
+   .
+            Quelle est la valeur de l'expression XPath « client »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     L'élément « client » qui se trouve dans le contexte actuel.
+    
+      
+      (Réponse incorrecte!) Il pourrait n'y avoir aucun ou plusieurs éléments « client ».
+     
+    
+    
+     
+     Une séquence de tous les éléments « client » dans le contexte actuel.
+    
+      
+      (Réponse correcte!) Effectivement, le contexte pouvant être l'élément courant, par exemple. La séquence d'éléments peut être vide.
+                        On note que c'est la même signification que pour l'expression XPath « ./client ».
+     
+    
+    
+     
+     Une séquence de tous les éléments et attributs « client » dans le contexte actuel.
+    
+      
+      (Réponse incorrecte!) Non. Les attributs de nom « client » s'obtiennent avec la syntaxe « @client ».
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 4
+   
+   .
+            Quelle est la valeur de l'expression XPath « /client »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     L'élément « client » voisin de l'élément courant.
+    
+      
+      (Réponse incorrecte!) Non, c'est plutôt vers l'élément-racine qu'on pointe.
+     
+    
+    
+     
+     Le premier élément « client » rencontré dans le document.
+    
+      
+      (Réponse incorrecte!) Ce serait plutôt « (//client)[1] ».
+     
+    
+    
+     
+     L'élément-racine si celui-ci se nomme « client ».
+    
+      
+      (Réponse correcte!) Vrai. Il retourne un ensemble vide dans le cas contraire.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 5
+   
+   .
+            Quelle est la valeur de l'expression XPath « //client »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Le deuxième élément « client » rencontré.
+    
+      
+      (Réponse incorrecte!) Non, ce serait plutôt « client[2] ».
+     
+    
+    
+     
+     La séquence de tous les éléments « client » du document.
+    
+      
+      (Réponse correcte!) Effectivement. S'il n'y en a pas, cela donne un ensemble vide.
+     
+    
+    
+     
+     L'élément-racine si celui-ci se nomme « client ».
+    
+      
+      (Réponse incorrecte!) Non, ce serait plutôt « /client ».
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 6
+   
+   .
+            Quelle est la valeur de l'expression XPath « client[current()/@telephone=@telephone] »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Les éléments « client » dans l'élément courant ayant un attribut « telephone ».
+    
+      
+      (Réponse incorrecte!) Non, ce serait plutôt « client[@telephone] ».
+     
+    
+    
+     
+     Les éléments « client » dans l'élément courant dont l'attribut « telephone »
+                    a la même valeur que l'attribut « telephone » de l'élément courant.
+    
+      
+      (Réponse correcte!) Effectivement. On pourrait aussi écrire cette expression « client[current()/@telephone=./@telephone] ».
+                        Il s'agit d'un exemple où « current() » n'a pas la même valeur que « . ».
+     
+    
+    
+     
+     Les valeurs des attributs « telephone » de tous les éléments « client »
+                    dans l'élément courant.
+    
+      
+      (Réponse incorrecte!) Ce serait plutôt « client/@telephone ».
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 7
+   
+   .
+            Quelle est la valeur de l'expression XPath « client/*|client/@* »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Tous les éléments contenus dans des éléments « client » dans le contexte actuel.
+    
+      
+      (Réponse incorrecte!) Ce serait alors tout simplement « client/* ».
+     
+    
+    
+     
+     Tous les éléments et attributs contenus dans des éléments « client »
+                    dans le contexte actuel.
+    
+      
+      (Réponse correcte!) Effectivement. S'il n'y a rien qui correspond, un ensemble vide est donné.
+     
+    
+    
+     
+     L'ensemble des attributs contenus dans des éléments « client » enfant
+                    d'éléments contenus dans des éléments « client ».
+    
+      
+      (Réponse incorrecte!) Ce serait alors « client/*/client/@* ».
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 8
+   
+   .
+            Quelle est la valeur de l'expression XPath « *[@telephone] »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     La valeur de l'attribut « telephone » de l'élément courant.
+    
+      
+      (Réponse incorrecte!) Ce serait tout simplement « @telephone ».
+     
+    
+    
+     
+     L'élément courant s'il contient un attribut « telephone ».
+    
+      
+      (Réponse incorrecte!) Ce serait plutôt « .[@telephone] ».
+     
+    
+    
+     
+     Tous les éléments dans le contexte courant ayant un attribut « telephone ».
+    
+      
+      (Réponse correcte!) Effectivement, ou un ensemble vide si ça ne s'applique pas.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 9
+   
+   .
+            Quelle est la valeur de l'expression XPath « (vendeur/client)[2] »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Le deuxième élément « client » dans la liste des éléments « client »
+                    contenus dans des éléments « vendeur ».
+    
+      
+      (Réponse correcte!) Effectivement. S'il n'y a pas un tel élément, un ensemble vide est donné.
+     
+    
+    
+     
+     Le deuxième élément « vendeur » dans la liste des éléments « client »
+                    contenus dans des éléments « vendeur ».
+    
+      
+      (Réponse incorrecte!) Non, un élément « client » est donné.
+     
+    
+    
+     
+     Le deuxième élément « client » contenu dans un élément « vendeur ».
+    
+      
+      (Réponse incorrecte!) Non, ce serait alors « vendeur/client[2] ».
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 10
+   
+   .
+            Quelle est la valeur de l'expression XPath « vendeur/client[2] »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Le deuxième élément « client » dans la liste des éléments « client »
+                    contenus dans des éléments « vendeur ».
+    
+      
+      (Réponse incorrecte!) Non, ce serait plutôt « (vendeur/client)[2] ».
+     
+    
+    
+     
+     Le deuxième élément « vendeur » dans la liste des éléments « client »
+                    contenus dans des éléments « vendeur ».
+    
+      
+      (Réponse incorrecte!) Non, un élément « client » est donné.
+     
+    
+    
+     
+     Le deuxième élément « client » contenu dans un élément « vendeur ».
+    
+      
+      (Réponse correcte!)
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 11
+   
+   .
+            Quelle est la valeur de l'expression XPath « vendeur[2]/client[1] »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Le second élément « client » contenu dans le premier élément « vendeur » rencontré.
+    
+      
+      (Réponse incorrecte!)
+     
+    
+    
+     
+     Est équivalent à « vendeur/vendeur/client[1] ».
+    
+      
+      (Réponse incorrecte!) Non. Ce type d'abréviation n'existe pas en XPath.
+     
+    
+    
+     
+     Le premier élément « client » contenu dans le deuxième élément « vendeur ».
+    
+      
+      (Réponse correcte!) Effectivement. Si cet élément n'existe pas, un ensemble vide est obtenu.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 12
+   
+   .
+            Est-ce que « //p=//c » et « //c=//z » implique « //p=//z »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Oui
+    
+      
+      (Réponse incorrecte!) La première égalité est vraie s'il y a un élément p dont le contenu est égal au contenu d'un
+                        élément c, et la seconde est vraie s'il y a un élément de c qui est égal à un élément z, ce qui n'implique
+                        pas qu'il existe un élément p qui soit égal à un élément z
+     
+    
+    
+     
+     Non.
+    
+      
+      (Réponse correcte!) Effectivement.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 13
+   
+   .
+            Que vaut « //p=//p »?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Vrai
+    
+      
+      (Réponse incorrecte!) Seulement s'il existe au moins un élément p dans le document.
+     
+    
+    
+     
+     Faux
+    
+      
+      (Réponse incorrecte!) Seulement s'il n'existe pas d'élément p dans le document.
+     
+    
+    
+     
+     Aucune de ces réponses.
+    
+      
+      (Réponse correcte!) Effectivement. L'expression //p donne une liste d'éléments. La comparaison entre deux listes est vraie s'il existe au moins un élément dans la première liste égal à un élément dans la seconde liste. Cela est vrai si et seulement s'il y a au moins un élément p.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 14
+   
+   .
+            Est-ce que « //p!='jean' » et « not(//p='jean') » ont la même signification?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Vrai
+    
+      
+      (Réponse incorrecte!) Non. La première expression est vraie s'il y a un élément p dont le contenu est différent de 'jean', alors que la seconde est vraie seulement si tous les éléments sont différents de 'jean'.
+     
+    
+    
+     
+     Faux
+    
+      
+      (Réponse correcte!) Effectivement.
+     
+    
+   
+  
+ 
+ 
+ 
+  
+   
+    Question 15
+   
+   .
+            Est-ce qu'il y a une différence entre ces deux expressions XPath:
+            &#34;vendeur/prenom = 'Jean' and vendeur/nom = 'Coutu'&#34; et &#34;vendeur[prenom = 'Jean' and nom = 'Coutu']&#34;?
+  
+  
+   Choisissez la bonne réponse parmi les suivantes.
+  
+  
+   
+    
+     
+     Non aucune.
+    
+      
+      (Réponse incorrecte!) Non.
+     
+    
+    
+     
+     Oui, mais pas toujours.
+    
+      
+      (Réponse incorrecte!) Non. Ils sont toujours différents, mais si on les utilise dans une
+                        expression conditionnelle (xsl:if), ils peuvent être équivalents.
+     
+    
+    
+     
+     Oui, ils sont toujours différents.
+    
+      
+      (Réponse correcte!)
+                        Concernant la première requête: vendeur/prenom = Jean est une valeur booléenne (est-ce que Jean est présent dans vendeur/prenom?) tout comme vendeur/nom = Coutu. On combine les deux valeurs booléennes avec le et logique (and). Donc, la première est vraie si on trouve un élément vendeur contenant un élément prenom contenant le texte Jean et un élément nom contenant le nom Coutu, sinon elle est fausse. La seconde expression sélectionne les éléments correspondants à ce critère s'ils existent.
+     
+    
+   
+  
+ 
+"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/autoevaluation_xpath/"><meta property="og:site_name" content="Programmation orientée-données"><meta property="og:title" content="Autoévaluation"><meta property="og:description" content="Autoévaluation Question 1 . Quelle est la valeur de l'expression XPath « client.nom »? Choisissez la bonne réponse parmi les suivantes. Une séquence de tous les éléments « client.nom » dans le contexte actuel. (Réponse correcte!) Effectivement. Le point « . » perd ici sa signification de « contexte actuel », car il fait partie d'une chaîne de caractères désignant un nom d'élément. Tous les éléments « nom » contenus dans les éléments « client » qui se trouvent dans le contexte actuel. (Réponse incorrecte!) Non, ce serait « nom/client ». Les éléments « client » qui précèdent le contexte actuel, ainsi que les éléments « nom » qui suivent le contexte actuel. (Réponse incorrecte!) Cette explication n'a pas de sens. Question 2 . Quelle est la valeur de l'expression XPath « ./client »? Choisissez la bonne réponse parmi les suivantes. L'élément « client » qui se trouve dans le contexte actuel. (Réponse incorrecte!) Il pourrait n'y avoir aucun ou plusieurs éléments « client ». Une séquence de tous les éléments « client » dans le contexte actuel. (Réponse correcte!) Effectivement, le contexte pouvant être l'élément courant, par exemple. La séquence d'éléments peut être vide. Une séquence de tous les éléments et attributs « client » dans le contexte actuel. (Réponse incorrecte!) Non. Les attributs de nom « client » s'obtiennent avec la syntaxe « @client ». Question 3 . Quelle est la valeur de l'expression XPath « client »? Choisissez la bonne réponse parmi les suivantes. L'élément « client » qui se trouve dans le contexte actuel. (Réponse incorrecte!) Il pourrait n'y avoir aucun ou plusieurs éléments « client ». Une séquence de tous les éléments « client » dans le contexte actuel. (Réponse correcte!) Effectivement, le contexte pouvant être l'élément courant, par exemple. La séquence d'éléments peut être vide. On note que c'est la même signification que pour l'expression XPath « ./client ». Une séquence de tous les éléments et attributs « client » dans le contexte actuel. (Réponse incorrecte!) Non. Les attributs de nom « client » s'obtiennent avec la syntaxe « @client ». Question 4 . Quelle est la valeur de l'expression XPath « /client »? Choisissez la bonne réponse parmi les suivantes. L'élément « client » voisin de l'élément courant. (Réponse incorrecte!) Non, c'est plutôt vers l'élément-racine qu'on pointe. Le premier élément « client » rencontré dans le document. (Réponse incorrecte!) Ce serait plutôt « (//client)[1] ». L'élément-racine si celui-ci se nomme « client ». (Réponse correcte!) Vrai. Il retourne un ensemble vide dans le cas contraire. Question 5 . Quelle est la valeur de l'expression XPath « //client »? Choisissez la bonne réponse parmi les suivantes. Le deuxième élément « client » rencontré. (Réponse incorrecte!) Non, ce serait plutôt « client[2] ». La séquence de tous les éléments « client » du document. (Réponse correcte!) Effectivement. S'il n'y en a pas, cela donne un ensemble vide. L'élément-racine si celui-ci se nomme « client ». (Réponse incorrecte!) Non, ce serait plutôt « /client ». Question 6 . Quelle est la valeur de l'expression XPath « client[current()/@telephone=@telephone] »? Choisissez la bonne réponse parmi les suivantes. Les éléments « client » dans l'élément courant ayant un attribut « telephone ». (Réponse incorrecte!) Non, ce serait plutôt « client[@telephone] ». Les éléments « client » dans l'élément courant dont l'attribut « telephone » a la même valeur que l'attribut « telephone » de l'élément courant. (Réponse correcte!) Effectivement. On pourrait aussi écrire cette expression « client[current()/@telephone=./@telephone] ». Il s'agit d'un exemple où « current() » n'a pas la même valeur que « . ». Les valeurs des attributs « telephone » de tous les éléments « client » dans l'élément courant. (Réponse incorrecte!) Ce serait plutôt « client/@telephone ». Question 7 . Quelle est la valeur de l'expression XPath « client/*|client/@* »? Choisissez la bonne réponse parmi les suivantes. Tous les éléments contenus dans des éléments « client » dans le contexte actuel. (Réponse incorrecte!) Ce serait alors tout simplement « client/* ». Tous les éléments et attributs contenus dans des éléments « client » dans le contexte actuel. (Réponse correcte!) Effectivement. S'il n'y a rien qui correspond, un ensemble vide est donné. L'ensemble des attributs contenus dans des éléments « client » enfant d'éléments contenus dans des éléments « client ». (Réponse incorrecte!) Ce serait alors « client/*/client/@* ». Question 8 . Quelle est la valeur de l'expression XPath « *[@telephone] »? Choisissez la bonne réponse parmi les suivantes. La valeur de l'attribut « telephone » de l'élément courant. (Réponse incorrecte!) Ce serait tout simplement « @telephone ». L'élément courant s'il contient un attribut « telephone ». (Réponse incorrecte!) Ce serait plutôt « .[@telephone] ». Tous les éléments dans le contexte courant ayant un attribut « telephone ». (Réponse correcte!) Effectivement, ou un ensemble vide si ça ne s'applique pas. Question 9 . Quelle est la valeur de l'expression XPath « (vendeur/client)[2] »? Choisissez la bonne réponse parmi les suivantes. Le deuxième élément « client » dans la liste des éléments « client » contenus dans des éléments « vendeur ». (Réponse correcte!) Effectivement. S'il n'y a pas un tel élément, un ensemble vide est donné. Le deuxième élément « vendeur » dans la liste des éléments « client » contenus dans des éléments « vendeur ». (Réponse incorrecte!) Non, un élément « client » est donné. Le deuxième élément « client » contenu dans un élément « vendeur ». (Réponse incorrecte!) Non, ce serait alors « vendeur/client[2] ». Question 10 . Quelle est la valeur de l'expression XPath « vendeur/client[2] »? Choisissez la bonne réponse parmi les suivantes. Le deuxième élément « client » dans la liste des éléments « client » contenus dans des éléments « vendeur ». (Réponse incorrecte!) Non, ce serait plutôt « (vendeur/client)[2] ». Le deuxième élément « vendeur » dans la liste des éléments « client » contenus dans des éléments « vendeur ». (Réponse incorrecte!) Non, un élément « client » est donné. Le deuxième élément « client » contenu dans un élément « vendeur ». (Réponse correcte!) Question 11 . Quelle est la valeur de l'expression XPath « vendeur[2]/client[1] »? Choisissez la bonne réponse parmi les suivantes. Le second élément « client » contenu dans le premier élément « vendeur » rencontré. (Réponse incorrecte!) Est équivalent à « vendeur/vendeur/client[1] ». (Réponse incorrecte!) Non. Ce type d'abréviation n'existe pas en XPath. Le premier élément « client » contenu dans le deuxième élément « vendeur ». (Réponse correcte!) Effectivement. Si cet élément n'existe pas, un ensemble vide est obtenu. Question 12 . Est-ce que « //p=//c » et « //c=//z » implique « //p=//z »? Choisissez la bonne réponse parmi les suivantes. Oui (Réponse incorrecte!) La première égalité est vraie s'il y a un élément p dont le contenu est égal au contenu d'un élément c, et la seconde est vraie s'il y a un élément de c qui est égal à un élément z, ce qui n'implique pas qu'il existe un élément p qui soit égal à un élément z Non. (Réponse correcte!) Effectivement. Question 13 . Que vaut « //p=//p »? Choisissez la bonne réponse parmi les suivantes. Vrai (Réponse incorrecte!) Seulement s'il existe au moins un élément p dans le document. Faux (Réponse incorrecte!) Seulement s'il n'existe pas d'élément p dans le document. Aucune de ces réponses. (Réponse correcte!) Effectivement. L'expression //p donne une liste d'éléments. La comparaison entre deux listes est vraie s'il existe au moins un élément dans la première liste égal à un élément dans la seconde liste. Cela est vrai si et seulement s'il y a au moins un élément p. Question 14 . Est-ce que « //p!='jean' » et « not(//p='jean') » ont la même signification? Choisissez la bonne réponse parmi les suivantes. Vrai (Réponse incorrecte!) Non. La première expression est vraie s'il y a un élément p dont le contenu est différent de 'jean', alors que la seconde est vraie seulement si tous les éléments sont différents de 'jean'. Faux (Réponse correcte!) Effectivement. Question 15 . Est-ce qu'il y a une différence entre ces deux expressions XPath: &#34;vendeur/prenom = 'Jean' and vendeur/nom = 'Coutu'&#34; et &#34;vendeur[prenom = 'Jean' and nom = 'Coutu']&#34;? Choisissez la bonne réponse parmi les suivantes. Non aucune. (Réponse incorrecte!) Non. Oui, mais pas toujours. (Réponse incorrecte!) Non. Ils sont toujours différents, mais si on les utilise dans une expression conditionnelle (xsl:if), ils peuvent être équivalents. Oui, ils sont toujours différents. (Réponse correcte!) Concernant la première requête: vendeur/prenom = Jean est une valeur booléenne (est-ce que Jean est présent dans vendeur/prenom?) tout comme vendeur/nom = Coutu. On combine les deux valeurs booléennes avec le et logique (and). Donc, la première est vraie si on trouve un élément vendeur contenant un élément prenom contenant le texte Jean et un élément nom contenant le nom Coutu, sinon elle est fausse. La seconde expression sélectionne les éléments correspondants à ce critère s'ils existent."><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Autoévaluation | Programmation orientée-données</title><link rel=icon href=/orientee_donnees/favicon.png><link rel=manifest href=/orientee_donnees/manifest.json><link rel=canonical href=https://lemire.github.io/orientee_donnees/docs/modules/c_module_xslt/xpath/autoevaluation_xpath/><link rel=stylesheet href=/orientee_donnees/book.min.d4b72d9c56b6bf5762b5ea3984648a657ca3f678e49cd0343332108645d83c5d.css integrity="sha256-1LctnFa2v1diteo5hGSKZXyj9njknNA0MzIQhkXYPF0=" crossorigin=anonymous><script defer src=/orientee_donnees/fuse.min.js></script><script defer src=/orientee_donnees/fr.search.min.c76331043c50baf17c50506b81f3ffdabf3e6901b1ba27360cb71bf32a68de5e.js integrity="sha256-x2MxBDxQuvF8UFBrgfP/2r8+aQGxuic2DLcb8ypo3l4=" crossorigin=anonymous></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script></head><body dir=ltr><a href=#contenu class=skip-link>Aller au contenu principal</a>
 <input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu aria-label="Navigation du cours"><div class=book-menu-content><nav aria-label="Menu du cours"><h2 class=book-brand><a class="flex align-center" href=/orientee_donnees/><img src=/orientee_donnees/favicon.png alt class=book-icon><span>Programmation orientée-données</span></a></h2><div class="book-search hidden" role=search><label for=book-search-input class=sr-only>Rechercher dans le cours</label>
 <input type=search id=book-search-input placeholder=Rechercher aria-label="Rechercher dans le cours" maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden" aria-hidden=true></div><div role=status aria-live=polite aria-label="Résultats de la recherche"><ul id=book-search-results></ul></div></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=/orientee_donnees/docs/modules/><img src=/orientee_donnees/icons/modules.svg class=book-icon alt>Modules</a><ul><li><input type=checkbox id=section-e0cc4658cb7e0b0785f48bc734a0d868 class=toggle aria-label="Déplier ou replier la section Module JSON">
