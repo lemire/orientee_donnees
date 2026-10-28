@@ -60,7 +60,7 @@ Créer une feuille XSLT qui transforme le XML en format JSON, avec une structure
 
 Vous devrez tester vos transformations avec un processeur XSLT (comme Saxon ou xsltproc) et fournir les résultats de sortie pour validation.
 
-**Ressources** : Consultez la documentation officielle de XSLT : https://www.w3.org/TR/xslt-30/
+**Ressources** : Consultez la documentation officielle de XSLT : <https://www.w3.org/TR/xslt-30/>
 
 **Livrables** : Feuilles XSLT (.xslt), fichier XML d'exemple, résultats des transformations, et un README en Markdown expliquant les transformations et comment les exécuter.
 
@@ -88,8 +88,8 @@ Utilisez le même document XML des étudiants que dans la Question 1 pour pratiq
    - Expliquez le fonctionnement de chaque expression XPath
 
 **Ressources** :
-- Spécification XPath : https://www.w3.org/TR/xpath-31/
-- Tutoriel XPath : https://www.w3schools.com/xml/xpath_intro.asp
+- Spécification XPath : <https://www.w3.org/TR/xpath-31/>
+- Tutoriel XPath : <https://www.w3schools.com/xml/xpath_intro.asp>
 
 **Livrables** : Liste des expressions XPath, résultats des requêtes, et explication du fonctionnement.
 
@@ -134,8 +134,8 @@ return
 ```
 
 **Ressources** :
-- Spécification XQuery : https://www.w3.org/TR/xquery-31/
-- Tutoriel XQuery : https://www.w3schools.com/xml/xquery_intro.asp
+- Spécification XQuery : <https://www.w3.org/TR/xquery-31/>
+- Tutoriel XQuery : <https://www.w3schools.com/xml/xquery_intro.asp>
 
 **Livrables** : Requêtes XQuery (.xq), résultats des analyses, et documentation des fonctionnalités utilisées.
 

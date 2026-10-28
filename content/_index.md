@@ -5,6 +5,7 @@ title: "Accueil"
 # Mot de bienvenue
 
 {{< youtube id="2CLNPNkpWE8" title="Mot de bienvenue au cours" >}}
+{{< transcription id="2CLNPNkpWE8" >}}
 
 
 

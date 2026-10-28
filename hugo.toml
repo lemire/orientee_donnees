@@ -22,6 +22,9 @@ BookLogo = "favicon.png"
     [markup.goldmark.renderer]
       unsafe = true
     [markup.goldmark.extensions]
+      # Pas de liens automatiques sur les URL nues : les URI d'exemple
+      # (espaces de noms, domaines fictifs) devenaient cliquables.
+      linkify = false
       [markup.goldmark.extensions.passthrough]
         enable = true
         [markup.goldmark.extensions.passthrough.delimiters]

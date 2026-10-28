@@ -1,0 +1,14 @@
+{{/* Transcription d'une vidéo, repliée sous un bouton « Transcription ».
+     Usage : {{< transcription id="ID_YOUTUBE" >}}
+     Le texte (Markdown) se trouve dans assets/transcriptions/ID_YOUTUBE.md. */}}
+{{- $id := .Get "id" -}}
+{{- with resources.Get (printf "transcriptions/%s.md" $id) -}}
+<details class="transcription">
+  <summary>Transcription</summary>
+  <div class="transcription-texte">
+{{ $.Page.RenderString (dict "display" "block") .Content }}
+  </div>
+</details>
+{{- else -}}
+{{- errorf "Transcription introuvable : assets/transcriptions/%s.md (%s)" $id $.Position -}}
+{{- end -}}

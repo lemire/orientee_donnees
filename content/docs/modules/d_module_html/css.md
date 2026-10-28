@@ -116,7 +116,7 @@ Par défaut, les éléments s'affichent en ligne, un à la suite de l'autre. On 
 - « `display: inline` » : l'élément s'affiche à la suite du précédent comme s'il s'agissait d'un caractère.
 - « `display: block` » : l'élément s'affiche dans un bloc distinct, comme un nouveau paragraphe, par exemple.
 - « `display: list-item` » : l'élément s'affiche comme un élément d'une liste.
-- « `display: flex` » ou « `display: inline-flex` » : les éléments contenus s'affichent selon un modèle flexible (voir https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+- « `display: flex` » ou « `display: inline-flex` » : les éléments contenus s'affichent selon un modèle flexible (voir <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>).
 
 Voici un exemple :
 

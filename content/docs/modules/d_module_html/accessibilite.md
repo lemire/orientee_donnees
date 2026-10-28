@@ -841,6 +841,6 @@ Voici les défauts que l'on rencontre le plus souvent, et leur correction.
 - [Comment répondre aux critères de succès des WCAG](https://www.w3.org/WAI/WCAG22/quickref/) — référence rapide, filtrable par niveau
 - [Initiative pour l'accessibilité du Web (WAI)](https://www.w3.org/WAI/) — tutoriels et ressources d'introduction
 - [Pratiques de création ARIA](https://www.w3.org/WAI/ARIA/apg/) — modèles de composants riches
-- [Standard sur l'accessibilité des sites Web (SGQRI 008)](https://www.quebec.ca/gouvernement/ministere/cybersecurite-numerique/publications/standards-accessibilite-web) — le cadre québécois
+- [Standard sur l'accessibilité des sites Web (SGQRI 008)](https://www.quebec.ca/gouvernement/ministeres-organismes/cybersecurite-numerique/publications/standard-accessibilite-sites-web) — le cadre québécois
 - [Loi canadienne sur l'accessibilité](https://laws-lois.justice.gc.ca/fra/lois/a-0.6/) — texte de loi
 - [Vérificateur de contraste de WebAIM](https://webaim.org/resources/contrastchecker/)

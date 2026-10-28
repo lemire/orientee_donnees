@@ -322,6 +322,7 @@ Testez vos connaissances avec ces questions. Cliquez sur chaque question pour vo
 ## Vidéo suggérée
 
 {{< youtube id="v3Ho7QVaTXM" title="Vidéo suggérée sur les bases de JavaScript" >}}
+{{< transcription id="v3Ho7QVaTXM" >}}
 
 ## JSON et JavaScript
 
@@ -594,6 +595,7 @@ try {
 ## Vidéo suggérée
 
 {{< youtube id="o6ULZoMrFGg" title="Vidéo suggérée sur JSON et JavaScript" >}}
+{{< transcription id="o6ULZoMrFGg" >}}
 
 ## Activités suggérées
 

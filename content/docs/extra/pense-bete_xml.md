@@ -100,8 +100,8 @@ Les entités permettent de définir des raccourcis pour du texte ou des caractè
 
 Permettent d'éviter les conflits de noms dans les documents XML.
 
-- **xmlns:prefix="URI"** : Déclaration d'un espace de noms.
-- **<prefix:element>** : Utilisation d'un élément dans un espace de noms.
+- **`xmlns:prefix="URI"`** : Déclaration d'un espace de noms.
+- **`<prefix:element>`** : Utilisation d'un élément dans un espace de noms.
 
 ### Règles de bien-formé (Well-formed)
 

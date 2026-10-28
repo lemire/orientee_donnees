@@ -74,7 +74,7 @@ Votre application devra impérativement implémenter les fonctionnalités suivan
 
 Votre code devra être organisé selon les bonnes pratiques Java, utiliser Maven pour la gestion des dépendances Gson, inclure une documentation complète sous forme de commentaires, et gérer les erreurs potentielles de manière appropriée. 
 
-**Ressources** : Consultez la documentation officielle de Gson pour la sérialisation et désérialisation JSON : https://github.com/google/gson/blob/main/UserGuide.md
+**Ressources** : Consultez la documentation officielle de Gson pour la sérialisation et désérialisation JSON : <https://github.com/google/gson/blob/main/UserGuide.md>
 
 **Livrables** : Code source Java, fichier pom.xml, fichier GeoJSON d'exemple, et un README en Markdown expliquant comment exécuter le projet.
 
@@ -151,7 +151,7 @@ Vos scripts jq devront impérativement implémenter les fonctionnalités suivant
 
 Enfin, vous intégrerez des mécanismes de validation pour vérifier que les fichiers d'entrée sont des objets JSON valides avec une structure de produits.
 
-**Ressources** : Consultez la documentation officielle de jq pour les opérations de traitement JSON : https://jqlang.org/manual/
+**Ressources** : Consultez la documentation officielle de jq pour les opérations de traitement JSON : <https://jqlang.org/manual/>
 
 **Livrables** : Scripts jq (.jq), fichier JSON d'exemple, et un fichier README en Markdown avec des exemples d'exécution et d'explication des scripts.
 

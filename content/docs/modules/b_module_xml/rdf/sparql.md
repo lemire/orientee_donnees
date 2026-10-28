@@ -9,7 +9,7 @@ SPARQL (acronyme récursif de SPARQL Protocol and RDF Query Language) est le lan
 
 Il permet de récupérer et de manipuler des données stockées dans des triplestores ou dans n’importe quel graphe RDF, que ce soit sur le web (Linked Data), dans une base locale ou via un endpoint SPARQL public comme DBpedia, Wikidata ou data.gouv.fr.
 
-SPARQL ressemble beaucoup à SQL, mais au lieu de tables et colonnes, on travaille avec des triplets de la forme **sujet – prédicat – objet** (ex. : <http://example.org/Paris> rdf:type dbo:City).
+SPARQL ressemble beaucoup à SQL, mais au lieu de tables et colonnes, on travaille avec des triplets de la forme **sujet – prédicat – objet** (ex. : `<http://example.org/Paris> rdf:type dbo:City`).
 
 Il existe quatre formes principales de requêtes SPARQL :
 - SELECT : retourne un tableau de résultats (le plus courant)
@@ -148,7 +148,7 @@ Ce dernier exemple montre les 10 pays ayant le plus de villes recensées dans Wi
    - Toutes les capitales européennes (P31/Q6465 ou instance de capitale + située dans un pays d’Europe)
    - Leur population (P1082)
    - Le nom du pays dont elles sont la capitale  
-   Le graphe résultant devra utiliser les prédicats schema:population et schema:country (http://schema.org/).
+   Le graphe résultant devra utiliser les prédicats schema:population et schema:country (`http://schema.org/`).
 
 
 <details>

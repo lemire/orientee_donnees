@@ -28,17 +28,17 @@ Atom est un peu plus verbeux que RSS, mais plus propre et plus extensible.
 Prenez le temps de consulter les sources suivantes.
 
 1. **Le Devoir** – format RSS 2.0  
-   https://www.ledevoir.com/flux-rss 
+   <https://www.ledevoir.com/flux-rss> 
 
 2. **Ici Radio-Canada Infos** – format Atom 1.0  
-   https://ici.radio-canada.ca/rss/4159  
+   <https://ici.radio-canada.ca/rss/4159>  
 
 3. **La Presse** – format RSS 2.0  
-   https://www.lapresse.ca/rss.php  
-   (flux généraux et par section, par exemple : https://www.lapresse.ca/actualites/rss.xml)
+   <https://www.lapresse.ca/actualites/rss>  
+   (un flux par section, par exemple : <https://www.lapresse.ca/sports/rss>)
 
 4. **Journal de Montréal** (groupe Quebecor) – format RSS 2.0  
-   https://www.journaldemontreal.com/rss  
+   <https://www.journaldemontreal.com/rss>  
 
 
 

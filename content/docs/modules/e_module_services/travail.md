@@ -112,8 +112,8 @@ Vous devez compléter la logique métier dans chaque endpoint en utilisant Gson 
 Vous devez utiliser la bibliothèque Gson pour la manipulation JSON.
 
 **Ressources** :
-- Guide REST API : https://restfulapi.net/
-- Java HttpServer : https://docs.oracle.com/javase/8/docs/jre/api/net/httpserver/spec/com/sun/net/httpserver/HttpServer.html
+- Guide REST API : <https://restfulapi.net/>
+- Java HttpServer : <https://docs.oracle.com/javase/8/docs/jre/api/net/httpserver/spec/com/sun/net/httpserver/HttpServer.html>
 
 **Livrables** : Code Java complet du serveur REST, et documentation des endpoints.
 
@@ -148,8 +148,8 @@ numbers:
 Pour chaque problème, expliquez l'erreur et fournissez la version corrigée du fichier YAML (un fichier valide).
 
 **Ressources** :
-- Spécification YAML : https://yaml.org/spec/1.2.2/
-- Validateur en ligne : https://www.yamllint.com/
+- Spécification YAML : <https://yaml.org/spec/1.2.2/>
+- Validateur en ligne : <https://www.yamllint.com/>
 
 **Livrables** : Le fichier YAML corrigé et un document expliquant chacune des erreurs identifiées.
 

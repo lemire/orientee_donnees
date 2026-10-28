@@ -384,7 +384,7 @@ weight: 20
  <g class="graph" id="svg1-graph0" transform="scale(1)">
   <!-- 0 -->
   <g class="node" id="svg1-node1">
-   <a xlink:actuate="onRequest" xlink:href="http%3A//www.uquebec.ca/rdfexemples.html" xlink:show="replace" xlink:title="rdfexemples.html" xlink:type="simple">
+   <a xlink:actuate="onRequest" xlink:show="replace" xlink:title="rdfexemples.html" xlink:type="simple">
     <ellipse cx="67" cy="239" rx="62" ry="18" style="fill:none;stroke:black;">
     </ellipse>
     <text text-anchor="middle" x="67" y="244">
@@ -861,7 +861,7 @@ weight: 20
   ../module5/cc.pdf
   <!-- 0 -->
   <g class="node" id="svg2-node1">
-   <a xlink:actuate="onRequest" xlink:href="http%3A//teluq.ca/rdfexemples.html" xlink:show="replace" xlink:title="rdfexemples.html\n{Work}" xlink:type="simple">
+   <a xlink:actuate="onRequest" xlink:show="replace" xlink:title="rdfexemples.html\n{Work}" xlink:type="simple">
     <ellipse cx="71" cy="50" rx="64" ry="28" style="fill:none;stroke:black;">
     </ellipse>
     <text text-anchor="middle" x="71" y="47">
@@ -1294,7 +1294,7 @@ weight: 20
   <!-- 0 -->
   ../module5/foaf.pdf
   <g class="node" id="svg3-node1">
-   <a xlink:actuate="onRequest" xlink:href="http%3A//4suite.org/rdf/anonymous/61841b36-5a83-4833-9526-85153a4c3704" xlink:show="replace" xlink:title="Anonymous\nPerson" xlink:type="simple">
+   <a xlink:actuate="onRequest" xlink:show="replace" xlink:title="Anonymous\nPerson" xlink:type="simple">
     <ellipse cx="56" cy="131" rx="50" ry="28" style="fill:none;stroke:black;">
     </ellipse>
     <text text-anchor="middle" x="56" y="128">

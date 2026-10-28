@@ -17,7 +17,7 @@ Il y a plusieurs méthodes. Voici les deux plus simples pour un débutant.
 
 ### Méthode 1 – La plus simple : télécharger l’exécutable officiel
 
-1. Ouvrez votre navigateur et allez ici : https://github.com/jqlang/jq/releases
+1. Ouvrez votre navigateur et allez ici : <https://github.com/jqlang/jq/releases>
 2. Descendez à la dernière version.
 3. Sous “Assets”, cliquez sur le fichier `jq-win64.exe`. Il est possible que vous deviez chercher un peu, le fichier est bel et bien présent.
 4. Le fichier se télécharge (environ 3-4 Mo).
@@ -104,7 +104,7 @@ C’est fini ! Vous avez jq sur votre Mac.
 
 Vous pouvez télécharger la version pré-compilée directement :
 
-1. Allez sur cette page : https://github.com/jqlang/jq/releases
+1. Allez sur cette page : <https://github.com/jqlang/jq/releases>
 2. Descendez jusqu’à la dernière version (en haut).
 3. Sous “Assets”, cliquez sur le fichier qui s’appelle `jq-macos-arm64` (si vous avez un Mac M1/M2/M3/...) ou `jq-macos-amd64` (si vous avez un Mac Intel plus ancien).
 4. Le fichier se télécharge (il fait ~3 Mo).
@@ -194,6 +194,7 @@ Créez un fichier `bibliotheque.json` :
 ## Vidéo suggérée
 
 {{< youtube id="x18F2wIsxgU" title="Vidéo suggérée sur l’outil jq" >}}
+{{< transcription id="x18F2wIsxgU" >}}
 
 ### Exercices
 

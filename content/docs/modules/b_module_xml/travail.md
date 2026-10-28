@@ -117,13 +117,13 @@ Votre application devra impérativement implémenter les fonctionnalités suivan
 3. Charger les données depuis le fichier XML généré et les reconvertir en objets Java.
 4. Générer un rapport JSON final avec les statistiques complètes de l'inventaire.
 
-**Ressources** : Consultez la documentation officielle de Jackson : https://github.com/FasterXML/jackson
+**Ressources** : Consultez la documentation officielle de Jackson : <https://github.com/FasterXML/jackson>
 
 **Livrables** : Code source Java avec Maven, fichiers JSON et XML d'exemple, résultats des conversions, et un README en Markdown détaillant l'architecture et l'utilisation de l'application.
 
 ## Question 3 : Exécuteur SPARQL avec Apache Jena
 
-Dans cette troisième question, vous utiliserez l'exécuteur SPARQL du projet JavaRDF disponible sur GitHub (https://github.com/lemire/javardf). 
+Dans cette troisième question, vous utiliserez l'exécuteur SPARQL du projet JavaRDF disponible sur GitHub (<https://github.com/lemire/javardf>). 
 Voici un exemple de données RDF/XML que vous utiliserez (plus riche que l'exemple du projet de base) :
 
 ```xml

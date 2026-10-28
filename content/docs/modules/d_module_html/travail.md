@@ -110,8 +110,8 @@ Vous devez créer un CSS qui améliore la présentation des expressions MathML a
    - `font-variant-numeric: tabular-nums;` pour un alignement uniforme
 
 **Ressources** :
-- Spécification MathML : https://www.w3.org/TR/MathML3/
-- Guide MathML MDN : https://developer.mozilla.org/fr/docs/Web/MathML
+- Spécification MathML : <https://www.w3.org/TR/MathML3/>
+- Guide MathML MDN : <https://developer.mozilla.org/fr/docs/Web/MathML>
 
 **Livrables** : Page HTML complète avec MathML et CSS, et documentation des choix de mise en forme.
 
@@ -212,8 +212,8 @@ Vous devez créer un CSS qui améliore la présentation du graphique SVG avec le
 
 
 **Ressources** :
-- Spécification SVG : https://www.w3.org/TR/SVG2/
-- Guide SVG MDN : https://developer.mozilla.org/fr/docs/Web/SVG
+- Spécification SVG : <https://www.w3.org/TR/SVG2/>
+- Guide SVG MDN : <https://developer.mozilla.org/fr/docs/Web/SVG>
 
 **Livrables** : Page HTML complète avec SVG et CSS, et documentation des choix de mise en forme.
 

@@ -1089,8 +1089,8 @@ qui ne respectent pas les normes les plus élémentaires. Réécrire le HTML en 
 peut sembler une tâche très ardue. Heureusement, il existe des outils gratuits
 pour corriger du HTML malformé et générer automatiquement un XHTML valable, comme
 par exemple HTMLTidy (
-  <a href="http://tidy.sourceforge.net/">
-   http://tidy.sourceforge.net/
+  <a href="https://www.html-tidy.org/">
+   https://www.html-tidy.org/
   </a>
   ).
 Le W3C rend aussi disponible un outil de vérification en ligne des sites web pour
