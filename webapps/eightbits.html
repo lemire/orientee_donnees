@@ -44,7 +44,6 @@
       for (let i = 0; i < 8; i++) {
         const button = document.createElement('button');
         button.textContent = '0';
-        button.setAttribute('aria-label', `Bit ${7 - i}`);
         button.style.cssText = `
           width: 40px; height: 40px; font-size: 18px; font-family: monospace;
           background-color: #f0f0f0; border: 1px solid #999; border-radius: 4px;
@@ -66,6 +65,8 @@
         let binary = '';
         for (let i = 0; i < 8; i++) {
           buttons[7 - i].textContent = bits[i];
+          // Le nom accessible commence par le texte visible (WCAG 2.5.3)
+          buttons[7 - i].setAttribute('aria-label', `${bits[i]}, bit ${i}`);
           buttons[7 - i].style.backgroundColor = bits[i] ? '#2e7d32' : '#f0f0f0';
           binary = bits[i] + binary; // Construit la chaîne binaire de gauche à droite
         }
