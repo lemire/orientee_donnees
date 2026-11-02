@@ -292,9 +292,8 @@ La classe `.sr-only` correcte sort le texte du flux visuel sans le retirer de l'
 }
 ```
 
-{{< hint warning >}}
-N'appliquez jamais `aria-hidden="true"` à un élément qui contient un lien, un bouton ou un champ. Vous obtiendriez un contrôle focalisable mais invisible pour le lecteur d'écran : la personne y arrive avec `Tab` et n'entend rien.
-{{< /hint >}}
+> [!WARNING]
+> N'appliquez jamais `aria-hidden="true"` à un élément qui contient un lien, un bouton ou un champ. Vous obtiendriez un contrôle focalisable mais invisible pour le lecteur d'écran : la personne y arrive avec `Tab` et n'entend rien.
 
 ### Décoratif ou informatif
 

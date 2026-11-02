@@ -2,21 +2,20 @@
    Habillage « académique moderne » (accent indigo)
    Surcouche par-dessus le thème hugo-book — aucune modification
    du thème. Ce fichier est importé en dernier ; il a donc le
-   dernier mot sur les couleurs et la mise en forme.
+   dernier mot sur les couleurs et la mise en forme
+   (voir assets/styles/index.yaml du thème).
    ============================================================ */
-
 /* --- Palette : on redéfinit les variables CSS du thème --------- */
 :root {
-  --color-link: #3a4cb8;          /* indigo : liens, menu actif */
-  --color-link-hover: #2c3a8f;    /* indigo plus foncé au survol */
-  --color-visited-link: #6b4bbd;  /* violet discret : liens visités */
-
-  --gray-100: #f4f5fa;            /* fond des blocs de code */
-  --gray-200: #e7e9f5;            /* code en ligne, bordures, lignes de tableau */
-
-  --heading-color: #1f2433;       /* ardoise foncée : titres */
+  --color-link: #3a4cb8; /* indigo : liens, menu actif */
+  --color-link-hover: #2c3a8f; /* indigo plus foncé au survol */
+  --color-visited-link: #6b4bbd; /* violet discret : liens visités */
+  --gray-100: #f4f5fa; /* fond des blocs de code */
+  --gray-200: #e7e9f5; /* code en ligne, bordures, lignes de tableau */
+  --heading-color: #1f2433; /* ardoise foncée : titres */
   --accent: #3a4cb8;
-  --accent-soft: #eef0fb;         /* fond très clair indigo (encadrés) */
+  --accent-soft: #eef0fb; /* fond très clair indigo (encadrés) */
+  --border-radius: 6px; /* coins légèrement plus arrondis */
 }
 
 /* --- Lisibilité du texte -------------------------------------- */
@@ -34,61 +33,67 @@ p {
 }
 
 /* --- Titres --------------------------------------------------- */
+.markdown h1, .markdown h2, .markdown h3, .markdown h4 {
+  color: var(--heading-color);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.markdown h1 {
+  line-height: 1.15;
+}
 .markdown {
-  h1, h2, h3, h4 {
-    color: var(--heading-color);
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-
-  h1 { line-height: 1.15; }
-
   /* h2 : fine ligne d'accent sous le titre */
-  h2 {
-    padding-bottom: 0.3rem;
-    border-bottom: 2px solid var(--gray-200);
-  }
-
-  h3 { color: #2b3142; }
+}
+.markdown h2 {
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--gray-200);
+}
+.markdown h3 {
+  color: #2b3142;
 }
 
 /* --- Liens ---------------------------------------------------- */
 .markdown a {
   color: var(--color-link);
-  &:hover { color: var(--color-link-hover); }
+}
+.markdown a:hover {
+  color: var(--color-link-hover);
 }
 
 /* --- Code ----------------------------------------------------- */
 .markdown {
   /* code en ligne : teinte indigo discrète */
-  code {
-    background: var(--accent-soft);
-    color: #34408f;
-    border: 1px solid #dfe2f4;
-    padding: 0.1em 0.35em;
-    font-size: 0.85em;
-  }
-
+}
+.markdown code {
+  background: var(--accent-soft);
+  color: #34408f;
+  border: 1px solid #dfe2f4;
+  padding: 0.1em 0.35em;
+  font-size: 0.85em;
+}
+.markdown {
   /* blocs de code : fond clair, bordure douce, plus d'air */
-  pre {
-    padding: 1rem 1.1rem;
-    border: 1px solid var(--gray-200);
-    line-height: 1.55;
-
-    code {
-      background: none;
-      border: none;
-      color: inherit;
-      padding: 0;
-      font-size: 0.9em;
-    }
-  }
-
+}
+.markdown pre {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--gray-200);
+  line-height: 1.55;
+}
+.markdown pre code {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  font-size: 0.9em;
+}
+.markdown {
   /* code coloré avec numéros de ligne */
-  .highlight {
-    border: 1px solid var(--gray-200);
-    pre { border: none; }
-  }
+}
+.markdown .highlight {
+  border: 1px solid var(--gray-200);
+}
+.markdown .highlight pre {
+  border: none;
 }
 
 /* --- Citations / encadrés ------------------------------------- */
@@ -100,48 +105,47 @@ p {
 }
 
 /* --- Tableaux ------------------------------------------------- */
-.markdown table {
-  tr th {
-    background: var(--accent-soft);
-    color: var(--heading-color);
-    font-weight: 700;
-    text-align: start;
-  }
+.markdown table tr th {
+  background: var(--accent-soft);
+  color: var(--heading-color);
+  font-weight: 700;
+  text-align: start;
 }
 
 /* --- Menu latéral : état actif et survol ---------------------- */
-.book-menu {
-  .book-menu-content { padding-top: 1.25rem; }
-
-  a {
-    border-radius: 5px;
-    padding: 0.15rem 0.4rem;
-    margin-inline-start: -0.4rem;
-    transition: background 0.12s ease, color 0.12s ease;
-
-    &:hover {
-      background: var(--accent-soft);
-      text-decoration: none;
-    }
-  }
-
-  a.active {
-    color: var(--color-link);
-    font-weight: 700;
-    background: var(--accent-soft);
-  }
+.book-menu .book-menu-content {
+  padding-top: 1.25rem;
+}
+.book-menu a {
+  border-radius: 5px;
+  padding: 0.15rem 0.4rem;
+  margin-inline-start: -0.4rem;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+.book-menu a:hover {
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+.book-menu a.active {
+  color: var(--color-link);
+  font-weight: 700;
+  background: var(--accent-soft);
 }
 
 /* --- Titre / logo de l'en-tête du menu ------------------------ */
 .book-brand {
   font-weight: 700;
-  a { color: var(--heading-color); }
+}
+.book-brand a {
+  color: var(--heading-color);
 }
 
 /* --- Table des matières (colonne de droite) ------------------- */
-.book-toc {
-  nav > ul > li > a { font-weight: 600; }
-  a:hover { color: var(--color-link-hover); }
+.book-toc nav > ul > li > a {
+  font-weight: 600;
+}
+.book-toc a:hover {
+  color: var(--color-link-hover);
 }
 
 /* --- MathJax : ne pas styliser comme du code ------------------ */
@@ -157,12 +161,10 @@ code.has-jax {
 /* ============================================================
    Accessibilité (WCAG 2.1 AA)
    ============================================================ */
-
 /* --- Le site n'a qu'une palette claire : ne pas annoncer
-       « dark » (le thème compile uniquement theme-light). ----- */
+       « dark » (data-theme="light" par défaut). ----- */
 :root {
   color-scheme: light;
-
   /* Pouce d'ascenseur : --gray-500 d'origine (#adb5bd) n'offrait
      que 2,07:1 sur blanc. */
   --gray-500: #8b9299;
@@ -178,10 +180,9 @@ code.has-jax {
   text-decoration: underline;
   text-underline-offset: 0.15em;
   text-decoration-thickness: 0.06em;
-
-  &:hover {
-    text-decoration-thickness: 0.12em;
-  }
+}
+.markdown a:not(.anchor):not(.book-icon):hover {
+  text-decoration-thickness: 0.12em;
 }
 
 /* --- 2.4.1 Contourner des blocs ---------------------------------
@@ -198,14 +199,13 @@ code.has-jax {
   border-radius: 0 0 6px 0;
   font-weight: 700;
   text-decoration: underline;
-
-  &:focus {
-    inset-inline-start: 0;
-  }
+}
+.skip-link:focus {
+  inset-inline-start: 0;
 }
 
 /* Cible du lien d'évitement : pas de contour permanent. */
-.book-article:focus {
+.book-page:focus {
   outline: none;
 }
 
@@ -240,13 +240,12 @@ summary:focus-visible,
   outline-offset: 2px;
 }
 
-/* --- Titre des pages de section (voir layouts/_default/list.html) */
+/* --- Titre des pages de section (voir layouts/list.html) */
 .book-section-index {
   margin-top: 1.5rem;
-
-  li {
-    margin-bottom: 0.35rem;
-  }
+}
+.book-section-index li {
+  margin-bottom: 0.35rem;
 }
 
 /* --- Zone réservée aux annonces destinées aux lecteurs d'écran - */
@@ -268,128 +267,113 @@ summary:focus-visible,
    dans un bloc <style> par instance, préfixé par l'identifiant
    unique du shortcode.
    ============================================================ */
-
 .java-runner {
   margin: 1.5rem 0;
-
-  .export-form {
-    margin-bottom: 0;
-  }
-
-  .export-file-grid {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .export-file-block {
-    flex: 1 1 350px;
-    max-width: 100%;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 12px;
-    margin-bottom: 8px;
-  }
-
-  .export-file-name {
-    display: block;
-    font-weight: 700;
-    margin-bottom: 4px;
-    color: var(--heading-color);
-  }
-
-  textarea {
-    width: 100%;
-    min-height: 120px;
-    font-family: monospace;
-    border-radius: 4px;
-    border: 1px solid #767676; /* 4,54:1 sur #f9f9f9 — WCAG 1.4.11 */
-  }
-
+}
+.java-runner .export-form {
+  margin-bottom: 0;
+}
+.java-runner .export-file-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.java-runner .export-file-block {
+  flex: 1 1 350px;
+  max-width: 100%;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+.java-runner .export-file-name {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--heading-color);
+}
+.java-runner textarea {
+  width: 100%;
+  min-height: 120px;
+  font-family: monospace;
+  border-radius: 4px;
+  border: 1px solid #767676; /* 4,54:1 sur #f9f9f9 — WCAG 1.4.11 */
+}
+.java-runner {
   /* #1976d2 sur blanc : 4,60:1. #15599c : 6,26:1, confortable pour
      un texte de bouton et pour la bordure au focus. */
-  .export-btn {
-    background: #15599c;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top: 8px;
-    min-height: 44px;
-
-    &:hover {
-      background: #0f4478;
-    }
-
-    &[disabled] {
-      background: #5c6a78;
-      cursor: progress;
-    }
-  }
-
-  .export-result {
-    margin-top: 16px;
-
-    &:empty {
-      display: none;
-    }
-  }
-
-  .export-output {
-    padding: 12px;
-    border-radius: 6px;
-    white-space: pre-wrap;
-    font-family: monospace;
-    margin: 0;
-  }
-
-  .export-output-succes {
-    color: #14290f;
-    background: #e0ffe0;
-  }
-
-  .export-output-erreur {
-    color: #8a0000; /* 7,05:1 sur #ffe0e0 */
-    background: #ffe0e0;
-  }
-
-  .export-output-brut {
-    color: #eee;
-    background: #222;
-  }
-
+}
+.java-runner .export-btn {
+  background: #15599c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 8px;
+  min-height: 44px;
+}
+.java-runner .export-btn:hover {
+  background: #0f4478;
+}
+.java-runner .export-btn[disabled] {
+  background: #5c6a78;
+  cursor: progress;
+}
+.java-runner .export-result {
+  margin-top: 16px;
+}
+.java-runner .export-result:empty {
+  display: none;
+}
+.java-runner .export-output {
+  padding: 12px;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  font-family: monospace;
+  margin: 0;
+}
+.java-runner .export-output-succes {
+  color: #14290f;
+  background: #e0ffe0;
+}
+.java-runner .export-output-erreur {
+  color: #8a0000; /* 7,05:1 sur #ffe0e0 */
+  background: #ffe0e0;
+}
+.java-runner .export-output-brut {
+  color: #eee;
+  background: #222;
+}
+.java-runner {
   /* Liste des erreurs de compilation : remplace les infobulles au
      survol, qui étaient inatteignables au clavier (WCAG 1.4.13). */
-  .java-error-list {
-    margin: 12px 0 0;
-    padding: 0;
-    list-style: none;
-
-    li {
-      margin-bottom: 4px;
-    }
-  }
-
-  .java-error-jump {
-    display: block;
-    width: 100%;
-    text-align: start;
-    font-family: monospace;
-    font-size: 0.9em;
-    color: #8a0000;
-    background: #fff0f0;
-    border: 1px solid #c00;
-    border-radius: 4px;
-    padding: 8px 10px;
-    cursor: pointer;
-
-    &:hover {
-      background: #ffe0e0;
-    }
-  }
+}
+.java-runner .java-error-list {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.java-runner .java-error-list li {
+  margin-bottom: 4px;
+}
+.java-runner .java-error-jump {
+  display: block;
+  width: 100%;
+  text-align: start;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #8a0000;
+  background: #fff0f0;
+  border: 1px solid #c00;
+  border-radius: 4px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.java-runner .java-error-jump:hover {
+  background: #ffe0e0;
 }
 
 /* Ligne fautive surlignée dans l'éditeur. Le trait pointillé sous la
@@ -410,24 +394,37 @@ summary:focus-visible,
    pas seulement ceux du shortcode d'exécution Java. */
 /* La feuille CodeMirror du CDN est chargée après celle-ci : il faut
    une spécificité supérieure à la sienne (.cm-s-xxx .cm-yyy). */
-.markdown .CodeMirror {
-  .CodeMirror-linenumber {
-    color: #4f5866; /* 6,37:1 sur le fond de gouttière ci-dessous */
-  }
-
-  .CodeMirror-gutters {
-    background: #f0f1f5;
-    border-right: 1px solid #d7d9e3;
-  }
-
-  .cm-meta       { color: #9a3412; }  /* @SerializedName, @JsonProperty */
-  .cm-comment    { color: #545c66; }
-  .cm-keyword    { color: #7b1fa2; }
-  .cm-string     { color: #0b6b3a; }
-  .cm-number     { color: #8a4b00; }
-  .cm-variable-3 { color: #0b5394; }
-  .cm-atom       { color: #8a4b00; }
-  .cm-def        { color: #0b5394; }
+.markdown .CodeMirror .CodeMirror-linenumber {
+  color: #4f5866; /* 6,37:1 sur le fond de gouttière ci-dessous */
+}
+.markdown .CodeMirror .CodeMirror-gutters {
+  background: #f0f1f5;
+  border-right: 1px solid #d7d9e3;
+}
+.markdown .CodeMirror .cm-meta {
+  color: #9a3412;
+}
+.markdown .CodeMirror { /* @SerializedName, @JsonProperty */ }
+.markdown .CodeMirror .cm-comment {
+  color: #545c66;
+}
+.markdown .CodeMirror .cm-keyword {
+  color: #7b1fa2;
+}
+.markdown .CodeMirror .cm-string {
+  color: #0b6b3a;
+}
+.markdown .CodeMirror .cm-number {
+  color: #8a4b00;
+}
+.markdown .CodeMirror .cm-variable-3 {
+  color: #0b5394;
+}
+.markdown .CodeMirror .cm-atom {
+  color: #8a4b00;
+}
+.markdown .CodeMirror .cm-def {
+  color: #0b5394;
 }
 
 /* --- Tableaux larges : défilement atteignable au clavier -------- */
@@ -443,33 +440,37 @@ summary:focus-visible,
   margin: 0.75rem 0 1.5rem;
   border: none;
   padding: 0;
-
-  > summary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4em;
-    margin: 0;
-    padding: 0.4em 0.9em;
-    line-height: 1.4;
-    border: 1px solid var(--accent);
-    border-radius: 6px;
-    background: var(--accent-soft);
-    color: var(--color-link-hover);
-    font-weight: 600;
-    cursor: pointer;
-    list-style: none;
-
-    &::-webkit-details-marker { display: none; }
-    &::before { content: "▸"; }
-    &:hover { background: var(--gray-200); }
-  }
-
-  &[open] > summary::before { content: "▾"; }
-
-  .transcription-texte {
-    margin-top: 0.75rem;
-    padding: 0.75rem 1rem;
-    border-left: 3px solid var(--accent);
-    background: var(--gray-100);
-  }
+}
+.markdown details.transcription > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  margin: 0;
+  padding: 0.4em 0.9em;
+  line-height: 1.4;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--color-link-hover);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.markdown details.transcription > summary::-webkit-details-marker {
+  display: none;
+}
+.markdown details.transcription > summary::before {
+  content: "▸";
+}
+.markdown details.transcription > summary:hover {
+  background: var(--gray-200);
+}
+.markdown details.transcription[open] > summary::before {
+  content: "▾";
+}
+.markdown details.transcription .transcription-texte {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--gray-100);
 }

@@ -1,8 +1,42 @@
-{{/* Surcouche : Hugo produit un <nav id="TableOfContents"> sans nom.
-     Il n'y en a qu'un de visible à la fois (la copie mobile est masquée
-     au-delà du seuil), mais nommer les deux évite un repère anonyme. */}}
+{{/* Surcouche : Hugo produit un <nav id="TableOfContents"> sans nom ;
+     on le nomme pour éviter un repère anonyme. Le reste est identique
+     au gabarit du thème. */}}
 {{ partial "docs/inject/toc-before" . }}
 {{ .TableOfContents
     | replaceRE `<nav id="TableOfContents">` `<nav id="TableOfContents" aria-label="Sommaire de cette page">`
     | safeHTML }}
 {{ partial "docs/inject/toc-after" . }}
+
+{{ with (.Scratch.Get "bookBacklinks") | uniq }}
+<div class="flex book-toc-section">
+<svg class="book-icon">{{ partial "docs/icon" "incoming" }}</svg>
+<nav class="flex">
+  <ul>
+  {{ range . }}
+    <li>
+    <a href="{{ .RelPermalink }}">
+      {{- partial "docs/title" .Page -}}
+    </a>
+    </li>
+  {{ end }}
+  </ul>
+</nav>
+</div>
+{{ end }}
+
+{{ with (.Scratch.Get "bookLinks") | uniq }}
+<div class="flex book-toc-section">
+<svg class="book-icon">{{ partial "docs/icon" "outgoing" }}</svg>
+<nav class="flex">
+  <ul>
+  {{ range . }}
+  <li>
+    <a href="{{ .RelPermalink }}">
+      {{- partial "docs/title" .Page -}}
+    </a>
+  </li>
+  {{ end }}
+  </ul>
+</nav>
+</div>
+{{ end }}

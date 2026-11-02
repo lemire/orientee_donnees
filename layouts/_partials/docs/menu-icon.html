@@ -1,0 +1,4 @@
+{{/* Surcouche : les icônes du menu (paramètre `bookIcon` en front matter)
+     sont des fichiers SVG de static/icons/, et non des symboles du jeu
+     d'icônes du thème. Purement décoratives : alt vide. */}}
+<img src="{{ printf "icons/%s.svg" . | relURL }}" class="book-icon" alt="" />

@@ -1,0 +1,29 @@
+# Libellés du thème hugo-book en français (complète i18n/fr.yaml du thème,
+# qui ne traduit que quelques clés). Ils nomment notamment les repères
+# ARIA du menu et du sommaire.
+- id: Search
+  translation: Rechercher dans le cours
+
+- id: Menu
+  translation: Navigation du cours
+
+- id: Table of Contents
+  translation: Sommaire de la page
+
+- id: Link
+  translation: Lien
+
+- id: Breadcrumbs
+  translation: Fil d’Ariane
+
+- id: Thumbnail
+  translation: Vignette
+
+- id: Logo
+  translation: Logo
+
+- id: Categories
+  translation: Catégories
+
+- id: Tags
+  translation: Étiquettes

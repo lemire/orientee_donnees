@@ -1,9 +1,9 @@
 baseURL = 'https://lemire.github.io/orientee_donnees/'
-languageCode = 'fr'
+locale = 'fr'
 defaultContentLanguage = 'fr'
 
 title = "Programmation orientée-données"
-theme = 'hugo-book-teluq'
+theme = 'hugo-book'
 
 # --- Paramètres du thème hugo-book ---
 [params]

@@ -1,15 +1,18 @@
-{{/* Surcouche : textes alternatifs en français (le site est en lang="fr")
-     et bascules annoncées comme telles. */}}
-<div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Afficher ou masquer le menu" />
+{{/* Surcouche : les bascules du menu et du sommaire sont annoncées comme
+     telles (le thème les nomme « Menu » / « Table of Contents », ce qui
+     ferait doublon avec le nom des repères). */}}
+<div class="flex align-center justify-between gap">
+  <input type="checkbox" class="toggle" id="menu-control" />
+  <label for="menu-control" aria-label="Afficher ou masquer le menu">
+    <svg class="book-icon" aria-hidden="true">{{ partial "docs/icon" "menu" }}</svg>
   </label>
 
-  <h3>{{ partial "docs/title" . }}</h3>
+  {{ partial "docs/brand" . }}
 
-  <label for="toc-control">
-    {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-    <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Afficher ou masquer le sommaire" />
-    {{ end }}
+  {{ if .Param "BookToC" | default true }}
+  <input type="checkbox" class="toggle" id="toc-control" />
+  <label for="toc-control" aria-label="Afficher ou masquer le sommaire">
+    <svg class="book-icon" aria-hidden="true">{{ partial "docs/icon" "toc" }}</svg>
   </label>
+  {{ else }}<div></div>{{ end }}
 </div>

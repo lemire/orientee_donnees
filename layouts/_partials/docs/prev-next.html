@@ -1,33 +1,29 @@
-{{/* Surcouche : les flèches portaient alt="Previous"/"Next" (anglais) en
-     doublon du titre affiché juste à côté, plus un title= redondant.
-     Les icônes deviennent décoratives et le sens du lien est porté par un
-     texte lisible par lecteur d'écran. */}}
-{{ $bookSection := default "docs" .Site.Params.BookSection  }}
-{{ if eq $bookSection "*" }}
-  {{ $bookSection = "/" }}{{/* Backward compatibility */}}
-{{ end }}
+{{/* Surcouche : le sens des liens (précédente / suivante) n'était porté
+     que par des flèches décoratives ; on l'ajoute en texte pour les
+     lecteurs d'écran et on nomme le bloc de navigation. */}}
+{{- with (partialCached "docs/menu-section" .Site) -}}
+  {{- $pages := partialCached "docs/menu-section-pages" . -}}
+  {{- $prev := $pages.Next $ -}}
+  {{- $next := $pages.Prev $ -}}
 
-{{ with .Site.GetPage $bookSection }}
-  {{ $pages := partialCached "docs/prev-next-cache" .Pages }}
-  {{ $homepage := .Site.Home }}
-  {{ $allPages := slice $homepage | append $pages }}
-  {{ $prev := $allPages.Next $ }}
-  {{ $next := $allPages.Prev $ }}
-
-  {{- if or $prev $next }}
-  <nav class="flex flex-wrap {{ if and $prev $next }}justify-between{{ else if $next }}justify-end{{ else }}justify-start{{ end }}" aria-label="Page précédente et page suivante">
+  {{- if or $prev $next -}}
+  <nav class="flex flex-wrap justify-between" aria-label="Page précédente et page suivante">
+    <span>
     {{ with $prev }}
-      <a href="{{ .RelPermalink }}" class="flex align-center float-left book-icon">
-        <img src="{{ "svg/backward.svg" | relURL }}" alt="" />
+      <a href="{{ .RelPermalink }}" class="flex align-center">
+        <svg class="book-icon" aria-hidden="true">{{ partial "docs/icon" "backward" }}</svg>
         <span><span class="sr-only">Page précédente&nbsp;: </span>{{ partial "docs/title" . }}</span>
       </a>
     {{ end }}
+    </span>
+    <span>
     {{ with $next }}
-      <a href="{{ .RelPermalink }}" class="flex align-center float-right book-icon">
+      <a href="{{ .RelPermalink }}" class="flex align-center">
         <span><span class="sr-only">Page suivante&nbsp;: </span>{{ partial "docs/title" . }}</span>
-        <img src="{{ "svg/forward.svg" | relURL }}" alt="" />
+        <svg class="book-icon" aria-hidden="true">{{ partial "docs/icon" "forward" }}</svg>
       </a>
     {{ end }}
+    </span>
   </nav>
-  {{ end -}}
-{{ end }}
+  {{- end -}}
+{{- end -}}
