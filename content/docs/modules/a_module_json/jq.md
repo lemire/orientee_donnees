@@ -143,7 +143,7 @@ Les requêtes peuvent être chaînées avec le pipe `|`, permettant de composer 
 
 jq prend en charge différents types d'expressions : sélecteurs pour naviguer dans la structure, filtres pour sélectionner des éléments, et constructeurs pour créer de nouveaux objets. Les tableaux sont gérés avec `[]` pour itérer, et les conditions utilisent `select()` pour filtrer. Par exemple, `select(.prix < 20)` garde seulement les objets où le prix est inférieur à 20.
 
-Les transformations permettent de reconstruire les données. Utilisez `{clé: valeur}` pour créer des objets, ou `[expression]` pour des tableaux. Les variables temporaires avec `as $var` facilitent les références. Par exemple, `.titre as $t | .auteur | "\($t) par \(.auteur)"` combine titre et auteur dans une chaîne.
+Les transformations permettent de reconstruire les données. Utilisez `{clé: valeur}` pour créer des objets, ou `[expression]` pour des tableaux. Les variables temporaires avec `as $var` facilitent les références. Par exemple, `.titre as $t | .auteur | "\($t) par \(.)"` combine titre et auteur dans une chaîne.
 
 Enfin, jq offre des fonctions intégrées pour les agrégations comme `length`, `min`, `max`, et des opérations sur les chaînes et nombres. Pour les données manquantes, l'opérateur `//` fournit des valeurs par défaut. Ces fonctionnalités font de jq un outil essentiel pour le traitement de données JSON en ligne de commande.
 
@@ -225,7 +225,7 @@ jq '.bibliotheque.livres[].genres[]' bibliotheque.json
 #### Exercice 4 – Filtrage avec select() (comme [condition] en XPath)
 ```bash
 # Livres publiés après 1950
-jq '.bibliotheque.livres[] | select(.année > 1950)' bibliotheque.json
+jq '.bibliotheque.livres[] | select(."année" > 1950)' bibliotheque.json
 
 # Livres empruntables
 jq '.bibliotheque.livres[] | select(.empruntable == true)' bibliotheque.json
@@ -237,7 +237,7 @@ jq '.bibliotheque.livres[] | select(.genres[] | contains("fiction"))' bibliotheq
 #### Exercice 5 – Projection / construction de nouveaux objets (comme XSLT)
 ```bash
 # Liste simplifiée : titre + année
-jq '.bibliotheque.livres[] | {titre, année}' bibliotheque.json
+jq '.bibliotheque.livres[] | {titre, "année"}' bibliotheque.json
 
 # Créer un catalogue avec id comme clé
 jq '.bibliotheque.livres | map({key: .id, value: {titre, auteur}}) | from_entries' bibliotheque.json
@@ -249,7 +249,7 @@ jq '.bibliotheque.livres | map({key: .id, value: {titre, auteur}}) | from_entrie
 jq '[.bibliotheque.livres[]] | length' bibliotheque.json
 
 # Année la plus ancienne
-jq '[.bibliotheque.livres[].année] | min' bibliotheque.json
+jq '[.bibliotheque.livres[]."année"] | min' bibliotheque.json
 
 # Regrouper par première lettre du titre
 jq '.bibliotheque.livres | group_by(.titre[0:1]) | map({lettre: .[0].titre[0:1], count: length})' bibliotheque.json
@@ -276,7 +276,7 @@ Solution en une ligne :
 jq '[ .bibliotheque.livres[] | {id, titre, auteur, disponible: .empruntable}]' bibliotheque.json > catalogue-court.json
 ```
 
-#### Exercice 9 – Bonus : jq comme greppel pour logs JSON
+#### Exercice 9 – Bonus : jq comme grep pour logs JSON
 ```bash
 # Supposons un log d’accès au format JSON par ligne JSON
 cat access.log | jq 'select(.status == 404) | .ip + " " + .url'
@@ -299,16 +299,15 @@ echo "| Titre | Auteur | Année | Genres | Empruntable | Nb emprunts |" >> rappo
 echo "|-------|--------|------|--------|-------------|-------------|" >> rapport.md
 
 jq -r '.bibliotheque.livres[] 
-  | .emprunts // [] 
   | {
       titre: .titre,
       auteur,
-      année,
+      "année",
       genres: (.genres | join(", ")),
       empruntable,
-      nb: length
+      nb: ((.emprunts // []) | length)
     }
-  | "| \(titre) | \(auteur) | \(année) | \(genres) | \(empruntable) | \(nb) |"' bibliotheque.json >> rapport.md
+  | "| \(.titre) | \(.auteur) | \(."année") | \(.genres) | \(.empruntable) | \(.nb) |"' bibliotheque.json >> rapport.md
 
 echo -e "\nTotal livres : $(jq '[.bibliotheque.livres[]] | length' bibliotheque.json)" >> rapport.md
 echo "Empruntables : $(jq '[.bibliotheque.livres[] | select(.empruntable)] | length' bibliotheque.json)" >> rapport.md

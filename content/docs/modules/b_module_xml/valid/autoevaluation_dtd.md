@@ -24,7 +24,7 @@ weight: 40
 <p>
  Rappel : L'environnement web du cours transforme parfois automatiquement
     les adresses web (URL) en lien. L'environnement du cours met aussi en forme
-    certains guillemets et apostrophes. Il n'est possible pour le professeur de
+    certains guillemets et apostrophes. Il n'est pas possible pour le professeur de
     corriger ce comportement (il n'est pas possible de changer l'environnement)
     et vous devez l'ignorer lors de votre lecture. Par ailleurs, si vous
     copiez-collez du contenu des exercices et des exemples, vous devez adapter
@@ -395,7 +395,7 @@ weight: 40
      (Réponse correcte!) Effectivement. La
                     déclaration de type de document nous indique que
                     l'élément-racine est « cheque »
-                    et que l'élement « cheque » doit contenir
+                    et que l'élément « cheque » doit contenir
                     exactement un élément « recipiendaire »
                     et un élément « emetteur », chacun contenant
                     exactement un élément « nom ».
@@ -672,7 +672,7 @@ weight: 40
   </b>
   .
   <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
-   &lt;!ELEMENT compagnie (president, ingénieur*, comptable+)&gt;
+   &lt;!ELEMENT compagnie (president, ingenieur*, comptable+)&gt;
             &lt;!ELEMENT president (prenom,nom)&gt;
             &lt;!ELEMENT ingenieur (prenom,nom)&gt;
             &lt;!ELEMENT comptable (prenom,nom)&gt;
@@ -917,8 +917,8 @@ weight: 40
     </p>
     <span class="feedback" id="idp140520596546288true" style="display: none;font-weight:bold;">
      <br/>
-     Oui. L'élément « telephone est
-                    facultatif ».
+     Oui. L'élément « telephone » est
+                    facultatif.
     </span>
    </li>
    <li>
@@ -964,7 +964,7 @@ weight: 40
   </b>
   .
   <p style="border:solid 1px black;white-space:pre; font-size:0.85em">
-   &lt;!ELEMENT compagnie (president, ingénieur*, comptable+)&gt;
+   &lt;!ELEMENT compagnie (president, ingenieur*, comptable+)&gt;
             &lt;!ELEMENT president (prenom,nom)&gt;
             &lt;!ELEMENT ingenieur (prenom,nom)&gt;
             &lt;!ELEMENT comptable (prenom,nom)&gt;
@@ -984,7 +984,7 @@ weight: 40
      &lt;?xml version="1.0" encoding="ISO-8859-1" standalone="no"
                     ?&gt;
                     &lt;!DOCTYPE compagnie [
-                    &lt;!ELEMENT compagnie (president, ingénieur*,
+                    &lt;!ELEMENT compagnie (president, ingenieur*,
                     comptable+)&gt;
                     &lt;!ELEMENT president (nom,prenom)&gt;
                     &lt;!ELEMENT ingenieur (nom,prenom)&gt;
@@ -1007,7 +1007,7 @@ weight: 40
      <br/>
      Dans ce cas précis, la DTD à l'adresse
                     « http://www.mondomain.com/madtd.dtd » n'est
-                    jamais utilisé.
+                    jamais utilisée.
                     Il ne faut donc considérer que la DTD interne. Selon cette
                     DTD, le document XML est valable.
     </span>
@@ -1169,14 +1169,14 @@ weight: 40
      <br/>
      Oui. La DTD interne stipule que
                     l'élément « jeu » contient un élément
-                    « nom » qui peut ou non être suivi de plusieurs
+                    « nom » suivi d'un ou de plusieurs
                     éléments « age » ou
                     éléments « niveau ».
     </span>
    </li>
    <li>
-    <input name="idp140520596562240" type="checkbox" value="idp140520596572416true" aria-labelledby="rep-idp140520596572416true-0"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596572416true-0">
+    <input name="idp140520596562240" type="checkbox" value="idp140520596572416false" aria-labelledby="rep-idp140520596572416false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140520596572416false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"
                     standalone="yes" ?&gt;
                     &lt;!DOCTYPE jeu [
@@ -1194,13 +1194,12 @@ weight: 40
                     et je peux continuer
                     &lt;/jeu&gt;
     </p>
-    <span class="feedback" id="idp140520596572416true" style="display: none;font-weight:bold;">
+    <span class="feedback" id="idp140520596572416false" style="display: none;font-weight:bold;">
      <br/>
-     Oui. La DTD interne stipule que
-                    l'élément « jeu » contient un élément
-                    « nom », suivi de contenu mixte avec texte et
-                    choix de balises
-                    entre « age » et « niveau ».
+     Non. La DTD interne n'est pas permise : « #PCDATA » ne peut
+                    pas apparaître dans une séquence comme
+                    (nom,(#PCDATA|age|niveau)*). Le contenu mixte doit
+                    prendre la forme (#PCDATA|nom|age|niveau)*.
     </span>
    </li>
    <li>
@@ -1226,7 +1225,9 @@ weight: 40
     </p>
     <span class="feedback" id="idp140520596574416false" style="display: none;font-weight:bold;">
      <br/>
-     Non. L'élément « jeu » doit
+     Non. La DTD interne n'est pas permise, car
+                    « #PCDATA » ne peut pas apparaître dans une
+                    séquence. De plus, l'élément « jeu » devrait
                     commencer par une balise « nom ».
     </span>
    </li>
@@ -2069,7 +2070,7 @@ weight: 40
     </p>
     <span class="feedback" id="idp140520596649936true" style="display: none;font-weight:bold;">
      <br/>
-     Effectivement. Tous les valeurs
+     Effectivement. Toutes les valeurs
                     d'attribut de type « IDREF » correspondent
                     à une valeur d'attribut de type « ID ».
     </span>
@@ -2138,7 +2139,7 @@ weight: 40
     <span class="feedback" id="idp140520596659168true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!)
-                    Non. Le XML n'est pas une technologie de validation.
+                    Effectivement. Le XML n'est pas une technologie de validation.
     </span>
    </li>
    <li>
@@ -2315,7 +2316,7 @@ weight: 40
    <li>
     <label><input name="idp140520596679808" onclick="javascript:var Click_MenuId='idp140520596682288false';var formid='idp140520596679808'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140520596682288false"/>
     Le
-                XML est sensible à la casse des cararactères</label>
+                XML est sensible à la casse des caractères</label>
     <span class="feedback" id="idp140520596682288false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Oui, mais ce

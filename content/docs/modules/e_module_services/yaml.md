@@ -67,7 +67,7 @@ hobbies:               # mapping
  <strong>
   l’indentation avec des espaces
  </strong>
- pour indiquer la hiérarchie. Le nombre d’espaces par niveau est libre, mais doit être constant dans tout le fichier (la convention la plus courante est 2 espaces).
+ pour indiquer la hiérarchie. Le nombre d’espaces par niveau est libre, mais doit être le même pour tous les éléments d’un même bloc (la convention la plus courante est 2 espaces).
 </p>
 <h3>
  3. Les objets
@@ -120,8 +120,8 @@ resume: &gt;
  6. Les booléens et null
 </h3>
 <pre>
-actif: true          # ou True, TRUE, on, On, yes…
-inactif: false       # ou off, no…
+actif: true          # ou True, TRUE (et on, On, yes… en YAML 1.1)
+inactif: false       # ou False, FALSE (et off, no… en YAML 1.1)
 site_web: null       # ou ~ ou simplement rien → site_web:
 </pre>
 <h3>
@@ -309,7 +309,7 @@ hobbies:
 
 ## Activité YAML avec Jackson
 
-La bibliothèque Jackson prend en charge YAML grâce au module `jackson-dataformat-yaml`. Exécuter le code suivant qui  utilise un `ObjectMapper` configuré avec une `YAMLFactory` pour analyser une chaîne YAML et la convertir en une structure de données Java facilement navigable.
+La bibliothèque Jackson prend en charge YAML grâce au module `jackson-dataformat-yaml`. Exécutez le code suivant qui utilise un `ObjectMapper` configuré avec une `YAMLFactory` pour analyser une chaîne YAML et la convertir en une structure de données Java facilement navigable.
 
 {{<inlineJava path="LireYamlEnLigne.java">}}
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -369,7 +369,7 @@ public class LireYamlEnLigne {
 
             // Lecture complète sous forme de chaîne formatée (pour débogage)
             System.out.println("\nContenu complet du YAML interprété en JSON :");
-            System.out.println(mapper.writeValueAsString(racine));
+            System.out.println(new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(racine));
 
         } catch (IOException e) {
             System.err.println("Erreur lors de la lecture du YAML : " + e.getMessage());

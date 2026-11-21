@@ -9,12 +9,7 @@ weight: 180
  Vous pouvez maintenant expérimenter avec un document XSLT un peu plus
     sophistiqué. Vous trouverez sur cette page un document DocBook et sa
     transformation. Nous vous invitons à modifier la transformation et le
-    document XML d'origine afin de vous assurez que vous maîtrisez bien le XSLT.
-</p>
-<p>
- Instructions : il suffit de saisir un fichier XML source et une
-    transformation
-    XSLT valide et d'appuyer sur le bouton.
+    document XML d'origine afin de vous assurer que vous maîtrisez bien le XSLT.
 </p>
 <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.5;">
  <strong>
@@ -149,7 +144,7 @@ weight: 180
    Résultat :
   </p>
   <div aria-live="polite" id="sol" style="min-height: 100px; background-color: #f9fafb; border: 1px solid #d1d5db; border-radius: 6px; padding: 12px;  color: #1f2937; overflow: auto;">
-   émotion
+   Cliquez sur « Transformer ».
   </div>
   <p aria-live="assertive" id="error" style="color: #dc2626;  margin-top: 0.5rem; display: none;">
    Erreur : Veuillez vérifier votre XML ou XSLT.
@@ -165,20 +160,8 @@ weight: 180
  </div>
 </div>
 <script>
- const defaultXML = `<?xml version="1.0" ?> 
-<monmessage>
-    <de>Jean</de> 
-    <a>Pierre</a> 
-    <titre type="émotion">Ouch!</titre> 
-    <corps>Maman!</corps> 
-</monmessage>`;
-    const defaultXSLT = `<?xml version="1.0" ?> 
-<xsl:stylesheet version="1.0" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="/">
-                <xsl:value-of select="//titre/@type" />
-    </xsl:template>
-</xsl:stylesheet>`;
+ const defaultXML = document.getElementById('xmlsource').value;
+    const defaultXSLT = document.getElementById('xstlsource').value;
     function applyXSLT() {
         const xmlSource = document.getElementById('xmlsource').value;
         const xsltSource = document.getElementById('xstlsource').value;

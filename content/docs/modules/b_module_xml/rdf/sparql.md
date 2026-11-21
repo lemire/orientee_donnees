@@ -43,7 +43,7 @@ LIMIT 10
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?capitale WHERE {
+SELECT ?capitale ?label WHERE {
   <http://dbpedia.org/resource/France> dbo:capital ?capitale .
   ?capitale rdfs:label ?label .
   FILTER(lang(?label) = "fr")
@@ -106,7 +106,7 @@ Cela génère un nouveau graphe contenant les amis des amis d’Alice.
 ## 5. Exemple avec FILTER, LANG et REGEX (recherche de labels en français contenant “église”)
 
 ```sparql
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?monument ?label WHERE {
   ?monument a <http://dbpedia.org/ontology/Monument> ;
@@ -128,7 +128,7 @@ SELECT ?pays ?paysLabel (COUNT(?ville) AS ?nbVilles) WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
 }
 GROUP BY ?pays ?paysLabel
-HAVING(?nbVilles > 100)
+HAVING(COUNT(?ville) > 100)
 ORDER BY DESC(?nbVilles)
 LIMIT 10
 ```
@@ -145,7 +145,7 @@ Ce dernier exemple montre les 10 pays ayant le plus de villes recensées dans Wi
 2. À l’aide d’une requête de type ASK, écrivez une requête qui vérifie simplement si Albert Einstein a gagné un prix Nobel (propriété Wikidata P166). La requête doit retourner true ou false.
 
 3. Écrivez une requête CONSTRUCT qui, à partir de Wikidata, génère un petit graphe contenant :
-   - Toutes les capitales européennes (P31/Q6465 ou instance de capitale + située dans un pays d’Europe)
+   - Toutes les capitales européennes (P31/Q5119 ou instance de capitale + située dans un pays d’Europe)
    - Leur population (P1082)
    - Le nom du pays dont elles sont la capitale  
    Le graphe résultant devra utiliser les prédicats schema:population et schema:country (`http://schema.org/`).
@@ -158,7 +158,7 @@ Ce dernier exemple montre les 10 pays ayant le plus de villes recensées dans Wi
 
 **Solution 1**
 ```sparql
-SELECT ?personne ?nom ?naissance WHERE {
+SELECT ?personne ?personneLabel ?naissance WHERE {
   ?personne wdt:P19 wd:Q90 .           # né à Paris
   ?personne wdt:P570 ?mort .           # date de décès
   ?personne wdt:P569 ?naissance .
@@ -311,7 +311,7 @@ private static final String DONNEES_RDF_XML = """
             """,
             "Nombre de livres par éditeur");
 
-        // 3. FIX: Livres publiés après 2009
+        // 3. Livres publiés après 2009
         executerRequete(modele,
             """
             PREFIX dc: <http://purl.org/dc/elements/1.1/>

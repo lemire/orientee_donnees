@@ -17,7 +17,7 @@ weight: 90
     tester votre compréhension.
 </p>
 <p>
- Bien sûr, si vous saisissez un document XML qui n’est pas valable, vous n’obtiendrez pas une décomposition, mais un
+ Bien sûr, si vous saisissez un document XML qui n’est pas bien formé, vous n’obtiendrez pas une décomposition, mais un
     message d’erreur.
 </p>
 <p>

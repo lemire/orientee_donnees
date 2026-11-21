@@ -162,7 +162,7 @@ weight: 20
   http://purl.org/dc/elements/1.1/language
  </dt>
  <dd>
-  Code ISO-639/ISO-3166 décrivant le travail. Si le travail est publié en
+  Code ISO-639/ISO-3166 décrivant la langue du travail. Si le travail est publié en
         français,
         on peut utiliser « fr-CA »; sinon, en anglais, ce serait
         « en-CA » (CA signifie Canada).
@@ -288,7 +288,7 @@ weight: 20
      http://teluq.ca/ rdfexemples.html
     </td>
     <td>
-     http://purl.org/ dc/elements/1.1/Language
+     http://purl.org/ dc/elements/1.1/language
     </td>
     <td>
      "fr-CA"
@@ -364,7 +364,7 @@ weight: 20
     <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">date</span><span style="color:#a65700; ">&gt;</span>2004-07-27<span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">date</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">title</span><span style="color:#a65700; ">&gt;</span>Introduction au RDF<span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">title</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">type</span><span style="color:#a65700; ">&gt;</span>text<span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">type</span><span style="color:#a65700; ">&gt;</span>
-    <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">Language</span><span style="color:#a65700; ">&gt;</span>fr-CA<span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">Language</span><span style="color:#a65700; ">&gt;</span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">language</span><span style="color:#a65700; ">&gt;</span>fr-CA<span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">language</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">subject</span><span style="color:#a65700; ">&gt;</span>RDF, Dublin Core, Creative Commons,
     FOAF, RSS/RDF<span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">subject</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">rights</span><span style="color:#a65700; ">&gt;</span>Copyright 2005 Daniel Lemire<span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">dc</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">rights</span><span style="color:#a65700; ">&gt;</span>
@@ -490,7 +490,7 @@ weight: 20
    <polygon points="351,235 361,239 351,242 351,235" style="fill:black;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="179" y="236">
-    Language
+    language
    </text>
   </g>
   <!-- 6 -->
@@ -603,7 +603,7 @@ weight: 20
     <span style="color:#274796; ">content</span> <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">Introduction au RDF</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">meta</span> <span style="color:#274796; ">name</span> <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">DC.type</span><span style="color:#0000e6; ">"</span>
     <span style="color:#274796; ">content</span> <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">text</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
-    <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">meta</span> <span style="color:#274796; ">name</span> <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">DC.Language</span><span style="color:#0000e6; ">"</span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">meta</span> <span style="color:#274796; ">name</span> <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">DC.language</span><span style="color:#0000e6; ">"</span>
     <span style="color:#274796; ">content</span> <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">fr-CA</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">meta</span> <span style="color:#274796; ">name</span> <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">DC.subject</span><span style="color:#0000e6; ">"</span>
     <span style="color:#274796; ">content</span> <span style="color:#808030; ">=</span> <span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">RDF,
@@ -642,7 +642,7 @@ weight: 20
     <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">format</span><span style="color:#a65700; ">&gt;</span>text/html<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">format</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">identifier</span>
     <span style="color:#274796; ">rdf:resource</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://teluq.ca/rdfexemples.html</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
-    <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">Language</span><span style="color:#a65700; ">&gt;</span>fr-CA<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">Language</span><span style="color:#a65700; ">&gt;</span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">language</span><span style="color:#a65700; ">&gt;</span>fr-CA<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">language</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">rdf</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">Description</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">rdf</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">RDF</span><span style="color:#a65700; ">&gt;</span>
 </pre>
@@ -1518,9 +1518,9 @@ weight: 20
     <span style="color:#696969; ">&lt;!--</span><span style="color:#696969; ">
         chaque nouvelle a un URI </span><span style="color:#696969; ">--&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">rdf</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">li</span>
-    <span style="color:#274796; ">resource</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://www.nouvelles.com/nouvelles1</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
+    <span style="color:#274796; ">rdf:resource</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://www.nouvelles.com/nouvelles1</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">rdf</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">li</span>
-    <span style="color:#274796; ">resource</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://www.nouvelles.com/nouvelles2</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
+    <span style="color:#274796; ">rdf:resource</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://www.nouvelles.com/nouvelles2</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
     <span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">rdf</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">Seq</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">items</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">channel</span><span style="color:#a65700; ">&gt;</span>
@@ -1552,9 +1552,9 @@ weight: 20
     <span style="color:#696969; ">&lt;!--</span><span style="color:#696969; ">
         chaque nouvelle a un URI </span><span style="color:#696969; ">--&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">rdf</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">li</span>
-    <span style="color:#274796; ">resource</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://www.nouvelles.com/nouvelles1</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
+    <span style="color:#274796; ">rdf:resource</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://www.nouvelles.com/nouvelles1</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#666616; ">rdf</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">li</span>
-    <span style="color:#274796; ">resource</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://www.nouvelles.com/nouvelles2</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
+    <span style="color:#274796; ">rdf:resource</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://www.nouvelles.com/nouvelles2</span><span style="color:#0000e6; ">"</span> <span style="color:#a65700; ">/&gt;</span>
     <span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">rdf</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">Seq</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">items</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">channel</span><span style="color:#a65700; ">&gt;</span>

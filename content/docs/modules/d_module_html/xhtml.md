@@ -208,7 +208,7 @@ un élément
    body
   </i>
   peut être vide, mais peut aussi posséder du 
-contenu XML mixte (texte et diverses balises XHTML). L'espace de nom ayant l'URI « http://www.w3.org/1999/xhtml » 
+contenu XML mixte (texte et diverses balises XHTML). L'espace de noms ayant l'URI « http://www.w3.org/1999/xhtml » 
 est utilisé.
  </p>
  <p>
@@ -419,7 +419,7 @@ contiennent des éléments « td » (éléments correspondant à une cellule).
  </p>
  <table border="0" class="tabblanc">
   <caption>Résultat obtenu avec le code XHTML ci-dessous (tableau sans bordure)</caption>
-  <!-- border='0' est un convention pour le traitement XSLT -->
+  <!-- border='0' est une convention pour le traitement XSLT -->
   <tbody>
    <tr>
     <td>
@@ -542,8 +542,8 @@ Ainsi, pour obtenir ce résultat :
 qu'une même cellule occupe deux colonnes
 (&lt;td colspan="2"&gt;) ou deux rangées (&lt;td rowspan="2"&gt;). 
 Aussi, souvent, on utilise l'élément « th » au lieu de l'élément « td » pour désigner
-la première rangée d'un tableau lorsque celle-ci forme l'entête 
-descriptive du tableau. Il est aussi possible d'utiliser 
+la première rangée d'un tableau lorsque celle-ci forme l'en-tête 
+descriptif du tableau. Il est aussi possible d'utiliser 
 un élément « caption » au sein d'un tableau pour
 noter le titre du tableau :
  </p>
@@ -700,7 +700,7 @@ ce qui donne :
    page de l'UQAM
   </a>
   [lien vers http://www.uqam.ca/], il suffit d'utiliser 
-la syntaxe « &lt;a href="http://www.uqam.ca/"&gt;page de l'UQAM ».
+la syntaxe « &lt;a href="http://www.uqam.ca/"&gt;page de l'UQAM&lt;/a&gt; ».
  </p>
  <p>
   On peut également ajouter des marqueurs dans une page web en utilisant 
@@ -717,7 +717,7 @@ s'il existe, évidemment.
   Les abréviations
  </h2>
  <p>
-  On utilise parfois des abréviations dans une page web tel que « etc. » ou « no ». On peut indiquer au navigateur qu'il
+  On utilise parfois des abréviations dans une page web telles que « etc. » ou « no ». On peut indiquer au navigateur qu'il
 s'agit d'une abréviation avec un élément abbr comme ceci : « &lt;abbr&gt;no&lt;/abbr&gt; ». Il est parfois utile d'utiliser
 l'attribut « title » pour décrire l'abréviation en question
 comme dans ceci : « &lt;abbr title="numéro"&gt;no&lt;/abbr&gt; ». De la même façon, on peut noter les acronymes avec un élément « acronym » comme 
@@ -963,9 +963,9 @@ Les exemples de sortie à l'écran peuvent s'écrire dans un élément « samp�
  </p>
  <pre>J'ai <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">del</span><span style="color:#a65700; ">&gt;</span>marié<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">del</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ins</span><span style="color:#a65700; ">&gt;</span>épousé<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ins</span><span style="color:#a65700; ">&gt;</span> ta mère
 </pre>
+ <p>
  Le navigateur se
 chargera d'afficher les retraits et les ajouts de manière compréhensible.
- <p>
  </p>
  <h2>
   La langue
@@ -1078,7 +1078,7 @@ commentaire deux tirets (--) ni de terminer un commentaire par un tiret.
   Avec le XHTML, on peut contrôler en partie l'apparence du texte, en utilisant
 des italiques ou en plaçant des bordures dans nos tableaux. Ce contrôle est cependant limité : 
 on ne peut pas ajuster l'indentation des paragraphes et on ne peut que difficilement ajuster les marges de la page. 
-Nous verrons au module 3, dans la section sur le CSS, qu'il existe une façon élégante d'y arriver.
+Nous verrons, dans la section sur le CSS, qu'il existe une façon élégante d'y arriver.
  </p>
  <h2>
   Convertir du HTML malformé

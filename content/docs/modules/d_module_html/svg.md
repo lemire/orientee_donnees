@@ -475,11 +475,11 @@ weight: 50
  </p>
  <p>
   Les attributs principaux de <code>&lt;foreignObject&gt;</code> sont :
+ </p>
   <ul>
    <li><code>x</code> et <code>y</code> : position du coin supérieur gauche de la région.</li>
    <li><code>width</code> et <code>height</code> : dimensions de la région.</li>
   </ul>
- </p>
  <p>
   À l'intérieur de <code>&lt;foreignObject&gt;</code>, vous pouvez utiliser des éléments HTML comme <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;input&gt;</code>, etc. Notez que le contenu HTML doit être bien formé et que les styles CSS peuvent être appliqués normalement.
  </p>

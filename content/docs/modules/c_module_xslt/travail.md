@@ -115,7 +115,7 @@ Utilisez le document XML des étudiants pour créer des requêtes XQuery qui eff
    - Construire des rapports XML complexes
 
 4. **Requêtes avancées** :
-   - Utiliser FLWOR expressions pour des analyses complexes
+   - Utiliser des expressions FLWOR pour des analyses complexes
    - Implémenter des jointures et des agrégations
    - Gérer les données manquantes et les erreurs
 

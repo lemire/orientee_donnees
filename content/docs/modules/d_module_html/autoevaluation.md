@@ -149,8 +149,8 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
  &lt;title&gt;Un titre&lt;/title&gt;
  &lt;/head&gt;
  &lt;body&gt;
- &lt;img src="http://www.uqam.ca/img/logo/logo.jpg" 
- alt="logo de l'UQÀM" /&gt;
+ &lt;p&gt;&lt;img src="http://www.uqam.ca/img/logo/logo.jpg" 
+ alt="logo de l'UQÀM" /&gt;&lt;/p&gt;
  &lt;/body&gt;
  &lt;/html&gt;
       </p>
@@ -238,7 +238,7 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
      Les navigateurs ne prennent pas encore en charge XHTML.</label>
     <span class="feedback" id="idp140549854450608false" style="display: none;font-weight:bold;">
       <br/>
-      C'est faux. La plupart des navigateurs prennent bien en charge le XHTML, mais tous ne le prennent pas en charge 
+      C'est faux. La plupart des navigateurs prennent bien en charge le XHTML, mais tous ne prennent pas en charge 
   l'ensemble des normes XML.
      </span>
     </li>
@@ -286,7 +286,7 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
      On peut utiliser nos propres balises en XHTML.</label>
     <span class="feedback" id="idp140549854455872false" style="display: none;font-weight:bold;">
       <br/>
-      Pas si nous utilisons les DTD officielles. Si nous écrivons vos propres DTD, il est possible 
+      Pas si nous utilisons les DTD officielles. Si nous écrivons nos propres DTD, il est possible 
   que notre navigateur ne reconnaisse pas le contenu comme étant du XHTML.
      </span>
     </li>

@@ -70,6 +70,7 @@ public class Validateur {
             }
             public void error(SAXParseException ex) throws SAXException {
                 System.err.println("Erreur : " + ex.getMessage());
+                throw ex;
             }
             public void fatalError(SAXParseException ex) throws SAXException {
                 System.err.println("Erreur fatale : " + ex.getMessage());
@@ -89,7 +90,7 @@ public class Validateur {
 
 6. Faites « javac Validateur.java » pour compiler le petit programme qui pourra vous servir à vérifier la validité des documents XML. Vous ne devriez pas avoir de mal avec la compilation. Par exemple, vous pourriez voir à l’écran quelque chose comme « Note: Validateur.java uses or overrides a deprecated API. Note: Recompile with -Xlint:deprecation for details. ». Vous pouvez ignorer les avertissements vous incitant à utiliser l’option « -deprecation ».
 
-7. Tapez la ligne de commande « java Validateur mauvais.xml », puis faites un retour de chariot. Il est important de respecter la casse dans les lignes de commande. Si rien de significatif ne s’affiche, votre fichier est valable, sinon, une description des erreurs s’affichera (en anglais). Si la machine virtuelle quitte avec l’erreur « java.lang.NoClassDefFoundError » alors que vous êtes bien dans le bon répertoire, faites alors « java -cp . Validateur mauvais.xml ».
+7. Tapez la ligne de commande « java Validateur mauvais.xml », puis faites un retour de chariot. Il est important de respecter la casse dans les lignes de commande. Si le message « Le document est valide. » s’affiche, votre fichier est valable, sinon, une description des erreurs s’affichera (en anglais). Si la machine virtuelle quitte avec l’erreur « java.lang.NoClassDefFoundError » alors que vous êtes bien dans le bon répertoire, faites alors « java -cp . Validateur mauvais.xml ».
 
 8. Pour quitter, vous n’avez qu’à fermer la fenêtre de commande.
 

@@ -45,7 +45,7 @@ weight: 30
     Résultat de l'attribut type : &lt;xsl:value-of select="//titre/@type"/&gt;
     &lt;xsl:text&gt;
 &lt;/xsl:text&gt;
-    Nombre d'éléments enfants du document : &lt;xsl:value-of select="count(//*)"/&gt;
+    Nombre d'éléments du document : &lt;xsl:value-of select="count(//*)"/&gt;
   &lt;/xsl:template&gt;
 &lt;/xsl:stylesheet&gt;</textarea>
 </div>

@@ -101,7 +101,7 @@ Exemples célèbres : Gmail, Google Maps, Facebook (à l’époque), etc.
           console.error('Erreur lors du chargement:', error);
         }
       }
-      // La fonction chargeDocument déclarée async car elle utilise le mot-clé await à l'intérieur.
+      // La fonction chargeDocument est déclarée async car elle utilise le mot-clé await à l'intérieur.
       // Sans async, await ne pourrait pas être utilisé, et la fonction retournerait immédiatement
       // sans attendre la résolution des Promises. async transforme la fonction en une fonction
       // qui retourne une Promise, permettant ainsi l'utilisation d'await pour une exécution séquentielle apparente.
@@ -147,6 +147,17 @@ Sélectionnez un fichier XML RSS pour afficher ses titres.
           };
           reader.readAsText(file);
         }
+      }
+      // Affiche les éléments <title> dans une liste ordonnée
+      function afficheTitres(doc) {
+        var titres = doc.getElementsByTagName("title");
+        var ol = document.createElement("ol");
+        for (var i = 0; i < titres.length; i++) {
+          var li = document.createElement("li");
+          li.appendChild(document.createTextNode(titres[i].textContent));
+          ol.appendChild(li);
+        }
+        document.body.appendChild(ol);
       }
     </script>
   </head>
@@ -216,9 +227,9 @@ L'API `fetch()` est plus moderne et basée sur les promesses que `XMLHttpRequest
 ```javascript
 function afficheDonnees(donnees) {
     var div = document.createElement("div");
-    div.innerHTML = "<h2>" + donnees.titre + "</h2>" +
-                   "<p>Auteur: " + donnees.auteur + "</p>" +
-                   "<p>Description: " + donnees.description + "</p>";
+    div.innerHTML = "<h2>" + donnees.title + "</h2>" +
+                   "<p>Auteur: " + donnees.userId + "</p>" +
+                   "<p>Description: " + donnees.body + "</p>";
     document.body.appendChild(div);
 }
 ```

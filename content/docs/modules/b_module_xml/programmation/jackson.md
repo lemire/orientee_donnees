@@ -20,7 +20,7 @@ Jackson est une bibliothèque Java pour la manipulation du XML et du JSON, déve
 
 La sérialisation consiste à convertir un objet Java en une représentation textuelle, comme du JSON. Jackson utilise la méthode `writeValueAsString()` de l'ObjectMapper pour effectuer cette conversion. Inversement, la désérialisation transforme une chaîne JSON en objet Java via `readValue()`. 
 
-Jackson suit les conventions JavaBeans : il accède aux propriétés via les getters et setters. Les champs sans getter public sont ignorés lors de la sérialisation, et les valeurs null sont omises par défaut pour produire un JSON plus compact. Pour la désérialisation, un constructeur sans argument est nécessaire pour instancier l'objet avant de définir ses propriétés.
+Jackson suit les conventions JavaBeans : il accède aux propriétés via les getters et setters. Les champs privés sans getter public sont ignorés lors de la sérialisation; les valeurs null, elles, sont incluses par défaut. Pour la désérialisation, un constructeur sans argument est nécessaire pour instancier l'objet avant de définir ses propriétés.
 
 Dans cet exemple, nous créons une classe `Personne` avec deux propriétés simples. Le programme sérialise une instance en JSON, affiche le résultat, puis désérialise la chaîne pour recréer l'objet original. Notez que Jackson produit un JSON compact sans espaces inutiles.
 
@@ -66,7 +66,7 @@ public class ExempleBasique {
 
 Ce code affiche un JSON compact et reconstruit l'objet. La version XML est similaire, mais utilise XmlMapper au lieu d'ObjectMapper. XmlMapper produit une sortie XML bien formée avec des balises au lieu d'accolades JSON.
 
-L'exemple XML suivant démontre la même fonctionnalité, mais avec une sérialisation en XML. Notez que la structure de la classe Java reste identique - seule la classe de mapper change. Le XML produit inclut une déclaration XML et utilise le nom de la classe comme élément racine.
+L'exemple XML suivant démontre la même fonctionnalité, mais avec une sérialisation en XML. Notez que la structure de la classe Java reste identique - seule la classe de mapper change. Le XML produit utilise le nom de la classe comme élément racine; par défaut, il n'inclut pas de déclaration XML.
 
 {{<inlineJava path="ExempleXmlBasique.java">}}
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
@@ -111,7 +111,7 @@ public class ExempleXmlBasique {
 
 Par défaut, Jackson produit un JSON compact sans espaces. Pour améliorer la lisibilité, particulièrement lors du développement ou du débogage, vous pouvez activer l'indentation en utilisant `SerializationFeature.INDENT_OUTPUT`. Cela ajoute des espaces et des sauts de ligne pour structurer le JSON de manière hiérarchique.
 
-De plus, Jackson omet les valeurs null par défaut pour éviter de gonfler inutilement le JSON. Cependant, dans certains cas (comme les APIs qui attendent tous les champs), vous voudrez inclure explicitement les valeurs null. L'annotation `@JsonInclude(JsonInclude.Include.ALWAYS)` au niveau de la classe force l'inclusion de tous les champs, même s'ils sont null.
+De plus, Jackson inclut les valeurs null par défaut; on peut les omettre pour alléger le JSON avec `@JsonInclude(JsonInclude.Include.NON_NULL)`. Cependant, dans certains cas (comme les APIs qui attendent tous les champs), vous voudrez garantir l'inclusion des valeurs null. L'annotation `@JsonInclude(JsonInclude.Include.ALWAYS)` au niveau de la classe force l'inclusion de tous les champs, même s'ils sont null, quelle que soit la configuration globale du mapper.
 
 Dans cet exemple, la classe `Livre` utilise cette annotation et contient un champ `pages` qui peut être null. L'ObjectMapper est configuré avec l'indentation activée, produisant un JSON formaté et complet.
 
@@ -156,7 +156,7 @@ public class ExempleMiseEnForme {
 }
 {{</inlineJava>}}
 
-Cela produit un JSON indenté incluant les champs null grâce à l'annotation. Observez comment le champ "pages" apparaît avec la valeur null, et comment la structure est présentée avec une indentation claire facilitant la lecture.
+Cela produit un JSON indenté incluant les champs null, comme l'exige l'annotation. Observez comment le champ "pages" apparaît avec la valeur null, et comment la structure est présentée avec une indentation claire facilitant la lecture.
 
 ## Gestion des collections
 

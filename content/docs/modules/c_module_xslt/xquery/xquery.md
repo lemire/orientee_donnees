@@ -98,7 +98,7 @@ On peut attribuer un compteur aux nœuds :
     for $b at $pos in doc("http://universite.com/etu.xml")/liste/etudiant
     order by $b/nom descending
     return
-    <etudiant> $pos -
+    <etudiant>{$pos}-
     { $b/prenom }
     { $b/nom }
     </etudiant>

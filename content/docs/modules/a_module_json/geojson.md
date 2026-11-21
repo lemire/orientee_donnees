@@ -140,11 +140,11 @@ Essayez de remplacer le GeoJSON dans l'application par l'un des exemples suivant
     "type": "Polygon",
     "coordinates": [
       [
-        [2.28, 48.88],
-        [2.40, 48.88],
-        [2.40, 48.83],
         [2.28, 48.83],
-        [2.28, 48.88]
+        [2.40, 48.83],
+        [2.40, 48.88],
+        [2.28, 48.88],
+        [2.28, 48.83]
       ]
     ]
   },

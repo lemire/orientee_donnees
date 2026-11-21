@@ -45,7 +45,7 @@ weight: 10
     terme « verbe ». Par exemple, pour décrire « Jean »,
     nous dirons que « Jean est un garçon »
     et nous décomposerons ainsi cette affirmation :
-    (Jean)(est)(garçon)]]&gt;, ou l'afficherons dans un tableau :
+    (Jean)(est)(garçon), ou l'afficherons dans un tableau :
 </p>
 <div class="tableau style1">
  <table border="1" class="tabNormal">
@@ -191,14 +191,14 @@ weight: 10
     d'assurance sociale... Mais comme le concept de ressource
     est général, il faut aussi pouvoir distinguer les différentes significations
     que
-    peuvent prendre le mot « titre », et ainsi de suite.
+    peut prendre le mot « titre », et ainsi de suite.
     La langue française (ou anglaise) permet à un mot d'avoir plusieurs sens,
     alors que
     chaque URI représente un concept et un concept seulement.
 </p>
 <p>
- L'URI n'a pas en soit un sens particulier. C'est un nom. Ainsi
-    « http://google.com/2000/jacques/ » peut ne rien à voir avec l'an
+ L'URI n'a pas en soi un sens particulier. C'est un nom. Ainsi
+    « http://google.com/2000/jacques/ » peut n'avoir rien à voir avec l'an
     2000 ou une personne appelée Jacques... tout comme un homme appelé Pierre
     n'a pas à travailler sur des pierres ou qu'une personne appelée Meunier n'a
     pas à être meunier.
@@ -315,7 +315,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/2000/ 10/swap/pim/contact#fullName
@@ -361,7 +361,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/2000/ 10/swap/pim/contact#mailbox
@@ -395,7 +395,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/1999/ 02/22-rdf-syntax-ns#type
@@ -406,7 +406,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/2000/ 10/swap/pim/contact#fullName
@@ -417,7 +417,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/2000/ 10/swap/pim/contact#mailbox
@@ -428,7 +428,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/2000/ 10/swap/pim/contact#personalTitle
@@ -479,7 +479,7 @@ weight: 10
    <ellipse cx="217" cy="23" rx="106" ry="18" style="fill:none;stroke:black;">
    </ellipse>
    <text text-anchor="middle" x="217" y="28">
-    http://www.daniel-lemire.com/fr/
+    http://lemire.me/fr/
    </text>
   </g>
   <!-- Person -->
@@ -500,7 +500,7 @@ weight: 10
    <polygon points="72,98 61,99 69,92 72,98" style="fill:black;stroke:black;">
    </polygon>
    <text text-anchor="middle" x="158" y="72">
-    Type
+    type
    </text>
   </g>
   <!-- Daniel Lemire -->
@@ -1054,7 +1054,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/1999/ 02/22-rdf-syntax-ns#type
@@ -1065,7 +1065,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/2000/ 10/swap/pim/contact#fullName
@@ -1076,7 +1076,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/2000/ 10/swap/pim/contact#mailbox
@@ -1087,7 +1087,7 @@ weight: 10
    </tr>
    <tr>
     <td>
-     http://lemire.me/ en/
+     http://lemire.me/ fr/
     </td>
     <td>
      http://www.w3.org/2000/ 10/swap/pim/contact#personalTitle
@@ -1100,7 +1100,7 @@ weight: 10
  </table>
 </div>
 <p>
- Nous savons maintenant que nous pouvons représenter toutes ses informations
+ Nous savons maintenant que nous pouvons représenter toutes ces informations
     par le XML suivant :
 </p>
 <pre><span style="color:#004a43; ">&lt;?</span><span style="color:#800000; font-weight:bold; ">xml</span><span style="color:#004a43; "> </span><span style="color:#074726; ">version</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#7d0045; ">1.0</span><span style="color:#0000e6; ">"</span><span style="color:#004a43; ">
@@ -1128,7 +1128,7 @@ weight: 10
 <p>
  Dans les exemples précédents, nous supposions que l'URI (du verbe) contenait
     un symbole « # »,
-    ce qui nous permettait de la décomposer en deux parties (nom et préfixe).
+    ce qui nous permettait de le décomposer en deux parties (nom et préfixe).
     Mais quoi faire si l'URI
     prend plutôt la forme « http://www.ondelette.com/employeur »? Dans
     un tel cas,
@@ -1182,10 +1182,10 @@ weight: 10
  Des objets qui sont eux-mêmes des sujets
 </h2>
 <p>
- Supposons que nous voulons dire que la pièce de théatre Othello a comme
+ Supposons que nous voulions dire que la pièce de théâtre Othello a comme
     auteur William Shakespeare. En fait, nous voulons faire quatre
     affirmations :
-    « Othello est une pièce de théatre », « Shakespeare est une
+    « Othello est une pièce de théâtre », « Shakespeare est une
     personne »,
     « Shakespeare est l'auteur d'Othello » et « Shakespeare a
     pour nom "William Shakespeare" ».
@@ -1416,7 +1416,7 @@ weight: 10
     <span style="color:#a65700; ">&lt;/</span><span style="color:#666616; ">rdf</span><span style="color:#800080; ">:</span><span style="color:#5f5035; ">RDF</span><span style="color:#a65700; ">&gt;</span>
 </pre>
 <p>
- Ce nouveau document RDF est équivalent aux trois affirmations RDF du début,
+ Ce nouveau document RDF est équivalent aux quatre affirmations RDF du début,
     mais il est un peu plus court.
 </p>
 <p>
@@ -1538,9 +1538,9 @@ weight: 10
     exemple, nous pouvons
     vouloir affirmer que « les étudiants du cours 101 sont Jean
     Roberge, Alexandre Coma et Julie LeChat ».
-    Comment le faire? Supposons que l'URI du cours est
+    Comment le faire? Supposons que l'URI du cours soit
     « http://www.teluq.ca/101 » et que le verbe
-    correspondant à « être inscrit à un cours » est identifié par
+    correspondant à « être inscrit à un cours » soit identifié par
     l'URI « http://www.education.com#inscription ».
     Nous pouvons alors essayer ceci :
 </p>
@@ -1683,7 +1683,7 @@ weight: 10
 <pre><span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ul</span> <span style="color:#666616; ">xmlns</span><span style="color:#800080; ">:</span><span style="color:#074726; ">dc</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#666616; ">http</span><span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">//</span><span style="color:#5555dd; ">purl.org</span><span style="color:#40015a; ">/dc/elements/1.1/</span><span style="color:#0000e6; ">"</span>
     <span style="color:#274796; ">about</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">http://www.example.com/books/wikinomics</span><span style="color:#0000e6; ">"</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">li</span> <span style="color:#274796; ">property</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">dc:title</span><span style="color:#0000e6; ">"</span><span style="color:#a65700; ">&gt;</span>Wikinomics<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">li</span><span style="color:#a65700; ">&gt;</span>
-    <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">li</span> <span style="color:#274796; ">property</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">dc:author</span><span style="color:#0000e6; ">"</span><span style="color:#a65700; ">&gt;</span>Don Tapscott<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">li</span><span style="color:#a65700; ">&gt;</span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">li</span> <span style="color:#274796; ">property</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">dc:creator</span><span style="color:#0000e6; ">"</span><span style="color:#a65700; ">&gt;</span>Don Tapscott<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">li</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">li</span> <span style="color:#274796; ">property</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">dc:date</span><span style="color:#0000e6; ">"</span><span style="color:#a65700; ">&gt;</span>2006-10-01<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">li</span><span style="color:#a65700; ">&gt;</span>
     <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ul</span><span style="color:#a65700; ">&gt;</span>
 </pre>

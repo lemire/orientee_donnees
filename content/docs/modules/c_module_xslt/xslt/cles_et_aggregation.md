@@ -67,18 +67,18 @@ Vous obtiendrez alors le résultat suivant :
    </body></html>
 ```
 
-Pour calculer la somme qu'une seule fois pour chaque valeur de l'attribut
+Pour ne calculer la somme qu'une seule fois pour chaque valeur de l'attribut
    type,
    on pourrait ne faire le calcul que la première fois qu'on rencontre une
    valeur
    d'attribut donnée. L'expression XPath « //quantite[@type=x] »
    représente
    l'ensemble des éléments quantite ayant un attribut de valeur x.
-   L'expression « //quantite[@type=x][1] » nous donne le premier
+   L'expression « (//quantite[@type=x])[1] » nous donne le premier
    élément de ce type
    rencontré.
    On pourrait penser que l'expression XPath
-   « //quantite[@type=x][1]=current() » permet
+   « (//quantite[@type=x])[1]=current() » permet
    de déterminer si le nœud courant est le premier. Malheureusement,
    cette expression XPath vérifie plutôt si les deux éléments ont le même
    contenu.
@@ -223,12 +223,12 @@ avec l'élément xsl:key et sa
    `<xsl:key name="montableau" match="client" use="nom"/>` va créer un
    tableau associatif
    s'appelant montableau et qui associe à chaque valeur client/nom l'élément
-   nom correspondant.
+   client correspondant.
    La fonction key quant à elle prend deux paramètres incluant le nom du
    tableau et la valeur
    de la clef. À titre d'exemple, la transformation suivante permet de calculer
    la fréquence
-   de chaque client comme à la question précédente, mais en utilisant un
+   de chaque client comme à la section précédente, mais en utilisant un
    tableau associatif :
 
 ```xml

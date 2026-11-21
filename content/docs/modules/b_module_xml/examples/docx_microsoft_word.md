@@ -24,7 +24,7 @@ Les fichiers .docx ont la structure suivante :
 - **word/**
   - **document.xml** : Contenu principal du document (texte, paragraphes, etc.).
   - **styles.xml** : Définitions des styles utilisés dans le document.
-  - **settings.xml** : Paramètres du document (marges, orientation, etc.).
+  - **settings.xml** : Paramètres du document (zoom, compatibilité, suivi des modifications, etc.) ; les marges et l'orientation se trouvent plutôt dans l'élément `w:sectPr` de `document.xml`.
   - **_rels/** : Relations spécifiques à la partie word.
   - **media/** : Images et autres médias intégrés (optionnel).
 

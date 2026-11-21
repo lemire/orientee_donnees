@@ -39,7 +39,7 @@ public class WeatherForecast {
         double latitude = 45.5017;
         double longitude = -73.5673;
         String url = "https://api.open-meteo.com/v1/forecast?latitude=" + latitude +
-                     "&longitude=" + longitude + "&hourly=temperature_2m,precipitation";
+                     "&longitude=" + longitude + "&hourly=temperature_2m,precipitation&timezone=America%2FMontreal";
         try {
             // Créer un client HTTP
             HttpClient client = HttpClient.newHttpClient();
@@ -90,7 +90,7 @@ public class WeatherForecast {
 {{</inlineJava>}}
 
 
-Ce programme Java récupère les prévisions météo horaires pour Montréal en interrogeant l’API publique Open-Meteo via une requête HTTP GET construite avec l’API HttpClient de Java 11. Il définit d’abord les coordonnées géographiques de la ville et assemble l’URL de requête demandant spécifiquement les températures à 2 mètres et les précipitations. Dans un bloc try-catch pour gérer les erreurs réseau ou de traitement, il crée un client HTTP, bâtit et envoie la requête, puis récupère la réponse sous forme de chaîne JSON. Le parsing du JSON est réalisé manuellement : une sous-chaîne isole la section "hourly", et une méthode auxiliaire extractArray extrait les tableaux correspondants aux horaires, températures et précipitations en repérant les crochets. Les dates au format ISO sont ensuite parsées avec DateTimeFormatter pour comparer chaque prévision à l’heure actuelle (via LocalDateTime.now()), filtrant ainsi les entrées futures. Enfin, une boucle affiche les 12 prochaines heures valides au format lisible, avec température en degrés Celsius et précipitations en millimètres, en nettoyant les chaînes pour convertir les valeurs numériques. 
+Ce programme Java récupère les prévisions météo horaires pour Montréal en interrogeant l’API publique Open-Meteo via une requête HTTP GET construite avec l’API HttpClient de Java 11. Il définit d’abord les coordonnées géographiques de la ville et assemble l’URL de requête demandant spécifiquement les températures à 2 mètres et les précipitations. Dans un bloc try-catch pour gérer les erreurs réseau ou de traitement, il crée un client HTTP, bâtit et envoie la requête, puis récupère la réponse sous forme de chaîne JSON. Le parsing du JSON est réalisé manuellement : une sous-chaîne isole la section "hourly", et une méthode auxiliaire extractArray extrait les tableaux correspondant aux horaires, températures et précipitations en repérant les crochets. Les dates au format ISO sont ensuite parsées avec DateTimeFormatter pour comparer chaque prévision à l’heure actuelle (via LocalDateTime.now()), filtrant ainsi les entrées futures. Enfin, une boucle affiche les 12 prochaines heures valides au format lisible, avec température en degrés Celsius et précipitations en millimètres, en nettoyant les chaînes pour convertir les valeurs numériques. 
 
 ### Exemple avec l’API Open-Meteo (requête GET et traitement JSON avec Jackson)
 
@@ -137,7 +137,7 @@ public class WeatherForecastJackson {
         double latitude = 45.5017;
         double longitude = -73.5673;
         String url = "https://api.open-meteo.com/v1/forecast?latitude=" + latitude +
-                     "&longitude=" + longitude + "&hourly=temperature_2m,precipitation";
+                     "&longitude=" + longitude + "&hourly=temperature_2m,precipitation&timezone=America%2FMontreal";
 
         try {
             HttpClient client = HttpClient.newHttpClient();

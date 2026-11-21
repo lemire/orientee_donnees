@@ -28,7 +28,7 @@ weight: 184
 
 **Booléens**
 
-: `true`, `false`, `yes`, `no`, `on`, `off`.
+: `true`, `false` (et `yes`, `no`, `on`, `off` en YAML 1.1).
 
 **Null**
 

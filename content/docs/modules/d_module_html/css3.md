@@ -7,7 +7,7 @@ weight: 44
 
 ## Quand le contenu excède le contenant
 
-Il arrive qu’une image ou qu’un texte excède la taille de l’élément dans lequel il a été placé. Par défaut, ce contenu déborde visiblement (`overflow: visible`). La propriété `overflow: hidden` permet de contrôler ce comportement :
+Il arrive qu’une image ou qu’un texte excède la taille de l’élément dans lequel il a été placé. Par défaut, ce contenu déborde visiblement (`overflow: visible`). La propriété `overflow` permet de contrôler ce comportement :
 
 - `overflow: hidden` masque la partie qui dépasse.
 - `overflow: scroll` ajoute des barres de défilement (même si le contenu tient dans la boîte).
@@ -117,7 +117,7 @@ CSS 3 introduit de nombreux nouveaux sélecteurs. Voici les plus utilisés :
 | E[foo^="bar"]     | attribut foo commence par « bar »                                    | 3          |
 | E[foo$="bar"]     | attribut foo se termine par « bar »                                  | 3          |
 | E[foo*="bar"]     | attribut foo contient la chaîne « bar »                              | 3          |
-| E[foo|="bar"]     | attribut foo contient le mot « bar » (séparé par tirets)           | 2          |
+| E[foo\|="bar"]    | attribut foo vaut « bar » ou commence par « bar- »                 | 2          |
 | E F               | descendant F de E                                                    | 1          |
 | E > F             | enfant direct F de E                                                 | 2          |
 | E + F             | F immédiatement après un voisin E                                               | 2          |

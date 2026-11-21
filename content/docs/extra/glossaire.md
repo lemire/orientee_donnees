@@ -11,11 +11,11 @@ Un appel d’entité est une suite de caractères qui commence par une esperluet
 
 | Entité | Résultat |
 |---|---:|
-| `&amp;lt;` | `<` |
-| `&amp;amp;` | `&` |
-| `&amp;gt;` | `>` |
-| `&amp;quot;` | `"` |
-| `&amp;apos;` | `'` |
+| `&lt;` | `<` |
+| `&amp;` | `&` |
+| `&gt;` | `>` |
+| `&quot;` | `"` |
+| `&apos;` | `'` |
 
 
 **Attribut**
@@ -46,8 +46,8 @@ Une déclaration DOCTYPE a la forme `<!DOCTYPE racine SYSTEM "URL">`. Elle indiq
 
 - **CDATA** : type d’attribut indiquant que la valeur est du texte.
 - **#PCDATA** : contenu textuel (parsed character data).
-- **REQUIRED** : attribut obligatoire.
-- **IMPLIED** : attribut optionnel.
+- **#REQUIRED** : attribut obligatoire.
+- **#IMPLIED** : attribut optionnel.
 - **Espace de noms (Namespace)**
 
 Un espace de noms permet d'éviter les conflits de noms dans les documents XML en associant un préfixe à un URI. Exemple : `xmlns:prefix="http://example.com"`.
@@ -225,6 +225,7 @@ Le jeu de caractères utilisé, spécifié dans la déclaration XML, comme UTF-8
 
 Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent dans les fichiers UTF.
 
+<p>
  <strong>
    Déclaration XML :
  </strong>
@@ -232,7 +233,7 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
  <br class="autobr"/>
  ressemble à s’y méprendre à une instruction de traitement et
  <br class="autobr"/>
- prend la forme &lt; ?xml ... ?&gt;. Le contenu d’une
+ prend la forme &lt;?xml ... ?&gt;. Le contenu d’une
     déclaration
  <br class="autobr"/>
  XML comporte généralement au maximum trois
@@ -332,7 +333,7 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
  l’attribut « age="5" ». Il est à noter que la casse est
     significative
  <br class="autobr"/>
- en XML : les balises &lt; A &gt; et &lt; a &gt; n’ont pas le même nom
+ en XML : les balises &lt;A&gt; et &lt;a&gt; n’ont pas le même nom
     XML.
  <br class="autobr"/>
  Lorsque l’élément est vide, c’est-à-dire sans contenu, on
@@ -349,7 +350,7 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
  <br class="autobr"/>
  &lt;lavie&gt;fd&lt;a&gt;fsd&lt;/a&gt;fd&lt;/lavie&gt;. Si un
  <br class="autobr"/>
- élément contient l’élément de début ou de fin d’un élément, alors
+ élément contient la balise de début ou de fin d’un élément, alors
  <br class="autobr"/>
  il doit aussi contenir l’autre. Ainsi, un élément peut être
  <br class="autobr"/>
@@ -450,21 +451,20 @@ Un marqueur au début des fichiers pour indiquer l'endianness, parfois présent 
  soi, mais peut indiquer aux programmes comment obtenir un
  <br class="autobr"/>
  certain résultat. Une instruction de traitement débute par
-    « &lt; ? »
+    « &lt;? »
  <br class="autobr"/>
  et se termine par « ?&gt; » ; immédiatement après le
-    « &lt; ? », un nom XML
+    « &lt;? », un nom XML
  <br class="autobr"/>
  valable doit apparaître et tous les noms XML valables sont
  <br class="autobr"/>
  autorisés à l’exception de xml, Xml, XMl, XML, XmL, xMl, xML et
  <br class="autobr"/>
- xmL. Ainsi n’importe quel autre texte peut être utilisé, mais il faut
+ xmL. Ainsi n’importe quel autre texte peut être utilisé, à l’exception de
  <br class="autobr"/>
- faire des appels d’entités pour « &lt; » et « &amp; »,
-    comme pour n’importe
+ la séquence « ?&gt; », qui termine l’instruction ; les appels
  <br class="autobr"/>
- quel contenu textuel XML.
+ d’entités n’y sont pas reconnus.
 </p>
 <p>
  <strong>

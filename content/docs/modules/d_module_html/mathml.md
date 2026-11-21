@@ -228,7 +228,7 @@ weight: 52
      </code>
     </td>
     <td>
-     Racine n-ième (indice en premier enfant).
+     Racine n-ième (indice en second enfant).
     </td>
     <td>
      <code>

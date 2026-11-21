@@ -105,19 +105,19 @@ On peut enfin ajouter une bordure (border) qui se place entre le padding et la m
 
 ```css
 p {
+    border-style: solid;
     border-color: black;
     border-width: medium;
 }
 ```
 
-Voici un diagramme qui résume le modèle de boîte CSS (le diagramme original étant en SVG, il n’est pas reproduit ici, mais il montre les zones suivantes de l’intérieur vers l’extérieur : contenu → padding → border → margin).
+Voici un diagramme qui résume le modèle de boîte CSS (il montre les zones suivantes de l’intérieur vers l’extérieur : contenu → padding → border → margin).
 
 
 
 
 <svg height="350" width="1000" xmlns="http://www.w3.org/2000/svg">
  <g style="stroke-width:.025in; stroke:black; fill:none" transform="scale(0.07) translate(-1500,-300)">
-  ../module3/box.pdf
   <defs>
    <pattern height="200" id="tile1" patternunits="userSpaceOnUse" width="200" x="0" y="0">
     <path d="M 0 -100 200 16">

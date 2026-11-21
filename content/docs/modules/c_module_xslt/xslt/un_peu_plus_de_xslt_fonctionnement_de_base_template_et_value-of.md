@@ -51,7 +51,7 @@ Dans cette section, nous découvrons les éléments « `xsl:value-of` », qui pe
 
 Jusqu'à présent, le résultat n'est pas très fascinant parce que les éléments « xsl:template » ont été utilisés comme des outils pour faire du « Rechercher/Remplacer ». Le contenu de l'élément « facture » n'est pas traité, on le remplace bêtement par autre chose.
 
-Nous pouvons traiter le contenu d'un élément à l'aide d'un élément « `xsl:value-of` » avec la syntaxe `<xsl:value-of select="..." />`. La valeur de l'élément « select » est une expression XPath. Par exemple, si le processeur traite un élément « facture » qui contient un élément « montant », alors l'élément `<xsl:value-of select="montant" />` nous donne le contenu de l'élément « montant ». C'est ainsi que nous pouvons trouver le nom de la personne devant recevoir une facture, en utilisant `<xsl:value-of select="personne" />`.
+Nous pouvons traiter le contenu d'un élément à l'aide d'un élément « `xsl:value-of` » avec la syntaxe `<xsl:value-of select="..." />`. La valeur de l'attribut « select » est une expression XPath. Par exemple, si le processeur traite un élément « facture » qui contient un élément « montant », alors l'élément `<xsl:value-of select="montant" />` nous donne le contenu de l'élément « montant ». C'est ainsi que nous pouvons trouver le nom de la personne devant recevoir une facture, en utilisant `<xsl:value-of select="personne" />`.
 
 Voyons maintenant un exemple plus complexe de fichier XSLT :
 
@@ -105,10 +105,9 @@ Une autre façon de décrire ce comportement est de dire que le XSLT utilise un 
    spécial représentant le document dans son ensemble. Avec XPath, nous pouvons pointer 
    directement sur le nœud-racine (le document lui-même) en utilisant la barre oblique « / » que nous 
    plaçons au début de l'expression XPath, comme dans « `<xsl:value-of select="/" />` ». 
-Dans ce cas, « `<xsl:value-of select="/" />` » donne la valeur de l'élément-racine, 
-   si celui-ci se nomme « jean ».
+Dans ce cas, « `<xsl:value-of select="/" />` » donne la valeur de l'élément-racine.
 
-Le nœud-racine contient lui-même l'élément-racine. Chaque élément et chaque élément de texte 
+Le nœud-racine contient lui-même l'élément-racine. Chaque élément et chaque nœud de texte 
    sont aussi des nœuds dans ce modèle d'arbre XSLT. Alors que les nœuds de texte ne 
    peuvent pas contenir d'autres nœuds, les nœuds d'élément peuvent contenir plusieurs autres nœuds 
    dont d'autres nœuds d'élément et de texte.
@@ -164,7 +163,7 @@ Le XSLT applique de préférence vos règles plutôt que celles par défaut. Ain
 
 ... alors elle s'appliquera quand l'élément-racine (ou tout autre élément) de votre document sera visité. Comme cette règle n'indique pas de visiter les sous-éléments (par l'instruction apply-templates), ceux-ci ne seront pas visités. Dans un tel cas, tout ce qui sera produit sera la valeur textuelle de l'élément-racine. Le traitement XSLT s'arrêtera alors.
 
-Cela illustre que le XSLT ne génère pas nécessairement du XML valide. Certains moteurs XSLT s'attendent à obtenir du XML ou du HTML (si l'élément-racine est nommé en conséquence) et peuvent générer une erreur dans le cas contraire. Certains moteurs peuvent même modifier le résultat de manière à ce qu'il s'agisse de XML ou du HTML valide. D'autres processeurs vont refuser de produire autre chose que du XML ou du HTML, à moins d'indication contraire.
+Cela illustre que le XSLT ne génère pas nécessairement du XML valide. Certains moteurs XSLT s'attendent à obtenir du XML ou du HTML (si l'élément-racine est nommé en conséquence) et peuvent générer une erreur dans le cas contraire. Certains moteurs peuvent même modifier le résultat de manière à ce qu'il s'agisse du XML ou du HTML valide. D'autres processeurs vont refuser de produire autre chose que du XML ou du HTML, à moins d'indication contraire.
 
 Les règles s'appliquent selon un ordre de priorité. Vos règles s'appliquent avant celles par défaut. Les règles spécifiques (nommant un élément XML par son nom) s'appliquent avant les règles génériques (par exemple, celles spécifiant le type de nœud comme « * »). Une disjonction ( « | ») est traitée comme un ensemble de règles distinctes. Si deux règles ont une priorité égale, le moteur XSLT peut choisir arbitrairement une des deux règles ou générer une erreur.
 
@@ -205,8 +204,7 @@ Soit ce document XSLT:
 <p>
  Par souci de simplicité, nous allons ignorer les nœuds de texte de cet exemple. Il n'y a donc que des éléments.
 </p>
-<ol>
- <li>
+
 Le processeur débute au nœud racine. La règle par défaut s'applique et on l'instruit (avec apply-templates) de traiter tous les nœuds qu'il contient en séquence.
 
 Le processeur trouve alors l'élément nommé « racine ». La règle par défaut s'applique encore et le processeur visite simplement les nœuds contenus. Dans ce cas, il y en a deux (deux éléments).

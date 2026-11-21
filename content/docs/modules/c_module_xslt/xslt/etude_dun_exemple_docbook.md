@@ -7,7 +7,7 @@ weight: 170
 
 ## L'étude d'un exemple: docbook.xslt
 
-On peut utiliser [un document XSLT pour transformer des documents DocBook simple en HTML](http://www.google.com).
+On peut utiliser [un document XSLT pour transformer des documents DocBook simples en HTML](http://www.google.com).
 
 Nous allons passer en revue brièvement les éléments « xsl:template » qu'il contient.
 
@@ -128,7 +128,7 @@ L'élément « xsl:template » traitant l'élément DocBook « bookinfo » est s
     </xsl:template>
 ```
 
-Les éléments « xsl:template » avec attribut mode génèrent la table des matières. Les éléments « xsl:number » permettent de numéroter automatiquement les chapitres et sections. Afin de générer des hyperliens permettant de naviguer dans le document à partir de la table des matières, on utilise des fragments générés à partir de la fonction XSLT « generate-id ». Lorsque nous générons le contenu du document lui-même, on utilise à nouveau la fonction XSLT « generate-id » pour placer des ancres dans le document au bon endroit. L'avantage de la fonction XSLT « generate-id » est qu'elle permet de générer facilement un identifiant unique pour chaque paragraphe.
+Les éléments « xsl:template » avec attribut mode génèrent la table des matières. Les éléments « xsl:number » permettent de numéroter automatiquement les chapitres et sections. Afin de générer des hyperliens permettant de naviguer dans le document à partir de la table des matières, on utilise des fragments générés à partir de la fonction XSLT « generate-id ». Lorsque nous générons le contenu du document lui-même, on utilise à nouveau la fonction XSLT « generate-id » pour placer des ancres dans le document au bon endroit. L'avantage de la fonction XSLT « generate-id » est qu'elle permet de générer facilement un identifiant unique pour chaque chapitre et chaque section.
 
 ```xml
 <xsl:template match="chapter" mode="tdm">

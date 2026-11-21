@@ -38,7 +38,7 @@ weight: 30
 </pre>
  <p>
   En HTML 5, on n'utilise plus les éléments acronym et plusieurs autres
-        éléments moins utiles (basefont, big, center, s, strike, tt, u, frame, frameset, noframe, applet, isindex, dir).
+        éléments moins utiles (basefont, big, center, strike, tt, frame, frameset, noframes, applet, isindex, dir).
         Plusieurs nouveaux éléments ont été ajoutés notamment les éléments section et article. Ces éléments permettent d'organiser le contenu de manière logique.
  </p>
  <ul>
@@ -46,7 +46,7 @@ weight: 30
    Élément section: permet de regrouper du contenu dans une section contenant peut-être plusieurs paragraphes ou articles ayant un thème commun.
   </li>
   <li>
-   Élément article: permet d'indiquer que le contenu est un article. Un article peut disposer d'une entête (header) comprenant un titre.
+   Élément article: permet d'indiquer que le contenu est un article. Un article peut disposer d'un en-tête (header) comprenant un titre.
   </li>
   <li>
    Élément aside: permet d'ajouter une note optionnelle au contenu.
@@ -85,7 +85,7 @@ En passant, ce n'est pas un vrai article<span style="color:#046a04; ">...</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">html</span><span style="color:#a65700; ">&gt;</span>
 </pre>
  <p>
-  On peut facilement créer des indicateurs de progression:
+  On peut facilement créer des jauges:
  </p>
  <meter max="10" min="0" value="2">
   2 sur 10

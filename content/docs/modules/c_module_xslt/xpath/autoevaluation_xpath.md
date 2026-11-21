@@ -34,7 +34,7 @@ weight: 50
                     qui se trouvent dans le contexte actuel.</label>
     <span class="feedback" id="idp140293223497728false" style="display: none;font-weight:bold;">
       <br/>
-      (Réponse incorrecte!) Non, ce serait « nom/client ».
+      (Réponse incorrecte!) Non, ce serait « client/nom ».
      </span>
     </li>
     <li>
@@ -192,7 +192,7 @@ weight: 50
      Le deuxième élément « client » rencontré.</label>
     <span class="feedback" id="idp140293223517440false" style="display: none;font-weight:bold;">
       <br/>
-      (Réponse incorrecte!) Non, ce serait plutôt « client[2] ».
+      (Réponse incorrecte!) Non, ce serait plutôt « (//client)[2] ».
      </span>
     </li>
     <li>
@@ -489,7 +489,7 @@ weight: 50
     <span class="feedback" id="idp140293223554368false" style="display: none;font-weight:bold;">
       <br/>
       (Réponse incorrecte!) La première égalité est vraie s'il y a un élément p dont le contenu est égal au contenu d'un
-                        élément c, et la seconde est vraie s'il y a un élément de c qui est égal à un élément z, ce qui n'implique
+                        élément c, et la seconde est vraie s'il y a un élément c qui est égal à un élément z, ce qui n'implique
                         pas qu'il existe un élément p qui soit égal à un élément z
      </span>
     </li>
@@ -616,7 +616,7 @@ weight: 50
     <span class="feedback" id="idp140293223626960true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!)
-                        Concernant la première requête: vendeur/prenom = Jean est une valeur booléenne (est-ce que Jean est présent dans vendeur/prenom?) tout comme vendeur/nom = Coutu. On combine les deux valeurs booléennes avec le et logique (and). Donc, la première est vraie si on trouve un élément vendeur contenant un élément prenom contenant le texte Jean et un élément nom contenant le nom Coutu, sinon elle est fausse. La seconde expression sélectionne les éléments correspondants à ce critère s'ils existent.
+                        Concernant la première requête: vendeur/prenom = Jean est une valeur booléenne (est-ce que Jean est présent dans vendeur/prenom?) tout comme vendeur/nom = Coutu. On combine les deux valeurs booléennes avec le et logique (and). Donc, la première est vraie si on trouve un élément vendeur contenant un élément prenom contenant le texte Jean et un élément vendeur (pas nécessairement le même) contenant un élément nom contenant le nom Coutu, sinon elle est fausse. La seconde expression sélectionne les éléments vendeur correspondant à la fois aux deux critères s'ils existent.
      </span>
     </li>
    </ol>

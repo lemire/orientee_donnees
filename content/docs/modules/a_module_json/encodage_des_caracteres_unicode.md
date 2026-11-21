@@ -23,7 +23,7 @@ Un avantage majeur de UTF-8 est son absence d'endianness (ordre des octets) : le
 
 ## UTF-16 : un encodage à largeur variable
 
-UTF-16 utilise 2 octets (16 bits) pour la plupart des caractères courants, mais peut utiliser des paires de substituts (4 octets au total) pour les caractères au-delà du Plan Multilingue de Base (BMP), comme les émojis. Par exemple, "A" s'encode en `00 41` (en little-endian) ou `41 00` (en big-endian). Le caractère "中" s'encode en `2D 4E`. Pour un émoji comme "😀" (U+1F600), qui est au-delà du BMP, UTF-16 utilise deux unités de code : `D8 3D DE 00` (little-endian).
+UTF-16 utilise 2 octets (16 bits) pour la plupart des caractères courants, mais peut utiliser des paires de substituts (4 octets au total) pour les caractères au-delà du Plan Multilingue de Base (BMP), comme les émojis. Par exemple, "A" s'encode en `41 00` (en little-endian) ou `00 41` (en big-endian). Le caractère "中" s'encode en `2D 4E`. Pour un émoji comme "😀" (U+1F600), qui est au-delà du BMP, UTF-16 utilise deux unités de code : `D8 3D DE 00` (big-endian).
 
 L'endianness est cruciale en UTF-16 : les systèmes Intel (little-endian) stockent les octets dans l'ordre inverse des systèmes Motorola (big-endian). Pour éviter les confusions, un BOM peut être ajouté : `FE FF` pour big-endian, `FF FE` pour little-endian. UTF-16 était populaire dans les systèmes Windows anciens, mais UTF-8 l'a largement surpassé pour sa compatibilité web.
 

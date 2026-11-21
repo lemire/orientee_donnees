@@ -6,11 +6,11 @@ weight: 180
 
 ## Quelques symboles importants en DTD
 
-**<!DOCTYPE nomXML_elementRacine SYSTEM "URL">**
+**`<!DOCTYPE nomXML_elementRacine SYSTEM "URL">`**
 
 : Déclaration de type de document.
 
-**<!ELEMENT ... >**
+**`<!ELEMENT ... >`**
 
 : Déclaration d'un élément (instruction DTD).
 
@@ -24,23 +24,23 @@ weight: 180
 
 **#PCDATA** — Contenu textuel (parsed character data).
 
-**<!ATTLIST nomElementX nomAttributY ...>**
+**`<!ATTLIST nomElementX nomAttributY ...>`**
 
 : Spécifie qu’un élément `nomElementX` possède l’attribut `nomAttributY`.
 
 **CDATA** — Type d’attribut indiquant que l’attribut contient du texte.
 
-**REQUIRED** — Attribut obligatoire.
+**#REQUIRED** — Attribut obligatoire.
 
-**IMPLIED** — Attribut optionnel (pas de valeur par défaut).
+**#IMPLIED** — Attribut optionnel (pas de valeur par défaut).
 
-**FIXED** — Attribut fixé à une valeur constante.
+**#FIXED** — Attribut fixé à une valeur constante.
 
-**<!ENTITY nomEntiteX "Yvaleur">**
+**`<!ENTITY nomEntiteX "Yvaleur">`**
 
 : Définit une entité nommée `nomEntiteX` qui vaut `Yvaleur`.
 
-**<!ENTITY % nomEntiteX "Yvaleur">**
+**`<!ENTITY % nomEntiteX "Yvaleur">`**
 
 : Entité paramètre pour la DTD (locale à la DTD) — `nomEntiteX` prend la valeur `Yvaleur`.
 
@@ -48,22 +48,22 @@ weight: 180
 
 ### Déclaration XML
 
-**<?xml version="1.0" encoding="UTF-8"?>**
+**`<?xml version="1.0" encoding="UTF-8"?>`**
 
-: Déclaration obligatoire au début d'un document XML. Spécifie la version XML et l'encodage des caractères.
+: Déclaration facultative qui, si elle est présente, doit figurer au tout début d'un document XML. Spécifie la version XML et l'encodage des caractères.
 
 ### Éléments
 
 Les éléments sont les blocs de construction principaux du XML. Ils sont délimités par des balises.
 
-- **<nomElement>contenu</nomElement>** : Élément avec contenu.
-- **<nomElement />** : Élément vide (auto-fermant).
+- **`<nomElement>contenu</nomElement>`** : Élément avec contenu.
+- **`<nomElement />`** : Élément vide (auto-fermant).
 
 ### Attributs
 
 Les attributs fournissent des informations supplémentaires sur les éléments.
 
-- **<element attribut="valeur">** : Attribut avec valeur.
+- **`<element attribut="valeur">`** : Attribut avec valeur.
 
 ### Contenu textuel
 
@@ -73,28 +73,28 @@ Le texte entre les balises est le contenu de l'élément.
 
 ### Sections CDATA
 
-**<![CDATA[ contenu ]]>**
+**`<![CDATA[ contenu ]]>`**
 
 : Permet d'inclure du texte qui ne doit pas être analysé comme du XML (par exemple, du code HTML ou JavaScript).
 
 ### Commentaires
 
-**<!-- Commentaire -->**
+**`<!-- Commentaire -->`**
 
 : Les commentaires sont ignorés par le parseur XML.
 
 ### Instructions de traitement
 
-**<?nom instruction?>**
+**`<?nom instruction?>`**
 
-: Instructions pour les applications, comme **<?xml-stylesheet type="text/xsl" href="style.xsl"?>** pour lier une feuille de style XSL.
+: Instructions pour les applications, comme **`<?xml-stylesheet type="text/xsl" href="style.xsl"?>`** pour lier une feuille de style XSL.
 
 ### Entités
 
 Les entités permettent de définir des raccourcis pour du texte ou des caractères spéciaux.
 
-- **&entite;** : Référence à une entité.
-- Entités prédéfinies : &lt; (<), &gt; (>), &amp; (&), &quot; ("), &apos; (').
+- **`&entite;`** : Référence à une entité.
+- Entités prédéfinies : `&lt;` (`<`), `&gt;` (`>`), `&amp;` (`&`), `&quot;` (`"`), `&apos;` (`'`).
 
 ### Espaces de noms (Namespaces)
 

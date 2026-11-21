@@ -34,7 +34,7 @@ weight: 80
    Copier
   </button>
  </div>
- <pre style="margin: 0; padding: 20px; overflow: auto; background: #ffffff; height: 15cm; "><code class="language-go" id="highlighted" style="height: 100%;font-size: 9pt; font-weight: bold; line-height: 1.0;"></code></pre>
+ <pre style="margin: 0; padding: 20px; overflow: auto; background: #ffffff; height: 15cm; "><code class="language-markup" id="highlighted" style="height: 100%;font-size: 9pt; font-weight: bold; line-height: 1.0;"></code></pre>
 </div>
 <script>
  const input = document.getElementById('input');
@@ -42,7 +42,7 @@ weight: 80
   function update() {
     highlighted.textContent = input.value || ' '; // Prism needs at least one character
     Prism.highlightElement(highlighted);
-    // Check for lines longer than 100 characters
+    // Check for lines longer than 80 characters
     const lines = input.value.split('\n');
     const hasLongLine = lines.some(line => line.length > 80);
     const warning = document.getElementById('warning');

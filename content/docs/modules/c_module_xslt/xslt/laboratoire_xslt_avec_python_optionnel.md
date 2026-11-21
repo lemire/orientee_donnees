@@ -5,7 +5,7 @@ weight: 190
 <h1>
  Laboratoire XSLT avec Python (optionnel)
 </h1>
-Rendez vous sur le site
+Rendez-vous sur le site
 <a href="https://github.com/lemire/xsltpy">
  xsltpy
 </a>

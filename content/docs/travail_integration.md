@@ -26,7 +26,7 @@ Pour réaliser ce projet, vous utiliserez plusieurs technologies. Le serveur ser
 
 La page doit contenir 10 champs numériques pour saisir les valeurs et 10 champs texte pour les étiquettes associées. Quatre boutons permettent d'interagir avec les différents endpoints du serveur : générer le graphique (qui affiche le SVG directement dans la page), télécharger le fichier SVG, télécharger un document Excel au format Open XML, et afficher le contenu Markdown généré. Une zone d'affichage est réservée pour montrer le résultat SVG, et une autre zone (initialement cachée) pour afficher le Markdown. Toutes les générations de contenu se font du côté serveur en Java, en utilisant les technologies appropriées pour chaque format.
 
-Indices. Il peut être possible récupérer une réponse JSON d'un serveur avec du code JavaScript similaire à celui-ci.
+Indices. Il peut être possible de récupérer une réponse JSON d'un serveur avec du code JavaScript similaire à celui-ci.
 
 ```javascript
 fetch('/route')
@@ -145,7 +145,7 @@ Config config = yamlMapper.readValue(new File("src/main/resources/config.yml"), 
 
 ### Serveur Java
 
-Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra les données XML sur l'endpoint `/api/graph` via une requête POST. Le serveur validera que exactement 10 entiers sont fournis, générera un SVG avec un graphique à barres, puis retournera un document JSON contenant le SVG. De plus, un endpoint `/api/svg` devra retourner le SVG pur directement. Un endpoint `/api/excel` devra générer et retourner un fichier Excel Open XML avec les données saisies. Enfin, un endpoint `/api/markdown` devra transformer les données XML en Markdown à l'aide d'XSLT et retourner le résultat.
+Le serveur doit servir la page HTML statique sur la route racine `/`. Il recevra les données XML sur l'endpoint `/api/graph` via une requête POST. Le serveur validera qu'exactement 10 entiers sont fournis, générera un SVG avec un graphique à barres, puis retournera un document JSON contenant le SVG. De plus, un endpoint `/api/svg` devra retourner le SVG pur directement. Un endpoint `/api/excel` devra générer et retourner un fichier Excel Open XML avec les données saisies. Enfin, un endpoint `/api/markdown` devra transformer les données XML en Markdown à l'aide d'XSLT et retourner le résultat.
 
 ### Graphique SVG
 
@@ -157,7 +157,7 @@ expression MathML dans votre SVG (par exemple au moyen d'un élément `<foreignO
 
 Vous devez aussi afficher les données en les faisant correspondre aux dix provinces canadiennes
 avec un fichier GeoJSON ou autre groupe de dix territoires. Si vous ne souhaitez pas utiliser le
-fichier GeoJSON des provinces canadiennes, vous trouverez facile d'autres fichiers en ligne.
+fichier GeoJSON des provinces canadiennes, vous trouverez facilement d'autres fichiers en ligne.
 
 
 ### Génération d'un document Excel (Open XML)
@@ -511,7 +511,7 @@ Ces en-têtes permettent aux navigateurs et clients de traiter correctement les 
 
 ## À remettre
 
-Vous devrez vérifier que exactement 10 valeurs sont fournies dans la requête. Vous devez vérifier
+Vous devrez vérifier qu'exactement 10 valeurs sont fournies dans la requête. Vous devez vérifier
 que les étiquettes sont présentes. La gestion des erreurs devra être appropriée, avec des messages d'erreur clairs en cas de données invalides.
 
 La page web doit transmettre du XML. Elle doit recevoir du JSON de la part du serveur. Jackson devra être utilisé de manière appropriée pour le XML et Gson pour le JSON.

@@ -50,14 +50,14 @@ Vérifiez votre compréhension de la syntaxe XML en testant différents document
             if (erreurs.length > 0) {
                 // Il y a une erreur de parsing
                 const messageErreur = erreurs[0].textContent || erreurs[0].innerText || 'Erreur inconnue';
-                resultatDiv.textContent = 'XML non valide : ' + extraireMessage(messageErreur);
+                resultatDiv.textContent = 'XML mal formé : ' + extraireMessage(messageErreur);
                 appliquerStyleInvalide(resultatDiv);
             } else {
                 resultatDiv.textContent = 'Bravo ! Le XML est bien formé.';
                 appliquerStyleValide(resultatDiv);
             }
         } catch (e) {
-            resultatDiv.textContent = 'XML non valide : ' + e.message;
+            resultatDiv.textContent = 'XML mal formé : ' + e.message;
             appliquerStyleInvalide(resultatDiv);
         }
     }

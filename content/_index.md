@@ -227,7 +227,7 @@ Il est de votre responsabilité de vous assurer que vous avez assez de temps dan
 
 ## Politique concernant le plagiat
 
-L'utilisation de textes ou de travaux écrits par autrui sans attribution, est du plagiat, même dans le cas où l'emprunt se limite à des fragments. En cas de plagiat, une note de zéro peut être accordée. De plus, l'offense peut être rapportée à l'Université qui appliquera des mesures disciplinaires.
+L'utilisation de textes ou de travaux écrits par autrui sans attribution est du plagiat, même dans le cas où l'emprunt se limite à des fragments. En cas de plagiat, une note de zéro peut être accordée. De plus, l'offense peut être rapportée à l'Université qui appliquera des mesures disciplinaires.
 
 ## L'environnement technologique du cours
 

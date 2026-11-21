@@ -11,7 +11,7 @@ Le protocole HTTP (HyperText Transfer Protocol) est un protocole de communicatio
 
 Une requête HTTP est une demande initiée par le client pour accéder à une ressource spécifique sur le serveur. Elle comprend généralement une méthode (GET, PUT, etc.), une URL pointant vers la ressource, des en-têtes contenant des informations supplémentaires (comme le type de contenu accepté), et parfois un corps pour les données envoyées. Le serveur traite la requête et renvoie une réponse avec un code de statut (par exemple, 200 pour succès, 404 pour non trouvé) et le contenu demandé.
 
-Parmi les méthodes HTTP les plus courantes, GET est utilisée pour récupérer des données d’un serveur sans modifier l’état de la ressource : les paramètres sont appendus à l’URL sous forme de chaîne de requête, ce qui les rend visibles, limités en taille et propices à la mise en cache, mais moins sécurisés pour des informations sensibles ; elle est idempotente, c’est-à-dire que plusieurs appels identiques produisent le même résultat sans effet secondaire. À l’opposé, POST sert à envoyer des données au serveur pour créer ou mettre à jour une ressource, en plaçant les paramètres dans le corps de la requête, ce qui les rend invisibles dans l’URL, permet de transmettre des volumes plus importants (y compris des fichiers) et offre une meilleure confidentialité, bien que la sécurité réelle repose sur l’utilisation de HTTPS ; contrairement à GET, POST n’est pas idempotente et n’est généralement pas mise en cache. En pratique, on privilégie GET pour des opérations de lecture simples comme des recherches ou des filtres, et POST pour des soumissions de formulaires ou des envois de données confidentielles.
+Parmi les méthodes HTTP les plus courantes, GET est utilisée pour récupérer des données d’un serveur sans modifier l’état de la ressource : les paramètres sont ajoutés à l’URL sous forme de chaîne de requête, ce qui les rend visibles, limités en taille et propices à la mise en cache, mais moins sécurisés pour des informations sensibles ; elle est idempotente, c’est-à-dire que plusieurs appels identiques produisent le même résultat sans effet secondaire. À l’opposé, POST sert à envoyer des données au serveur pour créer ou mettre à jour une ressource, en plaçant les paramètres dans le corps de la requête, ce qui les rend invisibles dans l’URL, permet de transmettre des volumes plus importants (y compris des fichiers) et offre une meilleure confidentialité, bien que la sécurité réelle repose sur l’utilisation de HTTPS ; contrairement à GET, POST n’est pas idempotente et n’est généralement pas mise en cache. En pratique, on privilégie GET pour des opérations de lecture simples comme des recherches ou des filtres, et POST pour des soumissions de formulaires ou des envois de données confidentielles.
 
 Il arrive que l'on souhaite lancer rapidement un petit serveur web. Il est
 facile d'y arriver avec Java.
@@ -91,9 +91,11 @@ Voici un exemple simple où nous créons un contexte pour le chemin "/hello" qui
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.SimpleFileServer;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.nio.file.Path;
 
 public class ExempleServeurContext {
     public static void main(String[] args) throws IOException {
@@ -116,14 +118,14 @@ public class ExempleServeurContext {
                     response = "Hello, World! (via POST)";
                 } else {
                     response = "Méthode non prise en charge: " + method;
-                    exchange.sendResponseHeaders(405, response.length()); // Method Not Allowed
+                    exchange.sendResponseHeaders(405, response.getBytes().length); // Method Not Allowed
                     OutputStream os = exchange.getResponseBody();
                     os.write(response.getBytes());
                     os.close();
                     return;
                 }
                 
-                exchange.sendResponseHeaders(200, response.length());
+                exchange.sendResponseHeaders(200, response.getBytes().length);
                 OutputStream os = exchange.getResponseBody();
                 os.write(response.getBytes());
                 os.close();
@@ -159,7 +161,7 @@ serveur.createContext("/api/data", new HttpHandler() {
                 // Simuler la récupération de données
                 response = "{\"message\": \"Données récupérées\", \"data\": \"valeur\"}";
                 exchange.getResponseHeaders().set("Content-Type", "application/json");
-                exchange.sendResponseHeaders(200, response.length());
+                exchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
                 break;
                 
             case "PUT":
@@ -173,12 +175,12 @@ serveur.createContext("/api/data", new HttpHandler() {
                 
                 response = "{\"message\": \"Données mises à jour\", \"received\": " + requestBody + "}";
                 exchange.getResponseHeaders().set("Content-Type", "application/json");
-                exchange.sendResponseHeaders(200, response.length());
+                exchange.sendResponseHeaders(200, response.getBytes(StandardCharsets.UTF_8).length);
                 break;
                 
             default:
                 response = "{\"error\": \"Méthode non prise en charge\"}";
-                exchange.sendResponseHeaders(405, response.length());
+                exchange.sendResponseHeaders(405, response.getBytes(StandardCharsets.UTF_8).length);
                 break;
         }
         

@@ -72,7 +72,7 @@ Elle est suivie d'une déclaration de type de document sous la forme `<!DOCTYPE 
 <!DOCTYPE baliseracine SYSTEM "http://www.mondomain.com/madtd.dtd">
 ```
 
-où « baliseracine » est le nom de l'élément-racine du document, alors que le chemin « http://www.mondomain.com/madtd.dtd» nous dit où trouver le document DTD.
+où « baliseracine » est le nom de l'élément-racine du document, alors que le chemin « http://www.mondomain.com/madtd.dtd » nous dit où trouver le document DTD.
 
 Rappelons que l'attribut « encoding » nous donne le jeu des caractères. On choisit souvent « ISO-8859-1 », mais par défaut, XML utilise un jeu de caractères Unicode (UTF-8). Si le contenu est en français (avec les accents), il est essentiel que le fichier soit enregistré avec le jeu de caractères déclaré sinon on pourra constater des messages d'erreurs ou des accents manquants. L'attribut « standalone » permet au logiciel de décider, s'il est nécessaire, d'aller chercher la DTD externe avant de lire le fichier XML, même si, très souvent, un logiciel tel Mozilla Firefox ignore la consigne et ne va pas chercher la DTD externe. En gros, s'il y a une DTD externe, on utilisera l'attribut « standalone="no" », autrement on utilise « standalone="yes" ».
 
@@ -84,13 +84,13 @@ Bien qu'on ne puisse exprimer toutes les possibilités, la syntaxe DTD permet to
 
 Au lieu d'utiliser la virgule, on peut utiliser le symbole « | » pour spécifier qu'un élément ou un autre peut apparaître. Ainsi, l'instruction « `<!ELEMENT montant (devise|valeur) >` » signifie que l'élément « montant » peut contenir soit l'élément « devise », soit l'élément « valeur » (l'un ou l'autre, mais pas les deux ou aucun des deux). Finalement, on peut combiner le tout; par exemple, l'instruction « `<!ELEMENT montant (devise+|valeur*) >` » signifie que l'élément « montant » peut contenir au moins un élément « devise » (et rien d'autre) ou alors, aucun, 1 ou plusieurs éléments « valeur ».
 
-Si jamais on veut qu'un élément puisse contenir du texte, on utilise le terme technique « #PCDATA » dans l'instruction DTD. Par exemple, l'instruction « `<!ELEMENT montant (#PCDATA) >` » signifie que l'élément « montant » contient du texte et seulement du texte (pas d'éléments). Supposons maintenant qu'on veut permettre du contenu mixte, comme dans l'exemple qui suit :
+Si jamais on veut qu'un élément puisse contenir du texte, on utilise le terme technique « #PCDATA » dans l'instruction DTD. Par exemple, l'instruction « `<!ELEMENT montant (#PCDATA) >` » signifie que l'élément « montant » contient du texte et seulement du texte (pas d'éléments). Supposons maintenant qu'on veuille permettre du contenu mixte, comme dans l'exemple qui suit :
 
 ```xml
 <mixte> du texte et <important>un élément</important> </mixte>
 ```
 
-On pourrait penser que l'instruction « `<!ELEMENT mixte (#PCDATA|important) >` » permettra du texte ou des éléments « important », et c'est vrai; mais elle permet l'un (juste du texte) ou l'autre (juste un élément « important »), mais pas un mélange des deux. Pour pouvoir obtenir le résultat désiré, soit un mélange d'éléments « important » et de texte, il faut permettre la répétition du choix, comme dans l'instruction « `<!ELEMENT mixte (#PCDATA|important)* >` ». Il s'agit de la seule façon de spécifier qu'on permet un mélange de texte et d'éléments (contenu mixte).
+On pourrait penser que l'instruction « `<!ELEMENT mixte (#PCDATA|important) >` » permettra du texte ou des éléments « important », mais cette instruction n'est pas permise par la syntaxe DTD. Pour pouvoir obtenir le résultat désiré, soit un mélange d'éléments « important » et de texte, il faut permettre la répétition du choix, comme dans l'instruction « `<!ELEMENT mixte (#PCDATA|important)* >` ». Il s'agit de la seule façon de spécifier qu'on permet un mélange de texte et d'éléments (contenu mixte).
 
 Voyons un autre exemple de contenu mixte. Considérons l'instruction « `<!ELEMENT montant (#PCDATA|devise)* >` ». Ce qu'elle signifie exactement, c'est que les éléments « montant » peuvent contenir un mélange de texte et des éléments « devise », comme l'exemple qui suit :
 
@@ -120,7 +120,7 @@ Pour s'assurer de bien comprendre, voyons un autre exemple :
 <!ELEMENT personne (age,nom) >
 ```
 
-Cette DTD nous spécifie que l'élément « lettre » contient du mélange de texte et d'éléments « personne » (contenu mixte), alors que l'élément « personne » doit contenir un élément « age », suivi d'un élément « nom ».
+Cette DTD nous spécifie que l'élément « lettre » contient un mélange de texte et d'éléments « personne » (contenu mixte), alors que l'élément « personne » doit contenir un élément « age », suivi d'un élément « nom ».
 
 Par exemple, ce document XML serait valide :
 
@@ -144,9 +144,9 @@ Plus simplement, on peut spécifier une valeur par défaut qui ne prendra effet 
 
 Il peut être utile de donner une liste de valeurs que pourra prendre un attribut. Par exemple, une pièce de monnaie est soit sur « face », soit sur « pile » : il n'y a que deux choix. Si la liste de choix est composée de textes sans espace ou ponctuation, sauf la barre du soulignement ( _ ), le trait d'union ( - ) et le point ( . ), alors on peut faire une énumération comme dans l'exemple suivant : « `<!ATTLIST piece position (face|pile) #REQUIRED>`». On peut aussi spécifier une valeur par défaut, si l'on suppose, jusqu'à preuve du contraire, que la pièce est dans la position « face », comme ceci « `<!ATTLIST piece position (face|pile) "face">` »
 
-On peut également spécifier qu'un attribut servira à identifier un élément de façon unique. Pour ce faire, on utilise une instruction comme « `<!ATTLIST recipiendaire code ID>` ». Il n'est pas possible, pour deux attributs de type ID, d'avoir la même valeur dans un même document XML. En somme, si l'on donne une valeur « ID », elle devrait correspondre de façon unique à un élément et un seul. Un attribut de type « ID » doit avoir comme valeur un « nom XML », c'est-à-dire un texte sans espace ou ponctuation, sauf la barre du soulignement ( _ ), le trait d'union ( - ) et le point ( . ), et qui ne commence pas par un chiffre, un trait d'union ou un point.
+On peut également spécifier qu'un attribut servira à identifier un élément de façon unique. Pour ce faire, on utilise une instruction comme « `<!ATTLIST recipiendaire code ID #REQUIRED>` ». Il n'est pas possible, pour deux attributs de type ID, d'avoir la même valeur dans un même document XML. En somme, si l'on donne une valeur « ID », elle devrait correspondre de façon unique à un élément et un seul. Un attribut de type « ID » doit avoir comme valeur un « nom XML », c'est-à-dire un texte sans espace ou ponctuation, sauf la barre du soulignement ( _ ), le trait d'union ( - ) et le point ( . ), et qui ne commence pas par un chiffre, un trait d'union ou un point.
 
-On peut faire référence aux attributs de type « ID » avec des attributs de type « IDREF ». La valeur d'un attribut « IDREF » doit non seulement être un nom XML, mais doit aussi avoir un attribut de type « ID » qui possède cette même valeur quelque part dans le document XML. Par exemple, si on a l'instruction « `<!ATTLIST recipiendaire code ID>` », on pourra ensuite faire référence à l'élément ayant une valeur d'attribut « code » particulière, avec une instruction comme « `<!ATTLIST mauvaispayeur code IDREF>` ».
+On peut faire référence aux attributs de type « ID » avec des attributs de type « IDREF ». La valeur d'un attribut « IDREF » doit non seulement être un nom XML, mais doit aussi avoir un attribut de type « ID » qui possède cette même valeur quelque part dans le document XML. Par exemple, si on a l'instruction « `<!ATTLIST recipiendaire code ID #REQUIRED>` », on pourra ensuite faire référence à l'élément ayant une valeur d'attribut « code » particulière, avec une instruction comme « `<!ATTLIST mauvaispayeur code IDREF #REQUIRED>` ».
 
 Dans ce contexte, le document XML qui suit n'est pas valide :
 
@@ -166,7 +166,7 @@ Il existe d'autres types d'attributs, mais ils sont peu utilisés.
 
 ## Les entités
 
-Vous vous rappelez sans doute que le XML définit quelques entités par défaut, « &lt; », par exemple. On peut toutefois définir ses propres entités avec une instruction DTD comme celle-ci :
+Vous vous rappelez sans doute que le XML définit quelques entités par défaut, « `&lt;` », par exemple. On peut toutefois définir ses propres entités avec une instruction DTD comme celle-ci :
 
 `<!ENTITY monentite "Introduction à XML">`
 
@@ -186,7 +186,7 @@ Une entité peut faire appel à une autre entité :
 
 `<!ENTITY monentite2 "texte">`
 
-Une entité ne peut cependant pas faire appel à elle même de manière récursive, directement ou indirectement. Cet exemple n'est donc pas valide :
+Une entité ne peut cependant pas faire appel à elle-même de manière récursive, directement ou indirectement. Cet exemple n'est donc pas valide :
 
 `<!ENTITY monentite "&monentite;">`
 
@@ -199,18 +199,18 @@ Prenons l'exemple suivant, soit un document XML qui débute par :
 ```xml
 <?xml version="1.0" ?>
 <!DOCTYPE question SYSTEM "question.dtd" [
-  <!ELEMENT question #PCDATA>
+  <!ELEMENT question (#PCDATA)>
 ]>
 ```
 
-Dans ce cas, tout ce passe comme si on ajoutait la ligne « `<!ELEMENT question #PCDATA>` » à la DTD externe. Normalement, il ne devrait jamais y avoir de conflit entre les deux DTD (interne et externe); on ne peut pas redéfinir un élément, mais on peut y définir des éléments! Par contre, les entités peuvent être redéfinies et la définition trouvée dans le DTD interne l'emporte.
+Dans ce cas, tout se passe comme si on ajoutait la ligne « `<!ELEMENT question (#PCDATA)>` » à la DTD externe. Normalement, il ne devrait jamais y avoir de conflit entre les deux DTD (interne et externe); on ne peut pas redéfinir un élément, mais on peut y définir des éléments! Par contre, les entités peuvent être redéfinies et la définition trouvée dans la DTD interne l'emporte.
 
 On peut même omettre complètement la DTD externe comme dans l'exemple suivant :
 
 ```xml
 <?xml version="1.0" ?>
 <!DOCTYPE question [
-  <!ELEMENT question #PCDATA>
+  <!ELEMENT question (#PCDATA)>
 ]>
 ```
 
@@ -222,7 +222,7 @@ On peut aussi définir des entités particulières qui ne s'appliquent que dans 
 <!ENTITY % monentite "#PCDATA|age*">
 ```
 
-signifie que partout, dans la DTD externe, où se trouve le texte « %monentite; », il sera remplacé par « #PCDATA|age* »; on appelle ces entités des « entités paramètres ». On peut définir une entité paramètre dans la DTD interne, mais on ne peut pas l'y utiliser; elle doit être utilisée dans la DTD externe. Si l'entité paramètre « %monentite; » est définie, à la fois dans la DTD interne et dans la DTD externe, la DTD interne a préséance. En somme, les entités paramètres ne s'appliquent que dans la DTD externe; elles ne s'appliquent ni dans le document XML, ni dans le DTD interne, soit la partie de la DTD définie dans le document XML.
+signifie que partout, dans la DTD externe, où se trouve le texte « %monentite; », il sera remplacé par « #PCDATA|age* »; on appelle ces entités des « entités paramètres ». On peut définir une entité paramètre dans la DTD interne, mais on ne peut pas l'y utiliser; elle doit être utilisée dans la DTD externe. Si l'entité paramètre « %monentite; » est définie, à la fois dans la DTD interne et dans la DTD externe, la DTD interne a préséance. En somme, les entités paramètres ne s'appliquent que dans la DTD externe; elles ne s'appliquent ni dans le document XML, ni dans la DTD interne, soit la partie de la DTD définie dans le document XML.
 
 ## Commentaires dans les fichiers DTD
 
@@ -232,7 +232,7 @@ Pour rendre un fichier DTD plus compréhensible, on peut ajouter des commentaire
 <!-- ceci est un commentaire -->
 ```
 
-Les commentaires dans les fichiers Relax NG non textuels sont obtenus en débutant une ligne par le symbole « # » comme dans cet exemple.
+Les commentaires dans les fichiers Relax NG en syntaxe compacte sont obtenus en débutant une ligne par le symbole « # » comme dans cet exemple.
 
 ```xml
 # ceci est un commentaire
@@ -316,7 +316,7 @@ element personne { attribute nas { text } | (attribute nas1 { text } & attribute
 
 ## Une approche plus modulaire
 
-En pratique, les fichiers DTD et Relax NG peuvent devenir complexes. On souhaite donc souvent les diviser en plusieurs fichiers plus petits. Par exemple, pour une spécification portant des ventes et achats de biens, on pourra avoir un fichier portant sur la description des biens, un fichier portant sur la description des acheteurs, et ainsi de suite. Une approche modulaire, avec de petits fichiers, a aussi l'avantage qu'on peut réutiliser les fichiers dans plus d'une spécification.
+En pratique, les fichiers DTD et Relax NG peuvent devenir complexes. On souhaite donc souvent les diviser en plusieurs fichiers plus petits. Par exemple, pour une spécification portant sur des ventes et achats de biens, on pourra avoir un fichier portant sur la description des biens, un fichier portant sur la description des acheteurs, et ainsi de suite. Une approche modulaire, avec de petits fichiers, a aussi l'avantage qu'on peut réutiliser les fichiers dans plus d'une spécification.
 
 À titre d'exemple, reprenons le fichier DTD portant sur la définition de l'élément « problemset ». Au lieu de définir tout d'un seul coup, on peut commencer par un fichier DTD qui ne définit que l'élément « choice » :
 
@@ -393,6 +393,6 @@ Les documents XML sont faits pour être échangés et assurer la pérennité des
 
 ## Est-ce vraiment nécessaire d'avoir des documents valides? Est-ce que je dois vraiment toujours travailler avec des fichiers DTD, XML Schema ou Relax NG?
 
-En pratique, la validation n'est pas essentielle et une application logicielle ne devrait pas exiger des documents valides. Si vous concevez une application, la règle implicite est que toute balise ou attribut non prévue devrait être ignorée. Un navigateur qui sait lire et afficher du XML devrait pouvoir lire tout XML bien formé, même s'il n'est pas valide. Si vous inventez une nouvelle balise XHTML, le navigateur devrait tout simplement ne pas en tenir compte. Les concepteurs du XML n'ont pas inscrit la nécessité d'être valide à même la définition du XML et c'est un choix qui n'a jamais été remis en question par l'organisme de normalisation W3C.
+En pratique, la validation n'est pas essentielle et une application logicielle ne devrait pas exiger des documents valides. Si vous concevez une application, la règle implicite est que toute balise ou attribut non prévu devrait être ignoré. Un navigateur qui sait lire et afficher du XML devrait pouvoir lire tout XML bien formé, même s'il n'est pas valide. Si vous inventez une nouvelle balise XHTML, le navigateur devrait tout simplement ne pas en tenir compte. Les concepteurs du XML n'ont pas inscrit la nécessité d'être valide à même la définition du XML et c'est un choix qui n'a jamais été remis en question par l'organisme de normalisation W3C.
 
 Il arrive, par exemple, qu'il soit inutilement complexe d'exiger que les documents soient valides. Si on se contraint à des documents valides, on peut même en arriver à des solutions qui sont techniquement inférieures.

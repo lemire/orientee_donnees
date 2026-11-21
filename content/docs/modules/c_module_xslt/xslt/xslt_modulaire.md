@@ -41,7 +41,7 @@ Dans ce nouveau document XML, se trouvent deux éléments « personne ». Il ser
     <xsl:template match="facture">
     <html>
     <head>
-    <title>Facture de <xsl:value-of select="personne" /></title>
+    <title>Facture de <xsl:value-of select="recipiendaire/personne" /></title>
     </head>
     <body>
      <p>Ceci est une facture pour 
@@ -109,7 +109,7 @@ Notre fichier « xslt.xml » est maintenant plus modulaire, parce qu'il contient
 
 Par défaut, l'instruction apply-templates traite les nœuds dans l'ordre où ils se présentent dans le document original. On peut forcer le XSLT à trier les éléments avant de les traiter avec l'instruction `xsl:sort`. Dans notre exemple, on peut remplacer l'élément `<xsl:apply-templates select="recipiendaire" />` par cet élément si on veut que les individus soient triés par leur nom de famille.
 ```xml
-<xsl:apply-templates select="étudiant" >
+<xsl:apply-templates select="recipiendaire" >
    <xsl:sort select="personne/nom" order="ascending" data-type="text" />
    </xsl:apply-templates>
 ```
@@ -128,6 +128,7 @@ On peut aussi importer un autre fichier XSLT avec l'instruction `xsl:import`. Ce
     <head>
     <title>Facture de <xsl:value-of select="personne" /></title>
     </head>
+    </html>
     </xsl:template>
     </xsl:stylesheet>
 ```

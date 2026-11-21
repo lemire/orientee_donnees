@@ -12,7 +12,7 @@ Dans cette section, nous explorons l'utilisation de XSLT pour traiter des séque
 L'exemple de la liste des clients avec leur numéro de téléphone nous permet
    de faire plus. Tout d'abord, l'expression « //client » donne une
    séquence de tous les éléments « client »
-   dans le nœud courant.
+   du document.
    Avec l'expression XPath « //client[nom='Sylvain'] », nous pouvons
    obtenir la séquence de tous les
    éléments « client » ayant pour nom « Sylvain ». Dans ce

@@ -257,7 +257,7 @@ weight: 70
     <li>
      <label><input name="idp140504183026720" onclick="javascript:var Click_MenuId='idp140504183030208true';var formid='idp140504183026720'; var Click_Menu = document.getElementById(Click_MenuId);var myform = document.getElementById(formid);var spans = myform.getElementsByTagName('span');for (spancount=0; spancount&lt;spans.length;++spancount) spans[spancount].style.display='none';if(/true/.test(Click_MenuId)) Click_Menu.style.color = 'blue'; else Click_Menu.style.color = 'red';Click_Menu.style.display = '';" type="radio" value="idp140504183030208true"/>
      Dans le premier cas, l'élément « A » est dans l'espace de noms « foo »,
-  alors que dans le second, « A » est dans l'espace de noms par défaut.</label>
+  alors que dans le second, « A » n'est dans aucun espace de noms.</label>
     <span class="feedback" id="idp140504183030208true" style="display: none;font-weight:bold;">
       <br/>
       (Réponse correcte!) Effectivement.

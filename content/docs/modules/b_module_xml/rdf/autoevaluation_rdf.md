@@ -214,9 +214,9 @@ weight: 30
     La première version de
     <i>
      Creative
-                    Common
+                    Commons
     </i>
-    s a été publiée en 2001.</label>
+    a été publiée en 2001.</label>
     <span class="feedback" id="idp140346360269584true" style="display: none;font-weight:bold;">
      <br/>
      Correct.
@@ -318,7 +318,7 @@ weight: 30
                 document n'est pas valable.</label>
     <span class="feedback" id="idp140346360277120false" style="display: none;font-weight:bold;">
      <br/>
-     (Réponse incorrecte!) Non. Il s'agit un
+     (Réponse incorrecte!) Non. Il s'agit d'un
                     document valable.
     </span>
    </li>

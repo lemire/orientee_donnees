@@ -60,7 +60,7 @@ Pour éviter cela :
  <strong>
   ANSI
  </strong>
- (équivalent à ISO-8859-1).
+ (proche d’ISO-8859-1).
 </p>
 <p>
  Ouvrez maintenant
@@ -71,7 +71,7 @@ Pour éviter cela :
 Si tout est correct, vous verrez le texte s’afficher. En cas d’erreur de syntaxe, le navigateur vous indiquera précisément le problème.
 </p>
 <h2>
- Un exemple de XHTML bien formé (donc aussi du XML valide)
+ Un exemple de XHTML bien formé (donc aussi du XML bien formé)
 </h2>
 <pre><span style="color:#a3323c;">&lt;html&gt;</span>
     <span style="color:#a3323c;">&lt;body&gt;</span>

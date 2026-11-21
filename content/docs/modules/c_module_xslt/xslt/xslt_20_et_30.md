@@ -30,5 +30,5 @@ tous les éléments étudiant en les regroupant selon la valeur de leur attribut
  qui présente quelques exemples.
 </p>
 <p>
- La version 3.0 du XSLT permet de traiter de grands volumes de données en évitant le chargement en mémoire de la totalité des documents. À cette fin, elle introduit des instructions comme xsl:iterate et xsl:stream.
+ La version 3.0 du XSLT permet de traiter de grands volumes de données en évitant le chargement en mémoire de la totalité des documents. À cette fin, elle introduit des instructions comme xsl:iterate et xsl:source-document.
 </p>

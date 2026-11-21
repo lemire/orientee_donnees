@@ -98,7 +98,7 @@ Examinons maintenant les différentes instructions du fichier CSS.
 
 L'instruction « `display: block;` » déclare que l'élément devrait former son propre paragraphe. L'instruction « `display: none;` » rend l'élément invisible.
 
-Les instructions « `margin-bottom: 30pt`; » et « `margin-left: 1cm;` » définissent des marges en bas et à gauche de 30 points et de 1 cm respectivement.
+Les instructions « `margin-bottom: 30pt;` » et « `margin-left: 1cm;` » définissent des marges en bas et à gauche de 30 points et de 1 cm respectivement.
 
 L'instruction « `color: red;` » affirme que le contenu de l'élément devrait être écrit en rouge, alors que « `font-style: italic;` » nous dit que le texte de l'élément devrait être en italique. On pourrait aussi contrôler la couleur de fond avec une instruction comme « `background-color:red` ».
 
@@ -127,7 +127,7 @@ li     { display: list-item }
 img    { display: none }
 ```
 
-On peut aussi définir la propriété « float » d'un élément qui lui permet de sortir du flot normal des éléments et de se placer à gauche ou à droite. Par exemple, une image en XHTML s'affiche normalement comme un bloc. On peut forcer l'image à s'intégrer au paragraphe suivant avec l'instruction « float: right » ou « float: left ». On peut aussi utiliser la propriété « float » pour créer plusieurs colonnes de texte comme dans un journal. Je vous invite à faire différentes expériences pour mieux comprendre l'utilisation de cette instruction.
+On peut aussi définir la propriété « float » d'un élément qui lui permet de sortir du flot normal des éléments et de se placer à gauche ou à droite. Par exemple, une image en XHTML placée entre deux paragraphes s'affiche normalement sur sa propre ligne. On peut forcer l'image à s'intégrer au paragraphe suivant avec l'instruction « float: right » ou « float: left ». On peut aussi utiliser la propriété « float » pour créer plusieurs colonnes de texte comme dans un journal. Je vous invite à faire différentes expériences pour mieux comprendre l'utilisation de cette instruction.
 
 ### centrer un élément
 
@@ -184,7 +184,7 @@ Pour utiliser cette infobulle en HTML :
 <span class="tooltip">Passez la souris ici</span>
 ```
 
-Pour des infobulles avec du texte dynamique, on peut utiliser l'attribut `data-tooltip` en remplaçant `content: "Ceci est une infobulle";` par `content: attr(data-tooltip);` et ajouter `data-tooltip="Votre texte"` dans le HTML. On peut personnaliser l'apparence, la position (par exemple, à droite avec `left: 100%`) et ajouter des flèches avec des bordures CSS. Les infobulles améliorent l'accessibilité et l'expérience utilisateur en fournissant des informations contextuelles sans encombrer l'interface.
+Pour des infobulles avec du texte dynamique, on peut utiliser l'attribut `data-tooltip` en remplaçant `content: "Ceci est une infobulle";` par `content: attr(data-tooltip);` et ajouter `data-tooltip="Votre texte"` dans le HTML. On peut personnaliser l'apparence, la position (par exemple, à droite avec `left: 100%`) et ajouter des flèches avec des bordures CSS. Les infobulles améliorent l'expérience utilisateur en fournissant des informations contextuelles sans encombrer l'interface.
 
 Voici un exemple complet d'infobulle dynamique :
 
@@ -239,7 +239,7 @@ montant {
 
 ### sélectionner le premier caractère ou la première ligne
 
-On peut sélectionner la première ligne d'un élément s'affichant en mode « block » et le premier caractère de tout élément avec les sélecteurs « :first-line » et « :first-letter » respectivement. Voici un exemple :
+On peut sélectionner la première ligne et le premier caractère d'un élément s'affichant en mode « block » avec les sélecteurs « :first-line » et « :first-letter » respectivement. Voici un exemple :
 
 ```css
 p:first-line  {text-transform: uppercase}
@@ -267,7 +267,7 @@ Les instructions first-line, first-letter, before et after que nous venons de pr
 
 ### sélecteurs d'interaction
 
-Certains sélecteurs n'agissent qu'en réponse aux comportements de l'utilisateur. Par exemple, le sélecteur « p:hover » sélectionne les éléments « p » qui sont survolés par le curseur de la souris. Il existe plusieurs sélecteurs d'interaction dont « :link » (lien non visité), « :visited » (lien visité), « :active » (l'utilisateur utilise un élément), « :focus » (l'élément est sélectionné par l'utilisateur). On peut aussi combiner les sélecteurs comme dans cet exemple : « a:hover:focus ». On appelle aussi ces sélecteurs de pseudo-classes.
+Certains sélecteurs n'agissent qu'en réponse aux comportements de l'utilisateur. Par exemple, le sélecteur « p:hover » sélectionne les éléments « p » qui sont survolés par le curseur de la souris. Il existe plusieurs sélecteurs d'interaction dont « :link » (lien non visité), « :visited » (lien visité), « :active » (l'utilisateur utilise un élément), « :focus » (l'élément est sélectionné par l'utilisateur). On peut aussi combiner les sélecteurs comme dans cet exemple : « a:hover:focus ». On appelle aussi ces sélecteurs des pseudo-classes.
 
 ### règles par défaut
 
@@ -343,7 +343,7 @@ L'astérisque nous permet d'appliquer une règle à tous les éléments, comme d
 
 Avec les CSS, en utilisant les crochets, nous pouvons sélectionner tous les éléments ayant un attribut donné. Par exemple, l'instruction « `*[monattribut] { color:red;}` » mettra en rouge tous les éléments ayant un attribut portant le nom « monattribut ». Nous pouvons aussi limiter la sélection à des éléments portant un nom donné comme dans « `maman[monattribut] { color:red;}` » où les éléments « maman » ayant un attribut « monattribut » seront en rouge. Finalement, nous pouvons de plus limiter la sélection à des attributs ayant une certaine valeur, comme dans « `maman[monattribut="papa"] { color:red;}` ».
 
-Il arrive fréquemment qu'une valeur d'attribut contienne plusieurs mots, comme dans « `<amerique pays="États-Unis Canada" />` ». Pour sélectionner tous les éléments dont un attribut contient un mot particulier, on remplace « = » par « ~= » comme dans l'instruction « `*[pays~="Canada"] { color:red;}` » qui mettra en rouge tout élément dont l'attribut « pays » contient le mot « Canada ». Les mots doivent être séparés par des espaces. Dans l'éventualité où les mots sont séparés par des tirets, comme dans « `<amerique pays="Mexique-Canada" />` », on peut obtenir le même résultat avec « |= » comme dans « `*[pays|="Canada"] { color:red;}` ».
+Il arrive fréquemment qu'une valeur d'attribut contienne plusieurs mots, comme dans « `<amerique pays="États-Unis Canada" />` ». Pour sélectionner tous les éléments dont un attribut contient un mot particulier, on remplace « = » par « ~= » comme dans l'instruction « `*[pays~="Canada"] { color:red;}` » qui mettra en rouge tout élément dont l'attribut « pays » contient le mot « Canada ». Les mots doivent être séparés par des espaces. Dans l'éventualité où les mots sont séparés par des tirets, comme dans « `<amerique pays="Canada-Mexique" />` », on peut sélectionner les valeurs qui commencent par un mot donné (suivi d'un tiret) avec « |= » comme dans « `*[pays|="Canada"] { color:red;}` ».
 
 ### les espaces de noms
 
@@ -372,7 +372,7 @@ Les deux formes sont exactement équivalentes.
 
 ### sélection sur la base de la relation entre les éléments
 
-Supposons maintenant que nous ne voulions pas afficher tous les éléments « personne » en rouge, mais seulement les éléments « personne » contenus dans un élément « facture ». Nous obtiendrons ce résultat en plaçant les deux noms d'élément côte-à-côte (séparés par un espace). Ainsi, l'instruction « facture personne { color:red;} » affichera en rouge tous les éléments « personne » contenus dans un élément « facture », comme dans l'exemple qui suit ou dans ce deuxième exemple.
+Supposons maintenant que nous ne voulions pas afficher tous les éléments « personne » en rouge, mais seulement les éléments « personne » contenus dans un élément « facture ». Nous obtiendrons ce résultat en plaçant les deux noms d'élément côte à côte (séparés par un espace). Ainsi, l'instruction « facture personne { color:red;} » affichera en rouge tous les éléments « personne » contenus dans un élément « facture », comme dans l'exemple qui suit ou dans ce deuxième exemple.
 
 Nous pourrions vouloir que seuls les éléments immédiatement contenus dans l'élément « facture », comme dans le premier exemple, soient en rouge, et non pas ceux qui sont contenus dans des éléments eux-mêmes dans un élément « facture » (deuxième exemple). Nous pouvons obtenir ce résultat avec l'instruction « facture > personne { color:red;} ».
 
@@ -384,12 +384,14 @@ Supposons maintenant, dans l'exemple suivant, que nous voulions indenter le prem
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<titre>Mon histoire</titre>
-<p>C'est triste.</p>
-<p>Oui, c'est triste.</p>
+<histoire>
+  <titre>Mon histoire</titre>
+  <p>C'est triste.</p>
+  <p>Oui, c'est triste.</p>
+</histoire>
 ```
 
-Ce résultat s'obtient avec l'instruction « titre + p { text-indent: 0cm;} ». La syntaxe « a + b { ... } » s'applique à l'élément « b » quand les éléments « a » et « b » sont contenus dans le même élément, et que « b » est immédiatement après « a ». Notez que la règle « a + b { ... } » s'applique à « b », mais ne s'applique pas à « a ».
+Ce résultat s'obtient avec l'instruction « titre + p { text-indent: 1cm;} ». La syntaxe « a + b { ... } » s'applique à l'élément « b » quand les éléments « a » et « b » sont contenus dans le même élément, et que « b » est immédiatement après « a ». Notez que la règle « a + b { ... } » s'applique à « b », mais ne s'applique pas à « a ».
 
 Supposons que nous désirions indenter le premier paragraphe (élément « p ») dans l'élément « section » :
 

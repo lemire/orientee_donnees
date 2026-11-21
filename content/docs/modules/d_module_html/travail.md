@@ -91,7 +91,7 @@ Vous devez créer un CSS qui améliore la présentation des expressions MathML a
 
 2. **Fractions (`mfrac`)** :
    - `padding: 2px 0;` pour espacer la fraction
-   - L'élément `<mfrac>` dessine déjà nativement la barre de fraction ; ajustez-la au besoin avec `fraction-bar-thickness` plutôt que d'ajouter une `border` (ce qui produirait une double barre)
+   - L'élément `<mfrac>` dessine déjà nativement la barre de fraction ; ajustez-la au besoin avec l'attribut `linethickness` de `<mfrac>` plutôt que d'ajouter une `border` (ce qui produirait une double barre)
    - `margin: 4px 0;` pour aérer la fraction
 
 3. **Variables (`mi`)** :

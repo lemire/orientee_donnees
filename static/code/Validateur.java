@@ -13,6 +13,7 @@ public class Validateur {
             }
             public void error(SAXParseException ex) throws SAXException {
                 System.err.println("Erreur : " + ex.getMessage());
+                throw ex;
             }
             public void fatalError(SAXParseException ex) throws SAXException {
                 System.err.println("Erreur fatale : " + ex.getMessage());

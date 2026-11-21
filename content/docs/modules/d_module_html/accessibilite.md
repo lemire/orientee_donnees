@@ -567,9 +567,9 @@ Quelques repères sur fond blanc :
 | --- | --- | --- |
 | `#767676` | 4,54:1 | conforme, tout juste |
 | `#949494` | 3,03:1 | non conforme |
-| `#0055bb` | 7,53:1 | conforme |
+| `#0055bb` | 6,96:1 | conforme |
 | `#ff0000` | 4,00:1 | non conforme |
-| `#c00000` | 5,89:1 | conforme |
+| `#c00000` | 6,48:1 | conforme |
 
 Le rouge pur est un piège classique : il *paraît* fort, mais sa luminance le place sous le seuil.
 
@@ -781,7 +781,7 @@ Une solution encore plus robuste, sans JavaScript, s'appuie sur `<details>` et `
 
 ### Raccourcis à caractère unique
 
-Le critère 2.1.4 vise les raccourcis composés d'une seule lettre (« s » pour rechercher, par exemple) : ils se déclenchent involontairement chez les utilisateurs de commande vocale et de saisie assistée. Il faut pouvoir les désactiver, les remodifier, ou les limiter au moment où le composant a le focus.
+Le critère 2.1.4 vise les raccourcis composés d'une seule lettre (« s » pour rechercher, par exemple) : ils se déclenchent involontairement chez les utilisateurs de commande vocale et de saisie assistée. Il faut pouvoir les désactiver, les reconfigurer, ou les limiter au moment où le composant a le focus.
 
 ## 7. Tester
 

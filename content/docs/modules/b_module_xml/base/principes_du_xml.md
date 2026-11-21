@@ -11,7 +11,7 @@ Rappelons qu'une **balise** est un segment de texte commençant par `<` et se te
 
 Le **nom XML** de la balise est le texte suivant le symbole `<` (ou `</` pour une balise de fin) et pouvant contenir n'importe quelle lettre ou chiffre (a, b,... 0, 1, 2,...) ou les quatre symboles de ponctuation, soit la marque de soulignement ( _ ), le trait d'union ( - ), les deux-points (:) ou le point (.); un nom XML ne peut contenir d'autres caractères spéciaux, ni un espace. En outre, il ne peut pas commencer par un chiffre, un trait d'union ou un point. Par exemple, le nom XML de la balise `<lavie>` est « lavie », alors que la balise `<7lavie>` ne serait pas autorisée. On réserve les noms débutant par xml, xmL, xMl, xML, Xml, XmL, XMl et XML pour les spécifications XML. Ainsi, la balise `<xmldanslavie>` est à éviter.
 
-Pour les balises de début, aussi dites d'ouverture, on peut ajouter un **attribut** au nom XML de la balise. Un attribut porte un nom XML qui doit respecter les mêmes règles que les noms XML des balises; il est suivi du symbole « = » et d'une valeur placée entre guillemets droits (`"`) ou apostrophes droites (`'`). Par exemple, la balise `<lavie age="5">` indique que l'élément *lavie* a un attribut (age="5") qui a comme nom XML « age » et comme valeur « 5 ». Une balise peut avoir plusieurs attributs, comme `<lavie age="5" sexe="M">`, mais ils doivent tous porter des noms XML différents : `<lavie age="5" age="7">` n'est pas autorisée. Il est aussi possible d'insérer des retours de chariot dans un attribut. Vous pouvez insérer un retour chariot ou un saut de ligne dans la valeur d'un attribut.
+Pour les balises de début, aussi dites d'ouverture, on peut ajouter un **attribut** au nom XML de la balise. Un attribut porte un nom XML qui doit respecter les mêmes règles que les noms XML des balises; il est suivi du symbole « = » et d'une valeur placée entre guillemets droits (`"`) ou apostrophes droites (`'`). Par exemple, la balise `<lavie age="5">` indique que l'élément *lavie* a un attribut (age="5") qui a comme nom XML « age » et comme valeur « 5 ». Une balise peut avoir plusieurs attributs, comme `<lavie age="5" sexe="M">`, mais ils doivent tous porter des noms XML différents : `<lavie age="5" age="7">` n'est pas autorisée. Vous pouvez insérer un retour chariot ou un saut de ligne dans la valeur d'un attribut.
 
 
 ```xml
@@ -27,7 +27,7 @@ Par convention, on réserve l'attribut « xml:lang » à la spécification de la
 Un **élément** est l'ensemble du texte borné par deux balises ayant le même nom XML, comme `<lavie>` et `</lavie>`. On dit que l'élément `<lavie></lavie>` a pour nom XML « lavie ». L'élément hérite des attributs de sa balise de départ : l'élément `<lavie age="5"></lavie>` a l'attribut « age="5" ». Il est à noter que la casse est significative en XML : les balises `<A>` et `<a>` n'ont pas le même nom XML. Dans le cas particulier où l'élément est vide (sans contenu), on peut remplacer `<lavie></lavie>` par `<lavie/>` pour abréger. Un élément peut contenir d'autres éléments, comme dans `<lavie><a></a></lavie>`, ou du texte, ou du texte et des éléments comme
 
 ```xml
-<lavie>fd<a>fsd</a>fd</lavie>.
+<lavie>fd<a>fsd</a>fd</lavie>
 ```
 
 Si un élément contient d'autres éléments, il doit aussi contenir, entre ses balises de début et de fin, les balises de début et de fin de chaque élément. Notez, de plus, que deux éléments ne peuvent se *chevaucher*, comme `<b><a></b></a>`; avant de passer à un autre élément, il faut terminer le premier avec sa balise de fin. L'exemple précédent est du XML malformé!
@@ -112,25 +112,25 @@ Un élément peut contenir du texte, mais ne peut contenir le symbole `<`, comme
 
 | appel d'entité | résultat |
 |---------------|----------|
-| &lt; | `<` |
-| &amp; | & |
-| &gt; | > |
-| &quot; | " |
-| &apos; | ' |
+| `&lt;` | `<` |
+| `&amp;` | `&` |
+| `&gt;` | `>` |
+| `&quot;` | `"` |
+| `&apos;` | `'` |
 
 Ainsi, si le nom de votre compagnie est John&Smith, vous ne devrez pas utiliser un élément comme ceci `<nom>John&Smith</nom>`; il vous faudra plutôt utiliser
 
 ```xml
-<nom>John&amp;Smith</nom>.
+<nom>John&amp;Smith</nom>
 ```
 
-Le texte « ]]&gt; » s'écrit « ]]&gt; ».
+Le texte « `]]>` » s'écrit « `]]&gt;` ».
 
-On utilise aussi les appels d'entités pour noter les valeurs des attributs. Supposons que la valeur d'un attribut est une apostrophe suivie d'un guillemet (`'"`). Les deux choix possibles `<nom att="'">` et `<nom att=''"'>` ne sont pas valables. Dans ce cas, il faudra écrire `<nom att="'&quot;">`, `<nom att='&apos;"'>`, `<nom att="&apos;&quot;">` ou `<nom att='&apos;&quot;'>;`.
+On utilise aussi les appels d'entités pour noter les valeurs des attributs. Supposons que la valeur d'un attribut est une apostrophe suivie d'un guillemet (`'"`). Les deux choix possibles `<nom att="'"">` et `<nom att=''"'>` ne sont pas valables. Dans ce cas, il faudra écrire `<nom att="'&quot;">`, `<nom att='&apos;"'>`, `<nom att="&apos;&quot;">` ou `<nom att='&apos;&quot;'>`.
 
 Prenez le temps de mémoriser ces appels d'entités et retenez bien dans quel cas on peut être obligé de les utiliser.
 
-Il arrive parfois qu'il soit trop lourd d'utiliser des appels d'entités, et on peut alors utiliser un segment « CDATA ». Un tel segment débute par « `<![CDATA[` » et se termine par « `]]&gt;` ». Tout le texte au sein du segment est rendu verbatim. Ainsi, le texte « `<![CDATA[<monelement />]]>` » est équivalent à « `<monelement />` ».
+Il arrive parfois qu'il soit trop lourd d'utiliser des appels d'entités, et on peut alors utiliser un segment « CDATA ». Un tel segment débute par « `<![CDATA[` » et se termine par « `]]>` ». Tout le texte au sein du segment est rendu verbatim. Ainsi, le texte « `<![CDATA[<monelement />]]>` » est équivalent à « `<monelement />` ».
 
 ## Les commentaires
 
@@ -150,7 +150,7 @@ Par contre, en XML, on peut utiliser des instructions de traitement. L'instructi
 <?cout 423890?>
 ```
 
-La syntaxe d'une telle instruction de traitement est simple. L'instruction débute par `<?` et se termine par `?>` immédiatement après `<?`, un nom XML valable doit apparaître (tous les noms XML valables sont autorisés à l'exception de xml, Xml, XMl, XML, XmL, xMl, xML et xmL). Rappelons que, comme pour n'importe quel contenu textuel XML, il faut faire des appels d'entités pour `<` et `&`. Une instruction de traitement n'est pas une balise ou un élément.
+La syntaxe d'une telle instruction de traitement est simple. L'instruction débute par `<?` et se termine par `?>`. Immédiatement après `<?`, un nom XML valable doit apparaître (tous les noms XML valables sont autorisés à l'exception de xml, Xml, XMl, XML, XmL, xMl, xML et xmL). Contrairement au contenu textuel ordinaire, les appels d'entités ne sont pas reconnus dans une instruction de traitement : elle peut contenir `<` et `&` tels quels, mais pas la séquence `?>`. Une instruction de traitement n'est pas une balise ou un élément.
 
 Notez que le langage informatique *PHP* utilise les instructions de traitement avec comme nom « php ». Voyons l'exemple suivant :
 
@@ -162,11 +162,11 @@ Tout comme les commentaires, on peut mettre les instructions de traitement parto
 
 ## Jeux de caractères
 
-Historiquement, on a longtemps représenté les caractères en utilisant des octets (8 bits). Aux États-Unis, on utilisait la norme ASCII qui utilisait les sept premiers bits de chaque octet. Avec le temps, les normes ISO se sont imposées. En français, on utilise souvent le jeu de caractères « ISO-8859-1 ». Historiquement, l'outil Bloc-note de Microsoft utilise par défaut un jeu de caractères qui est très similaire à ISO-8859-1 (qu'ils nomment parfois ANSI) sur les PC vendus en Amérique du Nord. Malheureusement, n'utiliser que 8 bits pour représenter les caractères signifie qu'il est impossible de tenir compte des langues asiatiques, par exemple, et qu'on ne peut mélanger un texte français avec de l'arabe. Pour cette raison, en 1991, la norme Unicode fut proposée.
+Historiquement, on a longtemps représenté les caractères en utilisant des octets (8 bits). Aux États-Unis, on utilisait la norme ASCII qui utilisait les sept premiers bits de chaque octet. Avec le temps, les normes ISO se sont imposées. En français, on utilise souvent le jeu de caractères « ISO-8859-1 ». Historiquement, l'outil Bloc-notes de Microsoft utilise par défaut un jeu de caractères qui est très similaire à ISO-8859-1 (qu'ils nomment parfois ANSI) sur les PC vendus en Amérique du Nord. Malheureusement, n'utiliser que 8 bits pour représenter les caractères signifie qu'il est impossible de tenir compte des langues asiatiques, par exemple, et qu'on ne peut mélanger un texte français avec de l'arabe. Pour cette raison, en 1991, la norme Unicode fut proposée.
 
-La norme [Unicode](http://unicode.org) est de plus en plus utilisée et elle est popularisée en partie par son utilisation dans le XML. En effet, par défaut, un document XML utilise Unicode (spécifiquement UTF-8 ou UTF-16) et ce sont les seuls jeux de caractères qu'un processeur XML est requis de connaître. L'avantage principal d'Unicode est sa richesse : la version 5.0 du format Unicode permet de représenter 99 000 caractères différents incluant les caractères Klingon de Star Trek. En comparaison, le jeu de caractères ISO-8859-1 permet de représenter moins de 255 caractères (8 bits).
+La norme [Unicode](http://unicode.org) est de plus en plus utilisée et elle est popularisée en partie par son utilisation dans le XML. En effet, par défaut, un document XML utilise Unicode (spécifiquement UTF-8 ou UTF-16) et ce sont les seuls jeux de caractères qu'un processeur XML est requis de connaître. L'avantage principal d'Unicode est sa richesse : la version 5.0 du format Unicode permet de représenter 99 000 caractères différents. En comparaison, le jeu de caractères ISO-8859-1 permet de représenter au plus 256 caractères (8 bits).
 
-UTF-8 et UTF-16 sont les deux encodages Unicode les plus utilisés en XML. UTF-8 est un encodage à longueur variable qui représente les caractères ASCII (les 128 premiers) sur un seul octet, exactement comme l'ancien ASCII, ce qui le rend totalement rétrocompatible avec les innombrables fichiers et outils qui supposent cet encodage ; les caractères accentués latins occupent deux octets, et les caractères plus rares (asiatiques, émojis, etc.) jusqu'à quatre octets. Cette économie fait d'UTF-8 l'encodage par défaut sur le web, dans les bases de données modernes et dans la majorité des fichiers XML actuels. UTF-16, quant à lui, utilise des unités de deux octets (16 bits) pour chaque caractère de base ; les caractères du plan multilangue supplémentaire nécessitent alors une paire de substituts (surrogate pairs) et occupent donc quatre octets. Il est plus compact que UTF-8 pour les textes majoritairement asiatiques, mais consomme davantage d'espace pour les textes latins et pose des problèmes de compatibilité avec les outils qui s'attendent à un octet = un caractère. En XML, un parseur doit obligatoirement comprendre les deux, mais UTF-8 reste très largement dominant grâce à sa compatibilité et à sa robustesse.
+UTF-8 et UTF-16 sont les deux encodages Unicode les plus utilisés en XML. UTF-8 est un encodage à longueur variable qui représente les caractères ASCII (les 128 premiers) sur un seul octet, exactement comme l'ancien ASCII, ce qui le rend totalement rétrocompatible avec les innombrables fichiers et outils qui supposent cet encodage ; les caractères accentués latins occupent deux octets, et les caractères plus rares (asiatiques, émojis, etc.) jusqu'à quatre octets. Cette économie fait d'UTF-8 l'encodage par défaut sur le web, dans les bases de données modernes et dans la majorité des fichiers XML actuels. UTF-16, quant à lui, utilise des unités de deux octets (16 bits) pour chaque caractère de base ; les caractères hors du plan multilingue de base nécessitent alors une paire de substituts (surrogate pairs) et occupent donc quatre octets. Il est plus compact que UTF-8 pour les textes majoritairement asiatiques, mais consomme davantage d'espace pour les textes latins et pose des problèmes de compatibilité avec les outils qui s'attendent à un octet = un caractère. En XML, un parseur doit obligatoirement comprendre les deux, mais UTF-8 reste très largement dominant grâce à sa compatibilité et à sa robustesse.
 
 Les caractères de la langue anglaise (ASCII) sont toujours stockés de la même façon, qu'on utilise UTF-8 ou ISO-8859-1, en utilisant 7 bits. C'est donc dire que les programmeurs anglophones travaillant pour des utilisateurs anglophones peuvent, jusqu'à un certain point, ignorer les questions d'encodage des caractères.
 
@@ -178,11 +178,11 @@ La déclaration XML ressemble à s'y méprendre à une instruction de traitement
 
 > Je ne pense pas qu'il y aura de XML 2.0. Les obstacles politiques seraient effrayants - tout le monde voudra sa part du gâteau -, et la base installée de logiciels qui reconnaissent XML comprend aujourd'hui à peu près tous les ordinateurs liés à Internet, donc une transition me semblerait trop onéreuse. (Interview de Tim Bray, JDN Développeurs, 29 janvier 2007)
 
-Sur un disque ou dans un réseau, un document XML n'est rien donc qu'une chaîne d'octets. Pour interpréter cette chaîne comme du texte, il faut spécifier l'encodage des caractères. Par défaut, le XML suppose que nous avons un encodage des caractères de type Unicode. On utilise souvent une déclaration XML avec « encoding="ISO-8859-1" » pour pouvoir utiliser les accents dans le document en conjonction des outils logiciels n'ayant pas été mis à jour au vingt-et-unième siècle. Seuls les caractères de la langue anglaise (ASCII) ne changent pas entre ISO-8859-1 et Unicode. L'utilisation des accents en français sans la déclaration « encoding="ISO-8859-1" » peut alors entraîner des problèmes si le document a été enregistré avec l'encodage ISO-8859-1.
+Sur un disque ou dans un réseau, un document XML n'est donc rien qu'une chaîne d'octets. Pour interpréter cette chaîne comme du texte, il faut spécifier l'encodage des caractères. Par défaut, le XML suppose que nous avons un encodage des caractères de type Unicode. On utilise souvent une déclaration XML avec « encoding="ISO-8859-1" » pour pouvoir utiliser les accents dans le document en conjonction avec des outils logiciels n'ayant pas été mis à jour au vingt-et-unième siècle. Seuls les caractères de la langue anglaise (ASCII) ne changent pas entre ISO-8859-1 et Unicode. L'utilisation des accents en français sans la déclaration « encoding="ISO-8859-1" » peut alors entraîner des problèmes si le document a été enregistré avec l'encodage ISO-8859-1.
 
 Un même document XML peut être enregistré sous plusieurs jeux de caractères. Cependant, il faut que la déclaration corresponde au format utilisé lors de l'enregistrement du fichier, sinon les caractères accentués (par exemple) seront pervertis.
 
-L'attribut « standalone » prend la valeur *yes* ou *no*, selon que l'on veut que la DTD externe soit lue ou non. Nous traiterons des DTD, plus tard.
+L'attribut « standalone » prend la valeur *yes* ou *no*, selon que le document est autonome (*yes* : aucune déclaration externe, comme une DTD externe, n'en modifie le contenu) ou non (*no*). Nous traiterons des DTD, plus tard.
 
 Il est important de prendre en compte l'encodage des caractères. Le document XML suivant, si on l'enregistre en ISO-8859-1, ne serait pas bien formé, car il utilise des accents :
 

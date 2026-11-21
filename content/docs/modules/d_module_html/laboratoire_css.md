@@ -9,7 +9,7 @@ weight: 50
  Il peut être fastidieux d’apprendre le CSS en manipulant des fichiers. Heureusement, on peut le faire au sein d’un navigateur.
 </p>
 <p>
- Dans ce laboratoire, nous vous demandons d’expérimenter avec les notions de CSS vue jusqu’à présent. Partez du document XML et tentez de le mettre en forme de différentes manières.
+ Dans ce laboratoire, nous vous demandons d’expérimenter avec les notions de CSS vues jusqu’à présent. Partez du document XML et tentez de le mettre en forme de différentes manières.
 </p>
 <div style="max-width: 1000px; margin: 0 auto; background-color: #ffffff; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
  <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #1f2937;">
@@ -23,19 +23,19 @@ weight: 50
    <h2 style="font-size: 18px; font-weight: bold; color: #374151; margin-bottom: 8px;">
     Exemple XML :
    </h2>
-   <pre style="background-color: #e6f4ea; padding: 12px; border: 1px solid #15803d; border-radius: 4px; font-family: monospace; font-size: 14px; color: #374151;"><!--?xml version="1.0" ?-->
-<comptearecevoir>
-    <facture>
-        <personne>Jean Rochond</personne>
-        <montant>10.10</montant>
-        <raison>Achat d'ordinateur</raison>
-    </facture>
-    <facture>
-        <personne>Madeleine Bédard</personne>
-        <montant>20.10</montant>
-        <raison>Achat d'un crayon</raison>
-    </facture>
-</comptearecevoir>
+   <pre style="background-color: #e6f4ea; padding: 12px; border: 1px solid #15803d; border-radius: 4px; font-family: monospace; font-size: 14px; color: #374151;">&lt;?xml version="1.0" ?&gt;
+&lt;comptearecevoir&gt;
+    &lt;facture&gt;
+        &lt;personne&gt;Jean Rochond&lt;/personne&gt;
+        &lt;montant&gt;10.10&lt;/montant&gt;
+        &lt;raison&gt;Achat d'ordinateur&lt;/raison&gt;
+    &lt;/facture&gt;
+    &lt;facture&gt;
+        &lt;personne&gt;Madeleine Bédard&lt;/personne&gt;
+        &lt;montant&gt;20.10&lt;/montant&gt;
+        &lt;raison&gt;Achat d'un crayon&lt;/raison&gt;
+    &lt;/facture&gt;
+&lt;/comptearecevoir&gt;
                 </pre>
   </div>
   <div style="flex: 1;">

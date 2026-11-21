@@ -45,7 +45,7 @@ weight: 100
 </div>
 <!-- Question 8 -->
 <div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <h2>Question 8 – Quelles sont les balises (ouvertes + fermantes) ?</h2>
+    <h2>Question 8 – Quelles sont les balises (ouvrantes + fermantes) ?</h2>
     <pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;">&lt;pageweb categorie="recherche"&gt;
 &lt;description type="court texte"&gt;…&lt;/description&gt;
 &lt;/pageweb&gt;</pre>
@@ -126,8 +126,7 @@ weight: 100
 <!-- Question 22 -->
 <div style="background: white; padding: 20px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <h2>Question 22 – Combien de nœuds de texte contient ce document ?</h2>
-    <pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;">&lt;?xml encoding="ISO-8859-1"?&gt;
-&lt;?xml version="1.0"?&gt;
+    <pre style="background: #f4f4f4; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 0.95em; margin: 10px 0;">&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
 &lt;étudiant&gt;
 &lt;nom&gt;Daniel Jacques&lt;/nom&gt;
 &lt;cours&gt;bibliothéconomie&lt;/cours&gt;

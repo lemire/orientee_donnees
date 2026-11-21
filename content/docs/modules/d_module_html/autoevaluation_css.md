@@ -264,7 +264,7 @@ weight: 60
             &lt;/facture&gt;
   </p>
   Quels documents CSS mettront « Marc » et « Antoine »
-        en rouge, et rien d'autre.
+        en rouge, et rien d'autre?
  </div>
  <p style="width:90%;">
   Choisissez toutes les réponses qui s'appliquent, puis
@@ -296,7 +296,7 @@ weight: 60
     <span class="feedback" id="idp140216815418528false" style="display: none;font-weight:bold;">
      <br/>
      Non. Ce code ne met en rouge que les
-                    éléments « personne » qui suivent des éléments
+                    éléments « personne » contenus dans des éléments
                     « prenom »,
                     ce qui ne se produit pas dans le document XML fourni.
     </span>

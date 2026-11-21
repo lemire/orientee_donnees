@@ -62,7 +62,7 @@ console.log(doubler(5)); // 10
 
 Les objets en JavaScript sont fondamentalement différents des classes Java. Il n'y a pas de classes traditionnelles (avant ES6), mais des objets basés sur des prototypes. Chaque objet peut hériter directement d'un autre via sa chaîne de prototypes, ce qui remplace le système d'héritage par classes de Java. Depuis ES6, la syntaxe `class` a été introduite pour faciliter la transition des développeurs venant de langages comme Java, mais sous le capot, il s'agit toujours d'héritage prototypal.
 
-Vous pouvez créer un objet de manière littérale très simplement : `const personne = { nom: "Dupont", age: 30 };`. Pour ajouter une fonction (appelée méthode lorsqu'elle est dans un objet), il suffit d'ajouter une propriété qui contient une fonction : `personne.saluer = function() { console.log("Bonjour, je m'appelle " + this.nom); };` ou, avec la syntaxe moderne : `const personne = { nom: "Dupont", age: 30, saluer() { console.log(\`Bonjour, je m'appelle ${this.nom}\`); } };`. L'appel se fait ensuite avec `personne.saluer();`.
+Vous pouvez créer un objet de manière littérale très simplement : `const personne = { nom: "Dupont", age: 30 };`. Pour ajouter une fonction (appelée méthode lorsqu'elle est dans un objet), il suffit d'ajouter une propriété qui contient une fonction : `personne.saluer = function() { console.log("Bonjour, je m'appelle " + this.nom); };` ou, avec la syntaxe moderne : `` const personne = { nom: "Dupont", age: 30, saluer() { console.log(`Bonjour, je m'appelle ${this.nom}`); } }; ``. L'appel se fait ensuite avec `personne.saluer();`.
 
 En JavaScript, les chaînes de caractères peuvent être définies avec des guillemets simples (`'texte'`) ou doubles (`"texte"`). Depuis ES6, les littéraux de gabarit (template literals) permettent d'intégrer des expressions directement dans les chaînes en utilisant des backticks (\`) et la syntaxe `${expression}`.
 
@@ -547,7 +547,7 @@ try {
     runButton.addEventListener("mouseleave", () => runButton.style.background = "#0056b3");
     // Surcharge de la console
     const consoleOutput = document.getElementById("console");
-    const toriginalLog = console.log;
+    const originalLog = console.log;
     const originalError = console.error;
     const originalWarn = console.warn;
     function appendToConsole(type, args) {
@@ -599,7 +599,7 @@ try {
 
 ## Activités suggérées
 
-Pour appliquer les concepts de JSON en JavaScript, voici 5 activités pratiques à réaliser :
+Pour appliquer les concepts de JSON en JavaScript, voici 6 activités pratiques à réaliser :
 
 1. **Création et sérialisation d'un objet** : Définissez un objet JavaScript représentant un étudiant (nom, âge, notes sous forme de tableau). Utilisez `JSON.stringify()` pour le convertir en chaîne JSON et affichez-le dans la console.
 

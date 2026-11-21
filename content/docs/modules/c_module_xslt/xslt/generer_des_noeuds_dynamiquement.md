@@ -17,7 +17,9 @@ Il arrive qu'on veuille produire un commentaire dans la sortie XML. Rien
 <?xml version="1.0" encoding="ISO-8859-1"?>
    <xsl:stylesheet version="1.0"
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+   <xsl:template match="/">
    <xsl:comment>Ceci est un commentaire.</xsl:comment>
+   </xsl:template>
    </xsl:stylesheet>
 ```
 
@@ -41,7 +43,7 @@ Il est parfois utile de créer dynamiquement un élément avec
 <?xml version="1.0" encoding="ISO-8859-1"?>
    <xsl:stylesheet version="1.0"
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-   <xsl:param name="ele" select="p" />
+   <xsl:param name="ele" select="'p'" />
    <xsl:template match="/">
    <xsl:element name="{$ele}" namespace="http://mondom.com/" >
    <xsl:attribute name="couleur" namespace="http://mondom.com/">

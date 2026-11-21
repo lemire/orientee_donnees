@@ -42,18 +42,21 @@ weight: 1110
  <form id="idp140293223359968">
   <ol>
    <li>
-    <input name="idp140293223359968" type="checkbox" value="idp140293223360736true" aria-labelledby="rep-idp140293223360736true-0"/>
-    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140293223360736true-0">
+    <input name="idp140293223359968" type="checkbox" value="idp140293223360736false" aria-labelledby="rep-idp140293223360736false-0"/>
+    <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140293223360736false-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
                     &lt;xsl:stylesheet version="1.0"
                     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
                     &lt;xsl:text&gt; &lt;/xsl:text&gt;
                     &lt;/xsl:stylesheet&gt;
     </p>
-    <span class="feedback" id="idp140293223360736true" style="display: none;font-weight:bold;">
+    <span class="feedback" id="idp140293223360736false" style="display: none;font-weight:bold;">
      <br/>
-     Oui, c'est correct : le résultat
-                    sera un document vide (contenant un espace).
+     Non. L'élément « xsl:text » est une
+                    instruction : il ne peut pas être un enfant direct de
+                    l'élément « xsl:stylesheet », mais doit se trouver dans
+                    un modèle (élément « xsl:template »). Le processeur
+                    signalera une erreur.
     </span>
    </li>
    <li>
@@ -89,7 +92,7 @@ weight: 1110
     <input name="idp140293223359968" type="checkbox" value="idp140293223367200true" aria-labelledby="rep-idp140293223367200true-0"/>
     <p style="border:solid 1px black;white-space:pre; font-size:0.85em" id="rep-idp140293223367200true-0">
      &lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
-                    &lt;xsl:transform
+                    &lt;xsl:transform version="1.0"
                     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
                     &lt;/xsl:transform&gt;
     </p>
@@ -977,12 +980,12 @@ weight: 1110
                 le document, et le contenu textuel de tous les
                 autres éléments qui ne sont pas contenus dans un élément
                 « cours » ou dans un élément
-                « université ».</label>
+                « universite ».</label>
     <span class="feedback" id="idp140293223459744true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Exactement. La
                     règle par défaut s'applique à tous les éléments, sauf aux
-                    éléments « cours »
+                    éléments « cours » et « universite »
                     dont on ne visite pas les nœuds.
     </span>
    </li>
@@ -1305,7 +1308,7 @@ weight: 1110
     <span class="feedback" id="idp140293223490720false" style="display: none;font-weight:bold;">
      <br/>
      (Réponse incorrecte!) Non. Le contenu
-                    textuel ne sera jamais modifié.
+                    textuel ne sera jamais reproduit.
     </span>
    </li>
    <li>
@@ -1942,9 +1945,10 @@ weight: 1110
     <span class="feedback" id="idp140293223632992true" style="display: none;font-weight:bold;">
      <br/>
      (Réponse correcte!) Effectivement,
-                    l'expression n'a la valeur vraie que si l'élément courant
-                    est un élément « a » ayant le même contenu que le
-                    premier élément « a » dans le document.
+                    l'expression n'a la valeur vraie que si le nœud courant
+                    a le même contenu textuel que l'un des éléments « a »
+                    sélectionnés par « //a[1] », c'est-à-dire l'un des éléments
+                    « a » qui sont le premier élément « a » de leur parent.
     </span>
    </li>
   </ol>

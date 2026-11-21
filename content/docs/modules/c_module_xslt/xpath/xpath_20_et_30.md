@@ -98,7 +98,7 @@ public class IllustrationXPathSaxon {
 
         // Démonstration des fonctionnalités XPath 2.0
 
-        System.out.println("Fonctions agrégates (avg, max, min) :");
+        System.out.println("Fonctions d'agrégation (avg, max, min) :");
         XPathExecutable execAvg = xpathCompiler.compile("avg(//note)");
         XPathSelector selectorAvg = execAvg.load();
         selectorAvg.setContextItem(document);

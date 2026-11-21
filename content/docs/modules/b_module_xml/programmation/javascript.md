@@ -61,13 +61,12 @@ const xmlDoc = parser.parseFromString(xmlString, "text/xml");
 // Vérifier s'il y a des erreurs de parsing
 const parseError = xmlDoc.querySelector("parsererror");
 if (parseError) {
-    document.getElementById('resultat').textContent = "Erreur de parsing XML: " + parseError.textContent;
+    console.error("Erreur de parsing XML: " + parseError.textContent);
     return;
 }
 
 // Fonction récursive pour énumérer les éléments
 function enumererElement(element, niveau = 0) {
-    console.log("element");
     let resultat = "";
     const indentation = "  ".repeat(niveau);
     

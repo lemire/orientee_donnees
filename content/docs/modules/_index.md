@@ -6,7 +6,7 @@ bookCollapseSection: false
 ---
 # Modules du cours
 
-Ce cours est organisé en plusieurs modules thématiques qui vous guideront à travers les technologies essentielles du développement web et des données structurées. Chaque module combine théorie, exemples pratiques et exercices pour une apprentissage progressif.
+Ce cours est organisé en plusieurs modules thématiques qui vous guideront à travers les technologies essentielles du développement web et des données structurées. Chaque module combine théorie, exemples pratiques et exercices pour un apprentissage progressif.
 
 ## [Module JSON](a_module_json/)
 
