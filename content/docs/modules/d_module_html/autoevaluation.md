@@ -365,9 +365,9 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
  &lt;title&gt;Titre de mon document&lt;/title&gt;
  &lt;/head&gt;
  &lt;body&gt;
- L'enfant pleure dans la rue. Subitement, le Soleil se lève.
+ &lt;p&gt;L'enfant pleure dans la rue. Subitement, le Soleil se lève.
  
- Ah! Que la vie est belle!
+ Ah! Que la vie est belle!&lt;/p&gt;
  &lt;/body&gt;
  &lt;/html&gt;
    </p>
@@ -382,7 +382,7 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
      1</label>
     <span class="feedback" id="idp140549854466608true" style="display: none;font-weight:bold;">
       <br/>
-      (Réponse correcte!) Oui.
+      (Réponse correcte!) Oui. Les lignes vides ne créent pas de nouveaux paragraphes : seul l'élément p le fait.
      </span>
     </li>
     <li>
@@ -390,7 +390,7 @@ il doit s'agir d'éléments avec balise ouvrante et balise fermante.
      2</label>
     <span class="feedback" id="idp140549854468272false" style="display: none;font-weight:bold;">
       <br/>
-      (Réponse incorrecte!) Non.
+      (Réponse incorrecte!) Non. La ligne vide ne crée pas un second paragraphe : il n'y a qu'un seul élément p.
      </span>
     </li>
     <li>

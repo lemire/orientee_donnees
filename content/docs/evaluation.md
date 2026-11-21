@@ -31,6 +31,6 @@ Pour réussir ce cours, nous vous recommandons de répartir votre temps de trava
 - **Semaines 13-14** : Module Services et YAML (AJAX, serveurs, API, encodage). Réalisez le Travail noté 5 (10 %). (~18 heures)
 - **Semaine 15** : Travail d'intégration (application web complète avec toutes les technologies). (40 %)
 
-> **Note sur le travail d'intégration.** Comptant pour 40 % de la note et combinant l'ensemble des technologies du cours (HTML5, JavaScript, AJAX, Java, Gson, Jackson, Apache POI, XSLT, SVG, MathML, YAML, Maven), ce travail demande nettement plus qu'une seule semaine. Réservez-y du temps tout au long de la session : prenez des notes et conservez vos exemples de chaque module, puis amorcez l'intégration dès que les travaux notés sont terminés.
+> **Note sur le travail d'intégration.** Comptant pour 40 % de la note et combinant l'ensemble des technologies du cours (HTML5, JavaScript, AJAX, Java, Gson, Jackson, Apache POI, XSLT, SVG, MathML, YAML, Maven), ce travail demande nettement plus qu'une seule semaine. Préparez-le tout au long de la session : prenez des notes et conservez vos exemples de chaque module. Vous amorcerez l'intégration elle-même une fois les travaux notés terminés.
 
 Cette répartition vous permet de progresser de manière équilibrée, en consacrant du temps à l'apprentissage théorique et à la pratique. Ajustez selon vos contraintes personnelles, mais assurez-vous de terminer tous les travaux notés avant de commencer l'intégration.

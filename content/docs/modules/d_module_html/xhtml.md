@@ -160,7 +160,7 @@ en HTML, mais en XHTML, il faut écrire «
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">title</span><span style="color:#a65700; ">&gt;</span>Titre de mon document<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">title</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">head</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">body</span><span style="color:#a65700; ">&gt;</span>
-Voici mon document.
+<span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">p</span><span style="color:#a65700; ">&gt;</span>Voici mon document.<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">p</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">body</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">html</span><span style="color:#a65700; ">&gt;</span>
 </pre>
@@ -207,8 +207,8 @@ un élément
   <i>
    body
   </i>
-  peut être vide, mais peut aussi posséder du 
-contenu XML mixte (texte et diverses balises XHTML). L'espace de noms ayant l'URI « http://www.w3.org/1999/xhtml » 
+  peut être vide ; en XHTML 1.0 Strict, il ne contient que des éléments de type bloc
+(comme p), si bien que le texte doit être placé dans un paragraphe. L'espace de noms ayant l'URI « http://www.w3.org/1999/xhtml » 
 est utilisé.
  </p>
  <p>
@@ -265,8 +265,8 @@ document XHTML. Par la suite, l'élément
   <i>
    body
   </i>
-  contient un ensemble de balises et 
-du texte (contenu mixte) qui sera affiché directement dans le navigateur.
+  contient des éléments de type bloc (comme des paragraphes)
+qui seront affichés directement dans le navigateur.
  </p>
  <h2>
   Les paragraphes en HTML
@@ -276,8 +276,8 @@ du texte (contenu mixte) qui sera affiché directement dans le navigateur.
   <i>
    body
   </i>
-  contient des balises et du texte. Les retours de ligne sont traités
-comme des espaces normaux. Ainsi, les deux documents suivants seront affichés
+  contient des éléments de type bloc, comme un paragraphe (élément p). À l'intérieur
+d'un paragraphe, les retours de ligne et les lignes vides sont traités comme des espaces normaux. Ainsi, les deux documents suivants seront affichés
 de la même manière par un navigateur.
  </p>
  <pre><span style="color:#004a43; ">&lt;?</span><span style="color:#800000; font-weight:bold; ">xml</span><span style="color:#004a43; "> </span><span style="color:#074726; ">version</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#7d0045; ">1.0</span><span style="color:#0000e6; ">"</span><span style="color:#004a43; "> </span><span style="color:#074726; ">encoding</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">ISO-8859-1</span><span style="color:#0000e6; ">"</span><span style="color:#004a43; "> </span><span style="color:#004a43; ">?&gt;</span>
@@ -288,9 +288,9 @@ de la même manière par un navigateur.
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">title</span><span style="color:#a65700; ">&gt;</span>Titre de mon document<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">title</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">head</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">body</span><span style="color:#a65700; ">&gt;</span>
-Voici mon document.
+<span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">p</span><span style="color:#a65700; ">&gt;</span>Voici mon document.
 Voici ma vie.
-Voici mon chat.
+Voici mon chat.<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">p</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">body</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">html</span><span style="color:#a65700; ">&gt;</span>
 </pre>
@@ -302,18 +302,18 @@ Voici mon chat.
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">title</span><span style="color:#a65700; ">&gt;</span>Titre de mon document<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">title</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">head</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">body</span><span style="color:#a65700; ">&gt;</span>
-Voici mon document.
+<span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">p</span><span style="color:#a65700; ">&gt;</span>Voici mon document.
 
 Voici ma vie.
 
-Voici mon chat.
+Voici mon chat.<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">p</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">body</span><span style="color:#a65700; ">&gt;</span>
 <span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">html</span><span style="color:#a65700; ">&gt;</span>
 </pre>
  <p>
-  La question qui se pose alors est : Comment faire des paragraphes? En effet, dans les deux documents plus haut, le
-texte s'affichera sur une seule ligne (vous pouvez le tester!). La solution consiste à utiliser l'élément « p » pour
-« paragraphe ». Pour avoir trois paragraphes, on remplace le document HTML précédent par celui qui suit. Observez
+  La question qui se pose alors est : Comment faire des paragraphes? En effet, dans les deux documents plus haut, tout le
+texte forme un seul paragraphe et s'affichera sur une seule ligne (vous pouvez le tester!). La solution consiste à utiliser
+un élément « p » (pour « paragraphe ») par paragraphe. Pour avoir trois paragraphes, on remplace le document HTML précédent par celui qui suit. Observez
 que chaque balise « p » ouverte doit être fermée.
  </p>
  <pre><span style="color:#004a43; ">&lt;?</span><span style="color:#800000; font-weight:bold; ">xml</span><span style="color:#004a43; "> </span><span style="color:#074726; ">version</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#7d0045; ">1.0</span><span style="color:#0000e6; ">"</span><span style="color:#004a43; "> </span><span style="color:#074726; ">encoding</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"</span><span style="color:#0000e6; ">ISO-8859-1</span><span style="color:#0000e6; ">"</span><span style="color:#004a43; "> </span><span style="color:#004a43; ">?&gt;</span>

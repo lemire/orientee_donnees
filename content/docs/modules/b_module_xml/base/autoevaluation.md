@@ -51,8 +51,8 @@ weight: 100
 &lt;/pageweb&gt;</pre>
     <label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"><input type="radio" name="q8" value="wrong" style="margin-right: 10px;"> categorie, type</label>
     <label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"><input type="radio" name="q8" value="wrong2" style="margin-right: 10px;"> "recherche", "court texte"</label>
-    <label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"><input type="radio" name="q8" value="correct" style="margin-right: 10px;"> pageweb, description</label>
-    <label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"><input type="radio" name="q8" value="wrong4" style="margin-right: 10px;"> &lt;pageweb categorie=…&gt;, &lt;description&gt;, …</label>
+    <label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"><input type="radio" name="q8" value="wrong3" style="margin-right: 10px;"> pageweb, description</label>
+    <label style="display: block; margin: 12px 0; cursor: pointer; padding: 8px; border-radius: 4px; transition: background 0.2s;"><input type="radio" name="q8" value="correct" style="margin-right: 10px;"> &lt;pageweb categorie="recherche"&gt;, &lt;description type="court texte"&gt;, &lt;/description&gt;, &lt;/pageweb&gt;</label>
     <div class="feedback" id="fb8" style="margin-top: 15px; padding: 12px; border-radius: 5px; font-weight: bold; display: none;"></div>
 </div>
 <!-- Question 9 -->
@@ -196,7 +196,7 @@ document.getElementById('checkBtn').addEventListener('click', function() {
         q2: "Les balises sont les marqueurs &lt;nom&gt; et &lt;/nom&gt;. Le contenu texte n’est pas une balise.",
         q6: "XML est sensible à la casse : les éléments sont écrits en minuscules (etudiant, prenom, nom).",
         q7: "Les noms d’attributs sont « categorie » et « type », pas leurs valeurs.",
-        q8: "Les noms d’éléments (donc les balises) sont pageweb et description.",
+        q8: "Il y a quatre balises : deux balises ouvrantes, &lt;pageweb categorie=\"recherche\"&gt; et &lt;description type=\"court texte\"&gt;, et deux balises fermantes, &lt;/description&gt; et &lt;/pageweb&gt;. Une balise ouvrante comprend ses attributs ; pageweb et description sont les noms des éléments (question suivante).",
         q9: "Les noms d’éléments sont pageweb et description. Les attributs n’en font pas partie.",
         q11: "Le caractère &lt; est réservé car il introduit une balise ; il doit être échappé avec &amp;lt; dans le texte.",
         q16: "La déclaration XML correcte est &lt;?xml version=\"1.0\"?&gt; (pas de barre de fermeture /).",

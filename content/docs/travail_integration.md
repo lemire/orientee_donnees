@@ -111,7 +111,7 @@ La structure des fichiers doit suivre les conventions Maven :
 
 Pour compiler le projet, utilisez `mvn compile`.
 
-**Attention aux chemins.** Le code de départ lit `index.html` et `config.yml` à partir d'un chemin relatif (par exemple `Paths.get("index.html")` ou `new File("src/main/resources/config.yml")`). Ces chemins sont résolus par rapport au **répertoire courant** d'exécution, pas par rapport au classpath. Lancez donc le programme depuis la racine du projet, ou bien chargez ces ressources via le classpath avec `getClass().getResourceAsStream("/index.html")` si vous packagez le projet dans un jar.
+**Attention aux chemins.** Le code de départ lit `index.html` et `config.yml` à partir d'un chemin relatif (par exemple `Paths.get("src/main/resources/index.html")` ou `new File("src/main/resources/config.yml")`). Ces chemins sont résolus par rapport au **répertoire courant** d'exécution, pas par rapport au classpath. Lancez donc le programme depuis la racine du projet, ou bien chargez ces ressources via le classpath avec `getClass().getResourceAsStream("/index.html")` si vous packagez le projet dans un jar.
 
 
 ### Configuration YAML
@@ -352,7 +352,7 @@ public class GraphServer {
         server.createContext("/", exchange -> {
             try {
                 if ("GET".equals(exchange.getRequestMethod())) {
-                    String html = new String(Files.readAllBytes(Paths.get("index.html")), "UTF-8");
+                    String html = new String(Files.readAllBytes(Paths.get("src/main/resources/index.html")), "UTF-8");
                     exchange.getResponseHeaders().set("Content-Type", "text/html; charset=UTF-8");
                     exchange.sendResponseHeaders(200, html.getBytes("UTF-8").length);
                     try (OutputStream os = exchange.getResponseBody()) {

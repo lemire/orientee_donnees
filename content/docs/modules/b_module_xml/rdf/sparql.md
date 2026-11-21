@@ -7,7 +7,7 @@ weight: 35
 
 SPARQL (acronyme récursif de SPARQL Protocol and RDF Query Language) est le langage de requête standard pour interroger des données exprimées en RDF (Resource Description Framework). Il a été standardisé par le W3C en 2008 et sa version actuelle la plus utilisée est SPARQL 1.1 (2013).  
 
-Il permet de récupérer et de manipuler des données stockées dans des triplestores ou dans n’importe quel graphe RDF, que ce soit sur le web (Linked Data), dans une base locale ou via un endpoint SPARQL public comme DBpedia, Wikidata ou data.gouv.fr.
+Il permet de récupérer et de manipuler des données stockées dans des triplestores ou dans n’importe quel graphe RDF, que ce soit sur le web (Linked Data), dans une base locale ou via un endpoint SPARQL public comme DBpedia, Wikidata ou data.bnf.fr (Bibliothèque nationale de France).
 
 SPARQL ressemble beaucoup à SQL, mais au lieu de tables et colonnes, on travaille avec des triplets de la forme **sujet – prédicat – objet** (ex. : `<http://example.org/Paris> rdf:type dbo:City`).
 

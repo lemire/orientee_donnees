@@ -94,8 +94,8 @@ weight: 20
   http://dublincore.org/documents/dcmi-terms/
  </a>
  (en anglais).
-    Cette norme a été publiée pour la première fois
-    en juillet 1999.
+    La première version de cette norme a été publiée en septembre 1998 (RFC 2413) ;
+    la version 1.1, la plus répandue, date de juillet 1999.
 </p>
 <p>
  Le préfixe de la norme
@@ -1176,9 +1176,8 @@ weight: 20
  <i>
   FOAF
  </i>
- a été lancé de façon informelle par Daniel Brickley en
-    1998. À l'époque, il
-    avait mis un texte RDF ressemblant à ceci sur sa page personnelle :
+ a été lancé de façon informelle en 2000 par Dan Brickley et Libby Miller.
+    À l'époque, Dan Brickley avait mis un texte RDF ressemblant à ceci sur sa page personnelle :
     (
  <b>
   Attention.- Il ne s'agit pas de RDF/XML valable.
@@ -1436,25 +1435,13 @@ weight: 20
  <i>
   RSS
  </i>
- est un exemple de RDF. Cette norme dont
+ est un exemple de RDF (la version 2.0, la plus répandue aujourd'hui, est un format XML
+    qui n'utilise pas RDF). Cette norme dont
     l'acronyme n'a pas de définition établie,
     sert à représenter des fils de nouvelles. Elle a été imaginée par la
     compagnie Netscape et servait alors à la
-    production du portail Netscape (1999). Elle est devenue très populaire et on
-    trouve maintenant des milliers
-    de fils de nouvelles en format
- <i>
-  RSS
- </i>
- dans le monde. Par exemple,
-    sur
- <a href="http://www.yulblog.org/">
-  http://www.yulblog.org/
- </a>
- , il y a
-    des centaines de
-    blogues écrits par des Montréalais et la plupart ont un fil de nouvelles en
-    format
+    production du portail Netscape (1999). Elle est devenue très populaire : aujourd'hui encore, la plupart des blogues,
+    des sites de nouvelles et des balados (podcasts) diffusent un fil de nouvelles en format
  <i>
   RSS
  </i>

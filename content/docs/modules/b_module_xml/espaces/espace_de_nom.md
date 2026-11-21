@@ -32,7 +32,7 @@ Un URI ne pointe pas nécessairement vers un fichier, mais peut très bien être
 ou une adresse pointant vers une application logicielle sur un serveur.
 
 Par exemple, « http://www.mondomain.com/fichier » et « mailto:billg@microsoft.com » 
-sont des URI. Les URI ne doivent pas contenir d'accents, et la casse est significative sauf pour ce qui est du nom du protocole (HTTP versus http) et du nom de domaine (xerox.com versus XEROX.COM). Nous reviendrons sur les URI dans le module 5.
+sont des URI. Les URI ne doivent pas contenir d'accents, et la casse est significative sauf pour ce qui est du nom du protocole (HTTP versus http) et du nom de domaine (xerox.com versus XEROX.COM). Nous reviendrons sur les URI dans la section sur le [RDF]({{< relref "docs/modules/b_module_xml/rdf/introduction_au_rdf" >}}).
 
 ## Les espaces de noms
 

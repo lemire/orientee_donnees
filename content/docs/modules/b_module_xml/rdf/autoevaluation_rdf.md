@@ -52,7 +52,7 @@ weight: 30
     a été publiée en 2001.</label>
     <span class="feedback" id="idp140346360252160false" style="display: none;font-weight:bold;">
      <br/>
-     Non. C'est en juillet 1999.
+     Non. La première version date de septembre 1998, et la version 1.1, de juillet 1999.
     </span>
    </li>
    <li>
@@ -415,8 +415,7 @@ weight: 30
                 date de 1999.</label>
     <span class="feedback" id="idp140346360287504true" style="display: none;font-weight:bold;">
      <br/>
-     Effectivement. En 1998, Daniel Brickley
-                    était un précurseur du RDF.
+     Effectivement. La recommandation du W3C sur le modèle et la syntaxe RDF date de février 1999.
     </span>
    </li>
   </ol>
@@ -447,15 +446,10 @@ weight: 30
      Dublin Core
     </i>
     ,
-                datent de 1999.</label>
+                datent d'avant 2001.</label>
     <span class="feedback" id="idp140346360289936true" style="display: none;font-weight:bold;">
      <br/>
-     C'est vrai. Seul
-     <i>
-      Creative
-                        Commons
-     </i>
-     est plus récent.
+     C'est vrai. Seul <i>Creative Commons</i>, dont les licences datent de 2002, est plus récent.
     </span>
    </li>
    <li>
