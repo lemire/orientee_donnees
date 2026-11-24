@@ -10,7 +10,7 @@ Ce cours est organisé en plusieurs modules thématiques qui vous guideront à t
 
 ## [Module JSON](a_module_json/)
 
-Le premier module explore le format JSON (JavaScript Object Notation), format léger d'échange de données. Vous découvrirez la syntaxe JavaScript moderne, les opérations de sérialisation et désérialisation JSON, ainsi que des outils pratiques comme jq pour la manipulation de données JSON en ligne de commande.
+Le premier module explore le format JSON (JavaScript Object Notation), format léger d'échange de données. Vous découvrirez la syntaxe JavaScript moderne, les opérations de sérialisation et désérialisation JSON, ainsi que des outils pratiques comme sjq (compatible avec jq) pour la manipulation de données JSON en ligne de commande.
 
 **Contenu clé :**
 - Syntaxe JavaScript (variables, fonctions, objets, chaînes de caractères)

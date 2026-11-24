@@ -78,9 +78,9 @@ Votre code devra être organisé selon les bonnes pratiques Java, utiliser Maven
 
 **Livrables** : Code source Java, fichier pom.xml, fichier GeoJSON d'exemple, et un README en Markdown expliquant comment exécuter le projet.
 
-## Question 2 : Script jq pour l'analyse de données JSON
+## Question 2 : Scripts jq pour l'analyse de données JSON
 
-Pour cette deuxième question, vous créerez un ensemble de scripts jq permettant d'analyser et transformer des données JSON complexes représentant un catalogue de produits. Vous commencerez par utiliser le fichier JSON suivant comme base de données, qui représente un inventaire de produits électroniques :
+Pour cette deuxième question, vous créerez un ensemble de scripts jq, exécutés avec sjq, permettant d'analyser et transformer des données JSON complexes représentant un catalogue de produits. Vous commencerez par utiliser le fichier JSON suivant comme base de données, qui représente un inventaire de produits électroniques :
 
 ```json
 {
@@ -151,9 +151,9 @@ Vos scripts jq devront impérativement implémenter les fonctionnalités suivant
 
 Enfin, vous intégrerez des mécanismes de validation pour vérifier que les fichiers d'entrée sont des objets JSON valides avec une structure de produits.
 
-**Ressources** : Consultez la documentation officielle de jq pour les opérations de traitement JSON : <https://jqlang.org/manual/>
+**Ressources** : Consultez la [page de l'activité avec sjq]({{< relref "docs/modules/a_module_json/jq" >}}) pour l'installation et l'exécution d'un script avec `sjq -f script.jq fichier.json`, ainsi que la documentation officielle du langage jq : <https://jqlang.org/manual/>. Vos scripts doivent fonctionner avec sjq ; ils fonctionneront aussi avec jq.
 
-**Livrables** : Scripts jq (.jq), fichier JSON d'exemple, et un fichier README en Markdown avec des exemples d'exécution et d'explication des scripts.
+**Livrables** : Scripts jq (.jq), fichier JSON d'exemple, et un fichier README en Markdown avec des exemples d'exécution (commandes `sjq -f ...`) et d'explication des scripts.
 
 ## Remise
 

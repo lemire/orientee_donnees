@@ -1,143 +1,106 @@
 ---
-title: "Activité avec jq"
+title: "Activité avec sjq"
 weight: 38
 ---
 
-# Laboratoire pratique avec jq
+# Laboratoire pratique avec sjq
 
-jq est un puissant processeur de données JSON en ligne de commande, conçu pour manipuler, filtrer et transformer des fichiers JSON de manière efficace et expressive. Inspiré des outils Unix comme sed et awk, jq permet aux développeurs et analystes de données de travailler avec des structures JSON complexes sans écrire de code complexe. Que ce soit pour extraire des valeurs spécifiques, reformater des données, ou effectuer des requêtes avancées, jq offre une syntaxe concise et fonctionnelle qui s'intègre parfaitement dans les pipelines shell.
+jq est un langage de requêtes pour manipuler, filtrer et transformer des données JSON en ligne de commande. Inspiré des outils Unix comme sed et awk, il permet aux développeurs et aux analystes de données de travailler avec des structures JSON complexes sans écrire de programme complet. Que ce soit pour extraire des valeurs précises, reformater des données ou effectuer des requêtes avancées, jq offre une syntaxe concise et fonctionnelle qui s'intègre parfaitement dans les pipelines shell.
 
-Au-delà de ses capacités de base, jq excelle dans le traitement de gros volumes de données JSON, prenant en charge des opérations comme le filtrage conditionnel, les agrégations, et les transformations structurelles. Il est particulièrement utile pour l'analyse de logs, le traitement d'APIs REST, ou la préparation de données pour d'autres outils. Grâce à sa nature fonctionnelle, les requêtes jq peuvent être composées et réutilisées, faisant de cet outil un incontournable pour quiconque travaille régulièrement avec du JSON dans un environnement de développement ou de production.
+Dans cette activité, nous utilisons [sjq](https://github.com/simdjson/sjq), une implémentation de jq construite sur la bibliothèque [simdjson](https://simdjson.org). sjq comprend le même langage que jq : les filtres que vous écrivez pour sjq fonctionnent aussi avec jq, et inversement. La documentation de jq (<https://jqlang.org/manual/>) et les tutoriels sur jq restent donc valables. sjq a deux avantages pour nous : il s'installe en une seule commande sur Windows, macOS et Linux, et il traite les gros fichiers JSON beaucoup plus rapidement.
 
-
+Au-delà de ses capacités de base, le langage jq excelle dans le traitement de gros volumes de données JSON, avec le filtrage conditionnel, les agrégations et les transformations structurelles. Il est particulièrement utile pour l'analyse de journaux (logs), le traitement des réponses d'API REST ou la préparation de données pour d'autres outils.
 
 ## Installation sur Windows
 
-Il y a plusieurs méthodes. Voici les deux plus simples pour un débutant.
-
-### Méthode 1 – La plus simple : télécharger l’exécutable officiel
-
-1. Ouvrez votre navigateur et allez ici : <https://github.com/jqlang/jq/releases>
-2. Descendez à la dernière version.
-3. Sous “Assets”, cliquez sur le fichier `jq-win64.exe`. Il est possible que vous deviez chercher un peu, le fichier est bel et bien présent.
-4. Le fichier se télécharge (environ 3-4 Mo).
-
-5. **Renommez-le pour plus de simplicité** : cliquez droit sur le fichier → Renommer → appelez-le simplement `jq.exe`
-
-6. **Déplacez-le dans un dossier facile d’accès**  
-   Créez un dossier par exemple `C:\jq` et mettez-y le fichier `jq.exe`.
-
-7. **Ajoutez ce dossier au PATH** (c’est ce qui permet de taper `jq` depuis n’importe où)  
-   a. Cliquez droit sur “Ce PC” (ou “Ordinateur”) → Propriétés  
-   b. Cliquez sur “Paramètres système avancés” (à droite)  
-   c. Cliquez sur “Variables d’environnement”  
-   d. Dans la partie “Variables système” (en bas), trouvez la ligne “Path” → cliquez sur Modifier  
-   e. Cliquez sur “Nouveau” → tapez `C:\jq` → OK → OK → OK
-
-8. **Fermez et rouvrez votre terminal** (Invite de commandes ou PowerShell).
-
-9. Tapez :
-   ```cmd
-   jq --version
-   ```
-   Si vous voyez la version s’afficher → c’est bon !
-
-### Méthode 2 – Avec Winget
-
-Si vous avez Windows 10 ou 11 ou mieux :
-
-1. Ouvrez PowerShell ou l’Invite de commandes **en tant qu’administrateur** (clic droit → Exécuter en tant qu’administrateur).
-2. Tapez cette commande :
+1. Ouvrez **PowerShell** : touche Windows, tapez `PowerShell`, puis Entrée. Il n'est pas nécessaire de l'ouvrir en tant qu'administrateur.
+2. Copiez-collez cette commande et appuyez sur Entrée :
    ```powershell
-   winget install jqlang.jq
+   irm https://raw.githubusercontent.com/simdjson/sjq/main/install.ps1 | iex
    ```
-3. Appuyez sur Entrée, acceptez si on vous demande.
-4. Une fois terminé, ouvrez un **nouveau** terminal (normal, pas admin) et tapez :
+   La commande télécharge `sjq.exe`, vérifie son intégrité, l'installe dans `%LOCALAPPDATA%\Programs\sjq` et l'ajoute à votre PATH. Elle termine en affichant la version installée (par exemple `sjq 0.3.0`).
+3. sjq fonctionne tout de suite dans cette fenêtre, et dans toutes celles que vous ouvrirez ensuite (PowerShell ou Invite de commandes). Pour vérifier, tapez :
    ```powershell
-   jq --version
+   sjq --version
    ```
+   Si vous voyez la version s'afficher, c'est bon !
 
-### Méthode 3 – Avec Chocolatey
+Si vous utilisez déjà [Scoop](https://scoop.sh), vous pouvez plutôt installer sjq avec `scoop bucket add sjq https://github.com/simdjson/sjq`, puis `scoop install sjq/sjq`.
 
-1. Ouvrez PowerShell en administrateur.
-2. Installez Chocolatey (une seule fois) :
-   ```powershell
-   Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-   ```
-3. Puis installez jq :
-   ```powershell
-   choco install jq
-   ```
+Si la commande d'installation est bloquée (par exemple sur un poste géré par votre employeur), téléchargez plutôt le fichier `sjq-windows-x86_64.zip` (ou `sjq-windows-arm64.zip` sur un PC à processeur ARM, comme certains Surface) sur <https://github.com/simdjson/sjq/releases/latest>, décompressez-le et placez `sjq.exe` dans le dossier où se trouvent vos fichiers JSON. Dans PowerShell, tapez alors `.\sjq` au lieu de `sjq`.
 
-## Installation sur macOS
+Pour passer plus tard à une nouvelle version, relancez simplement la commande d'installation.
 
+## Installation sur macOS et Linux
 
-### Méthode recommandée et la plus simple : Homebrew
-
-1. **Ouvrir le Terminal**  
-   Appuyez sur `Cmd + Espace`, tapez `Terminal` et appuyez sur Entrée.
-
-2. **Installez Homebrew** (c’est un gestionnaire de paquets, comme un “App Store” en ligne de commande)  
-   Copiez-collez cette ligne dans le Terminal et appuyez sur Entrée :
+1. Ouvrez le Terminal (sur macOS : `Cmd + Espace`, tapez `Terminal`, puis Entrée).
+2. Copiez-collez cette commande et appuyez sur Entrée :
    ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   curl -fsSL https://raw.githubusercontent.com/simdjson/sjq/main/install.sh | sh
    ```
-   - Il va vous demander votre mot de passe (vous ne verrez pas les étoiles quand vous tapez, c’est normal).
-   - Appuyez sur Entrée quand il vous le demande pour continuer.
-   - Ça prend 2 à 5 minutes selon votre connexion.
-
-3. **Une fois Homebrew installé, installez jq en une seule commande**  
+   Le programme est installé dans `~/.local/bin`. Aucun mot de passe n'est demandé.
+3. Si le message indique « is not in your PATH », copiez-collez la ligne `echo ...` qu'il affiche juste en dessous (elle est adaptée à votre shell), puis ouvrez un nouveau terminal.
+4. Vérifiez avec :
    ```bash
-   brew install jq
+   sjq --version
    ```
 
-4. **Vérifiez que ça fonctionne**  
-   Tapez cette commande et appuyez sur Entrée :
-   ```bash
-   jq --version
-   ```
-   Vous devriez voir quelque chose comme `jq-1.7` ou `jq-1.7.1`.
-
-C’est fini ! Vous avez jq sur votre Mac.
-
-### Méthode sans Homebrew
-
-Vous pouvez télécharger la version pré-compilée directement :
-
-1. Allez sur cette page : <https://github.com/jqlang/jq/releases>
-2. Descendez jusqu’à la dernière version (en haut).
-3. Sous “Assets”, cliquez sur le fichier qui s’appelle `jq-macos-arm64` (si vous avez un Mac M1/M2/M3/...) ou `jq-macos-amd64` (si vous avez un Mac Intel plus ancien).
-4. Le fichier se télécharge (il fait ~3 Mo).
-5. Ouvrez le Terminal, allez dans votre dossier Téléchargements :
-   ```bash
-   cd ~/Downloads
-   ```
-6. Rendez-le exécutable et déplacez-le au bon endroit :
-   ```bash
-   chmod +x jq-macos-arm64
-   sudo mv jq-macos-arm64 /usr/local/bin/jq
-   ```
-   (Il vous demandera votre mot de passe pour `sudo`).
-7. Vérifiez avec `jq --version`.
+Si vous utilisez déjà [Homebrew](https://brew.sh), vous pouvez plutôt installer sjq avec `brew install simdjson/tap/sjq`. Pour passer plus tard à une nouvelle version, relancez la commande d'installation (ou `brew upgrade sjq`).
 
 ## Premier test rapide
 
-Copiez-collez ceci dans votre terminal :
+Copiez-collez ceci dans votre terminal (macOS, Linux ou PowerShell) :
 
 ```bash
-echo '{"utilisateur": "Alice", "age": 30, "ville": "Paris"}' | jq '.utilisateur'
+echo '{"utilisateur": "Alice", "age": 30, "ville": "Paris"}' | sjq '.utilisateur'
 ```
 
-Vous devriez voir s’afficher :
+Dans l'Invite de commandes de Windows (cmd), tapez plutôt :
+
+```cmd
+echo {"utilisateur": "Alice", "age": 30, "ville": "Paris"} | sjq .utilisateur
+```
+
+Vous devriez voir s'afficher :
 ```
 "Alice"
 ```
 
-Si vous voyez ça → bravo, jq est parfaitement installé !
+Si vous voyez ça, bravo : sjq est installé !
+
+## Conseil pour Windows : écrire le filtre dans un fichier
+
+Dans les exemples de cette page, le filtre est placé entre apostrophes : `sjq '.bibliotheque.nom' bibliotheque.json`. Cette notation fonctionne sous macOS, sous Linux et dans PowerShell pour les filtres simples. Mais sous Windows, l'Invite de commandes ne reconnaît pas les apostrophes, et Windows PowerShell 5 retire les guillemets doubles placés à l'intérieur d'un filtre (comme dans `."année"`).
+
+La solution la plus simple, qui fonctionne partout : copiez le texte qui se trouve entre les apostrophes dans un fichier texte avec l'extension `.jq`, puis donnez ce fichier à sjq avec l'option `-f`. Par exemple, créez avec le Bloc-notes ou VS Code un fichier `apres1950.jq` contenant :
+
+```jq
+.bibliotheque.livres[] | select(."année" > 1950)
+```
+
+puis exécutez :
+
+```bash
+sjq -f apres1950.jq bibliotheque.json
+```
+
+Un fichier `.jq` peut s'étendre sur plusieurs lignes et contenir des commentaires (lignes qui commencent par `#`). C'est aussi la forme attendue pour le travail noté.
+
+Si vous oubliez et placez quand même le filtre entre apostrophes dans l'Invite de commandes, sjq vous le signale dans son message d'erreur.
+
+## Enregistrer le résultat dans un fichier
+
+Pour enregistrer le résultat dans un fichier, utilisez l'option `-o` :
+
+```bash
+sjq -o titres.json '.bibliotheque.livres[].titre' bibliotheque.json
+```
+
+L'option `-o` fonctionne de la même façon dans tous les terminaux et écrit toujours le fichier en UTF-8. Évitez plutôt la redirection `>` sous Windows : dans Windows PowerShell 5, `>` écrit le fichier en UTF-16, un encodage que beaucoup d'outils (dont jq) ne savent pas lire.
 
 ## Syntaxe des requêtes jq
 
-jq utilise un langage de programmation fonctionnel pour manipuler les données JSON. Les requêtes jq sont composées d'expressions qui transforment l'entrée JSON en sortie JSON. L'opérateur principal est le point `.` pour accéder aux propriétés, similaire à l'accès aux objets en JavaScript. Par exemple, `.nom` extrait la valeur de la clé "nom" d'un objet.
+Le langage jq, que sjq comprend, utilise un langage de programmation fonctionnel pour manipuler les données JSON. Les requêtes jq sont composées d'expressions qui transforment l'entrée JSON en sortie JSON. L'opérateur principal est le point `.` pour accéder aux propriétés, similaire à l'accès aux objets en JavaScript. Par exemple, `.nom` extrait la valeur de la clé "nom" d'un objet.
 
 Les requêtes peuvent être chaînées avec le pipe `|`, permettant de composer des transformations complexes. Par exemple, `.bibliotheque.livres[] | .titre` parcourt d'abord le tableau des livres, puis extrait le titre de chaque livre. Cette approche fonctionnelle rend jq puissant pour filtrer, transformer et agréger des données JSON.
 
@@ -193,6 +156,8 @@ Créez un fichier `bibliotheque.json` :
 
 ## Vidéo suggérée
 
+La vidéo suivante présente jq. Tout ce qu'elle montre fonctionne aussi avec sjq : remplacez simplement `jq` par `sjq` dans les commandes.
+
 {{< youtube id="x18F2wIsxgU" title="Vidéo suggérée sur l’outil jq" >}}
 {{< transcription id="x18F2wIsxgU" >}}
 
@@ -200,66 +165,70 @@ Créez un fichier `bibliotheque.json` :
 
 #### Exercice 1 – Affichage brut et pretty-print
 ```bash
-jq . bibliotheque.json                  # équivalent cat
-jq '.' bibliotheque.json                # plus lisible
+sjq . bibliotheque.json                  # affiche le document joliment indenté
+sjq -c . bibliotheque.json               # version compacte, sur une seule ligne
 ```
 
 #### Exercice 2 – Sélection simple (équivalent XPath absolu)
 ```bash
 # Tous les titres de livres
-jq '.bibliotheque.livres[].titre' bibliotheque.json
+sjq '.bibliotheque.livres[].titre' bibliotheque.json
 
 # Le nom de la bibliothèque
-jq '.bibliotheque.nom' bibliotheque.json
+sjq '.bibliotheque.nom' bibliotheque.json
 ```
 
 #### Exercice 3 – Parcours de tableau avec [] (comme // en XPath)
 ```bash
 # Tous les auteurs
-jq '.bibliotheque.livres[].auteur' bibliotheque.json
+sjq '.bibliotheque.livres[].auteur' bibliotheque.json
 
 # Tous les genres (aplatissement automatique)
-jq '.bibliotheque.livres[].genres[]' bibliotheque.json
+sjq '.bibliotheque.livres[].genres[]' bibliotheque.json
 ```
 
 #### Exercice 4 – Filtrage avec select() (comme [condition] en XPath)
 ```bash
 # Livres publiés après 1950
-jq '.bibliotheque.livres[] | select(."année" > 1950)' bibliotheque.json
+sjq '.bibliotheque.livres[] | select(."année" > 1950)' bibliotheque.json
 
 # Livres empruntables
-jq '.bibliotheque.livres[] | select(.empruntable == true)' bibliotheque.json
+sjq '.bibliotheque.livres[] | select(.empruntable == true)' bibliotheque.json
 
 # Livres contenant "fiction" dans les genres
-jq '.bibliotheque.livres[] | select(.genres[] | contains("fiction"))' bibliotheque.json
+sjq '.bibliotheque.livres[] | select(.genres[] | contains("fiction"))' bibliotheque.json
 ```
+
+Remarque : pour cette dernière commande, sjq affiche `"prix": 18.9`, alors que jq affiche `"prix": 18.90`. Les deux représentent le même nombre. Selon le filtre, sjq recopie le nombre tel qu'il est écrit dans le fichier ou l'écrit sous sa forme la plus courte.
 
 #### Exercice 5 – Projection / construction de nouveaux objets (comme XSLT)
 ```bash
 # Liste simplifiée : titre + année
-jq '.bibliotheque.livres[] | {titre, "année"}' bibliotheque.json
+sjq '.bibliotheque.livres[] | {titre, "année"}' bibliotheque.json
 
 # Créer un catalogue avec id comme clé
-jq '.bibliotheque.livres | map({key: .id, value: {titre, auteur}}) | from_entries' bibliotheque.json
+sjq '.bibliotheque.livres | map({key: .id, value: {titre, auteur}}) | from_entries' bibliotheque.json
 ```
 
 #### Exercice 6 – Agrégations (length, min, max, group_by…)
 ```bash
 # Nombre total de livres
-jq '[.bibliotheque.livres[]] | length' bibliotheque.json
+sjq '[.bibliotheque.livres[]] | length' bibliotheque.json
 
 # Année la plus ancienne
-jq '[.bibliotheque.livres[]."année"] | min' bibliotheque.json
+sjq '[.bibliotheque.livres[]."année"] | min' bibliotheque.json
 
 # Regrouper par première lettre du titre
-jq '.bibliotheque.livres | group_by(.titre[0:1]) | map({lettre: .[0].titre[0:1], count: length})' bibliotheque.json
+sjq '.bibliotheque.livres | group_by(.titre[0:1]) | map({lettre: .[0].titre[0:1], count: length})' bibliotheque.json
 ```
 
 #### Exercice 7 – Gestion des valeurs optionnelles (comme if en XQuery)
 ```bash
 # Afficher le prix, ou "non vendu" s'il n’existe pas
-jq '.bibliotheque.livres[] | .titre as $t | .prix // "non vendu" | "\($t) : \(.)"' bibliotheque.json
+sjq '.bibliotheque.livres[] | .titre as $t | .prix // "non vendu" | "\($t) : \(.)"' bibliotheque.json
 ```
+
+Remarque : comme à l'exercice 4, sjq affiche `Fondation : 18.9`, alors que jq affiche `Fondation : 18.90`.
 
 #### Exercice 8 – Transformation complète (votre premier "XSLT JSON")
 Créer un fichier `catalogue-court.json` contenant seulement :
@@ -273,13 +242,13 @@ Créer un fichier `catalogue-court.json` contenant seulement :
 Solution en une ligne :
 
 ```bash
-jq '[ .bibliotheque.livres[] | {id, titre, auteur, disponible: .empruntable}]' bibliotheque.json > catalogue-court.json
+sjq -o catalogue-court.json '[ .bibliotheque.livres[] | {id, titre, auteur, disponible: .empruntable}]' bibliotheque.json
 ```
 
-#### Exercice 9 – Bonus : jq comme grep pour logs JSON
+#### Exercice 9 – Bonus : sjq comme grep pour logs JSON
 ```bash
-# Supposons un log d’accès au format JSON par ligne JSON
-cat access.log | jq 'select(.status == 404) | .ip + " " + .url'
+# Supposons un journal d’accès avec un objet JSON par ligne (format NDJSON)
+sjq 'select(.status == 404) | .ip + " " + .url' access.log
 ```
 
 ### Mini-projet
@@ -290,25 +259,27 @@ cat access.log | jq 'select(.status == 404) | .ip + " " + .url'
 - Un tableau Markdown avec : Titre | Auteur | Année | Genres | Empruntable | Nombre d’emprunts (0 si absent)
 - Le nombre total de livres et le nombre de livres empruntables
 
-Exemple de solution (à adapter) :
+Exemple de solution (à adapter). Tout le rapport est produit par un seul filtre, enregistré dans le fichier `rapport.jq` :
+
+```jq
+# Génère un rapport Markdown à partir de bibliotheque.json
+.bibliotheque as $b
+| ($b.livres | length) as $total
+| ([$b.livres[] | select(.empruntable)] | length) as $empruntables
+| "# Rapport \($b.nom)",
+  "",
+  "| Titre | Auteur | Année | Genres | Empruntable | Nb emprunts |",
+  "|-------|--------|-------|--------|-------------|-------------|",
+  ($b.livres[]
+    | "| \(.titre) | \(.auteur) | \(."année") | \(.genres | join(", ")) | \(.empruntable) | \((.emprunts // []) | length) |"),
+  "",
+  "Total livres : \($total)",
+  "",
+  "Empruntables : \($empruntables)"
+```
+
+L'option `-r` écrit les chaînes sans guillemets. La même commande fonctionne sous macOS, sous Linux et dans tous les terminaux de Windows :
 
 ```bash
-echo "# Rapport $(jq -r '.bibliotheque.nom' bibliotheque.json)" > rapport.md
-echo "" >> rapport.md
-echo "| Titre | Auteur | Année | Genres | Empruntable | Nb emprunts |" >> rapport.md
-echo "|-------|--------|------|--------|-------------|-------------|" >> rapport.md
-
-jq -r '.bibliotheque.livres[] 
-  | {
-      titre: .titre,
-      auteur,
-      "année",
-      genres: (.genres | join(", ")),
-      empruntable,
-      nb: ((.emprunts // []) | length)
-    }
-  | "| \(.titre) | \(.auteur) | \(."année") | \(.genres) | \(.empruntable) | \(.nb) |"' bibliotheque.json >> rapport.md
-
-echo -e "\nTotal livres : $(jq '[.bibliotheque.livres[]] | length' bibliotheque.json)" >> rapport.md
-echo "Empruntables : $(jq '[.bibliotheque.livres[] | select(.empruntable)] | length' bibliotheque.json)" >> rapport.md
+sjq -r -o rapport.md -f rapport.jq bibliotheque.json
 ```

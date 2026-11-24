@@ -24,7 +24,7 @@ La remise de chacune de ces activités notées se fait sur le site institutionne
 
 Pour réussir ce cours, nous vous recommandons de répartir votre temps de travail sur les 15 semaines, avec environ 9 heures par semaine. Voici une proposition de planning :
 
-- **Semaines 1-3** : Module JSON (bases, GeoJSON, Gson, jq, Unicode). Réalisez le Travail noté 1 (10 %). (~27 heures)
+- **Semaines 1-3** : Module JSON (bases, GeoJSON, Gson, sjq, Unicode). Réalisez le Travail noté 1 (10 %). (~27 heures)
 - **Semaines 4-6** : Module XML (bases, espaces de noms, exemples, DOM/Jackson, RDF/SPARQL, validation). Réalisez le Travail noté 2 (10 %). (~27 heures)
 - **Semaines 7-9** : Module XPath, XSLT, XQuery (navigation, transformation, requêtes). Réalisez le Travail noté 3 (15 %). (~27 heures)
 - **Semaines 10-12** : Module HTML, CSS, SVG, MathML (structure, style, graphiques, maths). Réalisez le Travail noté 4 (15 %). (~27 heures)
